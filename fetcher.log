@@ -1014,3 +1014,63 @@
 [2024-04-20 01:08:55] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.4.0.tar.gz]
 [2024-04-20 01:08:55] INFO root fetch - main [MainThread]: End processing [rent-counter]: success
 [2024-04-20 01:08:55] INFO root fetch - main [MainThread]: Store serial: [22849322]
+[2024-04-20 01:10:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849322]
+[2024-04-20 01:11:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: facade-selenium
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysep-adjtomo
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: stac-model
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: koffi
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-aws
+[2024-04-20 01:11:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-20 01:11:03] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.18a1713552740] Old Version: [0.0.18a1713498251]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 01:11:03] WARNING root fetch - processPackages [facade-selenium]: Skipping, unable to determine old version
+[2024-04-20 01:11:03] INFO root fetch - main [MainThread]: End processing [facade-selenium] error
+[2024-04-20 01:11:03] INFO root fetch - processPackages [stac-model]: New version: [0.1.2] Old Version: [0.1.1a3]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [koffi]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/74/14/de74f2dfe1ba7fb71082bcd00ba2776d7d20876303dd16881676646d605d/pulumi_kubernetes_the_hard_way-0.0.18a1713498251.tar.gz
+[2024-04-20 01:11:03] INFO root fetch - processPackages [pysep-adjtomo]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-20 01:11:03] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [stac-model]: Downloading https://files.pythonhosted.org/packages/61/7c/8f3bc4b36c9fe708b1ef09aa95201531e744576a6a5914e2a978964e08f1/stac_model-0.1.1a3.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pysep-adjtomo]: Downloading https://files.pythonhosted.org/packages/ce/7b/ffd380be624cfb34e7a06ed7f3ee85646959e8914b5fd6c17077714ff9af/pysep-adjtomo-0.5.1.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [koffi]: Downloading https://files.pythonhosted.org/packages/d5/5a/d3e19bd7984636c5cdca1ad3ce69cdec863ae9b884b5409e8262772a00da/KOFFI-0.1.1.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/5f/f4/2ebf69043cd523b800da846ab16e4220a162110addeb2ad0b90cef330947/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [stac-model]: Downloading https://files.pythonhosted.org/packages/52/c0/98d646a20a955897e4f0f4ff7e62f84fbb35f3cabcfb25faa4b10413108e/stac_model-0.1.2.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [koffi]: Downloading https://files.pythonhosted.org/packages/95/84/97c3bdc739b0400f5582b51343ce919c4e955fa6639f08f30386971b55e3/koffi-0.1.2.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pysep-adjtomo]: Downloading https://files.pythonhosted.org/packages/86/ec/23e12de9337bfa723029a71be5f0ac60819094aaefdc0c03dbe52422cbef/pysep_adjtomo-0.6.0.tar.gz
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713498251.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz --markdown 20240420/p/pulumi-kubernetes-the-hard-way/0.0.18a1713498251-0.0.18a1713552740/README.md --exclude *.pyd
+[2024-04-20 01:11:04] INFO root fetch - processPackages [stac-model]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [stac-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_model-0.1.1a3.tar.gz tmp/stac_model-0.1.2.tar.gz --markdown 20240420/s/stac-model/0.1.1a3-0.1.2/README.md --exclude *.pyd
+[2024-04-20 01:11:04] INFO root fetch - processPackages [koffi]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [koffi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/KOFFI-0.1.1.tar.gz tmp/koffi-0.1.2.tar.gz --markdown 20240420/k/koffi/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pysep-adjtomo]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pysep-adjtomo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysep-adjtomo-0.5.1.tar.gz tmp/pysep_adjtomo-0.6.0.tar.gz --markdown 20240420/p/pysep-adjtomo/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-20 01:11:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 01:11:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 01:11:04] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-04-20 01:11:04] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240420/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-04-20 01:11:05] INFO root fetch - processPackages [stac-model]: Remove: archive file [/home/abi/fetcher/tmp/stac_model-0.1.1a3.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - processPackages [stac-model]: Remove: archive file [/home/abi/fetcher/tmp/stac_model-0.1.2.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - main [MainThread]: End processing [stac-model]: success
+[2024-04-20 01:11:05] INFO root fetch - processPackages [koffi]: Remove: archive file [/home/abi/fetcher/tmp/KOFFI-0.1.1.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - processPackages [koffi]: Remove: archive file [/home/abi/fetcher/tmp/koffi-0.1.2.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - main [MainThread]: End processing [koffi]: success
+[2024-04-20 01:11:05] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713498251.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-20 01:11:05] INFO root fetch - processPackages [pysep-adjtomo]: Remove: archive file [/home/abi/fetcher/tmp/pysep-adjtomo-0.5.1.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - processPackages [pysep-adjtomo]: Remove: archive file [/home/abi/fetcher/tmp/pysep_adjtomo-0.6.0.tar.gz]
+[2024-04-20 01:11:05] INFO root fetch - main [MainThread]: End processing [pysep-adjtomo]: success
+[2024-04-20 01:11:21] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-04-20 01:11:21] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-04-20 01:11:21] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-04-20 01:11:21] INFO root fetch - main [MainThread]: Store serial: [22849344]
