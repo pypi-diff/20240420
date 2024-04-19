@@ -1664,3 +1664,33 @@
 [2024-04-20 01:48:38] INFO root fetch - processPackages [basic-pitch]: Remove: archive file [/home/abi/fetcher/tmp/basic_pitch-0.3.1.tar.gz]
 [2024-04-20 01:48:38] INFO root fetch - main [MainThread]: End processing [basic-pitch]: success
 [2024-04-20 01:48:38] INFO root fetch - main [MainThread]: Store serial: [22849551]
+[2024-04-20 01:50:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849551]
+[2024-04-20 01:50:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 01:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: megatron-core
+[2024-04-20 01:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litesync
+[2024-04-20 01:50:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ladybug-geometry
+[2024-04-20 01:50:47] INFO root fetch - processPackages [litesync]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-04-20 01:50:47] INFO root fetch - processPackages [megatron-core]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-20 01:50:47] INFO root fetch - processPackages [ladybug-geometry]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-20 01:50:47] INFO root fetch - processPackages [megatron-core]: Downloading https://files.pythonhosted.org/packages/ee/bd/9ee458e2de47206ff7fedc9226fd6551430c1927eb390273eba82abf9f30/megatron_core-0.5.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 01:50:47] INFO root fetch - processPackages [litesync]: Downloading https://files.pythonhosted.org/packages/6c/b8/fdb6bf5d097156a9c269d4dcbd8d65436f8abaaf54a37a019f5781e87a96/litesync-0.4.9.tar.gz
+[2024-04-20 01:50:47] INFO root fetch - processPackages [ladybug-geometry]: Downloading https://files.pythonhosted.org/packages/73/b9/eb0d232df800d6e5dfa1247520f85cfb316c1f1c0f1fa86404231a512779/ladybug-geometry-1.8.1.tar.gz
+[2024-04-20 01:50:48] INFO root fetch - processPackages [litesync]: Downloading https://files.pythonhosted.org/packages/bd/bd/184d834e9f70bde35dcd6ba5d7d7ca52e137c5b99bd5656ef5e1cbd9d166/litesync-0.5.0.tar.gz
+[2024-04-20 01:50:48] INFO root fetch - processPackages [megatron-core]: Downloading https://files.pythonhosted.org/packages/11/e2/229766cdf1d004fe7522ac860e6d2600563504e37d44e5dade89063584f5/megatron_core-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 01:50:48] INFO root fetch - processPackages [ladybug-geometry]: Downloading https://files.pythonhosted.org/packages/1d/6e/0f64e45efb187aa1304e9685bee2042ef1bd0a00daba0172bf39aadfa2b6/ladybug-geometry-1.9.0.tar.gz
+[2024-04-20 01:50:48] INFO root fetch - processPackages [litesync]: executing diffoscope
+[2024-04-20 01:50:48] INFO root fetch - processPackages [litesync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litesync-0.4.9.tar.gz tmp/litesync-0.5.0.tar.gz --markdown 20240420/l/litesync/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-04-20 01:50:48] INFO root fetch - processPackages [ladybug-geometry]: executing diffoscope
+[2024-04-20 01:50:48] INFO root fetch - processPackages [ladybug-geometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-geometry-1.8.1.tar.gz tmp/ladybug-geometry-1.9.0.tar.gz --markdown 20240420/l/ladybug-geometry/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-20 01:50:48] INFO root fetch - processPackages [megatron-core]: executing diffoscope
+[2024-04-20 01:50:48] INFO root fetch - processPackages [megatron-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megatron_core-0.5.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/megatron_core-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240420/m/megatron-core/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-20 01:50:48] INFO root fetch - processPackages [litesync]: Remove: archive file [/home/abi/fetcher/tmp/litesync-0.4.9.tar.gz]
+[2024-04-20 01:50:48] INFO root fetch - processPackages [litesync]: Remove: archive file [/home/abi/fetcher/tmp/litesync-0.5.0.tar.gz]
+[2024-04-20 01:50:48] INFO root fetch - main [MainThread]: End processing [litesync]: success
+[2024-04-20 01:50:49] INFO root fetch - processPackages [ladybug-geometry]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-geometry-1.8.1.tar.gz]
+[2024-04-20 01:50:49] INFO root fetch - processPackages [ladybug-geometry]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-geometry-1.9.0.tar.gz]
+[2024-04-20 01:50:49] INFO root fetch - main [MainThread]: End processing [ladybug-geometry]: success
+[2024-04-20 01:51:00] INFO root fetch - processPackages [megatron-core]: Remove: archive file [/home/abi/fetcher/tmp/megatron_core-0.5.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 01:51:00] INFO root fetch - processPackages [megatron-core]: Remove: archive file [/home/abi/fetcher/tmp/megatron_core-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 01:51:00] INFO root fetch - main [MainThread]: End processing [megatron-core]: success
+[2024-04-20 01:51:00] INFO root fetch - main [MainThread]: Store serial: [22849559]
