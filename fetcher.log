@@ -1740,3 +1740,51 @@
 [2024-04-20 01:53:14] INFO root fetch - main [MainThread]: End processing [MambuPy]: success
 [2024-04-20 01:53:14] INFO root fetch - main [MainThread]: End processing [MambuPy]: success
 [2024-04-20 01:53:14] INFO root fetch - main [MainThread]: Store serial: [22849575]
+[2024-04-20 01:55:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849575]
+[2024-04-20 01:55:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superdupper
+[2024-04-20 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edxval
+[2024-04-20 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tomtoolkit
+[2024-04-20 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reprompt
+[2024-04-20 01:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quantconnect-stubs
+[2024-04-20 01:55:23] INFO root fetch - processPackages [superdupper]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 01:55:23] INFO root fetch - processPackages [reprompt]: New version: [0.0.7.6] Old Version: [0.0.7.5]
+[2024-04-20 01:55:23] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2024-04-20 01:55:23] INFO root fetch - processPackages [edxval]: New version: [2.5.0] Old Version: [2.4.4]
+[2024-04-20 01:55:23] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/e4/dc/1efc7f7abf091343cde4b95d73b4f7899cab0914c2ef89816873a3083af1/superdupper-0.0.6.tar.gz
+[2024-04-20 01:55:23] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/61/c2/ace108f4f7566ce287a7670cd02d911430ed489456333fd1d6b391fc427e/reprompt-0.0.7.5.tar.gz
+[2024-04-20 01:55:23] INFO root fetch - processPackages [tomtoolkit]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-20 01:55:23] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/c1/05/f15c16a3f852decfd032ce1688dfdf02fd7289f1780742453533e8c55209/quantconnect-stubs-9997.tar.gz
+[2024-04-20 01:55:23] INFO root fetch - processPackages [edxval]: Downloading https://files.pythonhosted.org/packages/97/2a/392e5f369e29c5b7cb644eda5505993b3ec753266939e4cdc3427f94a640/edxval-2.4.4.tar.gz
+[2024-04-20 01:55:23] INFO root fetch - processPackages [tomtoolkit]: Downloading https://files.pythonhosted.org/packages/2e/18/d0f42d8924abcb6ee5a727ed833a1e2b25892c0e27ca84d362e7025c6066/tomtoolkit-2.9.1.tar.gz
+[2024-04-20 01:55:24] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/71/66/d09c5bae331eab160fc03bc21427701df62763a54e93827d588584b929bd/superdupper-0.0.7.tar.gz
+[2024-04-20 01:55:24] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/b7/4c/71e6bb724f14efcd8865f2aa692528a4c45877c58f5cf8c964a8e0fc0e74/quantconnect-stubs-9998.tar.gz
+[2024-04-20 01:55:24] INFO root fetch - processPackages [reprompt]: Downloading https://files.pythonhosted.org/packages/84/80/6de721d852e3d54c6ab3cdbe1060f338e8ad6eb8c2e996d81bf0183acd8f/reprompt-0.0.7.6.tar.gz
+[2024-04-20 01:55:24] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 01:55:24] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.6.tar.gz tmp/superdupper-0.0.7.tar.gz --markdown 20240420/s/superdupper/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 01:55:24] INFO root fetch - processPackages [reprompt]: executing diffoscope
+[2024-04-20 01:55:24] INFO root fetch - processPackages [reprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprompt-0.0.7.5.tar.gz tmp/reprompt-0.0.7.6.tar.gz --markdown 20240420/r/reprompt/0.0.7.5-0.0.7.6/README.md --exclude *.pyd
+[2024-04-20 01:55:24] INFO root fetch - processPackages [edxval]: Downloading https://files.pythonhosted.org/packages/d8/f3/8a5d9c1ea76c5405817438a8908de1ea8a7c7eb526b77dc8f01375a70e86/edxval-2.5.0.tar.gz
+[2024-04-20 01:55:24] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2024-04-20 01:55:24] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20240420/q/quantconnect-stubs/9997-9998/README.md --exclude *.pyd
+[2024-04-20 01:55:24] INFO root fetch - processPackages [edxval]: executing diffoscope
+[2024-04-20 01:55:24] INFO root fetch - processPackages [edxval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edxval-2.4.4.tar.gz tmp/edxval-2.5.0.tar.gz --markdown 20240420/e/edxval/2.4.4-2.5.0/README.md --exclude *.pyd
+[2024-04-20 01:55:24] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.6.tar.gz]
+[2024-04-20 01:55:24] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.7.tar.gz]
+[2024-04-20 01:55:24] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 01:55:24] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.7.5.tar.gz]
+[2024-04-20 01:55:24] INFO root fetch - processPackages [reprompt]: Remove: archive file [/home/abi/fetcher/tmp/reprompt-0.0.7.6.tar.gz]
+[2024-04-20 01:55:24] INFO root fetch - main [MainThread]: End processing [reprompt]: success
+[2024-04-20 01:55:25] INFO root fetch - processPackages [edxval]: Remove: archive file [/home/abi/fetcher/tmp/edxval-2.4.4.tar.gz]
+[2024-04-20 01:55:25] INFO root fetch - processPackages [edxval]: Remove: archive file [/home/abi/fetcher/tmp/edxval-2.5.0.tar.gz]
+[2024-04-20 01:55:25] INFO root fetch - main [MainThread]: End processing [edxval]: success
+[2024-04-20 01:55:25] INFO root fetch - processPackages [tomtoolkit]: Downloading https://files.pythonhosted.org/packages/b4/d6/06d7b659b2225273b399ed75420195b3c428a784f7b84284c6348f096284/tomtoolkit-2.9.2.tar.gz
+[2024-04-20 01:55:25] INFO root fetch - processPackages [tomtoolkit]: executing diffoscope
+[2024-04-20 01:55:25] INFO root fetch - processPackages [tomtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomtoolkit-2.9.1.tar.gz tmp/tomtoolkit-2.9.2.tar.gz --markdown 20240420/t/tomtoolkit/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-20 01:55:26] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9997.tar.gz]
+[2024-04-20 01:55:26] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9998.tar.gz]
+[2024-04-20 01:55:26] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2024-04-20 01:55:27] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.1.tar.gz]
+[2024-04-20 01:55:27] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.2.tar.gz]
+[2024-04-20 01:55:27] INFO root fetch - main [MainThread]: End processing [tomtoolkit]: success
+[2024-04-20 01:55:27] INFO root fetch - main [MainThread]: Store serial: [22849590]
