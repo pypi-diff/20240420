@@ -1218,3 +1218,33 @@
 [2024-04-20 01:20:08] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.9.tar.gz]
 [2024-04-20 01:20:08] INFO root fetch - main [MainThread]: End processing [aisploit]: success
 [2024-04-20 01:20:08] INFO root fetch - main [MainThread]: Store serial: [22849407]
+[2024-04-20 01:22:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849407]
+[2024-04-20 01:22:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 01:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weather-command
+[2024-04-20 01:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 01:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: increase
+[2024-04-20 01:22:16] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 01:22:16] INFO root fetch - processPackages [weather-command]: New version: [6.1.5] Old Version: [6.1.4]
+[2024-04-20 01:22:16] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 01:22:16] INFO root fetch - processPackages [weather-command]: Downloading https://files.pythonhosted.org/packages/5d/86/0a37b58694b1851cf4d01cac295e2bc7dc6c173c803f3eae5c12f388a29a/weather_command-6.1.4.tar.gz
+[2024-04-20 01:22:16] INFO root fetch - processPackages [increase]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-20 01:22:16] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 01:22:17] INFO root fetch - processPackages [increase]: Downloading https://files.pythonhosted.org/packages/38/04/23245208877a10fba93c724199da0ea129bcdee0336c4a86f3be0888834e/increase-0.8.1.tar.gz
+[2024-04-20 01:22:17] INFO root fetch - processPackages [weather-command]: Downloading https://files.pythonhosted.org/packages/da/4e/15d9e55e95896fd29e25e7f2b82fd188c9e55189bc23e56728b53b60f30b/weather_command-6.1.5.tar.gz
+[2024-04-20 01:22:17] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 01:22:17] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 01:22:17] INFO root fetch - processPackages [weather-command]: executing diffoscope
+[2024-04-20 01:22:17] INFO root fetch - processPackages [weather-command]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weather_command-6.1.4.tar.gz tmp/weather_command-6.1.5.tar.gz --markdown 20240420/w/weather-command/6.1.4-6.1.5/README.md --exclude *.pyd
+[2024-04-20 01:22:17] INFO root fetch - processPackages [increase]: Downloading https://files.pythonhosted.org/packages/35/1a/9728c759dc28ac734c6c3220f0abf89c385a19f2c0b2edab7e7707dd5fe5/increase-0.9.0.tar.gz
+[2024-04-20 01:22:17] INFO root fetch - processPackages [increase]: executing diffoscope
+[2024-04-20 01:22:17] INFO root fetch - processPackages [increase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/increase-0.8.1.tar.gz tmp/increase-0.9.0.tar.gz --markdown 20240420/i/increase/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-20 01:22:17] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 01:22:17] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 01:22:17] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 01:22:17] INFO root fetch - processPackages [weather-command]: Remove: archive file [/home/abi/fetcher/tmp/weather_command-6.1.4.tar.gz]
+[2024-04-20 01:22:17] INFO root fetch - processPackages [weather-command]: Remove: archive file [/home/abi/fetcher/tmp/weather_command-6.1.5.tar.gz]
+[2024-04-20 01:22:17] INFO root fetch - main [MainThread]: End processing [weather-command]: success
+[2024-04-20 01:22:18] INFO root fetch - processPackages [increase]: Remove: archive file [/home/abi/fetcher/tmp/increase-0.8.1.tar.gz]
+[2024-04-20 01:22:18] INFO root fetch - processPackages [increase]: Remove: archive file [/home/abi/fetcher/tmp/increase-0.9.0.tar.gz]
+[2024-04-20 01:22:18] INFO root fetch - main [MainThread]: End processing [increase]: success
+[2024-04-20 01:22:18] INFO root fetch - main [MainThread]: Store serial: [22849416]
