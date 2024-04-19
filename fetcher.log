@@ -1448,3 +1448,42 @@
 [2024-04-20 01:35:26] INFO root fetch - processPackages [nrtk-explorer]: Remove: archive file [/home/abi/fetcher/tmp/nrtk_explorer-0.1.0.tar.gz]
 [2024-04-20 01:35:26] INFO root fetch - main [MainThread]: End processing [nrtk-explorer]: success
 [2024-04-20 01:35:26] INFO root fetch - main [MainThread]: Store serial: [22849488]
+[2024-04-20 01:37:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849488]
+[2024-04-20 01:37:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 01:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: steelpy
+[2024-04-20 01:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-madvr2
+[2024-04-20 01:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pan-ztp-patcher
+[2024-04-20 01:37:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flatpack
+[2024-04-20 01:37:34] INFO root fetch - processPackages [pan-ztp-patcher]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 01:37:34] INFO root fetch - processPackages [py-madvr2]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-04-20 01:37:34] INFO root fetch - processPackages [flatpack]: New version: [3.3.4] Old Version: [3.3.3]
+[2024-04-20 01:37:34] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/15/d6/6f9db51fb8a15571914aac9012a6cf6524a900f5a8382fd7be12e4cd0ae3/pan_ztp_patcher-0.2.5.tar.gz
+[2024-04-20 01:37:34] INFO root fetch - processPackages [steelpy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-20 01:37:34] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/79/b0/bd1455cc0004dcb2919528e7ddfa31b11d24d90ef7346428e1c0d2ab5744/py_madvr2-1.5.6.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/1a/f6/61e371f13f28e5cdb64c25361604453e39b55f2bf465ab3eba527b8c4939/flatpack-3.3.3.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/0c/46/0a9b61815fc1fb96724db8c15309c1cd2c17f9e3ed542aa0760e7df972ef/steelpy-1.0.2.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/ca/91/af464a7ba2d6f29504128520b15b9bb7d800c64b900b99de104b1b11c56b/pan_ztp_patcher-0.2.6.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/87/09/78126662bf258b9060fef8605636cc685f8bb7ac769b09f13da7063be5b2/py_madvr2-1.5.7.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [pan-ztp-patcher]: executing diffoscope
+[2024-04-20 01:37:35] INFO root fetch - processPackages [pan-ztp-patcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pan_ztp_patcher-0.2.5.tar.gz tmp/pan_ztp_patcher-0.2.6.tar.gz --markdown 20240420/p/pan-ztp-patcher/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 01:37:35] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/aa/9f/3f0ee85e7bea71152f0a0ab4f67560756f9d18090ae3bd2e6e3d9abf3e05/flatpack-3.3.4.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [py-madvr2]: executing diffoscope
+[2024-04-20 01:37:35] INFO root fetch - processPackages [py-madvr2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr2-1.5.6.tar.gz tmp/py_madvr2-1.5.7.tar.gz --markdown 20240420/p/py-madvr2/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-04-20 01:37:35] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 01:37:35] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.3.tar.gz tmp/flatpack-3.3.4.tar.gz --markdown 20240420/f/flatpack/3.3.3-3.3.4/README.md --exclude *.pyd
+[2024-04-20 01:37:35] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/d6/ad/273350ee2615685c2dadd545cd63751cdde206b1da39f94c8c3d47bf127b/steelpy-1.0.3.tar.gz
+[2024-04-20 01:37:35] INFO root fetch - processPackages [steelpy]: executing diffoscope
+[2024-04-20 01:37:35] INFO root fetch - processPackages [steelpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelpy-1.0.2.tar.gz tmp/steelpy-1.0.3.tar.gz --markdown 20240420/s/steelpy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-20 01:37:36] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.5.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.6.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher]: success
+[2024-04-20 01:37:36] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.3.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.4.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 01:37:36] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.6.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.7.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - main [MainThread]: End processing [py-madvr2]: success
+[2024-04-20 01:37:36] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.2.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.3.tar.gz]
+[2024-04-20 01:37:36] INFO root fetch - main [MainThread]: End processing [steelpy]: success
+[2024-04-20 01:37:36] INFO root fetch - main [MainThread]: Store serial: [22849497]
