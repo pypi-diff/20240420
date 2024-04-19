@@ -1376,3 +1376,18 @@
 [2024-04-20 01:31:02] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.1.tar.gz]
 [2024-04-20 01:31:02] INFO root fetch - main [MainThread]: End processing [epyt]: success
 [2024-04-20 01:31:02] INFO root fetch - main [MainThread]: Store serial: [22849460]
+[2024-04-20 01:33:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849460]
+[2024-04-20 01:33:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 01:33:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pluto-rt
+[2024-04-20 01:33:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superdupper
+[2024-04-20 01:33:12] WARNING root fetch - processPackages [superdupper]: Skipping, unable to determine old version
+[2024-04-20 01:33:12] INFO root fetch - main [MainThread]: End processing [superdupper] error
+[2024-04-20 01:33:12] INFO root fetch - processPackages [pluto-rt]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-20 01:33:12] INFO root fetch - processPackages [pluto-rt]: Downloading https://files.pythonhosted.org/packages/74/81/e4dc793be0203cc3b4bb1d1b3e69373761dd12b912bec5de7bde3386b1cf/pluto_rt-0.7.0.tar.gz
+[2024-04-20 01:33:13] INFO root fetch - processPackages [pluto-rt]: Downloading https://files.pythonhosted.org/packages/0f/fb/d89be0ea1f223931a721ec33fc0ad17d50c287a068dd212d5d73dcc895d0/pluto_rt-0.7.1.tar.gz
+[2024-04-20 01:33:13] INFO root fetch - processPackages [pluto-rt]: executing diffoscope
+[2024-04-20 01:33:13] INFO root fetch - processPackages [pluto-rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluto_rt-0.7.0.tar.gz tmp/pluto_rt-0.7.1.tar.gz --markdown 20240420/p/pluto-rt/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-04-20 01:33:14] INFO root fetch - processPackages [pluto-rt]: Remove: archive file [/home/abi/fetcher/tmp/pluto_rt-0.7.0.tar.gz]
+[2024-04-20 01:33:14] INFO root fetch - processPackages [pluto-rt]: Remove: archive file [/home/abi/fetcher/tmp/pluto_rt-0.7.1.tar.gz]
+[2024-04-20 01:33:14] INFO root fetch - main [MainThread]: End processing [pluto-rt]: success
+[2024-04-20 01:33:14] INFO root fetch - main [MainThread]: Store serial: [22849469]
