@@ -1337,3 +1337,42 @@
 [2024-04-20 01:28:48] INFO root fetch - processPackages [pyiter]: Remove: archive file [/home/abi/fetcher/tmp/pyiter-0.8.7.tar.gz]
 [2024-04-20 01:28:48] INFO root fetch - main [MainThread]: End processing [pyiter]: success
 [2024-04-20 01:28:48] INFO root fetch - main [MainThread]: Store serial: [22849447]
+[2024-04-20 01:30:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849447]
+[2024-04-20 01:30:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 01:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edge-orm
+[2024-04-20 01:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nimo
+[2024-04-20 01:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgedb-orm
+[2024-04-20 01:30:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epyt
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edge-orm]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edgedb-orm]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 01:30:56] INFO root fetch - processPackages [nimo]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-20 01:30:56] INFO root fetch - processPackages [epyt]: New version: [1.1.1] Old Version: [1.0.9b8]
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/27/07/d94ed7eb9323fda890fba23188668ec354b61f0d61768ab9014a39fa5984/edge_orm-0.8.2.tar.gz
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edgedb-orm]: Downloading https://files.pythonhosted.org/packages/22/8c/151e55e715bf1eddb3f361685ea2d0c0a99c94f60dac158086cae619fb39/edgedb_orm-1.0.8.tar.gz
+[2024-04-20 01:30:56] INFO root fetch - processPackages [nimo]: Downloading https://files.pythonhosted.org/packages/65/91/e7722bd16b5073e3cd3ce8233df62946d5f98efaa65fc852b428ff7748ef/nimo-0.0.0-py3-none-any.whl
+[2024-04-20 01:30:56] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/b8/e1/e15704a3b7896836463fd44ad6beb88eaef1871df3ff6c439b2400432aba/epyt-1.0.9b8.tar.gz
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edgedb-orm]: Downloading https://files.pythonhosted.org/packages/ef/e6/28923949c7b56bf40a0d273ce28e74afd2443cd52d8ce522b86e4adb9d9b/edgedb_orm-1.0.9.tar.gz
+[2024-04-20 01:30:56] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/1f/b1/6172f38056cdb72c06ade747dde4be4d235da92b8975398929080ced1be6/edge_orm-0.8.3.tar.gz
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edgedb-orm]: executing diffoscope
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edgedb-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_orm-1.0.8.tar.gz tmp/edgedb_orm-1.0.9.tar.gz --markdown 20240420/e/edgedb-orm/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edge-orm]: executing diffoscope
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edge-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_orm-0.8.2.tar.gz tmp/edge_orm-0.8.3.tar.gz --markdown 20240420/e/edge-orm/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-20 01:30:57] INFO root fetch - processPackages [nimo]: Downloading https://files.pythonhosted.org/packages/ff/6b/9efd8a71a1ba53ca98fc01aaa1accd77a598693837f90507616000fb0780/nimo-0.0.1-py3-none-any.whl
+[2024-04-20 01:30:57] INFO root fetch - processPackages [nimo]: executing diffoscope
+[2024-04-20 01:30:57] INFO root fetch - processPackages [nimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimo-0.0.0-py3-none-any.whl.zip tmp/nimo-0.0.1-py3-none-any.whl.zip --markdown 20240420/n/nimo/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-20 01:30:57] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/c2/d8/41ed4d8645c5e075420289dfca187f5d2ef4841a03c96817ecbbbf1e8712/epyt-1.1.1.tar.gz
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.2.tar.gz]
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.3.tar.gz]
+[2024-04-20 01:30:57] INFO root fetch - main [MainThread]: End processing [edge-orm]: success
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edgedb-orm]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_orm-1.0.8.tar.gz]
+[2024-04-20 01:30:57] INFO root fetch - processPackages [edgedb-orm]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_orm-1.0.9.tar.gz]
+[2024-04-20 01:30:57] INFO root fetch - main [MainThread]: End processing [edgedb-orm]: success
+[2024-04-20 01:30:57] INFO root fetch - processPackages [nimo]: Remove: archive file [/home/abi/fetcher/tmp/nimo-0.0.0-py3-none-any.whl.zip]
+[2024-04-20 01:30:57] INFO root fetch - processPackages [nimo]: Remove: archive file [/home/abi/fetcher/tmp/nimo-0.0.1-py3-none-any.whl.zip]
+[2024-04-20 01:30:57] INFO root fetch - main [MainThread]: End processing [nimo]: success
+[2024-04-20 01:30:58] INFO root fetch - processPackages [epyt]: executing diffoscope
+[2024-04-20 01:30:58] INFO root fetch - processPackages [epyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt-1.0.9b8.tar.gz tmp/epyt-1.1.1.tar.gz --markdown 20240420/e/epyt/1.0.9b8-1.1.1/README.md --exclude *.pyd
+[2024-04-20 01:31:02] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.0.9b8.tar.gz]
+[2024-04-20 01:31:02] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.1.tar.gz]
+[2024-04-20 01:31:02] INFO root fetch - main [MainThread]: End processing [epyt]: success
+[2024-04-20 01:31:02] INFO root fetch - main [MainThread]: Store serial: [22849460]
