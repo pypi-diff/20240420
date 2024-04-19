@@ -194,3 +194,24 @@
 [2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev95.tar.gz]
 [2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
 [2024-04-20 00:08:55] INFO root fetch - main [MainThread]: Store serial: [22848899]
+[2024-04-20 00:10:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848899]
+[2024-04-20 00:11:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wdl-lsp
+[2024-04-20 00:11:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyanglianwater
+[2024-04-20 00:11:04] INFO root fetch - processPackages [pyanglianwater]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-04-20 00:11:04] INFO root fetch - processPackages [wdl-lsp]: New version: [0.0.82] Old Version: [0.0.77]
+[2024-04-20 00:11:04] INFO root fetch - processPackages [pyanglianwater]: Downloading https://files.pythonhosted.org/packages/61/cc/6687d8ae52b4c7411dff9c885ce4c784ada08c138e4306bc822a8fe35532/pyanglianwater-0.1.1.tar.gz
+[2024-04-20 00:11:04] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/09/bd/4ffd3b9c665a68f42d1412905a0f25157e78ebc7e157b637850d458bd715/wdl-lsp-0.0.77.tar.gz
+[2024-04-20 00:11:04] INFO root fetch - processPackages [pyanglianwater]: Downloading https://files.pythonhosted.org/packages/83/de/703df8eb96642cca4d42cdca42419a3702c3e4e94b737228a29bbbadd322/pyanglianwater-0.2.0.tar.gz
+[2024-04-20 00:11:04] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/8b/68/68710c6b9946c459eda1528558fe300e1defd785be972444c88cbfc246b4/wdl_lsp-0.0.82-py3-none-any.whl
+[2024-04-20 00:11:04] INFO root fetch - processPackages [pyanglianwater]: executing diffoscope
+[2024-04-20 00:11:04] INFO root fetch - processPackages [pyanglianwater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanglianwater-0.1.1.tar.gz tmp/pyanglianwater-0.2.0.tar.gz --markdown 20240420/p/pyanglianwater/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-04-20 00:11:04] INFO root fetch - processPackages [wdl-lsp]: executing diffoscope
+[2024-04-20 00:11:04] INFO root fetch - processPackages [wdl-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdl-lsp-0.0.77.tar.gz tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip --markdown 20240420/w/wdl-lsp/0.0.77-0.0.82/README.md --exclude *.pyd
+[2024-04-20 00:11:05] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl-lsp-0.0.77.tar.gz]
+[2024-04-20 00:11:05] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip]
+[2024-04-20 00:11:05] INFO root fetch - main [MainThread]: End processing [wdl-lsp]: success
+[2024-04-20 00:11:05] INFO root fetch - processPackages [pyanglianwater]: Remove: archive file [/home/abi/fetcher/tmp/pyanglianwater-0.1.1.tar.gz]
+[2024-04-20 00:11:05] INFO root fetch - processPackages [pyanglianwater]: Remove: archive file [/home/abi/fetcher/tmp/pyanglianwater-0.2.0.tar.gz]
+[2024-04-20 00:11:05] INFO root fetch - main [MainThread]: End processing [pyanglianwater]: success
+[2024-04-20 00:11:05] INFO root fetch - main [MainThread]: Store serial: [22848904]
