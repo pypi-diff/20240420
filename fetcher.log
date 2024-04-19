@@ -789,3 +789,18 @@
 [2024-04-20 00:47:03] INFO root fetch - processPackages [sphinx-intl]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_intl-2.2.0.tar.gz]
 [2024-04-20 00:47:03] INFO root fetch - main [MainThread]: End processing [sphinx-intl]: success
 [2024-04-20 00:47:03] INFO root fetch - main [MainThread]: Store serial: [22849231]
+[2024-04-20 00:49:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849231]
+[2024-04-20 00:49:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: biotech
+[2024-04-20 00:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorsequence
+[2024-04-20 00:49:12] INFO root fetch - processPackages [biotech]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-20 00:49:12] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/2b/b2/152e04e0c84f90d6a873cd3a1dcc3d0ae3d34c60f9f2bcdbe073b6a8c7d1/biotech-1.1.0.tar.gz
+[2024-04-20 00:49:12] WARNING root fetch - processPackages [tensorsequence]: Skipping, unable to determine old version
+[2024-04-20 00:49:12] INFO root fetch - main [MainThread]: End processing [tensorsequence] error
+[2024-04-20 00:49:12] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/b4/7d/777cd53a57e32ad4ebe3cc7a4008a3b971271208f6afaa06e4c520b6b40e/biotech-1.1.1.tar.gz
+[2024-04-20 00:49:12] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-20 00:49:12] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.0.tar.gz tmp/biotech-1.1.1.tar.gz --markdown 20240420/b/biotech/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-20 00:49:19] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.0.tar.gz]
+[2024-04-20 00:49:19] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.1.tar.gz]
+[2024-04-20 00:49:19] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-20 00:49:19] INFO root fetch - main [MainThread]: Store serial: [22849236]
