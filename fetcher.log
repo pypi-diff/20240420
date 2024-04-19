@@ -999,3 +999,18 @@
 [2024-04-20 01:06:43] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.0.9b8.tar.gz]
 [2024-04-20 01:06:43] INFO root fetch - main [MainThread]: End processing [epyt]: success
 [2024-04-20 01:06:43] INFO root fetch - main [MainThread]: Store serial: [22849316]
+[2024-04-20 01:08:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849316]
+[2024-04-20 01:08:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 01:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorsequence
+[2024-04-20 01:08:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rent-counter
+[2024-04-20 01:08:54] INFO root fetch - processPackages [rent-counter]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-20 01:08:54] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/13/7d/3f3d6c9770b66c9a9bd09445de104f47cffcb77a3dc72b55c20df55929cc/rent_counter-0.3.0.tar.gz
+[2024-04-20 01:08:54] WARNING root fetch - processPackages [tensorsequence]: Skipping, unable to determine old version
+[2024-04-20 01:08:54] INFO root fetch - main [MainThread]: End processing [tensorsequence] error
+[2024-04-20 01:08:54] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/26/f3/77d39fd90840d0515ffbe873229509d1c7f83646eb84afe036b396d9d74b/rent_counter-0.4.0.tar.gz
+[2024-04-20 01:08:54] INFO root fetch - processPackages [rent-counter]: executing diffoscope
+[2024-04-20 01:08:54] INFO root fetch - processPackages [rent-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rent_counter-0.3.0.tar.gz tmp/rent_counter-0.4.0.tar.gz --markdown 20240420/r/rent-counter/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-20 01:08:55] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.3.0.tar.gz]
+[2024-04-20 01:08:55] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.4.0.tar.gz]
+[2024-04-20 01:08:55] INFO root fetch - main [MainThread]: End processing [rent-counter]: success
+[2024-04-20 01:08:55] INFO root fetch - main [MainThread]: Store serial: [22849322]
