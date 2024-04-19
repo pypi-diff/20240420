@@ -1788,3 +1788,33 @@
 [2024-04-20 01:55:27] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.2.tar.gz]
 [2024-04-20 01:55:27] INFO root fetch - main [MainThread]: End processing [tomtoolkit]: success
 [2024-04-20 01:55:27] INFO root fetch - main [MainThread]: Store serial: [22849590]
+[2024-04-20 01:57:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849590]
+[2024-04-20 01:57:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydiverse-transform
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ChainConsumer
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: numpyneuron
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ChainConsumer]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ChainConsumer]: Downloading https://files.pythonhosted.org/packages/d9/a9/7e83707c0077506459ec9fc6341aa83c5329359f19bbf3639479f4a45893/chainconsumer-1.0.3.tar.gz
+[2024-04-20 01:57:36] INFO root fetch - processPackages [pydiverse-transform]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 01:57:36] INFO root fetch - processPackages [numpyneuron]: New version: [0.4] Old Version: [0.3]
+[2024-04-20 01:57:36] INFO root fetch - processPackages [pydiverse-transform]: Downloading https://files.pythonhosted.org/packages/be/a0/557ee195b6c1fcf553edab9d6deb065ac8a7da91dd1309cd8c84ac99f314/pydiverse_transform-0.1.3.tar.gz
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ChainConsumer]: Downloading https://files.pythonhosted.org/packages/02/79/8532934ce9b8927683fbb00d6e4e9d7d35ba6a763b6ec5f82f7fe62bb11c/chainconsumer-1.1.0.tar.gz
+[2024-04-20 01:57:36] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/ea/f2/05e5a76d05e78a528de007b0dd2ad4fb8305530d8271f13995b49c130b34/numpyneuron-0.3.tar.gz
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ChainConsumer]: executing diffoscope
+[2024-04-20 01:57:36] INFO root fetch - processPackages [ChainConsumer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainconsumer-1.0.3.tar.gz tmp/chainconsumer-1.1.0.tar.gz --markdown 20240420/C/ChainConsumer/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-20 01:57:36] INFO root fetch - processPackages [pydiverse-transform]: Downloading https://files.pythonhosted.org/packages/cd/77/b3f89966229e69f0853f62344f5e44c818eb64c0522c52b8027159f4dd0f/pydiverse_transform-0.1.4.tar.gz
+[2024-04-20 01:57:36] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/18/f6/a3a2a31ed600ae4afaf67996506aa45c9875ef6bc4a8cc2f21c2f398b51c/numpyneuron-0.4.tar.gz
+[2024-04-20 01:57:37] INFO root fetch - processPackages [pydiverse-transform]: executing diffoscope
+[2024-04-20 01:57:37] INFO root fetch - processPackages [pydiverse-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydiverse_transform-0.1.3.tar.gz tmp/pydiverse_transform-0.1.4.tar.gz --markdown 20240420/p/pydiverse-transform/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 01:57:37] INFO root fetch - processPackages [numpyneuron]: executing diffoscope
+[2024-04-20 01:57:37] INFO root fetch - processPackages [numpyneuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpyneuron-0.3.tar.gz tmp/numpyneuron-0.4.tar.gz --markdown 20240420/n/numpyneuron/0.3-0.4/README.md --exclude *.pyd
+[2024-04-20 01:57:37] INFO root fetch - processPackages [ChainConsumer]: Remove: archive file [/home/abi/fetcher/tmp/chainconsumer-1.0.3.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - processPackages [ChainConsumer]: Remove: archive file [/home/abi/fetcher/tmp/chainconsumer-1.1.0.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - main [MainThread]: End processing [ChainConsumer]: success
+[2024-04-20 01:57:37] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.3.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.4.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - main [MainThread]: End processing [numpyneuron]: success
+[2024-04-20 01:57:37] INFO root fetch - processPackages [pydiverse-transform]: Remove: archive file [/home/abi/fetcher/tmp/pydiverse_transform-0.1.3.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - processPackages [pydiverse-transform]: Remove: archive file [/home/abi/fetcher/tmp/pydiverse_transform-0.1.4.tar.gz]
+[2024-04-20 01:57:37] INFO root fetch - main [MainThread]: End processing [pydiverse-transform]: success
+[2024-04-20 01:57:37] INFO root fetch - main [MainThread]: Store serial: [22849603]
