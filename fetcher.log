@@ -1074,3 +1074,69 @@
 [2024-04-20 01:11:21] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-04-20 01:11:21] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-04-20 01:11:21] INFO root fetch - main [MainThread]: Store serial: [22849344]
+[2024-04-20 01:13:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849344]
+[2024-04-20 01:13:30] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datalad
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biotech
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-wsdb
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pan-ztp-patcher
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: octomy-common
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: superdupper
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytest-clerk
+[2024-04-20 01:13:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: edge-orm
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.18a1713567544] Old Version: [0.0.18a1713552740]
+[2024-04-20 01:13:30] WARNING root fetch - processPackages [pytest-clerk]: Skipping, unable to determine old version
+[2024-04-20 01:13:30] INFO root fetch - main [MainThread]: End processing [pytest-clerk] error
+[2024-04-20 01:13:30] WARNING root fetch - processPackages [superdupper]: Skipping, unable to determine old version
+[2024-04-20 01:13:30] INFO root fetch - main [MainThread]: End processing [superdupper] error
+[2024-04-20 01:13:30] INFO root fetch - processPackages [biotech]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-20 01:13:30] WARNING root fetch - processPackages [python-wsdb]: Skipping, unable to determine old version
+[2024-04-20 01:13:30] INFO root fetch - main [MainThread]: End processing [python-wsdb] error
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/5f/f4/2ebf69043cd523b800da846ab16e4220a162110addeb2ad0b90cef330947/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/b4/7d/777cd53a57e32ad4ebe3cc7a4008a3b971271208f6afaa06e4c520b6b40e/biotech-1.1.1.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pan-ztp-patcher]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 01:13:30] INFO root fetch - processPackages [datalad]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 01:13:30] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 01:13:30] INFO root fetch - processPackages [edge-orm]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/15/d6/6f9db51fb8a15571914aac9012a6cf6524a900f5a8382fd7be12e4cd0ae3/pan_ztp_patcher-0.2.5.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [datalad]: Downloading https://files.pythonhosted.org/packages/9d/34/43641154f4086995c62928f36b7142c733618682e34fb6cb74a79aeafc7b/datalad-1.0.1.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/27/07/d94ed7eb9323fda890fba23188668ec354b61f0d61768ab9014a39fa5984/edge_orm-0.8.2.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/a0/cd/c5ca94ad76a1c6d00be9baf0fd036e977daa37c93308e375194a9376ef2e/pulumi_kubernetes_the_hard_way-0.0.18a1713567544.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567544.tar.gz --markdown 20240420/p/pulumi-kubernetes-the-hard-way/0.0.18a1713552740-0.0.18a1713567544/README.md --exclude *.pyd
+[2024-04-20 01:13:30] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/57/0f/36da1717f7f1f28107ab528ed6966b30e0e2cdb5b269fc68e3901eb8ae58/biotech-1.1.2.tar.gz
+[2024-04-20 01:13:30] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/ca/91/af464a7ba2d6f29504128520b15b9bb7d800c64b900b99de104b1b11c56b/pan_ztp_patcher-0.2.6.tar.gz
+[2024-04-20 01:13:31] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-20 01:13:31] INFO root fetch - processPackages [datalad]: Downloading https://files.pythonhosted.org/packages/51/96/a8f9c2a63a296de66a999a40eb5dcd013fbd74327a7588c2d48d1f335ed9/datalad-1.0.2.tar.gz
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pan-ztp-patcher]: executing diffoscope
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pan-ztp-patcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pan_ztp_patcher-0.2.5.tar.gz tmp/pan_ztp_patcher-0.2.6.tar.gz --markdown 20240420/p/pan-ztp-patcher/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 01:13:31] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-20 01:13:31] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.1.tar.gz tmp/biotech-1.1.2.tar.gz --markdown 20240420/b/biotech/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-20 01:13:31] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/1f/b1/6172f38056cdb72c06ade747dde4be4d235da92b8975398929080ced1be6/edge_orm-0.8.3.tar.gz
+[2024-04-20 01:13:31] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-20 01:13:31] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240420/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 01:13:31] INFO root fetch - processPackages [edge-orm]: executing diffoscope
+[2024-04-20 01:13:31] INFO root fetch - processPackages [edge-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_orm-0.8.2.tar.gz tmp/edge_orm-0.8.3.tar.gz --markdown 20240420/e/edge-orm/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-20 01:13:31] INFO root fetch - processPackages [datalad]: executing diffoscope
+[2024-04-20 01:13:31] INFO root fetch - processPackages [datalad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalad-1.0.1.tar.gz tmp/datalad-1.0.2.tar.gz --markdown 20240420/d/datalad/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.5.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.6.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher]: success
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713552740.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.18a1713567544.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-20 01:13:31] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.2.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.3.tar.gz]
+[2024-04-20 01:13:31] INFO root fetch - main [MainThread]: End processing [edge-orm]: success
+[2024-04-20 01:13:32] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-20 01:13:32] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-20 01:13:32] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-20 01:13:33] INFO root fetch - processPackages [datalad]: Remove: archive file [/home/abi/fetcher/tmp/datalad-1.0.1.tar.gz]
+[2024-04-20 01:13:33] INFO root fetch - processPackages [datalad]: Remove: archive file [/home/abi/fetcher/tmp/datalad-1.0.2.tar.gz]
+[2024-04-20 01:13:33] INFO root fetch - main [MainThread]: End processing [datalad]: success
+[2024-04-20 01:13:37] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.1.tar.gz]
+[2024-04-20 01:13:37] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.2.tar.gz]
+[2024-04-20 01:13:37] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-20 01:13:37] INFO root fetch - main [MainThread]: Store serial: [22849373]
