@@ -221,3 +221,15 @@
 [2024-04-20 00:13:13] WARNING root fetch - processPackages [diffforms]: Skipping, unable to determine old version
 [2024-04-20 00:13:13] INFO root fetch - main [MainThread]: End processing [diffforms] error
 [2024-04-20 00:13:13] INFO root fetch - main [MainThread]: Store serial: [22848908]
+[2024-04-20 00:15:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848908]
+[2024-04-20 00:15:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 00:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qbraid-qir
+[2024-04-20 00:15:22] INFO root fetch - processPackages [qbraid-qir]: New version: [0.2.0.dev20240419221437] Old Version: [0.2.0.dev20240404040722]
+[2024-04-20 00:15:22] INFO root fetch - processPackages [qbraid-qir]: Downloading https://files.pythonhosted.org/packages/d9/af/d6051eb8abcb39128000122100200e7c0077a243448a01f3625bf643114b/qbraid-qir-0.2.0.dev20240404040722.tar.gz
+[2024-04-20 00:15:22] INFO root fetch - processPackages [qbraid-qir]: Downloading https://files.pythonhosted.org/packages/ec/da/f7dd9c6aa618d968f7f13371c0596abaaa13e920d00b48b5a8004d4482de/qbraid_qir-0.2.0.dev20240419221437.tar.gz
+[2024-04-20 00:15:23] INFO root fetch - processPackages [qbraid-qir]: executing diffoscope
+[2024-04-20 00:15:23] INFO root fetch - processPackages [qbraid-qir]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbraid-qir-0.2.0.dev20240404040722.tar.gz tmp/qbraid_qir-0.2.0.dev20240419221437.tar.gz --markdown 20240420/q/qbraid-qir/0.2.0.dev20240404040722-0.2.0.dev20240419221437/README.md --exclude *.pyd
+[2024-04-20 00:15:23] INFO root fetch - processPackages [qbraid-qir]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-qir-0.2.0.dev20240404040722.tar.gz]
+[2024-04-20 00:15:23] INFO root fetch - processPackages [qbraid-qir]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_qir-0.2.0.dev20240419221437.tar.gz]
+[2024-04-20 00:15:23] INFO root fetch - main [MainThread]: End processing [qbraid-qir]: success
+[2024-04-20 00:15:23] INFO root fetch - main [MainThread]: Store serial: [22848911]
