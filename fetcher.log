@@ -1517,3 +1517,24 @@
 [2024-04-20 01:39:46] INFO root fetch - processPackages [waf-libs]: Remove: archive file [/home/abi/fetcher/tmp/waf-libs-2024.4.2.tar.gz]
 [2024-04-20 01:39:46] INFO root fetch - main [MainThread]: End processing [waf-libs]: success
 [2024-04-20 01:39:46] INFO root fetch - main [MainThread]: Store serial: [22849505]
+[2024-04-20 01:41:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849505]
+[2024-04-20 01:41:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 01:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superdupper
+[2024-04-20 01:41:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: femtocrux
+[2024-04-20 01:41:56] INFO root fetch - processPackages [superdupper]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 01:41:56] INFO root fetch - processPackages [femtocrux]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-20 01:41:56] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/c7/9e/d9803a81d1ea53587861244ee907feccd023cbaadcf540fbe5dfdfc2f0b7/superdupper-0.0.3.tar.gz
+[2024-04-20 01:41:56] INFO root fetch - processPackages [femtocrux]: Downloading https://files.pythonhosted.org/packages/1a/3c/43fa093fc2dfb06f6e555f15fcc30466a1b6789046eebc25499046428236/femtocrux-0.4.1-py3-none-any.whl
+[2024-04-20 01:41:56] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/5f/49/b2b1d4343f38ed392a28fb50b43daeb4f4acf6055fe64cd56e22d7fe47d6/superdupper-0.0.4.tar.gz
+[2024-04-20 01:41:57] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 01:41:57] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.3.tar.gz tmp/superdupper-0.0.4.tar.gz --markdown 20240420/s/superdupper/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: Downloading https://files.pythonhosted.org/packages/06/c1/50d2ead8ac94f13cd3978a314276e843799879d00792972589b9ebfe521b/femtocrux-0.5.0-py3-none-any.whl
+[2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: executing diffoscope
+[2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/femtocrux-0.4.1-py3-none-any.whl.zip tmp/femtocrux-0.5.0-py3-none-any.whl.zip --markdown 20240420/f/femtocrux/0.4.1-0.5.0/README.md --exclude *.pyd
+[2024-04-20 01:41:57] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.3.tar.gz]
+[2024-04-20 01:41:57] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.4.tar.gz]
+[2024-04-20 01:41:57] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: Remove: archive file [/home/abi/fetcher/tmp/femtocrux-0.4.1-py3-none-any.whl.zip]
+[2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: Remove: archive file [/home/abi/fetcher/tmp/femtocrux-0.5.0-py3-none-any.whl.zip]
+[2024-04-20 01:41:57] INFO root fetch - main [MainThread]: End processing [femtocrux]: success
+[2024-04-20 01:41:57] INFO root fetch - main [MainThread]: Store serial: [22849513]
