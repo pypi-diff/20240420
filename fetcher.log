@@ -768,3 +768,24 @@
 [2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.3.4.tar.gz]
 [2024-04-20 00:44:53] INFO root fetch - main [MainThread]: End processing [referrers]: success
 [2024-04-20 00:44:53] INFO root fetch - main [MainThread]: Store serial: [22849226]
+[2024-04-20 00:46:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849226]
+[2024-04-20 00:47:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx-intl
+[2024-04-20 00:47:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-connectivity-viewer
+[2024-04-20 00:47:02] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-20 00:47:02] INFO root fetch - processPackages [sphinx-intl]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-20 00:47:02] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/66/fd/ae1640665513bb9f75340d7afadca1eb10da39ba2c32dfe5cdf6a18a640d/dash_connectivity_viewer-2.2.0.tar.gz
+[2024-04-20 00:47:02] INFO root fetch - processPackages [sphinx-intl]: Downloading https://files.pythonhosted.org/packages/3f/49/9229216d3fdce197912e4756e044f3d3fbac73326ef8a49af186d7c2832b/sphinx-intl-2.1.0.tar.gz
+[2024-04-20 00:47:02] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/b3/03/a5048c11bd44185f044a152a90d4d24c4951449ada07047db37b6a916a11/dash_connectivity_viewer-2.2.1.tar.gz
+[2024-04-20 00:47:02] INFO root fetch - processPackages [sphinx-intl]: Downloading https://files.pythonhosted.org/packages/b4/34/bc0d2332bccc23edffba4cc244a9dd84f86bd13a1fe1ce59cd027a58fdd9/sphinx_intl-2.2.0.tar.gz
+[2024-04-20 00:47:02] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2024-04-20 00:47:02] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_connectivity_viewer-2.2.0.tar.gz tmp/dash_connectivity_viewer-2.2.1.tar.gz --markdown 20240420/d/dash-connectivity-viewer/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-20 00:47:02] INFO root fetch - processPackages [sphinx-intl]: executing diffoscope
+[2024-04-20 00:47:02] INFO root fetch - processPackages [sphinx-intl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-intl-2.1.0.tar.gz tmp/sphinx_intl-2.2.0.tar.gz --markdown 20240420/s/sphinx-intl/2.1.0-2.2.0/README.md --exclude *.pyd
+[2024-04-20 00:47:03] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.0.tar.gz]
+[2024-04-20 00:47:03] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.1.tar.gz]
+[2024-04-20 00:47:03] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2024-04-20 00:47:03] INFO root fetch - processPackages [sphinx-intl]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-intl-2.1.0.tar.gz]
+[2024-04-20 00:47:03] INFO root fetch - processPackages [sphinx-intl]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_intl-2.2.0.tar.gz]
+[2024-04-20 00:47:03] INFO root fetch - main [MainThread]: End processing [sphinx-intl]: success
+[2024-04-20 00:47:03] INFO root fetch - main [MainThread]: Store serial: [22849231]
