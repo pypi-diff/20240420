@@ -1391,3 +1391,60 @@
 [2024-04-20 01:33:14] INFO root fetch - processPackages [pluto-rt]: Remove: archive file [/home/abi/fetcher/tmp/pluto_rt-0.7.1.tar.gz]
 [2024-04-20 01:33:14] INFO root fetch - main [MainThread]: End processing [pluto-rt]: success
 [2024-04-20 01:33:14] INFO root fetch - main [MainThread]: Store serial: [22849469]
+[2024-04-20 01:35:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849469]
+[2024-04-20 01:35:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edge-orm
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wdl-lsp
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nrtk-explorer
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: searcharray
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rent-counter
+[2024-04-20 01:35:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flatpack
+[2024-04-20 01:35:23] INFO root fetch - processPackages [wdl-lsp]: New version: [0.0.85] Old Version: [0.0.84]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [edge-orm]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [rent-counter]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [nrtk-explorer]: New version: [0.1.0] Old Version: [0.0.6]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [searcharray]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [flatpack]: New version: [3.3.3] Old Version: [3.3.2]
+[2024-04-20 01:35:23] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/50/ef/c9f9c2a4fc6416e583298e1b0e775917f21db0784f213a57c20b21032ce5/wdl-lsp-0.0.84.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/27/07/d94ed7eb9323fda890fba23188668ec354b61f0d61768ab9014a39fa5984/edge_orm-0.8.2.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [nrtk-explorer]: Downloading https://files.pythonhosted.org/packages/b2/f1/c50c3c8888a813d680e4007edd710aafda073309b7d2cad40d41499667bd/nrtk_explorer-0.0.6.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/13/d2/42d0e0a5f78c59eb2f5d56c1dbde5dcbee81b46d8390cedf9988344b3e45/searcharray-0.0.8.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/e2/24/2637670ec0efc85f72174f79053c725d1e03b488b3b6cfaf7e3449653149/rent_counter-0.5.0.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d7/49/38da97d770571bb0246203e3e484f1d59e332618b0802944111fc13f5858/flatpack-3.3.2.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [edge-orm]: Downloading https://files.pythonhosted.org/packages/1f/b1/6172f38056cdb72c06ade747dde4be4d235da92b8975398929080ced1be6/edge_orm-0.8.3.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [searcharray]: Downloading https://files.pythonhosted.org/packages/2b/85/78c9e4e0be0965b7456ca73905cad36da7857d89af8ff16b2844e6628cee/searcharray-0.0.9.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/c6/df/de2407b422662ec3fd5cd9c2b4294807eaf1cb14f56910b13477b0c915fe/wdl-lsp-0.0.85.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [edge-orm]: executing diffoscope
+[2024-04-20 01:35:23] INFO root fetch - processPackages [edge-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edge_orm-0.8.2.tar.gz tmp/edge_orm-0.8.3.tar.gz --markdown 20240420/e/edge-orm/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-04-20 01:35:23] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/3e/e7/a8da4a9ecc56dc86f0c1d85a259865c757a60247da7f5bc30cd7ca61a2c8/rent_counter-0.6.0.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [searcharray]: executing diffoscope
+[2024-04-20 01:35:23] INFO root fetch - processPackages [searcharray]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/searcharray-0.0.8.tar.gz tmp/searcharray-0.0.9.tar.gz --markdown 20240420/s/searcharray/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 01:35:23] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/1a/f6/61e371f13f28e5cdb64c25361604453e39b55f2bf465ab3eba527b8c4939/flatpack-3.3.3.tar.gz
+[2024-04-20 01:35:23] INFO root fetch - processPackages [wdl-lsp]: executing diffoscope
+[2024-04-20 01:35:23] INFO root fetch - processPackages [wdl-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdl-lsp-0.0.84.tar.gz tmp/wdl-lsp-0.0.85.tar.gz --markdown 20240420/w/wdl-lsp/0.0.84-0.0.85/README.md --exclude *.pyd
+[2024-04-20 01:35:23] INFO root fetch - processPackages [rent-counter]: executing diffoscope
+[2024-04-20 01:35:23] INFO root fetch - processPackages [rent-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rent_counter-0.5.0.tar.gz tmp/rent_counter-0.6.0.tar.gz --markdown 20240420/r/rent-counter/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-20 01:35:24] INFO root fetch - processPackages [nrtk-explorer]: Downloading https://files.pythonhosted.org/packages/b2/86/813b0107e337330efd91cacfe3f31471dd6e68a2c6448723fcc1a5de184a/nrtk_explorer-0.1.0.tar.gz
+[2024-04-20 01:35:24] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 01:35:24] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.2.tar.gz tmp/flatpack-3.3.3.tar.gz --markdown 20240420/f/flatpack/3.3.2-3.3.3/README.md --exclude *.pyd
+[2024-04-20 01:35:24] INFO root fetch - processPackages [nrtk-explorer]: executing diffoscope
+[2024-04-20 01:35:24] INFO root fetch - processPackages [nrtk-explorer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nrtk_explorer-0.0.6.tar.gz tmp/nrtk_explorer-0.1.0.tar.gz --markdown 20240420/n/nrtk-explorer/0.0.6-0.1.0/README.md --exclude *.pyd
+[2024-04-20 01:35:24] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.2.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - processPackages [edge-orm]: Remove: archive file [/home/abi/fetcher/tmp/edge_orm-0.8.3.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - main [MainThread]: End processing [edge-orm]: success
+[2024-04-20 01:35:24] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.8.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - processPackages [searcharray]: Remove: archive file [/home/abi/fetcher/tmp/searcharray-0.0.9.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - main [MainThread]: End processing [searcharray]: success
+[2024-04-20 01:35:24] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.2.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.3.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 01:35:24] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl-lsp-0.0.84.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl-lsp-0.0.85.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - main [MainThread]: End processing [wdl-lsp]: success
+[2024-04-20 01:35:24] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.5.0.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.6.0.tar.gz]
+[2024-04-20 01:35:24] INFO root fetch - main [MainThread]: End processing [rent-counter]: success
+[2024-04-20 01:35:26] INFO root fetch - processPackages [nrtk-explorer]: Remove: archive file [/home/abi/fetcher/tmp/nrtk_explorer-0.0.6.tar.gz]
+[2024-04-20 01:35:26] INFO root fetch - processPackages [nrtk-explorer]: Remove: archive file [/home/abi/fetcher/tmp/nrtk_explorer-0.1.0.tar.gz]
+[2024-04-20 01:35:26] INFO root fetch - main [MainThread]: End processing [nrtk-explorer]: success
+[2024-04-20 01:35:26] INFO root fetch - main [MainThread]: Store serial: [22849488]
