@@ -1206,3 +1206,15 @@
 [2024-04-20 01:17:58] INFO root fetch - processPackages [raster-tools]: Remove: archive file [/home/abi/fetcher/tmp/raster_tools-0.8.1.tar.gz]
 [2024-04-20 01:17:58] INFO root fetch - main [MainThread]: End processing [raster-tools]: success
 [2024-04-20 01:17:58] INFO root fetch - main [MainThread]: Store serial: [22849403]
+[2024-04-20 01:20:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849403]
+[2024-04-20 01:20:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 01:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aisploit
+[2024-04-20 01:20:07] INFO root fetch - processPackages [aisploit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 01:20:07] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-20 01:20:07] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/79/1a/32067b96fbd51e172e74fa8134d42b6721bd699ae2c9f8e5927b09de2401/aisploit-0.0.9.tar.gz
+[2024-04-20 01:20:07] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-20 01:20:07] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.8.tar.gz tmp/aisploit-0.0.9.tar.gz --markdown 20240420/a/aisploit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 01:20:08] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-20 01:20:08] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.9.tar.gz]
+[2024-04-20 01:20:08] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-20 01:20:08] INFO root fetch - main [MainThread]: Store serial: [22849407]
