@@ -233,3 +233,60 @@
 [2024-04-20 00:15:23] INFO root fetch - processPackages [qbraid-qir]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_qir-0.2.0.dev20240419221437.tar.gz]
 [2024-04-20 00:15:23] INFO root fetch - main [MainThread]: End processing [qbraid-qir]: success
 [2024-04-20 00:15:23] INFO root fetch - main [MainThread]: Store serial: [22848911]
+[2024-04-20 00:17:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848911]
+[2024-04-20 00:17:32] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: npiai-proto
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grpcio
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mat3ra-regex
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: featransform
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cf2tf
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: caltechdata-api
+[2024-04-20 00:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: latch-gcp
+[2024-04-20 00:17:32] WARNING root fetch - processPackages [latch-gcp]: Skipping, unable to determine old version
+[2024-04-20 00:17:32] INFO root fetch - main [MainThread]: End processing [latch-gcp] error
+[2024-04-20 00:17:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 00:17:32] INFO root fetch - processPackages [cf2tf]: New version: [0.7.0a0] Old Version: [0.7.0]
+[2024-04-20 00:17:32] INFO root fetch - processPackages [grpcio]: New version: [1.9.1] Old Version: [1.9.0rc3]
+[2024-04-20 00:17:32] WARNING root fetch - processPackages [npiai-proto]: Skipping, unable to determine old version
+[2024-04-20 00:17:32] INFO root fetch - processPackages [featransform]: New version: [0.9.16] Old Version: [0.9.15]
+[2024-04-20 00:17:32] INFO root fetch - main [MainThread]: End processing [npiai-proto] error
+[2024-04-20 00:17:32] WARNING root fetch - processPackages [mat3ra-regex]: Skipping, unable to determine old version
+[2024-04-20 00:17:32] INFO root fetch - main [MainThread]: End processing [mat3ra-regex] error
+[2024-04-20 00:17:32] INFO root fetch - processPackages [caltechdata-api]: New version: [1.6.0] Old Version: [1.5.0]
+[2024-04-20 00:17:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/d1/d7/68f5b059da3f765765f21c01871cb938c0e5f89f2e368450fd5f05aebf7c/cf2tf-0.7.0.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/f2/a2/ff1ab35a7b5c6617955603e736e8b8447c193923c679844819b2a4076727/featransform-0.9.15-py3-none-any.whl
+[2024-04-20 00:17:32] INFO root fetch - processPackages [grpcio]: Downloading https://files.pythonhosted.org/packages/a5/65/9a6b6049ce04f7072b169052fc70760cc10bf0aabfef8d02199470f0f296/grpcio-1.9.0rc3.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [caltechdata-api]: Downloading https://files.pythonhosted.org/packages/47/88/efcdcd59e9f47916f7dfa10976c3dde6f6c6f142526472906690dca8c705/caltechdata_api-1.5.0.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/59/83/e1ba675daec36d1da4baaa9d92dff93f2f31bd2aeb2a55418afd3a3a4e5d/cf2tf-0.7.0a0.tar.gz
+[2024-04-20 00:17:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 00:17:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:17:32] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-20 00:17:32] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.0.tar.gz tmp/cf2tf-0.7.0a0.tar.gz --markdown 20240420/c/cf2tf/0.7.0-0.7.0a0/README.md --exclude *.pyd
+[2024-04-20 00:17:32] INFO root fetch - processPackages [featransform]: Downloading https://files.pythonhosted.org/packages/6b/d0/1fc3744004f49d2055d91446e1f95d706aec7750c3c5ebed3b2527d000cd/featransform-0.9.16-py3-none-any.whl
+[2024-04-20 00:17:33] INFO root fetch - processPackages [featransform]: executing diffoscope
+[2024-04-20 00:17:33] INFO root fetch - processPackages [featransform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featransform-0.9.15-py3-none-any.whl.zip tmp/featransform-0.9.16-py3-none-any.whl.zip --markdown 20240420/f/featransform/0.9.15-0.9.16/README.md --exclude *.pyd
+[2024-04-20 00:17:33] INFO root fetch - processPackages [caltechdata-api]: Downloading https://files.pythonhosted.org/packages/bf/b9/d14ec4712e71c65683824cef27aee8a7ea19bd11a9914fe9e2880cf5392e/caltechdata_api-1.6.0.tar.gz
+[2024-04-20 00:17:33] INFO root fetch - processPackages [grpcio]: Downloading https://files.pythonhosted.org/packages/01/0b/7033eb8a2b8e7f8eaf849490ee27c9b121b1b5624d644c3b5b988d7386cf/grpcio-1.9.1.tar.gz
+[2024-04-20 00:17:33] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 00:17:33] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 00:17:33] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 00:17:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.0.tar.gz]
+[2024-04-20 00:17:33] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.0a0.tar.gz]
+[2024-04-20 00:17:33] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-20 00:17:33] INFO root fetch - processPackages [caltechdata-api]: executing diffoscope
+[2024-04-20 00:17:33] INFO root fetch - processPackages [caltechdata-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caltechdata_api-1.5.0.tar.gz tmp/caltechdata_api-1.6.0.tar.gz --markdown 20240420/c/caltechdata-api/1.5.0-1.6.0/README.md --exclude *.pyd
+[2024-04-20 00:17:33] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.15-py3-none-any.whl.zip]
+[2024-04-20 00:17:33] INFO root fetch - processPackages [featransform]: Remove: archive file [/home/abi/fetcher/tmp/featransform-0.9.16-py3-none-any.whl.zip]
+[2024-04-20 00:17:33] INFO root fetch - main [MainThread]: End processing [featransform]: success
+[2024-04-20 00:17:34] INFO root fetch - processPackages [grpcio]: executing diffoscope
+[2024-04-20 00:17:34] INFO root fetch - processPackages [grpcio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-1.9.0rc3.tar.gz tmp/grpcio-1.9.1.tar.gz --markdown 20240420/g/grpcio/1.9.0rc3-1.9.1/README.md --exclude *.pyd
+[2024-04-20 00:17:34] INFO root fetch - processPackages [caltechdata-api]: Remove: archive file [/home/abi/fetcher/tmp/caltechdata_api-1.5.0.tar.gz]
+[2024-04-20 00:17:34] INFO root fetch - processPackages [caltechdata-api]: Remove: archive file [/home/abi/fetcher/tmp/caltechdata_api-1.6.0.tar.gz]
+[2024-04-20 00:17:34] INFO root fetch - main [MainThread]: End processing [caltechdata-api]: success
+[2024-04-20 00:18:04] INFO root fetch - processPackages [grpcio]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-1.9.0rc3.tar.gz]
+[2024-04-20 00:18:04] INFO root fetch - processPackages [grpcio]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-1.9.1.tar.gz]
+[2024-04-20 00:18:04] INFO root fetch - main [MainThread]: End processing [grpcio]: success
+[2024-04-20 00:18:04] INFO root fetch - main [MainThread]: Store serial: [22848959]
