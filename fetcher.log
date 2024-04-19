@@ -804,3 +804,45 @@
 [2024-04-20 00:49:19] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.1.tar.gz]
 [2024-04-20 00:49:19] INFO root fetch - main [MainThread]: End processing [biotech]: success
 [2024-04-20 00:49:19] INFO root fetch - main [MainThread]: Store serial: [22849236]
+[2024-04-20 00:51:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849236]
+[2024-04-20 00:51:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 00:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorsequence
+[2024-04-20 00:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypgatk
+[2024-04-20 00:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vegas
+[2024-04-20 00:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graph-validation-tests
+[2024-04-20 00:51:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 00:51:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 00:51:28] INFO root fetch - processPackages [graph-validation-tests]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 00:51:28] WARNING root fetch - processPackages [tensorsequence]: Skipping, unable to determine old version
+[2024-04-20 00:51:28] INFO root fetch - main [MainThread]: End processing [tensorsequence] error
+[2024-04-20 00:51:28] INFO root fetch - processPackages [pypgatk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 00:51:28] INFO root fetch - processPackages [graph-validation-tests]: Downloading https://files.pythonhosted.org/packages/24/a3/99c2ef80bc3179fa747306709ed5280fc3d6bf89927a9f13eca7b3b8ca9a/graph_validation_tests-0.0.6.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [vegas]: New version: [6.1.1] Old Version: [6.1]
+[2024-04-20 00:51:28] INFO root fetch - processPackages [pypgatk]: Downloading https://files.pythonhosted.org/packages/b6/e4/20e05dda30f707101cc946d85a458d4b8a15b4c1ee5e93a04ad4d1134644/pypgatk-0.0.8.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [vegas]: Downloading https://files.pythonhosted.org/packages/19/19/cc86ebe1d90f478afd3b94e6e5e1a14142c1039a79d8603085ae3d585948/vegas-6.1.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [graph-validation-tests]: Downloading https://files.pythonhosted.org/packages/65/46/49c8dc9ba4c81fcc0c002b7512c45461298b29c78474795253e1a158fb0d/graph_validation_tests-0.0.7.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 00:51:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:51:28] INFO root fetch - processPackages [graph-validation-tests]: executing diffoscope
+[2024-04-20 00:51:28] INFO root fetch - processPackages [graph-validation-tests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph_validation_tests-0.0.6.tar.gz tmp/graph_validation_tests-0.0.7.tar.gz --markdown 20240420/g/graph-validation-tests/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 00:51:28] INFO root fetch - processPackages [pypgatk]: Downloading https://files.pythonhosted.org/packages/fb/c4/40def04eb2294a6b29ffc51f73dad128fa7eeceb1857a1724c29f38e83e0/pypgatk-0.0.9.tar.gz
+[2024-04-20 00:51:28] INFO root fetch - processPackages [vegas]: Downloading https://files.pythonhosted.org/packages/bd/f9/9e7ca7bf6df4d7e989c813ecad021786a7b6de4c1010914b5d4c98d6a46e/vegas-6.1.1.tar.gz
+[2024-04-20 00:51:29] INFO root fetch - processPackages [pypgatk]: executing diffoscope
+[2024-04-20 00:51:29] INFO root fetch - processPackages [pypgatk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypgatk-0.0.8.tar.gz tmp/pypgatk-0.0.9.tar.gz --markdown 20240420/p/pypgatk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 00:51:29] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 00:51:29] INFO root fetch - processPackages [graph-validation-tests]: Remove: archive file [/home/abi/fetcher/tmp/graph_validation_tests-0.0.6.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - processPackages [graph-validation-tests]: Remove: archive file [/home/abi/fetcher/tmp/graph_validation_tests-0.0.7.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - main [MainThread]: End processing [graph-validation-tests]: success
+[2024-04-20 00:51:29] INFO root fetch - processPackages [vegas]: executing diffoscope
+[2024-04-20 00:51:29] INFO root fetch - processPackages [vegas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegas-6.1.tar.gz tmp/vegas-6.1.1.tar.gz --markdown 20240420/v/vegas/6.1-6.1.1/README.md --exclude *.pyd
+[2024-04-20 00:51:29] INFO root fetch - processPackages [pypgatk]: Remove: archive file [/home/abi/fetcher/tmp/pypgatk-0.0.8.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - processPackages [pypgatk]: Remove: archive file [/home/abi/fetcher/tmp/pypgatk-0.0.9.tar.gz]
+[2024-04-20 00:51:29] INFO root fetch - main [MainThread]: End processing [pypgatk]: success
+[2024-04-20 00:51:33] INFO root fetch - processPackages [vegas]: Remove: archive file [/home/abi/fetcher/tmp/vegas-6.1.tar.gz]
+[2024-04-20 00:51:33] INFO root fetch - processPackages [vegas]: Remove: archive file [/home/abi/fetcher/tmp/vegas-6.1.1.tar.gz]
+[2024-04-20 00:51:33] INFO root fetch - main [MainThread]: End processing [vegas]: success
+[2024-04-20 00:51:33] INFO root fetch - main [MainThread]: Store serial: [22849269]
