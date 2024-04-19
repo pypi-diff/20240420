@@ -290,3 +290,126 @@
 [2024-04-20 00:18:04] INFO root fetch - processPackages [grpcio]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-1.9.1.tar.gz]
 [2024-04-20 00:18:04] INFO root fetch - main [MainThread]: End processing [grpcio]: success
 [2024-04-20 00:18:04] INFO root fetch - main [MainThread]: Store serial: [22848959]
+[2024-04-20 00:20:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848959]
+[2024-04-20 00:20:13] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lucupy
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mystmd
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sapiopycommons
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: numpyneuron
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grpcio-admin
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: grpcio-channelz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: grpcio-csds
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: grpcio-health-checking
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: grpcio-observability
+[2024-04-20 00:20:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: python-wsdb
+[2024-04-20 00:20:13] INFO root fetch - processPackages [lucupy]: New version: [0.1.9] Old Version: [0.1.88]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [numpyneuron]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [sapiopycommons]: New version: [31.2.0.23.12.3] Old Version: [31.0.13.23.12]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-admin]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [lucupy]: Downloading https://files.pythonhosted.org/packages/38/79/29eea31767523d93721944b6f5f3318ad72a4b4327307133e37d2d496120/lucupy-0.1.88.tar.gz
+[2024-04-20 00:20:13] WARNING root fetch - processPackages [python-wsdb]: Skipping, unable to determine old version
+[2024-04-20 00:20:13] INFO root fetch - processPackages [python-wsdb]: Start processing: grpcio-reflection
+[2024-04-20 00:20:13] INFO root fetch - main [MainThread]: End processing [python-wsdb] error
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-observability]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-health-checking]: New version: [1.9.1] Old Version: [1.9.0rc3]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [mystmd]: New version: [1.1.9] Old Version: [1.1.7]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-csds]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-channelz]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-reflection]: New version: [1.9.1] Old Version: [1.9.0rc3]
+[2024-04-20 00:20:13] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/9b/b4/1f712d21d2f85d9a79c85b6c4b9e4e178ebef75513a6dca567f23790b430/numpyneuron-0.1.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/7d/d9/9ba46eb14eb7b3f03207e476e175731c913844d8f8ba916e45ee232b1f5f/sapiopycommons-31.0.13.23.12.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-admin]: Downloading https://files.pythonhosted.org/packages/51/8b/5e484992ca9cfeadd23aef237a45b94c74141dec6557303a10bc86ac6b28/grpcio-admin-1.63.0rc1.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [mystmd]: Downloading https://files.pythonhosted.org/packages/7a/c3/d50a03a8e2015a7e02b98296e34aa4c8adfef17e5a98fc06871f9e2a2dee/mystmd-1.1.7.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-csds]: Downloading https://files.pythonhosted.org/packages/ac/4c/e313bc1c59385c426e791a688dbc680257c3daeb6cb072cf76e51aa1a971/grpcio-csds-1.63.0rc1.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [lucupy]: Downloading https://files.pythonhosted.org/packages/8e/71/90824741abbd5f41e02cef3f27573135ac7ee3e561efa91dfd0394c03374/lucupy-0.1.9.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-channelz]: Downloading https://files.pythonhosted.org/packages/b0/48/b5370d7601951d6ff1973f963e03071e2f3d9eae94494dc065df29cd4a2e/grpcio-channelz-1.63.0rc1.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-health-checking]: Downloading https://files.pythonhosted.org/packages/ea/52/37ac14cc90867f55f80ce8b7d903f219c75e05c741b5d82cff4440e3e159/grpcio-health-checking-1.9.0rc3.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-observability]: Downloading https://files.pythonhosted.org/packages/f9/3b/e7ba991091d864d2ae54d3d07e0ae1b6fe2198395bb7b1d1219295471c35/grpcio-observability-1.63.0rc1.tar.gz
+[2024-04-20 00:20:13] INFO root fetch - processPackages [grpcio-reflection]: Downloading https://files.pythonhosted.org/packages/6a/26/01ed8dea550986f42f74221fa8d8d31756be28d6e5c473372af8567632c8/grpcio-reflection-1.9.0rc3.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [lucupy]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [lucupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lucupy-0.1.88.tar.gz tmp/lucupy-0.1.9.tar.gz --markdown 20240420/l/lucupy/0.1.88-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [sapiopycommons]: Downloading https://files.pythonhosted.org/packages/bb/8e/ffbfcdcdcdef085f3c02a0c0361d5f2b5c73f377a58d5055485920fd480d/sapiopycommons-31.2.0.23.12.3.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/97/c8/53616083d32af796be9821777ca76be07ee95a2832746861ef12ca9a76db/numpyneuron-0.2.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-admin]: Downloading https://files.pythonhosted.org/packages/81/f1/16c2b4a2135750f6ea4508902d65fe33c4b89a6d32aeaac7e316439a0b4e/grpcio_admin-1.63.0rc2-py3-none-any.whl
+[2024-04-20 00:20:14] INFO root fetch - processPackages [sapiopycommons]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [sapiopycommons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopycommons-31.0.13.23.12.tar.gz tmp/sapiopycommons-31.2.0.23.12.3.tar.gz --markdown 20240420/s/sapiopycommons/31.0.13.23.12-31.2.0.23.12.3/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [numpyneuron]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [numpyneuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpyneuron-0.1.tar.gz tmp/numpyneuron-0.2.tar.gz --markdown 20240420/n/numpyneuron/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-csds]: Downloading https://files.pythonhosted.org/packages/5b/50/729b7ab83247716fa46dae1e28973b7f955b7601592fd6880a25006034b6/grpcio_csds-1.63.0rc2-py3-none-any.whl
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-admin]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-admin-1.63.0rc1.tar.gz tmp/grpcio_admin-1.63.0rc2-py3-none-any.whl.zip --markdown 20240420/g/grpcio-admin/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-channelz]: Downloading https://files.pythonhosted.org/packages/95/19/6c1acccfb593e9c88f21ee047457d24ef629ba9720e03466997c2d4120fe/grpcio_channelz-1.63.0rc2-py3-none-any.whl
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-health-checking]: Downloading https://files.pythonhosted.org/packages/64/b7/1a150f6c068a235ac47628bf0cdaa0bf74044a58548b9cbd624532e6d478/grpcio-health-checking-1.9.1.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-reflection]: Downloading https://files.pythonhosted.org/packages/dd/91/214c989e853ebd8e15e8d701e445fcf8047d0734f79ea5335674dd528292/grpcio-reflection-1.9.1.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-csds]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-csds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-csds-1.63.0rc1.tar.gz tmp/grpcio_csds-1.63.0rc2-py3-none-any.whl.zip --markdown 20240420/g/grpcio-csds/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-channelz]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-channelz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-channelz-1.63.0rc1.tar.gz tmp/grpcio_channelz-1.63.0rc2-py3-none-any.whl.zip --markdown 20240420/g/grpcio-channelz/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [mystmd]: Downloading https://files.pythonhosted.org/packages/fe/ca/67f015b4a726a6b31f4300f946fdd248881d9d144883f9be9a3486ad8ee8/mystmd-1.1.9.tar.gz
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-health-checking]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-health-checking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-health-checking-1.9.0rc3.tar.gz tmp/grpcio-health-checking-1.9.1.tar.gz --markdown 20240420/g/grpcio-health-checking/1.9.0rc3-1.9.1/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-reflection]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-reflection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-reflection-1.9.0rc3.tar.gz tmp/grpcio-reflection-1.9.1.tar.gz --markdown 20240420/g/grpcio-reflection/1.9.0rc3-1.9.1/README.md --exclude *.pyd
+[2024-04-20 00:20:14] INFO root fetch - processPackages [grpcio-observability]: Downloading https://files.pythonhosted.org/packages/aa/3d/5b4c2efaf8fca82615f07417fbd0749e0d99828f78dc2bbcb66424c06068/grpcio_observability-1.63.0rc2-cp39-cp39-musllinux_1_1_x86_64.whl
+[2024-04-20 00:20:14] INFO root fetch - processPackages [mystmd]: executing diffoscope
+[2024-04-20 00:20:14] INFO root fetch - processPackages [mystmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystmd-1.1.7.tar.gz tmp/mystmd-1.1.9.tar.gz --markdown 20240420/m/mystmd/1.1.7-1.1.9/README.md --exclude *.pyd
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-admin]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-admin-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-admin]: Remove: archive file [/home/abi/fetcher/tmp/grpcio_admin-1.63.0rc2-py3-none-any.whl.zip]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-admin]: Start processing: grpcio-status
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [grpcio-admin]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [lucupy]: Remove: archive file [/home/abi/fetcher/tmp/lucupy-0.1.88.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [lucupy]: Remove: archive file [/home/abi/fetcher/tmp/lucupy-0.1.9.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [lucupy]: Start processing: grpcio-testing
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [lucupy]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-testing]: New version: [1.63.0rc1] Old Version: [1.62.2]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.2.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [numpyneuron]: Start processing: grpcio-tools
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [numpyneuron]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-channelz]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-channelz-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-channelz]: Remove: archive file [/home/abi/fetcher/tmp/grpcio_channelz-1.63.0rc2-py3-none-any.whl.zip]
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [grpcio-channelz]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-health-checking]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-health-checking-1.9.0rc3.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-health-checking]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-health-checking-1.9.1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [grpcio-health-checking]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-observability]: executing diffoscope
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-observability]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-observability-1.63.0rc1.tar.gz tmp/grpcio_observability-1.63.0rc2-cp39-cp39-musllinux_1_1_x86_64.whl.zip --markdown 20240420/g/grpcio-observability/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-status]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.0.13.23.12.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [sapiopycommons]: Remove: archive file [/home/abi/fetcher/tmp/sapiopycommons-31.2.0.23.12.3.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [sapiopycommons]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-csds]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-csds-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-csds]: Remove: archive file [/home/abi/fetcher/tmp/grpcio_csds-1.63.0rc2-py3-none-any.whl.zip]
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [grpcio-csds]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-reflection]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-reflection-1.9.0rc3.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-reflection]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-reflection-1.9.1.tar.gz]
+[2024-04-20 00:20:15] INFO root fetch - main [MainThread]: End processing [grpcio-reflection]: success
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-testing]: Downloading https://files.pythonhosted.org/packages/76/27/a26545c65f951f12b51947d153adec1b744e6556105ea7c6ae0ad954e9cb/grpcio-testing-1.62.2.tar.gz
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-status]: Downloading https://files.pythonhosted.org/packages/2a/a2/4238ba720624cdf129780fb893ec2b6470206732309fcde5cf5a8e9ca202/grpcio-status-1.63.0rc1.tar.gz
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-status]: Downloading https://files.pythonhosted.org/packages/7c/2e/5992eca280453adf0563670e1a423ae9f76e65d8cdcf7b0f4761bd0babe6/grpcio_status-1.63.0rc2-py3-none-any.whl
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-testing]: Downloading https://files.pythonhosted.org/packages/36/fb/eb31e8f7fb002a4f612777c236ba34c739aca7164da7235a460a901362e6/grpcio-testing-1.63.0rc1.tar.gz
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-testing]: executing diffoscope
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-testing-1.62.2.tar.gz tmp/grpcio-testing-1.63.0rc1.tar.gz --markdown 20240420/g/grpcio-testing/1.62.2-1.63.0rc1/README.md --exclude *.pyd
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-status]: executing diffoscope
+[2024-04-20 00:20:15] INFO root fetch - processPackages [grpcio-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-status-1.63.0rc1.tar.gz tmp/grpcio_status-1.63.0rc2-py3-none-any.whl.zip --markdown 20240420/g/grpcio-status/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-tools]: New version: [1.9.1] Old Version: [1.9.0rc3]
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-status]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-status-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-status]: Remove: archive file [/home/abi/fetcher/tmp/grpcio_status-1.63.0rc2-py3-none-any.whl.zip]
+[2024-04-20 00:20:16] INFO root fetch - main [MainThread]: End processing [grpcio-status]: success
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-testing]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-testing-1.62.2.tar.gz]
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-testing]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-testing-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:16] INFO root fetch - main [MainThread]: End processing [grpcio-testing]: success
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-tools]: Downloading https://files.pythonhosted.org/packages/c5/04/1e6e73100e408d346552703ab15b45318d7fae3a7e45b0c4c810795dbcda/grpcio-tools-1.9.0rc3.tar.gz
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-observability]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-observability-1.63.0rc1.tar.gz]
+[2024-04-20 00:20:16] INFO root fetch - processPackages [grpcio-observability]: Remove: archive file [/home/abi/fetcher/tmp/grpcio_observability-1.63.0rc2-cp39-cp39-musllinux_1_1_x86_64.whl.zip]
+[2024-04-20 00:20:16] INFO root fetch - main [MainThread]: End processing [grpcio-observability]: success
+[2024-04-20 00:20:17] INFO root fetch - processPackages [grpcio-tools]: Downloading https://files.pythonhosted.org/packages/26/3d/061e0162aeb88dba757e56bc8a9bdacfce70ad6e43b8181a48b29acd827c/grpcio-tools-1.9.1.tar.gz
+[2024-04-20 00:20:17] INFO root fetch - processPackages [grpcio-tools]: executing diffoscope
+[2024-04-20 00:20:17] INFO root fetch - processPackages [grpcio-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grpcio-tools-1.9.0rc3.tar.gz tmp/grpcio-tools-1.9.1.tar.gz --markdown 20240420/g/grpcio-tools/1.9.0rc3-1.9.1/README.md --exclude *.pyd
+[2024-04-20 00:20:20] INFO root fetch - processPackages [grpcio-tools]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-tools-1.9.0rc3.tar.gz]
+[2024-04-20 00:20:20] INFO root fetch - processPackages [grpcio-tools]: Remove: archive file [/home/abi/fetcher/tmp/grpcio-tools-1.9.1.tar.gz]
+[2024-04-20 00:20:20] INFO root fetch - main [MainThread]: End processing [grpcio-tools]: success
+[2024-04-20 00:20:23] INFO root fetch - processPackages [mystmd]: Remove: archive file [/home/abi/fetcher/tmp/mystmd-1.1.7.tar.gz]
+[2024-04-20 00:20:23] INFO root fetch - processPackages [mystmd]: Remove: archive file [/home/abi/fetcher/tmp/mystmd-1.1.9.tar.gz]
+[2024-04-20 00:20:23] INFO root fetch - main [MainThread]: End processing [mystmd]: success
+[2024-04-20 00:20:23] INFO root fetch - main [MainThread]: Store serial: [22849051]
