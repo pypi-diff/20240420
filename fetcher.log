@@ -1290,3 +1290,50 @@
 [2024-04-20 01:26:38] INFO root fetch - processPackages [edgedb-orm]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_orm-1.0.9.tar.gz]
 [2024-04-20 01:26:38] INFO root fetch - main [MainThread]: End processing [edgedb-orm]: success
 [2024-04-20 01:26:38] INFO root fetch - main [MainThread]: Store serial: [22849428]
+[2024-04-20 01:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849428]
+[2024-04-20 01:28:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotlight-sdk
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-genesiscloud
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-intel
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyiter
+[2024-04-20 01:28:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: superdupper
+[2024-04-20 01:28:46] INFO root fetch - processPackages [pyiter]: New version: [0.8.7] Old Version: [0.8.5]
+[2024-04-20 01:28:46] INFO root fetch - processPackages [spotlight-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 01:28:46] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.17.0.dev20240418] Old Version: [2.17.0.dev20240417]
+[2024-04-20 01:28:46] INFO root fetch - processPackages [flatpack]: New version: [3.3.2] Old Version: [3.3.1]
+[2024-04-20 01:28:46] INFO root fetch - processPackages [pulumi-genesiscloud]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 01:28:46] INFO root fetch - processPackages [pyiter]: Downloading https://files.pythonhosted.org/packages/bf/c7/9df314da13a0ca7b6cfd84dbccd0d72f0db873db8339b18f76f7da3dbc16/pyiter-0.8.5.tar.gz
+[2024-04-20 01:28:46] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/7c/5d/04e06ad27a1370a5ff44e8cfe95e0cc25ac8825c7d852ca87afe206dd00e/flatpack-3.3.1.tar.gz
+[2024-04-20 01:28:47] WARNING root fetch - processPackages [superdupper]: Skipping, unable to determine old version
+[2024-04-20 01:28:47] INFO root fetch - main [MainThread]: End processing [superdupper] error
+[2024-04-20 01:28:47] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/d2/df/64f237173cbbb85bab1727e9b447a1764287a6a0b46e80a48a81d9f20ac5/spotlight-sdk-0.0.8.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/c1/7f/cbbb59cf63b357a3e75a292191983a0ac286a5ab1d1de8e404bb70c8db48/tf_nightly_intel-2.17.0.dev20240417-cp39-cp39-win_amd64.whl
+[2024-04-20 01:28:47] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 211014716>=10485760
+[2024-04-20 01:28:47] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pulumi-genesiscloud]: Downloading https://files.pythonhosted.org/packages/7b/eb/c1987063b7330a56617c62d967ff70d44c2fde9e6c027effd7bd05f44cfc/pulumi_genesiscloud-0.0.8.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/e7/77/097156d6cb8a69f69aff3c7e65046379c3fd67d52e2a86936ef50e85eb68/spotlight-sdk-0.0.9.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/d7/49/38da97d770571bb0246203e3e484f1d59e332618b0802944111fc13f5858/flatpack-3.3.2.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [spotlight-sdk]: executing diffoscope
+[2024-04-20 01:28:47] INFO root fetch - processPackages [spotlight-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotlight-sdk-0.0.8.tar.gz tmp/spotlight-sdk-0.0.9.tar.gz --markdown 20240420/s/spotlight-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pyiter]: Downloading https://files.pythonhosted.org/packages/30/7e/e9eaf1f8dd02d4116dd3412010db3338991a1fb08ccfde63a7973741854f/pyiter-0.8.7.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pulumi-genesiscloud]: Downloading https://files.pythonhosted.org/packages/85/48/c33e3e8789275770f6ecf59b3f8ba30057d291ef8fff95f7d0077bb2638c/pulumi_genesiscloud-0.0.9.tar.gz
+[2024-04-20 01:28:47] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 01:28:47] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.1.tar.gz tmp/flatpack-3.3.2.tar.gz --markdown 20240420/f/flatpack/3.3.1-3.3.2/README.md --exclude *.pyd
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pyiter]: executing diffoscope
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pyiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiter-0.8.5.tar.gz tmp/pyiter-0.8.7.tar.gz --markdown 20240420/p/pyiter/0.8.5-0.8.7/README.md --exclude *.pyd
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pulumi-genesiscloud]: executing diffoscope
+[2024-04-20 01:28:47] INFO root fetch - processPackages [pulumi-genesiscloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_genesiscloud-0.0.8.tar.gz tmp/pulumi_genesiscloud-0.0.9.tar.gz --markdown 20240420/p/pulumi-genesiscloud/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 01:28:48] INFO root fetch - processPackages [pulumi-genesiscloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_genesiscloud-0.0.8.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - processPackages [pulumi-genesiscloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_genesiscloud-0.0.9.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - main [MainThread]: End processing [pulumi-genesiscloud]: success
+[2024-04-20 01:28:48] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.8.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
+[2024-04-20 01:28:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.1.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.2.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 01:28:48] INFO root fetch - processPackages [pyiter]: Remove: archive file [/home/abi/fetcher/tmp/pyiter-0.8.5.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - processPackages [pyiter]: Remove: archive file [/home/abi/fetcher/tmp/pyiter-0.8.7.tar.gz]
+[2024-04-20 01:28:48] INFO root fetch - main [MainThread]: End processing [pyiter]: success
+[2024-04-20 01:28:48] INFO root fetch - main [MainThread]: Store serial: [22849447]
