@@ -413,3 +413,42 @@
 [2024-04-20 00:20:23] INFO root fetch - processPackages [mystmd]: Remove: archive file [/home/abi/fetcher/tmp/mystmd-1.1.9.tar.gz]
 [2024-04-20 00:20:23] INFO root fetch - main [MainThread]: End processing [mystmd]: success
 [2024-04-20 00:20:23] INFO root fetch - main [MainThread]: Store serial: [22849051]
+[2024-04-20 00:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849051]
+[2024-04-20 00:22:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 00:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbl-tempo
+[2024-04-20 00:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tcrutils
+[2024-04-20 00:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xds-protos
+[2024-04-20 00:22:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: di-registry
+[2024-04-20 00:22:36] INFO root fetch - processPackages [di-registry]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-20 00:22:36] INFO root fetch - processPackages [xds-protos]: New version: [1.63.0rc2] Old Version: [1.63.0rc1]
+[2024-04-20 00:22:36] INFO root fetch - processPackages [dbl-tempo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 00:22:36] INFO root fetch - processPackages [tcrutils]: New version: [12.0.151] Old Version: [12.0.150]
+[2024-04-20 00:22:36] INFO root fetch - processPackages [di-registry]: Downloading https://files.pythonhosted.org/packages/3a/cc/e303269db06609cbcc116c999cc2f8f7af3800338cc72ae2a4aac18f3f4d/di_registry-0.5.0.tar.gz
+[2024-04-20 00:22:36] INFO root fetch - processPackages [dbl-tempo]: Downloading https://files.pythonhosted.org/packages/f5/fc/e96f6ffaf704d55e0aefef6861ff962082fdc836001ef7283dfbd9523af2/dbl_tempo-0.1.8-py3-none-any.whl
+[2024-04-20 00:22:36] INFO root fetch - processPackages [xds-protos]: Downloading https://files.pythonhosted.org/packages/db/8b/8f4943e7eb00f1a0822e38803a3ea63d62f006d3303dd3b86663deb7bc90/xds-protos-1.63.0rc1.tar.gz
+[2024-04-20 00:22:36] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/c4/ff/4fe195091696cc3e1968a684f897ce6a415760ffd3726e176b9f3f6ee569/tcrutils-12.0.150.tar.gz
+[2024-04-20 00:22:37] INFO root fetch - processPackages [dbl-tempo]: Downloading https://files.pythonhosted.org/packages/60/ba/7ac8d7bd7a959f8caaa54486807b24e273939ba9a5001c1459f9b27f7ca6/dbl_tempo-0.1.9-py3-none-any.whl
+[2024-04-20 00:22:37] INFO root fetch - processPackages [tcrutils]: Downloading https://files.pythonhosted.org/packages/67/ce/cb32c2188d35d53b40fa85b3ebac68ec0fe8e9d2a94bcd2ee9304493f0a0/tcrutils-12.0.151.tar.gz
+[2024-04-20 00:22:37] INFO root fetch - processPackages [xds-protos]: Downloading https://files.pythonhosted.org/packages/61/6c/6c34992947ef3f4d6732d985e67d98951b122b92f6e9c5ef4f50b9e86e0b/xds_protos-1.63.0rc2-py3-none-any.whl
+[2024-04-20 00:22:37] INFO root fetch - processPackages [di-registry]: Downloading https://files.pythonhosted.org/packages/63/19/7bf9997f252def73ce254b355095eeb9a329f94124352740b2f2807d9504/di_registry-0.5.1.tar.gz
+[2024-04-20 00:22:37] INFO root fetch - processPackages [dbl-tempo]: executing diffoscope
+[2024-04-20 00:22:37] INFO root fetch - processPackages [dbl-tempo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbl_tempo-0.1.8-py3-none-any.whl.zip tmp/dbl_tempo-0.1.9-py3-none-any.whl.zip --markdown 20240420/d/dbl-tempo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:22:37] INFO root fetch - processPackages [tcrutils]: executing diffoscope
+[2024-04-20 00:22:37] INFO root fetch - processPackages [tcrutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tcrutils-12.0.150.tar.gz tmp/tcrutils-12.0.151.tar.gz --markdown 20240420/t/tcrutils/12.0.150-12.0.151/README.md --exclude *.pyd
+[2024-04-20 00:22:37] INFO root fetch - processPackages [di-registry]: executing diffoscope
+[2024-04-20 00:22:37] INFO root fetch - processPackages [di-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/di_registry-0.5.0.tar.gz tmp/di_registry-0.5.1.tar.gz --markdown 20240420/d/di-registry/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-20 00:22:37] INFO root fetch - processPackages [xds-protos]: executing diffoscope
+[2024-04-20 00:22:37] INFO root fetch - processPackages [xds-protos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xds-protos-1.63.0rc1.tar.gz tmp/xds_protos-1.63.0rc2-py3-none-any.whl.zip --markdown 20240420/x/xds-protos/1.63.0rc1-1.63.0rc2/README.md --exclude *.pyd
+[2024-04-20 00:22:37] INFO root fetch - processPackages [di-registry]: Remove: archive file [/home/abi/fetcher/tmp/di_registry-0.5.0.tar.gz]
+[2024-04-20 00:22:37] INFO root fetch - processPackages [di-registry]: Remove: archive file [/home/abi/fetcher/tmp/di_registry-0.5.1.tar.gz]
+[2024-04-20 00:22:37] INFO root fetch - main [MainThread]: End processing [di-registry]: success
+[2024-04-20 00:22:37] INFO root fetch - processPackages [dbl-tempo]: Remove: archive file [/home/abi/fetcher/tmp/dbl_tempo-0.1.8-py3-none-any.whl.zip]
+[2024-04-20 00:22:37] INFO root fetch - processPackages [dbl-tempo]: Remove: archive file [/home/abi/fetcher/tmp/dbl_tempo-0.1.9-py3-none-any.whl.zip]
+[2024-04-20 00:22:37] INFO root fetch - main [MainThread]: End processing [dbl-tempo]: success
+[2024-04-20 00:22:38] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.150.tar.gz]
+[2024-04-20 00:22:38] INFO root fetch - processPackages [tcrutils]: Remove: archive file [/home/abi/fetcher/tmp/tcrutils-12.0.151.tar.gz]
+[2024-04-20 00:22:38] INFO root fetch - main [MainThread]: End processing [tcrutils]: success
+[2024-04-20 00:22:38] INFO root fetch - processPackages [xds-protos]: Remove: archive file [/home/abi/fetcher/tmp/xds-protos-1.63.0rc1.tar.gz]
+[2024-04-20 00:22:38] INFO root fetch - processPackages [xds-protos]: Remove: archive file [/home/abi/fetcher/tmp/xds_protos-1.63.0rc2-py3-none-any.whl.zip]
+[2024-04-20 00:22:38] INFO root fetch - main [MainThread]: End processing [xds-protos]: success
+[2024-04-20 00:22:38] INFO root fetch - main [MainThread]: Store serial: [22849109]
