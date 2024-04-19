@@ -40,3 +40,38 @@
 [2024-04-20 00:02:15] INFO root fetch - processPackages [caveclient]: Remove: archive file [/home/abi/fetcher/tmp/caveclient-5.9.0.tar.gz]
 [2024-04-20 00:02:15] INFO root fetch - main [MainThread]: End processing [caveclient]: success
 [2024-04-20 00:02:15] INFO root fetch - main [MainThread]: Store serial: [22848856]
+[2024-04-20 00:04:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848856]
+[2024-04-20 00:04:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 00:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wdl-lsp
+[2024-04-20 00:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-environment-manager
+[2024-04-20 00:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skytemple-randomizer
+[2024-04-20 00:04:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emdbva
+[2024-04-20 00:04:24] INFO root fetch - processPackages [emdbva]: New version: [0.1.2.dev1] Old Version: [0.0.1.dev8]
+[2024-04-20 00:04:24] INFO root fetch - processPackages [jupyter-environment-manager]: New version: [0.2.0rc9] Old Version: [0.2.0rc8]
+[2024-04-20 00:04:24] INFO root fetch - processPackages [skytemple-randomizer]: New version: [2.0.0b1] Old Version: [1.6.0rc1]
+[2024-04-20 00:04:24] INFO root fetch - processPackages [wdl-lsp]: New version: [0.0.82] Old Version: [0.0.77]
+[2024-04-20 00:04:24] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/09/bd/4ffd3b9c665a68f42d1412905a0f25157e78ebc7e157b637850d458bd715/wdl-lsp-0.0.77.tar.gz
+[2024-04-20 00:04:24] INFO root fetch - processPackages [jupyter-environment-manager]: Downloading https://files.pythonhosted.org/packages/5e/e8/ea7b674f2490db48b2023cd5a4fc7044952c78cb6c8ec54ca6b42306e8ae/jupyter_environment_manager-0.2.0rc8.tar.gz
+[2024-04-20 00:04:24] INFO root fetch - processPackages [emdbva]: Downloading https://files.pythonhosted.org/packages/0b/ed/819c08dea6ffadd882526d30413daac295d755fe2e50a8f10693c7467495/emdbva-0.0.1.dev8.tar.gz
+[2024-04-20 00:04:24] INFO root fetch - processPackages [skytemple-randomizer]: Downloading https://files.pythonhosted.org/packages/e0/2b/def60ec97385ba4eb36cddc4a043f2a4cf7e99446ccfbd815036bab6f1a7/skytemple_randomizer-1.6.0rc1-py3-none-any.whl
+[2024-04-20 00:04:24] WARNING root fetch - processPackages [emdbva]: Skipping package: exceeds size limit 25862942>=10485760
+[2024-04-20 00:04:24] INFO root fetch - main [MainThread]: End processing [emdbva] error
+[2024-04-20 00:04:24] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/8b/68/68710c6b9946c459eda1528558fe300e1defd785be972444c88cbfc246b4/wdl_lsp-0.0.82-py3-none-any.whl
+[2024-04-20 00:04:24] INFO root fetch - processPackages [wdl-lsp]: executing diffoscope
+[2024-04-20 00:04:24] INFO root fetch - processPackages [wdl-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdl-lsp-0.0.77.tar.gz tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip --markdown 20240420/w/wdl-lsp/0.0.77-0.0.82/README.md --exclude *.pyd
+[2024-04-20 00:04:24] INFO root fetch - processPackages [jupyter-environment-manager]: Downloading https://files.pythonhosted.org/packages/bf/9d/3c0079b6f48134284526d8fb51cf1ba664bffd65c3c7a1224ed504fe2c3e/jupyter_environment_manager-0.2.0rc9.tar.gz
+[2024-04-20 00:04:25] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl-lsp-0.0.77.tar.gz]
+[2024-04-20 00:04:25] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip]
+[2024-04-20 00:04:25] INFO root fetch - main [MainThread]: End processing [wdl-lsp]: success
+[2024-04-20 00:04:26] INFO root fetch - processPackages [jupyter-environment-manager]: executing diffoscope
+[2024-04-20 00:04:26] INFO root fetch - processPackages [jupyter-environment-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_environment_manager-0.2.0rc8.tar.gz tmp/jupyter_environment_manager-0.2.0rc9.tar.gz --markdown 20240420/j/jupyter-environment-manager/0.2.0rc8-0.2.0rc9/README.md --exclude *.pyd
+[2024-04-20 00:04:27] INFO root fetch - processPackages [skytemple-randomizer]: Downloading https://files.pythonhosted.org/packages/99/40/fafeb1f7361463bad4528a1b59fbad16fc96d34d2549151756f42ce37caf/skytemple_randomizer-2.0.0b1-py3-none-any.whl
+[2024-04-20 00:04:28] INFO root fetch - processPackages [skytemple-randomizer]: executing diffoscope
+[2024-04-20 00:04:28] INFO root fetch - processPackages [skytemple-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytemple_randomizer-1.6.0rc1-py3-none-any.whl.zip tmp/skytemple_randomizer-2.0.0b1-py3-none-any.whl.zip --markdown 20240420/s/skytemple-randomizer/1.6.0rc1-2.0.0b1/README.md --exclude *.pyd
+[2024-04-20 00:04:30] INFO root fetch - processPackages [jupyter-environment-manager]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_environment_manager-0.2.0rc8.tar.gz]
+[2024-04-20 00:04:30] INFO root fetch - processPackages [jupyter-environment-manager]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_environment_manager-0.2.0rc9.tar.gz]
+[2024-04-20 00:04:30] INFO root fetch - main [MainThread]: End processing [jupyter-environment-manager]: success
+[2024-04-20 00:04:33] INFO root fetch - processPackages [skytemple-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_randomizer-1.6.0rc1-py3-none-any.whl.zip]
+[2024-04-20 00:04:33] INFO root fetch - processPackages [skytemple-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_randomizer-2.0.0b1-py3-none-any.whl.zip]
+[2024-04-20 00:04:33] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
+[2024-04-20 00:04:33] INFO root fetch - main [MainThread]: Store serial: [22848868]
