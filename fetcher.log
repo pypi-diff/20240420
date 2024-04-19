@@ -548,3 +548,45 @@
 [2024-04-20 00:27:21] INFO root fetch - processPackages [checkov]: Remove: archive file [/home/abi/fetcher/tmp/checkov-3.2.9.tar.gz]
 [2024-04-20 00:27:21] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2024-04-20 00:27:21] INFO root fetch - main [MainThread]: Store serial: [22849147]
+[2024-04-20 00:29:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849147]
+[2024-04-20 00:29:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 00:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esi-utils-pager
+[2024-04-20 00:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wdl-lsp
+[2024-04-20 00:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: effective-horizon
+[2024-04-20 00:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gnoll
+[2024-04-20 00:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: how-is-the-weather
+[2024-04-20 00:29:29] INFO root fetch - processPackages [wdl-lsp]: New version: [0.0.83] Old Version: [0.0.82]
+[2024-04-20 00:29:29] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/8b/68/68710c6b9946c459eda1528558fe300e1defd785be972444c88cbfc246b4/wdl_lsp-0.0.82-py3-none-any.whl
+[2024-04-20 00:29:29] INFO root fetch - processPackages [how-is-the-weather]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-20 00:29:29] INFO root fetch - processPackages [esi-utils-pager]: New version: [1.1.11] Old Version: [1.0.9]
+[2024-04-20 00:29:29] WARNING root fetch - processPackages [effective-horizon]: Skipping, unable to determine old version
+[2024-04-20 00:29:29] INFO root fetch - main [MainThread]: End processing [effective-horizon] error
+[2024-04-20 00:29:29] INFO root fetch - processPackages [gnoll]: New version: [4.5.3] Old Version: [4.5.2]
+[2024-04-20 00:29:30] INFO root fetch - processPackages [how-is-the-weather]: Downloading https://files.pythonhosted.org/packages/09/b9/d40994412d5a0ad31fe2ab3484753ba420dbd92e0ba2b7feb5078e5840cd/how_is_the_weather-0.3.1.tar.gz
+[2024-04-20 00:29:30] INFO root fetch - processPackages [esi-utils-pager]: Downloading https://files.pythonhosted.org/packages/8e/17/1724076fe009595eaa3a147265b027a3d70a817c93571c29c4f80a1702ee/esi-utils-pager-1.0.9.tar.gz
+[2024-04-20 00:29:30] INFO root fetch - processPackages [gnoll]: Downloading https://files.pythonhosted.org/packages/e3/ff/15fa0f6ad78f847e45b2163175d0bbafa73f8c51afaced4b39b909176590/gnoll-4.5.2-cp310-cp310-manylinux1_x86_64.whl
+[2024-04-20 00:29:30] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/ad/99/08c4bb04624004228b56c59e4540cec2342f9009138111da488aaa392185/wdl_lsp-0.0.83-py3-none-any.whl
+[2024-04-20 00:29:30] INFO root fetch - processPackages [wdl-lsp]: executing diffoscope
+[2024-04-20 00:29:30] INFO root fetch - processPackages [wdl-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip tmp/wdl_lsp-0.0.83-py3-none-any.whl.zip --markdown 20240420/w/wdl-lsp/0.0.82-0.0.83/README.md --exclude *.pyd
+[2024-04-20 00:29:30] INFO root fetch - processPackages [how-is-the-weather]: Downloading https://files.pythonhosted.org/packages/a8/8e/b5303f1c8e84e657c823f68de5a6115fbaea3b5580cd1f3196f549fee4f9/how_is_the_weather-0.3.2.tar.gz
+[2024-04-20 00:29:30] INFO root fetch - processPackages [gnoll]: Downloading https://files.pythonhosted.org/packages/64/26/acf7d958cd4701b6e9be023493a6ab7bff2efb9ef8c9b120d915e1b30efb/gnoll-4.5.3-cp310-cp310-manylinux1_x86_64.whl
+[2024-04-20 00:29:30] INFO root fetch - processPackages [esi-utils-pager]: Downloading https://files.pythonhosted.org/packages/0c/a2/a27324d473cad304d330f57be7d1b47be7d7366fc35f8c1f0e0b15d3f060/esi_utils_pager-1.1.11.tar.gz
+[2024-04-20 00:29:30] INFO root fetch - processPackages [gnoll]: executing diffoscope
+[2024-04-20 00:29:30] INFO root fetch - processPackages [gnoll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnoll-4.5.2-cp310-cp310-manylinux1_x86_64.whl.zip tmp/gnoll-4.5.3-cp310-cp310-manylinux1_x86_64.whl.zip --markdown 20240420/g/gnoll/4.5.2-4.5.3/README.md --exclude *.pyd
+[2024-04-20 00:29:30] INFO root fetch - processPackages [how-is-the-weather]: executing diffoscope
+[2024-04-20 00:29:30] INFO root fetch - processPackages [how-is-the-weather]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/how_is_the_weather-0.3.1.tar.gz tmp/how_is_the_weather-0.3.2.tar.gz --markdown 20240420/h/how-is-the-weather/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-20 00:29:30] INFO root fetch - processPackages [esi-utils-pager]: executing diffoscope
+[2024-04-20 00:29:30] INFO root fetch - processPackages [esi-utils-pager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esi-utils-pager-1.0.9.tar.gz tmp/esi_utils_pager-1.1.11.tar.gz --markdown 20240420/e/esi-utils-pager/1.0.9-1.1.11/README.md --exclude *.pyd
+[2024-04-20 00:29:30] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl_lsp-0.0.82-py3-none-any.whl.zip]
+[2024-04-20 00:29:30] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl_lsp-0.0.83-py3-none-any.whl.zip]
+[2024-04-20 00:29:30] INFO root fetch - main [MainThread]: End processing [wdl-lsp]: success
+[2024-04-20 00:29:31] INFO root fetch - processPackages [how-is-the-weather]: Remove: archive file [/home/abi/fetcher/tmp/how_is_the_weather-0.3.1.tar.gz]
+[2024-04-20 00:29:31] INFO root fetch - processPackages [how-is-the-weather]: Remove: archive file [/home/abi/fetcher/tmp/how_is_the_weather-0.3.2.tar.gz]
+[2024-04-20 00:29:31] INFO root fetch - main [MainThread]: End processing [how-is-the-weather]: success
+[2024-04-20 00:29:31] INFO root fetch - processPackages [gnoll]: Remove: archive file [/home/abi/fetcher/tmp/gnoll-4.5.2-cp310-cp310-manylinux1_x86_64.whl.zip]
+[2024-04-20 00:29:31] INFO root fetch - processPackages [gnoll]: Remove: archive file [/home/abi/fetcher/tmp/gnoll-4.5.3-cp310-cp310-manylinux1_x86_64.whl.zip]
+[2024-04-20 00:29:31] INFO root fetch - main [MainThread]: End processing [gnoll]: success
+[2024-04-20 00:29:31] INFO root fetch - processPackages [esi-utils-pager]: Remove: archive file [/home/abi/fetcher/tmp/esi-utils-pager-1.0.9.tar.gz]
+[2024-04-20 00:29:31] INFO root fetch - processPackages [esi-utils-pager]: Remove: archive file [/home/abi/fetcher/tmp/esi_utils_pager-1.1.11.tar.gz]
+[2024-04-20 00:29:31] INFO root fetch - main [MainThread]: End processing [esi-utils-pager]: success
+[2024-04-20 00:29:31] INFO root fetch - main [MainThread]: Store serial: [22849163]
