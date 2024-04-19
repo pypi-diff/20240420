@@ -941,3 +941,15 @@
 [2024-04-20 00:55:57] INFO root fetch - processPackages [yak-server]: Remove: archive file [/home/abi/fetcher/tmp/yak_server-0.9.0.tar.gz]
 [2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [yak-server]: success
 [2024-04-20 00:55:57] INFO root fetch - main [MainThread]: Store serial: [22849300]
+[2024-04-20 00:58:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849300]
+[2024-04-20 00:58:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 00:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsk-monster
+[2024-04-20 00:58:06] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 00:58:06] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-20 00:58:06] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-20 00:58:06] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-20 00:58:06] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240420/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 00:58:07] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-20 00:58:07] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-20 00:58:07] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-20 00:58:07] INFO root fetch - main [MainThread]: Store serial: [22849303]
