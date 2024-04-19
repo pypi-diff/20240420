@@ -1,0 +1,42 @@
+[2024-04-20 00:02:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848830]
+[2024-04-20 00:02:13] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyhasura
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uart-devices
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-rke
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: caveclient
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-clerk
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: codeflex
+[2024-04-20 00:02:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: python-sc
+[2024-04-20 00:02:13] WARNING root fetch - processPackages [uart-devices]: Skipping, unable to determine old version
+[2024-04-20 00:02:13] INFO root fetch - main [MainThread]: End processing [uart-devices] error
+[2024-04-20 00:02:14] WARNING root fetch - processPackages [pytest-clerk]: Skipping, unable to determine old version
+[2024-04-20 00:02:14] INFO root fetch - main [MainThread]: End processing [pytest-clerk] error
+[2024-04-20 00:02:14] INFO root fetch - processPackages [caveclient]: New version: [5.9.0] Old Version: [5.8.1]
+[2024-04-20 00:02:14] WARNING root fetch - processPackages [python-sc]: Skipping, unable to determine old version
+[2024-04-20 00:02:14] INFO root fetch - main [MainThread]: End processing [python-sc] error
+[2024-04-20 00:02:14] WARNING root fetch - processPackages [pyhasura]: Skipping, unable to determine old version
+[2024-04-20 00:02:14] INFO root fetch - main [MainThread]: End processing [pyhasura] error
+[2024-04-20 00:02:14] INFO root fetch - processPackages [codeflex]: New version: [2.1.0] Old Version: [1.1.1]
+[2024-04-20 00:02:14] INFO root fetch - processPackages [pulumi-rke]: New version: [3.5.0a1713561359] Old Version: [3.5.0a1713338356]
+[2024-04-20 00:02:14] INFO root fetch - processPackages [caveclient]: Downloading https://files.pythonhosted.org/packages/f2/0a/b031b69ee9fc2d45eef79a31150b19a3c7e806d66f0f1126822484b17490/caveclient-5.8.1.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/c0/7b/b9342e2333fb9f45fb9903002539854f1cb7c04cfafd14d761da5287e36c/pulumi_rke-3.5.0a1713338356.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/bf/e9/244180ed491498e5599f095f9e328976839dcf6381e64edef3e43c2e70cf/codeflex-1.1.1.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/98/f3/71a70217341c0474d04e6cbb932994332c2b132ca98a3eba187716ca975c/pulumi_rke-3.5.0a1713561359.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [codeflex]: Downloading https://files.pythonhosted.org/packages/69/06/564f9585465527e18d5fade027817679552c4f8d0bf2e29d4d3156109ad3/codeflex-2.1.0.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [caveclient]: Downloading https://files.pythonhosted.org/packages/74/e6/501e07ffe4a019c3404aa2436c14b0daf4a0e85a8bad106e8d4dcd21c027/caveclient-5.9.0.tar.gz
+[2024-04-20 00:02:14] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2024-04-20 00:02:14] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.5.0a1713338356.tar.gz tmp/pulumi_rke-3.5.0a1713561359.tar.gz --markdown 20240420/p/pulumi-rke/3.5.0a1713338356-3.5.0a1713561359/README.md --exclude *.pyd
+[2024-04-20 00:02:14] INFO root fetch - processPackages [codeflex]: executing diffoscope
+[2024-04-20 00:02:14] INFO root fetch - processPackages [codeflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codeflex-1.1.1.tar.gz tmp/codeflex-2.1.0.tar.gz --markdown 20240420/c/codeflex/1.1.1-2.1.0/README.md --exclude *.pyd
+[2024-04-20 00:02:14] INFO root fetch - processPackages [caveclient]: executing diffoscope
+[2024-04-20 00:02:14] INFO root fetch - processPackages [caveclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caveclient-5.8.1.tar.gz tmp/caveclient-5.9.0.tar.gz --markdown 20240420/c/caveclient/5.8.1-5.9.0/README.md --exclude *.pyd
+[2024-04-20 00:02:15] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.5.0a1713338356.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.5.0a1713561359.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-1.1.1.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2024-04-20 00:02:15] INFO root fetch - processPackages [codeflex]: Remove: archive file [/home/abi/fetcher/tmp/codeflex-2.1.0.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - main [MainThread]: End processing [codeflex]: success
+[2024-04-20 00:02:15] INFO root fetch - processPackages [caveclient]: Remove: archive file [/home/abi/fetcher/tmp/caveclient-5.8.1.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - processPackages [caveclient]: Remove: archive file [/home/abi/fetcher/tmp/caveclient-5.9.0.tar.gz]
+[2024-04-20 00:02:15] INFO root fetch - main [MainThread]: End processing [caveclient]: success
+[2024-04-20 00:02:15] INFO root fetch - main [MainThread]: Store serial: [22848856]
