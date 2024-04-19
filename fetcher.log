@@ -1634,3 +1634,33 @@
 [2024-04-20 01:46:26] INFO root fetch - processPackages [nrtk-explorer]: Remove: archive file [/home/abi/fetcher/tmp/nrtk_explorer-0.1.1.tar.gz]
 [2024-04-20 01:46:26] INFO root fetch - main [MainThread]: End processing [nrtk-explorer]: success
 [2024-04-20 01:46:26] INFO root fetch - main [MainThread]: Store serial: [22849542]
+[2024-04-20 01:48:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849542]
+[2024-04-20 01:48:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 01:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-madvr2
+[2024-04-20 01:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinjax
+[2024-04-20 01:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: basic-pitch
+[2024-04-20 01:48:36] INFO root fetch - processPackages [py-madvr2]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-20 01:48:36] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/bc/7d/a7107296b188a139b9853545d969e8e21c463d5567e2a46e2a4ba8130857/py_madvr2-1.5.8.tar.gz
+[2024-04-20 01:48:36] INFO root fetch - processPackages [basic-pitch]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-20 01:48:36] INFO root fetch - processPackages [jinjax]: New version: [0.32] Old Version: [0.31]
+[2024-04-20 01:48:37] INFO root fetch - processPackages [basic-pitch]: Downloading https://files.pythonhosted.org/packages/51/f9/c715eb769df9bd8913454d955316e1fb8d8dd58d725c967a3083c0ecefc9/basic-pitch-0.3.0.tar.gz
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: Downloading https://files.pythonhosted.org/packages/71/79/1a300d18e9460c7297e863fae9deb2379d43302ea97756b9aeb93610492e/jinjax-0.31.tar.gz
+[2024-04-20 01:48:37] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/d0/24/2fb7d011e6d2de1179b6cd6b8f5e933bed4bdcc18ebc2a5498f1692839cb/py_madvr2-1.5.9.tar.gz
+[2024-04-20 01:48:37] INFO root fetch - processPackages [py-madvr2]: executing diffoscope
+[2024-04-20 01:48:37] INFO root fetch - processPackages [py-madvr2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr2-1.5.8.tar.gz tmp/py_madvr2-1.5.9.tar.gz --markdown 20240420/p/py-madvr2/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: Downloading https://files.pythonhosted.org/packages/a5/49/40ca8787cf8cbcbaba615f7d15906ea799fc5ca988c7f1cadc4c779feeab/jinjax-0.32.tar.gz
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: executing diffoscope
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjax-0.31.tar.gz tmp/jinjax-0.32.tar.gz --markdown 20240420/j/jinjax/0.31-0.32/README.md --exclude *.pyd
+[2024-04-20 01:48:37] INFO root fetch - processPackages [basic-pitch]: Downloading https://files.pythonhosted.org/packages/1b/aa/b79c75e84f2ebeed92a99ca8ae0f712ffc406a6636c2fa74014c00414206/basic_pitch-0.3.1.tar.gz
+[2024-04-20 01:48:37] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.8.tar.gz]
+[2024-04-20 01:48:37] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.9.tar.gz]
+[2024-04-20 01:48:37] INFO root fetch - processPackages [basic-pitch]: executing diffoscope
+[2024-04-20 01:48:37] INFO root fetch - processPackages [basic-pitch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basic-pitch-0.3.0.tar.gz tmp/basic_pitch-0.3.1.tar.gz --markdown 20240420/b/basic-pitch/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-20 01:48:37] INFO root fetch - main [MainThread]: End processing [py-madvr2]: success
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: Remove: archive file [/home/abi/fetcher/tmp/jinjax-0.31.tar.gz]
+[2024-04-20 01:48:37] INFO root fetch - processPackages [jinjax]: Remove: archive file [/home/abi/fetcher/tmp/jinjax-0.32.tar.gz]
+[2024-04-20 01:48:37] INFO root fetch - main [MainThread]: End processing [jinjax]: success
+[2024-04-20 01:48:38] INFO root fetch - processPackages [basic-pitch]: Remove: archive file [/home/abi/fetcher/tmp/basic-pitch-0.3.0.tar.gz]
+[2024-04-20 01:48:38] INFO root fetch - processPackages [basic-pitch]: Remove: archive file [/home/abi/fetcher/tmp/basic_pitch-0.3.1.tar.gz]
+[2024-04-20 01:48:38] INFO root fetch - main [MainThread]: End processing [basic-pitch]: success
+[2024-04-20 01:48:38] INFO root fetch - main [MainThread]: Store serial: [22849551]
