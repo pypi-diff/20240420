@@ -1173,3 +1173,36 @@
 [2024-04-20 01:15:48] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
 [2024-04-20 01:15:48] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
 [2024-04-20 01:15:48] INFO root fetch - main [MainThread]: Store serial: [22849386]
+[2024-04-20 01:17:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849386]
+[2024-04-20 01:17:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 01:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocorum
+[2024-04-20 01:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: foodsorterlib
+[2024-04-20 01:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-madvr2
+[2024-04-20 01:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: raster-tools
+[2024-04-20 01:17:57] INFO root fetch - processPackages [py-madvr2]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-20 01:17:57] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/63/29/ccc5ea2f521ca75dd0b9c710ea6d224d447ff10c7d5d06a2a1e7de0ac8b6/py_madvr2-1.5.4.tar.gz
+[2024-04-20 01:17:57] INFO root fetch - processPackages [cocorum]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 01:17:57] INFO root fetch - processPackages [raster-tools]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-04-20 01:17:57] WARNING root fetch - processPackages [foodsorterlib]: Skipping, unable to determine old version
+[2024-04-20 01:17:57] INFO root fetch - main [MainThread]: End processing [foodsorterlib] error
+[2024-04-20 01:17:57] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/e0/44/c80e36f21f386660a041045b62dc495ffe3b27ac4b3be2c0c1d5f96345aa/cocorum-0.1.0.tar.gz
+[2024-04-20 01:17:57] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/a9/67/a48f40e8ac2fd3d841754235d90d91eed5c3b5077f77b4b1ce433857ef63/py_madvr2-1.5.5.tar.gz
+[2024-04-20 01:17:57] INFO root fetch - processPackages [raster-tools]: Downloading https://files.pythonhosted.org/packages/59/e9/5403791d965133688d784ba5d942ac6df2c321612cd65e7c3b33fda601fa/raster-tools-0.8.0.tar.gz
+[2024-04-20 01:17:57] INFO root fetch - processPackages [py-madvr2]: executing diffoscope
+[2024-04-20 01:17:57] INFO root fetch - processPackages [py-madvr2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr2-1.5.4.tar.gz tmp/py_madvr2-1.5.5.tar.gz --markdown 20240420/p/py-madvr2/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-20 01:17:57] INFO root fetch - processPackages [cocorum]: Downloading https://files.pythonhosted.org/packages/9a/b6/5288132dbe0014ab3df7d2dfbf0e3f93597e7987fe7f8f05e948455cdeb1/cocorum-0.2.0.tar.gz
+[2024-04-20 01:17:57] INFO root fetch - processPackages [cocorum]: executing diffoscope
+[2024-04-20 01:17:57] INFO root fetch - processPackages [cocorum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocorum-0.1.0.tar.gz tmp/cocorum-0.2.0.tar.gz --markdown 20240420/c/cocorum/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 01:17:57] INFO root fetch - processPackages [raster-tools]: Downloading https://files.pythonhosted.org/packages/9e/02/a15222c94d82a73eb63a35f00725f2e9ff3e8e0128e24ac5e050ce755233/raster_tools-0.8.1.tar.gz
+[2024-04-20 01:17:58] INFO root fetch - processPackages [raster-tools]: executing diffoscope
+[2024-04-20 01:17:58] INFO root fetch - processPackages [raster-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raster-tools-0.8.0.tar.gz tmp/raster_tools-0.8.1.tar.gz --markdown 20240420/r/raster-tools/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-04-20 01:17:58] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.4.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.5.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - main [MainThread]: End processing [py-madvr2]: success
+[2024-04-20 01:17:58] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.1.0.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - processPackages [cocorum]: Remove: archive file [/home/abi/fetcher/tmp/cocorum-0.2.0.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - main [MainThread]: End processing [cocorum]: success
+[2024-04-20 01:17:58] INFO root fetch - processPackages [raster-tools]: Remove: archive file [/home/abi/fetcher/tmp/raster-tools-0.8.0.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - processPackages [raster-tools]: Remove: archive file [/home/abi/fetcher/tmp/raster_tools-0.8.1.tar.gz]
+[2024-04-20 01:17:58] INFO root fetch - main [MainThread]: End processing [raster-tools]: success
+[2024-04-20 01:17:58] INFO root fetch - main [MainThread]: Store serial: [22849403]
