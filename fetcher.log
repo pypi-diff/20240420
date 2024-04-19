@@ -590,3 +590,15 @@
 [2024-04-20 00:29:31] INFO root fetch - processPackages [esi-utils-pager]: Remove: archive file [/home/abi/fetcher/tmp/esi_utils_pager-1.1.11.tar.gz]
 [2024-04-20 00:29:31] INFO root fetch - main [MainThread]: End processing [esi-utils-pager]: success
 [2024-04-20 00:29:31] INFO root fetch - main [MainThread]: Store serial: [22849163]
+[2024-04-20 00:31:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849163]
+[2024-04-20 00:31:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 00:31:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rottnest
+[2024-04-20 00:31:40] INFO root fetch - processPackages [rottnest]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-20 00:31:40] INFO root fetch - processPackages [rottnest]: Downloading https://files.pythonhosted.org/packages/c0/6e/5c2cd798ec5f60dd3a81b10ff8b0746d7f4a239571d9bd692766cc7fae22/rottnest-1.1.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 00:31:44] INFO root fetch - processPackages [rottnest]: Downloading https://files.pythonhosted.org/packages/44/82/ecc7e8d9d3ab2e3bd2316ac54c1d3401f533184bf9761a0ac470197cb926/rottnest-1.2.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 00:31:46] INFO root fetch - processPackages [rottnest]: executing diffoscope
+[2024-04-20 00:31:46] INFO root fetch - processPackages [rottnest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rottnest-1.1.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/rottnest-1.2.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240420/r/rottnest/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-20 00:33:39] INFO root fetch - processPackages [rottnest]: Remove: archive file [/home/abi/fetcher/tmp/rottnest-1.1.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 00:33:39] INFO root fetch - processPackages [rottnest]: Remove: archive file [/home/abi/fetcher/tmp/rottnest-1.2.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 00:33:39] INFO root fetch - main [MainThread]: End processing [rottnest]: success
+[2024-04-20 00:33:39] INFO root fetch - main [MainThread]: Store serial: [22849167]
