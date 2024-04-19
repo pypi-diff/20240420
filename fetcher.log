@@ -664,3 +664,24 @@
 [2024-04-20 00:36:12] INFO root fetch - processPackages [nvflare]: Remove: archive file [/home/abi/fetcher/tmp/nvflare-2.4.1rc7-py3-none-any.whl.zip]
 [2024-04-20 00:36:12] INFO root fetch - main [MainThread]: End processing [nvflare]: success
 [2024-04-20 00:36:12] INFO root fetch - main [MainThread]: Store serial: [22849187]
+[2024-04-20 00:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849187]
+[2024-04-20 00:38:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bridgecrew
+[2024-04-20 00:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wdl-lsp
+[2024-04-20 00:38:21] INFO root fetch - processPackages [wdl-lsp]: New version: [0.0.84] Old Version: [0.0.83]
+[2024-04-20 00:38:21] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/ad/99/08c4bb04624004228b56c59e4540cec2342f9009138111da488aaa392185/wdl_lsp-0.0.83-py3-none-any.whl
+[2024-04-20 00:38:21] INFO root fetch - processPackages [bridgecrew]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-20 00:38:21] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/10/ba/dce7980ff0b7c11c6b0d4933f275f376eb8a4c997f0527cc483ac2310c8b/bridgecrew-3.2.8.tar.gz
+[2024-04-20 00:38:21] INFO root fetch - processPackages [wdl-lsp]: Downloading https://files.pythonhosted.org/packages/50/ef/c9f9c2a4fc6416e583298e1b0e775917f21db0784f213a57c20b21032ce5/wdl-lsp-0.0.84.tar.gz
+[2024-04-20 00:38:22] INFO root fetch - processPackages [wdl-lsp]: executing diffoscope
+[2024-04-20 00:38:22] INFO root fetch - processPackages [wdl-lsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdl_lsp-0.0.83-py3-none-any.whl.zip tmp/wdl-lsp-0.0.84.tar.gz --markdown 20240420/w/wdl-lsp/0.0.83-0.0.84/README.md --exclude *.pyd
+[2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: Downloading https://files.pythonhosted.org/packages/f5/cd/d4c4caa7926c87e041723a31e232e562f13e2fa83f05b7451436564fe03f/bridgecrew-3.2.9.tar.gz
+[2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-3.2.8.tar.gz tmp/bridgecrew-3.2.9.tar.gz --markdown 20240420/b/bridgecrew/3.2.8-3.2.9/README.md --exclude *.pyd
+[2024-04-20 00:38:22] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl_lsp-0.0.83-py3-none-any.whl.zip]
+[2024-04-20 00:38:22] INFO root fetch - processPackages [wdl-lsp]: Remove: archive file [/home/abi/fetcher/tmp/wdl-lsp-0.0.84.tar.gz]
+[2024-04-20 00:38:22] INFO root fetch - main [MainThread]: End processing [wdl-lsp]: success
+[2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.8.tar.gz]
+[2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.9.tar.gz]
+[2024-04-20 00:38:22] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2024-04-20 00:38:22] INFO root fetch - main [MainThread]: Store serial: [22849193]
