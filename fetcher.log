@@ -1487,3 +1487,33 @@
 [2024-04-20 01:37:36] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.3.tar.gz]
 [2024-04-20 01:37:36] INFO root fetch - main [MainThread]: End processing [steelpy]: success
 [2024-04-20 01:37:36] INFO root fetch - main [MainThread]: Store serial: [22849497]
+[2024-04-20 01:39:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849497]
+[2024-04-20 01:39:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 01:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-20 01:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: waf-libs
+[2024-04-20 01:39:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edgedb-pydantic-codegen
+[2024-04-20 01:39:44] INFO root fetch - processPackages [flatpack]: New version: [3.3.5] Old Version: [3.3.4]
+[2024-04-20 01:39:44] INFO root fetch - processPackages [waf-libs]: New version: [2024.4.2] Old Version: [2024.4.19]
+[2024-04-20 01:39:44] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.4.2] Old Version: [2024.4.1]
+[2024-04-20 01:39:44] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/aa/9f/3f0ee85e7bea71152f0a0ab4f67560756f9d18090ae3bd2e6e3d9abf3e05/flatpack-3.3.4.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [waf-libs]: Downloading https://files.pythonhosted.org/packages/42/b8/3c2dac35f22890d49bd9a5a2cb22efc18e8cca5de41e73665c915d1a2487/waf-libs-2024.4.19.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/6e/a9/d053422f5cca45375ec10c991afd9eddc80a72e160d858123dbb399f9e56/edgedb_pydantic_codegen-2024.4.1.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/72/f0/0fd4fa4afbf712a5626abe401eb822e61882a41b133b75d34f5e541c77b8/flatpack-3.3.5.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 01:39:45] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.4.tar.gz tmp/flatpack-3.3.5.tar.gz --markdown 20240420/f/flatpack/3.3.4-3.3.5/README.md --exclude *.pyd
+[2024-04-20 01:39:45] INFO root fetch - processPackages [waf-libs]: Downloading https://files.pythonhosted.org/packages/e2/61/1b2b637199a73adc90b996dc889e86282b1a1487943cfe7945f9ad016bd3/waf-libs-2024.4.2.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/13/aa/7961cf7d1dfaeb9d0a494903f244f6f9b9118e78450d0c4b5b14e7dbfafe/edgedb_pydantic_codegen-2024.4.2.tar.gz
+[2024-04-20 01:39:45] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-04-20 01:39:45] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.4.1.tar.gz tmp/edgedb_pydantic_codegen-2024.4.2.tar.gz --markdown 20240420/e/edgedb-pydantic-codegen/2024.4.1-2024.4.2/README.md --exclude *.pyd
+[2024-04-20 01:39:45] INFO root fetch - processPackages [waf-libs]: executing diffoscope
+[2024-04-20 01:39:45] INFO root fetch - processPackages [waf-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waf-libs-2024.4.19.tar.gz tmp/waf-libs-2024.4.2.tar.gz --markdown 20240420/w/waf-libs/2024.4.19-2024.4.2/README.md --exclude *.pyd
+[2024-04-20 01:39:45] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.4.tar.gz]
+[2024-04-20 01:39:45] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.5.tar.gz]
+[2024-04-20 01:39:45] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 01:39:46] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.1.tar.gz]
+[2024-04-20 01:39:46] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.2.tar.gz]
+[2024-04-20 01:39:46] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-04-20 01:39:46] INFO root fetch - processPackages [waf-libs]: Remove: archive file [/home/abi/fetcher/tmp/waf-libs-2024.4.19.tar.gz]
+[2024-04-20 01:39:46] INFO root fetch - processPackages [waf-libs]: Remove: archive file [/home/abi/fetcher/tmp/waf-libs-2024.4.2.tar.gz]
+[2024-04-20 01:39:46] INFO root fetch - main [MainThread]: End processing [waf-libs]: success
+[2024-04-20 01:39:46] INFO root fetch - main [MainThread]: Store serial: [22849505]
