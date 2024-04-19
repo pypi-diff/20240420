@@ -747,3 +747,24 @@
 [2024-04-20 00:42:44] INFO root fetch - processPackages [keyboardsounds]: Remove: archive file [/home/abi/fetcher/tmp/keyboardsounds-5.7.5.tar.gz]
 [2024-04-20 00:42:44] INFO root fetch - main [MainThread]: End processing [keyboardsounds]: success
 [2024-04-20 00:42:44] INFO root fetch - main [MainThread]: Store serial: [22849218]
+[2024-04-20 00:44:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849218]
+[2024-04-20 00:44:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: referrers
+[2024-04-20 00:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ciou
+[2024-04-20 00:44:52] INFO root fetch - processPackages [referrers]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-20 00:44:52] INFO root fetch - processPackages [ciou]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-20 00:44:52] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/64/50/5824af0f6a2ed3bf912d324b0651ae09f16c245dc748b1612d4eb796653a/referrers-0.3.3.tar.gz
+[2024-04-20 00:44:52] INFO root fetch - processPackages [ciou]: Downloading https://files.pythonhosted.org/packages/fb/6b/eb632338beb1fe800052c9f9775466ff350aa792ec5d751b8d47f86c6f7e/ciou-0.2.0.tar.gz
+[2024-04-20 00:44:53] INFO root fetch - processPackages [ciou]: Downloading https://files.pythonhosted.org/packages/c6/91/a633a84fd36e616279c8c512ba831b536d84e91ba7fe0e10189a76e401e8/ciou-0.3.0.tar.gz
+[2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: Downloading https://files.pythonhosted.org/packages/64/5d/304d3274af4d232298ccbe92f7c51ee72d1073f9df3bcbbf7f55e5d8802c/referrers-0.3.4.tar.gz
+[2024-04-20 00:44:53] INFO root fetch - processPackages [ciou]: executing diffoscope
+[2024-04-20 00:44:53] INFO root fetch - processPackages [ciou]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciou-0.2.0.tar.gz tmp/ciou-0.3.0.tar.gz --markdown 20240420/c/ciou/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: executing diffoscope
+[2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/referrers-0.3.3.tar.gz tmp/referrers-0.3.4.tar.gz --markdown 20240420/r/referrers/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-20 00:44:53] INFO root fetch - processPackages [ciou]: Remove: archive file [/home/abi/fetcher/tmp/ciou-0.2.0.tar.gz]
+[2024-04-20 00:44:53] INFO root fetch - processPackages [ciou]: Remove: archive file [/home/abi/fetcher/tmp/ciou-0.3.0.tar.gz]
+[2024-04-20 00:44:53] INFO root fetch - main [MainThread]: End processing [ciou]: success
+[2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.3.3.tar.gz]
+[2024-04-20 00:44:53] INFO root fetch - processPackages [referrers]: Remove: archive file [/home/abi/fetcher/tmp/referrers-0.3.4.tar.gz]
+[2024-04-20 00:44:53] INFO root fetch - main [MainThread]: End processing [referrers]: success
+[2024-04-20 00:44:53] INFO root fetch - main [MainThread]: Store serial: [22849226]
