@@ -685,3 +685,50 @@
 [2024-04-20 00:38:22] INFO root fetch - processPackages [bridgecrew]: Remove: archive file [/home/abi/fetcher/tmp/bridgecrew-3.2.9.tar.gz]
 [2024-04-20 00:38:22] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
 [2024-04-20 00:38:22] INFO root fetch - main [MainThread]: Store serial: [22849193]
+[2024-04-20 00:40:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849193]
+[2024-04-20 00:40:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ehtim
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: effective-horizon
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athena-intelligence
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ahk
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Payton
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ahk]: New version: [1.6.2] Old Version: [1.6.1]
+[2024-04-20 00:40:31] WARNING root fetch - processPackages [effective-horizon]: Skipping, unable to determine old version
+[2024-04-20 00:40:31] INFO root fetch - main [MainThread]: End processing [effective-horizon] error
+[2024-04-20 00:40:31] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ahk]: Downloading https://files.pythonhosted.org/packages/2a/0a/70005c59d0ec01e686c673e5be88886f9b347f821dfd4b3f16decc02ff5a/ahk-1.6.1.tar.gz
+[2024-04-20 00:40:31] INFO root fetch - processPackages [Payton]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-20 00:40:31] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 00:40:31] INFO root fetch - processPackages [ehtim]: New version: [1.2.8] Old Version: [1.2.7]
+[2024-04-20 00:40:31] INFO root fetch - processPackages [athena-intelligence]: New version: [0.1.45] Old Version: [0.1.44]
+[2024-04-20 00:40:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [Payton]: Downloading https://files.pythonhosted.org/packages/a6/ec/19351194d7204888fa372dd53f47d7a0572cf463eaa4f0a5a266528e62e1/Payton-1.2.0.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [ahk]: Downloading https://files.pythonhosted.org/packages/71/a9/d9f98b8fa76e56441b39008ca0d4cf44a63efcf299a9c4e728d53fb3ec3e/ahk-1.6.2.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [ehtim]: Downloading https://files.pythonhosted.org/packages/ff/14/dd5cb495883294ff905246922d4e953ec41be2ae7c32235215be3ce5cf2b/ehtim-1.2.7.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/d1/b2/96c0a467c6cf09afd2d1e147a7c4106bdf31d49dd294501e595f96bc07fb/athena_intelligence-0.1.44.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 00:40:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:40:32] INFO root fetch - processPackages [ahk]: executing diffoscope
+[2024-04-20 00:40:32] INFO root fetch - processPackages [ahk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ahk-1.6.1.tar.gz tmp/ahk-1.6.2.tar.gz --markdown 20240420/a/ahk/1.6.1-1.6.2/README.md --exclude *.pyd
+[2024-04-20 00:40:32] WARNING root fetch - processPackages [ehtim]: Skipping package: exceeds size limit 27910873>=10485760
+[2024-04-20 00:40:32] INFO root fetch - main [MainThread]: End processing [ehtim] error
+[2024-04-20 00:40:32] INFO root fetch - processPackages [Payton]: Downloading https://files.pythonhosted.org/packages/db/ce/0333194d300f93c16cef86d25ffa6f7708df8db1c4d403a6ad9dee851713/payton-1.2.1.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [athena-intelligence]: Downloading https://files.pythonhosted.org/packages/bb/7e/71f85af8a4a190462ad45899204bd8c13167d0e6eaba3fe7de6bb6206cec/athena_intelligence-0.1.45.tar.gz
+[2024-04-20 00:40:32] INFO root fetch - processPackages [athena-intelligence]: executing diffoscope
+[2024-04-20 00:40:32] INFO root fetch - processPackages [athena-intelligence]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athena_intelligence-0.1.44.tar.gz tmp/athena_intelligence-0.1.45.tar.gz --markdown 20240420/a/athena-intelligence/0.1.44-0.1.45/README.md --exclude *.pyd
+[2024-04-20 00:40:32] INFO root fetch - processPackages [Payton]: executing diffoscope
+[2024-04-20 00:40:32] INFO root fetch - processPackages [Payton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Payton-1.2.0.tar.gz tmp/payton-1.2.1.tar.gz --markdown 20240420/P/Payton/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-20 00:40:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 00:40:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 00:40:32] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 00:40:33] INFO root fetch - processPackages [ahk]: Remove: archive file [/home/abi/fetcher/tmp/ahk-1.6.1.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - processPackages [ahk]: Remove: archive file [/home/abi/fetcher/tmp/ahk-1.6.2.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - main [MainThread]: End processing [ahk]: success
+[2024-04-20 00:40:33] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.44.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - processPackages [athena-intelligence]: Remove: archive file [/home/abi/fetcher/tmp/athena_intelligence-0.1.45.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - main [MainThread]: End processing [athena-intelligence]: success
+[2024-04-20 00:40:33] INFO root fetch - processPackages [Payton]: Remove: archive file [/home/abi/fetcher/tmp/Payton-1.2.0.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - processPackages [Payton]: Remove: archive file [/home/abi/fetcher/tmp/payton-1.2.1.tar.gz]
+[2024-04-20 00:40:33] INFO root fetch - main [MainThread]: End processing [Payton]: success
+[2024-04-20 00:40:33] INFO root fetch - main [MainThread]: Store serial: [22849210]
