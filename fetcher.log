@@ -137,3 +137,60 @@
 [2024-04-20 00:06:45] INFO root fetch - processPackages [assemblyline-ui]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_ui-4.5.1.dev95-py3-none-any.whl.zip]
 [2024-04-20 00:06:45] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
 [2024-04-20 00:06:45] INFO root fetch - main [MainThread]: Store serial: [22848885]
+[2024-04-20 00:08:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848885]
+[2024-04-20 00:08:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: assemblyline-v4-service
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assemblyline
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assemblyline-core
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-includecontents
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-alto-parser
+[2024-04-20 00:08:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gai-lib
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [django-includecontents]: New version: [0.5.1] Old Version: [0.5]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.5.1.dev96] Old Version: [4.5.1.dev95]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline-core]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/5d/37/9265065b8fd9dcfe0832ec87f222a157056c153c918d8c1b8983443e7535/assemblyline-4.5.1.dev94.tar.gz
+[2024-04-20 00:08:53] INFO root fetch - processPackages [gai-lib]: New version: [0.97] Old Version: [0.96]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [simple-alto-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/1a/36/dcb150e07d500442eb793f9ff35a3f66eebd02e06620ebfbf341aa9f5868/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl
+[2024-04-20 00:08:53] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/88/6a/f557192f1f3ff7d8ab29da9104df67b1012017bcc06fb253a9f88b5cd29a/django_includecontents-0.5.tar.gz
+[2024-04-20 00:08:53] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/a7/a2/285f486d191feaf1eea2bba237fa0b58d7339203a77264ac7ca6efa0ddf8/assemblyline-core-4.5.1.dev94.tar.gz
+[2024-04-20 00:08:53] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/2d/84/288a775370c3b0a74c9022e38e06d864675ccef260b833fb692b0679afd6/simple-alto-parser-0.0.8.tar.gz
+[2024-04-20 00:08:53] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/82/81/7e42265f9e9f107203217cdc573e98d99a820bbc59505d6b9c14a00a5440/gai-lib-0.96.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/e8/90/a846984bba575ddfd0e1ace11003fdbe48d722690c2c648d70f8deb2d1b9/assemblyline-4.5.1.dev95.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/31/20/5b479bb246b39ebb6b10a28eafbe7e9c304f7a063efa715a367e13768520/assemblyline-core-4.5.1.dev95.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/80/e1/57b77c9fb84b3faefb0e3ca21de5f0882f5cebcb31b6bf684fffa99e30d4/django_includecontents-0.5.1.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/a3/d3/5c74bf84519215d8627b7862174d66d29b2ca844a51082b9fde5dee7f150/assemblyline_v4_service-4.5.1.dev96-py3-none-any.whl
+[2024-04-20 00:08:54] INFO root fetch - processPackages [django-includecontents]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [django-includecontents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_includecontents-0.5.tar.gz tmp/django_includecontents-0.5.1.tar.gz --markdown 20240420/d/django-includecontents/0.5-0.5.1/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.5.1.dev96-py3-none-any.whl.zip --markdown 20240420/a/assemblyline-v4-service/4.5.1.dev95-4.5.1.dev96/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.5.1.dev94.tar.gz tmp/assemblyline-core-4.5.1.dev95.tar.gz --markdown 20240420/a/assemblyline-core/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.5.1.dev94.tar.gz tmp/assemblyline-4.5.1.dev95.tar.gz --markdown 20240420/a/assemblyline/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [gai-lib]: Downloading https://files.pythonhosted.org/packages/ba/48/cc9337707c508f769332d467ffe71db701d0dfe5f12d8fb7c397a560b86a/gai-lib-0.97.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/54/a6/e5b5a42bc7f1de8a59b665b6ea950928012570d4b7d82695f5bd835dbd99/simple-alto-parser-0.0.9.tar.gz
+[2024-04-20 00:08:54] INFO root fetch - processPackages [simple-alto-parser]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [simple-alto-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-alto-parser-0.0.8.tar.gz tmp/simple-alto-parser-0.0.9.tar.gz --markdown 20240420/s/simple-alto-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [gai-lib]: executing diffoscope
+[2024-04-20 00:08:54] INFO root fetch - processPackages [gai-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gai-lib-0.96.tar.gz tmp/gai-lib-0.97.tar.gz --markdown 20240420/g/gai-lib/0.96-0.97/README.md --exclude *.pyd
+[2024-04-20 00:08:54] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.5.tar.gz]
+[2024-04-20 00:08:54] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.5.1.tar.gz]
+[2024-04-20 00:08:54] INFO root fetch - main [MainThread]: End processing [django-includecontents]: success
+[2024-04-20 00:08:55] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.8.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.9.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [simple-alto-parser]: success
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl.zip]
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev96-py3-none-any.whl.zip]
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2024-04-20 00:08:55] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.96.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - processPackages [gai-lib]: Remove: archive file [/home/abi/fetcher/tmp/gai-lib-0.97.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [gai-lib]: success
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline-core]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-core-4.5.1.dev94.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline-core]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-core-4.5.1.dev95.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev94.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev95.tar.gz]
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2024-04-20 00:08:55] INFO root fetch - main [MainThread]: Store serial: [22848899]
