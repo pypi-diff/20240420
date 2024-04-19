@@ -215,3 +215,9 @@
 [2024-04-20 00:11:05] INFO root fetch - processPackages [pyanglianwater]: Remove: archive file [/home/abi/fetcher/tmp/pyanglianwater-0.2.0.tar.gz]
 [2024-04-20 00:11:05] INFO root fetch - main [MainThread]: End processing [pyanglianwater]: success
 [2024-04-20 00:11:05] INFO root fetch - main [MainThread]: Store serial: [22848904]
+[2024-04-20 00:13:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848904]
+[2024-04-20 00:13:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 00:13:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diffforms
+[2024-04-20 00:13:13] WARNING root fetch - processPackages [diffforms]: Skipping, unable to determine old version
+[2024-04-20 00:13:13] INFO root fetch - main [MainThread]: End processing [diffforms] error
+[2024-04-20 00:13:13] INFO root fetch - main [MainThread]: Store serial: [22848908]
