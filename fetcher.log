@@ -846,3 +846,47 @@
 [2024-04-20 00:51:33] INFO root fetch - processPackages [vegas]: Remove: archive file [/home/abi/fetcher/tmp/vegas-6.1.1.tar.gz]
 [2024-04-20 00:51:33] INFO root fetch - main [MainThread]: End processing [vegas]: success
 [2024-04-20 00:51:33] INFO root fetch - main [MainThread]: Store serial: [22849269]
+[2024-04-20 00:53:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849269]
+[2024-04-20 00:53:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 00:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2024-04-20 00:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorflow-federated
+[2024-04-20 00:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-madvr2
+[2024-04-20 00:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: devsetgo-lib
+[2024-04-20 00:53:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: raya
+[2024-04-20 00:53:43] INFO root fetch - processPackages [py-madvr2]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-04-20 00:53:43] INFO root fetch - processPackages [devsetgo-lib]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 00:53:43] INFO root fetch - processPackages [raya]: New version: [3.7.9.dev0] Old Version: [3.7.8.dev0]
+[2024-04-20 00:53:43] INFO root fetch - processPackages [tensorflow-federated]: New version: [0.9.0] Old Version: [0.76.0]
+[2024-04-20 00:53:43] INFO root fetch - processPackages [chalkpy]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-20 00:53:43] INFO root fetch - processPackages [tensorflow-federated]: Downloading https://files.pythonhosted.org/packages/4d/4e/68bfa4bc72ca3e234144941cc06ec796e72dfddffa07360c83190e2977c7/tensorflow_federated-0.76.0-py3-none-manylinux_2_31_x86_64.whl
+[2024-04-20 00:53:43] INFO root fetch - processPackages [devsetgo-lib]: Downloading https://files.pythonhosted.org/packages/80/d1/13b2fa7c65d6301d543ee4c8fa8d75b9f4a8b8f159402d83ba72fce6cc76/devsetgo_lib-0.8.0.tar.gz
+[2024-04-20 00:53:43] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/63/29/ccc5ea2f521ca75dd0b9c710ea6d224d447ff10c7d5d06a2a1e7de0ac8b6/py_madvr2-1.5.4.tar.gz
+[2024-04-20 00:53:43] INFO root fetch - processPackages [raya]: Downloading https://files.pythonhosted.org/packages/72/70/9b58de57d30fe733e2abe5160f30b3b42ed4fd8dc96844183cdca7409ebf/raya-3.7.8.dev0.tar.gz
+[2024-04-20 00:53:43] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/37/52/5c69a74a70d94d61d88e81cf17862496f7cd9ebd0725d75f357f252f3052/chalkpy-2.9.8.tar.gz
+[2024-04-20 00:53:44] WARNING root fetch - processPackages [tensorflow-federated]: Skipping package: exceeds size limit 70686926>=10485760
+[2024-04-20 00:53:44] INFO root fetch - main [MainThread]: End processing [tensorflow-federated] error
+[2024-04-20 00:53:44] INFO root fetch - processPackages [py-madvr2]: Downloading https://files.pythonhosted.org/packages/a9/67/a48f40e8ac2fd3d841754235d90d91eed5c3b5077f77b4b1ce433857ef63/py_madvr2-1.5.5.tar.gz
+[2024-04-20 00:53:44] INFO root fetch - processPackages [devsetgo-lib]: Downloading https://files.pythonhosted.org/packages/63/93/489336428397fca52e6dacdf59c5f3a6f9b91d43f3ee9bbf9c8ecdeb9238/devsetgo_lib-0.9.0.tar.gz
+[2024-04-20 00:53:44] INFO root fetch - processPackages [raya]: Downloading https://files.pythonhosted.org/packages/d6/23/7ac675d5447abe949110b838d9e901a92e7876f5821c57ae1894951233ec/raya-3.7.9.dev0.tar.gz
+[2024-04-20 00:53:44] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/f1/ff/9cdb492bac7076766dffbc16bbff1773bfc5635cfb81b130f720883912c7/chalkpy-2.9.9.tar.gz
+[2024-04-20 00:53:44] INFO root fetch - processPackages [py-madvr2]: executing diffoscope
+[2024-04-20 00:53:44] INFO root fetch - processPackages [py-madvr2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr2-1.5.4.tar.gz tmp/py_madvr2-1.5.5.tar.gz --markdown 20240420/p/py-madvr2/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-04-20 00:53:44] INFO root fetch - processPackages [devsetgo-lib]: executing diffoscope
+[2024-04-20 00:53:44] INFO root fetch - processPackages [devsetgo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devsetgo_lib-0.8.0.tar.gz tmp/devsetgo_lib-0.9.0.tar.gz --markdown 20240420/d/devsetgo-lib/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 00:53:44] INFO root fetch - processPackages [raya]: executing diffoscope
+[2024-04-20 00:53:44] INFO root fetch - processPackages [raya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raya-3.7.8.dev0.tar.gz tmp/raya-3.7.9.dev0.tar.gz --markdown 20240420/r/raya/3.7.8.dev0-3.7.9.dev0/README.md --exclude *.pyd
+[2024-04-20 00:53:44] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2024-04-20 00:53:44] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.9.8.tar.gz tmp/chalkpy-2.9.9.tar.gz --markdown 20240420/c/chalkpy/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-20 00:53:45] INFO root fetch - processPackages [devsetgo-lib]: Remove: archive file [/home/abi/fetcher/tmp/devsetgo_lib-0.8.0.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - processPackages [devsetgo-lib]: Remove: archive file [/home/abi/fetcher/tmp/devsetgo_lib-0.9.0.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - main [MainThread]: End processing [devsetgo-lib]: success
+[2024-04-20 00:53:45] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.4.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - processPackages [py-madvr2]: Remove: archive file [/home/abi/fetcher/tmp/py_madvr2-1.5.5.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - main [MainThread]: End processing [py-madvr2]: success
+[2024-04-20 00:53:45] INFO root fetch - processPackages [raya]: Remove: archive file [/home/abi/fetcher/tmp/raya-3.7.8.dev0.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - processPackages [raya]: Remove: archive file [/home/abi/fetcher/tmp/raya-3.7.9.dev0.tar.gz]
+[2024-04-20 00:53:45] INFO root fetch - main [MainThread]: End processing [raya]: success
+[2024-04-20 00:53:46] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.8.tar.gz]
+[2024-04-20 00:53:46] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
+[2024-04-20 00:53:46] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2024-04-20 00:53:46] INFO root fetch - main [MainThread]: Store serial: [22849282]
