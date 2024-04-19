@@ -890,3 +890,54 @@
 [2024-04-20 00:53:46] INFO root fetch - processPackages [chalkpy]: Remove: archive file [/home/abi/fetcher/tmp/chalkpy-2.9.9.tar.gz]
 [2024-04-20 00:53:46] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2024-04-20 00:53:46] INFO root fetch - main [MainThread]: Store serial: [22849282]
+[2024-04-20 00:55:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849282]
+[2024-04-20 00:55:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superdupper
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latch
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: effective-horizon
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsk-monster
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rayasdk
+[2024-04-20 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: yak-server
+[2024-04-20 00:55:55] INFO root fetch - processPackages [effective-horizon]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 00:55:56] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 00:55:56] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-20 00:55:56] WARNING root fetch - processPackages [superdupper]: Skipping, unable to determine old version
+[2024-04-20 00:55:56] INFO root fetch - main [MainThread]: End processing [superdupper] error
+[2024-04-20 00:55:56] INFO root fetch - processPackages [yak-server]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 00:55:56] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [rayasdk]: New version: [3.7.9.dev0] Old Version: [3.7.8.dev0]
+[2024-04-20 00:55:56] INFO root fetch - processPackages [effective-horizon]: Downloading https://files.pythonhosted.org/packages/87/51/dec4512a7e753772a2e27e377564fc782847a55ec658cf8786b87d9eb4bc/effective_horizon-0.1.0.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [yak-server]: Downloading https://files.pythonhosted.org/packages/0d/76/2e5fe6504ef5f417050b6485dac180ad25cecfa80778abe342394e98f9e2/yak_server-0.8.0.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [rayasdk]: Downloading https://files.pythonhosted.org/packages/85/9f/5ea5e44866c0c797627033698e48b38556b8e5aa5837a516d42f0225d1cb/rayasdk-3.7.8.dev0.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-20 00:55:56] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240420/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 00:55:56] INFO root fetch - processPackages [effective-horizon]: Downloading https://files.pythonhosted.org/packages/24/80/021f36f6579e6be92dab30fbad8f6959d8d668dbb20ad9a14b7c22ff30c1/effective_horizon-0.1.1.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-04-20 00:55:56] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240420/l/latch/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-04-20 00:55:56] INFO root fetch - processPackages [effective-horizon]: executing diffoscope
+[2024-04-20 00:55:56] INFO root fetch - processPackages [effective-horizon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/effective_horizon-0.1.0.tar.gz tmp/effective_horizon-0.1.1.tar.gz --markdown 20240420/e/effective-horizon/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 00:55:56] INFO root fetch - processPackages [yak-server]: Downloading https://files.pythonhosted.org/packages/a8/9c/2c24e63d8e257166f9c81bccd1fcaeb239352636957a046a3c7edae03504/yak_server-0.9.0.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [rayasdk]: Downloading https://files.pythonhosted.org/packages/5c/c6/eb2b7b28225209501b3b5b714695be0773e4d816b487c4d2ca00a7852aab/rayasdk-3.7.9.dev0.tar.gz
+[2024-04-20 00:55:56] INFO root fetch - processPackages [yak-server]: executing diffoscope
+[2024-04-20 00:55:56] INFO root fetch - processPackages [yak-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yak_server-0.8.0.tar.gz tmp/yak_server-0.9.0.tar.gz --markdown 20240420/y/yak-server/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 00:55:56] INFO root fetch - processPackages [rayasdk]: executing diffoscope
+[2024-04-20 00:55:56] INFO root fetch - processPackages [rayasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rayasdk-3.7.8.dev0.tar.gz tmp/rayasdk-3.7.9.dev0.tar.gz --markdown 20240420/r/rayasdk/3.7.8.dev0-3.7.9.dev0/README.md --exclude *.pyd
+[2024-04-20 00:55:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-20 00:55:57] INFO root fetch - processPackages [effective-horizon]: Remove: archive file [/home/abi/fetcher/tmp/effective_horizon-0.1.0.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - processPackages [effective-horizon]: Remove: archive file [/home/abi/fetcher/tmp/effective_horizon-0.1.1.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [effective-horizon]: success
+[2024-04-20 00:55:57] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-04-20 00:55:57] INFO root fetch - processPackages [rayasdk]: Remove: archive file [/home/abi/fetcher/tmp/rayasdk-3.7.8.dev0.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - processPackages [rayasdk]: Remove: archive file [/home/abi/fetcher/tmp/rayasdk-3.7.9.dev0.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [rayasdk]: success
+[2024-04-20 00:55:57] INFO root fetch - processPackages [yak-server]: Remove: archive file [/home/abi/fetcher/tmp/yak_server-0.8.0.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - processPackages [yak-server]: Remove: archive file [/home/abi/fetcher/tmp/yak_server-0.9.0.tar.gz]
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: End processing [yak-server]: success
+[2024-04-20 00:55:57] INFO root fetch - main [MainThread]: Store serial: [22849300]
