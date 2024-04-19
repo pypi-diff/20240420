@@ -1538,3 +1538,42 @@
 [2024-04-20 01:41:57] INFO root fetch - processPackages [femtocrux]: Remove: archive file [/home/abi/fetcher/tmp/femtocrux-0.5.0-py3-none-any.whl.zip]
 [2024-04-20 01:41:57] INFO root fetch - main [MainThread]: End processing [femtocrux]: success
 [2024-04-20 01:41:57] INFO root fetch - main [MainThread]: Store serial: [22849513]
+[2024-04-20 01:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849513]
+[2024-04-20 01:44:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ephys-link
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lean
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pan-ztp-patcher
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biotech
+[2024-04-20 01:44:06] INFO root fetch - processPackages [biotech]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-20 01:44:06] INFO root fetch - processPackages [pan-ztp-patcher]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 01:44:06] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/57/0f/36da1717f7f1f28107ab528ed6966b30e0e2cdb5b269fc68e3901eb8ae58/biotech-1.1.2.tar.gz
+[2024-04-20 01:44:06] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/ca/91/af464a7ba2d6f29504128520b15b9bb7d800c64b900b99de104b1b11c56b/pan_ztp_patcher-0.2.6.tar.gz
+[2024-04-20 01:44:06] INFO root fetch - processPackages [lean]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ephys-link]: New version: [1.3.0b2] Old Version: [1.3.0b1]
+[2024-04-20 01:44:06] INFO root fetch - processPackages [lean]: Downloading https://files.pythonhosted.org/packages/81/84/aa7a74f65750436a15b38183f9eefe7f25e7578b5617ab6ccf158e947080/lean-1.0.98.tar.gz
+[2024-04-20 01:44:06] INFO root fetch - processPackages [ephys-link]: Downloading https://files.pythonhosted.org/packages/71/d5/69e48803b829e8c4397679d24d3231fd224823cc08de91931fb729163fae/ephys_link-1.3.0b1.tar.gz
+[2024-04-20 01:44:07] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/f3/d4/edf1124c86e331e5cb6c85c82fe6ef69782d0e80c300c2fa45423b227f4b/pan_ztp_patcher-0.2.7.tar.gz
+[2024-04-20 01:44:07] INFO root fetch - processPackages [pan-ztp-patcher]: executing diffoscope
+[2024-04-20 01:44:07] INFO root fetch - processPackages [pan-ztp-patcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pan_ztp_patcher-0.2.6.tar.gz tmp/pan_ztp_patcher-0.2.7.tar.gz --markdown 20240420/p/pan-ztp-patcher/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 01:44:07] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/50/42/b6ae4f8ae9eada53b025c1cea565b89cbd9376a4250b67156f143511baa1/biotech-1.1.3.tar.gz
+[2024-04-20 01:44:07] INFO root fetch - processPackages [lean]: Downloading https://files.pythonhosted.org/packages/3e/2f/0bee377e322251efe06c06a9769bd227936117bc32f26bc970e1580283b2/lean-1.0.99.tar.gz
+[2024-04-20 01:44:07] INFO root fetch - processPackages [ephys-link]: Downloading https://files.pythonhosted.org/packages/89/05/10e21247f6a93c32ee1794e75d755e844f9958a607a18e3808aff8ee286a/ephys_link-1.3.0b2.tar.gz
+[2024-04-20 01:44:07] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-20 01:44:07] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.2.tar.gz tmp/biotech-1.1.3.tar.gz --markdown 20240420/b/biotech/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-20 01:44:07] INFO root fetch - processPackages [lean]: executing diffoscope
+[2024-04-20 01:44:07] INFO root fetch - processPackages [lean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lean-1.0.98.tar.gz tmp/lean-1.0.99.tar.gz --markdown 20240420/l/lean/1.0.98-1.0.99/README.md --exclude *.pyd
+[2024-04-20 01:44:07] INFO root fetch - processPackages [ephys-link]: executing diffoscope
+[2024-04-20 01:44:07] INFO root fetch - processPackages [ephys-link]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ephys_link-1.3.0b1.tar.gz tmp/ephys_link-1.3.0b2.tar.gz --markdown 20240420/e/ephys-link/1.3.0b1-1.3.0b2/README.md --exclude *.pyd
+[2024-04-20 01:44:07] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.6.tar.gz]
+[2024-04-20 01:44:07] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.7.tar.gz]
+[2024-04-20 01:44:07] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher]: success
+[2024-04-20 01:44:08] INFO root fetch - processPackages [ephys-link]: Remove: archive file [/home/abi/fetcher/tmp/ephys_link-1.3.0b1.tar.gz]
+[2024-04-20 01:44:08] INFO root fetch - processPackages [ephys-link]: Remove: archive file [/home/abi/fetcher/tmp/ephys_link-1.3.0b2.tar.gz]
+[2024-04-20 01:44:08] INFO root fetch - main [MainThread]: End processing [ephys-link]: success
+[2024-04-20 01:44:08] INFO root fetch - processPackages [lean]: Remove: archive file [/home/abi/fetcher/tmp/lean-1.0.98.tar.gz]
+[2024-04-20 01:44:08] INFO root fetch - processPackages [lean]: Remove: archive file [/home/abi/fetcher/tmp/lean-1.0.99.tar.gz]
+[2024-04-20 01:44:08] INFO root fetch - main [MainThread]: End processing [lean]: success
+[2024-04-20 01:44:14] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.2.tar.gz]
+[2024-04-20 01:44:14] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.3.tar.gz]
+[2024-04-20 01:44:14] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-20 01:44:14] INFO root fetch - main [MainThread]: Store serial: [22849527]
