@@ -75,3 +75,65 @@
 [2024-04-20 00:04:33] INFO root fetch - processPackages [skytemple-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_randomizer-2.0.0b1-py3-none-any.whl.zip]
 [2024-04-20 00:04:33] INFO root fetch - main [MainThread]: End processing [skytemple-randomizer]: success
 [2024-04-20 00:04:33] INFO root fetch - main [MainThread]: Store serial: [22848868]
+[2024-04-20 00:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22848868]
+[2024-04-20 00:06:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsmfsb
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assemblyline-service-client
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smaht-submitr
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assemblyline-service-server
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assemblyline-ui
+[2024-04-20 00:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: assemblyline-v4-service
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-client]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.0.1b9] Old Version: [0.8.0.1b8]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-server]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-ui]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.5.1.dev95] Old Version: [4.5.1.dev94]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [jsmfsb]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240419.7.51.91355] Old Version: [20240419.6.18.49575]
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/67/5a/72386edc27d4e0df3e6eaabe8b520c23fa5d9b863f911cc3425ea3174da4/assemblyline_service_client-4.5.1.dev94-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/79/ad/69a49972361f3dd7698be4e52572630203c3c66d2562b3864e2814efd485/smaht_submitr-0.8.0.1b8.tar.gz
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/76/72/5607858463e59b620ef05fb0c2d7f60b370de88f41339ec4f71aa0e66e81/assemblyline_service_server-4.5.1.dev94-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/d3/ec/7508b8c8bcd797b4b1498f6255dc83ee8f339c741f62ac9e6636ac4c1413/assemblyline_ui-4.5.1.dev94-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/76/3b/5266cd8aa8ed52f2bf9fc56e0299f4fb03881c8f792bf246d5c41c178992/assemblyline_v4_service-4.5.1.dev94-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ba/4a/4951ee0f5ad69546f4e4cf12d0b3e1fdc5c25b7d84b15906c60b88da743c/certora-cli-alpha-master-20240419.6.18.49575.tar.gz
+[2024-04-20 00:06:43] INFO root fetch - processPackages [jsmfsb]: Downloading https://files.pythonhosted.org/packages/28/8d/f6cb749136d7569b30126b98edc5f43c59b89d97bc8bbe0020b37cc52b2c/jsmfsb-0.0.2.tar.gz
+[2024-04-20 00:06:43] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14538861>=10485760
+[2024-04-20 00:06:43] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/20/cf/fa9fa8f8210464594843b8c7fd1b5eadb6ec787ca2dd973028326e3ca049/assemblyline_service_client-4.5.1.dev95-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/96/9a/8242964bbc7f1fbb2f4ca5f0a46365b6a79ed7b874b5895da18d9201769d/assemblyline_service_server-4.5.1.dev95-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/a9/b9/54c39138072c920a1d8d5107253bf98513c92a68aae12fec8962cedc0dd9/smaht_submitr-0.8.0.1b9.tar.gz
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/09/39/4a5df90df249a62d9f2b800c2d326ad8820dc6b4dc3ac96f799df7061fd4/assemblyline_ui-4.5.1.dev95-py3-none-any.whl
+[2024-04-20 00:06:43] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/1a/36/dcb150e07d500442eb793f9ff35a3f66eebd02e06620ebfbf341aa9f5868/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-client]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_client-4.5.1.dev94-py3-none-any.whl.zip tmp/assemblyline_service_client-4.5.1.dev95-py3-none-any.whl.zip --markdown 20240420/a/assemblyline-service-client/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-server]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_server-4.5.1.dev94-py3-none-any.whl.zip tmp/assemblyline_service_server-4.5.1.dev95-py3-none-any.whl.zip --markdown 20240420/a/assemblyline-service-server/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.5.1.dev94-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl.zip --markdown 20240420/a/assemblyline-v4-service/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.0.1b8.tar.gz tmp/smaht_submitr-0.8.0.1b9.tar.gz --markdown 20240420/s/smaht-submitr/0.8.0.1b8-0.8.0.1b9/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-ui]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_ui-4.5.1.dev94-py3-none-any.whl.zip tmp/assemblyline_ui-4.5.1.dev95-py3-none-any.whl.zip --markdown 20240420/a/assemblyline-ui/4.5.1.dev94-4.5.1.dev95/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [jsmfsb]: Downloading https://files.pythonhosted.org/packages/bb/3b/d85564a61fa88bbaa39bbf832a2d5d2fb6c30b1a9495963793aed1853c9f/jsmfsb-0.0.3.tar.gz
+[2024-04-20 00:06:44] INFO root fetch - processPackages [jsmfsb]: executing diffoscope
+[2024-04-20 00:06:44] INFO root fetch - processPackages [jsmfsb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsmfsb-0.0.2.tar.gz tmp/jsmfsb-0.0.3.tar.gz --markdown 20240420/j/jsmfsb/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-server]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_server-4.5.1.dev94-py3-none-any.whl.zip]
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-service-server]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_server-4.5.1.dev95-py3-none-any.whl.zip]
+[2024-04-20 00:06:44] INFO root fetch - main [MainThread]: End processing [assemblyline-service-server]: success
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev94-py3-none-any.whl.zip]
+[2024-04-20 00:06:44] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev95-py3-none-any.whl.zip]
+[2024-04-20 00:06:44] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2024-04-20 00:06:44] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b8.tar.gz]
+[2024-04-20 00:06:44] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b9.tar.gz]
+[2024-04-20 00:06:44] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-20 00:06:45] INFO root fetch - processPackages [jsmfsb]: Remove: archive file [/home/abi/fetcher/tmp/jsmfsb-0.0.2.tar.gz]
+[2024-04-20 00:06:45] INFO root fetch - processPackages [jsmfsb]: Remove: archive file [/home/abi/fetcher/tmp/jsmfsb-0.0.3.tar.gz]
+[2024-04-20 00:06:45] INFO root fetch - main [MainThread]: End processing [jsmfsb]: success
+[2024-04-20 00:06:45] INFO root fetch - processPackages [assemblyline-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_client-4.5.1.dev94-py3-none-any.whl.zip]
+[2024-04-20 00:06:45] INFO root fetch - processPackages [assemblyline-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_client-4.5.1.dev95-py3-none-any.whl.zip]
+[2024-04-20 00:06:45] INFO root fetch - main [MainThread]: End processing [assemblyline-service-client]: success
+[2024-04-20 00:06:45] INFO root fetch - processPackages [assemblyline-ui]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_ui-4.5.1.dev94-py3-none-any.whl.zip]
+[2024-04-20 00:06:45] INFO root fetch - processPackages [assemblyline-ui]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_ui-4.5.1.dev95-py3-none-any.whl.zip]
+[2024-04-20 00:06:45] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
+[2024-04-20 00:06:45] INFO root fetch - main [MainThread]: Store serial: [22848885]
