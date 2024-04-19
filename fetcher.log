@@ -732,3 +732,18 @@
 [2024-04-20 00:40:33] INFO root fetch - processPackages [Payton]: Remove: archive file [/home/abi/fetcher/tmp/payton-1.2.1.tar.gz]
 [2024-04-20 00:40:33] INFO root fetch - main [MainThread]: End processing [Payton]: success
 [2024-04-20 00:40:33] INFO root fetch - main [MainThread]: Store serial: [22849210]
+[2024-04-20 00:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849210]
+[2024-04-20 00:42:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 00:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: magpylib-force
+[2024-04-20 00:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keyboardsounds
+[2024-04-20 00:42:41] WARNING root fetch - processPackages [magpylib-force]: Skipping, unable to determine old version
+[2024-04-20 00:42:41] INFO root fetch - main [MainThread]: End processing [magpylib-force] error
+[2024-04-20 00:42:41] INFO root fetch - processPackages [keyboardsounds]: New version: [5.7.5] Old Version: [5.7.4]
+[2024-04-20 00:42:42] INFO root fetch - processPackages [keyboardsounds]: Downloading https://files.pythonhosted.org/packages/b4/6b/601dc202396136f4cc5a688d81b1143666a39c71e47a219f73d54fbe5a29/keyboardsounds-5.7.4.tar.gz
+[2024-04-20 00:42:42] INFO root fetch - processPackages [keyboardsounds]: Downloading https://files.pythonhosted.org/packages/66/ee/f11d3d47e292b8e58e87da516a411582756bacfc57b73d54bee912ceef9a/keyboardsounds-5.7.5.tar.gz
+[2024-04-20 00:42:43] INFO root fetch - processPackages [keyboardsounds]: executing diffoscope
+[2024-04-20 00:42:43] INFO root fetch - processPackages [keyboardsounds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keyboardsounds-5.7.4.tar.gz tmp/keyboardsounds-5.7.5.tar.gz --markdown 20240420/k/keyboardsounds/5.7.4-5.7.5/README.md --exclude *.pyd
+[2024-04-20 00:42:44] INFO root fetch - processPackages [keyboardsounds]: Remove: archive file [/home/abi/fetcher/tmp/keyboardsounds-5.7.4.tar.gz]
+[2024-04-20 00:42:44] INFO root fetch - processPackages [keyboardsounds]: Remove: archive file [/home/abi/fetcher/tmp/keyboardsounds-5.7.5.tar.gz]
+[2024-04-20 00:42:44] INFO root fetch - main [MainThread]: End processing [keyboardsounds]: success
+[2024-04-20 00:42:44] INFO root fetch - main [MainThread]: Store serial: [22849218]
