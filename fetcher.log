@@ -1694,3 +1694,49 @@
 [2024-04-20 01:51:00] INFO root fetch - processPackages [megatron-core]: Remove: archive file [/home/abi/fetcher/tmp/megatron_core-0.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-20 01:51:00] INFO root fetch - main [MainThread]: End processing [megatron-core]: success
 [2024-04-20 01:51:00] INFO root fetch - main [MainThread]: Store serial: [22849559]
+[2024-04-20 01:53:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849559]
+[2024-04-20 01:53:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rent-counter
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superdupper
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MambuPy
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MambuPy
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ds18b20-datalogger
+[2024-04-20 01:53:12] INFO root fetch - processPackages [superdupper]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 01:53:12] INFO root fetch - processPackages [rent-counter]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-20 01:53:12] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/e2/24/2637670ec0efc85f72174f79053c725d1e03b488b3b6cfaf7e3449653149/rent_counter-0.5.0.tar.gz
+[2024-04-20 01:53:12] INFO root fetch - processPackages [ds18b20-datalogger]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 01:53:12] INFO root fetch - processPackages [MambuPy]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2024-04-20 01:53:12] INFO root fetch - processPackages [MambuPy]: New version: [2.0.0b9] Old Version: [2.0.0b8]
+[2024-04-20 01:53:12] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/89/71/bc72759612e1a036aa319df7121b9aa597f97b5eadfd5f125c8a2c0990e7/superdupper-0.0.5.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/3e/e7/a8da4a9ecc56dc86f0c1d85a259865c757a60247da7f5bc30cd7ca61a2c8/rent_counter-0.6.0.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: Downloading https://files.pythonhosted.org/packages/10/be/ed83b02c72c57597465b97df6b0c71b1a4b4e52a6ffe963ff0edf1409f0c/MambuPy-2.0.0b8.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [ds18b20-datalogger]: Downloading https://files.pythonhosted.org/packages/aa/ee/dc9d7aea4ac84374dac00bbbfc86c864946928b180aba8847a8c6012e562/ds18b20_datalogger-0.0.2.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: Downloading https://files.pythonhosted.org/packages/10/be/ed83b02c72c57597465b97df6b0c71b1a4b4e52a6ffe963ff0edf1409f0c/MambuPy-2.0.0b8.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [rent-counter]: executing diffoscope
+[2024-04-20 01:53:13] INFO root fetch - processPackages [rent-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rent_counter-0.5.0.tar.gz tmp/rent_counter-0.6.0.tar.gz --markdown 20240420/r/rent-counter/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-20 01:53:13] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/e4/dc/1efc7f7abf091343cde4b95d73b4f7899cab0914c2ef89816873a3083af1/superdupper-0.0.6.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 01:53:13] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.5.tar.gz tmp/superdupper-0.0.6.tar.gz --markdown 20240420/s/superdupper/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 01:53:13] INFO root fetch - processPackages [ds18b20-datalogger]: Downloading https://files.pythonhosted.org/packages/15/ff/5197c02f871d5bc1d0fb9a318179e7d9788b641d16fff9921bc959d47900/ds18b20_datalogger-0.0.3.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: Downloading https://files.pythonhosted.org/packages/62/4b/170e3742038b58448c2733e8f206eb6f367edc67d01e8c721086ddb46e3b/MambuPy-2.0.0b9.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: Downloading https://files.pythonhosted.org/packages/62/4b/170e3742038b58448c2733e8f206eb6f367edc67d01e8c721086ddb46e3b/MambuPy-2.0.0b9.tar.gz
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: executing diffoscope
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MambuPy-2.0.0b8.tar.gz tmp/MambuPy-2.0.0b9.tar.gz --markdown 20240420/M/MambuPy/2.0.0b8-2.0.0b9/README.md --exclude *.pyd
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: executing diffoscope
+[2024-04-20 01:53:13] INFO root fetch - processPackages [MambuPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MambuPy-2.0.0b8.tar.gz tmp/MambuPy-2.0.0b9.tar.gz --markdown 20240420/M/MambuPy/2.0.0b8-2.0.0b9/README.md --exclude *.pyd
+[2024-04-20 01:53:13] INFO root fetch - processPackages [ds18b20-datalogger]: executing diffoscope
+[2024-04-20 01:53:13] INFO root fetch - processPackages [ds18b20-datalogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ds18b20_datalogger-0.0.2.tar.gz tmp/ds18b20_datalogger-0.0.3.tar.gz --markdown 20240420/d/ds18b20-datalogger/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 01:53:13] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.5.0.tar.gz]
+[2024-04-20 01:53:13] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.6.0.tar.gz]
+[2024-04-20 01:53:13] INFO root fetch - main [MainThread]: End processing [rent-counter]: success
+[2024-04-20 01:53:13] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.5.tar.gz]
+[2024-04-20 01:53:13] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.6.tar.gz]
+[2024-04-20 01:53:13] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 01:53:14] INFO root fetch - processPackages [ds18b20-datalogger]: Remove: archive file [/home/abi/fetcher/tmp/ds18b20_datalogger-0.0.2.tar.gz]
+[2024-04-20 01:53:14] INFO root fetch - processPackages [ds18b20-datalogger]: Remove: archive file [/home/abi/fetcher/tmp/ds18b20_datalogger-0.0.3.tar.gz]
+[2024-04-20 01:53:14] INFO root fetch - main [MainThread]: End processing [ds18b20-datalogger]: success
+[2024-04-20 01:53:14] INFO root fetch - processPackages [MambuPy]: Remove: archive file [/home/abi/fetcher/tmp/MambuPy-2.0.0b8.tar.gz]
+[2024-04-20 01:53:14] INFO root fetch - processPackages [MambuPy]: Remove: archive file [/home/abi/fetcher/tmp/MambuPy-2.0.0b9.tar.gz]
+[2024-04-20 01:53:14] INFO root fetch - main [MainThread]: End processing [MambuPy]: success
+[2024-04-20 01:53:14] INFO root fetch - main [MainThread]: End processing [MambuPy]: success
+[2024-04-20 01:53:14] INFO root fetch - main [MainThread]: Store serial: [22849575]
