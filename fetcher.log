@@ -452,3 +452,87 @@
 [2024-04-20 00:22:38] INFO root fetch - processPackages [xds-protos]: Remove: archive file [/home/abi/fetcher/tmp/xds_protos-1.63.0rc2-py3-none-any.whl.zip]
 [2024-04-20 00:22:38] INFO root fetch - main [MainThread]: End processing [xds-protos]: success
 [2024-04-20 00:22:38] INFO root fetch - main [MainThread]: Store serial: [22849109]
+[2024-04-20 00:24:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849109]
+[2024-04-20 00:24:47] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: luis-v-subtitler
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cf2tf
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bastet
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: depthcharge-ms
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-oci
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: code-size-analyzer-client-python
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: taskiq-redis
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: firexapp
+[2024-04-20 00:24:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: smallneuron
+[2024-04-20 00:24:47] INFO root fetch - processPackages [cf2tf]: New version: [0.7.1a0] Old Version: [0.7.0a0]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [code-size-analyzer-client-python]: New version: [0.7.0] Old Version: [0.6.2]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [smallneuron]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [bastet]: New version: [0.0.20.dev8] Old Version: [0.0.20.dev7]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [luis-v-subtitler]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [depthcharge-ms]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/59/83/e1ba675daec36d1da4baaa9d92dff93f2f31bd2aeb2a55418afd3a3a4e5d/cf2tf-0.7.0a0.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [code-size-analyzer-client-python]: Downloading https://files.pythonhosted.org/packages/1e/9d/d4ce96f10148241f4763b858d21c28272d9784357eb146422d262f1bc195/code_size_analyzer_client-python-0.6.2.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [smallneuron]: Downloading https://files.pythonhosted.org/packages/b7/9d/18b9259ddbaa8a32959d7c168680b7bbd5feabf0b561495f87a723bf1812/smallneuron-1.0.1.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [pulumi-oci]: New version: [1.9.0a1693981063] Old Version: [1.9.0a1693634572]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/3c/fe/dd187ed39412f0b90c8317b548a3612bfdcb1a60b34ed3b2ff6f3aeae994/bastet-0.0.20.dev7.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [taskiq-redis]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [firexapp]: New version: [5.4.9] Old Version: [5.4.7]
+[2024-04-20 00:24:47] INFO root fetch - processPackages [luis-v-subtitler]: Downloading https://files.pythonhosted.org/packages/0e/a3/263404e02f8898f7e247e22276919703662bfcc984b65073dd6969f71856/luis-v-subtitler-0.1.8.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [depthcharge-ms]: Downloading https://files.pythonhosted.org/packages/98/34/484d068e67c77321f22528d19b3209bfcd99e49f054f47d2a92b42eec34a/depthcharge_ms-0.4.0.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/02/f8/59b31ede3416e4e37062af605ed2293a67d7cfe3eec867258c58481c638d/pulumi_oci-1.9.0a1693634572.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [taskiq-redis]: Downloading https://files.pythonhosted.org/packages/7e/a6/0050c41b68e74c6733e45f3955fd7e87df073ea53b2dc29cd44f3ef3c3e5/taskiq_redis-0.5.5.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [code-size-analyzer-client-python]: Downloading https://files.pythonhosted.org/packages/b7/60/952e70d889cbbd3ec85be202f20032171134c1dbeed65dc1772556ce9491/code_size_analyzer_client_python-0.7.0.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [smallneuron]: Downloading https://files.pythonhosted.org/packages/48/c8/57532c9346a1d1a31792c2ebb4f2b05bc89e17eb6241c7ce77706c4d3bcf/smallneuron-1.0.2.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/66/27/e41a58af9e46c09ad0deb31b7fb841d6a434f36e9d45230122caf2743c3e/bastet-0.0.20.dev8.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [firexapp]: Downloading https://files.pythonhosted.org/packages/7d/58/b765dd0922dc03b5da89090fc469e2df04ac674f8de3c63f54af9d050a7e/firexapp-5.4.7.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [cf2tf]: Downloading https://files.pythonhosted.org/packages/90/dd/70e4c8c6f39df3d6209a3d17a96a652ee876a5312ab913c9572af062804b/cf2tf-0.7.1a0.tar.gz
+[2024-04-20 00:24:47] INFO root fetch - processPackages [code-size-analyzer-client-python]: executing diffoscope
+[2024-04-20 00:24:47] INFO root fetch - processPackages [code-size-analyzer-client-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code_size_analyzer_client-python-0.6.2.tar.gz tmp/code_size_analyzer_client_python-0.7.0.tar.gz --markdown 20240420/c/code-size-analyzer-client-python/0.6.2-0.7.0/README.md --exclude *.pyd
+[2024-04-20 00:24:47] INFO root fetch - processPackages [smallneuron]: executing diffoscope
+[2024-04-20 00:24:47] INFO root fetch - processPackages [smallneuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smallneuron-1.0.1.tar.gz tmp/smallneuron-1.0.2.tar.gz --markdown 20240420/s/smallneuron/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 00:24:47] INFO root fetch - processPackages [bastet]: executing diffoscope
+[2024-04-20 00:24:47] INFO root fetch - processPackages [bastet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bastet-0.0.20.dev7.tar.gz tmp/bastet-0.0.20.dev8.tar.gz --markdown 20240420/b/bastet/0.0.20.dev7-0.0.20.dev8/README.md --exclude *.pyd
+[2024-04-20 00:24:47] INFO root fetch - processPackages [cf2tf]: executing diffoscope
+[2024-04-20 00:24:47] INFO root fetch - processPackages [cf2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cf2tf-0.7.0a0.tar.gz tmp/cf2tf-0.7.1a0.tar.gz --markdown 20240420/c/cf2tf/0.7.0a0-0.7.1a0/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [depthcharge-ms]: Downloading https://files.pythonhosted.org/packages/e1/7b/5c511ab59f8daa9ef942c735bdad52bf3a4921c8df067d93263e377592dc/depthcharge_ms-0.4.1.tar.gz
+[2024-04-20 00:24:48] INFO root fetch - processPackages [luis-v-subtitler]: Downloading https://files.pythonhosted.org/packages/b5/bc/103687f3d9682147e700c545733cb7f78f3e3ad340f07e331c52479c1928/luis-v-subtitler-0.1.9.tar.gz
+[2024-04-20 00:24:48] INFO root fetch - processPackages [taskiq-redis]: Downloading https://files.pythonhosted.org/packages/a0/10/7bf1752c74a478593b7103c01d6beeee84cb3b1413653c6aa5c98a7f630d/taskiq_redis-0.5.6.tar.gz
+[2024-04-20 00:24:48] INFO root fetch - processPackages [firexapp]: Downloading https://files.pythonhosted.org/packages/31/1f/f99ebf0f06565f553592968a442f6d74e4da946212a5d099694f4c2ebadc/firexapp-5.4.9.tar.gz
+[2024-04-20 00:24:48] INFO root fetch - processPackages [depthcharge-ms]: executing diffoscope
+[2024-04-20 00:24:48] INFO root fetch - processPackages [depthcharge-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/depthcharge_ms-0.4.0.tar.gz tmp/depthcharge_ms-0.4.1.tar.gz --markdown 20240420/d/depthcharge-ms/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [luis-v-subtitler]: executing diffoscope
+[2024-04-20 00:24:48] INFO root fetch - processPackages [luis-v-subtitler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/luis-v-subtitler-0.1.8.tar.gz tmp/luis-v-subtitler-0.1.9.tar.gz --markdown 20240420/l/luis-v-subtitler/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [firexapp]: executing diffoscope
+[2024-04-20 00:24:48] INFO root fetch - processPackages [firexapp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/firexapp-5.4.7.tar.gz tmp/firexapp-5.4.9.tar.gz --markdown 20240420/f/firexapp/5.4.7-5.4.9/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [taskiq-redis]: executing diffoscope
+[2024-04-20 00:24:48] INFO root fetch - processPackages [taskiq-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskiq_redis-0.5.5.tar.gz tmp/taskiq_redis-0.5.6.tar.gz --markdown 20240420/t/taskiq-redis/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/77/93/cd3384a9ca236f6aa79a6f6fa7c94647e0588bdaf8a86d173cca47e31e21/pulumi_oci-1.9.0a1693981063.tar.gz
+[2024-04-20 00:24:48] INFO root fetch - processPackages [smallneuron]: Remove: archive file [/home/abi/fetcher/tmp/smallneuron-1.0.1.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - processPackages [smallneuron]: Remove: archive file [/home/abi/fetcher/tmp/smallneuron-1.0.2.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - main [MainThread]: End processing [smallneuron]: success
+[2024-04-20 00:24:48] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2024-04-20 00:24:48] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-1.9.0a1693634572.tar.gz tmp/pulumi_oci-1.9.0a1693981063.tar.gz --markdown 20240420/p/pulumi-oci/1.9.0a1693634572-1.9.0a1693981063/README.md --exclude *.pyd
+[2024-04-20 00:24:48] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev7.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev8.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - main [MainThread]: End processing [bastet]: success
+[2024-04-20 00:24:48] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.0a0.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - processPackages [cf2tf]: Remove: archive file [/home/abi/fetcher/tmp/cf2tf-0.7.1a0.tar.gz]
+[2024-04-20 00:24:48] INFO root fetch - main [MainThread]: End processing [cf2tf]: success
+[2024-04-20 00:24:49] INFO root fetch - processPackages [luis-v-subtitler]: Remove: archive file [/home/abi/fetcher/tmp/luis-v-subtitler-0.1.8.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - processPackages [luis-v-subtitler]: Remove: archive file [/home/abi/fetcher/tmp/luis-v-subtitler-0.1.9.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - main [MainThread]: End processing [luis-v-subtitler]: success
+[2024-04-20 00:24:49] INFO root fetch - processPackages [code-size-analyzer-client-python]: Remove: archive file [/home/abi/fetcher/tmp/code_size_analyzer_client-python-0.6.2.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - processPackages [code-size-analyzer-client-python]: Remove: archive file [/home/abi/fetcher/tmp/code_size_analyzer_client_python-0.7.0.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - main [MainThread]: End processing [code-size-analyzer-client-python]: success
+[2024-04-20 00:24:49] INFO root fetch - processPackages [taskiq-redis]: Remove: archive file [/home/abi/fetcher/tmp/taskiq_redis-0.5.5.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - processPackages [taskiq-redis]: Remove: archive file [/home/abi/fetcher/tmp/taskiq_redis-0.5.6.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - main [MainThread]: End processing [taskiq-redis]: success
+[2024-04-20 00:24:49] INFO root fetch - processPackages [depthcharge-ms]: Remove: archive file [/home/abi/fetcher/tmp/depthcharge_ms-0.4.0.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - processPackages [depthcharge-ms]: Remove: archive file [/home/abi/fetcher/tmp/depthcharge_ms-0.4.1.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - main [MainThread]: End processing [depthcharge-ms]: success
+[2024-04-20 00:24:49] INFO root fetch - processPackages [firexapp]: Remove: archive file [/home/abi/fetcher/tmp/firexapp-5.4.7.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - processPackages [firexapp]: Remove: archive file [/home/abi/fetcher/tmp/firexapp-5.4.9.tar.gz]
+[2024-04-20 00:24:49] INFO root fetch - main [MainThread]: End processing [firexapp]: success
+[2024-04-20 00:25:03] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693634572.tar.gz]
+[2024-04-20 00:25:03] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
+[2024-04-20 00:25:03] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2024-04-20 00:25:03] INFO root fetch - main [MainThread]: Store serial: [22849138]
