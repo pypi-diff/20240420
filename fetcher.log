@@ -7020,3 +7020,29 @@
 [2024-04-20 03:22:59] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
 [2024-04-20 03:22:59] INFO root fetch - main [MainThread]: End processing [counts]: success
 [2024-04-20 03:22:59] INFO root fetch - main [MainThread]: Store serial: [22851269]
+[2024-04-20 03:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851269]
+[2024-04-20 03:25:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 03:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bedrock-agent
+[2024-04-20 03:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xl2roefact
+[2024-04-20 03:25:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mo-math
+[2024-04-20 03:25:09] INFO root fetch - processPackages [bedrock-agent]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 03:25:09] INFO root fetch - processPackages [mo-math]: New version: [7.589.24111] Old Version: [7.584.24095]
+[2024-04-20 03:25:09] INFO root fetch - processPackages [xl2roefact]: New version: [0.6rc0] Old Version: [0.5.4]
+[2024-04-20 03:25:09] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/41/0f/1ba72912e66b81f556236c36484c3ce09bf0e0e2b057d12a88f394b97986/mo-math-7.584.24095.tar.gz
+[2024-04-20 03:25:09] INFO root fetch - processPackages [bedrock-agent]: Downloading https://files.pythonhosted.org/packages/c3/c3/7acdc1591ba0183be7b06572e3184b9c796b1d2a633c7a685892be358d87/bedrock-agent-0.0.8.tar.gz
+[2024-04-20 03:25:09] WARNING root fetch - processPackages [bedrock-agent]: Skipping package: exceeds size limit 36374436>=10485760
+[2024-04-20 03:25:09] INFO root fetch - main [MainThread]: End processing [bedrock-agent] error
+[2024-04-20 03:25:09] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/26/58/72caed19b7fe52282fd1ad6f68485171ca2cea57dad60ccd0851dc9e2571/xl2roefact-0.5.4.tar.gz
+[2024-04-20 03:25:10] INFO root fetch - processPackages [mo-math]: Downloading https://files.pythonhosted.org/packages/87/68/20de21b3b24811c444f814435b4e99595bd9fd864dbff03d131b37d20d57/mo_math-7.589.24111.tar.gz
+[2024-04-20 03:25:10] INFO root fetch - processPackages [mo-math]: executing diffoscope
+[2024-04-20 03:25:10] INFO root fetch - processPackages [mo-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-math-7.584.24095.tar.gz tmp/mo_math-7.589.24111.tar.gz --markdown 20240420/m/mo-math/7.584.24095-7.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:25:10] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/70/3b/b8a1657912d6d15ac52803a625dec4350a7c2567ea91b4a120dada050417/xl2roefact-0.6rc0.tar.gz
+[2024-04-20 03:25:10] INFO root fetch - processPackages [xl2roefact]: executing diffoscope
+[2024-04-20 03:25:10] INFO root fetch - processPackages [xl2roefact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl2roefact-0.5.4.tar.gz tmp/xl2roefact-0.6rc0.tar.gz --markdown 20240420/x/xl2roefact/0.5.4-0.6rc0/README.md --exclude *.pyd
+[2024-04-20 03:25:10] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo-math-7.584.24095.tar.gz]
+[2024-04-20 03:25:10] INFO root fetch - processPackages [mo-math]: Remove: archive file [/home/abi/fetcher/tmp/mo_math-7.589.24111.tar.gz]
+[2024-04-20 03:25:10] INFO root fetch - main [MainThread]: End processing [mo-math]: success
+[2024-04-20 03:25:11] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.5.4.tar.gz]
+[2024-04-20 03:25:11] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.6rc0.tar.gz]
+[2024-04-20 03:25:11] INFO root fetch - main [MainThread]: End processing [xl2roefact]: success
+[2024-04-20 03:25:11] INFO root fetch - main [MainThread]: Store serial: [22851331]
