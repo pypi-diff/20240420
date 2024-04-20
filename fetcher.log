@@ -18153,3 +18153,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:27:01] INFO root fetch - processPackages [pywebio-battery]: Remove: archive file [/home/abi/fetcher/tmp/pywebio_battery-0.6.0.tar.gz]
 [2024-04-20 17:27:01] INFO root fetch - main [MainThread]: End processing [pywebio-battery]: success
 [2024-04-20 17:27:01] INFO root fetch - main [MainThread]: Store serial: [22856942]
+[2024-04-20 17:29:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856942]
+[2024-04-20 17:29:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bgutils-hddly
+[2024-04-20 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nokey
+[2024-04-20 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HyperCoast
+[2024-04-20 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC105
+[2024-04-20 17:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timetree-exporter
+[2024-04-20 17:29:09] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-20 17:29:09] INFO root fetch - processPackages [nokey]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 17:29:09] WARNING root fetch - processPackages [PythonTestLJC105]: Skipping, unable to determine old version
+[2024-04-20 17:29:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC105] error
+[2024-04-20 17:29:09] INFO root fetch - processPackages [HyperCoast]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 17:29:09] INFO root fetch - processPackages [timetree-exporter]: New version: [0.3.0] Old Version: [0.2.3]
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-04-20 17:29:10] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/4a/70/ce542c8930d16206fe4669a0baab2fbfa782188e31a2aafb1f0c2b3b44d6/nokey-0.1.0.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/6b/36/d5f556298a211e3e80817a51e21ee672ab9bc5c562c2dd9e6beffd51c8e5/hypercoast-0.0.2.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [timetree-exporter]: Downloading https://files.pythonhosted.org/packages/61/49/96c1eddea01077e2d68df7f0718538c1c3861e78e2d573a1b2de9d69eaba/timetree-exporter-0.2.3.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240420/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-20 17:29:10] INFO root fetch - processPackages [HyperCoast]: Downloading https://files.pythonhosted.org/packages/b5/19/73764581e00233e3827967eb91f4ccfc79def3477c32c12886e7351459f6/hypercoast-0.0.3.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [nokey]: Downloading https://files.pythonhosted.org/packages/2c/6c/76986dbbc0ae844c72d0ffc9ba5337590ca03acce4ac0db3cd3832ab16ce/nokey-0.2.0.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [timetree-exporter]: Downloading https://files.pythonhosted.org/packages/f5/7b/4748f1c67821cf9b948d407986c4d794a6c73a70e74b18fc4b564d37a616/timetree_exporter-0.3.0.tar.gz
+[2024-04-20 17:29:10] INFO root fetch - processPackages [HyperCoast]: executing diffoscope
+[2024-04-20 17:29:10] INFO root fetch - processPackages [HyperCoast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypercoast-0.0.2.tar.gz tmp/hypercoast-0.0.3.tar.gz --markdown 20240420/H/HyperCoast/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 17:29:10] INFO root fetch - processPackages [nokey]: executing diffoscope
+[2024-04-20 17:29:10] INFO root fetch - processPackages [nokey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nokey-0.1.0.tar.gz tmp/nokey-0.2.0.tar.gz --markdown 20240420/n/nokey/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-04-20 17:29:10] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-04-20 17:29:10] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-04-20 17:29:10] INFO root fetch - processPackages [timetree-exporter]: executing diffoscope
+[2024-04-20 17:29:10] INFO root fetch - processPackages [timetree-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timetree-exporter-0.2.3.tar.gz tmp/timetree_exporter-0.3.0.tar.gz --markdown 20240420/t/timetree-exporter/0.2.3-0.3.0/README.md --exclude *.pyd
+[2024-04-20 17:29:11] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.0.2.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - processPackages [HyperCoast]: Remove: archive file [/home/abi/fetcher/tmp/hypercoast-0.0.3.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - main [MainThread]: End processing [HyperCoast]: success
+[2024-04-20 17:29:11] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.1.0.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - processPackages [nokey]: Remove: archive file [/home/abi/fetcher/tmp/nokey-0.2.0.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - main [MainThread]: End processing [nokey]: success
+[2024-04-20 17:29:11] INFO root fetch - processPackages [timetree-exporter]: Remove: archive file [/home/abi/fetcher/tmp/timetree-exporter-0.2.3.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - processPackages [timetree-exporter]: Remove: archive file [/home/abi/fetcher/tmp/timetree_exporter-0.3.0.tar.gz]
+[2024-04-20 17:29:11] INFO root fetch - main [MainThread]: End processing [timetree-exporter]: success
+[2024-04-20 17:29:11] INFO root fetch - main [MainThread]: Store serial: [22856959]
