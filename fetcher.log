@@ -14289,3 +14289,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:00:50] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc_py-3.4.2.tar.gz]
 [2024-04-20 13:00:50] INFO root fetch - main [MainThread]: End processing [coc.py]: success
 [2024-04-20 13:00:50] INFO root fetch - main [MainThread]: Store serial: [22854947]
+[2024-04-20 13:02:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854947]
+[2024-04-20 13:02:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-20 13:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magictk
+[2024-04-20 13:02:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywxdump
+[2024-04-20 13:02:59] INFO root fetch - processPackages [magictk]: New version: [0.0.2.42] Old Version: [0.0.2.41]
+[2024-04-20 13:02:59] INFO root fetch - processPackages [bellek]: New version: [0.91.0] Old Version: [0.90.0]
+[2024-04-20 13:02:59] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-04-20 13:02:59] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/fa/c0/d0089b8f1df5f40a63b38506e0411d786fc9de334ce521a9823ccdb29d23/magictk-0.0.2.41.tar.gz
+[2024-04-20 13:02:59] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/eb/53/d460990294731e0c4d5bec52375378c91df523738827d0574a6628e22d0c/bellek-0.90.0.tar.gz
+[2024-04-20 13:02:59] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-04-20 13:02:59] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/79/11/f4c65c423bca4043ea06e315fa851bd5237f7c20e9979d6e37ee3f25af3a/magictk-0.0.2.42.tar.gz
+[2024-04-20 13:02:59] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/fa/f1/6b90c23236450bb196cac69d3d36855a01742c8fedf1a8bb37abd77c0edb/bellek-0.91.0.tar.gz
+[2024-04-20 13:03:00] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-20 13:03:00] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-0.0.2.41.tar.gz tmp/magictk-0.0.2.42.tar.gz --markdown 20240420/m/magictk/0.0.2.41-0.0.2.42/README.md --exclude *.pyd
+[2024-04-20 13:03:00] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 13:03:00] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.90.0.tar.gz tmp/bellek-0.91.0.tar.gz --markdown 20240420/b/bellek/0.90.0-0.91.0/README.md --exclude *.pyd
+[2024-04-20 13:03:00] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-04-20 13:03:00] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-04-20 13:03:00] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240420/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-04-20 13:03:00] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.90.0.tar.gz]
+[2024-04-20 13:03:00] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.91.0.tar.gz]
+[2024-04-20 13:03:00] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 13:03:00] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.41.tar.gz]
+[2024-04-20 13:03:00] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.42.tar.gz]
+[2024-04-20 13:03:00] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-20 13:03:15] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-04-20 13:03:15] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-04-20 13:03:15] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-04-20 13:03:15] INFO root fetch - main [MainThread]: Store serial: [22854956]
