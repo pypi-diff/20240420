@@ -12888,3 +12888,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:23:32] INFO root fetch - processPackages [astetik]: Remove: archive file [/home/abi/fetcher/tmp/astetik-1.9.9.tar.gz]
 [2024-04-20 11:23:32] INFO root fetch - main [MainThread]: End processing [astetik]: success
 [2024-04-20 11:23:32] INFO root fetch - main [MainThread]: Store serial: [22854313]
+[2024-04-20 11:25:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854313]
+[2024-04-20 11:25:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 11:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-ml-tools
+[2024-04-20 11:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-text-translator
+[2024-04-20 11:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: room-env
+[2024-04-20 11:25:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wsgo
+[2024-04-20 11:25:40] INFO root fetch - processPackages [so-ml-tools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 11:25:41] INFO root fetch - processPackages [django-text-translator]: New version: [2024.4.20] Old Version: [2024.4.2.1]
+[2024-04-20 11:25:41] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/fc/30/cfb5b7cf1b6c3d4b7759e52aaf120234d88b23cda57cfa671f342c8928d9/so-ml-tools-0.1.98.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [room-env]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-04-20 11:25:41] INFO root fetch - processPackages [wsgo]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-04-20 11:25:41] INFO root fetch - processPackages [room-env]: Downloading https://files.pythonhosted.org/packages/2e/43/fcc77eae57bedfd465576ef6e39bb676846e0ecab6d5609c3088a8b6c4f7/room_env-1.0.3.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [django-text-translator]: Downloading https://files.pythonhosted.org/packages/09/d4/f5f75a88c00cc0babc3968f8a51b86ff904b800c32ded9f8cc2e1d74b2bc/django_text_translator-2024.4.2.1.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/81/44/0ba41cd45b341c34829d9698a1a7295a871d04bec34718944a8d469046a7/so-ml-tools-0.1.99.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [wsgo]: Downloading https://files.pythonhosted.org/packages/99/7a/9d6735f9df6c95a535719bb6ab97245b89c7da60dbca3d967db32f5b384c/wsgo-0.0.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 11:25:41] INFO root fetch - processPackages [so-ml-tools]: executing diffoscope
+[2024-04-20 11:25:41] INFO root fetch - processPackages [so-ml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so-ml-tools-0.1.98.tar.gz tmp/so-ml-tools-0.1.99.tar.gz --markdown 20240420/s/so-ml-tools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 11:25:41] INFO root fetch - processPackages [django-text-translator]: Downloading https://files.pythonhosted.org/packages/31/28/d30eda1da925fed10139bf63643936677346ff2b6b80d83cb0d6605cd09c/django_text_translator-2024.4.20.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [django-text-translator]: executing diffoscope
+[2024-04-20 11:25:41] INFO root fetch - processPackages [django-text-translator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_text_translator-2024.4.2.1.tar.gz tmp/django_text_translator-2024.4.20.tar.gz --markdown 20240420/d/django-text-translator/2024.4.2.1-2024.4.20/README.md --exclude *.pyd
+[2024-04-20 11:25:41] INFO root fetch - processPackages [room-env]: Downloading https://files.pythonhosted.org/packages/a7/a1/fa2e8e714e129c1eb86ea181a1aa89332cfce4b98131f94ff78a651a73af/room_env-2.0.0.tar.gz
+[2024-04-20 11:25:41] INFO root fetch - processPackages [room-env]: executing diffoscope
+[2024-04-20 11:25:41] INFO root fetch - processPackages [room-env]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/room_env-1.0.3.tar.gz tmp/room_env-2.0.0.tar.gz --markdown 20240420/r/room-env/1.0.3-2.0.0/README.md --exclude *.pyd
+[2024-04-20 11:25:42] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.98.tar.gz]
+[2024-04-20 11:25:42] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.99.tar.gz]
+[2024-04-20 11:25:42] INFO root fetch - main [MainThread]: End processing [so-ml-tools]: success
+[2024-04-20 11:25:42] INFO root fetch - processPackages [django-text-translator]: Remove: archive file [/home/abi/fetcher/tmp/django_text_translator-2024.4.2.1.tar.gz]
+[2024-04-20 11:25:42] INFO root fetch - processPackages [django-text-translator]: Remove: archive file [/home/abi/fetcher/tmp/django_text_translator-2024.4.20.tar.gz]
+[2024-04-20 11:25:42] INFO root fetch - main [MainThread]: End processing [django-text-translator]: success
+[2024-04-20 11:25:42] INFO root fetch - processPackages [wsgo]: Downloading https://files.pythonhosted.org/packages/5e/84/ab4251291f91799ff2b875d1d7adab3b91bf5eef31c518e6f019a5d88b0f/wsgo-0.0.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 11:25:42] INFO root fetch - processPackages [room-env]: Remove: archive file [/home/abi/fetcher/tmp/room_env-1.0.3.tar.gz]
+[2024-04-20 11:25:42] INFO root fetch - processPackages [room-env]: Remove: archive file [/home/abi/fetcher/tmp/room_env-2.0.0.tar.gz]
+[2024-04-20 11:25:43] INFO root fetch - main [MainThread]: End processing [room-env]: success
+[2024-04-20 11:25:44] INFO root fetch - processPackages [wsgo]: executing diffoscope
+[2024-04-20 11:25:44] INFO root fetch - processPackages [wsgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wsgo-0.0.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/wsgo-0.0.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240420/w/wsgo/0.0.17-0.0.18/README.md --exclude *.pyd
+[2024-04-20 11:26:21] INFO root fetch - processPackages [wsgo]: Remove: archive file [/home/abi/fetcher/tmp/wsgo-0.0.17-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 11:26:21] INFO root fetch - processPackages [wsgo]: Remove: archive file [/home/abi/fetcher/tmp/wsgo-0.0.18-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 11:26:21] INFO root fetch - main [MainThread]: End processing [wsgo]: success
+[2024-04-20 11:26:21] INFO root fetch - main [MainThread]: Store serial: [22854325]
