@@ -17886,3 +17886,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:09:35] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240419-py3-none-win_amd64.whl.zip]
 [2024-04-20 17:09:35] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-20 17:09:35] INFO root fetch - main [MainThread]: Store serial: [22856839]
+[2024-04-20 17:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856839]
+[2024-04-20 17:11:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ticts
+[2024-04-20 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: location-local
+[2024-04-20 17:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: valor-client
+[2024-04-20 17:11:46] INFO root fetch - processPackages [valor-client]: New version: [0.22.0] Old Version: [0.21.3]
+[2024-04-20 17:11:46] INFO root fetch - processPackages [location-local]: New version: [0.0.98] Old Version: [0.0.97]
+[2024-04-20 17:11:46] INFO root fetch - processPackages [valor-client]: Downloading https://files.pythonhosted.org/packages/d4/2d/8f9d8da4ac1415bfff132709e2d76e641650f8472523897033677fb45a89/valor_client-0.21.3.tar.gz
+[2024-04-20 17:11:46] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/0a/9c/bce2c1a2c7dc527bc6bf46caa49581c17d1a736ffbf174688c7b152d489a/location-local-0.0.97.tar.gz
+[2024-04-20 17:11:47] INFO root fetch - processPackages [ticts]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 17:11:47] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-04-20 17:11:47] INFO root fetch - processPackages [ticts]: Downloading https://files.pythonhosted.org/packages/93/68/e8d115e3b3c43521bce4d99d81ad9363239bd9c148016566a925204eab0a/ticts-0.4.0.tar.gz
+[2024-04-20 17:11:47] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-04-20 17:11:47] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location-local-0.0.97.tar.gz tmp/location_local-0.0.98.tar.gz --markdown 20240420/l/location-local/0.0.97-0.0.98/README.md --exclude *.pyd
+[2024-04-20 17:11:47] INFO root fetch - processPackages [valor-client]: Downloading https://files.pythonhosted.org/packages/fb/ad/319cfd1363d6664af4fd07ffc1ae1a3010de3a4406a4b75d33b149b048d9/valor_client-0.22.0.tar.gz
+[2024-04-20 17:11:47] INFO root fetch - processPackages [valor-client]: executing diffoscope
+[2024-04-20 17:11:47] INFO root fetch - processPackages [valor-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valor_client-0.21.3.tar.gz tmp/valor_client-0.22.0.tar.gz --markdown 20240420/v/valor-client/0.21.3-0.22.0/README.md --exclude *.pyd
+[2024-04-20 17:11:47] INFO root fetch - processPackages [ticts]: Downloading https://files.pythonhosted.org/packages/55/97/795b7dbab0dd7a31bb00f37d92abc17c7c76084688affe65c0a640fc4197/ticts-0.5.0.tar.gz
+[2024-04-20 17:11:47] INFO root fetch - processPackages [ticts]: executing diffoscope
+[2024-04-20 17:11:47] INFO root fetch - processPackages [ticts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ticts-0.4.0.tar.gz tmp/ticts-0.5.0.tar.gz --markdown 20240420/t/ticts/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 17:11:47] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location-local-0.0.97.tar.gz]
+[2024-04-20 17:11:47] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-04-20 17:11:47] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-04-20 17:11:48] INFO root fetch - processPackages [valor-client]: Remove: archive file [/home/abi/fetcher/tmp/valor_client-0.21.3.tar.gz]
+[2024-04-20 17:11:48] INFO root fetch - processPackages [valor-client]: Remove: archive file [/home/abi/fetcher/tmp/valor_client-0.22.0.tar.gz]
+[2024-04-20 17:11:48] INFO root fetch - main [MainThread]: End processing [valor-client]: success
+[2024-04-20 17:11:48] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.4.0.tar.gz]
+[2024-04-20 17:11:48] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.5.0.tar.gz]
+[2024-04-20 17:11:48] INFO root fetch - main [MainThread]: End processing [ticts]: success
+[2024-04-20 17:11:48] INFO root fetch - main [MainThread]: Store serial: [22856849]
