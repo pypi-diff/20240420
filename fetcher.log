@@ -10728,3 +10728,42 @@
 [2024-04-20 08:48:24] INFO root fetch - processPackages [ckwrap]: Remove: archive file [/home/abi/fetcher/tmp/ckwrap-1.2.2-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-20 08:48:24] INFO root fetch - main [MainThread]: End processing [ckwrap]: success
 [2024-04-20 08:48:24] INFO root fetch - main [MainThread]: Store serial: [22853209]
+[2024-04-20 08:50:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853209]
+[2024-04-20 08:50:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-04-20 08:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oterm
+[2024-04-20 08:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctui
+[2024-04-20 08:50:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: niquests
+[2024-04-20 08:50:35] INFO root fetch - processPackages [ctui]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-20 08:50:35] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-04-20 08:50:35] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/fb/31/8a196f4b70904daa2c5d50c081d9c6685bf0ca3a62e381d973367ce5bbf7/ctui-0.7.6.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [oterm]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 08:50:35] INFO root fetch - processPackages [niquests]: New version: [3.6.0] Old Version: [3.5.5]
+[2024-04-20 08:50:35] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [oterm]: Downloading https://files.pythonhosted.org/packages/25/52/0a2787915677ed5eca0c127f27d4da62602a6f234a734a4a0ee9bd07b985/oterm-0.2.5.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [niquests]: Downloading https://files.pythonhosted.org/packages/d6/d0/24fc263e98e80c12ac7d07395e103ead3ed16ce9abb69517de1892dbed00/niquests-3.5.5.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/a7/e1/56739c3713770eb5cbc24b4a28f20fb076cc37306afad886d09ba2b67c38/ctui-0.7.7.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [ctui]: executing diffoscope
+[2024-04-20 08:50:35] INFO root fetch - processPackages [ctui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctui-0.7.6.tar.gz tmp/ctui-0.7.7.tar.gz --markdown 20240420/c/ctui/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-20 08:50:35] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-04-20 08:50:35] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240420/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-04-20 08:50:35] INFO root fetch - processPackages [oterm]: Downloading https://files.pythonhosted.org/packages/62/8b/d0e6ce2b24f2041d0ad44476285359de1028114a71d4ad9bccbea489cea5/oterm-0.2.6.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [niquests]: Downloading https://files.pythonhosted.org/packages/18/07/f46e85b662bc6e13f71fe297eaf3293c578030ce9c1a3db0c9cf0a78ed90/niquests-3.6.0.tar.gz
+[2024-04-20 08:50:35] INFO root fetch - processPackages [oterm]: executing diffoscope
+[2024-04-20 08:50:35] INFO root fetch - processPackages [oterm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oterm-0.2.5.tar.gz tmp/oterm-0.2.6.tar.gz --markdown 20240420/o/oterm/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 08:50:35] INFO root fetch - processPackages [niquests]: executing diffoscope
+[2024-04-20 08:50:35] INFO root fetch - processPackages [niquests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niquests-3.5.5.tar.gz tmp/niquests-3.6.0.tar.gz --markdown 20240420/n/niquests/3.5.5-3.6.0/README.md --exclude *.pyd
+[2024-04-20 08:50:36] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.6.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.7.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - main [MainThread]: End processing [ctui]: success
+[2024-04-20 08:50:36] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-04-20 08:50:36] INFO root fetch - processPackages [oterm]: Remove: archive file [/home/abi/fetcher/tmp/oterm-0.2.5.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - processPackages [oterm]: Remove: archive file [/home/abi/fetcher/tmp/oterm-0.2.6.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - main [MainThread]: End processing [oterm]: success
+[2024-04-20 08:50:36] INFO root fetch - processPackages [niquests]: Remove: archive file [/home/abi/fetcher/tmp/niquests-3.5.5.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - processPackages [niquests]: Remove: archive file [/home/abi/fetcher/tmp/niquests-3.6.0.tar.gz]
+[2024-04-20 08:50:36] INFO root fetch - main [MainThread]: End processing [niquests]: success
+[2024-04-20 08:50:36] INFO root fetch - main [MainThread]: Store serial: [22853258]
