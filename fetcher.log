@@ -14262,3 +14262,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:58:36] INFO root fetch - processPackages [movoid-robotframework-selenium]: Remove: archive file [/home/abi/fetcher/tmp/movoid_robotframework_selenium-1.2.1.tar.gz]
 [2024-04-20 12:58:36] INFO root fetch - main [MainThread]: End processing [movoid-robotframework-selenium]: success
 [2024-04-20 12:58:36] INFO root fetch - main [MainThread]: Store serial: [22854934]
+[2024-04-20 13:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854934]
+[2024-04-20 13:00:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 13:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC023
+[2024-04-20 13:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nimbusagent
+[2024-04-20 13:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skbu-2nd-sem
+[2024-04-20 13:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: coc.py
+[2024-04-20 13:00:45] WARNING root fetch - processPackages [PythonTestLJC023]: Skipping, unable to determine old version
+[2024-04-20 13:00:45] INFO root fetch - main [MainThread]: End processing [PythonTestLJC023] error
+[2024-04-20 13:00:45] WARNING root fetch - processPackages [skbu-2nd-sem]: Skipping, unable to determine old version
+[2024-04-20 13:00:45] INFO root fetch - main [MainThread]: End processing [skbu-2nd-sem] error
+[2024-04-20 13:00:45] INFO root fetch - processPackages [nimbusagent]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-20 13:00:45] INFO root fetch - processPackages [coc.py]: New version: [3.4.2] Old Version: [3.4.1]
+[2024-04-20 13:00:45] INFO root fetch - processPackages [nimbusagent]: Downloading https://files.pythonhosted.org/packages/3b/95/1d3a0f3acfe54d292f1c04cdd7a39e96e0906ef7162786c719d163571b5b/nimbusagent-0.5.2.tar.gz
+[2024-04-20 13:00:45] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/1c/c4/8843835fbcf1e15626a2b9a351f2a898c631b5d01f30249a2978daa80086/coc.py-3.4.1.tar.gz
+[2024-04-20 13:00:45] INFO root fetch - processPackages [nimbusagent]: Downloading https://files.pythonhosted.org/packages/e2/fa/843f545e07924d78fe5d61bbc31fb1e935af531ed617cc13f38e2611ae97/nimbusagent-0.6.0.tar.gz
+[2024-04-20 13:00:46] INFO root fetch - processPackages [nimbusagent]: executing diffoscope
+[2024-04-20 13:00:46] INFO root fetch - processPackages [nimbusagent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimbusagent-0.5.2.tar.gz tmp/nimbusagent-0.6.0.tar.gz --markdown 20240420/n/nimbusagent/0.5.2-0.6.0/README.md --exclude *.pyd
+[2024-04-20 13:00:46] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/d7/71/f498bfa5f34ebb388943afde844aad4955229529d615719607873936762d/coc_py-3.4.2.tar.gz
+[2024-04-20 13:00:46] INFO root fetch - processPackages [coc.py]: executing diffoscope
+[2024-04-20 13:00:46] INFO root fetch - processPackages [coc.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coc.py-3.4.1.tar.gz tmp/coc_py-3.4.2.tar.gz --markdown 20240420/c/coc.py/3.4.1-3.4.2/README.md --exclude *.pyd
+[2024-04-20 13:00:46] INFO root fetch - processPackages [nimbusagent]: Remove: archive file [/home/abi/fetcher/tmp/nimbusagent-0.5.2.tar.gz]
+[2024-04-20 13:00:46] INFO root fetch - processPackages [nimbusagent]: Remove: archive file [/home/abi/fetcher/tmp/nimbusagent-0.6.0.tar.gz]
+[2024-04-20 13:00:46] INFO root fetch - main [MainThread]: End processing [nimbusagent]: success
+[2024-04-20 13:00:50] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc.py-3.4.1.tar.gz]
+[2024-04-20 13:00:50] INFO root fetch - processPackages [coc.py]: Remove: archive file [/home/abi/fetcher/tmp/coc_py-3.4.2.tar.gz]
+[2024-04-20 13:00:50] INFO root fetch - main [MainThread]: End processing [coc.py]: success
+[2024-04-20 13:00:50] INFO root fetch - main [MainThread]: Store serial: [22854947]
