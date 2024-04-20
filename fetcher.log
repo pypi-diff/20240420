@@ -14352,3 +14352,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:05:26] INFO root fetch - processPackages [pywbemtools]: Remove: archive file [/home/abi/fetcher/tmp/pywbemtools-1.3.0.tar.gz]
 [2024-04-20 13:05:26] INFO root fetch - main [MainThread]: End processing [pywbemtools]: success
 [2024-04-20 13:05:26] INFO root fetch - main [MainThread]: Store serial: [22854969]
+[2024-04-20 13:07:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854969]
+[2024-04-20 13:07:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 13:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: semvergit
+[2024-04-20 13:07:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: skbu-2nd-sem
+[2024-04-20 13:07:35] INFO root fetch - processPackages [skbu-2nd-sem]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 13:07:35] INFO root fetch - processPackages [semvergit]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 13:07:35] INFO root fetch - processPackages [skbu-2nd-sem]: Downloading https://files.pythonhosted.org/packages/f2/e6/924b26eb51a0f2ca0981b2816844cb2214411af6f932334790e9be088f26/skbu-2nd-sem-1.0.0.tar.gz
+[2024-04-20 13:07:35] INFO root fetch - processPackages [semvergit]: Downloading https://files.pythonhosted.org/packages/ac/94/f0324e319d08107d1b52550b9c83556a9cfe584f8287a812364a7dd30263/semvergit-0.4.0.tar.gz
+[2024-04-20 13:07:35] INFO root fetch - processPackages [skbu-2nd-sem]: Downloading https://files.pythonhosted.org/packages/a2/2f/3fa9192833724a8c8e1981fad7aa9dfc78a685771fc280932ec87aef805d/skbu_2nd_sem-1.0.1.tar.gz
+[2024-04-20 13:07:35] INFO root fetch - processPackages [semvergit]: Downloading https://files.pythonhosted.org/packages/22/de/6414ae58bff09c95ac02f14b089fb483217c6b6f90496ea441cfa28e4778/semvergit-0.4.1.tar.gz
+[2024-04-20 13:07:35] INFO root fetch - processPackages [skbu-2nd-sem]: executing diffoscope
+[2024-04-20 13:07:35] INFO root fetch - processPackages [skbu-2nd-sem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skbu-2nd-sem-1.0.0.tar.gz tmp/skbu_2nd_sem-1.0.1.tar.gz --markdown 20240420/s/skbu-2nd-sem/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 13:07:35] INFO root fetch - processPackages [semvergit]: executing diffoscope
+[2024-04-20 13:07:35] INFO root fetch - processPackages [semvergit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semvergit-0.4.0.tar.gz tmp/semvergit-0.4.1.tar.gz --markdown 20240420/s/semvergit/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 13:07:36] INFO root fetch - processPackages [skbu-2nd-sem]: Remove: archive file [/home/abi/fetcher/tmp/skbu-2nd-sem-1.0.0.tar.gz]
+[2024-04-20 13:07:36] INFO root fetch - processPackages [skbu-2nd-sem]: Remove: archive file [/home/abi/fetcher/tmp/skbu_2nd_sem-1.0.1.tar.gz]
+[2024-04-20 13:07:36] INFO root fetch - main [MainThread]: End processing [skbu-2nd-sem]: success
+[2024-04-20 13:07:36] INFO root fetch - processPackages [semvergit]: Remove: archive file [/home/abi/fetcher/tmp/semvergit-0.4.0.tar.gz]
+[2024-04-20 13:07:36] INFO root fetch - processPackages [semvergit]: Remove: archive file [/home/abi/fetcher/tmp/semvergit-0.4.1.tar.gz]
+[2024-04-20 13:07:36] INFO root fetch - main [MainThread]: End processing [semvergit]: success
+[2024-04-20 13:07:36] INFO root fetch - main [MainThread]: Store serial: [22854974]
