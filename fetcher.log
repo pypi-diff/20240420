@@ -11481,3 +11481,18 @@
 [2024-04-20 09:34:44] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-20 09:34:44] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-20 09:34:44] INFO root fetch - main [MainThread]: Store serial: [22853607]
+[2024-04-20 09:36:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853607]
+[2024-04-20 09:36:53] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitsunekko-tools
+[2024-04-20 09:36:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyyaml-include
+[2024-04-20 09:36:53] WARNING root fetch - processPackages [kitsunekko-tools]: Skipping, unable to determine old version
+[2024-04-20 09:36:53] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools] error
+[2024-04-20 09:36:53] INFO root fetch - processPackages [pyyaml-include]: New version: [2.0b2] Old Version: [2.0b1]
+[2024-04-20 09:36:53] INFO root fetch - processPackages [pyyaml-include]: Downloading https://files.pythonhosted.org/packages/f9/c6/85eb56e004076d6bc27caa782b664c001ff61a2d7aafd0be1cea7f2cd8ae/pyyaml-include-2.0b1.tar.gz
+[2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: Downloading https://files.pythonhosted.org/packages/37/f3/56432e920a05a95eeb528fa3d37601406678f0de88d76be64b8600c6de69/pyyaml-include-2.0b2.tar.gz
+[2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: executing diffoscope
+[2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyyaml-include-2.0b1.tar.gz tmp/pyyaml-include-2.0b2.tar.gz --markdown 20240420/p/pyyaml-include/2.0b1-2.0b2/README.md --exclude *.pyd
+[2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: Remove: archive file [/home/abi/fetcher/tmp/pyyaml-include-2.0b1.tar.gz]
+[2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: Remove: archive file [/home/abi/fetcher/tmp/pyyaml-include-2.0b2.tar.gz]
+[2024-04-20 09:36:54] INFO root fetch - main [MainThread]: End processing [pyyaml-include]: success
+[2024-04-20 09:36:54] INFO root fetch - main [MainThread]: Store serial: [22853613]
