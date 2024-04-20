@@ -9942,3 +9942,11 @@
 [2024-04-20 07:19:03] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
 [2024-04-20 07:19:03] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2024-04-20 07:19:03] INFO root fetch - main [MainThread]: Store serial: [22852751]
+[2024-04-20 07:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852751]
+[2024-04-20 07:21:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 07:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Python-Education-Tools
+[2024-04-20 07:21:12] INFO root fetch - processPackages [Python-Education-Tools]: New version: [24.4.19] Old Version: [24.1.21]
+[2024-04-20 07:21:12] INFO root fetch - processPackages [Python-Education-Tools]: Downloading https://files.pythonhosted.org/packages/7b/a5/5412b551cc18aa17f924694425207f96c7c7957433507c5324a7aeb37d16/Python_Education_Tools-24.1.21-py3-none-any.whl
+[2024-04-20 07:21:12] WARNING root fetch - processPackages [Python-Education-Tools]: Skipping package: exceeds size limit 26048856>=10485760
+[2024-04-20 07:21:12] INFO root fetch - main [MainThread]: End processing [Python-Education-Tools] error
+[2024-04-20 07:21:12] INFO root fetch - main [MainThread]: Store serial: [22852753]
