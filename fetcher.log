@@ -7143,3 +7143,51 @@
 [2024-04-20 03:29:33] INFO root fetch - processPackages [resemble-monotonic-align]: Remove: archive file [/home/abi/fetcher/tmp/resemble_monotonic_align-1.2.1.tar.gz]
 [2024-04-20 03:29:33] INFO root fetch - main [MainThread]: End processing [resemble-monotonic-align]: success
 [2024-04-20 03:29:33] INFO root fetch - main [MainThread]: Store serial: [22851471]
+[2024-04-20 03:31:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851471]
+[2024-04-20 03:31:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ck-apstra-api
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: intecomm-edc
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hasura-ndc
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyAgrum-nightly
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datamana
+[2024-04-20 03:31:43] INFO root fetch - processPackages [hasura-ndc]: New version: [0.9] Old Version: [0.8]
+[2024-04-20 03:31:43] INFO root fetch - processPackages [hasura-ndc]: Downloading https://files.pythonhosted.org/packages/d9/8b/9bbf503188f323ee94f4d2a17fa0359ecab029eb6ecb3442dfaf4a27d2e9/hasura_ndc-0.8.tar.gz
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ck-apstra-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 03:31:43] INFO root fetch - processPackages [datamana]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 03:31:43] INFO root fetch - processPackages [intecomm-edc]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 03:31:43] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/52/25/9038fda2ce55dd59099059da88467d674d31cbfcbf9848c0edf8b9d27e3e/datamana-0.0.6.tar.gz
+[2024-04-20 03:31:43] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/7c/2a/abef9e7f6bfd8bbe702559b01d7558798b73d2254a4126a13c8afed7c02c/ck_apstra_api-0.2.8.tar.gz
+[2024-04-20 03:31:43] INFO root fetch - processPackages [intecomm-edc]: Downloading https://files.pythonhosted.org/packages/95/7e/91688931664f03b9e0b33b457b317a3c56b1a56f2296576c6566f791acb9/intecomm-edc-0.2.8.tar.gz
+[2024-04-20 03:31:44] INFO root fetch - processPackages [hasura-ndc]: Downloading https://files.pythonhosted.org/packages/5f/f7/1b367d5314b36f0455d681606d67e34c257b523b472099e9742d8ab8aebb/hasura_ndc-0.9.tar.gz
+[2024-04-20 03:31:44] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/dc/40/ee507ae501e4a3b7aca59c4548c03f984a891162adc467495e853534a882/ck_apstra_api-0.2.9.tar.gz
+[2024-04-20 03:31:44] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/81/bf/b48b7381cc4415644ecf5429932bf936ede3539884fe3a631da662ede393/datamana-0.0.7.tar.gz
+[2024-04-20 03:31:44] INFO root fetch - processPackages [hasura-ndc]: executing diffoscope
+[2024-04-20 03:31:44] INFO root fetch - processPackages [hasura-ndc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hasura_ndc-0.8.tar.gz tmp/hasura_ndc-0.9.tar.gz --markdown 20240420/h/hasura-ndc/0.8-0.9/README.md --exclude *.pyd
+[2024-04-20 03:31:44] INFO root fetch - processPackages [ck-apstra-api]: executing diffoscope
+[2024-04-20 03:31:44] INFO root fetch - processPackages [ck-apstra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ck_apstra_api-0.2.8.tar.gz tmp/ck_apstra_api-0.2.9.tar.gz --markdown 20240420/c/ck-apstra-api/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 03:31:44] INFO root fetch - processPackages [datamana]: executing diffoscope
+[2024-04-20 03:31:44] INFO root fetch - processPackages [datamana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamana-0.0.6.tar.gz tmp/datamana-0.0.7.tar.gz --markdown 20240420/d/datamana/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 03:31:44] INFO root fetch - processPackages [intecomm-edc]: Downloading https://files.pythonhosted.org/packages/d8/f7/da7970f16a11303f171ea066f66e06b546fa84ee58cd6cfd9da33905321f/intecomm-edc-0.2.9.tar.gz
+[2024-04-20 03:31:44] INFO root fetch - processPackages [intecomm-edc]: executing diffoscope
+[2024-04-20 03:31:44] INFO root fetch - processPackages [intecomm-edc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/intecomm-edc-0.2.8.tar.gz tmp/intecomm-edc-0.2.9.tar.gz --markdown 20240420/i/intecomm-edc/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 03:31:44] INFO root fetch - processPackages [hasura-ndc]: Remove: archive file [/home/abi/fetcher/tmp/hasura_ndc-0.8.tar.gz]
+[2024-04-20 03:31:44] INFO root fetch - processPackages [hasura-ndc]: Remove: archive file [/home/abi/fetcher/tmp/hasura_ndc-0.9.tar.gz]
+[2024-04-20 03:31:44] INFO root fetch - main [MainThread]: End processing [hasura-ndc]: success
+[2024-04-20 03:31:44] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.8.tar.gz]
+[2024-04-20 03:31:44] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.9.tar.gz]
+[2024-04-20 03:31:44] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
+[2024-04-20 03:31:45] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.6.tar.gz]
+[2024-04-20 03:31:45] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.0.7.tar.gz]
+[2024-04-20 03:31:45] INFO root fetch - main [MainThread]: End processing [datamana]: success
+[2024-04-20 03:31:45] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-04-20 03:31:46] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-04-20 03:31:46] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-04-20 03:31:46] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-04-20 03:31:46] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240420/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-04-20 03:31:47] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 03:31:47] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 03:31:47] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-04-20 03:31:47] INFO root fetch - processPackages [intecomm-edc]: Remove: archive file [/home/abi/fetcher/tmp/intecomm-edc-0.2.8.tar.gz]
+[2024-04-20 03:31:47] INFO root fetch - processPackages [intecomm-edc]: Remove: archive file [/home/abi/fetcher/tmp/intecomm-edc-0.2.9.tar.gz]
+[2024-04-20 03:31:47] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
+[2024-04-20 03:31:47] INFO root fetch - main [MainThread]: Store serial: [22851555]
