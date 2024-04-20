@@ -24084,3 +24084,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:56:20] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
 [2024-04-20 23:56:20] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
 [2024-04-20 23:56:20] INFO root fetch - main [MainThread]: Store serial: [22859776]
+[2024-04-20 23:58:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859776]
+[2024-04-20 23:58:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speechtoolkit
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FlutterFinder
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: codex
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC245
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-l10n-br-sale
+[2024-04-20 23:58:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: batchalign
+[2024-04-20 23:58:29] INFO root fetch - processPackages [speechtoolkit]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 23:58:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: New version: [14.0.3.7.1.dev6] Old Version: [14.0.3.7.1.dev2]
+[2024-04-20 23:58:29] INFO root fetch - processPackages [batchalign]: New version: [0.7.1b4] Old Version: [0.7.1b3]
+[2024-04-20 23:58:29] WARNING root fetch - processPackages [FlutterFinder]: Skipping, unable to determine old version
+[2024-04-20 23:58:29] INFO root fetch - main [MainThread]: End processing [FlutterFinder] error
+[2024-04-20 23:58:29] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/5b/46/05dfe90d39d754618e5b9e551c918b9cc2c850bf8d24c83e628905d592b5/speechtoolkit-0.0.2.tar.gz
+[2024-04-20 23:58:29] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/99/fa/d399e0733c840660993b41993f2f8f96fadb6715a216ffc5b8a2dbbf0ba9/batchalign-0.7.1b3.tar.gz
+[2024-04-20 23:58:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: Downloading https://files.pythonhosted.org/packages/b3/a4/6abec93b23cf6e9cbbaf840fdaaa553a3ce26f59ebdd75e0c66a94542071/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev2-py3-none-any.whl
+[2024-04-20 23:58:29] WARNING root fetch - processPackages [PythonTestLJC245]: Skipping, unable to determine old version
+[2024-04-20 23:58:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC245] error
+[2024-04-20 23:58:29] INFO root fetch - processPackages [codex]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-04-20 23:58:29] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/75/d7/853a37dc4108c1cdd5b2a368e5cbec7e16b80305a3315c67e047b402fb8e/batchalign-0.7.1b4.tar.gz
+[2024-04-20 23:58:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: Downloading https://files.pythonhosted.org/packages/3e/31/83966d6a528fd4aa5fc5a87400a09d947c0f9a60b2907b6265aa5c4fdc7c/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev6-py3-none-any.whl
+[2024-04-20 23:58:29] INFO root fetch - processPackages [codex]: Downloading https://files.pythonhosted.org/packages/0c/6f/7c4b25c7a3f59e29de3052fd98dcb78a9ee044406464991bc45a1fd4a48f/codex-1.5.8.tar.gz
+[2024-04-20 23:58:29] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/fa/a1/d5b81a80d88a15298cd8b742de3165bd935e58c9c973e9ad8b8a6ae6873f/speechtoolkit-0.0.3.tar.gz
+[2024-04-20 23:58:29] INFO root fetch - processPackages [batchalign]: executing diffoscope
+[2024-04-20 23:58:29] INFO root fetch - processPackages [batchalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchalign-0.7.1b3.tar.gz tmp/batchalign-0.7.1b4.tar.gz --markdown 20240420/b/batchalign/0.7.1b3-0.7.1b4/README.md --exclude *.pyd
+[2024-04-20 23:58:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: executing diffoscope
+[2024-04-20 23:58:29] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev6-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-l10n-br-sale/14.0.3.7.1.dev2-14.0.3.7.1.dev6/README.md --exclude *.pyd
+[2024-04-20 23:58:30] INFO root fetch - processPackages [speechtoolkit]: executing diffoscope
+[2024-04-20 23:58:30] INFO root fetch - processPackages [speechtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechtoolkit-0.0.2.tar.gz tmp/speechtoolkit-0.0.3.tar.gz --markdown 20240420/s/speechtoolkit/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 23:58:30] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.2.tar.gz]
+[2024-04-20 23:58:30] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.3.tar.gz]
+[2024-04-20 23:58:30] INFO root fetch - main [MainThread]: End processing [speechtoolkit]: success
+[2024-04-20 23:58:30] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev2-py3-none-any.whl.zip]
+[2024-04-20 23:58:30] INFO root fetch - processPackages [odoo14-addon-l10n-br-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_sale-14.0.3.7.1.dev6-py3-none-any.whl.zip]
+[2024-04-20 23:58:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-sale]: success
+[2024-04-20 23:58:30] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b3.tar.gz]
+[2024-04-20 23:58:30] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b4.tar.gz]
+[2024-04-20 23:58:30] INFO root fetch - main [MainThread]: End processing [batchalign]: success
+[2024-04-20 23:58:30] WARNING root fetch - processPackages [codex]: Skipping package: exceeds size limit 18232846>=10485760
+[2024-04-20 23:58:30] INFO root fetch - main [MainThread]: End processing [codex] error
+[2024-04-20 23:58:30] INFO root fetch - main [MainThread]: Store serial: [22859795]
