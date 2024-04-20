@@ -19302,3 +19302,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:44:13] INFO root fetch - processPackages [spice-rack]: Remove: archive file [/home/abi/fetcher/tmp/spice_rack-0.9.0.tar.gz]
 [2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [spice-rack]: success
 [2024-04-20 18:44:13] INFO root fetch - main [MainThread]: Store serial: [22857517]
+[2024-04-20 18:46:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857517]
+[2024-04-20 18:46:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mailme-api
+[2024-04-20 18:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emoji-data
+[2024-04-20 18:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huffify
+[2024-04-20 18:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioautomower
+[2024-04-20 18:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: provisioner-installers-plugin
+[2024-04-20 18:46:24] INFO root fetch - processPackages [mailme-api]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-04-20 18:46:24] INFO root fetch - processPackages [emoji-data]: New version: [0.3] Old Version: [0.2.post2]
+[2024-04-20 18:46:24] INFO root fetch - processPackages [huffify]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 18:46:24] WARNING root fetch - processPackages [provisioner-installers-plugin]: Skipping, unable to determine old version
+[2024-04-20 18:46:24] INFO root fetch - main [MainThread]: End processing [provisioner-installers-plugin] error
+[2024-04-20 18:46:24] INFO root fetch - processPackages [aioautomower]: New version: [2024.4.1b2] Old Version: [2024.4.1b0]
+[2024-04-20 18:46:24] INFO root fetch - processPackages [emoji-data]: Downloading https://files.pythonhosted.org/packages/63/b7/bbbab1e22e6ec7ed3ae0df1ec3060e662a5fa9e9060875b8560705422cb1/emoji-data-0.2.post2.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [mailme-api]: Downloading https://files.pythonhosted.org/packages/36/69/f403ccdfb9b0d2782f77ca4951ec8aa5cf786d58e8e725bdd1f2e69880c8/mailme_api-0.1.5.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [huffify]: Downloading https://files.pythonhosted.org/packages/6b/0d/337e009e7e2b194b1b71348a55eb1406b1c5a6b137ee2dbc93aaf2be2650/huffify-0.1.0.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/37/d9/1deadd8235b37a1c81bf042d9ae275809de4923f515b75755da83cd1fbcd/aioautomower-2024.4.1b0.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [huffify]: Downloading https://files.pythonhosted.org/packages/2b/00/0589eac9ae28b9fb65f7d61a5c04a3738cc3f4bf727f5c3c56c2aa1f2cc9/huffify-0.1.1.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [mailme-api]: Downloading https://files.pythonhosted.org/packages/73/c9/627a71c20565e3f2128fac963947190306644796c97dba6b6e21b3fe8c28/mailme-api-0.2.0.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/59/0e/4eebd76f196bf8bd4c8fd91cb7166b098d2e70cc8f9e3f29201baade1748/aioautomower-2024.4.1b2.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [huffify]: executing diffoscope
+[2024-04-20 18:46:24] INFO root fetch - processPackages [huffify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huffify-0.1.0.tar.gz tmp/huffify-0.1.1.tar.gz --markdown 20240420/h/huffify/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 18:46:24] INFO root fetch - processPackages [emoji-data]: Downloading https://files.pythonhosted.org/packages/4f/6d/1df380a39b721a657f732ad0a2fc566eb9a41ab1b3124ee9c18da27b25e3/emoji_data-0.3.tar.gz
+[2024-04-20 18:46:24] INFO root fetch - processPackages [mailme-api]: executing diffoscope
+[2024-04-20 18:46:24] INFO root fetch - processPackages [mailme-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mailme_api-0.1.5.tar.gz tmp/mailme-api-0.2.0.tar.gz --markdown 20240420/m/mailme-api/0.1.5-0.2.0/README.md --exclude *.pyd
+[2024-04-20 18:46:24] INFO root fetch - processPackages [emoji-data]: executing diffoscope
+[2024-04-20 18:46:24] INFO root fetch - processPackages [emoji-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emoji-data-0.2.post2.tar.gz tmp/emoji_data-0.3.tar.gz --markdown 20240420/e/emoji-data/0.2.post2-0.3/README.md --exclude *.pyd
+[2024-04-20 18:46:24] INFO root fetch - processPackages [aioautomower]: executing diffoscope
+[2024-04-20 18:46:24] INFO root fetch - processPackages [aioautomower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioautomower-2024.4.1b0.tar.gz tmp/aioautomower-2024.4.1b2.tar.gz --markdown 20240420/a/aioautomower/2024.4.1b0-2024.4.1b2/README.md --exclude *.pyd
+[2024-04-20 18:46:25] INFO root fetch - processPackages [huffify]: Remove: archive file [/home/abi/fetcher/tmp/huffify-0.1.0.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - processPackages [huffify]: Remove: archive file [/home/abi/fetcher/tmp/huffify-0.1.1.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - main [MainThread]: End processing [huffify]: success
+[2024-04-20 18:46:25] INFO root fetch - processPackages [mailme-api]: Remove: archive file [/home/abi/fetcher/tmp/mailme_api-0.1.5.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - processPackages [mailme-api]: Remove: archive file [/home/abi/fetcher/tmp/mailme-api-0.2.0.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - main [MainThread]: End processing [mailme-api]: success
+[2024-04-20 18:46:25] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b0.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b2.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - main [MainThread]: End processing [aioautomower]: success
+[2024-04-20 18:46:25] INFO root fetch - processPackages [emoji-data]: Remove: archive file [/home/abi/fetcher/tmp/emoji-data-0.2.post2.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - processPackages [emoji-data]: Remove: archive file [/home/abi/fetcher/tmp/emoji_data-0.3.tar.gz]
+[2024-04-20 18:46:25] INFO root fetch - main [MainThread]: End processing [emoji-data]: success
+[2024-04-20 18:46:25] INFO root fetch - main [MainThread]: Store serial: [22857533]
