@@ -10137,3 +10137,44 @@
 [2024-04-20 07:47:10] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-1.3.3.tar.gz]
 [2024-04-20 07:47:10] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-04-20 07:47:10] INFO root fetch - main [MainThread]: Store serial: [22852944]
+[2024-04-20 07:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852944]
+[2024-04-20 07:49:18] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 07:51:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852944]
+[2024-04-20 07:51:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiosumma
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shared-atomic-enterprise
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ldjcourse
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-stock-lot-is-archived
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 07:51:24] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.3]
+[2024-04-20 07:51:24] INFO root fetch - processPackages [aiosumma]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-20 07:51:24] INFO root fetch - processPackages [shared-atomic-enterprise]: New version: [5!3.3.3] Old Version: [5!3.3.2]
+[2024-04-20 07:51:24] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/a1/88/d36f06097ee27ee7f10638683204387893ce7b6d0c642fe3fc57037f3381/ldjcourse-0.0.1.tar.gz
+[2024-04-20 07:51:24] INFO root fetch - processPackages [aiosumma]: Downloading https://files.pythonhosted.org/packages/af/63/76bb948cda2c27009b48b8fddf160e3d70fd6bfcd7ad70add7b240652ed3/aiosumma-2.9.8-py3-none-any.whl
+[2024-04-20 07:51:24] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: Downloading https://files.pythonhosted.org/packages/39/00/6545b49c23e91469ea7f3ac059d98fe7318f47dfad9d8dda95441857cc69/odoo_addon_stock_lot_is_archived-16.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 07:51:24] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/76/a7/f7b2996cc73a4e9ee02ca08bacb183790197e8f76baf17d590dd283354f9/shared_atomic_enterprise-5!3.3.2-pp39-none-win_amd64.whl
+[2024-04-20 07:51:25] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/9e/b7/b244760b388351894b4132ed86a18c28b85ef4f338932720aea70cd105ff/ldjcourse-0.0.2.tar.gz
+[2024-04-20 07:51:25] INFO root fetch - processPackages [aiosumma]: Downloading https://files.pythonhosted.org/packages/c8/7f/f303da086cbb7f185236d31e6bc67a25c6f5286e37ca9dcfc361983a9a60/aiosumma-2.9.9-py3-none-any.whl
+[2024-04-20 07:51:25] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: Downloading https://files.pythonhosted.org/packages/16/89/b73ca68a2e453365c4b8f77d59ac61fc9ef63698d2b1d9944e5a45ae85fd/odoo_addon_stock_lot_is_archived-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-20 07:51:25] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-20 07:51:25] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.1.tar.gz tmp/ldjcourse-0.0.2.tar.gz --markdown 20240420/l/ldjcourse/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 07:51:25] INFO root fetch - processPackages [aiosumma]: executing diffoscope
+[2024-04-20 07:51:25] INFO root fetch - processPackages [aiosumma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosumma-2.9.8-py3-none-any.whl.zip tmp/aiosumma-2.9.9-py3-none-any.whl.zip --markdown 20240420/a/aiosumma/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-20 07:51:25] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: executing diffoscope
+[2024-04-20 07:51:25] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_lot_is_archived-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_stock_lot_is_archived-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-stock-lot-is-archived/16.0.1.0.0.3-16.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-20 07:51:25] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.1.tar.gz]
+[2024-04-20 07:51:25] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.2.tar.gz]
+[2024-04-20 07:51:25] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-20 07:51:25] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_lot_is_archived-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 07:51:25] INFO root fetch - processPackages [odoo-addon-stock-lot-is-archived]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_lot_is_archived-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-20 07:51:25] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-lot-is-archived]: success
+[2024-04-20 07:51:25] INFO root fetch - processPackages [aiosumma]: Remove: archive file [/home/abi/fetcher/tmp/aiosumma-2.9.8-py3-none-any.whl.zip]
+[2024-04-20 07:51:25] INFO root fetch - processPackages [aiosumma]: Remove: archive file [/home/abi/fetcher/tmp/aiosumma-2.9.9-py3-none-any.whl.zip]
+[2024-04-20 07:51:25] INFO root fetch - main [MainThread]: End processing [aiosumma]: success
+[2024-04-20 07:51:26] INFO root fetch - processPackages [shared-atomic-enterprise]: Downloading https://files.pythonhosted.org/packages/04/21/89f64f6aea0a2c41db782a07fd7223257b12c62ce5ee7d96189f511d77ae/shared_atomic_enterprise-5!3.3.3-cp37-none-win_amd64.whl
+[2024-04-20 07:51:27] INFO root fetch - processPackages [shared-atomic-enterprise]: executing diffoscope
+[2024-04-20 07:51:27] INFO root fetch - processPackages [shared-atomic-enterprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shared_atomic_enterprise-5!3.3.2-pp39-none-win_amd64.whl.zip tmp/shared_atomic_enterprise-5!3.3.3-cp37-none-win_amd64.whl.zip --markdown 20240420/s/shared-atomic-enterprise/5!3.3.2-5!3.3.3/README.md --exclude *.pyd
+[2024-04-20 07:51:38] INFO root fetch - processPackages [shared-atomic-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/shared_atomic_enterprise-5!3.3.2-pp39-none-win_amd64.whl.zip]
+[2024-04-20 07:51:38] INFO root fetch - processPackages [shared-atomic-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/shared_atomic_enterprise-5!3.3.3-cp37-none-win_amd64.whl.zip]
+[2024-04-20 07:51:38] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
+[2024-04-20 07:51:38] INFO root fetch - main [MainThread]: Store serial: [22852953]
