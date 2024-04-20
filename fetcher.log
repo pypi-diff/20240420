@@ -9533,3 +9533,18 @@
 [2024-04-20 06:37:46] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.0-py3-none-any.whl.zip]
 [2024-04-20 06:37:46] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
 [2024-04-20 06:37:46] INFO root fetch - main [MainThread]: Store serial: [22852561]
+[2024-04-20 06:39:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852561]
+[2024-04-20 06:39:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deksecrets
+[2024-04-20 06:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-mojang
+[2024-04-20 06:39:54] WARNING root fetch - processPackages [async-mojang]: Skipping, unable to determine old version
+[2024-04-20 06:39:54] INFO root fetch - main [MainThread]: End processing [async-mojang] error
+[2024-04-20 06:39:54] INFO root fetch - processPackages [deksecrets]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 06:39:54] INFO root fetch - processPackages [deksecrets]: Downloading https://files.pythonhosted.org/packages/e8/f1/5d1d4bf789724f585bd8e212da4c934c55785369b4047ebb98e02c86dadd/deksecrets-0.1.4.tar.gz
+[2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: Downloading https://files.pythonhosted.org/packages/c4/8c/c82af573023778ab5a5d08825910c061b9d830f898fed66dc67a06f96e48/deksecrets-0.1.5.tar.gz
+[2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: executing diffoscope
+[2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deksecrets-0.1.4.tar.gz tmp/deksecrets-0.1.5.tar.gz --markdown 20240420/d/deksecrets/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: Remove: archive file [/home/abi/fetcher/tmp/deksecrets-0.1.4.tar.gz]
+[2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: Remove: archive file [/home/abi/fetcher/tmp/deksecrets-0.1.5.tar.gz]
+[2024-04-20 06:39:55] INFO root fetch - main [MainThread]: End processing [deksecrets]: success
+[2024-04-20 06:39:55] INFO root fetch - main [MainThread]: Store serial: [22852567]
