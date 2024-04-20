@@ -23582,3 +23582,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:04:12] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-04-20 23:04:12] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-04-20 23:04:12] INFO root fetch - main [MainThread]: Store serial: [22859518]
+[2024-04-20 23:06:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859518]
+[2024-04-20 23:06:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 23:06:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC226
+[2024-04-20 23:06:21] WARNING root fetch - processPackages [PythonTestLJC226]: Skipping, unable to determine old version
+[2024-04-20 23:06:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC226] error
+[2024-04-20 23:06:21] INFO root fetch - main [MainThread]: Store serial: [22859523]
