@@ -24069,3 +24069,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:54:11] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
 [2024-04-20 23:54:11] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
 [2024-04-20 23:54:11] INFO root fetch - main [MainThread]: Store serial: [22859767]
+[2024-04-20 23:56:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859767]
+[2024-04-20 23:56:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC244
+[2024-04-20 23:56:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyPDFForm
+[2024-04-20 23:56:19] INFO root fetch - processPackages [PyPDFForm]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-20 23:56:19] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/69/9f/2ae6600de9a7bcb149411374a44be0c0f9f2c9ce362f6374e578ec5a4e26/PyPDFForm-1.4.8.tar.gz
+[2024-04-20 23:56:19] WARNING root fetch - processPackages [PythonTestLJC244]: Skipping, unable to determine old version
+[2024-04-20 23:56:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC244] error
+[2024-04-20 23:56:19] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/f0/86/8219b0802370fbdcae59e87d8b203196b52045c8375f1c043b5db3eb54ff/PyPDFForm-1.4.9.tar.gz
+[2024-04-20 23:56:19] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2024-04-20 23:56:19] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.4.8.tar.gz tmp/PyPDFForm-1.4.9.tar.gz --markdown 20240420/P/PyPDFForm/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-20 23:56:20] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.8.tar.gz]
+[2024-04-20 23:56:20] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
+[2024-04-20 23:56:20] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2024-04-20 23:56:20] INFO root fetch - main [MainThread]: Store serial: [22859776]
