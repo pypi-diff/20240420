@@ -21533,3 +21533,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:53:48] INFO root fetch - processPackages [jibrish-to-hebrew]: Remove: archive file [/home/abi/fetcher/tmp/jibrish_to_hebrew-1.4.tar.gz]
 [2024-04-20 20:53:48] INFO root fetch - main [MainThread]: End processing [jibrish-to-hebrew]: success
 [2024-04-20 20:53:48] INFO root fetch - main [MainThread]: Store serial: [22858546]
+[2024-04-20 20:55:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858546]
+[2024-04-20 20:55:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 20:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC179
+[2024-04-20 20:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: waii-sdk-py
+[2024-04-20 20:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jenkins-pysdk
+[2024-04-20 20:55:58] WARNING root fetch - processPackages [PythonTestLJC179]: Skipping, unable to determine old version
+[2024-04-20 20:55:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC179] error
+[2024-04-20 20:55:58] INFO root fetch - processPackages [jenkins-pysdk]: New version: [1.2] Old Version: [1.0.2]
+[2024-04-20 20:55:58] INFO root fetch - processPackages [waii-sdk-py]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-20 20:55:58] INFO root fetch - processPackages [waii-sdk-py]: Downloading https://files.pythonhosted.org/packages/66/9c/2c87fc22d28c4ea1b75c79ce5a78be2a0493900c8354fa627df4f02ef50f/waii-sdk-py-1.9.0.tar.gz
+[2024-04-20 20:55:58] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/51/84/51504e9c88848c3d2af7bde6cea7b492f5c6dd8dfcaf51cd3ede530712bb/jenkins_pysdk-1.0.2-py3-none-any.whl
+[2024-04-20 20:55:58] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/d8/86/cba2e2f8bdf47130fb21735ce789a04ef0f9b8aad137982783842a0e738c/jenkins_pysdk-1.2.tar.gz
+[2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: Downloading https://files.pythonhosted.org/packages/31/e8/ee7289f00157a5259fec17cd83451e92f8300f69ef9884cef2adb87ca6cf/waii-sdk-py-1.9.1.tar.gz
+[2024-04-20 20:55:59] INFO root fetch - processPackages [jenkins-pysdk]: executing diffoscope
+[2024-04-20 20:55:59] INFO root fetch - processPackages [jenkins-pysdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenkins_pysdk-1.0.2-py3-none-any.whl.zip tmp/jenkins_pysdk-1.2.tar.gz --markdown 20240420/j/jenkins-pysdk/1.0.2-1.2/README.md --exclude *.pyd
+[2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: executing diffoscope
+[2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waii-sdk-py-1.9.0.tar.gz tmp/waii-sdk-py-1.9.1.tar.gz --markdown 20240420/w/waii-sdk-py/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-20 20:55:59] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-1.0.2-py3-none-any.whl.zip]
+[2024-04-20 20:55:59] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-1.2.tar.gz]
+[2024-04-20 20:55:59] INFO root fetch - main [MainThread]: End processing [jenkins-pysdk]: success
+[2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: Remove: archive file [/home/abi/fetcher/tmp/waii-sdk-py-1.9.0.tar.gz]
+[2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: Remove: archive file [/home/abi/fetcher/tmp/waii-sdk-py-1.9.1.tar.gz]
+[2024-04-20 20:55:59] INFO root fetch - main [MainThread]: End processing [waii-sdk-py]: success
+[2024-04-20 20:55:59] INFO root fetch - main [MainThread]: Store serial: [22858557]
