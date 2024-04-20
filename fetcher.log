@@ -23781,3 +23781,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:23:39] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
 [2024-04-20 23:23:39] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2024-04-20 23:23:39] INFO root fetch - main [MainThread]: Store serial: [22859595]
+[2024-04-20 23:25:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859595]
+[2024-04-20 23:25:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclonedx-bom
+[2024-04-20 23:25:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aisploit
+[2024-04-20 23:25:48] INFO root fetch - processPackages [aisploit]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 23:25:48] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-04-20 23:25:48] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-20 23:25:48] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/e1/61/97f5edaf44c78504ac8add87fc1640b0bd9e96fc873130956907a61b1a74/cyclonedx_bom-4.2.0.tar.gz
+[2024-04-20 23:25:48] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/79/1a/32067b96fbd51e172e74fa8134d42b6721bd699ae2c9f8e5927b09de2401/aisploit-0.0.9.tar.gz
+[2024-04-20 23:25:48] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-20 23:25:48] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.8.tar.gz tmp/aisploit-0.0.9.tar.gz --markdown 20240420/a/aisploit/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 23:25:48] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/11/91/381b3c5c56eb47e38223c4be83ca1bdf670d638ad4e818670784b48d2f24/cyclonedx_bom-4.3.0.tar.gz
+[2024-04-20 23:25:49] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-20 23:25:49] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.2.0.tar.gz tmp/cyclonedx_bom-4.3.0.tar.gz --markdown 20240420/c/cyclonedx-bom/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-04-20 23:25:49] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-20 23:25:49] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.9.tar.gz]
+[2024-04-20 23:25:49] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-20 23:25:58] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.2.0.tar.gz]
+[2024-04-20 23:25:58] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.0.tar.gz]
+[2024-04-20 23:25:58] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-20 23:25:58] INFO root fetch - main [MainThread]: Store serial: [22859601]
