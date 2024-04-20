@@ -19202,3 +19202,9 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:35:34] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
 [2024-04-20 18:35:34] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
 [2024-04-20 18:35:34] INFO root fetch - main [MainThread]: Store serial: [22857466]
+[2024-04-20 18:37:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857466]
+[2024-04-20 18:37:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 18:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC129
+[2024-04-20 18:37:44] WARNING root fetch - processPackages [PythonTestLJC129]: Skipping, unable to determine old version
+[2024-04-20 18:37:44] INFO root fetch - main [MainThread]: End processing [PythonTestLJC129] error
+[2024-04-20 18:37:44] INFO root fetch - main [MainThread]: Store serial: [22857471]
