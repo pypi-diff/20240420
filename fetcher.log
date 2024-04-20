@@ -14319,3 +14319,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:03:15] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-04-20 13:03:15] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-04-20 13:03:15] INFO root fetch - main [MainThread]: Store serial: [22854956]
+[2024-04-20 13:05:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854956]
+[2024-04-20 13:05:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 13:05:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywbemtools
+[2024-04-20 13:05:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-i3tasks
+[2024-04-20 13:05:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qgate-sln-mlrun
+[2024-04-20 13:05:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: panns-AT-inference
+[2024-04-20 13:05:24] WARNING root fetch - processPackages [panns-AT-inference]: Skipping, unable to determine old version
+[2024-04-20 13:05:24] INFO root fetch - main [MainThread]: End processing [panns-AT-inference] error
+[2024-04-20 13:05:24] INFO root fetch - processPackages [pywbemtools]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-20 13:05:24] INFO root fetch - processPackages [qgate-sln-mlrun]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 13:05:24] INFO root fetch - processPackages [django-i3tasks]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 13:05:24] INFO root fetch - processPackages [pywbemtools]: Downloading https://files.pythonhosted.org/packages/df/8f/61e9df951e44271342551ae35eca93bf62786db8e9f4371c64433fefdb52/pywbemtools-1.2.1.tar.gz
+[2024-04-20 13:05:24] INFO root fetch - processPackages [django-i3tasks]: Downloading https://files.pythonhosted.org/packages/6e/b8/2e434212288332308507b866813d1712381cbd2a2732d033d62ab5eecabd/django_i3tasks-0.0.8.tar.gz
+[2024-04-20 13:05:24] INFO root fetch - processPackages [qgate-sln-mlrun]: Downloading https://files.pythonhosted.org/packages/c1/1c/fcd74593a18ec2e4720277058d73dee3ab7cc8001f6fea39f772b9f0bd41/qgate_sln_mlrun-0.2.0-py3-none-any.whl
+[2024-04-20 13:05:25] INFO root fetch - processPackages [pywbemtools]: Downloading https://files.pythonhosted.org/packages/1d/a3/402de9709030cd693ea53308fd9d4fa5de5339b8868e0858141d3e162e12/pywbemtools-1.3.0.tar.gz
+[2024-04-20 13:05:25] INFO root fetch - processPackages [django-i3tasks]: Downloading https://files.pythonhosted.org/packages/00/30/a41df4aec35b641075760c29df4c217abd5e72650f344eaa8924b3fb7d74/django_i3tasks-0.0.9.tar.gz
+[2024-04-20 13:05:25] INFO root fetch - processPackages [qgate-sln-mlrun]: Downloading https://files.pythonhosted.org/packages/c0/ab/fea115c7fa44cca9113e0f3e77377b91717e85d47b55b08eb89890d3f6c0/qgate_sln_mlrun-0.2.1-py3-none-any.whl
+[2024-04-20 13:05:25] INFO root fetch - processPackages [django-i3tasks]: executing diffoscope
+[2024-04-20 13:05:25] INFO root fetch - processPackages [django-i3tasks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_i3tasks-0.0.8.tar.gz tmp/django_i3tasks-0.0.9.tar.gz --markdown 20240420/d/django-i3tasks/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 13:05:25] INFO root fetch - processPackages [pywbemtools]: executing diffoscope
+[2024-04-20 13:05:25] INFO root fetch - processPackages [pywbemtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywbemtools-1.2.1.tar.gz tmp/pywbemtools-1.3.0.tar.gz --markdown 20240420/p/pywbemtools/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-20 13:05:25] INFO root fetch - processPackages [qgate-sln-mlrun]: executing diffoscope
+[2024-04-20 13:05:25] INFO root fetch - processPackages [qgate-sln-mlrun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qgate_sln_mlrun-0.2.0-py3-none-any.whl.zip tmp/qgate_sln_mlrun-0.2.1-py3-none-any.whl.zip --markdown 20240420/q/qgate-sln-mlrun/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 13:05:26] INFO root fetch - processPackages [django-i3tasks]: Remove: archive file [/home/abi/fetcher/tmp/django_i3tasks-0.0.8.tar.gz]
+[2024-04-20 13:05:26] INFO root fetch - processPackages [django-i3tasks]: Remove: archive file [/home/abi/fetcher/tmp/django_i3tasks-0.0.9.tar.gz]
+[2024-04-20 13:05:26] INFO root fetch - main [MainThread]: End processing [django-i3tasks]: success
+[2024-04-20 13:05:26] INFO root fetch - processPackages [qgate-sln-mlrun]: Remove: archive file [/home/abi/fetcher/tmp/qgate_sln_mlrun-0.2.0-py3-none-any.whl.zip]
+[2024-04-20 13:05:26] INFO root fetch - processPackages [qgate-sln-mlrun]: Remove: archive file [/home/abi/fetcher/tmp/qgate_sln_mlrun-0.2.1-py3-none-any.whl.zip]
+[2024-04-20 13:05:26] INFO root fetch - main [MainThread]: End processing [qgate-sln-mlrun]: success
+[2024-04-20 13:05:26] INFO root fetch - processPackages [pywbemtools]: Remove: archive file [/home/abi/fetcher/tmp/pywbemtools-1.2.1.tar.gz]
+[2024-04-20 13:05:26] INFO root fetch - processPackages [pywbemtools]: Remove: archive file [/home/abi/fetcher/tmp/pywbemtools-1.3.0.tar.gz]
+[2024-04-20 13:05:26] INFO root fetch - main [MainThread]: End processing [pywbemtools]: success
+[2024-04-20 13:05:26] INFO root fetch - main [MainThread]: Store serial: [22854969]
