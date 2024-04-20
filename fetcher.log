@@ -11038,3 +11038,74 @@
 [2024-04-20 09:04:07] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.33.1.dev20240418.tar.gz]
 [2024-04-20 09:04:07] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-04-20 09:04:07] INFO root fetch - main [MainThread]: Store serial: [22853328]
+[2024-04-20 09:06:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853328]
+[2024-04-20 09:06:16] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-customer-deposit
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simo
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-fs-image
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-fs-file
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-fs-storage
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-fs-base-multi-image
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: a3m
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ldjcourse
+[2024-04-20 09:06:16] INFO root fetch - processPackages [odoo-addon-fs-file]: New version: [16.0.1.0.6.1] Old Version: [16.0.1.0.6]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1.1]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [simo]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [odoo-addon-fs-storage]: New version: [17.0.1.0.0.5] Old Version: [17.0.1.0.0.4]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [odoo-addon-fs-image]: New version: [16.0.1.0.3.2] Old Version: [16.0.1.0.3]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: New version: [16.0.1.1.0.8] Old Version: [16.0.1.1.0.6]
+[2024-04-20 09:06:16] INFO root fetch - processPackages [a3m]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-20 09:06:17] INFO root fetch - processPackages [simo]: Downloading https://files.pythonhosted.org/packages/9c/3e/85c97e5462a3125c0189f179fa275e8a0cf69dce695c9a637286581a09a0/simo-2.0.8.tar.gz
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-file]: Downloading https://files.pythonhosted.org/packages/c1/3c/d5dbfb4450bb29019873275a6ca82fa83b812b31fb012d95bff078af7cc4/odoo_addon_fs_file-16.0.1.0.6-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: Downloading https://files.pythonhosted.org/packages/07/4f/1c5fdebd6ba87c081e6534cad41479b2134e846c5d3d0c0e88db8fac5f70/odoo_addon_stock_customer_deposit-16.0.1.0.1.1-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/94/7e/9037f565126a1739c1a43f8ab5da927f8315c9babeed471eee097dcde708/ldjcourse-0.0.4.tar.gz
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-storage]: Downloading https://files.pythonhosted.org/packages/5d/38/3f890e0adf31538afc822be31c0ee2055f50e8c4527236dfc4fc34e625d2/odoo_addon_fs_storage-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: Downloading https://files.pythonhosted.org/packages/d0/3d/a578ae84df98a739ba8642fe3a02405fb3d51de02d957ff2b6f870449742/odoo_addon_fs_base_multi_image-16.0.1.1.0.6-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-image]: Downloading https://files.pythonhosted.org/packages/a0/61/610460b5a6a713f5c70d2a6ad35d65fab961435c37cd017afc964beadd11/odoo_addon_fs_image-16.0.1.0.3-py3-none-any.whl
+[2024-04-20 09:06:17] WARNING root fetch - processPackages [simo]: Skipping package: exceeds size limit 20582813>=10485760
+[2024-04-20 09:06:17] INFO root fetch - main [MainThread]: End processing [simo] error
+[2024-04-20 09:06:17] INFO root fetch - processPackages [a3m]: Downloading https://files.pythonhosted.org/packages/6e/7f/67d36cdc410a4d29d71173b6ce5e50baf71394c2db355ba963f31fd3ff3c/a3m-0.7.8.tar.gz
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: Downloading https://files.pythonhosted.org/packages/fc/37/491915f91f583523dfe1bdb9cbdaf1d1699e7a1dfd5adc1e68b0642a04e2/odoo_addon_stock_customer_deposit-16.0.1.0.1.2-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/35/01/2a484fe6b6a4ba4dbe15d13397eab1eb346644807eabad995917293734ee/ldjcourse-0.0.5.tar.gz
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-storage]: Downloading https://files.pythonhosted.org/packages/6e/65/2d60113f6a47a55a3f9213b8a0ba3bc09d884210bf27ba7981a95c2f11b1/odoo_addon_fs_storage-17.0.1.0.0.5-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-file]: Downloading https://files.pythonhosted.org/packages/43/b2/6b49ed4d8db26f2d999870179d2aa0e01fdf0fc406fa346cdf6ae0cc7144/odoo_addon_fs_file-16.0.1.0.6.1-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: Downloading https://files.pythonhosted.org/packages/c9/ca/bf978166da22dc046ba11663d73bb1cbf6216c773fa7d16c8faf3f33b58e/odoo_addon_fs_base_multi_image-16.0.1.1.0.8-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_customer_deposit-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_stock_customer_deposit-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-stock-customer-deposit/16.0.1.0.1.1-16.0.1.0.1.2/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.4.tar.gz tmp/ldjcourse-0.0.5.tar.gz --markdown 20240420/l/ldjcourse/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-image]: Downloading https://files.pythonhosted.org/packages/27/b1/10d035320517ddf436b242cc9d4d7e629126dd4460afc2a119c29f4041f3/odoo_addon_fs_image-16.0.1.0.3.2-py3-none-any.whl
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-file]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_file-16.0.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_fs_file-16.0.1.0.6.1-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-fs-file/16.0.1.0.6-16.0.1.0.6.1/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_base_multi_image-16.0.1.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_fs_base_multi_image-16.0.1.1.0.8-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-fs-base-multi-image/16.0.1.1.0.6-16.0.1.1.0.8/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-image]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_image-16.0.1.0.3-py3-none-any.whl.zip tmp/odoo_addon_fs_image-16.0.1.0.3.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-fs-image/16.0.1.0.3-16.0.1.0.3.2/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [a3m]: Downloading https://files.pythonhosted.org/packages/62/c4/1c255dd07b2beb2c9578820cd3478eb4a9b13f7432fb38d827bd44447d0b/a3m-0.7.9.tar.gz
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-storage]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [odoo-addon-fs-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_fs_storage-17.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_fs_storage-17.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-fs-storage/17.0.1.0.0.4-17.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-20 09:06:17] INFO root fetch - processPackages [a3m]: executing diffoscope
+[2024-04-20 09:06:17] INFO root fetch - processPackages [a3m]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a3m-0.7.8.tar.gz tmp/a3m-0.7.9.tar.gz --markdown 20240420/a/a3m/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-20 09:06:18] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.4.tar.gz]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.5.tar.gz]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-file]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_file-16.0.1.0.6-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-file]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_file-16.0.1.0.6.1-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-file]: success
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_customer_deposit-16.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-stock-customer-deposit]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_customer_deposit-16.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-customer-deposit]: success
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-image]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_image-16.0.1.0.3-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-image]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_image-16.0.1.0.3.2-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-image]: success
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_base_multi_image-16.0.1.1.0.6-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-base-multi-image]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_base_multi_image-16.0.1.1.0.8-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-base-multi-image]: success
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-storage]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_storage-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - processPackages [odoo-addon-fs-storage]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_fs_storage-17.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-20 09:06:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-fs-storage]: success
+[2024-04-20 09:06:19] INFO root fetch - processPackages [a3m]: Remove: archive file [/home/abi/fetcher/tmp/a3m-0.7.8.tar.gz]
+[2024-04-20 09:06:19] INFO root fetch - processPackages [a3m]: Remove: archive file [/home/abi/fetcher/tmp/a3m-0.7.9.tar.gz]
+[2024-04-20 09:06:19] INFO root fetch - main [MainThread]: End processing [a3m]: success
+[2024-04-20 09:06:19] INFO root fetch - main [MainThread]: Store serial: [22853349]
