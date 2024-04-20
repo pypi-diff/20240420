@@ -20030,3 +20030,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:21:23] INFO root fetch - processPackages [hdn-research-environment]: Remove: archive file [/home/abi/fetcher/tmp/hdn-research-environment-3.0.7rc0.tar.gz]
 [2024-04-20 19:21:23] INFO root fetch - main [MainThread]: End processing [hdn-research-environment]: success
 [2024-04-20 19:21:23] INFO root fetch - main [MainThread]: Store serial: [22857805]
+[2024-04-20 19:23:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857805]
+[2024-04-20 19:23:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: indexify-langchain
+[2024-04-20 19:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indexify
+[2024-04-20 19:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC146
+[2024-04-20 19:23:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: petsearch
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:23:32] WARNING root fetch - processPackages [PythonTestLJC146]: Skipping, unable to determine old version
+[2024-04-20 19:23:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC146] error
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify-langchain]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:23:32] WARNING root fetch - processPackages [petsearch]: Skipping, unable to determine old version
+[2024-04-20 19:23:32] INFO root fetch - main [MainThread]: End processing [petsearch] error
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify]: Downloading https://files.pythonhosted.org/packages/f8/a3/de0a3191fc02ea1f246e36e2907d80b8e522872eacb5fbfcd5bf72733b5c/indexify-0.0.8.tar.gz
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify-langchain]: Downloading https://files.pythonhosted.org/packages/3d/4e/7af3a81021244c63c4c3137c3b56a11e426a386d02eadd825afe0ad93726/indexify_langchain-0.0.8.tar.gz
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify]: Downloading https://files.pythonhosted.org/packages/4e/e0/a60b294a8d7968ee0e712e54f1e8c22a898a1db1870c852c6523d9f6c569/indexify-0.0.9.tar.gz
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify-langchain]: Downloading https://files.pythonhosted.org/packages/f3/bb/cc2c8bcc98934db4e63a16d99b589d287286be80ab41a56f170c373fc8e9/indexify_langchain-0.0.9.tar.gz
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify-langchain]: executing diffoscope
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify_langchain-0.0.8.tar.gz tmp/indexify_langchain-0.0.9.tar.gz --markdown 20240420/i/indexify-langchain/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify]: executing diffoscope
+[2024-04-20 19:23:32] INFO root fetch - processPackages [indexify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-0.0.8.tar.gz tmp/indexify-0.0.9.tar.gz --markdown 20240420/i/indexify/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:23:33] INFO root fetch - processPackages [indexify-langchain]: Remove: archive file [/home/abi/fetcher/tmp/indexify_langchain-0.0.8.tar.gz]
+[2024-04-20 19:23:33] INFO root fetch - processPackages [indexify-langchain]: Remove: archive file [/home/abi/fetcher/tmp/indexify_langchain-0.0.9.tar.gz]
+[2024-04-20 19:23:33] INFO root fetch - main [MainThread]: End processing [indexify-langchain]: success
+[2024-04-20 19:23:33] INFO root fetch - processPackages [indexify]: Remove: archive file [/home/abi/fetcher/tmp/indexify-0.0.8.tar.gz]
+[2024-04-20 19:23:33] INFO root fetch - processPackages [indexify]: Remove: archive file [/home/abi/fetcher/tmp/indexify-0.0.9.tar.gz]
+[2024-04-20 19:23:33] INFO root fetch - main [MainThread]: End processing [indexify]: success
+[2024-04-20 19:23:33] INFO root fetch - main [MainThread]: Store serial: [22857821]
