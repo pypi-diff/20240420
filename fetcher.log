@@ -10559,3 +10559,15 @@
 [2024-04-20 08:30:55] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.904.tar.gz]
 [2024-04-20 08:30:55] INFO root fetch - main [MainThread]: End processing [urllib3-future]: success
 [2024-04-20 08:30:55] INFO root fetch - main [MainThread]: Store serial: [22853141]
+[2024-04-20 08:32:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853141]
+[2024-04-20 08:33:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 08:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloudpy-org
+[2024-04-20 08:33:04] INFO root fetch - processPackages [cloudpy-org]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-04-20 08:33:04] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/09/ca/d609567efc28de7bf426ac26343c67ae96394f558aca357f404dfc5123c6/cloudpy_org-1.4.6.tar.gz
+[2024-04-20 08:33:04] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/79/3a/d4686a9bf5af6414612361989974b74a92f45ed5cc773137afd1ae415e0e/cloudpy_org-1.4.7.tar.gz
+[2024-04-20 08:33:04] INFO root fetch - processPackages [cloudpy-org]: executing diffoscope
+[2024-04-20 08:33:04] INFO root fetch - processPackages [cloudpy-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpy_org-1.4.6.tar.gz tmp/cloudpy_org-1.4.7.tar.gz --markdown 20240420/c/cloudpy-org/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-04-20 08:33:05] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.6.tar.gz]
+[2024-04-20 08:33:05] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.7.tar.gz]
+[2024-04-20 08:33:05] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
+[2024-04-20 08:33:05] INFO root fetch - main [MainThread]: Store serial: [22853144]
