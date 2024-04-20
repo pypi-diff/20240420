@@ -23588,3 +23588,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:06:21] WARNING root fetch - processPackages [PythonTestLJC226]: Skipping, unable to determine old version
 [2024-04-20 23:06:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC226] error
 [2024-04-20 23:06:21] INFO root fetch - main [MainThread]: Store serial: [22859523]
+[2024-04-20 23:08:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859523]
+[2024-04-20 23:08:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easy-ec2
+[2024-04-20 23:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC227
+[2024-04-20 23:08:30] WARNING root fetch - processPackages [PythonTestLJC227]: Skipping, unable to determine old version
+[2024-04-20 23:08:30] INFO root fetch - main [MainThread]: End processing [PythonTestLJC227] error
+[2024-04-20 23:08:30] INFO root fetch - processPackages [easy-ec2]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 23:08:30] INFO root fetch - processPackages [easy-ec2]: Downloading https://files.pythonhosted.org/packages/ec/1a/d3b88856d5244af3dbbb1b545ee03d2680b9e321eda6bba7ec75917dad93/easy_ec2-0.1.8.tar.gz
+[2024-04-20 23:08:30] INFO root fetch - processPackages [easy-ec2]: Downloading https://files.pythonhosted.org/packages/9e/11/83d42bf6b750234e63edd466da8f287bae5ddd4a5a990a69cc481da16b67/easy_ec2-0.1.9.tar.gz
+[2024-04-20 23:08:31] INFO root fetch - processPackages [easy-ec2]: executing diffoscope
+[2024-04-20 23:08:31] INFO root fetch - processPackages [easy-ec2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_ec2-0.1.8.tar.gz tmp/easy_ec2-0.1.9.tar.gz --markdown 20240420/e/easy-ec2/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 23:08:31] INFO root fetch - processPackages [easy-ec2]: Remove: archive file [/home/abi/fetcher/tmp/easy_ec2-0.1.8.tar.gz]
+[2024-04-20 23:08:31] INFO root fetch - processPackages [easy-ec2]: Remove: archive file [/home/abi/fetcher/tmp/easy_ec2-0.1.9.tar.gz]
+[2024-04-20 23:08:31] INFO root fetch - main [MainThread]: End processing [easy-ec2]: success
+[2024-04-20 23:08:31] INFO root fetch - main [MainThread]: Store serial: [22859531]
