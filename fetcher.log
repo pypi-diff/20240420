@@ -20994,3 +20994,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:18:30] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-04-20 20:18:30] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-04-20 20:18:30] INFO root fetch - main [MainThread]: Store serial: [22858255]
+[2024-04-20 20:20:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858255]
+[2024-04-20 20:20:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: victron
+[2024-04-20 20:20:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opentelemetry-instrumentation-faststream
+[2024-04-20 20:20:39] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 20:20:39] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Downloading https://files.pythonhosted.org/packages/0d/b6/cd08f02d96dd6529c862390c71e43136de97bad978a00ef634968b72d8d5/opentelemetry_instrumentation_faststream-0.1.0.tar.gz
+[2024-04-20 20:20:39] INFO root fetch - processPackages [victron]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 20:20:39] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Downloading https://files.pythonhosted.org/packages/d4/95/f2ad32449ec3b49675dd4877720ff4c288f8df7a5b78391feabc89afde8e/opentelemetry_instrumentation_faststream-0.1.1.tar.gz
+[2024-04-20 20:20:39] INFO root fetch - processPackages [victron]: Downloading https://files.pythonhosted.org/packages/12/3c/753c5cfa1c8c051e98fdc3ee689438141528c6c42e60af3562e68dcddde5/victron-0.0.1.tar.gz
+[2024-04-20 20:20:39] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: executing diffoscope
+[2024-04-20 20:20:39] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentelemetry_instrumentation_faststream-0.1.0.tar.gz tmp/opentelemetry_instrumentation_faststream-0.1.1.tar.gz --markdown 20240420/o/opentelemetry-instrumentation-faststream/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 20:20:39] INFO root fetch - processPackages [victron]: Downloading https://files.pythonhosted.org/packages/c7/f8/65f66f6066802d72d1463eace1a3d254e30ca59da5abe493387917da2876/victron-0.0.2.tar.gz
+[2024-04-20 20:20:39] INFO root fetch - processPackages [victron]: executing diffoscope
+[2024-04-20 20:20:39] INFO root fetch - processPackages [victron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/victron-0.0.1.tar.gz tmp/victron-0.0.2.tar.gz --markdown 20240420/v/victron/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 20:20:40] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Remove: archive file [/home/abi/fetcher/tmp/opentelemetry_instrumentation_faststream-0.1.0.tar.gz]
+[2024-04-20 20:20:40] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Remove: archive file [/home/abi/fetcher/tmp/opentelemetry_instrumentation_faststream-0.1.1.tar.gz]
+[2024-04-20 20:20:40] INFO root fetch - main [MainThread]: End processing [opentelemetry-instrumentation-faststream]: success
+[2024-04-20 20:20:40] INFO root fetch - processPackages [victron]: Remove: archive file [/home/abi/fetcher/tmp/victron-0.0.1.tar.gz]
+[2024-04-20 20:20:40] INFO root fetch - processPackages [victron]: Remove: archive file [/home/abi/fetcher/tmp/victron-0.0.2.tar.gz]
+[2024-04-20 20:20:40] INFO root fetch - main [MainThread]: End processing [victron]: success
+[2024-04-20 20:20:40] INFO root fetch - main [MainThread]: Store serial: [22858260]
