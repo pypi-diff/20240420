@@ -6999,3 +6999,24 @@
 [2024-04-20 03:20:47] INFO root fetch - processPackages [botocore-a-la-carte-b2bi]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-b2bi-1.34.9.tar.gz]
 [2024-04-20 03:20:47] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-b2bi]: success
 [2024-04-20 03:20:47] INFO root fetch - main [MainThread]: Store serial: [22851206]
+[2024-04-20 03:22:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851206]
+[2024-04-20 03:22:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 03:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 03:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: counts
+[2024-04-20 03:22:58] INFO root fetch - processPackages [counts]: New version: [0.9.0] Old Version: [0.0.2]
+[2024-04-20 03:22:58] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 03:22:58] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/c2/12/c5a11d91348c640762afed8462ed7736270f7c68271119a8bcf799535248/counts-0.0.2.tar.gz
+[2024-04-20 03:22:58] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 03:22:58] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 03:22:58] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/df/09/113063923c383d3eb905c5bc5770590c43ead0b3bd9f4ef0cbc81c6ba3ac/counts-0.9.0.tar.gz
+[2024-04-20 03:22:58] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 03:22:58] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 03:22:58] INFO root fetch - processPackages [counts]: executing diffoscope
+[2024-04-20 03:22:58] INFO root fetch - processPackages [counts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/counts-0.0.2.tar.gz tmp/counts-0.9.0.tar.gz --markdown 20240420/c/counts/0.0.2-0.9.0/README.md --exclude *.pyd
+[2024-04-20 03:22:59] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 03:22:59] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 03:22:59] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 03:22:59] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.0.2.tar.gz]
+[2024-04-20 03:22:59] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
+[2024-04-20 03:22:59] INFO root fetch - main [MainThread]: End processing [counts]: success
+[2024-04-20 03:22:59] INFO root fetch - main [MainThread]: Store serial: [22851269]
