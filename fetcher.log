@@ -20955,3 +20955,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:16:19] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.2.tar.gz]
 [2024-04-20 20:16:19] INFO root fetch - main [MainThread]: End processing [g4f]: success
 [2024-04-20 20:16:19] INFO root fetch - main [MainThread]: Store serial: [22858232]
+[2024-04-20 20:18:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858232]
+[2024-04-20 20:18:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edstem-assignment-tracker
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lappu-sa-venom
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xproject
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tire-code-parser
+[2024-04-20 20:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC166
+[2024-04-20 20:18:28] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 20:18:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 20:18:28] WARNING root fetch - processPackages [lappu-sa-venom]: Skipping, unable to determine old version
+[2024-04-20 20:18:28] INFO root fetch - main [MainThread]: End processing [lappu-sa-venom] error
+[2024-04-20 20:18:28] INFO root fetch - processPackages [tire-code-parser]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 20:18:28] WARNING root fetch - processPackages [xproject]: Skipping, unable to determine old version
+[2024-04-20 20:18:28] WARNING root fetch - processPackages [PythonTestLJC166]: Skipping, unable to determine old version
+[2024-04-20 20:18:28] INFO root fetch - main [MainThread]: End processing [xproject] error
+[2024-04-20 20:18:28] INFO root fetch - main [MainThread]: End processing [PythonTestLJC166] error
+[2024-04-20 20:18:28] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/19/cc/e511a29284a322a991b8e327e8dab1c76e1c6140309bd1c5abf5e839d3c5/tire-code-parser-0.9.0.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 20:18:28] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 20:18:28] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/ba/a9/6093c4fbed09f3ed01b02d0f773a69cc1c9e7dde6d6b90410df69c89d71a/tire-code-parser-0.9.1.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-04-20 20:18:28] INFO root fetch - processPackages [tire-code-parser]: executing diffoscope
+[2024-04-20 20:18:28] INFO root fetch - processPackages [tire-code-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tire-code-parser-0.9.0.tar.gz tmp/tire-code-parser-0.9.1.tar.gz --markdown 20240420/t/tire-code-parser/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 20:18:29] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 20:18:29] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 20:18:29] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 20:18:29] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-04-20 20:18:29] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240420/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 20:18:29] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.9.0.tar.gz]
+[2024-04-20 20:18:29] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.9.1.tar.gz]
+[2024-04-20 20:18:29] INFO root fetch - main [MainThread]: End processing [tire-code-parser]: success
+[2024-04-20 20:18:30] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-04-20 20:18:30] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-04-20 20:18:30] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-04-20 20:18:30] INFO root fetch - main [MainThread]: Store serial: [22858255]
