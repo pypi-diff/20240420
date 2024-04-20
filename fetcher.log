@@ -13943,3 +13943,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:31:58] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.5.tar.gz]
 [2024-04-20 12:31:58] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 12:31:58] INFO root fetch - main [MainThread]: Store serial: [22854815]
+[2024-04-20 12:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854815]
+[2024-04-20 12:34:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 12:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coconut-develop
+[2024-04-20 12:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytablericons
+[2024-04-20 12:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graph-transformer
+[2024-04-20 12:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: htagui
+[2024-04-20 12:34:07] INFO root fetch - processPackages [graph-transformer]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 12:34:07] WARNING root fetch - processPackages [pytablericons]: Skipping, unable to determine old version
+[2024-04-20 12:34:07] INFO root fetch - main [MainThread]: End processing [pytablericons] error
+[2024-04-20 12:34:07] INFO root fetch - processPackages [coconut-develop]: New version: [3.1.0.post0.dev9] Old Version: [3.1.0.post0.dev8]
+[2024-04-20 12:34:07] INFO root fetch - processPackages [htagui]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-20 12:34:07] INFO root fetch - processPackages [graph-transformer]: Downloading https://files.pythonhosted.org/packages/26/68/3cb11810f7bace3d14f68323f2b95b8c946e77c2be28d0fefe119a476baf/graph-transformer-0.1.tar.gz
+[2024-04-20 12:34:07] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/c9/52/852c50fb7afeae75f0f89a0a02001b8acadbf4ae78724b159a077190c1b0/coconut-develop-3.1.0.post0.dev8.tar.gz
+[2024-04-20 12:34:07] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/68/0f/8fa30d3bd54006a6f4e785f37a44b670a1a7de89a69a347be0c8f5d880a1/htagui-0.4.2.tar.gz
+[2024-04-20 12:34:07] INFO root fetch - processPackages [graph-transformer]: Downloading https://files.pythonhosted.org/packages/53/d5/683034a73dd4631f290f98a4c6596d045ad95a5dcdc74743d95a5cba33f7/graph-transformer-0.2.tar.gz
+[2024-04-20 12:34:07] INFO root fetch - processPackages [coconut-develop]: Downloading https://files.pythonhosted.org/packages/dd/01/30acfa4b7546ecb9a8f3194eae81fcf5daafdddebce842a4acd20d5231ff/coconut-develop-3.1.0.post0.dev9.tar.gz
+[2024-04-20 12:34:07] INFO root fetch - processPackages [graph-transformer]: executing diffoscope
+[2024-04-20 12:34:07] INFO root fetch - processPackages [graph-transformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graph-transformer-0.1.tar.gz tmp/graph-transformer-0.2.tar.gz --markdown 20240420/g/graph-transformer/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 12:34:08] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/d9/e1/0edf53508ae8bab0585b98f702742bd25aad4093df806f96da4d1aab5d61/htagui-0.5.0.tar.gz
+[2024-04-20 12:34:08] INFO root fetch - processPackages [coconut-develop]: executing diffoscope
+[2024-04-20 12:34:08] INFO root fetch - processPackages [coconut-develop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coconut-develop-3.1.0.post0.dev8.tar.gz tmp/coconut-develop-3.1.0.post0.dev9.tar.gz --markdown 20240420/c/coconut-develop/3.1.0.post0.dev8-3.1.0.post0.dev9/README.md --exclude *.pyd
+[2024-04-20 12:34:08] INFO root fetch - processPackages [graph-transformer]: Remove: archive file [/home/abi/fetcher/tmp/graph-transformer-0.1.tar.gz]
+[2024-04-20 12:34:08] INFO root fetch - processPackages [graph-transformer]: Remove: archive file [/home/abi/fetcher/tmp/graph-transformer-0.2.tar.gz]
+[2024-04-20 12:34:08] INFO root fetch - main [MainThread]: End processing [graph-transformer]: success
+[2024-04-20 12:34:08] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-20 12:34:08] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.4.2.tar.gz tmp/htagui-0.5.0.tar.gz --markdown 20240420/h/htagui/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-20 12:34:09] INFO root fetch - processPackages [coconut-develop]: Remove: archive file [/home/abi/fetcher/tmp/coconut-develop-3.1.0.post0.dev8.tar.gz]
+[2024-04-20 12:34:09] INFO root fetch - processPackages [coconut-develop]: Remove: archive file [/home/abi/fetcher/tmp/coconut-develop-3.1.0.post0.dev9.tar.gz]
+[2024-04-20 12:34:09] INFO root fetch - main [MainThread]: End processing [coconut-develop]: success
+[2024-04-20 12:34:09] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.4.2.tar.gz]
+[2024-04-20 12:34:09] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.0.tar.gz]
+[2024-04-20 12:34:09] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-20 12:34:09] INFO root fetch - main [MainThread]: Store serial: [22854826]
