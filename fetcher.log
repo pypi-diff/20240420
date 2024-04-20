@@ -2622,3 +2622,63 @@
 [2024-04-20 02:32:38] INFO root fetch - processPackages [scikit-build-core]: Remove: archive file [/home/abi/fetcher/tmp/scikit_build_core-0.9.0.tar.gz]
 [2024-04-20 02:32:38] INFO root fetch - main [MainThread]: End processing [scikit-build-core]: success
 [2024-04-20 02:32:38] INFO root fetch - main [MainThread]: Store serial: [22849964]
+[2024-04-20 02:34:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849964]
+[2024-04-20 02:34:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: state-machine-semaphore
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: honeybee-radiance
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flatpack
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: honeybee-energy
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llm-gpt4all
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dragonfly-core
+[2024-04-20 02:34:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: inventory-lib
+[2024-04-20 02:34:47] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [flatpack]: New version: [3.3.6] Old Version: [3.3.5]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [llm-gpt4all]: New version: [0.4] Old Version: [0.3]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2024-04-20 02:34:47] WARNING root fetch - processPackages [inventory-lib]: Skipping, unable to determine old version
+[2024-04-20 02:34:47] INFO root fetch - main [MainThread]: End processing [inventory-lib] error
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-radiance]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/72/f0/0fd4fa4afbf712a5626abe401eb822e61882a41b133b75d34f5e541c77b8/flatpack-3.3.5.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-energy]: New version: [1.99.9] Old Version: [1.99.8]
+[2024-04-20 02:34:47] INFO root fetch - processPackages [llm-gpt4all]: Downloading https://files.pythonhosted.org/packages/08/59/2534f97cf0feb468faef20e471c59d2c0c16e5cc020104f30a86051ab6b3/llm-gpt4all-0.3.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/48/ae/cca3e8aac6a72593fde7860cbf91882050c1a465c316efc2e0472bfa36e1/honeybee-radiance-1.9.1.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/b1/ab/c8fb70e349d71cce95bac52782f7ea0659a6987ed84dd41c7fe2ef40806c/honeybee-energy-1.99.8.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/99/c7/78cf440195d504fb29626141581421a729a7a5e7743b5e0bc329a2371a4e/flatpack-3.3.6.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20240420/s/state-machine-semaphore/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 02:34:47] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.5.tar.gz tmp/flatpack-3.3.6.tar.gz --markdown 20240420/f/flatpack/3.3.5-3.3.6/README.md --exclude *.pyd
+[2024-04-20 02:34:47] INFO root fetch - processPackages [llm-gpt4all]: Downloading https://files.pythonhosted.org/packages/81/a7/1e33cc26e6489678f130c5539e011788e1d20b2ceec3414d3ac6012355f0/llm_gpt4all-0.4.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-radiance]: Downloading https://files.pythonhosted.org/packages/50/24/71a3a4863bb39caef68dcd79f1b380133b1f1968426af26bc9c4812376d1/honeybee-radiance-1.9.2.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-energy]: Downloading https://files.pythonhosted.org/packages/8d/5e/1bc90eeaf45799cc7d5cda125017c1e4e2cf0ef068cd3db60d971b9596ba/honeybee-energy-1.99.9.tar.gz
+[2024-04-20 02:34:47] INFO root fetch - processPackages [llm-gpt4all]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [llm-gpt4all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm-gpt4all-0.3.tar.gz tmp/llm_gpt4all-0.4.tar.gz --markdown 20240420/l/llm-gpt4all/0.3-0.4/README.md --exclude *.pyd
+[2024-04-20 02:34:47] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240420/d/dragonfly-core/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-energy]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-energy-1.99.8.tar.gz tmp/honeybee-energy-1.99.9.tar.gz --markdown 20240420/h/honeybee-energy/1.99.8-1.99.9/README.md --exclude *.pyd
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-radiance]: executing diffoscope
+[2024-04-20 02:34:47] INFO root fetch - processPackages [honeybee-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-1.9.1.tar.gz tmp/honeybee-radiance-1.9.2.tar.gz --markdown 20240420/h/honeybee-radiance/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-04-20 02:34:48] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.98.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2024-04-20 02:34:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.5.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.6.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 02:34:48] INFO root fetch - processPackages [llm-gpt4all]: Remove: archive file [/home/abi/fetcher/tmp/llm-gpt4all-0.3.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - processPackages [llm-gpt4all]: Remove: archive file [/home/abi/fetcher/tmp/llm_gpt4all-0.4.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - main [MainThread]: End processing [llm-gpt4all]: success
+[2024-04-20 02:34:48] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-04-20 02:34:48] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-04-20 02:34:49] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.8.tar.gz]
+[2024-04-20 02:34:49] INFO root fetch - processPackages [honeybee-energy]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-energy-1.99.9.tar.gz]
+[2024-04-20 02:34:49] INFO root fetch - main [MainThread]: End processing [honeybee-energy]: success
+[2024-04-20 02:34:49] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.1.tar.gz]
+[2024-04-20 02:34:49] INFO root fetch - processPackages [honeybee-radiance]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-1.9.2.tar.gz]
+[2024-04-20 02:34:49] INFO root fetch - main [MainThread]: End processing [honeybee-radiance]: success
+[2024-04-20 02:34:49] INFO root fetch - main [MainThread]: Store serial: [22849988]
