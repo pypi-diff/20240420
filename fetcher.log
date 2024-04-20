@@ -18243,3 +18243,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:31:23] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.9.tar.gz]
 [2024-04-20 17:31:23] INFO root fetch - main [MainThread]: End processing [lm-checkpoints]: success
 [2024-04-20 17:31:23] INFO root fetch - main [MainThread]: Store serial: [22856974]
+[2024-04-20 17:33:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856974]
+[2024-04-20 17:33:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC106
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-fishing
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crewai
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: weight-calculation
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 17:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: statdistwiz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.2.1] Old Version: [0.1.9]
+[2024-04-20 17:33:32] INFO root fetch - processPackages [nonebot-plugin-fishing]: New version: [0.2.3a3] Old Version: [0.2.3a2]
+[2024-04-20 17:33:32] WARNING root fetch - processPackages [PythonTestLJC106]: Skipping, unable to determine old version
+[2024-04-20 17:33:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC106] error
+[2024-04-20 17:33:32] WARNING root fetch - processPackages [weight-calculation]: Skipping, unable to determine old version
+[2024-04-20 17:33:32] INFO root fetch - main [MainThread]: End processing [weight-calculation] error
+[2024-04-20 17:33:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/77/5b/b4309c119105a6b34387eb7b6454322c5bebc454ad241b55dd9d701843b4/nonebot-plugin-fishing-0.2.3a2.tar.gz
+[2024-04-20 17:33:32] WARNING root fetch - processPackages [statdistwiz]: Skipping, unable to determine old version
+[2024-04-20 17:33:32] INFO root fetch - main [MainThread]: End processing [statdistwiz] error
+[2024-04-20 17:33:32] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-20 17:33:32] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/1b/f2/8df35ee009918d13d208927cb368f226a931b30f24707ffc9bf24e80bd5f/nonebot_plugin_fishing-0.2.3a3.tar.gz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/92/1e/a8c5ef4967e0a0199ce145867d92f9cb1617d7bf294213f9477b0791913b/CI-CD-SergiCastillo-0.2.1.tar.gz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [nonebot-plugin-fishing]: executing diffoscope
+[2024-04-20 17:33:32] INFO root fetch - processPackages [nonebot-plugin-fishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz tmp/nonebot_plugin_fishing-0.2.3a3.tar.gz --markdown 20240420/n/nonebot-plugin-fishing/0.2.3a2-0.2.3a3/README.md --exclude *.pyd
+[2024-04-20 17:33:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 17:33:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.9.tar.gz tmp/CI-CD-SergiCastillo-0.2.1.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.9-0.2.1/README.md --exclude *.pyd
+[2024-04-20 17:33:32] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-04-20 17:33:32] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-04-20 17:33:32] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240420/c/crewai/0.5.3-0.5.5/README.md --exclude *.pyd
+[2024-04-20 17:33:33] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.1.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 17:33:33] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_fishing-0.2.3a3.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fishing]: success
+[2024-04-20 17:33:33] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-04-20 17:33:33] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-04-20 17:33:33] INFO root fetch - main [MainThread]: Store serial: [22856999]
