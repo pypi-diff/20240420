@@ -14409,3 +14409,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:11:55] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.5.tar.gz]
 [2024-04-20 13:11:55] INFO root fetch - main [MainThread]: End processing [astabc]: success
 [2024-04-20 13:11:55] INFO root fetch - main [MainThread]: Store serial: [22855034]
+[2024-04-20 13:13:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855034]
+[2024-04-20 13:14:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miraie-ac
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-cpp
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC025
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyallel
+[2024-04-20 13:14:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oronium
+[2024-04-20 13:14:03] INFO root fetch - processPackages [miraie-ac]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 13:14:03] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240419] Old Version: [2.5.0b20240418]
+[2024-04-20 13:14:04] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/00/3a/50a0a122b7d370e5421c2add1f080c87a5fde0befe5516e5312cce901f53/miraie-ac-0.2.8.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [pyallel]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-20 13:14:04] WARNING root fetch - processPackages [PythonTestLJC025]: Skipping, unable to determine old version
+[2024-04-20 13:14:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC025] error
+[2024-04-20 13:14:04] INFO root fetch - processPackages [oronium]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 13:14:04] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-20 13:14:04] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/1e/8c/bbe0b0206861f4aed2f7c7a6f025f815fd0529b77abd6ccb3acb7c7a1f62/bigdl_core_cpp-2.5.0b20240418-py3-none-win_amd64.whl
+[2024-04-20 13:14:04] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 54451875>=10485760
+[2024-04-20 13:14:04] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-04-20 13:14:04] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-20 13:14:04] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/28/ec/c9cc0d93267edac944a07c6e4038661293392ba08770dcae0cda628ccf51/pyallel-1.1.0.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [oronium]: Downloading https://files.pythonhosted.org/packages/22/30/6646f4d63395322927af09300eeb0c278e67f904f85acd85a7db837e3976/oronium-1.0.8.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/e0/b0/8e2ea91eca1196a81c1b770d9de84b6c09c73c1d60fbb62b0c44f8ed044b/miraie-ac-0.2.9.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [miraie-ac]: executing diffoscope
+[2024-04-20 13:14:04] INFO root fetch - processPackages [miraie-ac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miraie-ac-0.2.8.tar.gz tmp/miraie-ac-0.2.9.tar.gz --markdown 20240420/m/miraie-ac/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 13:14:04] INFO root fetch - processPackages [pyallel]: Downloading https://files.pythonhosted.org/packages/bb/ad/5fb12478a5c06cd63c101ffedb45c7804826b3e38caaea279ced9b656f0b/pyallel-1.2.0.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [oronium]: Downloading https://files.pythonhosted.org/packages/81/dc/763ec3508451f67c1865a05b1fc2dff66b54b9657d5005d80ef556d375de/oronium-1.0.9.tar.gz
+[2024-04-20 13:14:04] INFO root fetch - processPackages [pyallel]: executing diffoscope
+[2024-04-20 13:14:04] INFO root fetch - processPackages [pyallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyallel-1.1.0.tar.gz tmp/pyallel-1.2.0.tar.gz --markdown 20240420/p/pyallel/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-04-20 13:14:04] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-20 13:14:04] INFO root fetch - processPackages [oronium]: executing diffoscope
+[2024-04-20 13:14:04] INFO root fetch - processPackages [oronium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oronium-1.0.8.tar.gz tmp/oronium-1.0.9.tar.gz --markdown 20240420/o/oronium/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 13:14:05] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie-ac-0.2.8.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie-ac-0.2.9.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - main [MainThread]: End processing [miraie-ac]: success
+[2024-04-20 13:14:05] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-20 13:14:05] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240420/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-04-20 13:14:05] INFO root fetch - processPackages [oronium]: Remove: archive file [/home/abi/fetcher/tmp/oronium-1.0.8.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - processPackages [oronium]: Remove: archive file [/home/abi/fetcher/tmp/oronium-1.0.9.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - main [MainThread]: End processing [oronium]: success
+[2024-04-20 13:14:05] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.1.0.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - processPackages [pyallel]: Remove: archive file [/home/abi/fetcher/tmp/pyallel-1.2.0.tar.gz]
+[2024-04-20 13:14:05] INFO root fetch - main [MainThread]: End processing [pyallel]: success
+[2024-04-20 13:14:06] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-20 13:14:06] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-20 13:14:06] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-20 13:14:06] INFO root fetch - main [MainThread]: Store serial: [22855053]
