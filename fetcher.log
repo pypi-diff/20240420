@@ -23135,3 +23135,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:34:56] WARNING root fetch - processPackages [PythonTestLJC215]: Skipping, unable to determine old version
 [2024-04-20 22:34:56] INFO root fetch - main [MainThread]: End processing [PythonTestLJC215] error
 [2024-04-20 22:34:56] INFO root fetch - main [MainThread]: Store serial: [22859318]
+[2024-04-20 22:37:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859318]
+[2024-04-20 22:37:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avtdl
+[2024-04-20 22:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-20 22:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyside-app-core
+[2024-04-20 22:37:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: colabseg
+[2024-04-20 22:37:05] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-20 22:37:05] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-20 22:37:05] INFO root fetch - processPackages [colabseg]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 22:37:05] INFO root fetch - processPackages [avtdl]: New version: [0.9.9] Old Version: [0.9.14.3]
+[2024-04-20 22:37:05] INFO root fetch - processPackages [pyside-app-core]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-20 22:37:05] INFO root fetch - processPackages [colabseg]: Downloading https://files.pythonhosted.org/packages/3b/c9/4f9df2bdd128b48e603aa16fa542e758572a6e84a220f08c708ba342c8bb/colabseg-0.0.2.tar.gz
+[2024-04-20 22:37:05] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-20 22:37:05] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/8f/42/41c2d34073415bfb6c1f92003f587f7303318fc7fd61c5bcce9c602809ac/avtdl-0.9.14.3.tar.gz
+[2024-04-20 22:37:05] INFO root fetch - processPackages [pyside-app-core]: Downloading https://files.pythonhosted.org/packages/e3/66/02098462bfd6968d2946789284fe1e2742ea365feab41757467e4b6b4f6e/pyside-app-core-0.1.7.tar.gz
+[2024-04-20 22:37:05] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-20 22:37:05] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240420/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-20 22:37:06] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/57/f2/1b50ba48422edde9ac3e722c752a043bd064d5f016c1630c297bb7c31684/avtdl-0.9.9.tar.gz
+[2024-04-20 22:37:06] INFO root fetch - processPackages [colabseg]: Downloading https://files.pythonhosted.org/packages/85/e9/ca3a9ff39218d79575e2fe101e0497d32721fbaae528eee71ebc17f031e6/colabseg-0.0.3.tar.gz
+[2024-04-20 22:37:06] INFO root fetch - processPackages [pyside-app-core]: Downloading https://files.pythonhosted.org/packages/aa/77/4737af465e693696e36caa1009b76369c986fca936953f73794064d438c8/pyside_app_core-0.1.9.tar.gz
+[2024-04-20 22:37:06] INFO root fetch - processPackages [avtdl]: executing diffoscope
+[2024-04-20 22:37:06] INFO root fetch - processPackages [avtdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avtdl-0.9.14.3.tar.gz tmp/avtdl-0.9.9.tar.gz --markdown 20240420/a/avtdl/0.9.14.3-0.9.9/README.md --exclude *.pyd
+[2024-04-20 22:37:06] INFO root fetch - processPackages [colabseg]: executing diffoscope
+[2024-04-20 22:37:06] INFO root fetch - processPackages [colabseg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colabseg-0.0.2.tar.gz tmp/colabseg-0.0.3.tar.gz --markdown 20240420/c/colabseg/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 22:37:06] INFO root fetch - processPackages [pyside-app-core]: executing diffoscope
+[2024-04-20 22:37:06] INFO root fetch - processPackages [pyside-app-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyside-app-core-0.1.7.tar.gz tmp/pyside_app_core-0.1.9.tar.gz --markdown 20240420/p/pyside-app-core/0.1.7-0.1.9/README.md --exclude *.pyd
+[2024-04-20 22:37:06] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-20 22:37:06] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-20 22:37:06] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-20 22:37:06] INFO root fetch - processPackages [colabseg]: Remove: archive file [/home/abi/fetcher/tmp/colabseg-0.0.2.tar.gz]
+[2024-04-20 22:37:06] INFO root fetch - processPackages [colabseg]: Remove: archive file [/home/abi/fetcher/tmp/colabseg-0.0.3.tar.gz]
+[2024-04-20 22:37:06] INFO root fetch - main [MainThread]: End processing [colabseg]: success
+[2024-04-20 22:37:07] INFO root fetch - processPackages [pyside-app-core]: Remove: archive file [/home/abi/fetcher/tmp/pyside-app-core-0.1.7.tar.gz]
+[2024-04-20 22:37:07] INFO root fetch - processPackages [pyside-app-core]: Remove: archive file [/home/abi/fetcher/tmp/pyside_app_core-0.1.9.tar.gz]
+[2024-04-20 22:37:07] INFO root fetch - main [MainThread]: End processing [pyside-app-core]: success
+[2024-04-20 22:37:07] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.14.3.tar.gz]
+[2024-04-20 22:37:07] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
+[2024-04-20 22:37:07] INFO root fetch - main [MainThread]: End processing [avtdl]: success
+[2024-04-20 22:37:07] INFO root fetch - main [MainThread]: Store serial: [22859330]
