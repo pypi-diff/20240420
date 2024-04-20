@@ -8339,3 +8339,36 @@
 [2024-04-20 05:15:57] INFO root fetch - processPackages [cdktf-cdktf-provider-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-spotinst-9.0.9.tar.gz]
 [2024-04-20 05:15:57] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-spotinst]: success
 [2024-04-20 05:15:57] INFO root fetch - main [MainThread]: Store serial: [22852055]
+[2024-04-20 05:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852055]
+[2024-04-20 05:18:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 05:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emergingtrajectories
+[2024-04-20 05:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autodft
+[2024-04-20 05:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-commission
+[2024-04-20 05:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retk
+[2024-04-20 05:18:06] INFO root fetch - processPackages [emergingtrajectories]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 05:18:06] INFO root fetch - processPackages [odoo-addon-commission]: New version: [17.0.1.0.0.3] Old Version: [16.0.2.2.0]
+[2024-04-20 05:18:06] INFO root fetch - processPackages [retk]: New version: [0.2.6] Old Version: [0.2.4]
+[2024-04-20 05:18:06] WARNING root fetch - processPackages [autodft]: Skipping, unable to determine old version
+[2024-04-20 05:18:06] INFO root fetch - main [MainThread]: End processing [autodft] error
+[2024-04-20 05:18:06] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/1f/3e/3229d6759c17920a1ecd3722791f03aed62c9a3f9ef850794188474c7fb5/emergingtrajectories-0.2.8.tar.gz
+[2024-04-20 05:18:06] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/4d/75/882898201a9892d483ed1148b8bea8c613e8afee2dad7afc589c192dda1f/odoo_addon_commission-16.0.2.2.0-py3-none-any.whl
+[2024-04-20 05:18:06] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/4a/56/b09f3dee162ec5f532260aeb43a3eb2a42d50e65b248d0b3ae5db4203de0/retk-0.2.4.tar.gz
+[2024-04-20 05:18:06] INFO root fetch - processPackages [emergingtrajectories]: Downloading https://files.pythonhosted.org/packages/44/2f/dc231c0377b6642a32797154e1fd951c910f0b0cd2dbf06a9b7ef5c3c3cc/emergingtrajectories-0.2.9.tar.gz
+[2024-04-20 05:18:06] INFO root fetch - processPackages [odoo-addon-commission]: Downloading https://files.pythonhosted.org/packages/d0/b4/4056f4106cd275c56ba385e3e84fe8f34fa465d48ea835fc997ee411774c/odoo_addon_commission-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 05:18:06] INFO root fetch - processPackages [emergingtrajectories]: executing diffoscope
+[2024-04-20 05:18:06] INFO root fetch - processPackages [emergingtrajectories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emergingtrajectories-0.2.8.tar.gz tmp/emergingtrajectories-0.2.9.tar.gz --markdown 20240420/e/emergingtrajectories/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 05:18:06] INFO root fetch - processPackages [odoo-addon-commission]: executing diffoscope
+[2024-04-20 05:18:06] INFO root fetch - processPackages [odoo-addon-commission]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_commission-16.0.2.2.0-py3-none-any.whl.zip tmp/odoo_addon_commission-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-commission/16.0.2.2.0-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-04-20 05:18:06] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/f4/79/a003384484b3965d9ecbf34c187664e1e23dd78dd20dd57e580455de86a9/retk-0.2.6.tar.gz
+[2024-04-20 05:18:07] INFO root fetch - processPackages [retk]: executing diffoscope
+[2024-04-20 05:18:07] INFO root fetch - processPackages [retk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retk-0.2.4.tar.gz tmp/retk-0.2.6.tar.gz --markdown 20240420/r/retk/0.2.4-0.2.6/README.md --exclude *.pyd
+[2024-04-20 05:18:07] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.8.tar.gz]
+[2024-04-20 05:18:07] INFO root fetch - processPackages [emergingtrajectories]: Remove: archive file [/home/abi/fetcher/tmp/emergingtrajectories-0.2.9.tar.gz]
+[2024-04-20 05:18:07] INFO root fetch - main [MainThread]: End processing [emergingtrajectories]: success
+[2024-04-20 05:18:07] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-16.0.2.2.0-py3-none-any.whl.zip]
+[2024-04-20 05:18:07] INFO root fetch - processPackages [odoo-addon-commission]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_commission-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 05:18:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-commission]: success
+[2024-04-20 05:19:12] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.4.tar.gz]
+[2024-04-20 05:19:12] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.6.tar.gz]
+[2024-04-20 05:19:12] INFO root fetch - main [MainThread]: End processing [retk]: success
+[2024-04-20 05:19:12] INFO root fetch - main [MainThread]: Store serial: [22852068]
