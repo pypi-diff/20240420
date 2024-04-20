@@ -7251,3 +7251,11 @@
 [2024-04-20 03:36:08] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.589.24111.tar.gz]
 [2024-04-20 03:36:08] INFO root fetch - main [MainThread]: End processing [mo-files]: success
 [2024-04-20 03:36:08] INFO root fetch - main [MainThread]: Store serial: [22851643]
+[2024-04-20 03:38:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851643]
+[2024-04-20 03:38:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 03:38:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-shell
+[2024-04-20 03:38:16] INFO root fetch - processPackages [tf-shell]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-20 03:38:16] INFO root fetch - processPackages [tf-shell]: Downloading https://files.pythonhosted.org/packages/f8/e1/9e9bf3f55f64fb8e27a672439e3232c15e1953447dad3fcf38f38756766d/tf_shell-0.0.2-cp310-cp310-manylinux_2_35_x86_64.whl
+[2024-04-20 03:38:16] WARNING root fetch - processPackages [tf-shell]: Skipping package: exceeds size limit 16006706>=10485760
+[2024-04-20 03:38:16] INFO root fetch - main [MainThread]: End processing [tf-shell] error
+[2024-04-20 03:38:16] INFO root fetch - main [MainThread]: Store serial: [22851645]
