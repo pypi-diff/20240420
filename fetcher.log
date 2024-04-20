@@ -9723,3 +9723,33 @@
 [2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_etransport-17.0.0.3.0-py3-none-any.whl.zip]
 [2024-04-20 06:59:26] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-etransport]: success
 [2024-04-20 06:59:26] INFO root fetch - main [MainThread]: Store serial: [22852685]
+[2024-04-20 07:01:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852685]
+[2024-04-20 07:01:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-20 07:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-lm
+[2024-04-20 07:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-offset
+[2024-04-20 07:01:35] INFO root fetch - processPackages [llm-offset]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-20 07:01:35] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/8d/d1/845d3b716175fb2043a9c0fed18bf63045a941264869ed0026391598be3a/llm_offset-0.3.1.tar.gz
+[2024-04-20 07:01:35] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc68.post1] Old Version: [0.0.2rc66.post1]
+[2024-04-20 07:01:35] INFO root fetch - processPackages [simple-lm]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-20 07:01:36] INFO root fetch - processPackages [simple-lm]: Downloading https://files.pythonhosted.org/packages/a1/a6/724d1c9a4cc0019417929e59d7c0455453485fc973c29ceeff8a43c47bf0/simple_lm-0.1.2.tar.gz
+[2024-04-20 07:01:36] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/ba/6d/5c5a603a77e92dd7960ec8458a143e267d097ed078703d033c583e571d88/py_dbchat-0.0.2rc66.post1.tar.gz
+[2024-04-20 07:01:36] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/71/e0/4deb828fb08d580ed1445898b9ea6f9a1c0504f8dd4342f06c1c6d3c9185/llm_offset-0.4.0.tar.gz
+[2024-04-20 07:01:36] INFO root fetch - processPackages [llm-offset]: executing diffoscope
+[2024-04-20 07:01:36] INFO root fetch - processPackages [llm-offset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_offset-0.3.1.tar.gz tmp/llm_offset-0.4.0.tar.gz --markdown 20240420/l/llm-offset/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 07:01:36] INFO root fetch - processPackages [simple-lm]: Downloading https://files.pythonhosted.org/packages/8f/a8/ec829b1803089bbb0206698ec61e15df44f884d50638f79fd69a4950da88/simple_lm-0.1.3.tar.gz
+[2024-04-20 07:01:36] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/81/3d/82a1db0829f543940113483eaad85a6ec8870628825273a108284ca35dab/py_dbchat-0.0.2rc68.post1.tar.gz
+[2024-04-20 07:01:36] INFO root fetch - processPackages [simple-lm]: executing diffoscope
+[2024-04-20 07:01:36] INFO root fetch - processPackages [simple-lm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_lm-0.1.2.tar.gz tmp/simple_lm-0.1.3.tar.gz --markdown 20240420/s/simple-lm/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-20 07:01:36] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 07:01:36] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc66.post1.tar.gz tmp/py_dbchat-0.0.2rc68.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc66.post1-0.0.2rc68.post1/README.md --exclude *.pyd
+[2024-04-20 07:01:36] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.3.1.tar.gz]
+[2024-04-20 07:01:36] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.4.0.tar.gz]
+[2024-04-20 07:01:36] INFO root fetch - main [MainThread]: End processing [llm-offset]: success
+[2024-04-20 07:01:37] INFO root fetch - processPackages [simple-lm]: Remove: archive file [/home/abi/fetcher/tmp/simple_lm-0.1.2.tar.gz]
+[2024-04-20 07:01:37] INFO root fetch - processPackages [simple-lm]: Remove: archive file [/home/abi/fetcher/tmp/simple_lm-0.1.3.tar.gz]
+[2024-04-20 07:01:37] INFO root fetch - main [MainThread]: End processing [simple-lm]: success
+[2024-04-20 07:01:37] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc66.post1.tar.gz]
+[2024-04-20 07:01:37] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc68.post1.tar.gz]
+[2024-04-20 07:01:37] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 07:01:37] INFO root fetch - main [MainThread]: Store serial: [22852694]
