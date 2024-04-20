@@ -12305,3 +12305,15 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:46:27] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-04-20 10:46:27] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-04-20 10:46:27] INFO root fetch - main [MainThread]: Store serial: [22854002]
+[2024-04-20 10:48:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854002]
+[2024-04-20 10:48:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 10:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-cpu
+[2024-04-20 10:48:36] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240420] Old Version: [2.17.0.dev20240419]
+[2024-04-20 10:48:36] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/77/ca/a53ebbcdc1696186db3136297e3350d76fbd1889d9253c14e4ef375eae67/tf_nightly_cpu-2.17.0.dev20240419-cp39-cp39-win_amd64.whl
+[2024-04-20 10:48:36] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/0d/74/42286d3d3426a51701975bbf38c8265904a7df422988b4460015df32cba3/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl
+[2024-04-20 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-04-20 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240419-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip --markdown 20240420/t/tf-nightly-cpu/2.17.0.dev20240419-2.17.0.dev20240420/README.md --exclude *.pyd
+[2024-04-20 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240419-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 10:48:37] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-04-20 10:48:37] INFO root fetch - main [MainThread]: Store serial: [22854008]
