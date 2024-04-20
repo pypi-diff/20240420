@@ -14897,3 +14897,46 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: Remove: archive file [/home/abi/fetcher/tmp/HyperRez-2.0.tar.gz]
 [2024-04-20 13:42:42] INFO root fetch - main [MainThread]: End processing [HyperRez]: success
 [2024-04-20 13:42:42] INFO root fetch - main [MainThread]: Store serial: [22855255]
+[2024-04-20 13:44:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855255]
+[2024-04-20 13:44:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: raven-formats
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tui-dsg
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: churchtools
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC031
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: restcraft
+[2024-04-20 13:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tui-dsg
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: New version: [202404201342] Old Version: [202404201018]
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: New version: [202404201342] Old Version: [202404201018]
+[2024-04-20 13:44:53] WARNING root fetch - processPackages [restcraft]: Skipping, unable to determine old version
+[2024-04-20 13:44:53] INFO root fetch - main [MainThread]: End processing [restcraft] error
+[2024-04-20 13:44:53] INFO root fetch - processPackages [raven-formats]: New version: [1.7] Old Version: [1.6]
+[2024-04-20 13:44:53] WARNING root fetch - processPackages [PythonTestLJC031]: Skipping, unable to determine old version
+[2024-04-20 13:44:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC031] error
+[2024-04-20 13:44:53] INFO root fetch - processPackages [churchtools]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/64/1a/04ae10622e95c520162e1650c13e16f5cf5e64e723a0f0362ea311b7cd73/tui_dsg-202404201018.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/64/1a/04ae10622e95c520162e1650c13e16f5cf5e64e723a0f0362ea311b7cd73/tui_dsg-202404201018.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [raven-formats]: Downloading https://files.pythonhosted.org/packages/d6/0d/a6c8f266471cce852e12bc1b49ccb572f333d1b3e851749128b065cf48b4/raven-formats-1.6.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [churchtools]: Downloading https://files.pythonhosted.org/packages/cf/19/76a6acb856eb309015209f928f249d0e529b6f921d0ef3047d0ff01b11fe/churchtools-0.1.7.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [churchtools]: Downloading https://files.pythonhosted.org/packages/2a/bf/580fa681c4dc5d91377d775d4c880e39864e8d08ad8def0883dd0908dd73/churchtools-0.1.8.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [raven-formats]: Downloading https://files.pythonhosted.org/packages/bc/72/861c01b04ab79945f58ba27b33842a27884efe69291c3dfee2ccc6ca5f5b/raven_formats-1.7.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/b2/be/153317c24f5f80a05916007d702170bc636e1c613b348ff96370229f422a/tui_dsg-202404201342.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/b2/be/153317c24f5f80a05916007d702170bc636e1c613b348ff96370229f422a/tui_dsg-202404201342.tar.gz
+[2024-04-20 13:44:53] INFO root fetch - processPackages [raven-formats]: executing diffoscope
+[2024-04-20 13:44:53] INFO root fetch - processPackages [raven-formats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raven-formats-1.6.tar.gz tmp/raven_formats-1.7.tar.gz --markdown 20240420/r/raven-formats/1.6-1.7/README.md --exclude *.pyd
+[2024-04-20 13:44:53] INFO root fetch - processPackages [churchtools]: executing diffoscope
+[2024-04-20 13:44:53] INFO root fetch - processPackages [churchtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/churchtools-0.1.7.tar.gz tmp/churchtools-0.1.8.tar.gz --markdown 20240420/c/churchtools/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: executing diffoscope
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsg-202404201018.tar.gz tmp/tui_dsg-202404201342.tar.gz --markdown 20240420/t/tui-dsg/202404201018-202404201342/README.md --exclude *.pyd
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: executing diffoscope
+[2024-04-20 13:44:53] INFO root fetch - processPackages [tui-dsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsg-202404201018.tar.gz tmp/tui_dsg-202404201342.tar.gz --markdown 20240420/t/tui-dsg/202404201018-202404201342/README.md --exclude *.pyd
+[2024-04-20 13:44:54] INFO root fetch - processPackages [raven-formats]: Remove: archive file [/home/abi/fetcher/tmp/raven-formats-1.6.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - processPackages [raven-formats]: Remove: archive file [/home/abi/fetcher/tmp/raven_formats-1.7.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [raven-formats]: success
+[2024-04-20 13:44:54] INFO root fetch - processPackages [churchtools]: Remove: archive file [/home/abi/fetcher/tmp/churchtools-0.1.7.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - processPackages [churchtools]: Remove: archive file [/home/abi/fetcher/tmp/churchtools-0.1.8.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [churchtools]: success
+[2024-04-20 13:44:54] INFO root fetch - processPackages [tui-dsg]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsg-202404201018.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - processPackages [tui-dsg]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsg-202404201342.tar.gz]
+[2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
+[2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
+[2024-04-20 13:44:54] INFO root fetch - main [MainThread]: Store serial: [22855279]
