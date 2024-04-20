@@ -9147,3 +9147,24 @@
 [2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.4.tar.gz]
 [2024-04-20 06:22:26] INFO root fetch - main [MainThread]: End processing [twikit]: success
 [2024-04-20 06:22:26] INFO root fetch - main [MainThread]: Store serial: [22852458]
+[2024-04-20 06:24:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852458]
+[2024-04-20 06:24:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-priming
+[2024-04-20 06:24:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mokei
+[2024-04-20 06:24:36] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-20 06:24:36] INFO root fetch - processPackages [mokei]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-20 06:24:36] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-04-20 06:24:36] INFO root fetch - processPackages [mokei]: Downloading https://files.pythonhosted.org/packages/09/15/6a0e51d46ae86c3521ad1e9365ed5a16b359914a122bed9bb83839784fd7/mokei-0.2.2.tar.gz
+[2024-04-20 06:24:36] INFO root fetch - processPackages [mokei]: Downloading https://files.pythonhosted.org/packages/f7/3e/305dbbc97c2d202db8c62d9a4c5a9827ba328708275f36c005db3bc396ca/mokei-0.2.3.tar.gz
+[2024-04-20 06:24:36] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-04-20 06:24:36] INFO root fetch - processPackages [mokei]: executing diffoscope
+[2024-04-20 06:24:36] INFO root fetch - processPackages [mokei]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mokei-0.2.2.tar.gz tmp/mokei-0.2.3.tar.gz --markdown 20240420/m/mokei/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-20 06:24:36] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-04-20 06:24:36] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240420/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-20 06:24:37] INFO root fetch - processPackages [mokei]: Remove: archive file [/home/abi/fetcher/tmp/mokei-0.2.2.tar.gz]
+[2024-04-20 06:24:37] INFO root fetch - processPackages [mokei]: Remove: archive file [/home/abi/fetcher/tmp/mokei-0.2.3.tar.gz]
+[2024-04-20 06:24:37] INFO root fetch - main [MainThread]: End processing [mokei]: success
+[2024-04-20 06:24:37] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-04-20 06:24:37] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-04-20 06:24:37] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-04-20 06:24:37] INFO root fetch - main [MainThread]: Store serial: [22852466]
