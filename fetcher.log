@@ -7557,3 +7557,24 @@
 [2024-04-20 04:04:38] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
 [2024-04-20 04:04:38] INFO root fetch - main [MainThread]: End processing [bauplan]: success
 [2024-04-20 04:04:38] INFO root fetch - main [MainThread]: Store serial: [22851741]
+[2024-04-20 04:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851741]
+[2024-04-20 04:07:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-iotedge
+[2024-04-20 04:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypipr
+[2024-04-20 04:07:12] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-20 04:07:12] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 04:07:12] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/c9/80/a60e2061c599d3ab34a4246a7ffb30264176cbffcbc0c6e2cae879c23cd8/tendril_iotedge-0.3.1.tar.gz
+[2024-04-20 04:07:12] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 04:07:12] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 04:07:12] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/4a/8d/f923967da6034df5b2bfa01eafba2a54712a148406fc63f3c00059a4cbe7/tendril_iotedge-0.3.2.tar.gz
+[2024-04-20 04:07:12] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 04:07:12] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 04:07:12] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-20 04:07:12] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.1.tar.gz tmp/tendril_iotedge-0.3.2.tar.gz --markdown 20240420/t/tendril-iotedge/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-20 04:07:13] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 04:07:13] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 04:07:13] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 04:07:13] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.1.tar.gz]
+[2024-04-20 04:07:13] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.2.tar.gz]
+[2024-04-20 04:07:13] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-20 04:07:13] INFO root fetch - main [MainThread]: Store serial: [22851747]
