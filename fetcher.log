@@ -23529,3 +23529,29 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.0.tar.gz]
 [2024-04-20 22:59:49] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
 [2024-04-20 22:59:49] INFO root fetch - main [MainThread]: Store serial: [22859491]
+[2024-04-20 23:01:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859491]
+[2024-04-20 23:01:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 23:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grooveshop-django-api
+[2024-04-20 23:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-gcp
+[2024-04-20 23:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotpython
+[2024-04-20 23:01:59] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-20 23:01:59] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-20 23:01:59] INFO root fetch - processPackages [django-gcp]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 23:01:59] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-20 23:01:59] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-20 23:01:59] INFO root fetch - processPackages [spotpython]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 23:01:59] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/fa/1e/7977cdd9436a23d951ec20889acda7f77200169515120aa05a84c7209f1c/django_gcp-0.9.2.tar.gz
+[2024-04-20 23:01:59] INFO root fetch - processPackages [spotpython]: Downloading https://files.pythonhosted.org/packages/aa/01/87762fb27b6d307e4614269c8a41952ca3bec4ec77adfc08459351394a0d/spotPython-0.9.8.tar.gz
+[2024-04-20 23:01:59] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/a3/ea/a0ba2534d8540b5905ac4a62ff379270051f18b10e85af024aafde36b9d2/django_gcp-0.9.3.tar.gz
+[2024-04-20 23:01:59] INFO root fetch - processPackages [django-gcp]: executing diffoscope
+[2024-04-20 23:01:59] INFO root fetch - processPackages [django-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gcp-0.9.2.tar.gz tmp/django_gcp-0.9.3.tar.gz --markdown 20240420/d/django-gcp/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 23:02:00] INFO root fetch - processPackages [spotpython]: Downloading https://files.pythonhosted.org/packages/24/be/283dfbac35854cc80323c97a62b46a4b61ef023695b46910af3abc4b765b/spotPython-0.9.9.tar.gz
+[2024-04-20 23:02:00] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.2.tar.gz]
+[2024-04-20 23:02:00] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.3.tar.gz]
+[2024-04-20 23:02:00] INFO root fetch - main [MainThread]: End processing [django-gcp]: success
+[2024-04-20 23:02:00] INFO root fetch - processPackages [spotpython]: executing diffoscope
+[2024-04-20 23:02:00] INFO root fetch - processPackages [spotpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.9.8.tar.gz tmp/spotPython-0.9.9.tar.gz --markdown 20240420/s/spotpython/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 23:02:01] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.8.tar.gz]
+[2024-04-20 23:02:01] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.9.tar.gz]
+[2024-04-20 23:02:01] INFO root fetch - main [MainThread]: End processing [spotpython]: success
+[2024-04-20 23:02:01] INFO root fetch - main [MainThread]: Store serial: [22859501]
