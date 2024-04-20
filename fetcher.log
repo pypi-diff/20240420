@@ -19208,3 +19208,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:37:44] WARNING root fetch - processPackages [PythonTestLJC129]: Skipping, unable to determine old version
 [2024-04-20 18:37:44] INFO root fetch - main [MainThread]: End processing [PythonTestLJC129] error
 [2024-04-20 18:37:44] INFO root fetch - main [MainThread]: Store serial: [22857471]
+[2024-04-20 18:39:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857471]
+[2024-04-20 18:39:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC130
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ai-microcore
+[2024-04-20 18:39:53] INFO root fetch - processPackages [notfunny]: New version: [0.5.3] Old Version: [0.5.1]
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ai-microcore]: New version: [3.5.0] Old Version: [3.4.0]
+[2024-04-20 18:39:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/71/3843d0a81ed5c8ad734f1acf1de563e1e72af24c37b534e9dcea84b3064f/notfunny-0.5.1.tar.gz
+[2024-04-20 18:39:53] WARNING root fetch - processPackages [PythonTestLJC130]: Skipping, unable to determine old version
+[2024-04-20 18:39:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC130] error
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/87/ac/611ea3e9b44d228da65ecc2427be847a5af30d62748dd3222cbf15f2ac38/ai_microcore-3.4.0.tar.gz
+[2024-04-20 18:39:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/b5/e2/48ed160ce9897f8e7cbe9159128f6592d2cd437329fb87dd2819ae99b230/notfunny-0.5.3.tar.gz
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/a5/b3/67aba891a3cd234821b4edd32183e954a8c4772a5854eac19e5672a535e6/ai_microcore-3.5.0.tar.gz
+[2024-04-20 18:39:53] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:39:53] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.1.tar.gz tmp/notfunny-0.5.3.tar.gz --markdown 20240420/n/notfunny/0.5.1-0.5.3/README.md --exclude *.pyd
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ai-microcore]: executing diffoscope
+[2024-04-20 18:39:53] INFO root fetch - processPackages [ai-microcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_microcore-3.4.0.tar.gz tmp/ai_microcore-3.5.0.tar.gz --markdown 20240420/a/ai-microcore/3.4.0-3.5.0/README.md --exclude *.pyd
+[2024-04-20 18:39:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.1.tar.gz]
+[2024-04-20 18:39:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.3.tar.gz]
+[2024-04-20 18:39:54] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:39:54] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.4.0.tar.gz]
+[2024-04-20 18:39:54] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.5.0.tar.gz]
+[2024-04-20 18:39:54] INFO root fetch - main [MainThread]: End processing [ai-microcore]: success
+[2024-04-20 18:39:54] INFO root fetch - main [MainThread]: Store serial: [22857482]
