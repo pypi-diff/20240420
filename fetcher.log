@@ -8933,3 +8933,24 @@
 [2024-04-20 05:58:33] INFO root fetch - processPackages [nautilus_trader]: Remove: archive file [/home/abi/fetcher/tmp/nautilus_trader-1.191.0.tar.gz]
 [2024-04-20 05:58:33] INFO root fetch - main [MainThread]: End processing [nautilus_trader]: success
 [2024-04-20 05:58:33] INFO root fetch - main [MainThread]: Store serial: [22852296]
+[2024-04-20 06:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852296]
+[2024-04-20 06:00:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tendril-iotedge
+[2024-04-20 06:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feagi-connector
+[2024-04-20 06:00:42] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-20 06:00:42] INFO root fetch - processPackages [feagi-connector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 06:00:42] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/eb/32/9f082fbb0ddd1a25e66c4d4735c7d2d37e2d5e22ac00f450c27558a15bc5/tendril_iotedge-0.3.4.tar.gz
+[2024-04-20 06:00:42] INFO root fetch - processPackages [feagi-connector]: Downloading https://files.pythonhosted.org/packages/d3/fd/bdabaf6fe65fd31c8dfd05951cff380d2321c4eb2cf1c2e0891b094d60c3/feagi_connector-0.0.5.tar.gz
+[2024-04-20 06:00:43] INFO root fetch - processPackages [feagi-connector]: Downloading https://files.pythonhosted.org/packages/03/d8/dac5ccd545b76f0e188adda05a1e6b91228706f19e1ce62ff77dce4da6fe/feagi_connector-0.0.6.tar.gz
+[2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/62/4a/58dd1d5be0eca8659d07203563729d76577819cff44edc73d2f81a08252e/tendril_iotedge-0.3.5.tar.gz
+[2024-04-20 06:00:43] INFO root fetch - processPackages [feagi-connector]: executing diffoscope
+[2024-04-20 06:00:43] INFO root fetch - processPackages [feagi-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feagi_connector-0.0.5.tar.gz tmp/feagi_connector-0.0.6.tar.gz --markdown 20240420/f/feagi-connector/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.4.tar.gz tmp/tendril_iotedge-0.3.5.tar.gz --markdown 20240420/t/tendril-iotedge/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-04-20 06:00:43] INFO root fetch - processPackages [feagi-connector]: Remove: archive file [/home/abi/fetcher/tmp/feagi_connector-0.0.5.tar.gz]
+[2024-04-20 06:00:43] INFO root fetch - processPackages [feagi-connector]: Remove: archive file [/home/abi/fetcher/tmp/feagi_connector-0.0.6.tar.gz]
+[2024-04-20 06:00:43] INFO root fetch - main [MainThread]: End processing [feagi-connector]: success
+[2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.4.tar.gz]
+[2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.5.tar.gz]
+[2024-04-20 06:00:43] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-20 06:00:43] INFO root fetch - main [MainThread]: Store serial: [22852301]
