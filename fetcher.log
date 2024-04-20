@@ -18195,3 +18195,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:29:11] INFO root fetch - processPackages [timetree-exporter]: Remove: archive file [/home/abi/fetcher/tmp/timetree_exporter-0.3.0.tar.gz]
 [2024-04-20 17:29:11] INFO root fetch - main [MainThread]: End processing [timetree-exporter]: success
 [2024-04-20 17:29:11] INFO root fetch - main [MainThread]: Store serial: [22856959]
+[2024-04-20 17:31:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856959]
+[2024-04-20 17:31:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sfmanager
+[2024-04-20 17:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-20 17:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: connectome-interpreter
+[2024-04-20 17:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyhrms
+[2024-04-20 17:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lm-checkpoints
+[2024-04-20 17:31:21] INFO root fetch - processPackages [cerbogen]: New version: [0.0.33] Old Version: [0.0.32]
+[2024-04-20 17:31:21] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-20 17:31:21] INFO root fetch - processPackages [sfmanager]: New version: [0.1.1b6] Old Version: [0.1.1b5]
+[2024-04-20 17:31:21] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/da/2b/cc590e3b52e2a3ca8fd6abcbb7bdeab25965cd871abb3b139951eded9693/connectome_interpreter-1.3.0.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/17/83/927d73b9af2e500b5175a07fad281b44f5d4cc4741e89d1bbbb2925ec696/cerbogen-0.0.32.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/51/79/9ab6b0c5014cae4fc6b9c80f0d76cc2afe10020a95d3a337babfa8a16bcc/sfmanager-0.1.1b5.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [lm-checkpoints]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 17:31:21] INFO root fetch - processPackages [pyhrms]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-04-20 17:31:21] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/9d/88/a19a583f3c3074135c1978af5711556b5ed06764a8a6f4701dccbd1f7c25/connectome_interpreter-1.4.0.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/a2/d0/e5ac6d31d17da9d9b2652133d2afef3448d9cc9cabcbfdae813f76f19094/lm_checkpoints-0.1.8.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [pyhrms]: Downloading https://files.pythonhosted.org/packages/15/3a/cdecdb8dd58a0d26c917c2f1da6346c0a3024e4ae18744256acb564bd0d4/pyhrms-0.8.9.zip
+[2024-04-20 17:31:21] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/4b/95/65b6dc978501c0aff233b95c2c5af8b104e86ee4fba9566b2e1889cb1ead/sfmanager-0.1.1b6.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/74/3c/1aa087e2d5df49b9e1a90d7bc1f12d24161340bd695d2f4cb323aa9ed217/cerbogen-0.0.33.tar.gz
+[2024-04-20 17:31:21] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-04-20 17:31:21] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.3.0.tar.gz tmp/connectome_interpreter-1.4.0.tar.gz --markdown 20240420/c/connectome-interpreter/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-20 17:31:21] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 17:31:21] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b5.tar.gz tmp/sfmanager-0.1.1b6.tar.gz --markdown 20240420/s/sfmanager/0.1.1b5-0.1.1b6/README.md --exclude *.pyd
+[2024-04-20 17:31:21] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 17:31:21] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.32.tar.gz tmp/cerbogen-0.0.33.tar.gz --markdown 20240420/c/cerbogen/0.0.32-0.0.33/README.md --exclude *.pyd
+[2024-04-20 17:31:22] INFO root fetch - processPackages [pyhrms]: Downloading https://files.pythonhosted.org/packages/cb/f6/47eb9c0101c81a60363148baf2a389495158e38c28594de1f405f16d291b/pyhrms-0.9.0.zip
+[2024-04-20 17:31:22] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/d7/4a/3505b4fc6f4e5fc7bbf2b729a0da81fc04ef677ecb158dd9ed75547b3281/lm_checkpoints-0.1.9.tar.gz
+[2024-04-20 17:31:22] INFO root fetch - processPackages [pyhrms]: executing diffoscope
+[2024-04-20 17:31:22] INFO root fetch - processPackages [pyhrms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhrms-0.8.9.zip tmp/pyhrms-0.9.0.zip --markdown 20240420/p/pyhrms/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-04-20 17:31:22] INFO root fetch - processPackages [lm-checkpoints]: executing diffoscope
+[2024-04-20 17:31:22] INFO root fetch - processPackages [lm-checkpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_checkpoints-0.1.8.tar.gz tmp/lm_checkpoints-0.1.9.tar.gz --markdown 20240420/l/lm-checkpoints/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:31:22] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.3.0.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.4.0.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-04-20 17:31:22] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b5.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b6.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 17:31:22] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.32.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.33.tar.gz]
+[2024-04-20 17:31:22] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 17:31:22] INFO root fetch - processPackages [pyhrms]: Remove: archive file [/home/abi/fetcher/tmp/pyhrms-0.8.9.zip]
+[2024-04-20 17:31:22] INFO root fetch - processPackages [pyhrms]: Remove: archive file [/home/abi/fetcher/tmp/pyhrms-0.9.0.zip]
+[2024-04-20 17:31:22] INFO root fetch - main [MainThread]: End processing [pyhrms]: success
+[2024-04-20 17:31:23] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.8.tar.gz]
+[2024-04-20 17:31:23] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.9.tar.gz]
+[2024-04-20 17:31:23] INFO root fetch - main [MainThread]: End processing [lm-checkpoints]: success
+[2024-04-20 17:31:23] INFO root fetch - main [MainThread]: Store serial: [22856974]
