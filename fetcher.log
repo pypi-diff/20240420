@@ -7721,3 +7721,24 @@
 [2024-04-20 04:15:55] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.96-py3-none-any.whl.zip]
 [2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [modal]: success
 [2024-04-20 04:15:55] INFO root fetch - main [MainThread]: Store serial: [22851809]
+[2024-04-20 04:18:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851809]
+[2024-04-20 04:18:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-20 04:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sopel-ai
+[2024-04-20 04:18:05] INFO root fetch - processPackages [sopel-ai]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-20 04:18:05] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240420] Old Version: [1.2.20240419]
+[2024-04-20 04:18:05] INFO root fetch - processPackages [sopel-ai]: Downloading https://files.pythonhosted.org/packages/ec/95/72270d59c52fc166f8f92e7595bedc5e7dbc512455e77fdbb5ce73648c36/sopel_ai-1.1.1-py3-none-any.whl
+[2024-04-20 04:18:05] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/25/53/5126693717621d1f0f668c318ecdb8b773dadb712f4efd9213c1abe8b3c2/iam_actions-1.2.20240419.tar.gz
+[2024-04-20 04:18:06] INFO root fetch - processPackages [sopel-ai]: Downloading https://files.pythonhosted.org/packages/94/0c/c7ce8b2b9ec5f8dd9e1050d91c0dde7d08cb32b95f027359f069e2099c2f/sopel_ai-1.2.0-py3-none-any.whl
+[2024-04-20 04:18:06] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/c3/f2/ded60de846493d217d986254e7dcac705d878d1445fd90d1dcf8332b342b/iam_actions-1.2.20240420.tar.gz
+[2024-04-20 04:18:06] INFO root fetch - processPackages [sopel-ai]: executing diffoscope
+[2024-04-20 04:18:06] INFO root fetch - processPackages [sopel-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sopel_ai-1.1.1-py3-none-any.whl.zip tmp/sopel_ai-1.2.0-py3-none-any.whl.zip --markdown 20240420/s/sopel-ai/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-20 04:18:06] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-20 04:18:06] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240419.tar.gz tmp/iam_actions-1.2.20240420.tar.gz --markdown 20240420/i/iam-actions/1.2.20240419-1.2.20240420/README.md --exclude *.pyd
+[2024-04-20 04:18:06] INFO root fetch - processPackages [sopel-ai]: Remove: archive file [/home/abi/fetcher/tmp/sopel_ai-1.1.1-py3-none-any.whl.zip]
+[2024-04-20 04:18:06] INFO root fetch - processPackages [sopel-ai]: Remove: archive file [/home/abi/fetcher/tmp/sopel_ai-1.2.0-py3-none-any.whl.zip]
+[2024-04-20 04:18:06] INFO root fetch - main [MainThread]: End processing [sopel-ai]: success
+[2024-04-20 04:18:11] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240419.tar.gz]
+[2024-04-20 04:18:11] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240420.tar.gz]
+[2024-04-20 04:18:11] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-20 04:18:11] INFO root fetch - main [MainThread]: Store serial: [22851814]
