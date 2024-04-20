@@ -10325,3 +10325,33 @@
 [2024-04-20 08:04:44] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.12.tar.gz]
 [2024-04-20 08:04:44] INFO root fetch - main [MainThread]: End processing [metalattice]: success
 [2024-04-20 08:04:44] INFO root fetch - main [MainThread]: Store serial: [22853055]
+[2024-04-20 08:06:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853055]
+[2024-04-20 08:06:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 08:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metalattice
+[2024-04-20 08:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-purchase-security
+[2024-04-20 08:06:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: npc-sync
+[2024-04-20 08:06:52] INFO root fetch - processPackages [npc-sync]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 08:06:52] INFO root fetch - processPackages [metalattice]: New version: [0.3.13] Old Version: [0.3.12]
+[2024-04-20 08:06:52] INFO root fetch - processPackages [odoo-addon-purchase-security]: New version: [17.0.1.0.0.2] Old Version: [16.0.2.0.0.3]
+[2024-04-20 08:06:52] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/3e/90/df23bc7c44140347db7ea13f94f38ec346053657a3e4931c8ce7995cfc05/npc-sync-0.1.8.tar.gz
+[2024-04-20 08:06:53] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/e1/6d/905311da1760c169d455aeaac9c058558a8f54459a8ba35e6707aa32e587/metalattice-0.3.12.tar.gz
+[2024-04-20 08:06:53] INFO root fetch - processPackages [odoo-addon-purchase-security]: Downloading https://files.pythonhosted.org/packages/d8/96/5fbfd6c49f5b2b24513aaa8249828c345c0cb93a32fae85bacd09639adfd/odoo_addon_purchase_security-16.0.2.0.0.3-py3-none-any.whl
+[2024-04-20 08:06:53] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/c2/f9/c79aca2962e0a526469ef87a4cde8033c5d566b9ad82925e9493333d60e1/npc-sync-0.1.9.tar.gz
+[2024-04-20 08:06:53] INFO root fetch - processPackages [npc-sync]: executing diffoscope
+[2024-04-20 08:06:53] INFO root fetch - processPackages [npc-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-sync-0.1.8.tar.gz tmp/npc-sync-0.1.9.tar.gz --markdown 20240420/n/npc-sync/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 08:06:53] INFO root fetch - processPackages [odoo-addon-purchase-security]: Downloading https://files.pythonhosted.org/packages/73/ca/28d0ea35c46258133b860b1915658e665a18aadbddc1735933c123d7eddf/odoo_addon_purchase_security-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 08:06:53] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/de/71/da0351392dc285a1a96ccad6bad8de0e0a2785ad6ae6b8564432ce4ec0e9/metalattice-0.3.13.tar.gz
+[2024-04-20 08:06:53] INFO root fetch - processPackages [odoo-addon-purchase-security]: executing diffoscope
+[2024-04-20 08:06:53] INFO root fetch - processPackages [odoo-addon-purchase-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_security-16.0.2.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_purchase_security-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-purchase-security/16.0.2.0.0.3-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-20 08:06:53] INFO root fetch - processPackages [metalattice]: executing diffoscope
+[2024-04-20 08:06:53] INFO root fetch - processPackages [metalattice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalattice-0.3.12.tar.gz tmp/metalattice-0.3.13.tar.gz --markdown 20240420/m/metalattice/0.3.12-0.3.13/README.md --exclude *.pyd
+[2024-04-20 08:06:53] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.8.tar.gz]
+[2024-04-20 08:06:53] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.9.tar.gz]
+[2024-04-20 08:06:53] INFO root fetch - main [MainThread]: End processing [npc-sync]: success
+[2024-04-20 08:06:54] INFO root fetch - processPackages [odoo-addon-purchase-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_purchase_security-16.0.2.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 08:06:54] INFO root fetch - processPackages [odoo-addon-purchase-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_purchase_security-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 08:06:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-security]: success
+[2024-04-20 08:06:54] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.12.tar.gz]
+[2024-04-20 08:06:54] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.13.tar.gz]
+[2024-04-20 08:06:54] INFO root fetch - main [MainThread]: End processing [metalattice]: success
+[2024-04-20 08:06:54] INFO root fetch - main [MainThread]: Store serial: [22853063]
