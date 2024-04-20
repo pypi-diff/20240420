@@ -15958,3 +15958,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:52:55] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.0.2.tar.gz]
 [2024-04-20 14:52:55] INFO root fetch - main [MainThread]: End processing [func-bk]: success
 [2024-04-20 14:52:55] INFO root fetch - main [MainThread]: Store serial: [22855800]
+[2024-04-20 14:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855800]
+[2024-04-20 14:55:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: func-bk
+[2024-04-20 14:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: logki
+[2024-04-20 14:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: star-alchemy
+[2024-04-20 14:55:04] INFO root fetch - processPackages [func-bk]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 14:55:04] INFO root fetch - processPackages [star-alchemy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 14:55:04] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/4a/31/cce1bf4d8fd6c83576c8731162f849abab8e43fe3472d38a215d1f9db081/star-alchemy-0.4.0.tar.gz
+[2024-04-20 14:55:04] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/a4/7d/ee90d0b54c8161dbc449ef8b7d2f1d48c7e5f600e59132f9c39e4e0afd98/func_bk-1.0.1.tar.gz
+[2024-04-20 14:55:04] WARNING root fetch - processPackages [logki]: Skipping, unable to determine old version
+[2024-04-20 14:55:04] INFO root fetch - main [MainThread]: End processing [logki] error
+[2024-04-20 14:55:04] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/92/21/05f3b64d16514871271b82cf54a7b4dd99ea91f0db243c8c65b45233e8fa/star_alchemy-0.5.0.tar.gz
+[2024-04-20 14:55:04] INFO root fetch - processPackages [func-bk]: Downloading https://files.pythonhosted.org/packages/49/84/bd70bb3e057730f3008adf08b0b85001789c5766469f9eafa0a9ca0d1db2/func_bk-1.0.2.tar.gz
+[2024-04-20 14:55:04] INFO root fetch - processPackages [star-alchemy]: executing diffoscope
+[2024-04-20 14:55:04] INFO root fetch - processPackages [star-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/star-alchemy-0.4.0.tar.gz tmp/star_alchemy-0.5.0.tar.gz --markdown 20240420/s/star-alchemy/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 14:55:04] INFO root fetch - processPackages [func-bk]: executing diffoscope
+[2024-04-20 14:55:04] INFO root fetch - processPackages [func-bk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/func_bk-1.0.1.tar.gz tmp/func_bk-1.0.2.tar.gz --markdown 20240420/f/func-bk/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 14:55:05] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.0.1.tar.gz]
+[2024-04-20 14:55:05] INFO root fetch - processPackages [func-bk]: Remove: archive file [/home/abi/fetcher/tmp/func_bk-1.0.2.tar.gz]
+[2024-04-20 14:55:05] INFO root fetch - main [MainThread]: End processing [func-bk]: success
+[2024-04-20 14:55:05] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star-alchemy-0.4.0.tar.gz]
+[2024-04-20 14:55:05] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star_alchemy-0.5.0.tar.gz]
+[2024-04-20 14:55:05] INFO root fetch - main [MainThread]: End processing [star-alchemy]: success
+[2024-04-20 14:55:05] INFO root fetch - main [MainThread]: Store serial: [22855807]
