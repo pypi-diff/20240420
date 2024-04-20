@@ -7482,3 +7482,78 @@
 [2024-04-20 04:02:17] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-04-20 04:02:17] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-04-20 04:02:17] INFO root fetch - main [MainThread]: Store serial: [22851712]
+[2024-04-20 04:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851712]
+[2024-04-20 04:04:26] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bauplan
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-iotedge
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paper2vec
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yoto-api
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: panpdf
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypipr
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mixport
+[2024-04-20 04:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wei-office-simptool
+[2024-04-20 04:04:26] INFO root fetch - processPackages [wei-office-simptool]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [paper2vec]: New version: [0.3] Old Version: [0.2]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/5d/e0/8c48dcf123e5efbcb5e39b290944cdcb767226d27f42ffc89585d384ad9b/wei_office_simptool-0.0.3.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [mixport]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [panpdf]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [yoto-api]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [bauplan]: New version: [0.0.3a9] Old Version: [0.0.3a87]
+[2024-04-20 04:04:26] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/55/b4/b4e5fdb910649e4d2cc8d8196f733faf991fe08568c2ae540932fdee53c0/paper2vec-0.2.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/eb/9e/095887b7d1fc4f67ac847982e08937dabc2b5f88e72a538b571bacaf4aa3/yoto_api-1.3.0.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [mixport]: Downloading https://files.pythonhosted.org/packages/54/7d/bcefbd4b7b4d765fa0841e78e29e8b183c577cbbf1fa8ba81e711a066663/mixport-0.1.2.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/6a/e0/7a24a3dd6d88e232c8f645eb609a102c258a35969dc9c2ad2240fc4e6148/panpdf-0.2.0.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/7d/3e/84fdda3b7084d8b8497c987ec28511267dd93567f8d883550127dfaec067/bauplan-0.0.3a87-py3-none-win_amd64.whl
+[2024-04-20 04:04:26] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/c9/80/a60e2061c599d3ab34a4246a7ffb30264176cbffcbc0c6e2cae879c23cd8/tendril_iotedge-0.3.1.tar.gz
+[2024-04-20 04:04:26] INFO root fetch - processPackages [wei-office-simptool]: Downloading https://files.pythonhosted.org/packages/d0/4b/36a4556c96b2e883ca542bc1ae8cafd5fdfea99a715d2c818619259a851b/wei_office_simptool-0.0.4.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [wei-office-simptool]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [wei-office-simptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wei_office_simptool-0.0.3.tar.gz tmp/wei_office_simptool-0.0.4.tar.gz --markdown 20240420/w/wei-office-simptool/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [paper2vec]: Downloading https://files.pythonhosted.org/packages/75/d4/db83472b63049d94df4dda51b9a6ab809e2bb23c44dc55db67f7168d3048/paper2vec-0.3.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/4a/ed/1ec15c896c6bb785494eee08d1a04b3b4aba3db0c7897c9abb5e5dd33858/yoto_api-1.3.1.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [mixport]: Downloading https://files.pythonhosted.org/packages/9a/9c/969667036d4c669874e8cbd045c00a8e65bd16fa042ebf04f4005cda7b3c/mixport-0.1.3.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/2c/b7/7a9139b93a08a8eea3b82116a6e8b28acc4810b45c2c84fd1845b5ab176a/panpdf-0.2.1.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [paper2vec]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [paper2vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paper2vec-0.2.tar.gz tmp/paper2vec-0.3.tar.gz --markdown 20240420/p/paper2vec/0.2-0.3/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/4a/8d/f923967da6034df5b2bfa01eafba2a54712a148406fc63f3c00059a4cbe7/tendril_iotedge-0.3.2.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 04:04:27] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.3.0.tar.gz tmp/yoto_api-1.3.1.tar.gz --markdown 20240420/y/yoto-api/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [mixport]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [mixport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mixport-0.1.2.tar.gz tmp/mixport-0.1.3.tar.gz --markdown 20240420/m/mixport/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.1.tar.gz tmp/tendril_iotedge-0.3.2.tar.gz --markdown 20240420/t/tendril-iotedge/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [panpdf]: executing diffoscope
+[2024-04-20 04:04:27] INFO root fetch - processPackages [panpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpdf-0.2.0.tar.gz tmp/panpdf-0.2.1.tar.gz --markdown 20240420/p/panpdf/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 04:04:27] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.3.tar.gz]
+[2024-04-20 04:04:27] INFO root fetch - processPackages [wei-office-simptool]: Remove: archive file [/home/abi/fetcher/tmp/wei_office_simptool-0.0.4.tar.gz]
+[2024-04-20 04:04:27] INFO root fetch - main [MainThread]: End processing [wei-office-simptool]: success
+[2024-04-20 04:04:27] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.3.0.tar.gz]
+[2024-04-20 04:04:27] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.3.1.tar.gz]
+[2024-04-20 04:04:27] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.2.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - processPackages [paper2vec]: Remove: archive file [/home/abi/fetcher/tmp/paper2vec-0.3.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - main [MainThread]: End processing [paper2vec]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [mixport]: Remove: archive file [/home/abi/fetcher/tmp/mixport-0.1.2.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - processPackages [mixport]: Remove: archive file [/home/abi/fetcher/tmp/mixport-0.1.3.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - main [MainThread]: End processing [mixport]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.1.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.2.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [bauplan]: Downloading https://files.pythonhosted.org/packages/15/cb/726ad7134b75bc6cab5597ce06747430b4320f9b764bbfd50c6ddf62a15b/bauplan-0.0.3a9.tar.gz
+[2024-04-20 04:04:28] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.0.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.1.tar.gz]
+[2024-04-20 04:04:28] INFO root fetch - main [MainThread]: End processing [panpdf]: success
+[2024-04-20 04:04:28] INFO root fetch - processPackages [bauplan]: executing diffoscope
+[2024-04-20 04:04:28] INFO root fetch - processPackages [bauplan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bauplan-0.0.3a87-py3-none-win_amd64.whl.zip tmp/bauplan-0.0.3a9.tar.gz --markdown 20240420/b/bauplan/0.0.3a87-0.0.3a9/README.md --exclude *.pyd
+[2024-04-20 04:04:38] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a87-py3-none-win_amd64.whl.zip]
+[2024-04-20 04:04:38] INFO root fetch - processPackages [bauplan]: Remove: archive file [/home/abi/fetcher/tmp/bauplan-0.0.3a9.tar.gz]
+[2024-04-20 04:04:38] INFO root fetch - main [MainThread]: End processing [bauplan]: success
+[2024-04-20 04:04:38] INFO root fetch - main [MainThread]: Store serial: [22851741]
