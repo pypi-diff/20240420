@@ -12642,3 +12642,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:08:10] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.4.1.tar.gz]
 [2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [surrealist]: success
 [2024-04-20 11:08:10] INFO root fetch - main [MainThread]: Store serial: [22854193]
+[2024-04-20 11:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854193]
+[2024-04-20 11:10:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 11:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: minimal-hatch-project
+[2024-04-20 11:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qualang-tools
+[2024-04-20 11:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-04-20 11:10:19] INFO root fetch - processPackages [bellek]: New version: [0.9.0] Old Version: [0.89.2]
+[2024-04-20 11:10:19] WARNING root fetch - processPackages [minimal-hatch-project]: Skipping, unable to determine old version
+[2024-04-20 11:10:19] INFO root fetch - main [MainThread]: End processing [minimal-hatch-project] error
+[2024-04-20 11:10:19] INFO root fetch - processPackages [qualang-tools]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 11:10:19] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/06/a2/2d826b05372ce32deac3be0dc373fe458de0422b5d70cc89707b162728c7/bellek-0.89.2.tar.gz
+[2024-04-20 11:10:19] INFO root fetch - processPackages [qualang-tools]: Downloading https://files.pythonhosted.org/packages/ef/85/8d494d0e2ea0ffc591fc6c1be844fbc93c4c91aed7f51e1334ddfde69386/qualang-tools-0.8.0.tar.gz
+[2024-04-20 11:10:19] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-20 11:10:20] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 11:10:20] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.89.2.tar.gz tmp/bellek-0.9.0.tar.gz --markdown 20240420/b/bellek/0.89.2-0.9.0/README.md --exclude *.pyd
+[2024-04-20 11:10:20] INFO root fetch - processPackages [qualang-tools]: Downloading https://files.pythonhosted.org/packages/24/78/6133ba41e03538685cdd1e8771bc5a06d0e30e481118850873d5a16f45eb/qualang-tools-0.9.0.tar.gz
+[2024-04-20 11:10:20] INFO root fetch - processPackages [qualang-tools]: executing diffoscope
+[2024-04-20 11:10:20] INFO root fetch - processPackages [qualang-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qualang-tools-0.8.0.tar.gz tmp/qualang-tools-0.9.0.tar.gz --markdown 20240420/q/qualang-tools/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 11:10:20] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.89.2.tar.gz]
+[2024-04-20 11:10:20] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-20 11:10:20] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 11:10:21] INFO root fetch - processPackages [qualang-tools]: Remove: archive file [/home/abi/fetcher/tmp/qualang-tools-0.8.0.tar.gz]
+[2024-04-20 11:10:21] INFO root fetch - processPackages [qualang-tools]: Remove: archive file [/home/abi/fetcher/tmp/qualang-tools-0.9.0.tar.gz]
+[2024-04-20 11:10:21] INFO root fetch - main [MainThread]: End processing [qualang-tools]: success
+[2024-04-20 11:10:21] INFO root fetch - main [MainThread]: Store serial: [22854204]
