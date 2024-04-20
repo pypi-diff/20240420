@@ -10518,3 +10518,44 @@
 [2024-04-20 08:26:37] WARNING root fetch - processPackages [illuminatapp]: Skipping package: exceeds size limit 34401557>=10485760
 [2024-04-20 08:26:37] INFO root fetch - main [MainThread]: End processing [illuminatapp] error
 [2024-04-20 08:26:37] INFO root fetch - main [MainThread]: Store serial: [22853131]
+[2024-04-20 08:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853131]
+[2024-04-20 08:28:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 08:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853131]
+[2024-04-20 08:30:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lm-format-enforcer
+[2024-04-20 08:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-force-invoiced
+[2024-04-20 08:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wah
+[2024-04-20 08:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: urllib3-future
+[2024-04-20 08:30:52] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 08:30:52] INFO root fetch - processPackages [lm-format-enforcer]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-20 08:30:52] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: New version: [17.0.1.0.0.3] Old Version: [17.0.1.0.0.2]
+[2024-04-20 08:30:52] INFO root fetch - processPackages [urllib3-future]: New version: [2.7.904] Old Version: [2.7.903]
+[2024-04-20 08:30:52] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-04-20 08:30:52] INFO root fetch - processPackages [lm-format-enforcer]: Downloading https://files.pythonhosted.org/packages/b7/77/95ee318dba91898cc345347969cb4e4d2b48aeef56071cf0f222e26c8b45/lm_format_enforcer-0.9.5.tar.gz
+[2024-04-20 08:30:53] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-04-20 08:30:53] INFO root fetch - processPackages [urllib3-future]: Downloading https://files.pythonhosted.org/packages/0a/37/51451efa11c44831bcc85b32e45cde2bca63bf6161d137c5cb292e7f6fb5/urllib3_future-2.7.903.tar.gz
+[2024-04-20 08:30:53] INFO root fetch - processPackages [lm-format-enforcer]: Downloading https://files.pythonhosted.org/packages/c8/58/174380b1ce781d7bf71c87a62234101f60ba32ed84c3e91abf3d31b8eba0/lm_format_enforcer-0.9.6.tar.gz
+[2024-04-20 08:30:53] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/95/2f/6e909b8fd08501a237638f79132ca1a7be018a57cb91deab6c9d79b917a5/odoo_addon_sale_force_invoiced-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 08:30:53] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-04-20 08:30:53] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240420/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 08:30:53] INFO root fetch - processPackages [lm-format-enforcer]: executing diffoscope
+[2024-04-20 08:30:53] INFO root fetch - processPackages [lm-format-enforcer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_format_enforcer-0.9.5.tar.gz tmp/lm_format_enforcer-0.9.6.tar.gz --markdown 20240420/l/lm-format-enforcer/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-04-20 08:30:53] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Downloading https://files.pythonhosted.org/packages/54/6a/413e72a618d7cad9fe2c477b58362f1944ff5ce53547a53e2de13693c61a/odoo_addon_sale_force_invoiced-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 08:30:53] INFO root fetch - processPackages [urllib3-future]: Downloading https://files.pythonhosted.org/packages/8f/70/bc3e36f09280fd6935c29a9758a6bc874515aaffc791335f4bf585503fd2/urllib3_future-2.7.904.tar.gz
+[2024-04-20 08:30:53] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: executing diffoscope
+[2024-04-20 08:30:53] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_force_invoiced-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_sale_force_invoiced-17.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-sale-force-invoiced/17.0.1.0.0.2-17.0.1.0.0.3/README.md --exclude *.pyd
+[2024-04-20 08:30:53] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-04-20 08:30:53] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-04-20 08:30:53] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-04-20 08:30:53] INFO root fetch - processPackages [urllib3-future]: executing diffoscope
+[2024-04-20 08:30:53] INFO root fetch - processPackages [urllib3-future]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_future-2.7.903.tar.gz tmp/urllib3_future-2.7.904.tar.gz --markdown 20240420/u/urllib3-future/2.7.903-2.7.904/README.md --exclude *.pyd
+[2024-04-20 08:30:53] INFO root fetch - processPackages [lm-format-enforcer]: Remove: archive file [/home/abi/fetcher/tmp/lm_format_enforcer-0.9.5.tar.gz]
+[2024-04-20 08:30:53] INFO root fetch - processPackages [lm-format-enforcer]: Remove: archive file [/home/abi/fetcher/tmp/lm_format_enforcer-0.9.6.tar.gz]
+[2024-04-20 08:30:53] INFO root fetch - main [MainThread]: End processing [lm-format-enforcer]: success
+[2024-04-20 08:30:54] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 08:30:54] INFO root fetch - processPackages [odoo-addon-sale-force-invoiced]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_force_invoiced-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 08:30:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-force-invoiced]: success
+[2024-04-20 08:30:55] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.903.tar.gz]
+[2024-04-20 08:30:55] INFO root fetch - processPackages [urllib3-future]: Remove: archive file [/home/abi/fetcher/tmp/urllib3_future-2.7.904.tar.gz]
+[2024-04-20 08:30:55] INFO root fetch - main [MainThread]: End processing [urllib3-future]: success
+[2024-04-20 08:30:55] INFO root fetch - main [MainThread]: Store serial: [22853141]
