@@ -13167,3 +13167,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:39:37] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.7.tar.gz]
 [2024-04-20 11:39:37] INFO root fetch - main [MainThread]: End processing [sponge]: success
 [2024-04-20 11:39:37] INFO root fetch - main [MainThread]: Store serial: [22854490]
+[2024-04-20 11:41:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854490]
+[2024-04-20 11:41:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 11:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sponge
+[2024-04-20 11:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-04-20 11:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-04-20 11:41:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-dbchat
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sponge]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sfmanager]: New version: [0.1.1b5] Old Version: [0.1.1b3]
+[2024-04-20 11:41:46] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc75.post1] Old Version: [0.0.2rc74.post1]
+[2024-04-20 11:41:46] INFO root fetch - processPackages [bellek]: New version: [0.90.0] Old Version: [0.9.0]
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/34/9c/30215818bd1347a9f2b90f1fa2c26683584af231ad96fc91b7ec282ce750/sponge-0.0.6.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/9a/e0/c97ddd72700790acfd69c25075f73e6b71e6f342ea638d78cfef06301fd5/sfmanager-0.1.1b3.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/14/59/231bd852222bcf096c99f482e23b70fe1b9d2ac684863c439d7a15c596b7/py_dbchat-0.0.2rc74.post1.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/ec/cb/2e453e973c51c52f57d3533e8d2f7192b8c626e0078fe08fb907191e69fb/bellek-0.9.0.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/5a/18/fe892b79e49d8dd7faba9ad1064b59af31ddad98988146a906eae468b936/sponge-0.0.7.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/51/79/9ab6b0c5014cae4fc6b9c80f0d76cc2afe10020a95d3a337babfa8a16bcc/sfmanager-0.1.1b5.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/eb/53/d460990294731e0c4d5bec52375378c91df523738827d0574a6628e22d0c/bellek-0.90.0.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sponge]: executing diffoscope
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sponge-0.0.6.tar.gz tmp/sponge-0.0.7.tar.gz --markdown 20240420/s/sponge/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 11:41:46] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b3.tar.gz tmp/sfmanager-0.1.1b5.tar.gz --markdown 20240420/s/sfmanager/0.1.1b3-0.1.1b5/README.md --exclude *.pyd
+[2024-04-20 11:41:46] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/0f/9a/cf9a23acbbccc5533e854c3a7ea37e4a842d6d13659c84c5bc1bff209483/py_dbchat-0.0.2rc75.post1.tar.gz
+[2024-04-20 11:41:46] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 11:41:46] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.9.0.tar.gz tmp/bellek-0.90.0.tar.gz --markdown 20240420/b/bellek/0.9.0-0.90.0/README.md --exclude *.pyd
+[2024-04-20 11:41:46] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 11:41:46] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc74.post1.tar.gz tmp/py_dbchat-0.0.2rc75.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc74.post1-0.0.2rc75.post1/README.md --exclude *.pyd
+[2024-04-20 11:41:47] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.6.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.7.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - main [MainThread]: End processing [sponge]: success
+[2024-04-20 11:41:47] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b3.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b5.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 11:41:47] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.9.0.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.90.0.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 11:41:47] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc74.post1.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc75.post1.tar.gz]
+[2024-04-20 11:41:47] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 11:41:47] INFO root fetch - main [MainThread]: Store serial: [22854501]
