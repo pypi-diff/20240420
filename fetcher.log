@@ -17820,3 +17820,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:04:48] INFO root fetch - processPackages [rocco]: Remove: archive file [/home/abi/fetcher/tmp/rocco-0.9.5.tar.gz]
 [2024-04-20 17:04:48] INFO root fetch - main [MainThread]: End processing [rocco]: success
 [2024-04-20 17:04:48] INFO root fetch - main [MainThread]: Store serial: [22856815]
+[2024-04-20 17:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856815]
+[2024-04-20 17:06:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 17:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: barkshark-lib
+[2024-04-20 17:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-20 17:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cuddly-invention
+[2024-04-20 17:06:56] INFO root fetch - processPackages [barkshark-lib]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 17:06:56] INFO root fetch - processPackages [cuddly-invention]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 17:06:56] WARNING root fetch - processPackages [cerbogen]: Skipping, unable to determine old version
+[2024-04-20 17:06:56] INFO root fetch - main [MainThread]: End processing [cerbogen] error
+[2024-04-20 17:06:57] INFO root fetch - processPackages [barkshark-lib]: Downloading https://files.pythonhosted.org/packages/b3/f6/a58d1cee56c5bd68dcf0ae8c92f40226f2d92644c161168897add1c41313/barkshark_lib-0.1.1.tar.gz
+[2024-04-20 17:06:57] INFO root fetch - processPackages [cuddly-invention]: Downloading https://files.pythonhosted.org/packages/b8/a8/d43597cc08ee22cde39f6d111cb9aa77726ca07a2dc44f65cd6c7ecaf617/cuddly_invention-0.1.0.tar.gz
+[2024-04-20 17:06:57] INFO root fetch - processPackages [cuddly-invention]: Downloading https://files.pythonhosted.org/packages/de/01/4289c4fc2b2657064fc5168495ead31888a5b9c06eb9310347768e4b6b8a/cuddly_invention-0.2.0.tar.gz
+[2024-04-20 17:06:57] INFO root fetch - processPackages [barkshark-lib]: Downloading https://files.pythonhosted.org/packages/b8/59/0acbbbe845e6bc2d14c2dd448aabcf430dadbbcc1c39a7110f89b9f9881b/barkshark_lib-0.1.2.tar.gz
+[2024-04-20 17:06:57] INFO root fetch - processPackages [cuddly-invention]: executing diffoscope
+[2024-04-20 17:06:57] INFO root fetch - processPackages [cuddly-invention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuddly_invention-0.1.0.tar.gz tmp/cuddly_invention-0.2.0.tar.gz --markdown 20240420/c/cuddly-invention/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 17:06:57] INFO root fetch - processPackages [barkshark-lib]: executing diffoscope
+[2024-04-20 17:06:57] INFO root fetch - processPackages [barkshark-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barkshark_lib-0.1.1.tar.gz tmp/barkshark_lib-0.1.2.tar.gz --markdown 20240420/b/barkshark-lib/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 17:06:58] INFO root fetch - processPackages [cuddly-invention]: Remove: archive file [/home/abi/fetcher/tmp/cuddly_invention-0.1.0.tar.gz]
+[2024-04-20 17:06:58] INFO root fetch - processPackages [cuddly-invention]: Remove: archive file [/home/abi/fetcher/tmp/cuddly_invention-0.2.0.tar.gz]
+[2024-04-20 17:06:58] INFO root fetch - main [MainThread]: End processing [cuddly-invention]: success
+[2024-04-20 17:06:58] INFO root fetch - processPackages [barkshark-lib]: Remove: archive file [/home/abi/fetcher/tmp/barkshark_lib-0.1.1.tar.gz]
+[2024-04-20 17:06:58] INFO root fetch - processPackages [barkshark-lib]: Remove: archive file [/home/abi/fetcher/tmp/barkshark_lib-0.1.2.tar.gz]
+[2024-04-20 17:06:58] INFO root fetch - main [MainThread]: End processing [barkshark-lib]: success
+[2024-04-20 17:06:58] INFO root fetch - main [MainThread]: Store serial: [22856825]
