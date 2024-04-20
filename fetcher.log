@@ -20797,3 +20797,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:07:33] INFO root fetch - processPackages [trackhub]: Remove: archive file [/home/abi/fetcher/tmp/trackhub-1.0.tar.gz]
 [2024-04-20 20:07:33] INFO root fetch - main [MainThread]: End processing [trackhub]: success
 [2024-04-20 20:07:33] INFO root fetch - main [MainThread]: Store serial: [22858161]
+[2024-04-20 20:09:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858161]
+[2024-04-20 20:09:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ryutils
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-index-llms-fireworks
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heatmap_cli
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ryutils]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/27/f3/1baec26be577a216da28f533574026b5ff107216d06c3794a9f2a9cdc593/ryutils-4.0.0.tar.gz
+[2024-04-20 20:09:42] INFO root fetch - processPackages [llama-index-llms-fireworks]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 20:09:42] INFO root fetch - processPackages [heatmap_cli]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/c6/8f/f92053d323afb8c9e33aa0f59b8004a1553934f734149999a591eb0f1f36/ryutils-4.0.1.tar.gz
+[2024-04-20 20:09:42] INFO root fetch - processPackages [llama-index-llms-fireworks]: Downloading https://files.pythonhosted.org/packages/8d/15/14d8ba0a6569bc31069af94ab83e97e7387eecc35d6017a7f076411fe58d/llama_index_llms_fireworks-0.1.4.tar.gz
+[2024-04-20 20:09:42] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/89/3e/1667a0d6257328a7ee164f2d02fa5cb906e15b8317152b4e5b6389990a48/heatmap_cli-0.9.2.tar.gz
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-20 20:09:42] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.0.tar.gz tmp/ryutils-4.0.1.tar.gz --markdown 20240420/r/ryutils/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-04-20 20:09:43] INFO root fetch - processPackages [llama-index-llms-fireworks]: Downloading https://files.pythonhosted.org/packages/0f/a9/86f963ce27d5c01adea7b27c7de8f5ecbb1866eb69ca83c3fb7673539b28/llama_index_llms_fireworks-0.1.5.tar.gz
+[2024-04-20 20:09:43] INFO root fetch - processPackages [heatmap_cli]: Downloading https://files.pythonhosted.org/packages/cc/a1/f410c7350b196bcf8384439baacdbf7e8db2363ac46eb6d4872308462d8e/heatmap_cli-0.9.3.tar.gz
+[2024-04-20 20:09:43] INFO root fetch - processPackages [llama-index-llms-fireworks]: executing diffoscope
+[2024-04-20 20:09:43] INFO root fetch - processPackages [llama-index-llms-fireworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_llms_fireworks-0.1.4.tar.gz tmp/llama_index_llms_fireworks-0.1.5.tar.gz --markdown 20240420/l/llama-index-llms-fireworks/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 20:09:43] INFO root fetch - processPackages [heatmap_cli]: executing diffoscope
+[2024-04-20 20:09:43] INFO root fetch - processPackages [heatmap_cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heatmap_cli-0.9.2.tar.gz tmp/heatmap_cli-0.9.3.tar.gz --markdown 20240420/h/heatmap_cli/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 20:09:43] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.0.tar.gz]
+[2024-04-20 20:09:43] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.1.tar.gz]
+[2024-04-20 20:09:43] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-20 20:09:44] INFO root fetch - processPackages [llama-index-llms-fireworks]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_fireworks-0.1.4.tar.gz]
+[2024-04-20 20:09:44] INFO root fetch - processPackages [llama-index-llms-fireworks]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_llms_fireworks-0.1.5.tar.gz]
+[2024-04-20 20:09:44] INFO root fetch - main [MainThread]: End processing [llama-index-llms-fireworks]: success
+[2024-04-20 20:09:44] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.2.tar.gz]
+[2024-04-20 20:09:44] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
+[2024-04-20 20:09:44] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
+[2024-04-20 20:09:44] INFO root fetch - main [MainThread]: Store serial: [22858177]
