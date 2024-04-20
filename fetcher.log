@@ -22950,3 +22950,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:17:34] INFO root fetch - processPackages [eldonationtracker]: Remove: archive file [/home/abi/fetcher/tmp/eldonationtracker-8.0.0.tar.gz]
 [2024-04-20 22:17:34] INFO root fetch - main [MainThread]: End processing [eldonationtracker]: success
 [2024-04-20 22:17:34] INFO root fetch - main [MainThread]: Store serial: [22859197]
+[2024-04-20 22:19:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859197]
+[2024-04-20 22:19:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 22:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC209
+[2024-04-20 22:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glang
+[2024-04-20 22:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-authentify
+[2024-04-20 22:19:43] INFO root fetch - processPackages [drf-authentify]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-20 22:19:43] INFO root fetch - processPackages [drf-authentify]: Downloading https://files.pythonhosted.org/packages/7a/7a/380d681b52e27244cbb50e2187118b4920672ae830ee734f04c77df779b1/drf_authentify-0.3.1.tar.gz
+[2024-04-20 22:19:43] INFO root fetch - processPackages [glang]: New version: [0.4.0] Old Version: [0.2.1]
+[2024-04-20 22:19:43] WARNING root fetch - processPackages [PythonTestLJC209]: Skipping, unable to determine old version
+[2024-04-20 22:19:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC209] error
+[2024-04-20 22:19:43] INFO root fetch - processPackages [drf-authentify]: Downloading https://files.pythonhosted.org/packages/b7/ed/7d458e3cccb4a5e1a718f35a9feae7f6e97ff25a542a8e354193076c2aac/drf_authentify-0.3.2.tar.gz
+[2024-04-20 22:19:43] INFO root fetch - processPackages [glang]: Downloading https://files.pythonhosted.org/packages/2a/cf/1cecf64e34bf9bc4ec3071e3fc2938fc5c457367f5e46281932668066af2/glang-0.2.1.tar.gz
+[2024-04-20 22:19:43] INFO root fetch - processPackages [drf-authentify]: executing diffoscope
+[2024-04-20 22:19:43] INFO root fetch - processPackages [drf-authentify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_authentify-0.3.1.tar.gz tmp/drf_authentify-0.3.2.tar.gz --markdown 20240420/d/drf-authentify/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-20 22:19:43] INFO root fetch - processPackages [glang]: Downloading https://files.pythonhosted.org/packages/96/b7/bcb5918cbb34a2572de2deec50950ec6eb2c9df1deebcb2957f3c25df826/glang-0.4.0.tar.gz
+[2024-04-20 22:19:44] INFO root fetch - processPackages [glang]: executing diffoscope
+[2024-04-20 22:19:44] INFO root fetch - processPackages [glang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glang-0.2.1.tar.gz tmp/glang-0.4.0.tar.gz --markdown 20240420/g/glang/0.2.1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 22:19:44] INFO root fetch - processPackages [drf-authentify]: Remove: archive file [/home/abi/fetcher/tmp/drf_authentify-0.3.1.tar.gz]
+[2024-04-20 22:19:44] INFO root fetch - processPackages [drf-authentify]: Remove: archive file [/home/abi/fetcher/tmp/drf_authentify-0.3.2.tar.gz]
+[2024-04-20 22:19:44] INFO root fetch - main [MainThread]: End processing [drf-authentify]: success
+[2024-04-20 22:19:44] INFO root fetch - processPackages [glang]: Remove: archive file [/home/abi/fetcher/tmp/glang-0.2.1.tar.gz]
+[2024-04-20 22:19:44] INFO root fetch - processPackages [glang]: Remove: archive file [/home/abi/fetcher/tmp/glang-0.4.0.tar.gz]
+[2024-04-20 22:19:44] INFO root fetch - main [MainThread]: End processing [glang]: success
+[2024-04-20 22:19:44] INFO root fetch - main [MainThread]: Store serial: [22859213]
