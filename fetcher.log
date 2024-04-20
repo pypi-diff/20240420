@@ -22471,3 +22471,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:48:51] INFO root fetch - processPackages [venty]: Remove: archive file [/home/abi/fetcher/tmp/venty-8.0.1.tar.gz]
 [2024-04-20 21:48:51] INFO root fetch - main [MainThread]: End processing [venty]: success
 [2024-04-20 21:48:51] INFO root fetch - main [MainThread]: Store serial: [22858961]
+[2024-04-20 21:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858961]
+[2024-04-20 21:51:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jarvis-orm
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aec6s
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edstem-assignment-tracker
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC199
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sprit
+[2024-04-20 21:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: notfunny
+[2024-04-20 21:51:00] INFO root fetch - processPackages [notfunny]: New version: [0.6.6] Old Version: [0.6.4]
+[2024-04-20 21:51:00] INFO root fetch - processPackages [jarvis-orm]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 21:51:00] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 21:51:00] INFO root fetch - processPackages [sprit]: New version: [0.1.9] Old Version: [0.1.72.dev0]
+[2024-04-20 21:51:00] WARNING root fetch - processPackages [aec6s]: Skipping, unable to determine old version
+[2024-04-20 21:51:00] INFO root fetch - main [MainThread]: End processing [aec6s] error
+[2024-04-20 21:51:00] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/c8/77/fdf1c1fa24dc2f878bae090cb54de4367818bccc69f4597996845505fe8b/notfunny-0.6.4.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [sprit]: Downloading https://files.pythonhosted.org/packages/5c/5f/a71c7f66ef9e6c1cee1b84dafdb532ac9cf3c9efa3957791149f265a1f81/sprit-0.1.72.dev0.tar.gz
+[2024-04-20 21:51:00] WARNING root fetch - processPackages [PythonTestLJC199]: Skipping, unable to determine old version
+[2024-04-20 21:51:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC199] error
+[2024-04-20 21:51:00] WARNING root fetch - processPackages [sprit]: Skipping package: exceeds size limit 13887441>=10485760
+[2024-04-20 21:51:00] INFO root fetch - main [MainThread]: End processing [sprit] error
+[2024-04-20 21:51:00] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/e9/9f/05f312e3733aa80c774ddfc0ab6f8a865600b25deb32b0a73b5f20b34bc2/jarvis_orm-0.0.1.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 21:51:00] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 21:51:00] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/42/ba/a8e5305128295bd72afad59fca9a15e0c9c664d0b166049354c2348ed749/notfunny-0.6.6.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/cd/e7/6107286fc0a3e702ddeb64636ccb6f11251d7526a966beffe75eb51e9c89/jarvis_orm-0.0.2.tar.gz
+[2024-04-20 21:51:00] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 21:51:00] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.4.tar.gz tmp/notfunny-0.6.6.tar.gz --markdown 20240420/n/notfunny/0.6.4-0.6.6/README.md --exclude *.pyd
+[2024-04-20 21:51:00] INFO root fetch - processPackages [jarvis-orm]: executing diffoscope
+[2024-04-20 21:51:00] INFO root fetch - processPackages [jarvis-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_orm-0.0.1.tar.gz tmp/jarvis_orm-0.0.2.tar.gz --markdown 20240420/j/jarvis-orm/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 21:51:01] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 21:51:01] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.4.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.6.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 21:51:01] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.1.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.2.tar.gz]
+[2024-04-20 21:51:01] INFO root fetch - main [MainThread]: End processing [jarvis-orm]: success
+[2024-04-20 21:51:01] INFO root fetch - main [MainThread]: Store serial: [22858982]
