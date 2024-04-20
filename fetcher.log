@@ -23935,3 +23935,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:41:03] INFO root fetch - processPackages [pyfritzhome]: Remove: archive file [/home/abi/fetcher/tmp/pyfritzhome-0.6.9.tar.gz]
 [2024-04-20 23:41:03] INFO root fetch - main [MainThread]: End processing [pyfritzhome]: success
 [2024-04-20 23:41:03] INFO root fetch - main [MainThread]: Store serial: [22859671]
+[2024-04-20 23:43:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859671]
+[2024-04-20 23:43:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FrustrationDynamiX
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ophyd-devices
+[2024-04-20 23:43:14] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 23:43:14] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/1d/8a/1edc88afe10831395a69e25ef787110c9e4c1ed0fd4918d87c2164b6a7be/FrustrationDynamiX-0.2.1.tar.gz
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ophyd-devices]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-20 23:43:14] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/07/e1/22ded16d46c0f3fbfdd1e5a5ae654caaad52356834a0142db7dcd5bfe9e8/FrustrationDynamiX-0.2.2.tar.gz
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/2b/09/1e0a1fc236c9ce64bbf92f29458f9e672c21b97c776e5c9f5d5ae6e23d72/ophyd_devices-0.9.1.tar.gz
+[2024-04-20 23:43:14] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-20 23:43:14] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.2.1.tar.gz tmp/FrustrationDynamiX-0.2.2.tar.gz --markdown 20240420/F/FrustrationDynamiX/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/55/4e/d641ca498a4fba59915a76536e150eb26c82206c4314ac039e51ef8aeae8/ophyd_devices-0.9.2.tar.gz
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ophyd-devices]: executing diffoscope
+[2024-04-20 23:43:14] INFO root fetch - processPackages [ophyd-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ophyd_devices-0.9.1.tar.gz tmp/ophyd_devices-0.9.2.tar.gz --markdown 20240420/o/ophyd-devices/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-04-20 23:43:15] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.1.tar.gz]
+[2024-04-20 23:43:15] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.2.tar.gz]
+[2024-04-20 23:43:15] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-20 23:43:15] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.1.tar.gz]
+[2024-04-20 23:43:15] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.2.tar.gz]
+[2024-04-20 23:43:15] INFO root fetch - main [MainThread]: End processing [ophyd-devices]: success
+[2024-04-20 23:43:15] INFO root fetch - main [MainThread]: Store serial: [22859677]
