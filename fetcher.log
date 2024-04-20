@@ -12258,3 +12258,20 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:39:50] WARNING root fetch - processPackages [newdao-hello-tea]: Skipping, unable to determine old version
 [2024-04-20 10:39:50] INFO root fetch - main [MainThread]: End processing [newdao-hello-tea] error
 [2024-04-20 10:39:50] INFO root fetch - main [MainThread]: Store serial: [22853955]
+[2024-04-20 10:41:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853955]
+[2024-04-20 10:42:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 10:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kuzu
+[2024-04-20 10:42:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: afeng-py-tools
+[2024-04-20 10:42:00] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 10:42:00] INFO root fetch - processPackages [kuzu]: New version: [0.3.3.dev40] Old Version: [0.3.3.dev39]
+[2024-04-20 10:42:00] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-20 10:42:00] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/79/a3/d0aa8643971899f389646918776c610bb5489b2b8e8657b1dbc4a4cd7026/kuzu-0.3.3.dev39.tar.gz
+[2024-04-20 10:42:00] WARNING root fetch - processPackages [kuzu]: Skipping package: exceeds size limit 15426470>=10485760
+[2024-04-20 10:42:00] INFO root fetch - main [MainThread]: End processing [kuzu] error
+[2024-04-20 10:42:00] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-20 10:42:00] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-20 10:42:00] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240420/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 10:42:02] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-20 10:42:02] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-20 10:42:02] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-20 10:42:02] INFO root fetch - main [MainThread]: Store serial: [22853989]
