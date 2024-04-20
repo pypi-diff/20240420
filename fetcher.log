@@ -19038,3 +19038,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:26:44] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.3.3.tar.gz]
 [2024-04-20 18:26:44] INFO root fetch - main [MainThread]: End processing [LOLZTEAM]: success
 [2024-04-20 18:26:44] INFO root fetch - main [MainThread]: Store serial: [22857388]
+[2024-04-20 18:28:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857388]
+[2024-04-20 18:28:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-20 18:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC126
+[2024-04-20 18:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spotifyconnector
+[2024-04-20 18:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cobaya-utilities
+[2024-04-20 18:28:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notfunny
+[2024-04-20 18:28:53] INFO root fetch - processPackages [notfunny]: New version: [0.4] Old Version: [0.3]
+[2024-04-20 18:28:53] INFO root fetch - processPackages [cerbogen]: New version: [0.0.36] Old Version: [0.0.35]
+[2024-04-20 18:28:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/7d/8b/f6408b8ecf6040ebd6b4a779de955b6d8d6d0c09375a2cb648121ae5125e/notfunny-0.3.tar.gz
+[2024-04-20 18:28:53] WARNING root fetch - processPackages [PythonTestLJC126]: Skipping, unable to determine old version
+[2024-04-20 18:28:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC126] error
+[2024-04-20 18:28:53] INFO root fetch - processPackages [cobaya-utilities]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-20 18:28:53] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/6a/5a/e2c4a3da4f4b0f20f6d08380755cd9b4e89d4a49d58a8623eac5cd8014fe/cerbogen-0.0.35.tar.gz
+[2024-04-20 18:28:53] INFO root fetch - processPackages [spotifyconnector]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-20 18:28:54] INFO root fetch - processPackages [spotifyconnector]: Downloading https://files.pythonhosted.org/packages/ee/b6/06e3b0f4d7c9a9505c0e11ecda696e30ac6d33c829b2d263d5273573ae6a/spotifyconnector-0.8.1.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cobaya-utilities]: Downloading https://files.pythonhosted.org/packages/0a/87/b62914feb42aed0a9f5e3f4d718ae4ecc3b2911ad8dfbb1ab85897b5ce5c/cobaya_utilities-0.3.0.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/7d/d9/2bc0340c3b5348e064464ddd658d65082319aaaddf4c0487eca1002e28dd/notfunny-0.4.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/c3/34/f9828f647c9ce512e2777649bdfd9fa9e4474decf129af919af053c0c5dc/cerbogen-0.0.36.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:28:54] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.3.tar.gz tmp/notfunny-0.4.tar.gz --markdown 20240420/n/notfunny/0.3-0.4/README.md --exclude *.pyd
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.35.tar.gz tmp/cerbogen-0.0.36.tar.gz --markdown 20240420/c/cerbogen/0.0.35-0.0.36/README.md --exclude *.pyd
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cobaya-utilities]: Downloading https://files.pythonhosted.org/packages/27/88/1d163e4df208d3dddbd388bef0e9f652b80e8c36604ae6fc5b6f217d30c3/cobaya_utilities-0.3.1.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [spotifyconnector]: Downloading https://files.pythonhosted.org/packages/04/50/392e737c18e8ef5a3a3fed6e0b188f093680aba972ba549990c6cd3af26c/spotifyconnector-0.8.2.tar.gz
+[2024-04-20 18:28:54] INFO root fetch - processPackages [spotifyconnector]: executing diffoscope
+[2024-04-20 18:28:54] INFO root fetch - processPackages [spotifyconnector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotifyconnector-0.8.1.tar.gz tmp/spotifyconnector-0.8.2.tar.gz --markdown 20240420/s/spotifyconnector/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cobaya-utilities]: executing diffoscope
+[2024-04-20 18:28:54] INFO root fetch - processPackages [cobaya-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cobaya_utilities-0.3.0.tar.gz tmp/cobaya_utilities-0.3.1.tar.gz --markdown 20240420/c/cobaya-utilities/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-20 18:28:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.3.tar.gz]
+[2024-04-20 18:28:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.4.tar.gz]
+[2024-04-20 18:28:54] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:28:55] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.35.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.36.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:28:55] INFO root fetch - processPackages [spotifyconnector]: Remove: archive file [/home/abi/fetcher/tmp/spotifyconnector-0.8.1.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - processPackages [spotifyconnector]: Remove: archive file [/home/abi/fetcher/tmp/spotifyconnector-0.8.2.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - main [MainThread]: End processing [spotifyconnector]: success
+[2024-04-20 18:28:55] INFO root fetch - processPackages [cobaya-utilities]: Remove: archive file [/home/abi/fetcher/tmp/cobaya_utilities-0.3.0.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - processPackages [cobaya-utilities]: Remove: archive file [/home/abi/fetcher/tmp/cobaya_utilities-0.3.1.tar.gz]
+[2024-04-20 18:28:55] INFO root fetch - main [MainThread]: End processing [cobaya-utilities]: success
+[2024-04-20 18:28:55] INFO root fetch - main [MainThread]: Store serial: [22857404]
