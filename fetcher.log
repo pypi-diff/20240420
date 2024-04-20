@@ -15913,3 +15913,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.1.tar.gz]
 [2024-04-20 14:48:34] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
 [2024-04-20 14:48:34] INFO root fetch - main [MainThread]: Store serial: [22855786]
+[2024-04-20 14:50:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855786]
+[2024-04-20 14:50:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 14:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: personal-graph
+[2024-04-20 14:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC048
+[2024-04-20 14:50:43] WARNING root fetch - processPackages [PythonTestLJC048]: Skipping, unable to determine old version
+[2024-04-20 14:50:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC048] error
+[2024-04-20 14:50:43] INFO root fetch - processPackages [personal-graph]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-20 14:50:44] INFO root fetch - processPackages [personal-graph]: Downloading https://files.pythonhosted.org/packages/b2/0c/2b48851813e37678ad3c10def2b9fb7d420867eab1e3d6beb70316370a8f/personal_graph-0.1.6.tar.gz
+[2024-04-20 14:50:44] INFO root fetch - processPackages [personal-graph]: Downloading https://files.pythonhosted.org/packages/85/85/73045800f3c9235067c8a5d99936933e1882ea27cf7ebb5fc99d75a6e766/personal_graph-0.1.7.tar.gz
+[2024-04-20 14:50:44] INFO root fetch - processPackages [personal-graph]: executing diffoscope
+[2024-04-20 14:50:44] INFO root fetch - processPackages [personal-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/personal_graph-0.1.6.tar.gz tmp/personal_graph-0.1.7.tar.gz --markdown 20240420/p/personal-graph/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-20 14:50:45] INFO root fetch - processPackages [personal-graph]: Remove: archive file [/home/abi/fetcher/tmp/personal_graph-0.1.6.tar.gz]
+[2024-04-20 14:50:45] INFO root fetch - processPackages [personal-graph]: Remove: archive file [/home/abi/fetcher/tmp/personal_graph-0.1.7.tar.gz]
+[2024-04-20 14:50:45] INFO root fetch - main [MainThread]: End processing [personal-graph]: success
+[2024-04-20 14:50:45] INFO root fetch - main [MainThread]: Store serial: [22855794]
