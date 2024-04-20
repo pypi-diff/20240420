@@ -18345,3 +18345,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:38:29] INFO root fetch - processPackages [PyGeodesy]: Remove: archive file [/home/abi/fetcher/tmp/PyGeodesy-24.4.4.zip]
 [2024-04-20 17:38:29] INFO root fetch - main [MainThread]: End processing [PyGeodesy]: success
 [2024-04-20 17:38:29] INFO root fetch - main [MainThread]: Store serial: [22857023]
+[2024-04-20 17:40:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857023]
+[2024-04-20 17:40:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-20 17:40:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: huffify
+[2024-04-20 17:40:48] INFO root fetch - processPackages [bellek]: New version: [0.92.5] Old Version: [0.92.4]
+[2024-04-20 17:40:48] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/10/a0/ea075727feb0a2621b68237deea43c8f0369541a042dc6a54a2634e445c7/bellek-0.92.4.tar.gz
+[2024-04-20 17:40:48] WARNING root fetch - processPackages [huffify]: Skipping, unable to determine old version
+[2024-04-20 17:40:48] INFO root fetch - main [MainThread]: End processing [huffify] error
+[2024-04-20 17:40:48] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1b/37/13887a96852d1e5e24ecafc7128aee04cc9fca236ebd1d69304bbccc937b/bellek-0.92.5.tar.gz
+[2024-04-20 17:40:48] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 17:40:48] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.4.tar.gz tmp/bellek-0.92.5.tar.gz --markdown 20240420/b/bellek/0.92.4-0.92.5/README.md --exclude *.pyd
+[2024-04-20 17:40:49] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.4.tar.gz]
+[2024-04-20 17:40:49] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.5.tar.gz]
+[2024-04-20 17:40:49] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 17:40:49] INFO root fetch - main [MainThread]: Store serial: [22857031]
