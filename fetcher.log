@@ -12828,3 +12828,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:19:10] INFO root fetch - processPackages [xls-updater]: Remove: archive file [/home/abi/fetcher/tmp/xls_updater-0.2.1.tar.gz]
 [2024-04-20 11:19:10] INFO root fetch - main [MainThread]: End processing [xls-updater]: success
 [2024-04-20 11:19:10] INFO root fetch - main [MainThread]: Store serial: [22854285]
+[2024-04-20 11:21:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854285]
+[2024-04-20 11:21:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 11:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC001
+[2024-04-20 11:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastdfe
+[2024-04-20 11:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: quant2
+[2024-04-20 11:21:20] INFO root fetch - processPackages [quant2]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 11:21:20] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/11/8c/95b0b708a3cd61829bebc45cde551ba9b6d2873d10f8c9d96f89d6f06315/quant2-0.1.8.tar.gz
+[2024-04-20 11:21:20] WARNING root fetch - processPackages [PythonTestLJC001]: Skipping, unable to determine old version
+[2024-04-20 11:21:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC001] error
+[2024-04-20 11:21:20] INFO root fetch - processPackages [fastdfe]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-20 11:21:20] INFO root fetch - processPackages [fastdfe]: Downloading https://files.pythonhosted.org/packages/5f/43/c03eab2af0a7a4275d17c93e6f4df220d693ed1c133e065004cf15e94960/fastdfe-1.1.5.tar.gz
+[2024-04-20 11:21:20] INFO root fetch - processPackages [quant2]: Downloading https://files.pythonhosted.org/packages/bf/1a/6ceafd7a5a862aa7b8839815a0b32442b1a768caef03ce4ee178c5125c8c/quant2-0.1.9.tar.gz
+[2024-04-20 11:21:20] INFO root fetch - processPackages [quant2]: executing diffoscope
+[2024-04-20 11:21:20] INFO root fetch - processPackages [quant2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quant2-0.1.8.tar.gz tmp/quant2-0.1.9.tar.gz --markdown 20240420/q/quant2/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 11:21:20] INFO root fetch - processPackages [fastdfe]: Downloading https://files.pythonhosted.org/packages/c8/91/1bed63365b422ee35771b2dc011d0d068c4dfa40d2cd1ceccba7bbd5a8f9/fastdfe-1.1.6.tar.gz
+[2024-04-20 11:21:20] INFO root fetch - processPackages [fastdfe]: executing diffoscope
+[2024-04-20 11:21:20] INFO root fetch - processPackages [fastdfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastdfe-1.1.5.tar.gz tmp/fastdfe-1.1.6.tar.gz --markdown 20240420/f/fastdfe/1.1.5-1.1.6/README.md --exclude *.pyd
+[2024-04-20 11:21:21] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.8.tar.gz]
+[2024-04-20 11:21:21] INFO root fetch - processPackages [quant2]: Remove: archive file [/home/abi/fetcher/tmp/quant2-0.1.9.tar.gz]
+[2024-04-20 11:21:21] INFO root fetch - main [MainThread]: End processing [quant2]: success
+[2024-04-20 11:21:21] INFO root fetch - processPackages [fastdfe]: Remove: archive file [/home/abi/fetcher/tmp/fastdfe-1.1.5.tar.gz]
+[2024-04-20 11:21:21] INFO root fetch - processPackages [fastdfe]: Remove: archive file [/home/abi/fetcher/tmp/fastdfe-1.1.6.tar.gz]
+[2024-04-20 11:21:21] INFO root fetch - main [MainThread]: End processing [fastdfe]: success
+[2024-04-20 11:21:21] INFO root fetch - main [MainThread]: Store serial: [22854294]
