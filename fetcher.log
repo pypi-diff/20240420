@@ -13817,3 +13817,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:21:06] INFO root fetch - processPackages [gs2]: Remove: archive file [/home/abi/fetcher/tmp/gs2-1.1.99.tar.gz]
 [2024-04-20 12:21:06] INFO root fetch - main [MainThread]: End processing [gs2]: success
 [2024-04-20 12:21:06] INFO root fetch - main [MainThread]: Store serial: [22854741]
+[2024-04-20 12:23:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854741]
+[2024-04-20 12:23:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 12:23:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cutseq
+[2024-04-20 12:23:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiotieba
+[2024-04-20 12:23:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC021
+[2024-04-20 12:23:14] WARNING root fetch - processPackages [cutseq]: Skipping, unable to determine old version
+[2024-04-20 12:23:14] INFO root fetch - main [MainThread]: End processing [cutseq] error
+[2024-04-20 12:23:14] INFO root fetch - processPackages [aiotieba]: New version: [4.4.4] Old Version: [4.4.3]
+[2024-04-20 12:23:14] WARNING root fetch - processPackages [PythonTestLJC021]: Skipping, unable to determine old version
+[2024-04-20 12:23:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC021] error
+[2024-04-20 12:23:15] INFO root fetch - processPackages [aiotieba]: Downloading https://files.pythonhosted.org/packages/10/ca/e09ca3f66774db7cfcbfc057e942e4aceded26db021555acdd1befce9834/aiotieba-4.4.3.tar.gz
+[2024-04-20 12:23:15] INFO root fetch - processPackages [aiotieba]: Downloading https://files.pythonhosted.org/packages/14/29/b01799e45f22e55f7d6fec700363ee724973bdb5582b71b6a76d9a2fddda/aiotieba-4.4.4.tar.gz
+[2024-04-20 12:23:15] INFO root fetch - processPackages [aiotieba]: executing diffoscope
+[2024-04-20 12:23:15] INFO root fetch - processPackages [aiotieba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiotieba-4.4.3.tar.gz tmp/aiotieba-4.4.4.tar.gz --markdown 20240420/a/aiotieba/4.4.3-4.4.4/README.md --exclude *.pyd
+[2024-04-20 12:23:16] INFO root fetch - processPackages [aiotieba]: Remove: archive file [/home/abi/fetcher/tmp/aiotieba-4.4.3.tar.gz]
+[2024-04-20 12:23:16] INFO root fetch - processPackages [aiotieba]: Remove: archive file [/home/abi/fetcher/tmp/aiotieba-4.4.4.tar.gz]
+[2024-04-20 12:23:16] INFO root fetch - main [MainThread]: End processing [aiotieba]: success
+[2024-04-20 12:23:16] INFO root fetch - main [MainThread]: Store serial: [22854781]
