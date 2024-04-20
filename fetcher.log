@@ -23837,3 +23837,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:34:32] WARNING root fetch - processPackages [PythonTestLJC236]: Skipping, unable to determine old version
 [2024-04-20 23:34:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC236] error
 [2024-04-20 23:34:32] INFO root fetch - main [MainThread]: Store serial: [22859617]
+[2024-04-20 23:36:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859617]
+[2024-04-20 23:36:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 23:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pluggy
+[2024-04-20 23:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: felicien
+[2024-04-20 23:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC237
+[2024-04-20 23:36:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: automotifs
+[2024-04-20 23:36:41] WARNING root fetch - processPackages [felicien]: Skipping, unable to determine old version
+[2024-04-20 23:36:41] INFO root fetch - main [MainThread]: End processing [felicien] error
+[2024-04-20 23:36:41] INFO root fetch - processPackages [pluggy]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-20 23:36:41] INFO root fetch - processPackages [automotifs]: New version: [1.4.1] Old Version: [1.3]
+[2024-04-20 23:36:41] INFO root fetch - processPackages [automotifs]: Downloading https://files.pythonhosted.org/packages/5b/2d/154068f2f8bdfc541f93ebaafd675e36b63bda63914143a39ae43d141a3f/automotifs-1.3.tar.gz
+[2024-04-20 23:36:41] INFO root fetch - processPackages [pluggy]: Downloading https://files.pythonhosted.org/packages/36/51/04defc761583568cae5fd533abda3d40164cbdcf22dee5b7126ffef68a40/pluggy-1.3.0.tar.gz
+[2024-04-20 23:36:41] INFO root fetch - processPackages [pluggy]: Downloading https://files.pythonhosted.org/packages/54/c6/43f9d44d92aed815e781ca25ba8c174257e27253a94630d21be8725a2b59/pluggy-1.4.0.tar.gz
+[2024-04-20 23:36:41] WARNING root fetch - processPackages [PythonTestLJC237]: Skipping, unable to determine old version
+[2024-04-20 23:36:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC237] error
+[2024-04-20 23:36:41] INFO root fetch - processPackages [automotifs]: Downloading https://files.pythonhosted.org/packages/90/0f/1a56fc8fa83efa59867ee8b3d7f2a1ef9203c639ef4792df73a0264353d2/automotifs-1.4.1.tar.gz
+[2024-04-20 23:36:41] INFO root fetch - processPackages [pluggy]: executing diffoscope
+[2024-04-20 23:36:41] INFO root fetch - processPackages [pluggy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluggy-1.3.0.tar.gz tmp/pluggy-1.4.0.tar.gz --markdown 20240420/p/pluggy/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-20 23:36:41] INFO root fetch - processPackages [automotifs]: executing diffoscope
+[2024-04-20 23:36:41] INFO root fetch - processPackages [automotifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automotifs-1.3.tar.gz tmp/automotifs-1.4.1.tar.gz --markdown 20240420/a/automotifs/1.3-1.4.1/README.md --exclude *.pyd
+[2024-04-20 23:36:42] INFO root fetch - processPackages [automotifs]: Remove: archive file [/home/abi/fetcher/tmp/automotifs-1.3.tar.gz]
+[2024-04-20 23:36:42] INFO root fetch - processPackages [automotifs]: Remove: archive file [/home/abi/fetcher/tmp/automotifs-1.4.1.tar.gz]
+[2024-04-20 23:36:42] INFO root fetch - main [MainThread]: End processing [automotifs]: success
+[2024-04-20 23:36:42] INFO root fetch - processPackages [pluggy]: Remove: archive file [/home/abi/fetcher/tmp/pluggy-1.3.0.tar.gz]
+[2024-04-20 23:36:42] INFO root fetch - processPackages [pluggy]: Remove: archive file [/home/abi/fetcher/tmp/pluggy-1.4.0.tar.gz]
+[2024-04-20 23:36:42] INFO root fetch - main [MainThread]: End processing [pluggy]: success
+[2024-04-20 23:36:42] INFO root fetch - main [MainThread]: Store serial: [22859631]
