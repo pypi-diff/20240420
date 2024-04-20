@@ -21752,3 +21752,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:09:07] INFO root fetch - processPackages [esoc-events]: Remove: archive file [/home/abi/fetcher/tmp/esoc_events-0.0.2.tar.gz]
 [2024-04-20 21:09:07] INFO root fetch - main [MainThread]: End processing [esoc-events]: success
 [2024-04-20 21:09:07] INFO root fetch - main [MainThread]: Store serial: [22858646]
+[2024-04-20 21:11:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858646]
+[2024-04-20 21:11:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 21:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lmn.cx.y22.operating-systems
+[2024-04-20 21:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exafs-neo
+[2024-04-20 21:11:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rentdown
+[2024-04-20 21:11:16] WARNING root fetch - processPackages [rentdown]: Skipping, unable to determine old version
+[2024-04-20 21:11:16] INFO root fetch - main [MainThread]: End processing [rentdown] error
+[2024-04-20 21:11:16] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: New version: [2.1] Old Version: [2.0]
+[2024-04-20 21:11:16] INFO root fetch - processPackages [exafs-neo]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-20 21:11:16] INFO root fetch - processPackages [exafs-neo]: Downloading https://files.pythonhosted.org/packages/9a/27/4ca240f4c6bd70ad47ee37dc0250edd75edf340c6177d052ac652ee3edfc/exafs_neo-2.0.3.tar.gz
+[2024-04-20 21:11:16] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: Downloading https://files.pythonhosted.org/packages/d4/e9/7a3f9abe672dd2cbc79aef995916ea8dd3d0d14f17706b3b3f0da8b0db39/lmn_cx_y22_operating_systems-2.0.tar.gz
+[2024-04-20 21:11:17] INFO root fetch - processPackages [exafs-neo]: Downloading https://files.pythonhosted.org/packages/c7/57/60e307ea159b4bc6ddf0f6fd9ca3a85cf602554aadf5c7d9ab0ab0b902f9/exafs_neo-2.0.4.tar.gz
+[2024-04-20 21:11:17] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: Downloading https://files.pythonhosted.org/packages/6f/23/2b79e7a9f05a9a406868c6db5c95c87176c6ecad8d5ebf32b1c4f759d69b/lmn_cx_y22_operating_systems-2.1.tar.gz
+[2024-04-20 21:11:17] INFO root fetch - processPackages [exafs-neo]: executing diffoscope
+[2024-04-20 21:11:17] INFO root fetch - processPackages [exafs-neo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exafs_neo-2.0.3.tar.gz tmp/exafs_neo-2.0.4.tar.gz --markdown 20240420/e/exafs-neo/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-04-20 21:11:17] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: executing diffoscope
+[2024-04-20 21:11:17] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmn_cx_y22_operating_systems-2.0.tar.gz tmp/lmn_cx_y22_operating_systems-2.1.tar.gz --markdown 20240420/l/lmn.cx.y22.operating-systems/2.0-2.1/README.md --exclude *.pyd
+[2024-04-20 21:11:17] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: Remove: archive file [/home/abi/fetcher/tmp/lmn_cx_y22_operating_systems-2.0.tar.gz]
+[2024-04-20 21:11:17] INFO root fetch - processPackages [lmn.cx.y22.operating-systems]: Remove: archive file [/home/abi/fetcher/tmp/lmn_cx_y22_operating_systems-2.1.tar.gz]
+[2024-04-20 21:11:17] INFO root fetch - main [MainThread]: End processing [lmn.cx.y22.operating-systems]: success
+[2024-04-20 21:11:18] INFO root fetch - processPackages [exafs-neo]: Remove: archive file [/home/abi/fetcher/tmp/exafs_neo-2.0.3.tar.gz]
+[2024-04-20 21:11:18] INFO root fetch - processPackages [exafs-neo]: Remove: archive file [/home/abi/fetcher/tmp/exafs_neo-2.0.4.tar.gz]
+[2024-04-20 21:11:18] INFO root fetch - main [MainThread]: End processing [exafs-neo]: success
+[2024-04-20 21:11:18] INFO root fetch - main [MainThread]: Store serial: [22858655]
