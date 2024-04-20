@@ -10074,3 +10074,27 @@
 [2024-04-20 07:40:38] INFO root fetch - processPackages [PyLoadAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyloadapi-1.1.0.tar.gz]
 [2024-04-20 07:40:38] INFO root fetch - main [MainThread]: End processing [PyLoadAPI]: success
 [2024-04-20 07:40:38] INFO root fetch - main [MainThread]: Store serial: [22852923]
+[2024-04-20 07:42:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852923]
+[2024-04-20 07:42:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-partner-firstname
+[2024-04-20 07:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-partner-second-lastname
+[2024-04-20 07:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ldjcourse
+[2024-04-20 07:42:48] WARNING root fetch - processPackages [ldjcourse]: Skipping, unable to determine old version
+[2024-04-20 07:42:48] INFO root fetch - main [MainThread]: End processing [ldjcourse] error
+[2024-04-20 07:42:48] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.2.2]
+[2024-04-20 07:42:48] INFO root fetch - processPackages [odoo-addon-partner-firstname]: New version: [17.0.1.0.1] Old Version: [17.0.1.0.0.3]
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: Downloading https://files.pythonhosted.org/packages/46/63/ed9570eaf16f9a3a3bea7dac9864e145a3a319031600363a9c97e76b1798/odoo_addon_partner_second_lastname-16.0.1.0.2.2-py3-none-any.whl
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-firstname]: Downloading https://files.pythonhosted.org/packages/96/5f/a4ea4783ef5ddbaaf3af2a27a8d393b34309041da3bc9a119777d74485cf/odoo_addon_partner_firstname-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: Downloading https://files.pythonhosted.org/packages/c5/8b/226914e0b06b3c3994ff973f53510042977e4ae8648a4ac6d76a8472512a/odoo_addon_partner_second_lastname-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-firstname]: Downloading https://files.pythonhosted.org/packages/41/ca/221e29a2b1533a97c27d4b3770b2530c1a33e295dc60a1d0d600058e3049/odoo_addon_partner_firstname-17.0.1.0.1-py3-none-any.whl
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: executing diffoscope
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_second_lastname-16.0.1.0.2.2-py3-none-any.whl.zip tmp/odoo_addon_partner_second_lastname-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-partner-second-lastname/16.0.1.0.2.2-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-firstname]: executing diffoscope
+[2024-04-20 07:42:49] INFO root fetch - processPackages [odoo-addon-partner-firstname]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_partner_firstname-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_partner_firstname-17.0.1.0.1-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-partner-firstname/17.0.1.0.0.3-17.0.1.0.1/README.md --exclude *.pyd
+[2024-04-20 07:42:50] INFO root fetch - processPackages [odoo-addon-partner-firstname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_firstname-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 07:42:50] INFO root fetch - processPackages [odoo-addon-partner-firstname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_firstname-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-20 07:42:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-firstname]: success
+[2024-04-20 07:42:50] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_second_lastname-16.0.1.0.2.2-py3-none-any.whl.zip]
+[2024-04-20 07:42:50] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_second_lastname-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 07:42:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-second-lastname]: success
+[2024-04-20 07:42:50] INFO root fetch - main [MainThread]: Store serial: [22852929]
