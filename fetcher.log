@@ -23067,3 +23067,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:26:16] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b2.tar.gz]
 [2024-04-20 22:26:16] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
 [2024-04-20 22:26:16] INFO root fetch - main [MainThread]: Store serial: [22859267]
+[2024-04-20 22:28:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859267]
+[2024-04-20 22:28:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shapeout2
+[2024-04-20 22:28:25] INFO root fetch - processPackages [shapeout2]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-20 22:28:26] INFO root fetch - processPackages [shapeout2]: Downloading https://files.pythonhosted.org/packages/27/26/7e5e08bc714db215c9103bad6c7528a292dad54c0cd3e56a556dd2fd660a/shapeout2-2.9.5.tar.gz
+[2024-04-20 22:28:26] INFO root fetch - processPackages [shapeout2]: Downloading https://files.pythonhosted.org/packages/35/23/3e2b923fd3a130e068a59c3125d5bcfcc7bcf9ff2dfd5df0df3ce914dfa7/shapeout2-2.9.6.tar.gz
+[2024-04-20 22:28:26] INFO root fetch - processPackages [shapeout2]: executing diffoscope
+[2024-04-20 22:28:26] INFO root fetch - processPackages [shapeout2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shapeout2-2.9.5.tar.gz tmp/shapeout2-2.9.6.tar.gz --markdown 20240420/s/shapeout2/2.9.5-2.9.6/README.md --exclude *.pyd
+[2024-04-20 22:28:27] INFO root fetch - processPackages [shapeout2]: Remove: archive file [/home/abi/fetcher/tmp/shapeout2-2.9.5.tar.gz]
+[2024-04-20 22:28:27] INFO root fetch - processPackages [shapeout2]: Remove: archive file [/home/abi/fetcher/tmp/shapeout2-2.9.6.tar.gz]
+[2024-04-20 22:28:27] INFO root fetch - main [MainThread]: End processing [shapeout2]: success
+[2024-04-20 22:28:27] INFO root fetch - main [MainThread]: Store serial: [22859270]
