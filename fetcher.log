@@ -23412,3 +23412,54 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz]
 [2024-04-20 22:53:04] INFO root fetch - main [MainThread]: End processing [robotframework-confluentkafkalibrary]: success
 [2024-04-20 22:53:04] INFO root fetch - main [MainThread]: Store serial: [22859429]
+[2024-04-20 22:55:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859429]
+[2024-04-20 22:55:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: throttle-client
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pympipool
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC222
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-chip-filter
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: absbox
+[2024-04-20 22:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pg-podcast-toolkit
+[2024-04-20 22:55:14] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:55:14] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-20 22:55:14] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/dc/55/035e9bb8cde905fbb03067e395fb23aa00bb77fd8bd8525507c49d72a1fd/streamlit-chip-filter-0.0.8.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [pg-podcast-toolkit]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 22:55:14] WARNING root fetch - processPackages [PythonTestLJC222]: Skipping, unable to determine old version
+[2024-04-20 22:55:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC222] error
+[2024-04-20 22:55:14] INFO root fetch - processPackages [throttle-client]: New version: [0.4.8] Old Version: [0.4.5]
+[2024-04-20 22:55:14] INFO root fetch - processPackages [pympipool]: New version: [0.8.0] Old Version: [0.7.9]
+[2024-04-20 22:55:14] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/95/2c/50b539176a044f5bf5870e9a8681219d56129d395ead90c1302c02807430/throttle_client-0.4.5.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [pympipool]: Downloading https://files.pythonhosted.org/packages/5b/67/74e1ea7d63ef735017d9511c00e7d5f55dc333cf88e7f9843a705463f76c/pympipool-0.7.9.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/70/08/2c59c45571039d434ba5bb5190d8867f7084c5a22e0576379b2a84e27364/streamlit-chip-filter-0.0.9.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-20 22:55:14] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240420/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-20 22:55:14] INFO root fetch - processPackages [pg-podcast-toolkit]: Downloading https://files.pythonhosted.org/packages/58/19/f5f741acb7af7e7d53d5eb690d214d1126e0e212962f08ce4c6d1c872eba/pg_podcast_toolkit-0.0.5.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 22:55:14] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.8.tar.gz tmp/streamlit-chip-filter-0.0.9.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:55:14] INFO root fetch - processPackages [throttle-client]: Downloading https://files.pythonhosted.org/packages/e6/61/2fb76dd16caf3df028c7594354ce2721f464f6d6b0ebac349a19807330f3/throttle_client-0.4.8.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [pympipool]: Downloading https://files.pythonhosted.org/packages/f0/d7/74df3b79d61ad9e29aa985b77c87047f59291cf68184020b5e2b3f899dcb/pympipool-0.8.0.tar.gz
+[2024-04-20 22:55:14] INFO root fetch - processPackages [throttle-client]: executing diffoscope
+[2024-04-20 22:55:14] INFO root fetch - processPackages [throttle-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/throttle_client-0.4.5.tar.gz tmp/throttle_client-0.4.8.tar.gz --markdown 20240420/t/throttle-client/0.4.5-0.4.8/README.md --exclude *.pyd
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pympipool]: executing diffoscope
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pympipool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pympipool-0.7.9.tar.gz tmp/pympipool-0.8.0.tar.gz --markdown 20240420/p/pympipool/0.7.9-0.8.0/README.md --exclude *.pyd
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pg-podcast-toolkit]: Downloading https://files.pythonhosted.org/packages/41/70/96d35a2bda5a07a15468ee666151b68b1e7be0c1f212919c95ea24b86d65/pg_podcast_toolkit-0.0.6.tar.gz
+[2024-04-20 22:55:15] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pg-podcast-toolkit]: executing diffoscope
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pg-podcast-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_podcast_toolkit-0.0.5.tar.gz tmp/pg_podcast_toolkit-0.0.6.tar.gz --markdown 20240420/p/pg-podcast-toolkit/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 22:55:15] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.4.5.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - processPackages [throttle-client]: Remove: archive file [/home/abi/fetcher/tmp/throttle_client-0.4.8.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - main [MainThread]: End processing [throttle-client]: success
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pympipool]: Remove: archive file [/home/abi/fetcher/tmp/pympipool-0.7.9.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - processPackages [pympipool]: Remove: archive file [/home/abi/fetcher/tmp/pympipool-0.8.0.tar.gz]
+[2024-04-20 22:55:15] INFO root fetch - main [MainThread]: End processing [pympipool]: success
+[2024-04-20 22:55:16] INFO root fetch - processPackages [pg-podcast-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pg_podcast_toolkit-0.0.5.tar.gz]
+[2024-04-20 22:55:16] INFO root fetch - processPackages [pg-podcast-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pg_podcast_toolkit-0.0.6.tar.gz]
+[2024-04-20 22:55:16] INFO root fetch - main [MainThread]: End processing [pg-podcast-toolkit]: success
+[2024-04-20 22:55:27] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.8.tar.gz]
+[2024-04-20 22:55:27] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.9.tar.gz]
+[2024-04-20 22:55:27] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 22:55:27] INFO root fetch - main [MainThread]: Store serial: [22859449]
