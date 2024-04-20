@@ -8644,3 +8644,59 @@
 [2024-04-20 05:43:12] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
 [2024-04-20 05:43:12] INFO root fetch - main [MainThread]: End processing [recflows]: success
 [2024-04-20 05:43:12] INFO root fetch - main [MainThread]: Store serial: [22852175]
+[2024-04-20 05:45:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852175]
+[2024-04-20 05:45:21] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edstem-assignment-tracker
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: numerical-pde-solver
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: recflows
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: os11
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-ddmrp-report-part-flow-index
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-04-20 05:45:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: npc-sync
+[2024-04-20 05:45:21] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [recflows]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [numerical-pde-solver]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/75/5a/4b52d3ff259c3f6b479f06d44538d510a7b56662950706ae95edf64f6df6/recflows-0.0.8.tar.gz
+[2024-04-20 05:45:21] WARNING root fetch - processPackages [os11]: Skipping, unable to determine old version
+[2024-04-20 05:45:21] INFO root fetch - main [MainThread]: End processing [os11] error
+[2024-04-20 05:45:21] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: New version: [16.0.1.0.0.2] Old Version: [16.0.1.0.0.1]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [npc-sync]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 05:45:21] INFO root fetch - processPackages [numerical-pde-solver]: Downloading https://files.pythonhosted.org/packages/36/17/6fdea12f740249cc3b6e33f10a40488b9046e7c586223c028b9f3373b495/numerical_pde_solver-0.1.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/b0/3a/5fe25ed6db3f6a0b1324bba20aef50aeeef1b71eceb228be123efb580bbe/recflows-0.0.9.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Downloading https://files.pythonhosted.org/packages/17/cf/fa9bcf217fe5195f56425e4281896fc3bff96865407eb0e239343a6e9d6d/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.1-py3-none-any.whl
+[2024-04-20 05:45:21] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/3e/90/df23bc7c44140347db7ea13f94f38ec346053657a3e4931c8ce7995cfc05/npc-sync-0.1.8.tar.gz
+[2024-04-20 05:45:21] INFO root fetch - processPackages [recflows]: executing diffoscope
+[2024-04-20 05:45:21] INFO root fetch - processPackages [recflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recflows-0.0.8.tar.gz tmp/recflows-0.0.9.tar.gz --markdown 20240420/r/recflows/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:45:21] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 05:45:21] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 05:45:21] INFO root fetch - processPackages [numerical-pde-solver]: Downloading https://files.pythonhosted.org/packages/bb/98/d9dd9a700291687831407c7bb672a00f4f128c3ea771e7a9e2895554fea3/numerical_pde_solver-0.1.1.tar.gz
+[2024-04-20 05:45:21] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-04-20 05:45:21] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-04-20 05:45:22] INFO root fetch - processPackages [numerical-pde-solver]: executing diffoscope
+[2024-04-20 05:45:22] INFO root fetch - processPackages [numerical-pde-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numerical_pde_solver-0.1.tar.gz tmp/numerical_pde_solver-0.1.1.tar.gz --markdown 20240420/n/numerical-pde-solver/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Downloading https://files.pythonhosted.org/packages/b2/d2/c485e7350bd66d1cc8ed02691aeb3f6bd93ffec7489788a41174a19a7592/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 05:45:22] INFO root fetch - processPackages [npc-sync]: Downloading https://files.pythonhosted.org/packages/c2/f9/c79aca2962e0a526469ef87a4cde8033c5d566b9ad82925e9493333d60e1/npc-sync-0.1.9.tar.gz
+[2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: executing diffoscope
+[2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.1-py3-none-any.whl.zip tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-ddmrp-report-part-flow-index/16.0.1.0.0.1-16.0.1.0.0.2/README.md --exclude *.pyd
+[2024-04-20 05:45:22] INFO root fetch - processPackages [npc-sync]: executing diffoscope
+[2024-04-20 05:45:22] INFO root fetch - processPackages [npc-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npc-sync-0.1.8.tar.gz tmp/npc-sync-0.1.9.tar.gz --markdown 20240420/n/npc-sync/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 05:45:22] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 05:45:22] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.8.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [recflows]: success
+[2024-04-20 05:45:22] INFO root fetch - processPackages [numerical-pde-solver]: Remove: archive file [/home/abi/fetcher/tmp/numerical_pde_solver-0.1.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - processPackages [numerical-pde-solver]: Remove: archive file [/home/abi/fetcher/tmp/numerical_pde_solver-0.1.1.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [numerical-pde-solver]: success
+[2024-04-20 05:45:22] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.8.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - processPackages [npc-sync]: Remove: archive file [/home/abi/fetcher/tmp/npc-sync-0.1.9.tar.gz]
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [npc-sync]: success
+[2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.1-py3-none-any.whl.zip]
+[2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp-report-part-flow-index]: success
+[2024-04-20 05:45:22] INFO root fetch - main [MainThread]: Store serial: [22852196]
