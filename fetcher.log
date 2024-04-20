@@ -2789,3 +2789,72 @@
 [2024-04-20 02:43:31] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.9.tar.gz]
 [2024-04-20 02:43:31] INFO root fetch - main [MainThread]: End processing [uv]: success
 [2024-04-20 02:43:31] INFO root fetch - main [MainThread]: Store serial: [22850043]
+[2024-04-20 02:45:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850043]
+[2024-04-20 02:45:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: honeybee-radiance-postprocess
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: endstone
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: npiai
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nm-magic-wand-nightly
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TheSilent
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: npiai
+[2024-04-20 02:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dash-connectivity-viewer
+[2024-04-20 02:45:40] INFO root fetch - processPackages [npiai]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2024-04-20 02:45:40] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.2.3] Old Version: [2.2.2]
+[2024-04-20 02:45:40] INFO root fetch - processPackages [npiai]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2024-04-20 02:45:40] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202404190044] Old Version: [4.9.4.dev202404180044]
+[2024-04-20 02:45:40] INFO root fetch - processPackages [endstone]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-20 02:45:40] INFO root fetch - processPackages [nm-magic-wand-nightly]: New version: [0.2.2.20240420] Old Version: [0.2.2.20240419]
+[2024-04-20 02:45:41] INFO root fetch - processPackages [honeybee-radiance-postprocess]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-04-20 02:45:41] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 02:45:41] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/a0/1c/3086e02f63e1fc591c40cadd2c4f8ee1abd28f71c1e38d3c333da7327816/dash_connectivity_viewer-2.2.2.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/4a/71/0ae8d16a2f31f87e0400e9e1cbda02c0751c6e5a090c87097f98a8ef9ba9/npiai-0.0.1.dev0.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/4a/71/0ae8d16a2f31f87e0400e9e1cbda02c0751c6e5a090c87097f98a8ef9ba9/npiai-0.0.1.dev0.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/d6/6b/f31d20a73110423811536308c209e529dcd79f8a40493d39119f44ecbda0/tfds-nightly-4.9.4.dev202404180044.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [endstone]: Downloading https://files.pythonhosted.org/packages/8d/f8/d619d53abf8b20ead119e882dbf08d904d02ef005a15ffc8c393da673aa8/endstone-0.3.0.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [nm-magic-wand-nightly]: Downloading https://files.pythonhosted.org/packages/19/02/587c080f545c72bd8a0eafec6ff826fcf95a8a4e74736af355e0935685e3/nm_magic_wand_nightly-0.2.2.20240419-cp39-cp39-manylinux_2_17_x86_64.whl
+[2024-04-20 02:45:41] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/b6/91/e656cf214b08dde444b27576e74fc06004fa6bbc0d5f04f1d6514eb05429/honeybee-radiance-postprocess-0.4.98.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/9d/74/a384388f2e9c1b9eeba9df44c2d2ff67b943661cbb33c36b652294624e15/npiai-0.0.1.dev1.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/9d/74/a384388f2e9c1b9eeba9df44c2d2ff67b943661cbb33c36b652294624e15/npiai-0.0.1.dev1.tar.gz
+[2024-04-20 02:45:41] WARNING root fetch - processPackages [nm-magic-wand-nightly]: Skipping package: exceeds size limit 76591462>=10485760
+[2024-04-20 02:45:41] INFO root fetch - main [MainThread]: End processing [nm-magic-wand-nightly] error
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npiai-0.0.1.dev0.tar.gz tmp/npiai-0.0.1.dev1.tar.gz --markdown 20240420/n/npiai/0.0.1.dev0-0.0.1.dev1/README.md --exclude *.pyd
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [npiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npiai-0.0.1.dev0.tar.gz tmp/npiai-0.0.1.dev1.tar.gz --markdown 20240420/n/npiai/0.0.1.dev0-0.0.1.dev1/README.md --exclude *.pyd
+[2024-04-20 02:45:41] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/b6/78/9210770419affc8b373543b15dbbc9428aa395d79a6bdfb37043d36a06f8/dash_connectivity_viewer-2.2.3.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/da/36/cf842f7819c93159fd5615ab676d04869e0305965ea8042235df2ad553fc/tfds-nightly-4.9.4.dev202404190044.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Downloading https://files.pythonhosted.org/packages/e0/41/5be881e0724bb4d271ee5bb707666eff4c4b9ca79bc8c67f7316687d2f67/honeybee-radiance-postprocess-0.4.99.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_connectivity_viewer-2.2.2.tar.gz tmp/dash_connectivity_viewer-2.2.3.tar.gz --markdown 20240420/d/dash-connectivity-viewer/2.2.2-2.2.3/README.md --exclude *.pyd
+[2024-04-20 02:45:41] INFO root fetch - processPackages [endstone]: Downloading https://files.pythonhosted.org/packages/82/9e/2f3ca8e5eafa045680fc538b9f9a84b5ec25b257d064a49497e27a65d5f6/endstone-0.4.0.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 02:45:41] INFO root fetch - processPackages [honeybee-radiance-postprocess]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [honeybee-radiance-postprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-radiance-postprocess-0.4.98.tar.gz tmp/honeybee-radiance-postprocess-0.4.99.tar.gz --markdown 20240420/h/honeybee-radiance-postprocess/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-04-20 02:45:41] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 02:45:41] INFO root fetch - processPackages [endstone]: executing diffoscope
+[2024-04-20 02:45:41] INFO root fetch - processPackages [endstone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/endstone-0.3.0.tar.gz tmp/endstone-0.4.0.tar.gz --markdown 20240420/e/endstone/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-20 02:45:42] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-04-20 02:45:42] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202404180044.tar.gz tmp/tfds-nightly-4.9.4.dev202404190044.tar.gz --markdown 20240420/t/tfds-nightly/4.9.4.dev202404180044-4.9.4.dev202404190044/README.md --exclude *.pyd
+[2024-04-20 02:45:42] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev0.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev1.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - main [MainThread]: End processing [npiai]: success
+[2024-04-20 02:45:42] INFO root fetch - main [MainThread]: End processing [npiai]: success
+[2024-04-20 02:45:42] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.2.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.3.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2024-04-20 02:45:42] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.98.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - processPackages [honeybee-radiance-postprocess]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-radiance-postprocess-0.4.99.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - main [MainThread]: End processing [honeybee-radiance-postprocess]: success
+[2024-04-20 02:45:42] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 02:45:42] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 02:45:43] INFO root fetch - processPackages [endstone]: Remove: archive file [/home/abi/fetcher/tmp/endstone-0.3.0.tar.gz]
+[2024-04-20 02:45:43] INFO root fetch - processPackages [endstone]: Remove: archive file [/home/abi/fetcher/tmp/endstone-0.4.0.tar.gz]
+[2024-04-20 02:45:43] INFO root fetch - main [MainThread]: End processing [endstone]: success
+[2024-04-20 02:45:50] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404180044.tar.gz]
+[2024-04-20 02:45:50] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404190044.tar.gz]
+[2024-04-20 02:45:50] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-04-20 02:45:50] INFO root fetch - main [MainThread]: Store serial: [22850074]
