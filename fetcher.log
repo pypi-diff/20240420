@@ -18393,3 +18393,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:43:00] INFO root fetch - processPackages [doot]: Remove: archive file [/home/abi/fetcher/tmp/doot-0.7.2.tar.gz]
 [2024-04-20 17:43:00] INFO root fetch - main [MainThread]: End processing [doot]: success
 [2024-04-20 17:43:00] INFO root fetch - main [MainThread]: Store serial: [22857045]
+[2024-04-20 17:45:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857045]
+[2024-04-20 17:45:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 17:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytoy
+[2024-04-20 17:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stock-lab
+[2024-04-20 17:45:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dcicutils
+[2024-04-20 17:45:09] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b9] Old Version: [8.8.3.1b8]
+[2024-04-20 17:45:09] INFO root fetch - processPackages [pytoy]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 17:45:09] WARNING root fetch - processPackages [stock-lab]: Skipping, unable to determine old version
+[2024-04-20 17:45:09] INFO root fetch - main [MainThread]: End processing [stock-lab] error
+[2024-04-20 17:45:09] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/55/29/62f5a247f04b2bf0f9da53bf75c80ebc4731638e110560a1b0c2b690b9e1/dcicutils-8.8.3.1b8.tar.gz
+[2024-04-20 17:45:09] INFO root fetch - processPackages [pytoy]: Downloading https://files.pythonhosted.org/packages/b1/96/a29f0cd9ed57bf2c42ed548c1510f4505f4134b80252ab1220e7a8d001ae/pytoy-0.0.3.tar.gz
+[2024-04-20 17:45:09] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/b0/95/6db1d9193aaea7ab397457bf7e746f08cfefd565b4982b943b44ba844a74/dcicutils-8.8.3.1b9.tar.gz
+[2024-04-20 17:45:09] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-20 17:45:09] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b8.tar.gz tmp/dcicutils-8.8.3.1b9.tar.gz --markdown 20240420/d/dcicutils/8.8.3.1b8-8.8.3.1b9/README.md --exclude *.pyd
+[2024-04-20 17:45:09] INFO root fetch - processPackages [pytoy]: Downloading https://files.pythonhosted.org/packages/7e/0d/dc504578889796797744b0bc509cc7ed46b92e3d99bdc39d6dca099e4ccb/pytoy-0.0.4.tar.gz
+[2024-04-20 17:45:10] INFO root fetch - processPackages [pytoy]: executing diffoscope
+[2024-04-20 17:45:10] INFO root fetch - processPackages [pytoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytoy-0.0.3.tar.gz tmp/pytoy-0.0.4.tar.gz --markdown 20240420/p/pytoy/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 17:45:10] INFO root fetch - processPackages [pytoy]: Remove: archive file [/home/abi/fetcher/tmp/pytoy-0.0.3.tar.gz]
+[2024-04-20 17:45:10] INFO root fetch - processPackages [pytoy]: Remove: archive file [/home/abi/fetcher/tmp/pytoy-0.0.4.tar.gz]
+[2024-04-20 17:45:10] INFO root fetch - main [MainThread]: End processing [pytoy]: success
+[2024-04-20 17:45:10] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b8.tar.gz]
+[2024-04-20 17:45:10] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b9.tar.gz]
+[2024-04-20 17:45:10] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-20 17:45:10] INFO root fetch - main [MainThread]: Store serial: [22857057]
