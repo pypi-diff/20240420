@@ -16350,3 +16350,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
 [2024-04-20 15:22:02] INFO root fetch - main [MainThread]: End processing [pyHana]: success
 [2024-04-20 15:22:02] INFO root fetch - main [MainThread]: Store serial: [22856001]
+[2024-04-20 15:24:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856001]
+[2024-04-20 15:24:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ParendumLib
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scalegen-cli
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stela-professional
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp-pedrolsilva
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: few-shot-learning-nlp
+[2024-04-20 15:24:12] WARNING root fetch - processPackages [few-shot-learning-nlp-pedrolsilva]: Skipping, unable to determine old version
+[2024-04-20 15:24:12] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp-pedrolsilva] error
+[2024-04-20 15:24:12] WARNING root fetch - processPackages [few-shot-learning-nlp]: Skipping, unable to determine old version
+[2024-04-20 15:24:12] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp] error
+[2024-04-20 15:24:12] INFO root fetch - processPackages [ParendumLib]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-20 15:24:12] INFO root fetch - processPackages [scalegen-cli]: New version: [0.0.2.post1] Old Version: [0.0.2]
+[2024-04-20 15:24:12] INFO root fetch - processPackages [stela-professional]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 15:24:13] INFO root fetch - processPackages [ParendumLib]: Downloading https://files.pythonhosted.org/packages/60/41/a30379203ec51e200272bd25087b8f1822b7897c919b665674d845e1f60e/ParendumLib-0.2.2.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [scalegen-cli]: Downloading https://files.pythonhosted.org/packages/f3/bc/4dbe172897c5853fd9a21da792a5fc7271b09debf4e1e0aad67249a7d3f5/scalegen-cli-0.0.2.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/46/8e/c7d4dd1508a086347d0a0af56b54c6c72e16117fd5d6a8fcb196c9428de0/stela_professional-0.4.0.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [ParendumLib]: Downloading https://files.pythonhosted.org/packages/69/fa/46748edab74355957c5846fcee74bfc377dcc34817ed20f9adaa107871b5/ParendumLib-0.2.3.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [scalegen-cli]: Downloading https://files.pythonhosted.org/packages/de/5e/1928b961eecbd243c8a8c84d615c6770b70e7e940b6d28fc9a991abbabe3/scalegen-cli-0.0.2.post1.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [ParendumLib]: executing diffoscope
+[2024-04-20 15:24:13] INFO root fetch - processPackages [ParendumLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ParendumLib-0.2.2.tar.gz tmp/ParendumLib-0.2.3.tar.gz --markdown 20240420/P/ParendumLib/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-20 15:24:13] INFO root fetch - processPackages [scalegen-cli]: executing diffoscope
+[2024-04-20 15:24:13] INFO root fetch - processPackages [scalegen-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalegen-cli-0.0.2.tar.gz tmp/scalegen-cli-0.0.2.post1.tar.gz --markdown 20240420/s/scalegen-cli/0.0.2-0.0.2.post1/README.md --exclude *.pyd
+[2024-04-20 15:24:13] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/2e/7d/0b6049e08e623a4f5b6d72a01c96f457e8e0d2b498e9aa663b88fadc07ce/stela_professional-0.4.1.tar.gz
+[2024-04-20 15:24:13] INFO root fetch - processPackages [stela-professional]: executing diffoscope
+[2024-04-20 15:24:13] INFO root fetch - processPackages [stela-professional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stela_professional-0.4.0.tar.gz tmp/stela_professional-0.4.1.tar.gz --markdown 20240420/s/stela-professional/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 15:24:14] INFO root fetch - processPackages [ParendumLib]: Remove: archive file [/home/abi/fetcher/tmp/ParendumLib-0.2.2.tar.gz]
+[2024-04-20 15:24:14] INFO root fetch - processPackages [ParendumLib]: Remove: archive file [/home/abi/fetcher/tmp/ParendumLib-0.2.3.tar.gz]
+[2024-04-20 15:24:14] INFO root fetch - main [MainThread]: End processing [ParendumLib]: success
+[2024-04-20 15:24:14] INFO root fetch - processPackages [scalegen-cli]: Remove: archive file [/home/abi/fetcher/tmp/scalegen-cli-0.0.2.tar.gz]
+[2024-04-20 15:24:14] INFO root fetch - processPackages [scalegen-cli]: Remove: archive file [/home/abi/fetcher/tmp/scalegen-cli-0.0.2.post1.tar.gz]
+[2024-04-20 15:24:14] INFO root fetch - main [MainThread]: End processing [scalegen-cli]: success
+[2024-04-20 15:24:15] INFO root fetch - processPackages [stela-professional]: Remove: archive file [/home/abi/fetcher/tmp/stela_professional-0.4.0.tar.gz]
+[2024-04-20 15:24:15] INFO root fetch - processPackages [stela-professional]: Remove: archive file [/home/abi/fetcher/tmp/stela_professional-0.4.1.tar.gz]
+[2024-04-20 15:24:15] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
+[2024-04-20 15:24:15] INFO root fetch - main [MainThread]: Store serial: [22856016]
