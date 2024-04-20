@@ -17168,3 +17168,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:14:26] INFO root fetch - processPackages [kustomize]: Remove: archive file [/home/abi/fetcher/tmp/kustomize-0.6.0.tar.gz]
 [2024-04-20 16:14:26] INFO root fetch - main [MainThread]: End processing [kustomize]: success
 [2024-04-20 16:14:26] INFO root fetch - main [MainThread]: Store serial: [22856515]
+[2024-04-20 16:16:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856515]
+[2024-04-20 16:16:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 16:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: termii-python-client
+[2024-04-20 16:16:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: StringDataDeque
+[2024-04-20 16:16:35] INFO root fetch - processPackages [termii-python-client]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-20 16:16:35] INFO root fetch - processPackages [StringDataDeque]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 16:16:36] INFO root fetch - processPackages [termii-python-client]: Downloading https://files.pythonhosted.org/packages/02/eb/4606f939233a87ef5aabd2465b7dd55e18be3f8779d0ee47fdde4e63610c/termii_python_client-1.3.0.tar.gz
+[2024-04-20 16:16:36] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/bd/3e/64b6f879d75a41c0e9938de7c6560ca0687f4bd5fd1625628ba844417035/StringDataDeque-1.0.1.tar.gz
+[2024-04-20 16:16:36] INFO root fetch - processPackages [termii-python-client]: Downloading https://files.pythonhosted.org/packages/c5/38/a216964e6711d55a2719c7381dc9dd15b6bd5b2a00ab2cbeddbb3327cb70/termii_python_client-1.3.1.tar.gz
+[2024-04-20 16:16:36] INFO root fetch - processPackages [StringDataDeque]: Downloading https://files.pythonhosted.org/packages/0c/59/c723bef16daa95ae2e00008cbe7744cfa1d90cc5333981688c3c421c74ad/stringdatadeque-1.0.2.tar.gz
+[2024-04-20 16:16:36] INFO root fetch - processPackages [termii-python-client]: executing diffoscope
+[2024-04-20 16:16:36] INFO root fetch - processPackages [termii-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/termii_python_client-1.3.0.tar.gz tmp/termii_python_client-1.3.1.tar.gz --markdown 20240420/t/termii-python-client/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-20 16:16:36] INFO root fetch - processPackages [StringDataDeque]: executing diffoscope
+[2024-04-20 16:16:36] INFO root fetch - processPackages [StringDataDeque]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/StringDataDeque-1.0.1.tar.gz tmp/stringdatadeque-1.0.2.tar.gz --markdown 20240420/S/StringDataDeque/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 16:16:37] INFO root fetch - processPackages [termii-python-client]: Remove: archive file [/home/abi/fetcher/tmp/termii_python_client-1.3.0.tar.gz]
+[2024-04-20 16:16:37] INFO root fetch - processPackages [termii-python-client]: Remove: archive file [/home/abi/fetcher/tmp/termii_python_client-1.3.1.tar.gz]
+[2024-04-20 16:16:37] INFO root fetch - main [MainThread]: End processing [termii-python-client]: success
+[2024-04-20 16:16:37] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/StringDataDeque-1.0.1.tar.gz]
+[2024-04-20 16:16:37] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.0.2.tar.gz]
+[2024-04-20 16:16:37] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
+[2024-04-20 16:16:37] INFO root fetch - main [MainThread]: Store serial: [22856524]
