@@ -18792,3 +18792,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:04:48] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.7.tar.gz]
 [2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
 [2024-04-20 18:04:48] INFO root fetch - main [MainThread]: Store serial: [22857257]
+[2024-04-20 18:06:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857257]
+[2024-04-20 18:06:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dolibarrpy
+[2024-04-20 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliste
+[2024-04-20 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: HawaData
+[2024-04-20 18:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auto-vtna
+[2024-04-20 18:06:57] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-20 18:06:57] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/32/cf/1d4d6116589c9542db3962cfa13808db76581ba3236819606d32fb74e133/dolibarrpy-0.2.3.tar.gz
+[2024-04-20 18:06:57] INFO root fetch - processPackages [auto-vtna]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 18:06:57] INFO root fetch - processPackages [aliste]: New version: [1.0.0] Old Version: [0.1.9]
+[2024-04-20 18:06:57] INFO root fetch - processPackages [HawaData]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 18:06:58] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/8d/4b/e8d17056a492b236f38c153fc4352d7fce852585bf0d203fbafa7304fd33/aliste-0.1.9.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [auto-vtna]: Downloading https://files.pythonhosted.org/packages/28/49/cc5f97fbdcb9f6b011564dc730af4a8363e1042b65f248e3322c66847854/auto_vtna-1.0.1.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/54/62/07ba491a009c60ed1a2e13076e2b276380ab024ad1b0fe9239d79e73e30f/HawaData-0.9.2.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/30/bb/da51d93232f2185d5945674ffed8d0c143b439f7829a25ff6a1d5ca03935/dolibarrpy-0.2.4.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 18:06:58] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.3.tar.gz tmp/dolibarrpy-0.2.4.tar.gz --markdown 20240420/d/dolibarrpy/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-20 18:06:58] INFO root fetch - processPackages [auto-vtna]: Downloading https://files.pythonhosted.org/packages/fa/d0/8509bea9a7c38fa806d3c770fb4e25eba54ae8ed348b3fe76541e14cc1a1/auto_vtna-1.0.2.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/5a/59/d12c51d9ffef64773b0d01d8903a70059420daa7d9f0f75df9c79f9449ae/aliste-1.0.0.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [HawaData]: Downloading https://files.pythonhosted.org/packages/95/58/2cdac667a1836addfd4afed0a282ba9b734f08f76df287b35dcfa0d5e79e/HawaData-0.9.3.tar.gz
+[2024-04-20 18:06:58] INFO root fetch - processPackages [aliste]: executing diffoscope
+[2024-04-20 18:06:58] INFO root fetch - processPackages [aliste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliste-0.1.9.tar.gz tmp/aliste-1.0.0.tar.gz --markdown 20240420/a/aliste/0.1.9-1.0.0/README.md --exclude *.pyd
+[2024-04-20 18:06:58] INFO root fetch - processPackages [HawaData]: executing diffoscope
+[2024-04-20 18:06:58] INFO root fetch - processPackages [HawaData]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HawaData-0.9.2.tar.gz tmp/HawaData-0.9.3.tar.gz --markdown 20240420/H/HawaData/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 18:06:58] INFO root fetch - processPackages [auto-vtna]: executing diffoscope
+[2024-04-20 18:06:58] INFO root fetch - processPackages [auto-vtna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_vtna-1.0.1.tar.gz tmp/auto_vtna-1.0.2.tar.gz --markdown 20240420/a/auto-vtna/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 18:06:58] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.3.tar.gz]
+[2024-04-20 18:06:58] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.4.tar.gz]
+[2024-04-20 18:06:58] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 18:06:59] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-0.1.9.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-1.0.0.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - main [MainThread]: End processing [aliste]: success
+[2024-04-20 18:06:59] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.2.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - processPackages [HawaData]: Remove: archive file [/home/abi/fetcher/tmp/HawaData-0.9.3.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - main [MainThread]: End processing [HawaData]: success
+[2024-04-20 18:06:59] INFO root fetch - processPackages [auto-vtna]: Remove: archive file [/home/abi/fetcher/tmp/auto_vtna-1.0.1.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - processPackages [auto-vtna]: Remove: archive file [/home/abi/fetcher/tmp/auto_vtna-1.0.2.tar.gz]
+[2024-04-20 18:06:59] INFO root fetch - main [MainThread]: End processing [auto-vtna]: success
+[2024-04-20 18:06:59] INFO root fetch - main [MainThread]: Store serial: [22857268]
