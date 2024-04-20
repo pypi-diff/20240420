@@ -9599,3 +9599,35 @@
 [2024-04-20 06:44:15] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.0.tar.gz]
 [2024-04-20 06:44:15] INFO root fetch - main [MainThread]: End processing [fisspy]: success
 [2024-04-20 06:44:15] INFO root fetch - main [MainThread]: Store serial: [22852584]
+[2024-04-20 06:46:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852584]
+[2024-04-20 06:46:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 06:48:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852584]
+[2024-04-20 06:48:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 06:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: haskellian-either
+[2024-04-20 06:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edstem-assignment-tracker
+[2024-04-20 06:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-offset
+[2024-04-20 06:48:30] INFO root fetch - processPackages [haskellian-either]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-20 06:48:30] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 06:48:30] INFO root fetch - processPackages [llm-offset]: New version: [0.3.1] Old Version: [0.2.0]
+[2024-04-20 06:48:30] INFO root fetch - processPackages [haskellian-either]: Downloading https://files.pythonhosted.org/packages/84/68/aed9f24cb93e4f4c8db12cbc949f772ae0814fe33d9e1c89653cc6325b1f/haskellian_either-0.1.7.tar.gz
+[2024-04-20 06:48:30] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 06:48:30] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/5e/ce/b4426b56f8b76758c09aba7cdc0416ec731acf95645ea0f3fd5152e86fdf/llm_offset-0.2.0.tar.gz
+[2024-04-20 06:48:30] INFO root fetch - processPackages [haskellian-either]: Downloading https://files.pythonhosted.org/packages/1a/10/b8f688147cdd7b493f7e7244485ccafa6a8624802bfdc31e2791db7f329f/haskellian_either-0.1.8.tar.gz
+[2024-04-20 06:48:30] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 06:48:31] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 06:48:31] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 06:48:31] INFO root fetch - processPackages [haskellian-either]: executing diffoscope
+[2024-04-20 06:48:31] INFO root fetch - processPackages [haskellian-either]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haskellian_either-0.1.7.tar.gz tmp/haskellian_either-0.1.8.tar.gz --markdown 20240420/h/haskellian-either/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/8d/d1/845d3b716175fb2043a9c0fed18bf63045a941264869ed0026391598be3a/llm_offset-0.3.1.tar.gz
+[2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: executing diffoscope
+[2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_offset-0.2.0.tar.gz tmp/llm_offset-0.3.1.tar.gz --markdown 20240420/l/llm-offset/0.2.0-0.3.1/README.md --exclude *.pyd
+[2024-04-20 06:48:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 06:48:31] INFO root fetch - processPackages [haskellian-either]: Remove: archive file [/home/abi/fetcher/tmp/haskellian_either-0.1.7.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - processPackages [haskellian-either]: Remove: archive file [/home/abi/fetcher/tmp/haskellian_either-0.1.8.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - main [MainThread]: End processing [haskellian-either]: success
+[2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.2.0.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.3.1.tar.gz]
+[2024-04-20 06:48:31] INFO root fetch - main [MainThread]: End processing [llm-offset]: success
+[2024-04-20 06:48:31] INFO root fetch - main [MainThread]: Store serial: [22852592]
