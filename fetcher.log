@@ -22225,3 +22225,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:37:45] INFO root fetch - processPackages [skpro]: Remove: archive file [/home/abi/fetcher/tmp/skpro-2.2.2.tar.gz]
 [2024-04-20 21:37:45] INFO root fetch - main [MainThread]: End processing [skpro]: success
 [2024-04-20 21:37:45] INFO root fetch - main [MainThread]: Store serial: [22858893]
+[2024-04-20 21:39:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858893]
+[2024-04-20 21:39:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 21:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-20 21:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pywal16
+[2024-04-20 21:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fin-maestro-kin
+[2024-04-20 21:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wagtail-fedit
+[2024-04-20 21:39:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC195
+[2024-04-20 21:39:54] INFO root fetch - processPackages [notfunny]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-04-20 21:39:54] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4c/14/f034f9fdf8a8b175898504088bec96216edbd60ea20ef0163f26e1b12ee0/notfunny-0.6.3.tar.gz
+[2024-04-20 21:39:54] INFO root fetch - processPackages [fin-maestro-kin]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-20 21:39:54] WARNING root fetch - processPackages [PythonTestLJC195]: Skipping, unable to determine old version
+[2024-04-20 21:39:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC195] error
+[2024-04-20 21:39:54] INFO root fetch - processPackages [pywal16]: New version: [3.5.1] Old Version: [3.5.0]
+[2024-04-20 21:39:54] INFO root fetch - processPackages [wagtail-fedit]: New version: [1.5.1a3] Old Version: [1.5.1a2]
+[2024-04-20 21:39:54] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/49/3c/61ac3f4ade0c067f737c6e3cf1ff39df95638fa5c78783455c7f88ace3a3/fin_maestro_kin-0.2.4.tar.gz
+[2024-04-20 21:39:54] INFO root fetch - processPackages [pywal16]: Downloading https://files.pythonhosted.org/packages/26/fb/fc6e18f56891b388aea302dd1d9423106b39d75f829d8d88acfca43b3f56/pywal16-3.5.0-py3-none-any.whl
+[2024-04-20 21:39:54] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/45/c0/d75a063779eb09b7146fe57ae43d2adbf62b22e4e1b12211f3235cad7361/wagtail_fedit-1.5.1a2.tar.gz
+[2024-04-20 21:39:54] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/c8/77/fdf1c1fa24dc2f878bae090cb54de4367818bccc69f4597996845505fe8b/notfunny-0.6.4.tar.gz
+[2024-04-20 21:39:54] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 21:39:54] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.3.tar.gz tmp/notfunny-0.6.4.tar.gz --markdown 20240420/n/notfunny/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-04-20 21:39:54] INFO root fetch - processPackages [wagtail-fedit]: Downloading https://files.pythonhosted.org/packages/8f/7f/6a168e3d60b0248f0f5a9ab7de6156dc47a3f1cdcc4ce70cb51e8728332b/wagtail_fedit-1.5.1a3.tar.gz
+[2024-04-20 21:39:55] INFO root fetch - processPackages [fin-maestro-kin]: Downloading https://files.pythonhosted.org/packages/b3/81/b391c8c129477ff5dfbac3b05273a3f6fd091677505032a7807f28ca4521/fin_maestro_kin-0.2.5.tar.gz
+[2024-04-20 21:39:55] INFO root fetch - processPackages [pywal16]: Downloading https://files.pythonhosted.org/packages/6a/29/078d6e9ca0ce2cae24d4907a1be37ec5fb041a8edee835a01b0fbaaf4773/pywal16-3.5.1-py3-none-any.whl
+[2024-04-20 21:39:55] INFO root fetch - processPackages [wagtail-fedit]: executing diffoscope
+[2024-04-20 21:39:55] INFO root fetch - processPackages [wagtail-fedit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail_fedit-1.5.1a2.tar.gz tmp/wagtail_fedit-1.5.1a3.tar.gz --markdown 20240420/w/wagtail-fedit/1.5.1a2-1.5.1a3/README.md --exclude *.pyd
+[2024-04-20 21:39:55] INFO root fetch - processPackages [fin-maestro-kin]: executing diffoscope
+[2024-04-20 21:39:55] INFO root fetch - processPackages [fin-maestro-kin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fin_maestro_kin-0.2.4.tar.gz tmp/fin_maestro_kin-0.2.5.tar.gz --markdown 20240420/f/fin-maestro-kin/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-20 21:39:55] INFO root fetch - processPackages [pywal16]: executing diffoscope
+[2024-04-20 21:39:55] INFO root fetch - processPackages [pywal16]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywal16-3.5.0-py3-none-any.whl.zip tmp/pywal16-3.5.1-py3-none-any.whl.zip --markdown 20240420/p/pywal16/3.5.0-3.5.1/README.md --exclude *.pyd
+[2024-04-20 21:39:55] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.3.tar.gz]
+[2024-04-20 21:39:55] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.4.tar.gz]
+[2024-04-20 21:39:55] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 21:39:55] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.4.tar.gz]
+[2024-04-20 21:39:55] INFO root fetch - processPackages [fin-maestro-kin]: Remove: archive file [/home/abi/fetcher/tmp/fin_maestro_kin-0.2.5.tar.gz]
+[2024-04-20 21:39:55] INFO root fetch - main [MainThread]: End processing [fin-maestro-kin]: success
+[2024-04-20 21:39:56] INFO root fetch - processPackages [pywal16]: Remove: archive file [/home/abi/fetcher/tmp/pywal16-3.5.0-py3-none-any.whl.zip]
+[2024-04-20 21:39:56] INFO root fetch - processPackages [pywal16]: Remove: archive file [/home/abi/fetcher/tmp/pywal16-3.5.1-py3-none-any.whl.zip]
+[2024-04-20 21:39:56] INFO root fetch - main [MainThread]: End processing [pywal16]: success
+[2024-04-20 21:39:56] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.1a2.tar.gz]
+[2024-04-20 21:39:56] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.1a3.tar.gz]
+[2024-04-20 21:39:56] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
+[2024-04-20 21:39:56] INFO root fetch - main [MainThread]: Store serial: [22858907]
