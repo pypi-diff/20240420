@@ -11723,3 +11723,9 @@
 [2024-04-20 09:52:06] INFO root fetch - processPackages [GitHubKit]: Remove: archive file [/home/abi/fetcher/tmp/githubkit-0.9.8.tar.gz]
 [2024-04-20 09:52:06] INFO root fetch - main [MainThread]: End processing [GitHubKit]: success
 [2024-04-20 09:52:06] INFO root fetch - main [MainThread]: Store serial: [22853705]
+[2024-04-20 09:54:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853705]
+[2024-04-20 09:54:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 09:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: malfetcher
+[2024-04-20 09:54:16] WARNING root fetch - processPackages [malfetcher]: Skipping, unable to determine old version
+[2024-04-20 09:54:16] INFO root fetch - main [MainThread]: End processing [malfetcher] error
+[2024-04-20 09:54:16] INFO root fetch - main [MainThread]: Store serial: [22853710]
