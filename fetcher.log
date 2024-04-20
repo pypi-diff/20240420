@@ -20300,3 +20300,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
 [2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
 [2024-04-20 19:41:00] INFO root fetch - main [MainThread]: Store serial: [22857942]
+[2024-04-20 19:43:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857942]
+[2024-04-20 19:43:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 19:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ReFrame-HPC
+[2024-04-20 19:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-chip-filter
+[2024-04-20 19:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC153
+[2024-04-20 19:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdf-preview
+[2024-04-20 19:43:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cs2-battle-bot-api-client
+[2024-04-20 19:43:10] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:43:10] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 19:43:10] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-20 19:43:10] WARNING root fetch - processPackages [PythonTestLJC153]: Skipping, unable to determine old version
+[2024-04-20 19:43:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC153] error
+[2024-04-20 19:43:10] INFO root fetch - processPackages [pdf-preview]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-20 19:43:10] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/7f/c7/902d7fd01181920add623561a4bbeab389e93cea7204accc559a9f25247a/streamlit-chip-filter-0.0.2.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [ReFrame-HPC]: New version: [4.6.0] Old Version: [4.5.2]
+[2024-04-20 19:43:10] INFO root fetch - processPackages [pdf-preview]: Downloading https://files.pythonhosted.org/packages/04/14/b20eaca8efa3961f553bf5d302400f46d1c1cb2a3f19991ccd584c088e31/pdf_preview-0.2.0.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [ReFrame-HPC]: Downloading https://files.pythonhosted.org/packages/4c/9e/5f38ec4d571df5d98e44546a3c42d02db85e37c1ff60cfb7078ac2620a72/ReFrame-HPC-4.5.2.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-20 19:43:10] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240420/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:43:10] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/03/9f/dbfc450359086d6accbefc84ce13fc128308344b43bf2cb807a9542586cf/streamlit-chip-filter-0.0.3.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 19:43:10] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.2.tar.gz tmp/streamlit-chip-filter-0.0.3.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 19:43:10] INFO root fetch - processPackages [ReFrame-HPC]: Downloading https://files.pythonhosted.org/packages/ea/34/32f0377959e388f711ac04775fade54e29dd322757f08555cd011b22b7b5/reframe_hpc-4.6.0.tar.gz
+[2024-04-20 19:43:10] INFO root fetch - processPackages [ReFrame-HPC]: executing diffoscope
+[2024-04-20 19:43:10] INFO root fetch - processPackages [ReFrame-HPC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ReFrame-HPC-4.5.2.tar.gz tmp/reframe_hpc-4.6.0.tar.gz --markdown 20240420/R/ReFrame-HPC/4.5.2-4.6.0/README.md --exclude *.pyd
+[2024-04-20 19:43:11] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-20 19:43:11] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-20 19:43:11] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-20 19:43:12] INFO root fetch - processPackages [ReFrame-HPC]: Remove: archive file [/home/abi/fetcher/tmp/ReFrame-HPC-4.5.2.tar.gz]
+[2024-04-20 19:43:12] INFO root fetch - processPackages [ReFrame-HPC]: Remove: archive file [/home/abi/fetcher/tmp/reframe_hpc-4.6.0.tar.gz]
+[2024-04-20 19:43:12] INFO root fetch - main [MainThread]: End processing [ReFrame-HPC]: success
+[2024-04-20 19:43:12] INFO root fetch - processPackages [pdf-preview]: Downloading https://files.pythonhosted.org/packages/9f/4f/ed84d41e00ec6816d6fcfa0452efe800713445b02807cb3ca73d39ab7425/pdf_preview-0.3.0.tar.gz
+[2024-04-20 19:43:15] INFO root fetch - processPackages [pdf-preview]: executing diffoscope
+[2024-04-20 19:43:15] INFO root fetch - processPackages [pdf-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf_preview-0.2.0.tar.gz tmp/pdf_preview-0.3.0.tar.gz --markdown 20240420/p/pdf-preview/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-04-20 19:43:18] INFO root fetch - processPackages [pdf-preview]: Remove: archive file [/home/abi/fetcher/tmp/pdf_preview-0.2.0.tar.gz]
+[2024-04-20 19:43:18] INFO root fetch - processPackages [pdf-preview]: Remove: archive file [/home/abi/fetcher/tmp/pdf_preview-0.3.0.tar.gz]
+[2024-04-20 19:43:18] INFO root fetch - main [MainThread]: End processing [pdf-preview]: success
+[2024-04-20 19:43:23] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.2.tar.gz]
+[2024-04-20 19:43:23] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.3.tar.gz]
+[2024-04-20 19:43:23] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 19:43:23] INFO root fetch - main [MainThread]: Store serial: [22857959]
