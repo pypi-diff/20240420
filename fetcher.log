@@ -21878,3 +21878,84 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:20:12] INFO root fetch - processPackages [django-pghistory]: Remove: archive file [/home/abi/fetcher/tmp/django_pghistory-3.2.0.tar.gz]
 [2024-04-20 21:20:12] INFO root fetch - main [MainThread]: End processing [django-pghistory]: success
 [2024-04-20 21:20:12] INFO root fetch - main [MainThread]: Store serial: [22858730]
+[2024-04-20 21:22:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858730]
+[2024-04-20 21:22:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdworkflow
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: afeng-py-tools
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: showroom
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: showroom
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notfunny
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: utubes
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Fringes-GUI
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gradysim
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jibrish-to-hebrew
+[2024-04-20 21:22:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: PythonTestLJC189
+[2024-04-20 21:22:21] INFO root fetch - processPackages [jibrish-to-hebrew]: New version: [1.4] Old Version: [1.3]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [notfunny]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [Fringes-GUI]: New version: [1.0.0] Old Version: [0.3.3]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [utubes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [gradysim]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [showroom]: New version: [0.2] Old Version: [0.0.1]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [showroom]: New version: [0.2] Old Version: [0.0.1]
+[2024-04-20 21:22:21] INFO root fetch - processPackages [tdworkflow]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-04-20 21:22:21] WARNING root fetch - processPackages [PythonTestLJC189]: Skipping, unable to determine old version
+[2024-04-20 21:22:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC189] error
+[2024-04-20 21:22:21] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4f/8f/ecd687f0f6ce927880f626ca4323f5c1cdb887435181e488b2ddd8840793/notfunny-0.5.8.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [gradysim]: Downloading https://files.pythonhosted.org/packages/94/e9/c670ab308df77aa8e4108148c68a46f197f7271ed79ba572067e67a24f4f/gradysim-0.5.2.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [Fringes-GUI]: Downloading https://files.pythonhosted.org/packages/5d/fe/9a2bb33ea85c3decfc919715e97319d32bb3291bbc2f3bb92d5d9f2ef88f/fringes_gui-0.3.3.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/d2/e5/91bc5e73a5bce4b80f48a5e9e9b1bd239404484593fa343462a49eb01099/utubes-0.0.8.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [jibrish-to-hebrew]: Downloading https://files.pythonhosted.org/packages/a1/f5/ec57d6e92b979c8de494ac74afaa00c76866b235a07184208520b20b33a1/jibrish_to_hebrew-1.3.tar.gz
+[2024-04-20 21:22:21] WARNING root fetch - processPackages [gradysim]: Skipping package: exceeds size limit 14276910>=10485760
+[2024-04-20 21:22:21] INFO root fetch - main [MainThread]: End processing [gradysim] error
+[2024-04-20 21:22:21] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/8c/87/97f8834e99817f53da2a68335897e956c33a498393f821dee73b87a365dc/showroom-0.0.1.tar.gz
+[2024-04-20 21:22:21] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/8c/87/97f8834e99817f53da2a68335897e956c33a498393f821dee73b87a365dc/showroom-0.0.1.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [tdworkflow]: Downloading https://files.pythonhosted.org/packages/37/99/30059f5422341b9896b1fbc2c9f78f0a4d1eadb02cd26c47c0dcc78fa50b/tdworkflow-0.8.3.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/ad/3c/d87ef62d36c61b1172e200f5849918af44af216e763e659ae497bf3f1e14/notfunny-0.5.9.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/aa/9e/f4f060addff3038b06e174480b907bd2e35e83a1950b27a245be95c891d8/utubes-0.0.9.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [jibrish-to-hebrew]: Downloading https://files.pythonhosted.org/packages/a9/7f/9027935c3e030ea61069ef967018c4f68eaf32e2a09f8186df6b53c9c723/jibrish_to_hebrew-1.4.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [Fringes-GUI]: Downloading https://files.pythonhosted.org/packages/f3/f4/c8d9e0627e7551401242857d5d8eca64c3dc436efc58509851acd17a6a5a/fringes_gui-1.0.0.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.8.tar.gz tmp/notfunny-0.5.9.tar.gz --markdown 20240420/n/notfunny/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/d2/92/2e3412dc1f1d110ecc07e290e309b5515b9aa76329c2b369715201f13a96/showroom-0.2.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240420/a/afeng-py-tools/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/d2/92/2e3412dc1f1d110ecc07e290e309b5515b9aa76329c2b369715201f13a96/showroom-0.2.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [jibrish-to-hebrew]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [jibrish-to-hebrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jibrish_to_hebrew-1.3.tar.gz tmp/jibrish_to_hebrew-1.4.tar.gz --markdown 20240420/j/jibrish-to-hebrew/1.3-1.4/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [utubes]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [utubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utubes-0.0.8.tar.gz tmp/utubes-0.0.9.tar.gz --markdown 20240420/u/utubes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [Fringes-GUI]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [Fringes-GUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fringes_gui-0.3.3.tar.gz tmp/fringes_gui-1.0.0.tar.gz --markdown 20240420/F/Fringes-GUI/0.3.3-1.0.0/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [tdworkflow]: Downloading https://files.pythonhosted.org/packages/21/bd/23f442d041db9bd397f5547246e51d5652c4bc31340805725ff4dd6e598e/tdworkflow-0.9.0.tar.gz
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/showroom-0.0.1.tar.gz tmp/showroom-0.2.tar.gz --markdown 20240420/s/showroom/0.0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [showroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/showroom-0.0.1.tar.gz tmp/showroom-0.2.tar.gz --markdown 20240420/s/showroom/0.0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 21:22:22] INFO root fetch - processPackages [tdworkflow]: executing diffoscope
+[2024-04-20 21:22:22] INFO root fetch - processPackages [tdworkflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdworkflow-0.8.3.tar.gz tmp/tdworkflow-0.9.0.tar.gz --markdown 20240420/t/tdworkflow/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-04-20 21:22:23] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.8.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.9.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 21:22:23] INFO root fetch - processPackages [jibrish-to-hebrew]: Remove: archive file [/home/abi/fetcher/tmp/jibrish_to_hebrew-1.3.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [jibrish-to-hebrew]: Remove: archive file [/home/abi/fetcher/tmp/jibrish_to_hebrew-1.4.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [jibrish-to-hebrew]: success
+[2024-04-20 21:22:23] INFO root fetch - processPackages [Fringes-GUI]: Remove: archive file [/home/abi/fetcher/tmp/fringes_gui-0.3.3.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [Fringes-GUI]: Remove: archive file [/home/abi/fetcher/tmp/fringes_gui-1.0.0.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [Fringes-GUI]: success
+[2024-04-20 21:22:23] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.0.1.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.2.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [showroom]: success
+[2024-04-20 21:22:23] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.8.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [utubes]: success
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [showroom]: success
+[2024-04-20 21:22:23] INFO root fetch - processPackages [tdworkflow]: Remove: archive file [/home/abi/fetcher/tmp/tdworkflow-0.8.3.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - processPackages [tdworkflow]: Remove: archive file [/home/abi/fetcher/tmp/tdworkflow-0.9.0.tar.gz]
+[2024-04-20 21:22:23] INFO root fetch - main [MainThread]: End processing [tdworkflow]: success
+[2024-04-20 21:22:24] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-20 21:22:24] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-20 21:22:24] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-20 21:22:24] INFO root fetch - main [MainThread]: Store serial: [22858762]
