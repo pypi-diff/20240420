@@ -7355,3 +7355,60 @@
 [2024-04-20 03:49:26] INFO root fetch - processPackages [apkInspector]: Remove: archive file [/home/abi/fetcher/tmp/apkinspector-1.2.3.tar.gz]
 [2024-04-20 03:49:26] INFO root fetch - main [MainThread]: End processing [apkInspector]: success
 [2024-04-20 03:49:26] INFO root fetch - main [MainThread]: Store serial: [22851676]
+[2024-04-20 03:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851676]
+[2024-04-20 03:51:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: counts
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yxr-porn-core
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modal
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bioregistry
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: modal-client
+[2024-04-20 03:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytest-ignore-flaky
+[2024-04-20 03:51:34] INFO root fetch - processPackages [counts]: New version: [0.9.0] Old Version: [0.0.4]
+[2024-04-20 03:51:34] INFO root fetch - processPackages [yxr-porn-core]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2024-04-20 03:51:34] INFO root fetch - processPackages [modal]: New version: [0.62.95] Old Version: [0.62.94]
+[2024-04-20 03:51:34] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-04-20 03:51:34] INFO root fetch - processPackages [modal-client]: New version: [0.62.95] Old Version: [0.62.94]
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: Downloading https://files.pythonhosted.org/packages/de/db/1a28f0a263f01506ae7162b247071be946a632b2f6bd4baf294aaf896394/yxr_porn_core-0.0.1.8.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [pytest-ignore-flaky]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-20 03:51:35] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/e9/95/6c066d303d9b60b4a0a7b67c1f98bb0ee862e3785a7c4f025a37633530b8/modal-0.62.94-py3-none-any.whl
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/02/e0/00bdd2d44ee7a02721bbe64755ce126896aa99eb1a4b92dd5f55ad086a9e/modal_client-0.62.94-py3-none-any.whl
+[2024-04-20 03:51:35] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/ff/e4/3564989ea84348df077a86904dee7280f677324161ea3f278462a18f32ed/counts-0.0.4.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: Downloading https://files.pythonhosted.org/packages/f6/99/3bcc7d81e5ee12eb8d460f0d4a9b3cde10bb8808d9dd4955cf3ddb42be74/yxr_porn_core-0.0.1.9.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [pytest-ignore-flaky]: Downloading https://files.pythonhosted.org/packages/26/fb/4c2cf03b436ab8a1415bd04ad24affbf2bac430343cf4f3119015b98b33b/pytest-ignore-flaky-2.2.0.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: executing diffoscope
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yxr_porn_core-0.0.1.8.tar.gz tmp/yxr_porn_core-0.0.1.9.tar.gz --markdown 20240420/y/yxr-porn-core/0.0.1.8-0.0.1.9/README.md --exclude *.pyd
+[2024-04-20 03:51:35] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/df/09/113063923c383d3eb905c5bc5770590c43ead0b3bd9f4ef0cbc81c6ba3ac/counts-0.9.0.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/84/05/17b85311a0c46074e2f60f2a9394716879cf374c80a661f86d6368f04010/modal_client-0.62.95-py3-none-any.whl
+[2024-04-20 03:51:35] INFO root fetch - processPackages [counts]: executing diffoscope
+[2024-04-20 03:51:35] INFO root fetch - processPackages [counts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/counts-0.0.4.tar.gz tmp/counts-0.9.0.tar.gz --markdown 20240420/c/counts/0.0.4-0.9.0/README.md --exclude *.pyd
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/3c/6f/bebf3dbee70fd5d37087be7eb3e902a6a17ac96d2116bba3e4b9467605d9/modal-0.62.95-py3-none-any.whl
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.94-py3-none-any.whl.zip tmp/modal_client-0.62.95-py3-none-any.whl.zip --markdown 20240420/m/modal-client/0.62.94-0.62.95/README.md --exclude *.pyd
+[2024-04-20 03:51:35] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [pytest-ignore-flaky]: Downloading https://files.pythonhosted.org/packages/24/8d/d3c8b28c46e11b7323424603f335d2e3e9cb3aed9eb6ca51c0227d1f8040/pytest_ignore_flaky-2.2.1.tar.gz
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-20 03:51:35] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.94-py3-none-any.whl.zip tmp/modal-0.62.95-py3-none-any.whl.zip --markdown 20240420/m/modal/0.62.94-0.62.95/README.md --exclude *.pyd
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: Remove: archive file [/home/abi/fetcher/tmp/yxr_porn_core-0.0.1.8.tar.gz]
+[2024-04-20 03:51:35] INFO root fetch - processPackages [yxr-porn-core]: Remove: archive file [/home/abi/fetcher/tmp/yxr_porn_core-0.0.1.9.tar.gz]
+[2024-04-20 03:51:35] INFO root fetch - main [MainThread]: End processing [yxr-porn-core]: success
+[2024-04-20 03:51:36] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.0.4.tar.gz]
+[2024-04-20 03:51:36] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
+[2024-04-20 03:51:36] INFO root fetch - main [MainThread]: End processing [counts]: success
+[2024-04-20 03:51:36] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.94-py3-none-any.whl.zip]
+[2024-04-20 03:51:36] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.95-py3-none-any.whl.zip]
+[2024-04-20 03:51:36] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-20 03:51:36] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-04-20 03:51:36] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240420/b/bioregistry/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-04-20 03:51:36] INFO root fetch - processPackages [pytest-ignore-flaky]: executing diffoscope
+[2024-04-20 03:51:36] INFO root fetch - processPackages [pytest-ignore-flaky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-ignore-flaky-2.2.0.tar.gz tmp/pytest_ignore_flaky-2.2.1.tar.gz --markdown 20240420/p/pytest-ignore-flaky/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-20 03:51:36] INFO root fetch - processPackages [pytest-ignore-flaky]: Remove: archive file [/home/abi/fetcher/tmp/pytest-ignore-flaky-2.2.0.tar.gz]
+[2024-04-20 03:51:36] INFO root fetch - processPackages [pytest-ignore-flaky]: Remove: archive file [/home/abi/fetcher/tmp/pytest_ignore_flaky-2.2.1.tar.gz]
+[2024-04-20 03:51:36] INFO root fetch - main [MainThread]: End processing [pytest-ignore-flaky]: success
+[2024-04-20 03:51:36] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.94-py3-none-any.whl.zip]
+[2024-04-20 03:51:36] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.95-py3-none-any.whl.zip]
+[2024-04-20 03:51:36] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-20 03:52:43] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-04-20 03:52:43] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-04-20 03:52:43] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-04-20 03:52:43] INFO root fetch - main [MainThread]: Store serial: [22851689]
