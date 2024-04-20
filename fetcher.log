@@ -19080,3 +19080,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:28:55] INFO root fetch - processPackages [cobaya-utilities]: Remove: archive file [/home/abi/fetcher/tmp/cobaya_utilities-0.3.1.tar.gz]
 [2024-04-20 18:28:55] INFO root fetch - main [MainThread]: End processing [cobaya-utilities]: success
 [2024-04-20 18:28:55] INFO root fetch - main [MainThread]: Store serial: [22857404]
+[2024-04-20 18:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857404]
+[2024-04-20 18:31:04] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygamepal
+[2024-04-20 18:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jztools
+[2024-04-20 18:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC127
+[2024-04-20 18:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: noteshrunk
+[2024-04-20 18:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notfunny
+[2024-04-20 18:31:04] INFO root fetch - processPackages [notfunny]: New version: [0.5.0] Old Version: [0.4]
+[2024-04-20 18:31:04] INFO root fetch - processPackages [pygamepal]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-20 18:31:04] WARNING root fetch - processPackages [PythonTestLJC127]: Skipping, unable to determine old version
+[2024-04-20 18:31:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC127] error
+[2024-04-20 18:31:04] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/7d/d9/2bc0340c3b5348e064464ddd658d65082319aaaddf4c0487eca1002e28dd/notfunny-0.4.tar.gz
+[2024-04-20 18:31:04] INFO root fetch - processPackages [pygamepal]: Downloading https://files.pythonhosted.org/packages/37/a5/8a84ebfc61f8ddebf101bae6eab834a0f1ba482dc02aa25ace96943b3aa6/pygamepal-0.3.4.tar.gz
+[2024-04-20 18:31:04] INFO root fetch - processPackages [noteshrunk]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-20 18:31:04] INFO root fetch - processPackages [jztools]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-04-20 18:31:04] WARNING root fetch - processPackages [pygamepal]: Skipping package: exceeds size limit 18526027>=10485760
+[2024-04-20 18:31:04] INFO root fetch - main [MainThread]: End processing [pygamepal] error
+[2024-04-20 18:31:04] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/6d/99/3a276d605ae0464d1eaddeb4fb330b7b87c19fd5c5bcdade35ef3d9d88b0/noteshrunk-1.3.0.tar.gz
+[2024-04-20 18:31:04] INFO root fetch - processPackages [jztools]: Downloading https://files.pythonhosted.org/packages/89/bb/89ce97a598a2a8b979aaf4dabded7625ba5b629a40163f2d827c8c7ed724/jztools-0.1.3.tar.gz
+[2024-04-20 18:31:04] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4e/88/fd9e76f74b75f3f8bf3f57d82bb4342f25fd2c76a2d72ff885091f766dd2/notfunny-0.5.0.tar.gz
+[2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: Downloading https://files.pythonhosted.org/packages/03/b7/18ea36e4a133fd91ff54990915a0b6256c6ce07bde6b313b614d12818975/jztools-0.1.5.tar.gz
+[2024-04-20 18:31:05] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:31:05] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.4.tar.gz tmp/notfunny-0.5.0.tar.gz --markdown 20240420/n/notfunny/0.4-0.5.0/README.md --exclude *.pyd
+[2024-04-20 18:31:05] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/e5/22/1aa5c8f535b824c6e2d6e4edddfd64e33a2fde9d63751a0499265410bf47/noteshrunk-1.4.0.tar.gz
+[2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: executing diffoscope
+[2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jztools-0.1.3.tar.gz tmp/jztools-0.1.5.tar.gz --markdown 20240420/j/jztools/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-04-20 18:31:05] INFO root fetch - processPackages [noteshrunk]: executing diffoscope
+[2024-04-20 18:31:05] INFO root fetch - processPackages [noteshrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteshrunk-1.3.0.tar.gz tmp/noteshrunk-1.4.0.tar.gz --markdown 20240420/n/noteshrunk/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-20 18:31:05] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.4.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.0.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:31:05] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.3.0.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.4.0.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
+[2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: Remove: archive file [/home/abi/fetcher/tmp/jztools-0.1.3.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: Remove: archive file [/home/abi/fetcher/tmp/jztools-0.1.5.tar.gz]
+[2024-04-20 18:31:05] INFO root fetch - main [MainThread]: End processing [jztools]: success
+[2024-04-20 18:31:05] INFO root fetch - main [MainThread]: Store serial: [22857420]
