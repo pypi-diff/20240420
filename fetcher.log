@@ -3059,3 +3059,39 @@
 [2024-04-20 02:52:43] INFO root fetch - processPackages [gdshoplib]: Remove: archive file [/home/abi/fetcher/tmp/gdshoplib-2.5.0.tar.gz]
 [2024-04-20 02:52:43] INFO root fetch - main [MainThread]: End processing [gdshoplib]: success
 [2024-04-20 02:52:43] INFO root fetch - main [MainThread]: Store serial: [22850213]
+[2024-04-20 02:54:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850213]
+[2024-04-20 02:54:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 02:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-20 02:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2024-04-20 02:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pycde
+[2024-04-20 02:54:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lbt-dragonfly
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-20 02:54:52] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-20 02:54:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-20 02:54:52] INFO root fetch - processPackages [pycde]: New version: [0.3.1.dev880] Old Version: [0.3.1.dev877]
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/18/dc/597b4a8ac2e6af3728202a8c6ea0d1f9fe7c09009f2a004869d94878ca1e/pycde-0.3.1.dev877-cp39-cp39-win_amd64.whl
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240420/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-20 02:54:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-20 02:54:52] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 02:54:52] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240420/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-20 02:54:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-04-20 02:54:52] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240420/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-20 02:54:52] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-20 02:54:52] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-20 02:54:52] INFO root fetch - processPackages [pycde]: Downloading https://files.pythonhosted.org/packages/71/2a/94807cffd7add143949c5ccdf018c107b99477986b66206be19ed665f4ea/pycde-0.3.1.dev880-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 02:54:53] WARNING root fetch - processPackages [pycde]: Skipping package: exceeds size limit 21283712>=10485760
+[2024-04-20 02:54:53] INFO root fetch - main [MainThread]: End processing [pycde] error
+[2024-04-20 02:54:53] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-20 02:54:53] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-20 02:54:53] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 02:54:53] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-04-20 02:54:53] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-04-20 02:54:53] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-04-20 02:54:53] INFO root fetch - main [MainThread]: Store serial: [22850224]
