@@ -16146,3 +16146,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:03:48] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
 [2024-04-20 15:03:48] INFO root fetch - main [MainThread]: End processing [logger-local]: success
 [2024-04-20 15:03:48] INFO root fetch - main [MainThread]: Store serial: [22855871]
+[2024-04-20 15:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855871]
+[2024-04-20 15:05:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 15:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-04-20 15:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC053
+[2024-04-20 15:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eval-type-backport
+[2024-04-20 15:05:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bastet
+[2024-04-20 15:05:58] INFO root fetch - processPackages [bastet]: New version: [0.0.20.dev8] Old Version: [0.0.20.dev7]
+[2024-04-20 15:05:58] INFO root fetch - processPackages [bellek]: New version: [0.92.3] Old Version: [0.92.2]
+[2024-04-20 15:05:58] INFO root fetch - processPackages [eval-type-backport]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-04-20 15:05:58] WARNING root fetch - processPackages [PythonTestLJC053]: Skipping, unable to determine old version
+[2024-04-20 15:05:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC053] error
+[2024-04-20 15:05:58] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/9d/4a/c5941511643d264f5a61782e4f4326daf4da0eeb5003b6bb4b638d1776b1/bellek-0.92.2.tar.gz
+[2024-04-20 15:05:58] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/3c/fe/dd187ed39412f0b90c8317b548a3612bfdcb1a60b34ed3b2ff6f3aeae994/bastet-0.0.20.dev7.tar.gz
+[2024-04-20 15:05:58] INFO root fetch - processPackages [eval-type-backport]: Downloading https://files.pythonhosted.org/packages/5b/c1/b5153e71005f01f5a56a717ccfbfd953e7adb1e1253fb97660c46d4bcc9d/eval_type_backport-0.1.3.tar.gz
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bastet]: Downloading https://files.pythonhosted.org/packages/66/27/e41a58af9e46c09ad0deb31b7fb841d6a434f36e9d45230122caf2743c3e/bastet-0.0.20.dev8.tar.gz
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/34/bc/6680b4eddd3aba48f3d9eceffb9a05ccf3f602ee576c3db4111a65632e8e/bellek-0.92.3.tar.gz
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bastet]: executing diffoscope
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bastet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bastet-0.0.20.dev7.tar.gz tmp/bastet-0.0.20.dev8.tar.gz --markdown 20240420/b/bastet/0.0.20.dev7-0.0.20.dev8/README.md --exclude *.pyd
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.2.tar.gz tmp/bellek-0.92.3.tar.gz --markdown 20240420/b/bellek/0.92.2-0.92.3/README.md --exclude *.pyd
+[2024-04-20 15:05:59] INFO root fetch - processPackages [eval-type-backport]: Downloading https://files.pythonhosted.org/packages/23/ca/1601a9fa588867fe2ab6c19ed4c936929160d08a86597adf61bbd443fe57/eval_type_backport-0.2.0.tar.gz
+[2024-04-20 15:05:59] INFO root fetch - processPackages [eval-type-backport]: executing diffoscope
+[2024-04-20 15:05:59] INFO root fetch - processPackages [eval-type-backport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eval_type_backport-0.1.3.tar.gz tmp/eval_type_backport-0.2.0.tar.gz --markdown 20240420/e/eval-type-backport/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev7.tar.gz]
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bastet]: Remove: archive file [/home/abi/fetcher/tmp/bastet-0.0.20.dev8.tar.gz]
+[2024-04-20 15:05:59] INFO root fetch - main [MainThread]: End processing [bastet]: success
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.2.tar.gz]
+[2024-04-20 15:05:59] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.3.tar.gz]
+[2024-04-20 15:05:59] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 15:06:00] INFO root fetch - processPackages [eval-type-backport]: Remove: archive file [/home/abi/fetcher/tmp/eval_type_backport-0.1.3.tar.gz]
+[2024-04-20 15:06:00] INFO root fetch - processPackages [eval-type-backport]: Remove: archive file [/home/abi/fetcher/tmp/eval_type_backport-0.2.0.tar.gz]
+[2024-04-20 15:06:00] INFO root fetch - main [MainThread]: End processing [eval-type-backport]: success
+[2024-04-20 15:06:00] INFO root fetch - main [MainThread]: Store serial: [22855885]
