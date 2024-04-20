@@ -16045,3 +16045,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:57:16] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
 [2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-20 14:57:16] INFO root fetch - main [MainThread]: Store serial: [22855831]
+[2024-04-20 14:59:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855831]
+[2024-04-20 14:59:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ziptimezone
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yctmodel
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC051
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cmake-language-server
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.5] Old Version: [0.10.4]
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/77/a2/a0a6756ebe5b53288e9e7c1c6bdfbe26754c7baae3a9da2d0b0de72a0a07/ziptimezone-0.10.4.tar.gz
+[2024-04-20 14:59:25] WARNING root fetch - processPackages [PythonTestLJC051]: Skipping, unable to determine old version
+[2024-04-20 14:59:25] INFO root fetch - main [MainThread]: End processing [PythonTestLJC051] error
+[2024-04-20 14:59:25] INFO root fetch - processPackages [yctmodel]: New version: [5.4.0] Old Version: [5.3.19]
+[2024-04-20 14:59:25] INFO root fetch - processPackages [cmake-language-server]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 14:59:25] INFO root fetch - processPackages [yctmodel]: Downloading https://files.pythonhosted.org/packages/88/03/d6e28412995c0db7a9462747283ef9ecaf167a5bfd05d6bf4589950712de/yctmodel-5.3.19.tar.gz
+[2024-04-20 14:59:25] INFO root fetch - processPackages [cmake-language-server]: Downloading https://files.pythonhosted.org/packages/81/7c/b36ef64d8b74959058c9b0756aee12af327b7f95d9f25274142393d917d9/cmake_language_server-0.1.8.tar.gz
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/89/25/bbbe63c8f2bd4f96d2e3ab3cca9472b4afa0633d474bf080462a67bc3bbc/ziptimezone-0.10.5.tar.gz
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 14:59:25] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.4.tar.gz tmp/ziptimezone-0.10.5.tar.gz --markdown 20240420/z/ziptimezone/0.10.4-0.10.5/README.md --exclude *.pyd
+[2024-04-20 14:59:25] INFO root fetch - processPackages [yctmodel]: Downloading https://files.pythonhosted.org/packages/63/95/8a715680a22ee7a92cc7697084994971ee42d2ab54ff8116b953b5cbb08e/yctmodel-5.4.0.tar.gz
+[2024-04-20 14:59:26] INFO root fetch - processPackages [yctmodel]: executing diffoscope
+[2024-04-20 14:59:26] INFO root fetch - processPackages [yctmodel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yctmodel-5.3.19.tar.gz tmp/yctmodel-5.4.0.tar.gz --markdown 20240420/y/yctmodel/5.3.19-5.4.0/README.md --exclude *.pyd
+[2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: Downloading https://files.pythonhosted.org/packages/65/d0/caf71019da3fe2eba801c620cd2ee9a122ede9e048101bf3ee024a5065fc/cmake_language_server-0.1.9.tar.gz
+[2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: executing diffoscope
+[2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake_language_server-0.1.8.tar.gz tmp/cmake_language_server-0.1.9.tar.gz --markdown 20240420/c/cmake-language-server/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 14:59:26] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.4.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.5.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 14:59:26] INFO root fetch - processPackages [yctmodel]: Remove: archive file [/home/abi/fetcher/tmp/yctmodel-5.3.19.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - processPackages [yctmodel]: Remove: archive file [/home/abi/fetcher/tmp/yctmodel-5.4.0.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - main [MainThread]: End processing [yctmodel]: success
+[2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: Remove: archive file [/home/abi/fetcher/tmp/cmake_language_server-0.1.8.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: Remove: archive file [/home/abi/fetcher/tmp/cmake_language_server-0.1.9.tar.gz]
+[2024-04-20 14:59:26] INFO root fetch - main [MainThread]: End processing [cmake-language-server]: success
+[2024-04-20 14:59:26] INFO root fetch - main [MainThread]: Store serial: [22855846]
