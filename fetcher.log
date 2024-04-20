@@ -20165,3 +20165,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:30:08] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
 [2024-04-20 19:30:08] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-04-20 19:30:08] INFO root fetch - main [MainThread]: Store serial: [22857862]
+[2024-04-20 19:32:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857862]
+[2024-04-20 19:32:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: breadbin
+[2024-04-20 19:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC149
+[2024-04-20 19:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-gcp
+[2024-04-20 19:32:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp
+[2024-04-20 19:32:17] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:32:17] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 19:32:17] WARNING root fetch - processPackages [PythonTestLJC149]: Skipping, unable to determine old version
+[2024-04-20 19:32:17] INFO root fetch - main [MainThread]: End processing [PythonTestLJC149] error
+[2024-04-20 19:32:17] WARNING root fetch - processPackages [breadbin]: Skipping, unable to determine old version
+[2024-04-20 19:32:17] INFO root fetch - main [MainThread]: End processing [breadbin] error
+[2024-04-20 19:32:17] INFO root fetch - processPackages [django-gcp]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 19:32:17] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 19:32:18] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/fa/1e/7977cdd9436a23d951ec20889acda7f77200169515120aa05a84c7209f1c/django_gcp-0.9.2.tar.gz
+[2024-04-20 19:32:18] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 19:32:18] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:32:18] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/a3/ea/a0ba2534d8540b5905ac4a62ff379270051f18b10e85af024aafde36b9d2/django_gcp-0.9.3.tar.gz
+[2024-04-20 19:32:18] INFO root fetch - processPackages [django-gcp]: executing diffoscope
+[2024-04-20 19:32:18] INFO root fetch - processPackages [django-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gcp-0.9.2.tar.gz tmp/django_gcp-0.9.3.tar.gz --markdown 20240420/d/django-gcp/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 19:32:18] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 19:32:18] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 19:32:18] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 19:32:19] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.2.tar.gz]
+[2024-04-20 19:32:19] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.3.tar.gz]
+[2024-04-20 19:32:19] INFO root fetch - main [MainThread]: End processing [django-gcp]: success
+[2024-04-20 19:32:19] INFO root fetch - main [MainThread]: Store serial: [22857878]
