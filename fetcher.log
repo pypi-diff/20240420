@@ -8954,3 +8954,33 @@
 [2024-04-20 06:00:43] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.5.tar.gz]
 [2024-04-20 06:00:43] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
 [2024-04-20 06:00:43] INFO root fetch - main [MainThread]: Store serial: [22852301]
+[2024-04-20 06:02:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852301]
+[2024-04-20 06:02:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 06:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reflex
+[2024-04-20 06:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastSnake
+[2024-04-20 06:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: regdiffusion
+[2024-04-20 06:02:53] INFO root fetch - processPackages [FastSnake]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-20 06:02:53] INFO root fetch - processPackages [reflex]: New version: [0.4.9a1] Old Version: [0.4.8a1]
+[2024-04-20 06:02:53] INFO root fetch - processPackages [regdiffusion]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 06:02:53] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/15/82/98fbb2ff78eb668f02ba538197f1716dc2e113e552e29d7225412311d346/fastsnake-1.4.7.tar.gz
+[2024-04-20 06:02:53] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/92/3d/9c7723cbe5d40f55eb66a02a45d480309d7c7969de433081679a0377d4a9/reflex-0.4.8a1.tar.gz
+[2024-04-20 06:02:54] INFO root fetch - processPackages [regdiffusion]: Downloading https://files.pythonhosted.org/packages/dd/00/f3706471a53f99c01f41d342703a7801c28e5f9f523f7ac275a8c71944f0/regdiffusion-0.0.5.tar.gz
+[2024-04-20 06:02:54] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/a5/1d/5fcb9861558f8c166ecc8b8f6400974f9f94651299f6cf30a8f6d239025d/reflex-0.4.9a1.tar.gz
+[2024-04-20 06:02:54] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/4e/39/3975e123076085cab12818bfdb5453f139c02ec8e1ab8b44b6aa19b34e48/fastsnake-1.4.8.tar.gz
+[2024-04-20 06:02:54] INFO root fetch - processPackages [reflex]: executing diffoscope
+[2024-04-20 06:02:54] INFO root fetch - processPackages [reflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex-0.4.8a1.tar.gz tmp/reflex-0.4.9a1.tar.gz --markdown 20240420/r/reflex/0.4.8a1-0.4.9a1/README.md --exclude *.pyd
+[2024-04-20 06:02:54] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-04-20 06:02:54] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.7.tar.gz tmp/fastsnake-1.4.8.tar.gz --markdown 20240420/F/FastSnake/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-20 06:02:54] INFO root fetch - processPackages [regdiffusion]: Downloading https://files.pythonhosted.org/packages/53/64/e698310ce3ea7aba48e265530296812665dedd4b7c0abbbe52305e8f96b9/regdiffusion-0.0.6.tar.gz
+[2024-04-20 06:02:54] INFO root fetch - processPackages [regdiffusion]: executing diffoscope
+[2024-04-20 06:02:54] INFO root fetch - processPackages [regdiffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regdiffusion-0.0.5.tar.gz tmp/regdiffusion-0.0.6.tar.gz --markdown 20240420/r/regdiffusion/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 06:02:54] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.7.tar.gz]
+[2024-04-20 06:02:54] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.8.tar.gz]
+[2024-04-20 06:02:54] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-04-20 06:02:55] INFO root fetch - processPackages [regdiffusion]: Remove: archive file [/home/abi/fetcher/tmp/regdiffusion-0.0.5.tar.gz]
+[2024-04-20 06:02:55] INFO root fetch - processPackages [regdiffusion]: Remove: archive file [/home/abi/fetcher/tmp/regdiffusion-0.0.6.tar.gz]
+[2024-04-20 06:02:55] INFO root fetch - main [MainThread]: End processing [regdiffusion]: success
+[2024-04-20 06:02:56] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.4.8a1.tar.gz]
+[2024-04-20 06:02:56] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.4.9a1.tar.gz]
+[2024-04-20 06:02:56] INFO root fetch - main [MainThread]: End processing [reflex]: success
+[2024-04-20 06:02:56] INFO root fetch - main [MainThread]: Store serial: [22852308]
