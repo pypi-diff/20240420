@@ -13853,3 +13853,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: Remove: archive file [/home/abi/fetcher/tmp/avilla_onebot_v11-1.0.0a7.tar.gz]
 [2024-04-20 12:25:26] INFO root fetch - main [MainThread]: End processing [avilla-onebot-v11]: success
 [2024-04-20 12:25:26] INFO root fetch - main [MainThread]: Store serial: [22854791]
+[2024-04-20 12:27:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854791]
+[2024-04-20 12:27:35] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: counts
+[2024-04-20 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poonia
+[2024-04-20 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xrpld-netgen
+[2024-04-20 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tymer
+[2024-04-20 12:27:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emerald-hws
+[2024-04-20 12:27:35] INFO root fetch - processPackages [xrpld-netgen]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-20 12:27:35] INFO root fetch - processPackages [tymer]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-20 12:27:35] INFO root fetch - processPackages [emerald-hws]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 12:27:35] INFO root fetch - processPackages [counts]: New version: [0.9.0] Old Version: [0.0.6]
+[2024-04-20 12:27:35] INFO root fetch - processPackages [tymer]: Downloading https://files.pythonhosted.org/packages/c0/4f/cd02f6f78c84cfa84aa59746e8e4b9f94e9eaa69798b714c48e487641c1f/tymer-1.0.3.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [poonia]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 12:27:35] INFO root fetch - processPackages [emerald-hws]: Downloading https://files.pythonhosted.org/packages/7c/05/cfa50410ae1fa2e08a34c9a98fe2cc370ffe8f0ad1605989b86856e71b01/emerald_hws-0.0.7.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [xrpld-netgen]: Downloading https://files.pythonhosted.org/packages/09/50/d6a001646ac586b3d8bfd43f9e5aecb69ee7717cadadb9dabbb5e15ab0dc/xrpld_netgen-1.8.0.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/d9/18/314fadfbe4fddee02056c893abee363e274d6c3353b4f75144c43a6b0cb2/counts-0.0.6.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [poonia]: Downloading https://files.pythonhosted.org/packages/c0/9a/d2fa5b974fa18c1244709a14876136ce2e769b9dccea53484d9374d9c2fa/poonia-0.1.8.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [emerald-hws]: Downloading https://files.pythonhosted.org/packages/af/b4/6364f7890ee9ed2fb2287f8a86cc992776c3d88d2170ececeb5c6374a9d8/emerald_hws-0.0.8.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [xrpld-netgen]: Downloading https://files.pythonhosted.org/packages/c0/c8/e94661f027d5aa127f13ec42bdaac82ed44929fd7306cf429b42cb3ab14a/xrpld_netgen-1.9.0.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [tymer]: Downloading https://files.pythonhosted.org/packages/f0/c8/1b0f4154110a0afbc67289484bd060e31f2551641ea612c76baa43cbd5e2/tymer-1.0.4.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/df/09/113063923c383d3eb905c5bc5770590c43ead0b3bd9f4ef0cbc81c6ba3ac/counts-0.9.0.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [emerald-hws]: executing diffoscope
+[2024-04-20 12:27:35] INFO root fetch - processPackages [emerald-hws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emerald_hws-0.0.7.tar.gz tmp/emerald_hws-0.0.8.tar.gz --markdown 20240420/e/emerald-hws/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 12:27:35] INFO root fetch - processPackages [tymer]: executing diffoscope
+[2024-04-20 12:27:35] INFO root fetch - processPackages [tymer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tymer-1.0.3.tar.gz tmp/tymer-1.0.4.tar.gz --markdown 20240420/t/tymer/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-20 12:27:35] INFO root fetch - processPackages [xrpld-netgen]: executing diffoscope
+[2024-04-20 12:27:35] INFO root fetch - processPackages [xrpld-netgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrpld_netgen-1.8.0.tar.gz tmp/xrpld_netgen-1.9.0.tar.gz --markdown 20240420/x/xrpld-netgen/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-20 12:27:35] INFO root fetch - processPackages [counts]: executing diffoscope
+[2024-04-20 12:27:35] INFO root fetch - processPackages [counts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/counts-0.0.6.tar.gz tmp/counts-0.9.0.tar.gz --markdown 20240420/c/counts/0.0.6-0.9.0/README.md --exclude *.pyd
+[2024-04-20 12:27:35] INFO root fetch - processPackages [poonia]: Downloading https://files.pythonhosted.org/packages/09/db/c75f9a2a193bcbbbbad0543dba1745517caa715e67629b7828fd529e22ee/poonia-0.1.9.tar.gz
+[2024-04-20 12:27:35] INFO root fetch - processPackages [poonia]: executing diffoscope
+[2024-04-20 12:27:35] INFO root fetch - processPackages [poonia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poonia-0.1.8.tar.gz tmp/poonia-0.1.9.tar.gz --markdown 20240420/p/poonia/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 12:27:36] INFO root fetch - processPackages [tymer]: Remove: archive file [/home/abi/fetcher/tmp/tymer-1.0.3.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - processPackages [tymer]: Remove: archive file [/home/abi/fetcher/tmp/tymer-1.0.4.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [tymer]: success
+[2024-04-20 12:27:36] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.0.6.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [counts]: success
+[2024-04-20 12:27:36] INFO root fetch - processPackages [emerald-hws]: Remove: archive file [/home/abi/fetcher/tmp/emerald_hws-0.0.7.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - processPackages [emerald-hws]: Remove: archive file [/home/abi/fetcher/tmp/emerald_hws-0.0.8.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [emerald-hws]: success
+[2024-04-20 12:27:36] INFO root fetch - processPackages [xrpld-netgen]: Remove: archive file [/home/abi/fetcher/tmp/xrpld_netgen-1.8.0.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - processPackages [xrpld-netgen]: Remove: archive file [/home/abi/fetcher/tmp/xrpld_netgen-1.9.0.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [xrpld-netgen]: success
+[2024-04-20 12:27:36] INFO root fetch - processPackages [poonia]: Remove: archive file [/home/abi/fetcher/tmp/poonia-0.1.8.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - processPackages [poonia]: Remove: archive file [/home/abi/fetcher/tmp/poonia-0.1.9.tar.gz]
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [poonia]: success
+[2024-04-20 12:27:36] INFO root fetch - main [MainThread]: Store serial: [22854805]
