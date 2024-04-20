@@ -13976,3 +13976,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:34:09] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.0.tar.gz]
 [2024-04-20 12:34:09] INFO root fetch - main [MainThread]: End processing [htagui]: success
 [2024-04-20 12:34:09] INFO root fetch - main [MainThread]: Store serial: [22854826]
+[2024-04-20 12:36:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854826]
+[2024-04-20 12:36:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 12:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htagui
+[2024-04-20 12:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-batch
+[2024-04-20 12:36:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wristwatch
+[2024-04-20 12:36:19] INFO root fetch - processPackages [htagui]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-20 12:36:19] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 12:36:19] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-20 12:36:19] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/68/0f/8fa30d3bd54006a6f4e785f37a44b670a1a7de89a69a347be0c8f5d880a1/htagui-0.4.2.tar.gz
+[2024-04-20 12:36:19] INFO root fetch - processPackages [wristwatch]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-20 12:36:19] INFO root fetch - processPackages [wristwatch]: Downloading https://files.pythonhosted.org/packages/c3/03/e57c7403d6a25ce44e59a5d9c48d026b2eea77c4dfe6875435606106e896/wristwatch-1.2.0.tar.gz
+[2024-04-20 12:36:20] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-20 12:36:20] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/d9/e1/0edf53508ae8bab0585b98f702742bd25aad4093df806f96da4d1aab5d61/htagui-0.5.0.tar.gz
+[2024-04-20 12:36:20] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-20 12:36:20] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240420/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 12:36:20] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-20 12:36:20] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.4.2.tar.gz tmp/htagui-0.5.0.tar.gz --markdown 20240420/h/htagui/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-20 12:36:20] INFO root fetch - processPackages [wristwatch]: Downloading https://files.pythonhosted.org/packages/c8/57/68ab3df9a545c5ac4c91f2c1956208ae91db95b9a3067e64abfbb46dfa60/wristwatch-1.3.0.tar.gz
+[2024-04-20 12:36:20] INFO root fetch - processPackages [wristwatch]: executing diffoscope
+[2024-04-20 12:36:20] INFO root fetch - processPackages [wristwatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wristwatch-1.2.0.tar.gz tmp/wristwatch-1.3.0.tar.gz --markdown 20240420/w/wristwatch/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-04-20 12:36:20] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-20 12:36:20] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-20 12:36:20] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-20 12:36:20] INFO root fetch - processPackages [wristwatch]: Remove: archive file [/home/abi/fetcher/tmp/wristwatch-1.2.0.tar.gz]
+[2024-04-20 12:36:20] INFO root fetch - processPackages [wristwatch]: Remove: archive file [/home/abi/fetcher/tmp/wristwatch-1.3.0.tar.gz]
+[2024-04-20 12:36:20] INFO root fetch - main [MainThread]: End processing [wristwatch]: success
+[2024-04-20 12:36:21] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.4.2.tar.gz]
+[2024-04-20 12:36:21] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.0.tar.gz]
+[2024-04-20 12:36:21] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-20 12:36:21] INFO root fetch - main [MainThread]: Store serial: [22854835]
