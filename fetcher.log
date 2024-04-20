@@ -7650,3 +7650,74 @@
 [2024-04-20 04:13:45] INFO root fetch - processPackages [mfs-styletts2]: Remove: archive file [/home/abi/fetcher/tmp/mfs-styletts2-1.0.1.tar.gz]
 [2024-04-20 04:13:45] INFO root fetch - main [MainThread]: End processing [mfs-styletts2]: success
 [2024-04-20 04:13:45] INFO root fetch - main [MainThread]: Store serial: [22851779]
+[2024-04-20 04:15:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851779]
+[2024-04-20 04:15:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opensees
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modal
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: modal-client
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steelpy
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-dateparser
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: types-protobuf
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: types-peewee
+[2024-04-20 04:15:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: moval
+[2024-04-20 04:15:53] INFO root fetch - processPackages [steelpy]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [modal-client]: New version: [0.62.96] Old Version: [0.62.95]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-protobuf]: New version: [4.25.0.20240417] Old Version: [4.25.0.20240410]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [modal]: New version: [0.62.96] Old Version: [0.62.95]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [opensees]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-dateparser]: New version: [1.2.0.20240420] Old Version: [1.1.4.9]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-peewee]: New version: [3.17.3.20240420] Old Version: [3.17.0.20240311]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [moval]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-20 04:15:53] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/84/05/17b85311a0c46074e2f60f2a9394716879cf374c80a661f86d6368f04010/modal_client-0.62.95-py3-none-any.whl
+[2024-04-20 04:15:53] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/0c/46/0a9b61815fc1fb96724db8c15309c1cd2c17f9e3ed542aa0760e7df972ef/steelpy-1.0.2.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/3c/6f/bebf3dbee70fd5d37087be7eb3e902a6a17ac96d2116bba3e4b9467605d9/modal-0.62.95-py3-none-any.whl
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/be/1e/cc6472a3b4e74764db5152a7b38fcb7d8a3c24c868f37fad711ee23341e5/types-protobuf-4.25.0.20240410.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-dateparser]: Downloading https://files.pythonhosted.org/packages/e5/f6/d662cd9b1f7e7a7f14d1d26e114118c728a6a7fee63fba9dc6ceb7a9c7b0/types-dateparser-1.1.4.9.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/7e/4e/324a8142d98eae220deba09cd303bc86236516f33fa184b1ce6e4582c1e9/moval-0.3.1.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [types-peewee]: Downloading https://files.pythonhosted.org/packages/fa/53/73a32fab8cdf605041372136e1f4a14c48181cb172f66fdc4ec6217ad362/types-peewee-3.17.0.20240311.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/d6/ad/273350ee2615685c2dadd545cd63751cdde206b1da39f94c8c3d47bf127b/steelpy-1.0.3.tar.gz
+[2024-04-20 04:15:53] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/42/12/12930305f95333fd0978cfebfe2602cafa7beb36a0fc5272c63c2c232b81/modal_client-0.62.96-py3-none-any.whl
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/45/2a/0892f41c830de84d8641d63d11fadfa8a67e748e0ff94c6da3fb108d5d57/modal-0.62.96-py3-none-any.whl
+[2024-04-20 04:15:54] INFO root fetch - processPackages [steelpy]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [steelpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelpy-1.0.2.tar.gz tmp/steelpy-1.0.3.tar.gz --markdown 20240420/s/steelpy/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-protobuf]: Downloading https://files.pythonhosted.org/packages/76/21/757620113af23233496c04b8a66e0201e78695495b1db8e676672608588b/types-protobuf-4.25.0.20240417.tar.gz
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.95-py3-none-any.whl.zip tmp/modal_client-0.62.96-py3-none-any.whl.zip --markdown 20240420/m/modal-client/0.62.95-0.62.96/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [opensees]: Downloading https://files.pythonhosted.org/packages/89/07/b8f08c9d4567b2986131cfb7613ef5601c16b2a3c0ac5f22dd8e82eec99d/opensees-0.0.9.tar.gz
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-dateparser]: Downloading https://files.pythonhosted.org/packages/e6/08/5fb24fed7bafeaaee66d5765c3be11e48e21742dd540f6c8a720353d872a/types-dateparser-1.2.0.20240420.tar.gz
+[2024-04-20 04:15:54] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/a8/5d/f384086a2cb175a97da0f25f1a33bf21875b7e2ce12ac53192dbc9b1a372/moval-0.3.2.tar.gz
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-peewee]: Downloading https://files.pythonhosted.org/packages/11/48/87ecba9db49c16afaa3b8cac33fa378220f60fa7c7e9a292270162e9e7ef/types-peewee-3.17.3.20240420.tar.gz
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-protobuf]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-protobuf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-protobuf-4.25.0.20240410.tar.gz tmp/types-protobuf-4.25.0.20240417.tar.gz --markdown 20240420/t/types-protobuf/4.25.0.20240410-4.25.0.20240417/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.95-py3-none-any.whl.zip tmp/modal-0.62.96-py3-none-any.whl.zip --markdown 20240420/m/modal/0.62.95-0.62.96/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-dateparser]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-dateparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-dateparser-1.1.4.9.tar.gz tmp/types-dateparser-1.2.0.20240420.tar.gz --markdown 20240420/t/types-dateparser/1.1.4.9-1.2.0.20240420/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-peewee]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [types-peewee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-peewee-3.17.0.20240311.tar.gz tmp/types-peewee-3.17.3.20240420.tar.gz --markdown 20240420/t/types-peewee/3.17.0.20240311-3.17.3.20240420/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-04-20 04:15:54] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.3.1.tar.gz tmp/moval-0.3.2.tar.gz --markdown 20240420/m/moval/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.95-py3-none-any.whl.zip]
+[2024-04-20 04:15:54] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.96-py3-none-any.whl.zip]
+[2024-04-20 04:15:54] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-20 04:15:54] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.2.tar.gz]
+[2024-04-20 04:15:54] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.3.tar.gz]
+[2024-04-20 04:15:54] INFO root fetch - main [MainThread]: End processing [steelpy]: success
+[2024-04-20 04:15:54] WARNING root fetch - processPackages [opensees]: Skipping package: exceeds size limit 22392766>=10485760
+[2024-04-20 04:15:54] INFO root fetch - main [MainThread]: End processing [opensees] error
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-peewee]: Remove: archive file [/home/abi/fetcher/tmp/types-peewee-3.17.0.20240311.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-peewee]: Remove: archive file [/home/abi/fetcher/tmp/types-peewee-3.17.3.20240420.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [types-peewee]: success
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-dateparser]: Remove: archive file [/home/abi/fetcher/tmp/types-dateparser-1.1.4.9.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-dateparser]: Remove: archive file [/home/abi/fetcher/tmp/types-dateparser-1.2.0.20240420.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [types-dateparser]: success
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-protobuf]: Remove: archive file [/home/abi/fetcher/tmp/types-protobuf-4.25.0.20240410.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - processPackages [types-protobuf]: Remove: archive file [/home/abi/fetcher/tmp/types-protobuf-4.25.0.20240417.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [types-protobuf]: success
+[2024-04-20 04:15:55] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.1.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.3.2.tar.gz]
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-04-20 04:15:55] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.95-py3-none-any.whl.zip]
+[2024-04-20 04:15:55] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.96-py3-none-any.whl.zip]
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-20 04:15:55] INFO root fetch - main [MainThread]: Store serial: [22851809]
