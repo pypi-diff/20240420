@@ -17263,3 +17263,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:23:12] INFO root fetch - processPackages [pyxllib]: Remove: archive file [/home/abi/fetcher/tmp/pyxllib-0.3.96.tar.gz]
 [2024-04-20 16:23:12] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
 [2024-04-20 16:23:12] INFO root fetch - main [MainThread]: Store serial: [22856572]
+[2024-04-20 16:25:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856572]
+[2024-04-20 16:25:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 16:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prophecy-libs
+[2024-04-20 16:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dolibarrpy
+[2024-04-20 16:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 16:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: genericsuite-ai
+[2024-04-20 16:25:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC082
+[2024-04-20 16:25:20] INFO root fetch - processPackages [dolibarrpy]: New version: [0.1.22] Old Version: [0.1.21]
+[2024-04-20 16:25:20] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 16:25:21] WARNING root fetch - processPackages [PythonTestLJC082]: Skipping, unable to determine old version
+[2024-04-20 16:25:21] INFO root fetch - processPackages [genericsuite-ai]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 16:25:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC082] error
+[2024-04-20 16:25:21] INFO root fetch - processPackages [prophecy-libs]: New version: [1.8.9] Old Version: [1.8.8]
+[2024-04-20 16:25:21] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/7f/08/d3663c7666c41c661ffa5d2b0cc5f6f7cb6aa20bad658de8eadcf0500cca/dolibarrpy-0.1.21.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [genericsuite-ai]: Downloading https://files.pythonhosted.org/packages/22/fb/29fa97f8f6ce1d002658f6d6120060346328e3f6cdb55e98b3bc8d6a01c1/genericsuite_ai-0.1.3.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [prophecy-libs]: Downloading https://files.pythonhosted.org/packages/55/0a/90561ca774443a2a8fc7836ec65bd203b9a55822454194896bfcda5affbb/prophecy-libs-1.8.8.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/32/ea/ceec13ea915a87f350431b19241baa87fc5449c2584118f5f872c05c64c4/dolibarrpy-0.1.22.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 16:25:21] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 16:25:21] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 16:25:21] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.1.21.tar.gz tmp/dolibarrpy-0.1.22.tar.gz --markdown 20240420/d/dolibarrpy/0.1.21-0.1.22/README.md --exclude *.pyd
+[2024-04-20 16:25:21] INFO root fetch - processPackages [genericsuite-ai]: Downloading https://files.pythonhosted.org/packages/e0/34/553d1cc2e52246476347a460bd9218b10e66ae5809231191b931362031bf/genericsuite_ai-0.1.4.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [prophecy-libs]: Downloading https://files.pythonhosted.org/packages/4d/26/13eca2b0b22483c0bcc9a426ef208809d6e938fda5d639cd2122eaf7bd06/prophecy-libs-1.8.9.tar.gz
+[2024-04-20 16:25:21] INFO root fetch - processPackages [genericsuite-ai]: executing diffoscope
+[2024-04-20 16:25:21] INFO root fetch - processPackages [genericsuite-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genericsuite_ai-0.1.3.tar.gz tmp/genericsuite_ai-0.1.4.tar.gz --markdown 20240420/g/genericsuite-ai/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 16:25:21] INFO root fetch - processPackages [prophecy-libs]: executing diffoscope
+[2024-04-20 16:25:21] INFO root fetch - processPackages [prophecy-libs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophecy-libs-1.8.8.tar.gz tmp/prophecy-libs-1.8.9.tar.gz --markdown 20240420/p/prophecy-libs/1.8.8-1.8.9/README.md --exclude *.pyd
+[2024-04-20 16:25:22] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 16:25:22] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.1.21.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.1.22.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 16:25:22] INFO root fetch - processPackages [prophecy-libs]: Remove: archive file [/home/abi/fetcher/tmp/prophecy-libs-1.8.8.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - processPackages [prophecy-libs]: Remove: archive file [/home/abi/fetcher/tmp/prophecy-libs-1.8.9.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - main [MainThread]: End processing [prophecy-libs]: success
+[2024-04-20 16:25:22] INFO root fetch - processPackages [genericsuite-ai]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite_ai-0.1.3.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - processPackages [genericsuite-ai]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite_ai-0.1.4.tar.gz]
+[2024-04-20 16:25:22] INFO root fetch - main [MainThread]: End processing [genericsuite-ai]: success
+[2024-04-20 16:25:22] INFO root fetch - main [MainThread]: Store serial: [22856587]
