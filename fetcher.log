@@ -15221,3 +15221,23 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: Remove: archive file [/home/abi/fetcher/tmp/kivymd_utils-0.16.0.tar.gz]
 [2024-04-20 14:04:39] INFO root fetch - main [MainThread]: End processing [kivymd-utils]: success
 [2024-04-20 14:04:39] INFO root fetch - main [MainThread]: Store serial: [22855435]
+[2024-04-20 14:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855435]
+[2024-04-20 14:06:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: openremote-cli
+[2024-04-20 14:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC037
+[2024-04-20 14:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd
+[2024-04-20 14:06:49] WARNING root fetch - processPackages [PythonTestLJC037]: Skipping, unable to determine old version
+[2024-04-20 14:06:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC037] error
+[2024-04-20 14:06:49] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240420] Old Version: [2.5.0b20240419]
+[2024-04-20 14:06:49] INFO root fetch - processPackages [openremote-cli]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-20 14:06:49] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/f7/1f/5cfa228eaeb2a352d2b07b1f2da413470ad567359c7018bdfa7c6cd1fdd3/bigdl_core_xe_esimd-2.5.0b20240419-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-20 14:06:49] INFO root fetch - processPackages [openremote-cli]: Downloading https://files.pythonhosted.org/packages/35/cc/0dd37d7614e74145cb95ef72a826866213749e498cb55c2c9f7e71e838b1/openremote-cli-0.6.8.tar.gz
+[2024-04-20 14:06:50] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61871660>=10485760
+[2024-04-20 14:06:50] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-20 14:06:50] INFO root fetch - processPackages [openremote-cli]: Downloading https://files.pythonhosted.org/packages/82/54/b8107c36b839a84d90b30b4c0ff19797e8d9ac84f9eeb3819f9a175c9f35/openremote-cli-0.6.9.tar.gz
+[2024-04-20 14:06:50] INFO root fetch - processPackages [openremote-cli]: executing diffoscope
+[2024-04-20 14:06:50] INFO root fetch - processPackages [openremote-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openremote-cli-0.6.8.tar.gz tmp/openremote-cli-0.6.9.tar.gz --markdown 20240420/o/openremote-cli/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-20 14:06:51] INFO root fetch - processPackages [openremote-cli]: Remove: archive file [/home/abi/fetcher/tmp/openremote-cli-0.6.8.tar.gz]
+[2024-04-20 14:06:51] INFO root fetch - processPackages [openremote-cli]: Remove: archive file [/home/abi/fetcher/tmp/openremote-cli-0.6.9.tar.gz]
+[2024-04-20 14:06:51] INFO root fetch - main [MainThread]: End processing [openremote-cli]: success
+[2024-04-20 14:06:51] INFO root fetch - main [MainThread]: Store serial: [22855449]
