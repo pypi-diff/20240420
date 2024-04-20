@@ -19570,3 +19570,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:59:34] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.9.tar.gz]
 [2024-04-20 18:59:34] INFO root fetch - main [MainThread]: End processing [stockdex]: success
 [2024-04-20 18:59:34] INFO root fetch - main [MainThread]: Store serial: [22857635]
+[2024-04-20 19:01:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857635]
+[2024-04-20 19:01:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC138
+[2024-04-20 19:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notfunny
+[2024-04-20 19:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: silicon-analyser
+[2024-04-20 19:01:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: miraie-ac
+[2024-04-20 19:01:43] INFO root fetch - processPackages [notfunny]: New version: [0.5.8] Old Version: [0.5.6]
+[2024-04-20 19:01:43] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 19:01:43] INFO root fetch - processPackages [miraie-ac]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 19:01:43] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/5a/e9/d1f0c1c3e62fa972802f73eab2060c65d962cdfbd2f9d2aec3ae8d847d41/miraie_ac-1.0.1.tar.gz
+[2024-04-20 19:01:43] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/98/4e/09dc6bd5fa6420ae082e4626092d30c6d8c08cf73763a92e19c41b57799d/notfunny-0.5.6.tar.gz
+[2024-04-20 19:01:43] WARNING root fetch - processPackages [PythonTestLJC138]: Skipping, unable to determine old version
+[2024-04-20 19:01:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC138] error
+[2024-04-20 19:01:43] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/f7/e8/fff64966ef8d385989b9d317837fb61c8888709181b7dfa8ca5b32ce5f3f/silicon_analyser-1.0.8.tar.gz
+[2024-04-20 19:01:43] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/02/71/4e868d39fdedd525925c11d72f9f57f42247154c5f31deb5e3dbd38450f7/silicon_analyser-1.0.9.tar.gz
+[2024-04-20 19:01:43] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4f/8f/ecd687f0f6ce927880f626ca4323f5c1cdb887435181e488b2ddd8840793/notfunny-0.5.8.tar.gz
+[2024-04-20 19:01:43] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-20 19:01:43] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon_analyser-1.0.8.tar.gz tmp/silicon_analyser-1.0.9.tar.gz --markdown 20240420/s/silicon-analyser/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 19:01:43] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/83/95/cf462479b9607081639650c672759c639a2014a71fc3861e28a0a8d86caa/miraie_ac-1.0.2.tar.gz
+[2024-04-20 19:01:44] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 19:01:44] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.6.tar.gz tmp/notfunny-0.5.8.tar.gz --markdown 20240420/n/notfunny/0.5.6-0.5.8/README.md --exclude *.pyd
+[2024-04-20 19:01:44] INFO root fetch - processPackages [miraie-ac]: executing diffoscope
+[2024-04-20 19:01:44] INFO root fetch - processPackages [miraie-ac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miraie_ac-1.0.1.tar.gz tmp/miraie_ac-1.0.2.tar.gz --markdown 20240420/m/miraie-ac/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 19:01:44] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.6.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.8.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 19:01:44] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie_ac-1.0.1.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie_ac-1.0.2.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - main [MainThread]: End processing [miraie-ac]: success
+[2024-04-20 19:01:44] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.8.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.9.tar.gz]
+[2024-04-20 19:01:44] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-20 19:01:44] INFO root fetch - main [MainThread]: Store serial: [22857648]
