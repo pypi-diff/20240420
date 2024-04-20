@@ -22710,3 +22710,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:02:01] INFO root fetch - processPackages [pytonapi]: Remove: archive file [/home/abi/fetcher/tmp/pytonapi-0.2.4b1.tar.gz]
 [2024-04-20 22:02:01] INFO root fetch - main [MainThread]: End processing [pytonapi]: success
 [2024-04-20 22:02:01] INFO root fetch - main [MainThread]: Store serial: [22859078]
+[2024-04-20 22:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859078]
+[2024-04-20 22:04:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: midiscripter
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: text-block-local
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: strawberry-graphql
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notfunny
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: devicetorch
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC204
+[2024-04-20 22:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: graphlit-client
+[2024-04-20 22:04:10] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420002] Old Version: [1.0.20240420001]
+[2024-04-20 22:04:10] WARNING root fetch - processPackages [devicetorch]: Skipping, unable to determine old version
+[2024-04-20 22:04:10] INFO root fetch - main [MainThread]: End processing [devicetorch] error
+[2024-04-20 22:04:10] INFO root fetch - processPackages [text-block-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:04:10] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-04-20 22:04:10] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/90/d8/1a0b19f38fa93f01f7c1b26ea1c1024bd1a91b6c4ee0413c48fd13a2708c/graphlit_client-1.0.20240420001.tar.gz
+[2024-04-20 22:04:10] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/70/2c/1e2d2d092952d9578a3bd66ea8d19829b2cdcb307254112a3b482d4403bd/text-block-local-0.0.8.tar.gz
+[2024-04-20 22:04:10] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-04-20 22:04:10] INFO root fetch - processPackages [notfunny]: New version: [0.6.8] Old Version: [0.6.6]
+[2024-04-20 22:04:10] WARNING root fetch - processPackages [PythonTestLJC204]: Skipping, unable to determine old version
+[2024-04-20 22:04:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC204] error
+[2024-04-20 22:04:10] WARNING root fetch - processPackages [midiscripter]: Skipping, unable to determine old version
+[2024-04-20 22:04:10] INFO root fetch - main [MainThread]: End processing [midiscripter] error
+[2024-04-20 22:04:10] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/71/bc/24522c5007f2452a7e32a445163d898233d9b0cc266aed587c5f36dc2bc9/text-block-local-0.0.9.tar.gz
+[2024-04-20 22:04:10] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/42/ba/a8e5305128295bd72afad59fca9a15e0c9c664d0b166049354c2348ed749/notfunny-0.6.6.tar.gz
+[2024-04-20 22:04:10] INFO root fetch - processPackages [text-block-local]: executing diffoscope
+[2024-04-20 22:04:10] INFO root fetch - processPackages [text-block-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-block-local-0.0.8.tar.gz tmp/text-block-local-0.0.9.tar.gz --markdown 20240420/t/text-block-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:04:11] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/a9/d4/77c010f4396165a6710584b2e751e13f852afea9e2b90dec4d2d64dd4ef4/graphlit_client-1.0.20240420002.tar.gz
+[2024-04-20 22:04:11] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-20 22:04:11] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420001.tar.gz tmp/graphlit_client-1.0.20240420002.tar.gz --markdown 20240420/g/graphlit-client/1.0.20240420001-1.0.20240420002/README.md --exclude *.pyd
+[2024-04-20 22:04:11] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/cc/66eca7e3b8d00484f417ca9ff757e83dd28de6a13b0b385cc28d6231a599/notfunny-0.6.8.tar.gz
+[2024-04-20 22:04:11] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-04-20 22:04:11] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 22:04:11] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.6.tar.gz tmp/notfunny-0.6.8.tar.gz --markdown 20240420/n/notfunny/0.6.6-0.6.8/README.md --exclude *.pyd
+[2024-04-20 22:04:11] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-04-20 22:04:11] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240420/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-04-20 22:04:11] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.8.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
+[2024-04-20 22:04:11] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.6.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.8.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 22:04:11] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420001.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420002.tar.gz]
+[2024-04-20 22:04:11] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-20 22:04:12] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-04-20 22:04:12] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-04-20 22:04:12] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-04-20 22:04:12] INFO root fetch - main [MainThread]: Store serial: [22859105]
