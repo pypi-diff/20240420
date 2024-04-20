@@ -21301,3 +21301,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:36:09] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b4.tar.gz]
 [2024-04-20 20:36:09] INFO root fetch - main [MainThread]: End processing [batchalign]: success
 [2024-04-20 20:36:09] INFO root fetch - main [MainThread]: Store serial: [22858437]
+[2024-04-20 20:38:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858437]
+[2024-04-20 20:38:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 20:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EdgeGPT-fork
+[2024-04-20 20:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC173
+[2024-04-20 20:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-alto-parser
+[2024-04-20 20:38:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dataspecs
+[2024-04-20 20:38:19] INFO root fetch - processPackages [EdgeGPT-fork]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 20:38:19] INFO root fetch - processPackages [simple-alto-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:38:19] WARNING root fetch - processPackages [PythonTestLJC173]: Skipping, unable to determine old version
+[2024-04-20 20:38:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC173] error
+[2024-04-20 20:38:19] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/2d/84/288a775370c3b0a74c9022e38e06d864675ccef260b833fb692b0679afd6/simple-alto-parser-0.0.8.tar.gz
+[2024-04-20 20:38:19] INFO root fetch - processPackages [EdgeGPT-fork]: Downloading https://files.pythonhosted.org/packages/38/fc/a1110e770f4a1d51ddaeafa9372d319750318111ee17097b01bb74155ba5/edgegpt_fork-1.0.0.tar.gz
+[2024-04-20 20:38:19] INFO root fetch - processPackages [dataspecs]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-20 20:38:19] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/54/a6/e5b5a42bc7f1de8a59b665b6ea950928012570d4b7d82695f5bd835dbd99/simple-alto-parser-0.0.9.tar.gz
+[2024-04-20 20:38:19] INFO root fetch - processPackages [dataspecs]: Downloading https://files.pythonhosted.org/packages/81/73/251841562c745f99028ae7b729fd2a53052c386d7dfc2689b5f245395ca7/dataspecs-0.3.0.tar.gz
+[2024-04-20 20:38:19] INFO root fetch - processPackages [EdgeGPT-fork]: Downloading https://files.pythonhosted.org/packages/d3/b3/0ffbd77d9f8654a9acb721d0e510813fc72896327d2281bf6bba815e7f4b/edgegpt_fork-1.0.1.tar.gz
+[2024-04-20 20:38:20] INFO root fetch - processPackages [simple-alto-parser]: executing diffoscope
+[2024-04-20 20:38:20] INFO root fetch - processPackages [simple-alto-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-alto-parser-0.0.8.tar.gz tmp/simple-alto-parser-0.0.9.tar.gz --markdown 20240420/s/simple-alto-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:38:20] INFO root fetch - processPackages [EdgeGPT-fork]: executing diffoscope
+[2024-04-20 20:38:20] INFO root fetch - processPackages [EdgeGPT-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgegpt_fork-1.0.0.tar.gz tmp/edgegpt_fork-1.0.1.tar.gz --markdown 20240420/E/EdgeGPT-fork/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 20:38:20] INFO root fetch - processPackages [dataspecs]: Downloading https://files.pythonhosted.org/packages/2d/17/107f00931b91d2ac45c4f85af90906b5e2cc4d1ee89bbdb52a9237d37c67/dataspecs-0.4.0.tar.gz
+[2024-04-20 20:38:20] INFO root fetch - processPackages [dataspecs]: executing diffoscope
+[2024-04-20 20:38:20] INFO root fetch - processPackages [dataspecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dataspecs-0.3.0.tar.gz tmp/dataspecs-0.4.0.tar.gz --markdown 20240420/d/dataspecs/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-20 20:38:20] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.8.tar.gz]
+[2024-04-20 20:38:20] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.9.tar.gz]
+[2024-04-20 20:38:20] INFO root fetch - main [MainThread]: End processing [simple-alto-parser]: success
+[2024-04-20 20:38:20] INFO root fetch - processPackages [EdgeGPT-fork]: Remove: archive file [/home/abi/fetcher/tmp/edgegpt_fork-1.0.0.tar.gz]
+[2024-04-20 20:38:20] INFO root fetch - processPackages [EdgeGPT-fork]: Remove: archive file [/home/abi/fetcher/tmp/edgegpt_fork-1.0.1.tar.gz]
+[2024-04-20 20:38:20] INFO root fetch - main [MainThread]: End processing [EdgeGPT-fork]: success
+[2024-04-20 20:38:21] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.3.0.tar.gz]
+[2024-04-20 20:38:21] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.4.0.tar.gz]
+[2024-04-20 20:38:21] INFO root fetch - main [MainThread]: End processing [dataspecs]: success
+[2024-04-20 20:38:21] INFO root fetch - main [MainThread]: Store serial: [22858451]
