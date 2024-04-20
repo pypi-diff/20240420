@@ -7742,3 +7742,15 @@
 [2024-04-20 04:18:11] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240420.tar.gz]
 [2024-04-20 04:18:11] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-04-20 04:18:11] INFO root fetch - main [MainThread]: Store serial: [22851814]
+[2024-04-20 04:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851814]
+[2024-04-20 04:20:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 04:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypi-cleanup
+[2024-04-20 04:20:19] INFO root fetch - processPackages [pypi-cleanup]: New version: [0.1.6.dev20240420021837] Old Version: [0.1.5]
+[2024-04-20 04:20:19] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/0f/bb/6ff68b871296c6cc36f4d74fe35b0c9fd02f9fb13e43d1c9375adea026c8/pypi-cleanup-0.1.5.tar.gz
+[2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/56/02/d19615e12248f3bf118e571ca54ec2f24f1cbc61cb23d9ac3c84a6ce3b21/pypi_cleanup-0.1.6.dev20240420021837.tar.gz
+[2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: executing diffoscope
+[2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi-cleanup-0.1.5.tar.gz tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz --markdown 20240420/p/pypi-cleanup/0.1.5-0.1.6.dev20240420021837/README.md --exclude *.pyd
+[2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi-cleanup-0.1.5.tar.gz]
+[2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz]
+[2024-04-20 04:20:20] INFO root fetch - main [MainThread]: End processing [pypi-cleanup]: success
+[2024-04-20 04:20:20] INFO root fetch - main [MainThread]: Store serial: [22851819]
