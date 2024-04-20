@@ -21379,3 +21379,23 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:40:31] INFO root fetch - processPackages [fiblat]: Remove: archive file [/home/abi/fetcher/tmp/fiblat-0.5.0.tar.gz]
 [2024-04-20 20:40:31] INFO root fetch - main [MainThread]: End processing [fiblat]: success
 [2024-04-20 20:40:31] INFO root fetch - main [MainThread]: Store serial: [22858467]
+[2024-04-20 20:42:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858467]
+[2024-04-20 20:42:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 20:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC174
+[2024-04-20 20:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: grooveshop-django-api
+[2024-04-20 20:42:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-04-20 20:42:39] WARNING root fetch - processPackages [PythonTestLJC174]: Skipping, unable to determine old version
+[2024-04-20 20:42:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC174] error
+[2024-04-20 20:42:39] INFO root fetch - processPackages [bellek]: New version: [0.93.0] Old Version: [0.92.6]
+[2024-04-20 20:42:39] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/76/c9/09ca7104e754fc539d50dde49ddf61ca0c6b6f865f7f416239d241609649/bellek-0.92.6.tar.gz
+[2024-04-20 20:42:39] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-20 20:42:40] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/7f/a7/0d6a615cddf282a20c5473422783b8e46581bf1c77d73c7dfc581210dc37/grooveshop_django_api-0.99.0.tar.gz
+[2024-04-20 20:42:40] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33783695>=10485760
+[2024-04-20 20:42:40] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-20 20:42:40] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/07/1f/d72606976ffdc16cf0518a2f76636dea9b8bf1f56d868900735e14eba1d1/bellek-0.93.0.tar.gz
+[2024-04-20 20:42:40] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 20:42:40] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.6.tar.gz tmp/bellek-0.93.0.tar.gz --markdown 20240420/b/bellek/0.92.6-0.93.0/README.md --exclude *.pyd
+[2024-04-20 20:42:41] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.6.tar.gz]
+[2024-04-20 20:42:41] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.93.0.tar.gz]
+[2024-04-20 20:42:41] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 20:42:41] INFO root fetch - main [MainThread]: Store serial: [22858478]
