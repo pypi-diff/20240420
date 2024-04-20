@@ -14682,3 +14682,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:25:00] INFO root fetch - processPackages [packitos]: Remove: archive file [/home/abi/fetcher/tmp/packitos-0.95.0.tar.gz]
 [2024-04-20 13:25:00] INFO root fetch - main [MainThread]: End processing [packitos]: success
 [2024-04-20 13:25:00] INFO root fetch - main [MainThread]: Store serial: [22855121]
+[2024-04-20 13:27:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855121]
+[2024-04-20 13:27:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynumstim
+[2024-04-20 13:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchx-nightly
+[2024-04-20 13:27:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cerbogen
+[2024-04-20 13:27:11] INFO root fetch - processPackages [cerbogen]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-20 13:27:11] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.4.19] Old Version: [2024.4.18]
+[2024-04-20 13:27:11] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/3d/7b/fec9893f45cf7aecb80cfbc5ccea6c08ea3ba12980b84c4ad86b0041e7c8/cerbogen-0.0.16.tar.gz
+[2024-04-20 13:27:11] INFO root fetch - processPackages [pynumstim]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 13:27:11] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/2c/4f/b728b6c71458584d99f2c8a1b9de5f7ae1a4a9c01b509a248e7c72e1d116/torchx_nightly-2024.4.18-py3-none-any.whl
+[2024-04-20 13:27:11] INFO root fetch - processPackages [pynumstim]: Downloading https://files.pythonhosted.org/packages/bc/fa/056ee2d304b7295a89b15f736a07ed731b545028dde0f096257e5bd8f577/pynumstim-0.2.6.tar.gz
+[2024-04-20 13:27:11] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/11/cb/bf8998b1898d15646a72a2810715497decb91b784759b4fd40d19a147960/cerbogen-0.0.17.tar.gz
+[2024-04-20 13:27:11] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 13:27:11] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.16.tar.gz tmp/cerbogen-0.0.17.tar.gz --markdown 20240420/c/cerbogen/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-04-20 13:27:11] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/27/e9/ceb832ef0275e030318770a547a42c3820da21700045a15d15590e1b70ec/torchx_nightly-2024.4.19-py3-none-any.whl
+[2024-04-20 13:27:11] INFO root fetch - processPackages [pynumstim]: Downloading https://files.pythonhosted.org/packages/50/cb/5dcbb948ae446fb80506c9b649ae70c087fe49d08a0d788b4d422438abcf/pynumstim-0.2.7.tar.gz
+[2024-04-20 13:27:11] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-04-20 13:27:11] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.4.18-py3-none-any.whl.zip tmp/torchx_nightly-2024.4.19-py3-none-any.whl.zip --markdown 20240420/t/torchx-nightly/2024.4.18-2024.4.19/README.md --exclude *.pyd
+[2024-04-20 13:27:11] INFO root fetch - processPackages [pynumstim]: executing diffoscope
+[2024-04-20 13:27:11] INFO root fetch - processPackages [pynumstim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynumstim-0.2.6.tar.gz tmp/pynumstim-0.2.7.tar.gz --markdown 20240420/p/pynumstim/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 13:27:12] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.16.tar.gz]
+[2024-04-20 13:27:12] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.17.tar.gz]
+[2024-04-20 13:27:12] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 13:27:12] INFO root fetch - processPackages [pynumstim]: Remove: archive file [/home/abi/fetcher/tmp/pynumstim-0.2.6.tar.gz]
+[2024-04-20 13:27:12] INFO root fetch - processPackages [pynumstim]: Remove: archive file [/home/abi/fetcher/tmp/pynumstim-0.2.7.tar.gz]
+[2024-04-20 13:27:12] INFO root fetch - main [MainThread]: End processing [pynumstim]: success
+[2024-04-20 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.18-py3-none-any.whl.zip]
+[2024-04-20 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.19-py3-none-any.whl.zip]
+[2024-04-20 13:27:12] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-04-20 13:27:12] INFO root fetch - main [MainThread]: Store serial: [22855138]
