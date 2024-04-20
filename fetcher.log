@@ -9029,3 +9029,81 @@
 [2024-04-20 06:11:42] INFO root fetch - processPackages [pycityproto]: Remove: archive file [/home/abi/fetcher/tmp/pycityproto-1.13.0.tar.gz]
 [2024-04-20 06:11:42] INFO root fetch - main [MainThread]: End processing [pycityproto]: success
 [2024-04-20 06:11:42] INFO root fetch - main [MainThread]: Store serial: [22852396]
+[2024-04-20 06:13:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852396]
+[2024-04-20 06:13:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sfmanager
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: llama-cpp-python
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-helpdesk-mgmt-rating
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-helpdesk-mgmt
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llm-offset
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-helpdesk-mgmt-rating
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: numerical-pde-solver
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo12-addon-hr-employee-social-media
+[2024-04-20 06:13:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: snowflake-connector-python-nightly
+[2024-04-20 06:13:51] INFO root fetch - processPackages [sfmanager]: New version: [0.1.1b1] Old Version: [0.1.1b0]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [numerical-pde-solver]: New version: [0.1.3] Old Version: [0.1.1]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: New version: [16.0.2.2.2] Old Version: [16.0.2.2.1.2]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: New version: [14.0.1.3.1.dev9] Old Version: [14.0.1.3.1.dev8]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [numerical-pde-solver]: Downloading https://files.pythonhosted.org/packages/bb/98/d9dd9a700291687831407c7bb672a00f4f128c3ea771e7a9e2895554fea3/numerical_pde_solver-0.1.1.tar.gz
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/ac/14/e6811d05ebe3e34065f05067b867b97cf01f349ab2a4af824e13b871b4e1/odoo_addon_helpdesk_mgmt-16.0.2.2.1.2-py3-none-any.whl
+[2024-04-20 06:13:51] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/f7/49/a784e3b455d38e895a7905505131e17bdf8c6c15f0411ad9b464e64104b5/sfmanager-0.1.1b0.tar.gz
+[2024-04-20 06:13:51] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 06:13:51] WARNING root fetch - processPackages [llm-offset]: Skipping, unable to determine old version
+[2024-04-20 06:13:51] INFO root fetch - main [MainThread]: End processing [llm-offset] error
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.3]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: New version: [12.0.1.0.0.99.dev9] Old Version: [12.0.1.0.0.99.dev8]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: Downloading https://files.pythonhosted.org/packages/37/66/637068e31b4a1b99da84831f36f9ef76104763698ac770da85aa8f92f6e5/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev8-py3-none-any.whl
+[2024-04-20 06:13:51] INFO root fetch - processPackages [llama-cpp-python]: Downloading https://files.pythonhosted.org/packages/6d/60/edbd982673a71c6c27fa6818914ad61c6171d165de4e777d489539f1d959/llama_cpp_python-0.2.8.tar.gz
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: Downloading https://files.pythonhosted.org/packages/b7/ea/6e874413c7a566f77124ee40b6f3a9ade9555a5abd626f51cd1ddacc9544/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: Downloading https://files.pythonhosted.org/packages/36/f4/eae83c78a2eb44990654132a62f88cd0b2e0360ff4141eb960f208004c0f/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev8-py3-none-any.whl
+[2024-04-20 06:13:51] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/e1/06/4aec798481dc910cc526e294f8e1ef480d91faff139cc0d6cec6a38d956a/sfmanager-0.1.1b1.tar.gz
+[2024-04-20 06:13:51] INFO root fetch - processPackages [numerical-pde-solver]: Downloading https://files.pythonhosted.org/packages/a0/b3/094e0c0a10855fe7263c1c614b4999d45eaad3f3a102600609f1935cdb53/numerical-pde-solver-0.1.3.tar.gz
+[2024-04-20 06:13:51] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2024.4.9] Old Version: [2024.4.4]
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/ca/cd/63805a3bc4c14325c533dec1ad6059b6073c64a41aade2f088da19adf0ba/odoo_addon_helpdesk_mgmt-16.0.2.2.2-py3-none-any.whl
+[2024-04-20 06:13:51] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: Downloading https://files.pythonhosted.org/packages/0b/34/15b5419b8ffffa159339282d0676731ccd8acbc407f7f7c2c92a3031bd1c/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev9-py3-none-any.whl
+[2024-04-20 06:13:52] INFO root fetch - processPackages [numerical-pde-solver]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [numerical-pde-solver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numerical_pde_solver-0.1.1.tar.gz tmp/numerical-pde-solver-0.1.3.tar.gz --markdown 20240420/n/numerical-pde-solver/0.1.1-0.1.3/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b0.tar.gz tmp/sfmanager-0.1.1b1.tar.gz --markdown 20240420/s/sfmanager/0.1.1b0-0.1.1b1/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: Downloading https://files.pythonhosted.org/packages/83/d9/0a756ee88657f570ff440da2d02d9872de3e88437c2914d52e7403d50f35/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_helpdesk_mgmt-16.0.2.2.1.2-py3-none-any.whl.zip tmp/odoo_addon_helpdesk_mgmt-16.0.2.2.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-helpdesk-mgmt/16.0.2.2.1.2-16.0.2.2.2/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev8-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev9-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-helpdesk-mgmt-rating/14.0.1.3.1.dev8-14.0.1.3.1.dev9/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/12/c3/4f218d7aee744ff4a81b162500c54788da9c3b3370b16f12d83c186af581/snowflake-connector-python-nightly-2024.4.4.tar.gz
+[2024-04-20 06:13:52] INFO root fetch - processPackages [llama-cpp-python]: Downloading https://files.pythonhosted.org/packages/98/2e/357d936ff7418591c56a27b9472e2b3581bd9eeb90c4221580fae5e00588/llama_cpp_python-0.2.9.tar.gz
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-helpdesk-mgmt-rating/16.0.1.0.0.3-16.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: Downloading https://files.pythonhosted.org/packages/2e/a6/717e3130b15a2d892f979c30a93a03a9456147e524146165586ec7460fb7/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev9-py3-none-any.whl
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev9-py3-none-any.whl.zip --markdown 20240420/o/odoo12-addon-hr-employee-social-media/12.0.1.0.0.99.dev8-12.0.1.0.0.99.dev9/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.2.8.tar.gz tmp/llama_cpp_python-0.2.9.tar.gz --markdown 20240420/l/llama-cpp-python/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/2b/1f/ba851f8a5f400cf41366dc7216d298165e7c4fe21d731943caebce0a7907/snowflake-connector-python-nightly-2024.4.9.tar.gz
+[2024-04-20 06:13:52] INFO root fetch - processPackages [numerical-pde-solver]: Remove: archive file [/home/abi/fetcher/tmp/numerical_pde_solver-0.1.1.tar.gz]
+[2024-04-20 06:13:52] INFO root fetch - processPackages [numerical-pde-solver]: Remove: archive file [/home/abi/fetcher/tmp/numerical-pde-solver-0.1.3.tar.gz]
+[2024-04-20 06:13:52] INFO root fetch - main [MainThread]: End processing [numerical-pde-solver]: success
+[2024-04-20 06:13:52] INFO root fetch - processPackages [snowflake-connector-python-nightly]: executing diffoscope
+[2024-04-20 06:13:52] INFO root fetch - processPackages [snowflake-connector-python-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-connector-python-nightly-2024.4.4.tar.gz tmp/snowflake-connector-python-nightly-2024.4.9.tar.gz --markdown 20240420/s/snowflake-connector-python-nightly/2024.4.4-2024.4.9/README.md --exclude *.pyd
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev8-py3-none-any.whl.zip]
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt-rating]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_helpdesk_mgmt_rating-14.0.1.3.1.dev9-py3-none-any.whl.zip]
+[2024-04-20 06:13:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt-rating]: success
+[2024-04-20 06:13:52] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b0.tar.gz]
+[2024-04-20 06:13:52] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b1.tar.gz]
+[2024-04-20 06:13:52] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 06:13:52] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt-rating]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_helpdesk_mgmt_rating-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 06:13:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-helpdesk-mgmt-rating]: success
+[2024-04-20 06:13:53] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_helpdesk_mgmt-16.0.2.2.1.2-py3-none-any.whl.zip]
+[2024-04-20 06:13:53] INFO root fetch - processPackages [odoo-addon-helpdesk-mgmt]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_helpdesk_mgmt-16.0.2.2.2-py3-none-any.whl.zip]
+[2024-04-20 06:13:53] INFO root fetch - main [MainThread]: End processing [odoo-addon-helpdesk-mgmt]: success
+[2024-04-20 06:13:53] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev8-py3-none-any.whl.zip]
+[2024-04-20 06:13:53] INFO root fetch - processPackages [odoo12-addon-hr-employee-social-media]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_hr_employee_social_media-12.0.1.0.0.99.dev9-py3-none-any.whl.zip]
+[2024-04-20 06:13:53] INFO root fetch - main [MainThread]: End processing [odoo12-addon-hr-employee-social-media]: success
+[2024-04-20 06:13:54] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-connector-python-nightly-2024.4.4.tar.gz]
+[2024-04-20 06:13:54] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-connector-python-nightly-2024.4.9.tar.gz]
+[2024-04-20 06:13:54] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
+[2024-04-20 06:13:54] INFO root fetch - processPackages [llama-cpp-python]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_python-0.2.8.tar.gz]
+[2024-04-20 06:13:54] INFO root fetch - processPackages [llama-cpp-python]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_python-0.2.9.tar.gz]
+[2024-04-20 06:13:54] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2024-04-20 06:13:54] INFO root fetch - main [MainThread]: Store serial: [22852422]
