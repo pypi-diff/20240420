@@ -11818,3 +11818,33 @@
 [2024-04-20 10:05:06] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240419.tar.gz]
 [2024-04-20 10:05:06] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-04-20 10:05:06] INFO root fetch - main [MainThread]: Store serial: [22853817]
+[2024-04-20 10:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853817]
+[2024-04-20 10:07:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 10:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NinjaTools
+[2024-04-20 10:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oelint-adv
+[2024-04-20 10:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyglove
+[2024-04-20 10:07:14] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240419] Old Version: [0.4.5.dev20240418]
+[2024-04-20 10:07:14] INFO root fetch - processPackages [NinjaTools]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-04-20 10:07:14] INFO root fetch - processPackages [oelint-adv]: New version: [5.3.0] Old Version: [5.2.0]
+[2024-04-20 10:07:14] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/42/d9/4a0fee5030a713077132c34cec4c06c0c4c18ebaf3532c272c8db14e79a7/pyglove-0.4.5.dev20240418.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/ca/7f/a36a5538a5100fa15d02bbd755fd23241035a68e6019b99cb8d273c32a61/NinjaTools-0.8.9.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [oelint-adv]: Downloading https://files.pythonhosted.org/packages/30/fc/28b3bee047540d8f00ee3bc3a72e200b8b9e49c278c7fb0d0f686f293b6f/oelint_adv-5.2.0.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/e5/4b/51b1aaf73cc29628c361b17b48fb673f3387196adebd717bba4081f5534a/pyglove-0.4.5.dev20240419.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-20 10:07:15] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240418.tar.gz tmp/pyglove-0.4.5.dev20240419.tar.gz --markdown 20240420/p/pyglove/0.4.5.dev20240418-0.4.5.dev20240419/README.md --exclude *.pyd
+[2024-04-20 10:07:15] INFO root fetch - processPackages [NinjaTools]: Downloading https://files.pythonhosted.org/packages/36/c3/2d22ecaadfc1cbe57118895684bc799aa1ff33706a5a09e130728af4cd83/NinjaTools-0.9.0.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [oelint-adv]: Downloading https://files.pythonhosted.org/packages/9e/b5/9c26296298aec4a4e5722e9719347016966bf67de7211f0520677274c755/oelint_adv-5.3.0.tar.gz
+[2024-04-20 10:07:15] INFO root fetch - processPackages [NinjaTools]: executing diffoscope
+[2024-04-20 10:07:15] INFO root fetch - processPackages [NinjaTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NinjaTools-0.8.9.tar.gz tmp/NinjaTools-0.9.0.tar.gz --markdown 20240420/N/NinjaTools/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-04-20 10:07:15] INFO root fetch - processPackages [oelint-adv]: executing diffoscope
+[2024-04-20 10:07:15] INFO root fetch - processPackages [oelint-adv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oelint_adv-5.2.0.tar.gz tmp/oelint_adv-5.3.0.tar.gz --markdown 20240420/o/oelint-adv/5.2.0-5.3.0/README.md --exclude *.pyd
+[2024-04-20 10:07:16] INFO root fetch - processPackages [NinjaTools]: Remove: archive file [/home/abi/fetcher/tmp/NinjaTools-0.8.9.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - processPackages [NinjaTools]: Remove: archive file [/home/abi/fetcher/tmp/NinjaTools-0.9.0.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - main [MainThread]: End processing [NinjaTools]: success
+[2024-04-20 10:07:16] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240418.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240419.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-20 10:07:16] INFO root fetch - processPackages [oelint-adv]: Remove: archive file [/home/abi/fetcher/tmp/oelint_adv-5.2.0.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - processPackages [oelint-adv]: Remove: archive file [/home/abi/fetcher/tmp/oelint_adv-5.3.0.tar.gz]
+[2024-04-20 10:07:16] INFO root fetch - main [MainThread]: End processing [oelint-adv]: success
+[2024-04-20 10:07:16] INFO root fetch - main [MainThread]: Store serial: [22853826]
