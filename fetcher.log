@@ -14712,3 +14712,51 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:27:12] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.4.19-py3-none-any.whl.zip]
 [2024-04-20 13:27:12] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
 [2024-04-20 13:27:12] INFO root fetch - main [MainThread]: Store serial: [22855138]
+[2024-04-20 13:29:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855138]
+[2024-04-20 13:29:20] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aracnid-api
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: panns-AT-inference
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC028
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatgpt-anon
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aswt
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bellek
+[2024-04-20 13:29:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pywxdump
+[2024-04-20 13:29:20] INFO root fetch - processPackages [pywxdump]: New version: [3.0.8] Old Version: [3.0.6]
+[2024-04-20 13:29:20] INFO root fetch - processPackages [bellek]: New version: [0.92.0] Old Version: [0.91.0]
+[2024-04-20 13:29:20] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/cb/78/6d75d5e0ed020d3f8e69339ff32d4be7f31fcca98e6208cff1ce6c179e86/pywxdump-3.0.6.tar.gz
+[2024-04-20 13:29:21] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/fa/f1/6b90c23236450bb196cac69d3d36855a01742c8fedf1a8bb37abd77c0edb/bellek-0.91.0.tar.gz
+[2024-04-20 13:29:21] WARNING root fetch - processPackages [panns-AT-inference]: Skipping, unable to determine old version
+[2024-04-20 13:29:21] INFO root fetch - main [MainThread]: End processing [panns-AT-inference] error
+[2024-04-20 13:29:21] WARNING root fetch - processPackages [PythonTestLJC028]: Skipping, unable to determine old version
+[2024-04-20 13:29:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC028] error
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aracnid-api]: New version: [2.2.0] Old Version: [2.1.1]
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aswt]: New version: [0.0.11] Old Version: [0.0.10]
+[2024-04-20 13:29:21] ERROR root fetch - processPackages [chatgpt-anon]: Unable to get metadata: No such project 'chatgpt-anon'
+[2024-04-20 13:29:21] INFO root fetch - main [MainThread]: End processing [chatgpt-anon] error
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aracnid-api]: Downloading https://files.pythonhosted.org/packages/a5/a8/e5bfd6feaa1ce3c931d9a3f4e27a7b43fea240d13f0693ee928af4cf2d28/aracnid_api-2.1.1.tar.gz
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aswt]: Downloading https://files.pythonhosted.org/packages/14/3c/eeb977dd61e4c5f9619a76badc95e63521f016c9716d112682fd8c1aebb3/aswt-0.0.10-py3-none-any.whl
+[2024-04-20 13:29:21] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/9f/0e/fdec8dee0d11b9a67e8e3a38ceb9eed87596045eafada76cbee6b37751b4/bellek-0.92.0.tar.gz
+[2024-04-20 13:29:21] INFO root fetch - processPackages [pywxdump]: Downloading https://files.pythonhosted.org/packages/0c/2c/b244b3ba6c2cd4dc567d66ab4b6a9bca181dd34007f111e480eb1fb2f28b/pywxdump-3.0.8.tar.gz
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aracnid-api]: Downloading https://files.pythonhosted.org/packages/9e/8b/a7579a12c7e88a2ec974929c31e0de64f58a0f2a0b3c72fb09adf3d08983/aracnid_api-2.2.0.tar.gz
+[2024-04-20 13:29:21] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 13:29:21] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.91.0.tar.gz tmp/bellek-0.92.0.tar.gz --markdown 20240420/b/bellek/0.91.0-0.92.0/README.md --exclude *.pyd
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aswt]: Downloading https://files.pythonhosted.org/packages/bd/df/6deab3b9363aca272cfaaa87a80b1aa8c24c1af62a5bb54c60e4477d12bc/aswt-0.0.11-py3-none-any.whl
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aswt]: executing diffoscope
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aswt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aswt-0.0.10-py3-none-any.whl.zip tmp/aswt-0.0.11-py3-none-any.whl.zip --markdown 20240420/a/aswt/0.0.10-0.0.11/README.md --exclude *.pyd
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aracnid-api]: executing diffoscope
+[2024-04-20 13:29:21] INFO root fetch - processPackages [aracnid-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aracnid_api-2.1.1.tar.gz tmp/aracnid_api-2.2.0.tar.gz --markdown 20240420/a/aracnid-api/2.1.1-2.2.0/README.md --exclude *.pyd
+[2024-04-20 13:29:22] INFO root fetch - processPackages [pywxdump]: executing diffoscope
+[2024-04-20 13:29:22] INFO root fetch - processPackages [pywxdump]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywxdump-3.0.6.tar.gz tmp/pywxdump-3.0.8.tar.gz --markdown 20240420/p/pywxdump/3.0.6-3.0.8/README.md --exclude *.pyd
+[2024-04-20 13:29:22] INFO root fetch - processPackages [aracnid-api]: Remove: archive file [/home/abi/fetcher/tmp/aracnid_api-2.1.1.tar.gz]
+[2024-04-20 13:29:22] INFO root fetch - processPackages [aracnid-api]: Remove: archive file [/home/abi/fetcher/tmp/aracnid_api-2.2.0.tar.gz]
+[2024-04-20 13:29:22] INFO root fetch - main [MainThread]: End processing [aracnid-api]: success
+[2024-04-20 13:29:22] INFO root fetch - processPackages [aswt]: Remove: archive file [/home/abi/fetcher/tmp/aswt-0.0.10-py3-none-any.whl.zip]
+[2024-04-20 13:29:22] INFO root fetch - processPackages [aswt]: Remove: archive file [/home/abi/fetcher/tmp/aswt-0.0.11-py3-none-any.whl.zip]
+[2024-04-20 13:29:22] INFO root fetch - main [MainThread]: End processing [aswt]: success
+[2024-04-20 13:29:22] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.91.0.tar.gz]
+[2024-04-20 13:29:22] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.0.tar.gz]
+[2024-04-20 13:29:22] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 13:29:37] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.6.tar.gz]
+[2024-04-20 13:29:37] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
+[2024-04-20 13:29:37] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
+[2024-04-20 13:29:37] INFO root fetch - main [MainThread]: Store serial: [22855165]
