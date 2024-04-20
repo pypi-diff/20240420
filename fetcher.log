@@ -15428,3 +15428,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:17:44] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
 [2024-04-20 14:17:44] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 14:17:44] INFO root fetch - main [MainThread]: Store serial: [22855552]
+[2024-04-20 14:19:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855552]
+[2024-04-20 14:19:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdf_tool
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: math-ops-lol
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pqsdk
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC049
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: snailshell
+[2024-04-20 14:19:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tdf_tool
+[2024-04-20 14:19:54] WARNING root fetch - processPackages [math-ops-lol]: Skipping, unable to determine old version
+[2024-04-20 14:19:54] INFO root fetch - main [MainThread]: End processing [math-ops-lol] error
+[2024-04-20 14:19:54] INFO root fetch - processPackages [tdf_tool]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-04-20 14:19:54] INFO root fetch - processPackages [pqsdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 14:19:54] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 14:19:54] INFO root fetch - processPackages [tdf_tool]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-04-20 14:19:55] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-20 14:19:55] WARNING root fetch - processPackages [PythonTestLJC049]: Skipping, unable to determine old version
+[2024-04-20 14:19:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC049] error
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/e2/20/7bd3981f89deedf6ba8fdd42fc8e01b5fa47635732ea90010af530c1cbc2/tdf_tool-2.4.8.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/75/15/c4c9916a32afe78e6b3d63b3cad0bdbfc5a873c4573353395ef455e0569f/pqsdk-0.0.1.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/e2/20/7bd3981f89deedf6ba8fdd42fc8e01b5fa47635732ea90010af530c1cbc2/tdf_tool-2.4.8.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/0d/fb/edc0ac41f192341d2e9a5ca096da99a3e6e2fcbb2a105e9f80ca47732071/tdf_tool-2.4.9.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/76/05/4b4d3eb38933cf07e7009c31231d0709a1b890788d6b574602deb78f4abe/pqsdk-0.0.2.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/0d/fb/edc0ac41f192341d2e9a5ca096da99a3e6e2fcbb2a105e9f80ca47732071/tdf_tool-2.4.9.tar.gz
+[2024-04-20 14:19:55] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-04-20 14:19:55] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.1.tar.gz tmp/pqsdk-0.0.2.tar.gz --markdown 20240420/p/pqsdk/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: executing diffoscope
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdf_tool-2.4.8.tar.gz tmp/tdf_tool-2.4.9.tar.gz --markdown 20240420/t/tdf_tool/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: executing diffoscope
+[2024-04-20 14:19:55] INFO root fetch - processPackages [tdf_tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdf_tool-2.4.8.tar.gz tmp/tdf_tool-2.4.9.tar.gz --markdown 20240420/t/tdf_tool/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-04-20 14:19:55] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-20 14:19:56] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.1.tar.gz]
+[2024-04-20 14:19:56] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.2.tar.gz]
+[2024-04-20 14:19:56] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-04-20 14:19:56] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 14:19:56] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240420/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 14:19:56] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.8.tar.gz]
+[2024-04-20 14:19:56] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.9.tar.gz]
+[2024-04-20 14:19:56] INFO root fetch - main [MainThread]: End processing [tdf_tool]: success
+[2024-04-20 14:19:56] INFO root fetch - main [MainThread]: End processing [tdf_tool]: success
+[2024-04-20 14:19:57] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-20 14:19:57] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-20 14:19:57] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 14:19:57] INFO root fetch - main [MainThread]: Store serial: [22855572]
