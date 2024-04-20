@@ -11180,3 +11180,18 @@
 [2024-04-20 09:10:42] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
 [2024-04-20 09:10:42] INFO root fetch - main [MainThread]: End processing [netbound]: success
 [2024-04-20 09:10:42] INFO root fetch - main [MainThread]: Store serial: [22853395]
+[2024-04-20 09:12:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853395]
+[2024-04-20 09:12:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aryan-basic-math-operations
+[2024-04-20 09:12:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-photons-arranger
+[2024-04-20 09:12:51] INFO root fetch - processPackages [lifx-photons-arranger]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 09:12:51] WARNING root fetch - processPackages [aryan-basic-math-operations]: Skipping, unable to determine old version
+[2024-04-20 09:12:51] INFO root fetch - main [MainThread]: End processing [aryan-basic-math-operations] error
+[2024-04-20 09:12:51] INFO root fetch - processPackages [lifx-photons-arranger]: Downloading https://files.pythonhosted.org/packages/08/bf/bbc7081bc3bd2f2b81325bdc971f5b715deffe18fe63217379c0ee485db6/lifx_photons_arranger-0.8.0.tar.gz
+[2024-04-20 09:12:52] INFO root fetch - processPackages [lifx-photons-arranger]: Downloading https://files.pythonhosted.org/packages/a9/11/6ac77b9c5ae43ea51d0765cd7591be1a430fcbbd268fc15080ae9edeab2b/lifx_photons_arranger-0.9.0.tar.gz
+[2024-04-20 09:12:52] INFO root fetch - processPackages [lifx-photons-arranger]: executing diffoscope
+[2024-04-20 09:12:52] INFO root fetch - processPackages [lifx-photons-arranger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_photons_arranger-0.8.0.tar.gz tmp/lifx_photons_arranger-0.9.0.tar.gz --markdown 20240420/l/lifx-photons-arranger/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 09:12:53] INFO root fetch - processPackages [lifx-photons-arranger]: Remove: archive file [/home/abi/fetcher/tmp/lifx_photons_arranger-0.8.0.tar.gz]
+[2024-04-20 09:12:53] INFO root fetch - processPackages [lifx-photons-arranger]: Remove: archive file [/home/abi/fetcher/tmp/lifx_photons_arranger-0.9.0.tar.gz]
+[2024-04-20 09:12:53] INFO root fetch - main [MainThread]: End processing [lifx-photons-arranger]: success
+[2024-04-20 09:12:53] INFO root fetch - main [MainThread]: Store serial: [22853402]
