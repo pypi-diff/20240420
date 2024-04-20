@@ -11791,3 +11791,18 @@
 [2024-04-20 10:00:44] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.20.tar.gz]
 [2024-04-20 10:00:44] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-04-20 10:00:44] INFO root fetch - main [MainThread]: Store serial: [22853772]
+[2024-04-20 10:02:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853772]
+[2024-04-20 10:02:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 10:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-one-dot
+[2024-04-20 10:02:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flechemano
+[2024-04-20 10:02:55] INFO root fetch - processPackages [flechemano]: New version: [0.4] Old Version: [0.3]
+[2024-04-20 10:02:55] WARNING root fetch - processPackages [flake8-one-dot]: Skipping, unable to determine old version
+[2024-04-20 10:02:55] INFO root fetch - main [MainThread]: End processing [flake8-one-dot] error
+[2024-04-20 10:02:55] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/31/1a/2b5fb5c0b2fdee0ac57bcffc6bce46b9a4b5c6d2819e38552a17415af92f/flechemano-0.3.tar.gz
+[2024-04-20 10:02:55] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/5a/50/101a836fae58d3f7c05b979397476cde58b3115ffd8f62ce5266729b0e36/flechemano-0.4.tar.gz
+[2024-04-20 10:02:55] INFO root fetch - processPackages [flechemano]: executing diffoscope
+[2024-04-20 10:02:55] INFO root fetch - processPackages [flechemano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flechemano-0.3.tar.gz tmp/flechemano-0.4.tar.gz --markdown 20240420/f/flechemano/0.3-0.4/README.md --exclude *.pyd
+[2024-04-20 10:02:56] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.3.tar.gz]
+[2024-04-20 10:02:56] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.4.tar.gz]
+[2024-04-20 10:02:56] INFO root fetch - main [MainThread]: End processing [flechemano]: success
+[2024-04-20 10:02:56] INFO root fetch - main [MainThread]: Store serial: [22853801]
