@@ -1982,3 +1982,48 @@
 [2024-04-20 02:08:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-04-20 02:08:30] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-04-20 02:08:30] INFO root fetch - main [MainThread]: Store serial: [22849707]
+[2024-04-20 02:10:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849707]
+[2024-04-20 02:10:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: inventory-library
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superdupper
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nimsos
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyDNARepeatFinder
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openbb-nightly
+[2024-04-20 02:10:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mct-quantizers-nightly
+[2024-04-20 02:10:39] INFO root fetch - processPackages [superdupper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 02:10:39] INFO root fetch - processPackages [mct-quantizers-nightly]: New version: [1.5.0.20240419.post1015] Old Version: [1.5.0.20240418.post1038]
+[2024-04-20 02:10:39] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/2b/23/1d1e615b7840b49e9194dc5ea53dfa94115c6cf77bb568bfd981e7732725/superdupper-0.0.8.tar.gz
+[2024-04-20 02:10:39] INFO root fetch - processPackages [nimsos]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 02:10:39] WARNING root fetch - processPackages [inventory-library]: Skipping, unable to determine old version
+[2024-04-20 02:10:39] INFO root fetch - main [MainThread]: End processing [inventory-library] error
+[2024-04-20 02:10:39] WARNING root fetch - processPackages [PyDNARepeatFinder]: Skipping, unable to determine old version
+[2024-04-20 02:10:39] INFO root fetch - main [MainThread]: End processing [PyDNARepeatFinder] error
+[2024-04-20 02:10:39] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/b3/b7/86611adbcca57f55f908b503d377805764681b7d4e4ac57cf029baadc356/mct-quantizers-nightly-1.5.0.20240418.post1038.tar.gz
+[2024-04-20 02:10:39] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.6.dev202404200009] Old Version: [4.1.6.dev202404190009]
+[2024-04-20 02:10:39] INFO root fetch - processPackages [nimsos]: Downloading https://files.pythonhosted.org/packages/c2/a3/d2edf4e6d32ad5079ad0425fe2f8dc7a0ca9cef48f282fd0d1bd1e50b9ef/nimsos-1.0.0-py3-none-any.whl
+[2024-04-20 02:10:39] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/9c/60/8439940b99faa4223f183c80fde832222e7dc706c53ef75eed365094301e/superdupper-0.0.9.tar.gz
+[2024-04-20 02:10:39] INFO root fetch - processPackages [mct-quantizers-nightly]: Downloading https://files.pythonhosted.org/packages/15/c2/a0c231424f7492ab0d22adfc86306528867e5a2d5329d0eb7d8010a5740e/mct-quantizers-nightly-1.5.0.20240419.post1015.tar.gz
+[2024-04-20 02:10:39] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/c0/d2/3e183d487a4ece3885d5e3f8afcaf11e22ce2dbdd430cfbdd916b5a32eda/openbb_nightly-4.1.6.dev202404190009.tar.gz
+[2024-04-20 02:10:39] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 02:10:39] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.8.tar.gz tmp/superdupper-0.0.9.tar.gz --markdown 20240420/s/superdupper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 02:10:39] INFO root fetch - processPackages [mct-quantizers-nightly]: executing diffoscope
+[2024-04-20 02:10:39] INFO root fetch - processPackages [mct-quantizers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-quantizers-nightly-1.5.0.20240418.post1038.tar.gz tmp/mct-quantizers-nightly-1.5.0.20240419.post1015.tar.gz --markdown 20240420/m/mct-quantizers-nightly/1.5.0.20240418.post1038-1.5.0.20240419.post1015/README.md --exclude *.pyd
+[2024-04-20 02:10:40] INFO root fetch - processPackages [nimsos]: Downloading https://files.pythonhosted.org/packages/d8/66/cc76851094d9ad1bec3139be238147615c6d042f502c3bb02963d793fa68/nimsos-1.0.1-py3-none-any.whl
+[2024-04-20 02:10:40] INFO root fetch - processPackages [nimsos]: executing diffoscope
+[2024-04-20 02:10:40] INFO root fetch - processPackages [nimsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nimsos-1.0.0-py3-none-any.whl.zip tmp/nimsos-1.0.1-py3-none-any.whl.zip --markdown 20240420/n/nimsos/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 02:10:40] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/34/64/c146b02e12e287d812ae5c64166a9b7c4e687f46cf9176e582c5591e0c67/openbb_nightly-4.1.6.dev202404200009.tar.gz
+[2024-04-20 02:10:40] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.8.tar.gz]
+[2024-04-20 02:10:40] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.9.tar.gz]
+[2024-04-20 02:10:40] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 02:10:40] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240418.post1038.tar.gz]
+[2024-04-20 02:10:40] INFO root fetch - processPackages [mct-quantizers-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-quantizers-nightly-1.5.0.20240419.post1015.tar.gz]
+[2024-04-20 02:10:40] INFO root fetch - main [MainThread]: End processing [mct-quantizers-nightly]: success
+[2024-04-20 02:10:40] INFO root fetch - processPackages [nimsos]: Remove: archive file [/home/abi/fetcher/tmp/nimsos-1.0.0-py3-none-any.whl.zip]
+[2024-04-20 02:10:40] INFO root fetch - processPackages [nimsos]: Remove: archive file [/home/abi/fetcher/tmp/nimsos-1.0.1-py3-none-any.whl.zip]
+[2024-04-20 02:10:40] INFO root fetch - main [MainThread]: End processing [nimsos]: success
+[2024-04-20 02:10:41] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-04-20 02:10:41] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.6.dev202404190009.tar.gz tmp/openbb_nightly-4.1.6.dev202404200009.tar.gz --markdown 20240420/o/openbb-nightly/4.1.6.dev202404190009-4.1.6.dev202404200009/README.md --exclude *.pyd
+[2024-04-20 02:10:45] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404190009.tar.gz]
+[2024-04-20 02:10:45] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.6.dev202404200009.tar.gz]
+[2024-04-20 02:10:45] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-04-20 02:10:45] INFO root fetch - main [MainThread]: Store serial: [22849727]
