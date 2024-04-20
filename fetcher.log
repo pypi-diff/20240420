@@ -15700,3 +15700,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:31:08] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.75.tar.gz]
 [2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
 [2024-04-20 14:31:08] INFO root fetch - main [MainThread]: Store serial: [22855662]
+[2024-04-20 14:33:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855662]
+[2024-04-20 14:33:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyTimbre
+[2024-04-20 14:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rio-ui
+[2024-04-20 14:33:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infinity-sdk
+[2024-04-20 14:33:17] INFO root fetch - processPackages [infinity-sdk]: New version: [0.1.0.dev9] Old Version: [0.1.0.dev8]
+[2024-04-20 14:33:17] INFO root fetch - processPackages [rio-ui]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-20 14:33:17] INFO root fetch - processPackages [PyTimbre]: New version: [0.8.6] Old Version: [0.8.5]
+[2024-04-20 14:33:17] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/10/6f/998e45a82e123f8aa87e36c5064d7b28ee0af112c1ae873c7f8968a0374c/infinity_sdk-0.1.0.dev8-py3-none-any.whl
+[2024-04-20 14:33:17] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/88/e6/09cdf8346dd78a3e3966310fe16483e080205c0a671d9907114dccda1365/pytimbre-0.8.5.tar.gz
+[2024-04-20 14:33:17] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/75/f1/87e368bb302953b4dff092b69e711810186159d91777662315c2ad0e80a7/rio_ui-0.5.8.tar.gz
+[2024-04-20 14:33:17] INFO root fetch - processPackages [infinity-sdk]: Downloading https://files.pythonhosted.org/packages/5f/23/609dbf3b9cce37544c49a6f700daf67907a9ddd4838b098e8417fd57597d/infinity_sdk-0.1.0.dev9-py3-none-any.whl
+[2024-04-20 14:33:17] INFO root fetch - processPackages [PyTimbre]: Downloading https://files.pythonhosted.org/packages/53/a5/ef649948076a7effa2934e6c4a56f32f6df2fd21c3907b71fcdeacf656c6/pytimbre-0.8.6.tar.gz
+[2024-04-20 14:33:17] INFO root fetch - processPackages [infinity-sdk]: executing diffoscope
+[2024-04-20 14:33:17] INFO root fetch - processPackages [infinity-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip --markdown 20240420/i/infinity-sdk/0.1.0.dev8-0.1.0.dev9/README.md --exclude *.pyd
+[2024-04-20 14:33:18] INFO root fetch - processPackages [rio-ui]: Downloading https://files.pythonhosted.org/packages/5e/f5/620ac0e3c33509b0ed523cef270c62991290037eb1cfab9cbe7e51448452/rio_ui-0.5.9.tar.gz
+[2024-04-20 14:33:18] INFO root fetch - processPackages [PyTimbre]: executing diffoscope
+[2024-04-20 14:33:18] INFO root fetch - processPackages [PyTimbre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytimbre-0.8.5.tar.gz tmp/pytimbre-0.8.6.tar.gz --markdown 20240420/P/PyTimbre/0.8.5-0.8.6/README.md --exclude *.pyd
+[2024-04-20 14:33:18] INFO root fetch - processPackages [rio-ui]: executing diffoscope
+[2024-04-20 14:33:18] INFO root fetch - processPackages [rio-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rio_ui-0.5.8.tar.gz tmp/rio_ui-0.5.9.tar.gz --markdown 20240420/r/rio-ui/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-20 14:33:18] INFO root fetch - processPackages [PyTimbre]: Remove: archive file [/home/abi/fetcher/tmp/pytimbre-0.8.5.tar.gz]
+[2024-04-20 14:33:18] INFO root fetch - processPackages [PyTimbre]: Remove: archive file [/home/abi/fetcher/tmp/pytimbre-0.8.6.tar.gz]
+[2024-04-20 14:33:18] INFO root fetch - main [MainThread]: End processing [PyTimbre]: success
+[2024-04-20 14:33:18] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev8-py3-none-any.whl.zip]
+[2024-04-20 14:33:18] INFO root fetch - processPackages [infinity-sdk]: Remove: archive file [/home/abi/fetcher/tmp/infinity_sdk-0.1.0.dev9-py3-none-any.whl.zip]
+[2024-04-20 14:33:18] INFO root fetch - main [MainThread]: End processing [infinity-sdk]: success
+[2024-04-20 14:33:20] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.8.tar.gz]
+[2024-04-20 14:33:20] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.9.tar.gz]
+[2024-04-20 14:33:20] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
+[2024-04-20 14:33:20] INFO root fetch - main [MainThread]: Store serial: [22855677]
