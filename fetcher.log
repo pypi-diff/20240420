@@ -17461,3 +17461,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: Remove: archive file [/home/abi/fetcher/tmp/la_coding_theory-0.0.3.tar.gz]
 [2024-04-20 16:38:31] INFO root fetch - main [MainThread]: End processing [la-coding-theory]: success
 [2024-04-20 16:38:31] INFO root fetch - main [MainThread]: Store serial: [22856649]
+[2024-04-20 16:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856649]
+[2024-04-20 16:40:40] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC087
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcpi2
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yandex-taxi-testsuite
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gradysim
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dhkimpypack01
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bclib
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SweetUtil
+[2024-04-20 16:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:40:40] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 16:40:40] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 16:40:40] WARNING root fetch - processPackages [PythonTestLJC087]: Skipping, unable to determine old version
+[2024-04-20 16:40:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC087] error
+[2024-04-20 16:40:40] WARNING root fetch - processPackages [SweetUtil]: Skipping, unable to determine old version
+[2024-04-20 16:40:40] INFO root fetch - processPackages [gradysim]: New version: [0.6.0] Old Version: [0.5.2]
+[2024-04-20 16:40:40] INFO root fetch - main [MainThread]: End processing [SweetUtil] error
+[2024-04-20 16:40:40] WARNING root fetch - processPackages [mcpi2]: Skipping, unable to determine old version
+[2024-04-20 16:40:40] INFO root fetch - main [MainThread]: End processing [mcpi2] error
+[2024-04-20 16:40:40] INFO root fetch - processPackages [yandex-taxi-testsuite]: New version: [0.1.9.1] Old Version: [0.1.9]
+[2024-04-20 16:40:40] WARNING root fetch - processPackages [dhkimpypack01]: Skipping, unable to determine old version
+[2024-04-20 16:40:40] INFO root fetch - main [MainThread]: End processing [dhkimpypack01] error
+[2024-04-20 16:40:40] INFO root fetch - processPackages [bclib]: New version: [3.9.1] Old Version: [3.8.8]
+[2024-04-20 16:40:41] INFO root fetch - processPackages [gradysim]: Downloading https://files.pythonhosted.org/packages/94/e9/c670ab308df77aa8e4108148c68a46f197f7271ed79ba572067e67a24f4f/gradysim-0.5.2.tar.gz
+[2024-04-20 16:40:41] INFO root fetch - processPackages [yandex-taxi-testsuite]: Downloading https://files.pythonhosted.org/packages/97/b1/2cc4d85d991cb59c3462a53d9571631005fc4dcb77203483f3f2daff731c/yandex-taxi-testsuite-0.1.9.tar.gz
+[2024-04-20 16:40:41] INFO root fetch - processPackages [bclib]: Downloading https://files.pythonhosted.org/packages/5d/64/c1299b1433ad9d5f2dce58f38e0ce9ce9987d2e6feff884dd25c82232f02/bclib-3.8.8.tar.gz
+[2024-04-20 16:40:41] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 16:40:41] WARNING root fetch - processPackages [gradysim]: Skipping package: exceeds size limit 14276910>=10485760
+[2024-04-20 16:40:41] INFO root fetch - main [MainThread]: End processing [gradysim] error
+[2024-04-20 16:40:41] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:40:41] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 16:40:41] INFO root fetch - processPackages [yandex-taxi-testsuite]: Downloading https://files.pythonhosted.org/packages/e3/fb/864f2338fa3903a375f577215f0c76a12eae61af2fae665d82fdc88018b0/yandex-taxi-testsuite-0.1.9.1.tar.gz
+[2024-04-20 16:40:41] INFO root fetch - processPackages [yandex-taxi-testsuite]: executing diffoscope
+[2024-04-20 16:40:41] INFO root fetch - processPackages [yandex-taxi-testsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yandex-taxi-testsuite-0.1.9.tar.gz tmp/yandex-taxi-testsuite-0.1.9.1.tar.gz --markdown 20240420/y/yandex-taxi-testsuite/0.1.9-0.1.9.1/README.md --exclude *.pyd
+[2024-04-20 16:40:41] INFO root fetch - processPackages [bclib]: Downloading https://files.pythonhosted.org/packages/5a/cc/fb2f58e3b615ae1358bc11145a84624b1429de857959e9c544fd5aedfb1d/bclib-3.9.1.tar.gz
+[2024-04-20 16:40:41] INFO root fetch - processPackages [bclib]: executing diffoscope
+[2024-04-20 16:40:41] INFO root fetch - processPackages [bclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bclib-3.8.8.tar.gz tmp/bclib-3.9.1.tar.gz --markdown 20240420/b/bclib/3.8.8-3.9.1/README.md --exclude *.pyd
+[2024-04-20 16:40:41] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 16:40:41] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 16:40:41] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:40:42] INFO root fetch - processPackages [yandex-taxi-testsuite]: Remove: archive file [/home/abi/fetcher/tmp/yandex-taxi-testsuite-0.1.9.tar.gz]
+[2024-04-20 16:40:42] INFO root fetch - processPackages [yandex-taxi-testsuite]: Remove: archive file [/home/abi/fetcher/tmp/yandex-taxi-testsuite-0.1.9.1.tar.gz]
+[2024-04-20 16:40:42] INFO root fetch - main [MainThread]: End processing [yandex-taxi-testsuite]: success
+[2024-04-20 16:40:42] INFO root fetch - processPackages [bclib]: Remove: archive file [/home/abi/fetcher/tmp/bclib-3.8.8.tar.gz]
+[2024-04-20 16:40:42] INFO root fetch - processPackages [bclib]: Remove: archive file [/home/abi/fetcher/tmp/bclib-3.9.1.tar.gz]
+[2024-04-20 16:40:42] INFO root fetch - main [MainThread]: End processing [bclib]: success
+[2024-04-20 16:40:42] INFO root fetch - main [MainThread]: Store serial: [22856679]
