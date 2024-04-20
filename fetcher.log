@@ -9631,3 +9631,42 @@
 [2024-04-20 06:48:31] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.3.1.tar.gz]
 [2024-04-20 06:48:31] INFO root fetch - main [MainThread]: End processing [llm-offset]: success
 [2024-04-20 06:48:31] INFO root fetch - main [MainThread]: Store serial: [22852592]
+[2024-04-20 06:50:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852592]
+[2024-04-20 06:50:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 06:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: junhyeok31
+[2024-04-20 06:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-iotedge
+[2024-04-20 06:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anycrc
+[2024-04-20 06:50:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hjnwtx
+[2024-04-20 06:50:40] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-20 06:50:40] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/62/4a/58dd1d5be0eca8659d07203563729d76577819cff44edc73d2f81a08252e/tendril_iotedge-0.3.5.tar.gz
+[2024-04-20 06:50:40] INFO root fetch - processPackages [junhyeok31]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-20 06:50:40] INFO root fetch - processPackages [hjnwtx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 06:50:40] INFO root fetch - processPackages [anycrc]: New version: [0.3.3] Old Version: [0.3.1]
+[2024-04-20 06:50:40] INFO root fetch - processPackages [junhyeok31]: Downloading https://files.pythonhosted.org/packages/33/df/91742150afe537d09dc797849929e6ec4fe37af6723170f387ad4674b540/junhyeok31-0.0.0-py3-none-any.whl
+[2024-04-20 06:50:40] INFO root fetch - processPackages [hjnwtx]: Downloading https://files.pythonhosted.org/packages/ef/6b/bf6a60984981aa4845eef0044052e0ceadebaf3f067ef5f7abe67469c3ab/hjnwtx-0.1.4.tar.gz
+[2024-04-20 06:50:41] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/e6/44/8d2fc2edba0a49c33a4249ada425fd7d333a99c225d50a7edd655bd175ea/tendril_iotedge-0.3.6.tar.gz
+[2024-04-20 06:50:41] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/7b/c0/b1a5e871903a1ad0879103a5539abb03129c1655fa803fbca898e3d6197d/anycrc-0.3.1.tar.gz
+[2024-04-20 06:50:41] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-20 06:50:41] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.5.tar.gz tmp/tendril_iotedge-0.3.6.tar.gz --markdown 20240420/t/tendril-iotedge/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-04-20 06:50:41] INFO root fetch - processPackages [hjnwtx]: Downloading https://files.pythonhosted.org/packages/00/2e/de676c9199d22406debc26f4d4ad377c9623ab88c990dc538c3d41ce236c/hjnwtx-0.1.5.tar.gz
+[2024-04-20 06:50:41] INFO root fetch - processPackages [junhyeok31]: Downloading https://files.pythonhosted.org/packages/1e/e4/ba17a8676027f1039b871bf187ad4387b694628f74092798122568ee969e/junhyeok31-0.0.1-py3-none-any.whl
+[2024-04-20 06:50:41] INFO root fetch - processPackages [junhyeok31]: executing diffoscope
+[2024-04-20 06:50:41] INFO root fetch - processPackages [junhyeok31]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/junhyeok31-0.0.0-py3-none-any.whl.zip tmp/junhyeok31-0.0.1-py3-none-any.whl.zip --markdown 20240420/j/junhyeok31/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-20 06:50:41] INFO root fetch - processPackages [anycrc]: Downloading https://files.pythonhosted.org/packages/2f/f7/07321aaacbbdab446eb5ae656f262ff4e087411df7000420172d6c4b0017/anycrc-0.3.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-20 06:50:41] INFO root fetch - processPackages [hjnwtx]: executing diffoscope
+[2024-04-20 06:50:41] INFO root fetch - processPackages [hjnwtx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hjnwtx-0.1.4.tar.gz tmp/hjnwtx-0.1.5.tar.gz --markdown 20240420/h/hjnwtx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 06:50:41] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.5.tar.gz]
+[2024-04-20 06:50:41] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.6.tar.gz]
+[2024-04-20 06:50:41] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-20 06:50:41] INFO root fetch - processPackages [hjnwtx]: Remove: archive file [/home/abi/fetcher/tmp/hjnwtx-0.1.4.tar.gz]
+[2024-04-20 06:50:41] INFO root fetch - processPackages [hjnwtx]: Remove: archive file [/home/abi/fetcher/tmp/hjnwtx-0.1.5.tar.gz]
+[2024-04-20 06:50:41] INFO root fetch - main [MainThread]: End processing [hjnwtx]: success
+[2024-04-20 06:50:42] INFO root fetch - processPackages [junhyeok31]: Remove: archive file [/home/abi/fetcher/tmp/junhyeok31-0.0.0-py3-none-any.whl.zip]
+[2024-04-20 06:50:42] INFO root fetch - processPackages [junhyeok31]: Remove: archive file [/home/abi/fetcher/tmp/junhyeok31-0.0.1-py3-none-any.whl.zip]
+[2024-04-20 06:50:42] INFO root fetch - main [MainThread]: End processing [junhyeok31]: success
+[2024-04-20 06:50:42] INFO root fetch - processPackages [anycrc]: executing diffoscope
+[2024-04-20 06:50:42] INFO root fetch - processPackages [anycrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anycrc-0.3.1.tar.gz tmp/anycrc-0.3.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240420/a/anycrc/0.3.1-0.3.3/README.md --exclude *.pyd
+[2024-04-20 06:50:42] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.3.1.tar.gz]
+[2024-04-20 06:50:42] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.3.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-20 06:50:42] INFO root fetch - main [MainThread]: End processing [anycrc]: success
+[2024-04-20 06:50:42] INFO root fetch - main [MainThread]: Store serial: [22852641]
