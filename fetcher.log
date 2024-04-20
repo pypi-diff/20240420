@@ -17733,3 +17733,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:58:09] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.3.tar.gz]
 [2024-04-20 16:58:09] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2024-04-20 16:58:09] INFO root fetch - main [MainThread]: Store serial: [22856770]
+[2024-04-20 17:00:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856770]
+[2024-04-20 17:00:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 17:00:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC090
+[2024-04-20 17:00:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-learning-nlp
+[2024-04-20 17:00:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dolibarrpy
+[2024-04-20 17:00:19] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 17:00:19] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/6f/7c/4608f519887324bae78345320123c1861203c52bfc45caf2a2cf6cf0651a/dolibarrpy-0.2.1.tar.gz
+[2024-04-20 17:00:19] WARNING root fetch - processPackages [PythonTestLJC090]: Skipping, unable to determine old version
+[2024-04-20 17:00:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC090] error
+[2024-04-20 17:00:19] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 17:00:19] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 17:00:19] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/07/91/43d8570b2edcadccc46de5330b19b4f317d54b5cb597689086dac7986be9/dolibarrpy-0.2.2.tar.gz
+[2024-04-20 17:00:19] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 17:00:19] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.1.tar.gz tmp/dolibarrpy-0.2.2.tar.gz --markdown 20240420/d/dolibarrpy/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 17:00:20] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 17:00:20] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 17:00:20] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 17:00:20] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.1.tar.gz]
+[2024-04-20 17:00:20] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.2.tar.gz]
+[2024-04-20 17:00:20] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 17:00:20] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 17:00:20] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 17:00:20] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 17:00:20] INFO root fetch - main [MainThread]: Store serial: [22856780]
