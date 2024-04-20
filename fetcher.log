@@ -9992,3 +9992,28 @@
 [2024-04-20 07:27:45] INFO root fetch - processPackages [lmlogits]: Remove: archive file [/home/abi/fetcher/tmp/lmlogits-0.1.1-pp39-pypy39_pp73-manylinux_2_17_s390x.manylinux2014_s390x.whl.zip]
 [2024-04-20 07:27:45] INFO root fetch - main [MainThread]: End processing [lmlogits]: success
 [2024-04-20 07:27:45] INFO root fetch - main [MainThread]: Store serial: [22852805]
+[2024-04-20 07:29:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852805]
+[2024-04-20 07:29:54] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 07:31:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852833]
+[2024-04-20 07:31:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 07:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852833]
+[2024-04-20 07:34:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 07:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmkira
+[2024-04-20 07:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bullmq
+[2024-04-20 07:34:05] INFO root fetch - processPackages [bullmq]: New version: [2.7.2] Old Version: [2.7.1]
+[2024-04-20 07:34:05] INFO root fetch - processPackages [bullmq]: Downloading https://files.pythonhosted.org/packages/72/eb/65ab473158b9e0328de5d7d57020febf521d15588e23f7389b2713e66dee/bullmq-2.7.1.tar.gz
+[2024-04-20 07:34:05] INFO root fetch - processPackages [llmkira]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-20 07:34:05] INFO root fetch - processPackages [llmkira]: Downloading https://files.pythonhosted.org/packages/97/1c/e270ebd95fdb837991e4423e3e531a9b8bf771ad891f85cb1bb88d69a337/llmkira-1.0.2.tar.gz
+[2024-04-20 07:34:05] INFO root fetch - processPackages [bullmq]: Downloading https://files.pythonhosted.org/packages/eb/31/eb5f1355594e90004252238fa30e1a00093108df9ee36319628fdd4e1422/bullmq-2.7.2.tar.gz
+[2024-04-20 07:34:05] INFO root fetch - processPackages [bullmq]: executing diffoscope
+[2024-04-20 07:34:05] INFO root fetch - processPackages [bullmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bullmq-2.7.1.tar.gz tmp/bullmq-2.7.2.tar.gz --markdown 20240420/b/bullmq/2.7.1-2.7.2/README.md --exclude *.pyd
+[2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: Downloading https://files.pythonhosted.org/packages/e5/d5/c5bfc825302d9114c7409c19e6f9ddba6bff4bf97ba516afe903acffda8e/llmkira-1.0.3.tar.gz
+[2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: executing diffoscope
+[2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmkira-1.0.2.tar.gz tmp/llmkira-1.0.3.tar.gz --markdown 20240420/l/llmkira/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-20 07:34:06] INFO root fetch - processPackages [bullmq]: Remove: archive file [/home/abi/fetcher/tmp/bullmq-2.7.1.tar.gz]
+[2024-04-20 07:34:06] INFO root fetch - processPackages [bullmq]: Remove: archive file [/home/abi/fetcher/tmp/bullmq-2.7.2.tar.gz]
+[2024-04-20 07:34:06] INFO root fetch - main [MainThread]: End processing [bullmq]: success
+[2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: Remove: archive file [/home/abi/fetcher/tmp/llmkira-1.0.2.tar.gz]
+[2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: Remove: archive file [/home/abi/fetcher/tmp/llmkira-1.0.3.tar.gz]
+[2024-04-20 07:34:06] INFO root fetch - main [MainThread]: End processing [llmkira]: success
+[2024-04-20 07:34:06] INFO root fetch - main [MainThread]: Store serial: [22852838]
