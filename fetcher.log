@@ -8423,3 +8423,24 @@
 [2024-04-20 05:23:37] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.0.dev2024041903.tar.gz]
 [2024-04-20 05:23:37] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
 [2024-04-20 05:23:37] INFO root fetch - main [MainThread]: Store serial: [22852082]
+[2024-04-20 05:25:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852082]
+[2024-04-20 05:25:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seaplane
+[2024-04-20 05:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ofnodes
+[2024-04-20 05:25:47] INFO root fetch - processPackages [ofnodes]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-20 05:25:47] INFO root fetch - processPackages [seaplane]: New version: [0.6a9] Old Version: [0.6a8]
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: Downloading https://files.pythonhosted.org/packages/f4/24/9dc18385c028eb97a8c780179cc6d9edf8fb42843b41b276e5b307663669/ofnodes-1.6.0.tar.gz
+[2024-04-20 05:25:48] INFO root fetch - processPackages [seaplane]: Downloading https://files.pythonhosted.org/packages/04/dc/2ce684388fd09571ac42495b70c05571bfe81f9789cc84e483e1368b8c5c/seaplane-0.6a8.tar.gz
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: Downloading https://files.pythonhosted.org/packages/6c/4a/276d76255178578fa5b2100615d2861159bd2431dabe00f6e495f4174c9e/ofnodes-1.6.1.tar.gz
+[2024-04-20 05:25:48] INFO root fetch - processPackages [seaplane]: Downloading https://files.pythonhosted.org/packages/f1/5a/1fe41b722a3a104c44fe09fec599272ee8aef30de93b169fde92a324d98d/seaplane-0.6a9.tar.gz
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: executing diffoscope
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofnodes-1.6.0.tar.gz tmp/ofnodes-1.6.1.tar.gz --markdown 20240420/o/ofnodes/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-20 05:25:48] INFO root fetch - processPackages [seaplane]: executing diffoscope
+[2024-04-20 05:25:48] INFO root fetch - processPackages [seaplane]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seaplane-0.6a8.tar.gz tmp/seaplane-0.6a9.tar.gz --markdown 20240420/s/seaplane/0.6a8-0.6a9/README.md --exclude *.pyd
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: Remove: archive file [/home/abi/fetcher/tmp/ofnodes-1.6.0.tar.gz]
+[2024-04-20 05:25:48] INFO root fetch - processPackages [ofnodes]: Remove: archive file [/home/abi/fetcher/tmp/ofnodes-1.6.1.tar.gz]
+[2024-04-20 05:25:48] INFO root fetch - main [MainThread]: End processing [ofnodes]: success
+[2024-04-20 05:25:49] INFO root fetch - processPackages [seaplane]: Remove: archive file [/home/abi/fetcher/tmp/seaplane-0.6a8.tar.gz]
+[2024-04-20 05:25:49] INFO root fetch - processPackages [seaplane]: Remove: archive file [/home/abi/fetcher/tmp/seaplane-0.6a9.tar.gz]
+[2024-04-20 05:25:49] INFO root fetch - main [MainThread]: End processing [seaplane]: success
+[2024-04-20 05:25:49] INFO root fetch - main [MainThread]: Store serial: [22852092]
