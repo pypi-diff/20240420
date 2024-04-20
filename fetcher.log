@@ -21232,3 +21232,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:31:48] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip]
 [2024-04-20 20:31:48] INFO root fetch - main [MainThread]: End processing [pyrealsense2]: success
 [2024-04-20 20:31:48] INFO root fetch - main [MainThread]: Store serial: [22858401]
+[2024-04-20 20:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858401]
+[2024-04-20 20:33:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 20:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transcribe-me
+[2024-04-20 20:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC171
+[2024-04-20 20:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: edstem-assignment-tracker
+[2024-04-20 20:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: transcribe-me
+[2024-04-20 20:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: HimDonHaiDraws
+[2024-04-20 20:33:57] WARNING root fetch - processPackages [transcribe-me]: Skipping, unable to determine old version
+[2024-04-20 20:33:57] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-20 20:33:57] WARNING root fetch - processPackages [HimDonHaiDraws]: Skipping, unable to determine old version
+[2024-04-20 20:33:57] INFO root fetch - main [MainThread]: End processing [HimDonHaiDraws] error
+[2024-04-20 20:33:57] WARNING root fetch - processPackages [transcribe-me]: Skipping, unable to determine old version
+[2024-04-20 20:33:57] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-20 20:33:57] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 20:33:57] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 20:33:57] WARNING root fetch - processPackages [PythonTestLJC171]: Skipping, unable to determine old version
+[2024-04-20 20:33:57] INFO root fetch - main [MainThread]: End processing [PythonTestLJC171] error
+[2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 20:33:58] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 20:33:58] INFO root fetch - main [MainThread]: Store serial: [22858417]
