@@ -10648,3 +10648,18 @@
 [2024-04-20 08:41:53] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip]
 [2024-04-20 08:41:53] INFO root fetch - main [MainThread]: End processing [mytot]: success
 [2024-04-20 08:41:53] INFO root fetch - main [MainThread]: Store serial: [22853164]
+[2024-04-20 08:43:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853164]
+[2024-04-20 08:44:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-04-20 08:44:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-mingzi
+[2024-04-20 08:44:01] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-04-20 08:44:01] WARNING root fetch - processPackages [test-mingzi]: Skipping, unable to determine old version
+[2024-04-20 08:44:01] INFO root fetch - main [MainThread]: End processing [test-mingzi] error
+[2024-04-20 08:44:01] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240420/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-04-20 08:44:02] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-04-20 08:44:02] INFO root fetch - main [MainThread]: Store serial: [22853172]
