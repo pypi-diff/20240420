@@ -21833,3 +21833,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:15:50] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.8.tar.gz]
 [2024-04-20 21:15:50] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
 [2024-04-20 21:15:50] INFO root fetch - main [MainThread]: Store serial: [22858691]
+[2024-04-20 21:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858691]
+[2024-04-20 21:17:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 21:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyCryptomusAPI
+[2024-04-20 21:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Wsorter
+[2024-04-20 21:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC187
+[2024-04-20 21:18:00] INFO root fetch - processPackages [pyCryptomusAPI]: New version: [0.1.0] Old Version: [0.0.8]
+[2024-04-20 21:18:00] WARNING root fetch - processPackages [PythonTestLJC187]: Skipping, unable to determine old version
+[2024-04-20 21:18:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC187] error
+[2024-04-20 21:18:00] WARNING root fetch - processPackages [Wsorter]: Skipping, unable to determine old version
+[2024-04-20 21:18:00] INFO root fetch - main [MainThread]: End processing [Wsorter] error
+[2024-04-20 21:18:00] INFO root fetch - processPackages [pyCryptomusAPI]: Downloading https://files.pythonhosted.org/packages/1a/35/eac46e188540fa6cc5fea674ce380771c05bbda4243aaad2a9df46666e93/pyCryptomusAPI-0.0.8.tar.gz
+[2024-04-20 21:18:00] INFO root fetch - processPackages [pyCryptomusAPI]: Downloading https://files.pythonhosted.org/packages/eb/b7/de8c5b58d40a918936025a73770930ec3a29775eb75d8f93923421e8492f/pyCryptomusAPI-0.1.0.tar.gz
+[2024-04-20 21:18:00] INFO root fetch - processPackages [pyCryptomusAPI]: executing diffoscope
+[2024-04-20 21:18:00] INFO root fetch - processPackages [pyCryptomusAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyCryptomusAPI-0.0.8.tar.gz tmp/pyCryptomusAPI-0.1.0.tar.gz --markdown 20240420/p/pyCryptomusAPI/0.0.8-0.1.0/README.md --exclude *.pyd
+[2024-04-20 21:18:01] INFO root fetch - processPackages [pyCryptomusAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyCryptomusAPI-0.0.8.tar.gz]
+[2024-04-20 21:18:01] INFO root fetch - processPackages [pyCryptomusAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyCryptomusAPI-0.1.0.tar.gz]
+[2024-04-20 21:18:01] INFO root fetch - main [MainThread]: End processing [pyCryptomusAPI]: success
+[2024-04-20 21:18:01] INFO root fetch - main [MainThread]: Store serial: [22858717]
