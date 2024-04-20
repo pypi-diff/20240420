@@ -16615,3 +16615,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:39:27] INFO root fetch - processPackages [xmonkey-curator]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey-curator-0.1.9.tar.gz]
 [2024-04-20 15:39:27] INFO root fetch - main [MainThread]: End processing [xmonkey-curator]: success
 [2024-04-20 15:39:27] INFO root fetch - main [MainThread]: Store serial: [22856108]
+[2024-04-20 15:41:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856108]
+[2024-04-20 15:41:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ArrowTextClassifier
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hakubooru
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: excirqdit
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC066
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fhempy
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ArrowTextClassifier]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 15:41:37] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 15:41:37] WARNING root fetch - processPackages [excirqdit]: Skipping, unable to determine old version
+[2024-04-20 15:41:37] INFO root fetch - main [MainThread]: End processing [excirqdit] error
+[2024-04-20 15:41:37] INFO root fetch - processPackages [hakubooru]: New version: [0.0.2] Old Version: [0.0.1.dev3]
+[2024-04-20 15:41:37] WARNING root fetch - processPackages [PythonTestLJC066]: Skipping, unable to determine old version
+[2024-04-20 15:41:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC066] error
+[2024-04-20 15:41:37] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-20 15:41:37] INFO root fetch - processPackages [ArrowTextClassifier]: Downloading https://files.pythonhosted.org/packages/fe/b7/86c77de25c66fa50a84e9acac81e91dac6f948fbe6930f2e4e29eb9fc881/ArrowTextClassifier-1.0.0.tar.gz
+[2024-04-20 15:41:38] INFO root fetch - processPackages [hakubooru]: Downloading https://files.pythonhosted.org/packages/00/9a/6871006d29e82eff56cc15579f163d8316f9c7f188f63899d8c7d93eff56/hakubooru-0.0.1.dev3.tar.gz
+[2024-04-20 15:41:38] INFO root fetch - processPackages [ArrowTextClassifier]: Downloading https://files.pythonhosted.org/packages/48/46/4776942ce973dadd7cf6509044f7a4bcce9e1da3a0255cb15c465cf97abf/ArrowTextClassifier-1.0.1.tar.gz
+[2024-04-20 15:41:38] INFO root fetch - processPackages [ArrowTextClassifier]: executing diffoscope
+[2024-04-20 15:41:38] INFO root fetch - processPackages [ArrowTextClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ArrowTextClassifier-1.0.0.tar.gz tmp/ArrowTextClassifier-1.0.1.tar.gz --markdown 20240420/A/ArrowTextClassifier/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 15:41:38] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-20 15:41:38] INFO root fetch - processPackages [hakubooru]: Downloading https://files.pythonhosted.org/packages/df/c9/f95e8bca429af8beda5a4865db2341e5fd74bef2aa664be8ac0883b96921/hakubooru-0.0.2.tar.gz
+[2024-04-20 15:41:38] INFO root fetch - processPackages [hakubooru]: executing diffoscope
+[2024-04-20 15:41:38] INFO root fetch - processPackages [hakubooru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hakubooru-0.0.1.dev3.tar.gz tmp/hakubooru-0.0.2.tar.gz --markdown 20240420/h/hakubooru/0.0.1.dev3-0.0.2/README.md --exclude *.pyd
+[2024-04-20 15:41:38] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-20 15:41:38] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240420/f/fhempy/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 15:41:38] INFO root fetch - processPackages [ArrowTextClassifier]: Remove: archive file [/home/abi/fetcher/tmp/ArrowTextClassifier-1.0.0.tar.gz]
+[2024-04-20 15:41:38] INFO root fetch - processPackages [ArrowTextClassifier]: Remove: archive file [/home/abi/fetcher/tmp/ArrowTextClassifier-1.0.1.tar.gz]
+[2024-04-20 15:41:38] INFO root fetch - main [MainThread]: End processing [ArrowTextClassifier]: success
+[2024-04-20 15:41:39] INFO root fetch - processPackages [hakubooru]: Remove: archive file [/home/abi/fetcher/tmp/hakubooru-0.0.1.dev3.tar.gz]
+[2024-04-20 15:41:39] INFO root fetch - processPackages [hakubooru]: Remove: archive file [/home/abi/fetcher/tmp/hakubooru-0.0.2.tar.gz]
+[2024-04-20 15:41:39] INFO root fetch - main [MainThread]: End processing [hakubooru]: success
+[2024-04-20 15:41:40] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-20 15:41:40] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-20 15:41:40] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-20 15:41:40] INFO root fetch - main [MainThread]: Store serial: [22856125]
