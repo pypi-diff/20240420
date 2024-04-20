@@ -17380,3 +17380,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
 [2024-04-20 16:31:53] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
 [2024-04-20 16:31:53] INFO root fetch - main [MainThread]: Store serial: [22856612]
+[2024-04-20 16:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856612]
+[2024-04-20 16:34:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 16:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: astetik
+[2024-04-20 16:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dolibarrpy
+[2024-04-20 16:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: VReplacer-Meme-Generator
+[2024-04-20 16:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC085
+[2024-04-20 16:34:02] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.1] Old Version: [0.1.22]
+[2024-04-20 16:34:02] INFO root fetch - processPackages [astetik]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-20 16:34:02] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/32/ea/ceec13ea915a87f350431b19241baa87fc5449c2584118f5f872c05c64c4/dolibarrpy-0.1.22.tar.gz
+[2024-04-20 16:34:02] INFO root fetch - processPackages [astetik]: Downloading https://files.pythonhosted.org/packages/03/c7/d074a03a59f55708cacb875c008bf375028c452a1ffcc452762a3c3dfed2/astetik-1.9.8.tar.gz
+[2024-04-20 16:34:02] WARNING root fetch - processPackages [PythonTestLJC085]: Skipping, unable to determine old version
+[2024-04-20 16:34:02] INFO root fetch - main [MainThread]: End processing [PythonTestLJC085] error
+[2024-04-20 16:34:02] WARNING root fetch - processPackages [VReplacer-Meme-Generator]: Skipping, unable to determine old version
+[2024-04-20 16:34:02] INFO root fetch - main [MainThread]: End processing [VReplacer-Meme-Generator] error
+[2024-04-20 16:34:02] INFO root fetch - processPackages [astetik]: Downloading https://files.pythonhosted.org/packages/3c/ba/f8622951da73d9b47b45bb847112c388651f9c6e413e712954f260301d9f/astetik-1.9.9.tar.gz
+[2024-04-20 16:34:03] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/6f/7c/4608f519887324bae78345320123c1861203c52bfc45caf2a2cf6cf0651a/dolibarrpy-0.2.1.tar.gz
+[2024-04-20 16:34:03] INFO root fetch - processPackages [astetik]: executing diffoscope
+[2024-04-20 16:34:03] INFO root fetch - processPackages [astetik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astetik-1.9.8.tar.gz tmp/astetik-1.9.9.tar.gz --markdown 20240420/a/astetik/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-20 16:34:03] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 16:34:03] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.1.22.tar.gz tmp/dolibarrpy-0.2.1.tar.gz --markdown 20240420/d/dolibarrpy/0.1.22-0.2.1/README.md --exclude *.pyd
+[2024-04-20 16:34:03] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.1.22.tar.gz]
+[2024-04-20 16:34:03] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.1.tar.gz]
+[2024-04-20 16:34:03] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 16:34:03] INFO root fetch - processPackages [astetik]: Remove: archive file [/home/abi/fetcher/tmp/astetik-1.9.8.tar.gz]
+[2024-04-20 16:34:03] INFO root fetch - processPackages [astetik]: Remove: archive file [/home/abi/fetcher/tmp/astetik-1.9.9.tar.gz]
+[2024-04-20 16:34:03] INFO root fetch - main [MainThread]: End processing [astetik]: success
+[2024-04-20 16:34:03] INFO root fetch - main [MainThread]: Store serial: [22856630]
