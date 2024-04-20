@@ -17670,3 +17670,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:53:43] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
 [2024-04-20 16:53:43] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
 [2024-04-20 16:53:43] INFO root fetch - main [MainThread]: Store serial: [22856751]
+[2024-04-20 16:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856751]
+[2024-04-20 16:55:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: htagui
+[2024-04-20 16:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyHana
+[2024-04-20 16:55:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hltv-async-api
+[2024-04-20 16:55:51] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 16:55:51] INFO root fetch - processPackages [htagui]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-04-20 16:55:51] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-20 16:55:51] INFO root fetch - processPackages [hltv-async-api]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-20 16:55:51] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/68/0f/8fa30d3bd54006a6f4e785f37a44b670a1a7de89a69a347be0c8f5d880a1/htagui-0.4.2.tar.gz
+[2024-04-20 16:55:52] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-20 16:55:52] INFO root fetch - processPackages [hltv-async-api]: Downloading https://files.pythonhosted.org/packages/da/f8/9b9675e39525ea4205fec5c21088a088e8d6d020260c95bdc4042cacf1ac/hltv_async_api-0.6.1.tar.gz
+[2024-04-20 16:55:52] INFO root fetch - processPackages [htagui]: Downloading https://files.pythonhosted.org/packages/d9/e1/0edf53508ae8bab0585b98f702742bd25aad4093df806f96da4d1aab5d61/htagui-0.5.0.tar.gz
+[2024-04-20 16:55:52] INFO root fetch - processPackages [htagui]: executing diffoscope
+[2024-04-20 16:55:52] INFO root fetch - processPackages [htagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/htagui-0.4.2.tar.gz tmp/htagui-0.5.0.tar.gz --markdown 20240420/h/htagui/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-04-20 16:55:52] INFO root fetch - processPackages [hltv-async-api]: Downloading https://files.pythonhosted.org/packages/b1/17/1a512ca20e902b6234469f90e24e9764bf448ab5c38c0807112f245fd51a/hltv_async_api-0.6.2.tar.gz
+[2024-04-20 16:55:52] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-20 16:55:52] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240420/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 16:55:52] INFO root fetch - processPackages [hltv-async-api]: executing diffoscope
+[2024-04-20 16:55:52] INFO root fetch - processPackages [hltv-async-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hltv_async_api-0.6.1.tar.gz tmp/hltv_async_api-0.6.2.tar.gz --markdown 20240420/h/hltv-async-api/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-20 16:55:53] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-20 16:55:53] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-20 16:55:53] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-20 16:55:53] INFO root fetch - processPackages [hltv-async-api]: Remove: archive file [/home/abi/fetcher/tmp/hltv_async_api-0.6.1.tar.gz]
+[2024-04-20 16:55:53] INFO root fetch - processPackages [hltv-async-api]: Remove: archive file [/home/abi/fetcher/tmp/hltv_async_api-0.6.2.tar.gz]
+[2024-04-20 16:55:53] INFO root fetch - main [MainThread]: End processing [hltv-async-api]: success
+[2024-04-20 16:55:53] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.4.2.tar.gz]
+[2024-04-20 16:55:53] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.0.tar.gz]
+[2024-04-20 16:55:53] INFO root fetch - main [MainThread]: End processing [htagui]: success
+[2024-04-20 16:55:53] INFO root fetch - main [MainThread]: Store serial: [22856759]
