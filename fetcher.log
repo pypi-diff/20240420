@@ -9711,3 +9711,15 @@
 [2024-04-20 06:57:17] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
 [2024-04-20 06:57:17] INFO root fetch - main [MainThread]: End processing [autowsgr] error
 [2024-04-20 06:57:17] INFO root fetch - main [MainThread]: Store serial: [22852683]
+[2024-04-20 06:59:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852683]
+[2024-04-20 06:59:25] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 06:59:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-ro-etransport
+[2024-04-20 06:59:25] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: New version: [17.0.0.3.0] Old Version: [16.0.0.6.0]
+[2024-04-20 06:59:25] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: Downloading https://files.pythonhosted.org/packages/4b/c5/0bca651ef4b314a4cd2a7059ebe940addb30723921a2a6967b9effad9fd8/odoo_addon_l10n_ro_etransport-16.0.0.6.0-py3-none-any.whl
+[2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: Downloading https://files.pythonhosted.org/packages/71/d0/b8b198c458951bd2f3671c81ad6e6d8f7f611b4b1024d8bd9522c67bc182/odoo_addon_l10n_ro_etransport-17.0.0.3.0-py3-none-any.whl
+[2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: executing diffoscope
+[2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_etransport-16.0.0.6.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_etransport-17.0.0.3.0-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-l10n-ro-etransport/16.0.0.6.0-17.0.0.3.0/README.md --exclude *.pyd
+[2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_etransport-16.0.0.6.0-py3-none-any.whl.zip]
+[2024-04-20 06:59:26] INFO root fetch - processPackages [odoo-addon-l10n-ro-etransport]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_etransport-17.0.0.3.0-py3-none-any.whl.zip]
+[2024-04-20 06:59:26] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-etransport]: success
+[2024-04-20 06:59:26] INFO root fetch - main [MainThread]: Store serial: [22852685]
