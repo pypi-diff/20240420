@@ -15730,3 +15730,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:33:20] INFO root fetch - processPackages [rio-ui]: Remove: archive file [/home/abi/fetcher/tmp/rio_ui-0.5.9.tar.gz]
 [2024-04-20 14:33:20] INFO root fetch - main [MainThread]: End processing [rio-ui]: success
 [2024-04-20 14:33:20] INFO root fetch - main [MainThread]: Store serial: [22855677]
+[2024-04-20 14:35:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855677]
+[2024-04-20 14:35:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ziptimezone
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: druida
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyCondorRaven
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.3] Old Version: [0.10.2]
+[2024-04-20 14:35:30] INFO root fetch - processPackages [PyCondorRaven]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/4d/41/8b4e624076175de5d67418f19b510db3368222da0271a7773049455b4d1d/ziptimezone-0.10.2.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [PyCondorRaven]: Downloading https://files.pythonhosted.org/packages/f5/17/a5d44c79166f8c8c013e12b65f7ea3feafb78c2f894481ac56e957fcea2d/PyCondorRaven-1.0.8.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 14:35:30] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [PyCondorRaven]: Downloading https://files.pythonhosted.org/packages/6b/90/43bf8cd9ba337f761842146167c9a16ae7f1fc3c105b6c366cbe42d9e943/PyCondorRaven-1.0.9.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/ff/4d/832a819236f2db17ea07f12d5e30e8df490bb1d4ccd70842a0f0cbc6757c/ziptimezone-0.10.3.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [PyCondorRaven]: executing diffoscope
+[2024-04-20 14:35:30] INFO root fetch - processPackages [PyCondorRaven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCondorRaven-1.0.8.tar.gz tmp/PyCondorRaven-1.0.9.tar.gz --markdown 20240420/P/PyCondorRaven/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 14:35:30] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.2.tar.gz tmp/ziptimezone-0.10.3.tar.gz --markdown 20240420/z/ziptimezone/0.10.2-0.10.3/README.md --exclude *.pyd
+[2024-04-20 14:35:30] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-20 14:35:30] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-20 14:35:30] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240420/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 14:35:31] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.2.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.3.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 14:35:31] INFO root fetch - processPackages [PyCondorRaven]: Remove: archive file [/home/abi/fetcher/tmp/PyCondorRaven-1.0.8.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - processPackages [PyCondorRaven]: Remove: archive file [/home/abi/fetcher/tmp/PyCondorRaven-1.0.9.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - main [MainThread]: End processing [PyCondorRaven]: success
+[2024-04-20 14:35:31] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-20 14:35:31] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-20 14:35:31] INFO root fetch - main [MainThread]: Store serial: [22855700]
