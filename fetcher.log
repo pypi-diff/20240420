@@ -10292,3 +10292,24 @@
 [2024-04-20 08:00:24] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
 [2024-04-20 08:00:24] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
 [2024-04-20 08:00:24] INFO root fetch - main [MainThread]: Store serial: [22853047]
+[2024-04-20 08:02:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853047]
+[2024-04-20 08:02:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dogma-data
+[2024-04-20 08:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfilebrowser
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: Downloading https://files.pythonhosted.org/packages/37/3d/a090a1b825905fac3b4a96e80716f48c7f5a8d8a16047b535f68c30131c8/dogma_data-0.2.6.tar.gz
+[2024-04-20 08:02:33] INFO root fetch - processPackages [pyfilebrowser]: New version: [0.0.9b0] Old Version: [0.0.9a0]
+[2024-04-20 08:02:33] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/2f/eb/10b988a7590f89409d807e02c017d767dd502674e53d5bdba3ea5a365981/pyfilebrowser-0.0.9a0-py3-none-any.whl
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: Downloading https://files.pythonhosted.org/packages/5c/97/9dfc9d46432be49fd8d26ab4cde3483f573107f3902509e6d3bca2e603bc/dogma_data-0.2.7.tar.gz
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: executing diffoscope
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dogma_data-0.2.6.tar.gz tmp/dogma_data-0.2.7.tar.gz --markdown 20240420/d/dogma-data/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 08:02:33] INFO root fetch - processPackages [pyfilebrowser]: Downloading https://files.pythonhosted.org/packages/57/a9/7d7bcb29de7ad354a2f7bfdf7ed9105991a9ba058bba47bb85aa4020554e/pyfilebrowser-0.0.9b0-py3-none-any.whl
+[2024-04-20 08:02:33] INFO root fetch - processPackages [pyfilebrowser]: executing diffoscope
+[2024-04-20 08:02:33] INFO root fetch - processPackages [pyfilebrowser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip --markdown 20240420/p/pyfilebrowser/0.0.9a0-0.0.9b0/README.md --exclude *.pyd
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: Remove: archive file [/home/abi/fetcher/tmp/dogma_data-0.2.6.tar.gz]
+[2024-04-20 08:02:33] INFO root fetch - processPackages [dogma-data]: Remove: archive file [/home/abi/fetcher/tmp/dogma_data-0.2.7.tar.gz]
+[2024-04-20 08:02:33] INFO root fetch - main [MainThread]: End processing [dogma-data]: success
+[2024-04-20 08:02:34] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9a0-py3-none-any.whl.zip]
+[2024-04-20 08:02:34] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip]
+[2024-04-20 08:02:34] INFO root fetch - main [MainThread]: End processing [pyfilebrowser]: success
+[2024-04-20 08:02:34] INFO root fetch - main [MainThread]: Store serial: [22853052]
