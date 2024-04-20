@@ -9548,3 +9548,42 @@
 [2024-04-20 06:39:55] INFO root fetch - processPackages [deksecrets]: Remove: archive file [/home/abi/fetcher/tmp/deksecrets-0.1.5.tar.gz]
 [2024-04-20 06:39:55] INFO root fetch - main [MainThread]: End processing [deksecrets]: success
 [2024-04-20 06:39:55] INFO root fetch - main [MainThread]: Store serial: [22852567]
+[2024-04-20 06:41:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852567]
+[2024-04-20 06:42:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 06:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keble-helpers
+[2024-04-20 06:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-mojang
+[2024-04-20 06:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pybureaucrat
+[2024-04-20 06:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nyckel
+[2024-04-20 06:42:04] INFO root fetch - processPackages [async-mojang]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 06:42:04] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 06:42:04] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [pybureaucrat]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 06:42:04] INFO root fetch - processPackages [nyckel]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-20 06:42:04] INFO root fetch - processPackages [async-mojang]: Downloading https://files.pythonhosted.org/packages/b5/66/66d5d3d159fd6d408bc762b681534131f0441a3777d3b4fbd3d1239ffe37/async_mojang-1.0.0.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/31/c7/b572cdcdc438ac6833bd5fb5591a78856fad62ebcc28b3763dd8770bab00/pybureaucrat-1.0.8.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/d7/df/ecc693f923cab89c24a218d2c0e171285003fd3a5904086bb2a0765ae3f0/nyckel-0.4.2.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-20 06:42:04] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240420/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 06:42:04] INFO root fetch - processPackages [async-mojang]: Downloading https://files.pythonhosted.org/packages/6a/9e/b4eb47727be85ac7b3088d92d3a34ced303f027b4dc9016be6f7b19f0006/async_mojang-1.0.1.tar.gz
+[2024-04-20 06:42:04] INFO root fetch - processPackages [async-mojang]: executing diffoscope
+[2024-04-20 06:42:04] INFO root fetch - processPackages [async-mojang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_mojang-1.0.0.tar.gz tmp/async_mojang-1.0.1.tar.gz --markdown 20240420/a/async-mojang/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 06:42:05] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/00/e3/aa5b14ab9b7a552fd558a38fa5cb1706b162531355658001aedb85e31830/pybureaucrat-1.0.9.tar.gz
+[2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: Downloading https://files.pythonhosted.org/packages/63/31/c04eefd7a63ea5f7c895c5b83f92f6b2b7180e1c36127398a620deadb361/nyckel-0.4.3.tar.gz
+[2024-04-20 06:42:05] INFO root fetch - processPackages [pybureaucrat]: executing diffoscope
+[2024-04-20 06:42:05] INFO root fetch - processPackages [pybureaucrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybureaucrat-1.0.8.tar.gz tmp/pybureaucrat-1.0.9.tar.gz --markdown 20240420/p/pybureaucrat/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: executing diffoscope
+[2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nyckel-0.4.2.tar.gz tmp/nyckel-0.4.3.tar.gz --markdown 20240420/n/nyckel/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-04-20 06:42:05] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-20 06:42:05] INFO root fetch - processPackages [async-mojang]: Remove: archive file [/home/abi/fetcher/tmp/async_mojang-1.0.0.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - processPackages [async-mojang]: Remove: archive file [/home/abi/fetcher/tmp/async_mojang-1.0.1.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - main [MainThread]: End processing [async-mojang]: success
+[2024-04-20 06:42:05] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.8.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.9.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
+[2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.2.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.3.tar.gz]
+[2024-04-20 06:42:05] INFO root fetch - main [MainThread]: End processing [nyckel]: success
+[2024-04-20 06:42:05] INFO root fetch - main [MainThread]: Store serial: [22852581]
