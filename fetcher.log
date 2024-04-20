@@ -22935,3 +22935,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:15:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
 [2024-04-20 22:15:22] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-20 22:15:22] INFO root fetch - main [MainThread]: Store serial: [22859183]
+[2024-04-20 22:17:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859183]
+[2024-04-20 22:17:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 22:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: krakenpull
+[2024-04-20 22:17:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eldonationtracker
+[2024-04-20 22:17:32] WARNING root fetch - processPackages [krakenpull]: Skipping, unable to determine old version
+[2024-04-20 22:17:32] INFO root fetch - main [MainThread]: End processing [krakenpull] error
+[2024-04-20 22:17:32] INFO root fetch - processPackages [eldonationtracker]: New version: [8.0.0] Old Version: [7.5.0]
+[2024-04-20 22:17:33] INFO root fetch - processPackages [eldonationtracker]: Downloading https://files.pythonhosted.org/packages/e1/09/8856539bb645e472927825956a5abefad11329ced515d44eaede3cda1ca7/eldonationtracker-7.5.0.tar.gz
+[2024-04-20 22:17:33] INFO root fetch - processPackages [eldonationtracker]: Downloading https://files.pythonhosted.org/packages/de/02/b5d92d85346f0c135de0d2e4c0efe45145cadcda6655126cb336b61f1b87/eldonationtracker-8.0.0.tar.gz
+[2024-04-20 22:17:33] INFO root fetch - processPackages [eldonationtracker]: executing diffoscope
+[2024-04-20 22:17:33] INFO root fetch - processPackages [eldonationtracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eldonationtracker-7.5.0.tar.gz tmp/eldonationtracker-8.0.0.tar.gz --markdown 20240420/e/eldonationtracker/7.5.0-8.0.0/README.md --exclude *.pyd
+[2024-04-20 22:17:34] INFO root fetch - processPackages [eldonationtracker]: Remove: archive file [/home/abi/fetcher/tmp/eldonationtracker-7.5.0.tar.gz]
+[2024-04-20 22:17:34] INFO root fetch - processPackages [eldonationtracker]: Remove: archive file [/home/abi/fetcher/tmp/eldonationtracker-8.0.0.tar.gz]
+[2024-04-20 22:17:34] INFO root fetch - main [MainThread]: End processing [eldonationtracker]: success
+[2024-04-20 22:17:34] INFO root fetch - main [MainThread]: Store serial: [22859197]
