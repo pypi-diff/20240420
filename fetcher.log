@@ -23463,3 +23463,42 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:55:27] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.9.tar.gz]
 [2024-04-20 22:55:27] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
 [2024-04-20 22:55:27] INFO root fetch - main [MainThread]: Store serial: [22859449]
+[2024-04-20 22:57:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859449]
+[2024-04-20 22:57:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DataHoarder
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezregex
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cli-command-parser
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pynysiis
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC223
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: azure-iot-hub-api
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ezregex]: New version: [2.0.0] Old Version: [1.9.6]
+[2024-04-20 22:57:36] INFO root fetch - processPackages [pynysiis]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-20 22:57:36] WARNING root fetch - processPackages [azure-iot-hub-api]: Skipping, unable to determine old version
+[2024-04-20 22:57:36] INFO root fetch - main [MainThread]: End processing [azure-iot-hub-api] error
+[2024-04-20 22:57:36] INFO root fetch - processPackages [pynysiis]: Downloading https://files.pythonhosted.org/packages/96/75/5d46e8000606f2897f38e9fe6f957043202347831dcd65c74351eecf84e8/pynysiis-1.0.2.tar.gz
+[2024-04-20 22:57:36] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/27/25/8391089b6c520dcb98ece97ea6dbe9d7cad3fd8e2aace9b4bd2b4e80c566/ezregex-1.9.6.tar.gz
+[2024-04-20 22:57:36] WARNING root fetch - processPackages [DataHoarder]: Skipping, unable to determine old version
+[2024-04-20 22:57:36] INFO root fetch - main [MainThread]: End processing [DataHoarder] error
+[2024-04-20 22:57:36] WARNING root fetch - processPackages [PythonTestLJC223]: Skipping, unable to determine old version
+[2024-04-20 22:57:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC223] error
+[2024-04-20 22:57:36] INFO root fetch - processPackages [cli-command-parser]: New version: [2024.4.20] Old Version: [2023.7.30]
+[2024-04-20 22:57:36] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/f3/1b/24f22536863974ca087fcdcf377d0fb08675c20455e15f725514b5dbe50b/cli_command_parser-2023.7.30.tar.gz
+[2024-04-20 22:57:36] INFO root fetch - processPackages [pynysiis]: Downloading https://files.pythonhosted.org/packages/d6/34/13e20c1f7f3b5f0f0425745c71657fba2b44b91ff41b59b2dbfadab88fe4/pynysiis-1.0.3.tar.gz
+[2024-04-20 22:57:36] INFO root fetch - processPackages [pynysiis]: executing diffoscope
+[2024-04-20 22:57:36] INFO root fetch - processPackages [pynysiis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynysiis-1.0.2.tar.gz tmp/pynysiis-1.0.3.tar.gz --markdown 20240420/p/pynysiis/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-20 22:57:37] INFO root fetch - processPackages [ezregex]: Downloading https://files.pythonhosted.org/packages/b2/c4/5feec4521fc9fd7a9c9374377379fef92fdc05483b24f80b39b529523bc4/ezregex-2.0.0.tar.gz
+[2024-04-20 22:57:37] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/2c/dc/78366ac5990cba2471eef9432938a51865ff1d9c6aebf975b378f702472a/cli_command_parser-2024.4.20.tar.gz
+[2024-04-20 22:57:37] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2024-04-20 22:57:37] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.7.30.tar.gz tmp/cli_command_parser-2024.4.20.tar.gz --markdown 20240420/c/cli-command-parser/2023.7.30-2024.4.20/README.md --exclude *.pyd
+[2024-04-20 22:57:37] INFO root fetch - processPackages [ezregex]: executing diffoscope
+[2024-04-20 22:57:37] INFO root fetch - processPackages [ezregex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezregex-1.9.6.tar.gz tmp/ezregex-2.0.0.tar.gz --markdown 20240420/e/ezregex/1.9.6-2.0.0/README.md --exclude *.pyd
+[2024-04-20 22:57:37] INFO root fetch - processPackages [pynysiis]: Remove: archive file [/home/abi/fetcher/tmp/pynysiis-1.0.2.tar.gz]
+[2024-04-20 22:57:37] INFO root fetch - processPackages [pynysiis]: Remove: archive file [/home/abi/fetcher/tmp/pynysiis-1.0.3.tar.gz]
+[2024-04-20 22:57:37] INFO root fetch - main [MainThread]: End processing [pynysiis]: success
+[2024-04-20 22:57:38] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2023.7.30.tar.gz]
+[2024-04-20 22:57:38] INFO root fetch - processPackages [cli-command-parser]: Remove: archive file [/home/abi/fetcher/tmp/cli_command_parser-2024.4.20.tar.gz]
+[2024-04-20 22:57:38] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2024-04-20 22:57:38] INFO root fetch - processPackages [ezregex]: Remove: archive file [/home/abi/fetcher/tmp/ezregex-1.9.6.tar.gz]
+[2024-04-20 22:57:38] INFO root fetch - processPackages [ezregex]: Remove: archive file [/home/abi/fetcher/tmp/ezregex-2.0.0.tar.gz]
+[2024-04-20 22:57:38] INFO root fetch - main [MainThread]: End processing [ezregex]: success
+[2024-04-20 22:57:38] INFO root fetch - main [MainThread]: Store serial: [22859477]
