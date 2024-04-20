@@ -23994,3 +23994,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:45:28] INFO root fetch - processPackages [pyarrow]: Remove: archive file [/home/abi/fetcher/tmp/pyarrow-9.0.0.tar.gz]
 [2024-04-20 23:45:28] INFO root fetch - main [MainThread]: End processing [pyarrow]: success
 [2024-04-20 23:45:28] INFO root fetch - main [MainThread]: Store serial: [22859703]
+[2024-04-20 23:47:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859703]
+[2024-04-20 23:47:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 23:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tukey
+[2024-04-20 23:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC241
+[2024-04-20 23:47:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-batch
+[2024-04-20 23:47:37] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 23:47:37] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-20 23:47:37] WARNING root fetch - processPackages [PythonTestLJC241]: Skipping, unable to determine old version
+[2024-04-20 23:47:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC241] error
+[2024-04-20 23:47:37] INFO root fetch - processPackages [tukey]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-04-20 23:47:37] INFO root fetch - processPackages [tukey]: Downloading https://files.pythonhosted.org/packages/24/af/3f1f888a9bf670b98b1dbaf5f36e17f77e3f95840c46ec25fd99c10e3cd9/tukey-0.0.2.tar.gz
+[2024-04-20 23:47:38] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-20 23:47:38] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-20 23:47:38] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240420/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 23:47:38] INFO root fetch - processPackages [tukey]: Downloading https://files.pythonhosted.org/packages/4c/e6/200972c478dba9d092b7c71446614c8ecd4a25f0eed9c6f95b73d8783431/tukey-0.1.0.tar.gz
+[2024-04-20 23:47:39] INFO root fetch - processPackages [tukey]: executing diffoscope
+[2024-04-20 23:47:39] INFO root fetch - processPackages [tukey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tukey-0.0.2.tar.gz tmp/tukey-0.1.0.tar.gz --markdown 20240420/t/tukey/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-04-20 23:47:39] INFO root fetch - processPackages [tukey]: Remove: archive file [/home/abi/fetcher/tmp/tukey-0.0.2.tar.gz]
+[2024-04-20 23:47:39] INFO root fetch - processPackages [tukey]: Remove: archive file [/home/abi/fetcher/tmp/tukey-0.1.0.tar.gz]
+[2024-04-20 23:47:39] INFO root fetch - main [MainThread]: End processing [tukey]: success
+[2024-04-20 23:47:39] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-20 23:47:39] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-20 23:47:39] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-20 23:47:39] INFO root fetch - main [MainThread]: Store serial: [22859731]
