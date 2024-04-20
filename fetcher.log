@@ -23829,3 +23829,11 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:30:18] INFO root fetch - processPackages [tweepy-self]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_self-1.9.0.tar.gz]
 [2024-04-20 23:30:18] INFO root fetch - main [MainThread]: End processing [tweepy-self]: success
 [2024-04-20 23:30:18] INFO root fetch - main [MainThread]: Store serial: [22859612]
+[2024-04-20 23:32:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859612]
+[2024-04-20 23:32:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 23:34:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859612]
+[2024-04-20 23:34:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 23:34:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC236
+[2024-04-20 23:34:32] WARNING root fetch - processPackages [PythonTestLJC236]: Skipping, unable to determine old version
+[2024-04-20 23:34:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC236] error
+[2024-04-20 23:34:32] INFO root fetch - main [MainThread]: Store serial: [22859617]
