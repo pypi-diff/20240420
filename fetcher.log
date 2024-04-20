@@ -19717,3 +19717,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:06:05] INFO root fetch - processPackages [ignition-gemini]: Remove: archive file [/home/abi/fetcher/tmp/ignition_gemini-1.0.0.tar.gz]
 [2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [ignition-gemini]: success
 [2024-04-20 19:06:05] INFO root fetch - main [MainThread]: Store serial: [22857689]
+[2024-04-20 19:08:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857689]
+[2024-04-20 19:08:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC140
+[2024-04-20 19:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 19:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: provisioner-single-board-plugin
+[2024-04-20 19:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BTCoreSharedLibs
+[2024-04-20 19:08:14] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 19:08:14] WARNING root fetch - processPackages [PythonTestLJC140]: Skipping, unable to determine old version
+[2024-04-20 19:08:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC140] error
+[2024-04-20 19:08:14] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/08/e9/1243946d77b2d52743a4f9cce236da19441c4c11d395d09107800815ea6d/CI-CD-SergiCastillo-0.2.5.tar.gz
+[2024-04-20 19:08:14] WARNING root fetch - processPackages [provisioner-single-board-plugin]: Skipping, unable to determine old version
+[2024-04-20 19:08:14] INFO root fetch - main [MainThread]: End processing [provisioner-single-board-plugin] error
+[2024-04-20 19:08:14] INFO root fetch - processPackages [BTCoreSharedLibs]: New version: [0.0.3] Old Version: [0.0.1]
+[2024-04-20 19:08:15] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/84/ea/657a8aa71cbf53622e7217098053c99c05c47d166a5062ceb7975e2bb25d/CI-CD-SergiCastillo-0.2.6.tar.gz
+[2024-04-20 19:08:15] INFO root fetch - processPackages [BTCoreSharedLibs]: Downloading https://files.pythonhosted.org/packages/52/e2/64944c4896aa869a5339925a91e13ba9aabc1785a57809cc469f69bcc03b/BTCoreSharedLibs-0.0.1.tar.gz
+[2024-04-20 19:08:15] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 19:08:15] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.2.5.tar.gz tmp/CI-CD-SergiCastillo-0.2.6.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 19:08:15] INFO root fetch - processPackages [BTCoreSharedLibs]: Downloading https://files.pythonhosted.org/packages/35/f9/47046be3074e1bf56deadb197a5bc88da7ab2d90ddf46e0acdedc0547918/btcoresharedlibs-0.0.3.tar.gz
+[2024-04-20 19:08:15] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.5.tar.gz]
+[2024-04-20 19:08:15] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.6.tar.gz]
+[2024-04-20 19:08:15] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 19:08:15] INFO root fetch - processPackages [BTCoreSharedLibs]: executing diffoscope
+[2024-04-20 19:08:15] INFO root fetch - processPackages [BTCoreSharedLibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BTCoreSharedLibs-0.0.1.tar.gz tmp/btcoresharedlibs-0.0.3.tar.gz --markdown 20240420/B/BTCoreSharedLibs/0.0.1-0.0.3/README.md --exclude *.pyd
+[2024-04-20 19:08:16] INFO root fetch - processPackages [BTCoreSharedLibs]: Remove: archive file [/home/abi/fetcher/tmp/BTCoreSharedLibs-0.0.1.tar.gz]
+[2024-04-20 19:08:16] INFO root fetch - processPackages [BTCoreSharedLibs]: Remove: archive file [/home/abi/fetcher/tmp/btcoresharedlibs-0.0.3.tar.gz]
+[2024-04-20 19:08:16] INFO root fetch - main [MainThread]: End processing [BTCoreSharedLibs]: success
+[2024-04-20 19:08:16] INFO root fetch - main [MainThread]: Store serial: [22857703]
