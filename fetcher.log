@@ -11216,3 +11216,34 @@
 [2024-04-20 09:15:06] INFO root fetch - processPackages [mrml]: Remove: archive file [/home/abi/fetcher/tmp/mrml-0.1.8.tar.gz]
 [2024-04-20 09:15:06] INFO root fetch - main [MainThread]: End processing [mrml]: success
 [2024-04-20 09:15:06] INFO root fetch - main [MainThread]: Store serial: [22853435]
+[2024-04-20 09:17:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853435]
+[2024-04-20 09:17:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 09:17:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flechemano
+[2024-04-20 09:17:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usdm
+[2024-04-20 09:17:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypipr
+[2024-04-20 09:17:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypipr
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:17:15] WARNING root fetch - processPackages [flechemano]: Skipping, unable to determine old version
+[2024-04-20 09:17:15] INFO root fetch - main [MainThread]: End processing [flechemano] error
+[2024-04-20 09:17:15] INFO root fetch - processPackages [usdm]: New version: [0.49.0] Old Version: [0.48.0]
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:17:15] INFO root fetch - processPackages [usdm]: Downloading https://files.pythonhosted.org/packages/8b/7b/4f5d8874d987e63d3adfab707dcd0329d435ce77779574fc5c6bc9afccfc/usdm-0.48.0.tar.gz
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:17:15] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:17:15] INFO root fetch - processPackages [usdm]: Downloading https://files.pythonhosted.org/packages/71/88/b61500ad5e00f823c7624d4e5671ec6692973b1344d90e001a2b38b47b1b/usdm-0.49.0.tar.gz
+[2024-04-20 09:17:16] INFO root fetch - processPackages [usdm]: executing diffoscope
+[2024-04-20 09:17:16] INFO root fetch - processPackages [usdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usdm-0.48.0.tar.gz tmp/usdm-0.49.0.tar.gz --markdown 20240420/u/usdm/0.48.0-0.49.0/README.md --exclude *.pyd
+[2024-04-20 09:17:16] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 09:17:16] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 09:17:16] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:17:16] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:17:17] INFO root fetch - processPackages [usdm]: Remove: archive file [/home/abi/fetcher/tmp/usdm-0.48.0.tar.gz]
+[2024-04-20 09:17:17] INFO root fetch - processPackages [usdm]: Remove: archive file [/home/abi/fetcher/tmp/usdm-0.49.0.tar.gz]
+[2024-04-20 09:17:17] INFO root fetch - main [MainThread]: End processing [usdm]: success
+[2024-04-20 09:17:17] INFO root fetch - main [MainThread]: Store serial: [22853522]
