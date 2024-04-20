@@ -9587,3 +9587,15 @@
 [2024-04-20 06:42:05] INFO root fetch - processPackages [nyckel]: Remove: archive file [/home/abi/fetcher/tmp/nyckel-0.4.3.tar.gz]
 [2024-04-20 06:42:05] INFO root fetch - main [MainThread]: End processing [nyckel]: success
 [2024-04-20 06:42:05] INFO root fetch - main [MainThread]: Store serial: [22852581]
+[2024-04-20 06:44:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852581]
+[2024-04-20 06:44:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 06:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fisspy
+[2024-04-20 06:44:14] INFO root fetch - processPackages [fisspy]: New version: [1.0.0] Old Version: [0.9.80]
+[2024-04-20 06:44:14] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/56/2c/a383b42031166bae4742a4a1ba17d1e7ed0a6b5cbda27cf3414b2be4a6f2/fisspy-0.9.80.tar.gz
+[2024-04-20 06:44:14] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/9c/0d/df47279533ee6e1a6d2466652d0f33fe8f7d882216251ade7b67e74f48be/fisspy-1.0.0.tar.gz
+[2024-04-20 06:44:14] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-20 06:44:14] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-0.9.80.tar.gz tmp/fisspy-1.0.0.tar.gz --markdown 20240420/f/fisspy/0.9.80-1.0.0/README.md --exclude *.pyd
+[2024-04-20 06:44:15] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-0.9.80.tar.gz]
+[2024-04-20 06:44:15] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.0.tar.gz]
+[2024-04-20 06:44:15] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-20 06:44:15] INFO root fetch - main [MainThread]: Store serial: [22852584]
