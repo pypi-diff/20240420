@@ -10017,3 +10017,33 @@
 [2024-04-20 07:34:06] INFO root fetch - processPackages [llmkira]: Remove: archive file [/home/abi/fetcher/tmp/llmkira-1.0.3.tar.gz]
 [2024-04-20 07:34:06] INFO root fetch - main [MainThread]: End processing [llmkira]: success
 [2024-04-20 07:34:06] INFO root fetch - main [MainThread]: Store serial: [22852838]
+[2024-04-20 07:36:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852838]
+[2024-04-20 07:36:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2024-04-20 07:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-20 07:36:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qh3
+[2024-04-20 07:36:15] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.2] Old Version: [17.0.1.0.1.1]
+[2024-04-20 07:36:15] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.17.0.dev20240419] Old Version: [2.17.0.dev20240417]
+[2024-04-20 07:36:15] INFO root fetch - processPackages [qh3]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-20 07:36:15] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-20 07:36:16] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/a1/40/780eb4cd901d7e717ee3bb04fcb19c7e5ff3958be221ba3a27e71fd85faf/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-20 07:36:16] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/e0/40/c3026b10f3965555628cbbbc03c1129cf319b0229a16fc5b7d034e86211c/qh3-1.0.2.tar.gz
+[2024-04-20 07:36:16] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/2e/07/cd2a4ed7796c54648aaa9877e518fbf9fbf32efb82f079e0a29a9bc2c6a8/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl
+[2024-04-20 07:36:16] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/66/83/56de46bd544f8415edecfd1d0464eadc49618dc6365b29c60b4a5e9bbb86/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl
+[2024-04-20 07:36:16] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-20 07:36:16] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-openupgrade-scripts/17.0.1.0.1.1-17.0.1.0.1.2/README.md --exclude *.pyd
+[2024-04-20 07:36:16] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/e9/5e/8618f5d9f93145a435662578cef4e63ea9abe7dc9325f2546990ea7a7e46/qh3-1.0.3-cp37-abi3-musllinux_1_1_armv7l.whl
+[2024-04-20 07:36:16] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2024-04-20 07:36:16] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl.zip tmp/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl.zip --markdown 20240420/t/tflite-runtime-nightly/2.17.0.dev20240417-2.17.0.dev20240419/README.md --exclude *.pyd
+[2024-04-20 07:36:17] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240417-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-20 07:36:17] INFO root fetch - processPackages [tflite-runtime-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tflite_runtime_nightly-2.17.0.dev20240419-cp39-cp39-manylinux_2_34_armv7l.whl.zip]
+[2024-04-20 07:36:17] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2024-04-20 07:36:18] INFO root fetch - processPackages [qh3]: executing diffoscope
+[2024-04-20 07:36:18] INFO root fetch - processPackages [qh3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qh3-1.0.2.tar.gz tmp/qh3-1.0.3-cp37-abi3-musllinux_1_1_armv7l.whl.zip --markdown 20240420/q/qh3/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-04-20 07:36:18] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-20 07:36:18] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-04-20 07:36:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-20 07:36:19] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.2.tar.gz]
+[2024-04-20 07:36:19] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.3-cp37-abi3-musllinux_1_1_armv7l.whl.zip]
+[2024-04-20 07:36:19] INFO root fetch - main [MainThread]: End processing [qh3]: success
+[2024-04-20 07:36:19] INFO root fetch - main [MainThread]: Store serial: [22852859]
