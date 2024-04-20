@@ -7221,3 +7221,33 @@
 [2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: Remove: archive file [/home/abi/fetcher/tmp/morpheus_spatial-0.5.0.tar.gz]
 [2024-04-20 03:33:57] INFO root fetch - main [MainThread]: End processing [morpheus-spatial]: success
 [2024-04-20 03:33:57] INFO root fetch - main [MainThread]: Store serial: [22851623]
+[2024-04-20 03:36:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851623]
+[2024-04-20 03:36:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 03:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-files
+[2024-04-20 03:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-testing
+[2024-04-20 03:36:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: counts
+[2024-04-20 03:36:07] INFO root fetch - processPackages [counts]: New version: [0.9.0] Old Version: [0.0.3]
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-testing]: New version: [8.589.24111] Old Version: [7.587.24110]
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-files]: New version: [6.589.24111] Old Version: [6.585.24095]
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/d8/e8/3f9300b1f4dee93bb17808024b370c0e0b1ecab047b078a6090210a7029b/mo_testing-7.587.24110.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/20/22/9815205d44d40b71864eb1f327a5a5b3c836fef234c0831fba733efb76d2/counts-0.0.3.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/d3/69/f1551e2bf64858a8d1deddd5478dda608ff31d4512d1d6b1ae57c80f457a/mo-files-6.585.24095.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/df/09/113063923c383d3eb905c5bc5770590c43ead0b3bd9f4ef0cbc81c6ba3ac/counts-0.9.0.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/71/03/88c3735747a54857443d0a9d39c7bf57fedca41e61a11299a1b326e4ba5c/mo_testing-8.589.24111.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [counts]: executing diffoscope
+[2024-04-20 03:36:07] INFO root fetch - processPackages [counts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/counts-0.0.3.tar.gz tmp/counts-0.9.0.tar.gz --markdown 20240420/c/counts/0.0.3-0.9.0/README.md --exclude *.pyd
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-testing]: executing diffoscope
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_testing-7.587.24110.tar.gz tmp/mo_testing-8.589.24111.tar.gz --markdown 20240420/m/mo-testing/7.587.24110-8.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-files]: Downloading https://files.pythonhosted.org/packages/36/41/0f25e41a79d986fbbf76a77fc30a5a65eb5d43e15952e44f08e62884f274/mo_files-6.589.24111.tar.gz
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-files]: executing diffoscope
+[2024-04-20 03:36:07] INFO root fetch - processPackages [mo-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-files-6.585.24095.tar.gz tmp/mo_files-6.589.24111.tar.gz --markdown 20240420/m/mo-files/6.585.24095-6.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:36:08] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.0.3.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - main [MainThread]: End processing [counts]: success
+[2024-04-20 03:36:08] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-7.587.24110.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.589.24111.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
+[2024-04-20 03:36:08] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo-files-6.585.24095.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - processPackages [mo-files]: Remove: archive file [/home/abi/fetcher/tmp/mo_files-6.589.24111.tar.gz]
+[2024-04-20 03:36:08] INFO root fetch - main [MainThread]: End processing [mo-files]: success
+[2024-04-20 03:36:08] INFO root fetch - main [MainThread]: Store serial: [22851643]
