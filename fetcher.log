@@ -20120,3 +20120,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:27:57] INFO root fetch - processPackages [pytme]: Remove: archive file [/home/abi/fetcher/tmp/pytme-0.2.0b0.tar.gz]
 [2024-04-20 19:27:57] INFO root fetch - main [MainThread]: End processing [pytme]: success
 [2024-04-20 19:27:57] INFO root fetch - main [MainThread]: Store serial: [22857840]
+[2024-04-20 19:30:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857840]
+[2024-04-20 19:30:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discord-drive
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC148
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MongoDBCrud-Operation
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: owlspec
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phidata
+[2024-04-20 19:30:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jutge-toolkit
+[2024-04-20 19:30:06] INFO root fetch - processPackages [discord-drive]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:30:06] INFO root fetch - processPackages [jutge-toolkit]: New version: [2.9.3] Old Version: [2.9.0]
+[2024-04-20 19:30:06] INFO root fetch - processPackages [phidata]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-20 19:30:06] WARNING root fetch - processPackages [MongoDBCrud-Operation]: Skipping, unable to determine old version
+[2024-04-20 19:30:06] INFO root fetch - main [MainThread]: End processing [MongoDBCrud-Operation] error
+[2024-04-20 19:30:06] WARNING root fetch - processPackages [PythonTestLJC148]: Skipping, unable to determine old version
+[2024-04-20 19:30:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC148] error
+[2024-04-20 19:30:06] INFO root fetch - processPackages [discord-drive]: Downloading https://files.pythonhosted.org/packages/87/db/53cf6e5fae651e8b09e12ad1f21975f813c8d36d2b5bd53dc5198d572ad7/discord_drive-0.0.8.tar.gz
+[2024-04-20 19:30:06] INFO root fetch - processPackages [owlspec]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 19:30:06] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/ff/4f/d0a52919eda665c3817f2176fd5ab97b063cbcafc538ab2c40dfcc2f75ed/jutge-toolkit-2.9.0.tar.gz
+[2024-04-20 19:30:06] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/9a/24/afb3e8585b820976634b1dd732e5ec1f3562093b71b05a47e3bd6a870b75/phidata-2.3.8.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [owlspec]: Downloading https://files.pythonhosted.org/packages/5a/ff/ad9e59e3b0d4371097f43bd392c623abc32b5b5666a2991034e6df9e1361/owlspec-0.1.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [discord-drive]: Downloading https://files.pythonhosted.org/packages/a3/3c/dfb86d1251b43789e40e79368d1ed7725e8633712a4f3d30ae4e4b3fe3e2/discord_drive-0.0.9.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/b3/81/24be98023b2914c7e91f3c6b61cd7020fee7c60083c0171be99196d552df/jutge-toolkit-2.9.3.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/51/63/c5ed33bf592cd65cdcb90c64ded88ab6bc7786db2184c64f6484d61e92d0/phidata-2.3.9.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [discord-drive]: executing diffoscope
+[2024-04-20 19:30:07] INFO root fetch - processPackages [discord-drive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_drive-0.0.8.tar.gz tmp/discord_drive-0.0.9.tar.gz --markdown 20240420/d/discord-drive/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:30:07] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-04-20 19:30:07] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.3.8.tar.gz tmp/phidata-2.3.9.tar.gz --markdown 20240420/p/phidata/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-20 19:30:07] INFO root fetch - processPackages [jutge-toolkit]: executing diffoscope
+[2024-04-20 19:30:07] INFO root fetch - processPackages [jutge-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutge-toolkit-2.9.0.tar.gz tmp/jutge-toolkit-2.9.3.tar.gz --markdown 20240420/j/jutge-toolkit/2.9.0-2.9.3/README.md --exclude *.pyd
+[2024-04-20 19:30:07] INFO root fetch - processPackages [owlspec]: Downloading https://files.pythonhosted.org/packages/4e/b4/8a3a04234b3a879dad042c00424fb08c91181e40c4c000f9a39c6640f4bc/owlspec-0.2.tar.gz
+[2024-04-20 19:30:07] INFO root fetch - processPackages [owlspec]: executing diffoscope
+[2024-04-20 19:30:07] INFO root fetch - processPackages [owlspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owlspec-0.1.tar.gz tmp/owlspec-0.2.tar.gz --markdown 20240420/o/owlspec/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 19:30:07] INFO root fetch - processPackages [discord-drive]: Remove: archive file [/home/abi/fetcher/tmp/discord_drive-0.0.8.tar.gz]
+[2024-04-20 19:30:07] INFO root fetch - processPackages [discord-drive]: Remove: archive file [/home/abi/fetcher/tmp/discord_drive-0.0.9.tar.gz]
+[2024-04-20 19:30:07] INFO root fetch - main [MainThread]: End processing [discord-drive]: success
+[2024-04-20 19:30:08] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.0.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.3.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - main [MainThread]: End processing [jutge-toolkit]: success
+[2024-04-20 19:30:08] INFO root fetch - processPackages [owlspec]: Remove: archive file [/home/abi/fetcher/tmp/owlspec-0.1.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - processPackages [owlspec]: Remove: archive file [/home/abi/fetcher/tmp/owlspec-0.2.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - main [MainThread]: End processing [owlspec]: success
+[2024-04-20 19:30:08] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.8.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
+[2024-04-20 19:30:08] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-04-20 19:30:08] INFO root fetch - main [MainThread]: Store serial: [22857862]
