@@ -13718,3 +13718,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:12:23] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.1.tar.gz]
 [2024-04-20 12:12:23] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 12:12:23] INFO root fetch - main [MainThread]: Store serial: [22854682]
+[2024-04-20 12:14:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854682]
+[2024-04-20 12:14:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-zsmeme
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: colvert
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-somfy
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cerbogen
+[2024-04-20 12:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: snailshell
+[2024-04-20 12:14:32] INFO root fetch - processPackages [cerbogen]: New version: [0.0.9] Old Version: [0.0.15]
+[2024-04-20 12:14:32] INFO root fetch - processPackages [snailshell]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 12:14:32] WARNING root fetch - processPackages [nonebot-plugin-zsmeme]: Skipping, unable to determine old version
+[2024-04-20 12:14:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-zsmeme] error
+[2024-04-20 12:14:32] INFO root fetch - processPackages [snailshell]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 12:14:32] WARNING root fetch - processPackages [python-somfy]: Skipping, unable to determine old version
+[2024-04-20 12:14:32] INFO root fetch - main [MainThread]: End processing [python-somfy] error
+[2024-04-20 12:14:32] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/36/91/8c861d67572ce73992e2d497db8461bcf1b46ee67310b86e0367954d1141/snailshell-0.2.1.tar.gz
+[2024-04-20 12:14:32] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/36/91/8c861d67572ce73992e2d497db8461bcf1b46ee67310b86e0367954d1141/snailshell-0.2.1.tar.gz
+[2024-04-20 12:14:32] WARNING root fetch - processPackages [colvert]: Skipping, unable to determine old version
+[2024-04-20 12:14:32] INFO root fetch - main [MainThread]: End processing [colvert] error
+[2024-04-20 12:14:32] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/a3/d5/a045febc3f8677da60521229ea2e468e296dc9ea32364a3076759ac9320f/cerbogen-0.0.15.tar.gz
+[2024-04-20 12:14:33] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/56/59/3ab4a3e5636a28d383c51f02ca7f8033ed29dd02e7723f2d5b8d17b274f5/cerbogen-0.0.9.tar.gz
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/e7/79/0c222b2ed22deece8e1e9e87b7869bd76837527000b240d79dc9d6298396/snailshell-0.2.2.tar.gz
+[2024-04-20 12:14:33] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 12:14:33] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.15.tar.gz tmp/cerbogen-0.0.9.tar.gz --markdown 20240420/c/cerbogen/0.0.15-0.0.9/README.md --exclude *.pyd
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/e7/79/0c222b2ed22deece8e1e9e87b7869bd76837527000b240d79dc9d6298396/snailshell-0.2.2.tar.gz
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.1.tar.gz tmp/snailshell-0.2.2.tar.gz --markdown 20240420/s/snailshell/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 12:14:33] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.1.tar.gz tmp/snailshell-0.2.2.tar.gz --markdown 20240420/s/snailshell/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 12:14:33] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.15.tar.gz]
+[2024-04-20 12:14:33] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.9.tar.gz]
+[2024-04-20 12:14:33] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 12:14:34] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.1.tar.gz]
+[2024-04-20 12:14:34] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.2.tar.gz]
+[2024-04-20 12:14:34] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 12:14:34] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 12:14:34] INFO root fetch - main [MainThread]: Store serial: [22854706]
