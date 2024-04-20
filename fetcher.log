@@ -3011,3 +3011,51 @@
 [2024-04-20 02:50:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
 [2024-04-20 02:50:31] INFO root fetch - main [MainThread]: End processing [bioversions]: success
 [2024-04-20 02:50:31] INFO root fetch - main [MainThread]: Store serial: [22850190]
+[2024-04-20 02:52:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850190]
+[2024-04-20 02:52:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 02:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Fileseq
+[2024-04-20 02:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheSilent
+[2024-04-20 02:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lbt-dragonfly
+[2024-04-20 02:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gdshoplib
+[2024-04-20 02:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lbt-honeybee
+[2024-04-20 02:52:41] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-20 02:52:41] INFO root fetch - processPackages [Fileseq]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-20 02:52:41] INFO root fetch - processPackages [gdshoplib]: New version: [2.5.0] Old Version: [2.4.9]
+[2024-04-20 02:52:41] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [Fileseq]: Downloading https://files.pythonhosted.org/packages/98/6a/45d2a7bda1232e782a7e472e1036af899279715eee91bc1321513c85fcb2/Fileseq-2.1.0.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [gdshoplib]: Downloading https://files.pythonhosted.org/packages/d1/de/5892ca64bc2cc1da05c13be1f961b3d335b880dc6df429931fef70b4fa9d/gdshoplib-2.4.9.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-20 02:52:41] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 02:52:41] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-20 02:52:41] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240420/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-20 02:52:42] INFO root fetch - processPackages [Fileseq]: Downloading https://files.pythonhosted.org/packages/70/45/d61b3065f1b04e7f3fea9bf8e6508077baf79a737e38c02dc6accb0a3393/fileseq-2.1.1.tar.gz
+[2024-04-20 02:52:42] INFO root fetch - processPackages [gdshoplib]: Downloading https://files.pythonhosted.org/packages/23/12/cc2afde53861fcd02404aaa662065bbd9ed41a3604eb837a8df0844590d4/gdshoplib-2.5.0.tar.gz
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240420/l/lbt-dragonfly/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-20 02:52:42] INFO root fetch - processPackages [gdshoplib]: executing diffoscope
+[2024-04-20 02:52:42] INFO root fetch - processPackages [gdshoplib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdshoplib-2.4.9.tar.gz tmp/gdshoplib-2.5.0.tar.gz --markdown 20240420/g/gdshoplib/2.4.9-2.5.0/README.md --exclude *.pyd
+[2024-04-20 02:52:42] INFO root fetch - processPackages [Fileseq]: executing diffoscope
+[2024-04-20 02:52:42] INFO root fetch - processPackages [Fileseq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fileseq-2.1.0.tar.gz tmp/fileseq-2.1.1.tar.gz --markdown 20240420/F/Fileseq/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-20 02:52:42] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-20 02:52:42] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-20 02:52:43] INFO root fetch - processPackages [Fileseq]: Remove: archive file [/home/abi/fetcher/tmp/Fileseq-2.1.0.tar.gz]
+[2024-04-20 02:52:43] INFO root fetch - processPackages [Fileseq]: Remove: archive file [/home/abi/fetcher/tmp/fileseq-2.1.1.tar.gz]
+[2024-04-20 02:52:43] INFO root fetch - main [MainThread]: End processing [Fileseq]: success
+[2024-04-20 02:52:43] INFO root fetch - processPackages [gdshoplib]: Remove: archive file [/home/abi/fetcher/tmp/gdshoplib-2.4.9.tar.gz]
+[2024-04-20 02:52:43] INFO root fetch - processPackages [gdshoplib]: Remove: archive file [/home/abi/fetcher/tmp/gdshoplib-2.5.0.tar.gz]
+[2024-04-20 02:52:43] INFO root fetch - main [MainThread]: End processing [gdshoplib]: success
+[2024-04-20 02:52:43] INFO root fetch - main [MainThread]: Store serial: [22850213]
