@@ -23397,3 +23397,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:50:54] INFO root fetch - processPackages [clearml-session]: Remove: archive file [/home/abi/fetcher/tmp/clearml_session-0.9.0rc0-py3-none-any.whl.zip]
 [2024-04-20 22:50:54] INFO root fetch - main [MainThread]: End processing [clearml-session]: success
 [2024-04-20 22:50:54] INFO root fetch - main [MainThread]: Store serial: [22859421]
+[2024-04-20 22:52:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859421]
+[2024-04-20 22:53:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 22:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC221
+[2024-04-20 22:53:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-confluentkafkalibrary
+[2024-04-20 22:53:03] WARNING root fetch - processPackages [PythonTestLJC221]: Skipping, unable to determine old version
+[2024-04-20 22:53:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC221] error
+[2024-04-20 22:53:03] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: New version: [2.3.0.post1] Old Version: [2.2.0.post1]
+[2024-04-20 22:53:03] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/d0/59/1aebcdfb3ed4be59e43b6e58f808df425aea34a7f3e44f4faa77feb4188b/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz
+[2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Downloading https://files.pythonhosted.org/packages/dc/32/38fea2d6b987c39181d9e040c70cecbbc722b628fe05a410a638717785ec/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz
+[2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: executing diffoscope
+[2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz tmp/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz --markdown 20240420/r/robotframework-confluentkafkalibrary/2.2.0.post1-2.3.0.post1/README.md --exclude *.pyd
+[2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.2.0.post1.tar.gz]
+[2024-04-20 22:53:04] INFO root fetch - processPackages [robotframework-confluentkafkalibrary]: Remove: archive file [/home/abi/fetcher/tmp/robotframework_confluentkafkalibrary-2.3.0.post1.tar.gz]
+[2024-04-20 22:53:04] INFO root fetch - main [MainThread]: End processing [robotframework-confluentkafkalibrary]: success
+[2024-04-20 22:53:04] INFO root fetch - main [MainThread]: Store serial: [22859429]
