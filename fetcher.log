@@ -19970,3 +19970,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:17:01] INFO root fetch - processPackages [inkcpp-py]: Remove: archive file [/home/abi/fetcher/tmp/inkcpp_py-0.1.5.tar.gz]
 [2024-04-20 19:17:01] INFO root fetch - main [MainThread]: End processing [inkcpp-py]: success
 [2024-04-20 19:17:01] INFO root fetch - main [MainThread]: Store serial: [22857777]
+[2024-04-20 19:19:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857777]
+[2024-04-20 19:19:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maestral-qt
+[2024-04-20 19:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maestral-cocoa
+[2024-04-20 19:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC144
+[2024-04-20 19:19:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: contact-notes-local
+[2024-04-20 19:19:11] INFO root fetch - processPackages [maestral-qt]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-20 19:19:11] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/ca/5b/d8caa1031c80b11cdc29014e2b46417b7ccd70492ae2a21baa20fc151ad4/maestral-qt-1.9.3.dev0.tar.gz
+[2024-04-20 19:19:11] WARNING root fetch - processPackages [PythonTestLJC144]: Skipping, unable to determine old version
+[2024-04-20 19:19:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC144] error
+[2024-04-20 19:19:11] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:19:11] INFO root fetch - processPackages [maestral-cocoa]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-20 19:19:11] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-04-20 19:19:11] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/22/6b/eb7173c7be358e5bae13552e58b783e2634cc7df108dfaafedf54ac921f6/maestral-cocoa-1.9.3.dev0.tar.gz
+[2024-04-20 19:19:11] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/60/bb/867f31892f82fb99c9fae8cf6afcd087c1875aceb49b6b96e0319ee6e647/maestral_qt-1.9.3.dev1.tar.gz
+[2024-04-20 19:19:11] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.9.3.dev0.tar.gz tmp/maestral_qt-1.9.3.dev1.tar.gz --markdown 20240420/m/maestral-qt/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-20 19:19:12] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-04-20 19:19:12] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240420/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-cocoa]: Downloading https://files.pythonhosted.org/packages/33/f9/875f6a506ac5d04c75df1058fb4ddc097c7f17f7844674be004f774116d3/maestral_cocoa-1.9.3.dev1.tar.gz
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-cocoa]: executing diffoscope
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-cocoa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-cocoa-1.9.3.dev0.tar.gz tmp/maestral_cocoa-1.9.3.dev1.tar.gz --markdown 20240420/m/maestral-cocoa/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral-qt-1.9.3.dev0.tar.gz]
+[2024-04-20 19:19:12] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral_qt-1.9.3.dev1.tar.gz]
+[2024-04-20 19:19:12] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2024-04-20 19:19:12] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-04-20 19:19:12] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-04-20 19:19:12] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-04-20 19:19:13] INFO root fetch - processPackages [maestral-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/maestral-cocoa-1.9.3.dev0.tar.gz]
+[2024-04-20 19:19:13] INFO root fetch - processPackages [maestral-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/maestral_cocoa-1.9.3.dev1.tar.gz]
+[2024-04-20 19:19:13] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
+[2024-04-20 19:19:13] INFO root fetch - main [MainThread]: Store serial: [22857791]
