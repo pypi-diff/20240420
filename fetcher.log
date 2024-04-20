@@ -21512,3 +21512,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:51:36] INFO root fetch - processPackages [django-user-email]: Remove: archive file [/home/abi/fetcher/tmp/django_user_email-1.1.1.tar.gz]
 [2024-04-20 20:51:36] INFO root fetch - main [MainThread]: End processing [django-user-email]: success
 [2024-04-20 20:51:36] INFO root fetch - main [MainThread]: Store serial: [22858528]
+[2024-04-20 20:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858528]
+[2024-04-20 20:53:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 20:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC178
+[2024-04-20 20:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rentdown
+[2024-04-20 20:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xpyme
+[2024-04-20 20:53:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jibrish-to-hebrew
+[2024-04-20 20:53:46] WARNING root fetch - processPackages [PythonTestLJC178]: Skipping, unable to determine old version
+[2024-04-20 20:53:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC178] error
+[2024-04-20 20:53:46] WARNING root fetch - processPackages [xpyme]: Skipping, unable to determine old version
+[2024-04-20 20:53:46] INFO root fetch - main [MainThread]: End processing [xpyme] error
+[2024-04-20 20:53:46] WARNING root fetch - processPackages [rentdown]: Skipping, unable to determine old version
+[2024-04-20 20:53:46] INFO root fetch - main [MainThread]: End processing [rentdown] error
+[2024-04-20 20:53:46] INFO root fetch - processPackages [jibrish-to-hebrew]: New version: [1.4] Old Version: [1.3]
+[2024-04-20 20:53:47] INFO root fetch - processPackages [jibrish-to-hebrew]: Downloading https://files.pythonhosted.org/packages/a1/f5/ec57d6e92b979c8de494ac74afaa00c76866b235a07184208520b20b33a1/jibrish_to_hebrew-1.3.tar.gz
+[2024-04-20 20:53:47] INFO root fetch - processPackages [jibrish-to-hebrew]: Downloading https://files.pythonhosted.org/packages/a9/7f/9027935c3e030ea61069ef967018c4f68eaf32e2a09f8186df6b53c9c723/jibrish_to_hebrew-1.4.tar.gz
+[2024-04-20 20:53:47] INFO root fetch - processPackages [jibrish-to-hebrew]: executing diffoscope
+[2024-04-20 20:53:47] INFO root fetch - processPackages [jibrish-to-hebrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jibrish_to_hebrew-1.3.tar.gz tmp/jibrish_to_hebrew-1.4.tar.gz --markdown 20240420/j/jibrish-to-hebrew/1.3-1.4/README.md --exclude *.pyd
+[2024-04-20 20:53:48] INFO root fetch - processPackages [jibrish-to-hebrew]: Remove: archive file [/home/abi/fetcher/tmp/jibrish_to_hebrew-1.3.tar.gz]
+[2024-04-20 20:53:48] INFO root fetch - processPackages [jibrish-to-hebrew]: Remove: archive file [/home/abi/fetcher/tmp/jibrish_to_hebrew-1.4.tar.gz]
+[2024-04-20 20:53:48] INFO root fetch - main [MainThread]: End processing [jibrish-to-hebrew]: success
+[2024-04-20 20:53:48] INFO root fetch - main [MainThread]: Store serial: [22858546]
