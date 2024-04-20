@@ -7191,3 +7191,33 @@
 [2024-04-20 03:31:47] INFO root fetch - processPackages [intecomm-edc]: Remove: archive file [/home/abi/fetcher/tmp/intecomm-edc-0.2.9.tar.gz]
 [2024-04-20 03:31:47] INFO root fetch - main [MainThread]: End processing [intecomm-edc]: success
 [2024-04-20 03:31:47] INFO root fetch - main [MainThread]: Store serial: [22851555]
+[2024-04-20 03:33:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851555]
+[2024-04-20 03:33:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 03:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mo-threads
+[2024-04-20 03:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scratchattach
+[2024-04-20 03:33:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: morpheus-spatial
+[2024-04-20 03:33:56] INFO root fetch - processPackages [scratchattach]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-04-20 03:33:56] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/a3/2d/873642edda1c16daf58148085dcc0fadd1bbdfee90242de0f967872e7114/scratchattach-1.6.8.tar.gz
+[2024-04-20 03:33:56] INFO root fetch - processPackages [morpheus-spatial]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 03:33:56] INFO root fetch - processPackages [mo-threads]: New version: [6.589.24111] Old Version: [6.585.24095]
+[2024-04-20 03:33:56] INFO root fetch - processPackages [morpheus-spatial]: Downloading https://files.pythonhosted.org/packages/75/05/10baa8697f4b5984cbf6b2c4bf15868b94a53689c800ae2514aedd1df72f/morpheus_spatial-0.4.0.tar.gz
+[2024-04-20 03:33:56] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/3c/88/14698adf83119e5fbbd7e32eb6822b013cbbd55b8bed601a7a63b044d538/mo-threads-6.585.24095.tar.gz
+[2024-04-20 03:33:56] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/ed/24/76953fcf27ae5751a106e5435c4ded29c56f3c461e8809bad7cd8512aa03/scratchattach-1.6.9.tar.gz
+[2024-04-20 03:33:57] INFO root fetch - processPackages [scratchattach]: executing diffoscope
+[2024-04-20 03:33:57] INFO root fetch - processPackages [scratchattach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchattach-1.6.8.tar.gz tmp/scratchattach-1.6.9.tar.gz --markdown 20240420/s/scratchattach/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-04-20 03:33:57] INFO root fetch - processPackages [mo-threads]: Downloading https://files.pythonhosted.org/packages/de/5b/5598f078a57f327d50d7599f12d26925036c2e2f04a568a370f517132913/mo_threads-6.589.24111.tar.gz
+[2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: Downloading https://files.pythonhosted.org/packages/6e/ab/04a6144c88e730935047b3259b70e9d62deba36ba31a76822c30196fef25/morpheus_spatial-0.5.0.tar.gz
+[2024-04-20 03:33:57] INFO root fetch - processPackages [mo-threads]: executing diffoscope
+[2024-04-20 03:33:57] INFO root fetch - processPackages [mo-threads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-threads-6.585.24095.tar.gz tmp/mo_threads-6.589.24111.tar.gz --markdown 20240420/m/mo-threads/6.585.24095-6.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: executing diffoscope
+[2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morpheus_spatial-0.4.0.tar.gz tmp/morpheus_spatial-0.5.0.tar.gz --markdown 20240420/m/morpheus-spatial/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 03:33:57] INFO root fetch - processPackages [scratchattach]: Remove: archive file [/home/abi/fetcher/tmp/scratchattach-1.6.8.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - processPackages [scratchattach]: Remove: archive file [/home/abi/fetcher/tmp/scratchattach-1.6.9.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - main [MainThread]: End processing [scratchattach]: success
+[2024-04-20 03:33:57] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo-threads-6.585.24095.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - processPackages [mo-threads]: Remove: archive file [/home/abi/fetcher/tmp/mo_threads-6.589.24111.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - main [MainThread]: End processing [mo-threads]: success
+[2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: Remove: archive file [/home/abi/fetcher/tmp/morpheus_spatial-0.4.0.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - processPackages [morpheus-spatial]: Remove: archive file [/home/abi/fetcher/tmp/morpheus_spatial-0.5.0.tar.gz]
+[2024-04-20 03:33:57] INFO root fetch - main [MainThread]: End processing [morpheus-spatial]: success
+[2024-04-20 03:33:57] INFO root fetch - main [MainThread]: Store serial: [22851623]
