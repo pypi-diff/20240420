@@ -17407,3 +17407,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:34:03] INFO root fetch - processPackages [astetik]: Remove: archive file [/home/abi/fetcher/tmp/astetik-1.9.9.tar.gz]
 [2024-04-20 16:34:03] INFO root fetch - main [MainThread]: End processing [astetik]: success
 [2024-04-20 16:34:03] INFO root fetch - main [MainThread]: Store serial: [22856630]
+[2024-04-20 16:36:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856630]
+[2024-04-20 16:36:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libesedb-python
+[2024-04-20 16:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mwbot
+[2024-04-20 16:36:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC086
+[2024-04-20 16:36:12] WARNING root fetch - processPackages [PythonTestLJC086]: Skipping, unable to determine old version
+[2024-04-20 16:36:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC086] error
+[2024-04-20 16:36:12] INFO root fetch - processPackages [mwbot]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 16:36:12] INFO root fetch - processPackages [libesedb-python]: New version: [20240420] Old Version: [20240202]
+[2024-04-20 16:36:12] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/04/2a/83c3c929ffa136caf04fe2e04e9996f788f3d902fda90f4b4a657879163b/mwbot-1.0.8.tar.gz
+[2024-04-20 16:36:12] INFO root fetch - processPackages [libesedb-python]: Downloading https://files.pythonhosted.org/packages/f7/7e/2022e98e97afc1f4d61a70e678b2dc022ddd1086915fa158db2bc24bb87f/libesedb-python-20240202.tar.gz
+[2024-04-20 16:36:13] INFO root fetch - processPackages [mwbot]: Downloading https://files.pythonhosted.org/packages/13/d9/ccd8a39a431409e07bc8745f8cdfd517a823b4bbc6124285146a65795a24/mwbot-1.0.9.tar.gz
+[2024-04-20 16:36:13] INFO root fetch - processPackages [mwbot]: executing diffoscope
+[2024-04-20 16:36:13] INFO root fetch - processPackages [mwbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwbot-1.0.8.tar.gz tmp/mwbot-1.0.9.tar.gz --markdown 20240420/m/mwbot/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 16:36:13] INFO root fetch - processPackages [libesedb-python]: Downloading https://files.pythonhosted.org/packages/08/2c/fcdd510619f21633a32ad00dc4211efc2d5380697c5bc02c6a0801bdc4af/libesedb-python-20240420.tar.gz
+[2024-04-20 16:36:13] INFO root fetch - processPackages [libesedb-python]: executing diffoscope
+[2024-04-20 16:36:13] INFO root fetch - processPackages [libesedb-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libesedb-python-20240202.tar.gz tmp/libesedb-python-20240420.tar.gz --markdown 20240420/l/libesedb-python/20240202-20240420/README.md --exclude *.pyd
+[2024-04-20 16:36:13] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.8.tar.gz]
+[2024-04-20 16:36:13] INFO root fetch - processPackages [mwbot]: Remove: archive file [/home/abi/fetcher/tmp/mwbot-1.0.9.tar.gz]
+[2024-04-20 16:36:13] INFO root fetch - main [MainThread]: End processing [mwbot]: success
+[2024-04-20 16:36:20] INFO root fetch - processPackages [libesedb-python]: Remove: archive file [/home/abi/fetcher/tmp/libesedb-python-20240202.tar.gz]
+[2024-04-20 16:36:20] INFO root fetch - processPackages [libesedb-python]: Remove: archive file [/home/abi/fetcher/tmp/libesedb-python-20240420.tar.gz]
+[2024-04-20 16:36:20] INFO root fetch - main [MainThread]: End processing [libesedb-python]: success
+[2024-04-20 16:36:20] INFO root fetch - main [MainThread]: Store serial: [22856640]
