@@ -14861,3 +14861,18 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:38:22] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
 [2024-04-20 13:38:22] INFO root fetch - main [MainThread]: End processing [bencode2]: success
 [2024-04-20 13:38:22] INFO root fetch - main [MainThread]: Store serial: [22855235]
+[2024-04-20 13:40:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855235]
+[2024-04-20 13:40:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC030
+[2024-04-20 13:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mingzi
+[2024-04-20 13:40:32] INFO root fetch - processPackages [mingzi]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-20 13:40:32] WARNING root fetch - processPackages [PythonTestLJC030]: Skipping, unable to determine old version
+[2024-04-20 13:40:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC030] error
+[2024-04-20 13:40:32] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/48/de/63a924b12ffc6c7bff8fcddc13129848a0894bbe356a16b8401472e753c1/mingzi-1.2.1.tar.gz
+[2024-04-20 13:40:32] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/dc/0d/dad300ad1ed9f7365015776f2068dc78e399dd043503105bc60fafbc0d9f/mingzi-1.2.2.tar.gz
+[2024-04-20 13:40:32] INFO root fetch - processPackages [mingzi]: executing diffoscope
+[2024-04-20 13:40:32] INFO root fetch - processPackages [mingzi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingzi-1.2.1.tar.gz tmp/mingzi-1.2.2.tar.gz --markdown 20240420/m/mingzi/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-20 13:40:33] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.1.tar.gz]
+[2024-04-20 13:40:33] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.2.tar.gz]
+[2024-04-20 13:40:33] INFO root fetch - main [MainThread]: End processing [mingzi]: success
+[2024-04-20 13:40:33] INFO root fetch - main [MainThread]: Store serial: [22855249]
