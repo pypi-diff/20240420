@@ -11109,3 +11109,47 @@
 [2024-04-20 09:06:19] INFO root fetch - processPackages [a3m]: Remove: archive file [/home/abi/fetcher/tmp/a3m-0.7.9.tar.gz]
 [2024-04-20 09:06:19] INFO root fetch - main [MainThread]: End processing [a3m]: success
 [2024-04-20 09:06:19] INFO root fetch - main [MainThread]: Store serial: [22853349]
+[2024-04-20 09:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853349]
+[2024-04-20 09:08:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 09:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-proxmoxve
+[2024-04-20 09:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rp
+[2024-04-20 09:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-hub-nightly
+[2024-04-20 09:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fluidimage
+[2024-04-20 09:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-hr-employee-cost-history
+[2024-04-20 09:08:29] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-20 09:08:29] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 09:08:29] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [6.4.0] Old Version: [6.3.1]
+[2024-04-20 09:08:29] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2024-04-20 09:08:29] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-20 09:08:29] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 09:08:29] INFO root fetch - processPackages [fluidimage]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-20 09:08:29] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 09:08:29] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 09:08:29] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/72/e2/1c5f75652fc028814aed09f078482c06380e1d947b1f4bbcf73b94882b0a/pulumi_proxmoxve-6.3.1.tar.gz
+[2024-04-20 09:08:29] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: Downloading https://files.pythonhosted.org/packages/13/31/bdfbc982d1075fd1439eba974c8109239d72c6b9b26a519baad9ae5cba70/odoo_addon_hr_employee_cost_history-16.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 09:08:30] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-20 09:08:30] INFO root fetch - processPackages [fluidimage]: Downloading https://files.pythonhosted.org/packages/11/2c/81e460f43e61a4154441419a9e9feec0070a78a647c1ccdd35ae8b22fd2f/fluidimage-0.4.5.tar.gz
+[2024-04-20 09:08:30] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-20 09:08:30] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240420/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-04-20 09:08:30] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/d3/4c/1a7fc3e9ebcce87cf91e80a12acd94fad79f0e0a5e18e9f2be4e14f8ca3c/pulumi_proxmoxve-6.4.0.tar.gz
+[2024-04-20 09:08:30] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: Downloading https://files.pythonhosted.org/packages/5c/82/03ecc05b64d41bca77547685b0bf5be51c543613aef2277a631004be2af1/odoo_addon_hr_employee_cost_history-16.0.1.0.0.3-py3-none-any.whl
+[2024-04-20 09:08:30] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: executing diffoscope
+[2024-04-20 09:08:30] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_hr_employee_cost_history-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_hr_employee_cost_history-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-hr-employee-cost-history/16.0.1.0.0.2-16.0.1.0.0.3/README.md --exclude *.pyd
+[2024-04-20 09:08:30] INFO root fetch - processPackages [fluidimage]: Downloading https://files.pythonhosted.org/packages/8c/06/e5fe68b2a7ae99c36b96e8db65ef606a2efe4cf4f5beda74cec931ea0402/fluidimage-0.4.6-cp39-cp39-macosx_10_9_x86_64.whl
+[2024-04-20 09:08:30] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2024-04-20 09:08:30] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-6.3.1.tar.gz tmp/pulumi_proxmoxve-6.4.0.tar.gz --markdown 20240420/p/pulumi-proxmoxve/6.3.1-6.4.0/README.md --exclude *.pyd
+[2024-04-20 09:08:30] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-20 09:08:30] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-20 09:08:30] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-20 09:08:30] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_hr_employee_cost_history-16.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 09:08:30] INFO root fetch - processPackages [odoo-addon-hr-employee-cost-history]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_hr_employee_cost_history-16.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-20 09:08:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-employee-cost-history]: success
+[2024-04-20 09:08:31] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.3.1.tar.gz]
+[2024-04-20 09:08:31] INFO root fetch - processPackages [pulumi-proxmoxve]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_proxmoxve-6.4.0.tar.gz]
+[2024-04-20 09:08:31] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2024-04-20 09:08:31] INFO root fetch - processPackages [fluidimage]: executing diffoscope
+[2024-04-20 09:08:31] INFO root fetch - processPackages [fluidimage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidimage-0.4.5.tar.gz tmp/fluidimage-0.4.6-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20240420/f/fluidimage/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-04-20 09:08:31] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.4.5.tar.gz]
+[2024-04-20 09:08:31] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.4.6-cp39-cp39-macosx_10_9_x86_64.whl.zip]
+[2024-04-20 09:08:31] INFO root fetch - main [MainThread]: End processing [fluidimage]: success
+[2024-04-20 09:08:31] INFO root fetch - main [MainThread]: Store serial: [22853372]
