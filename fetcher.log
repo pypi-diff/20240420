@@ -15760,3 +15760,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:35:31] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
 [2024-04-20 14:35:31] INFO root fetch - main [MainThread]: End processing [druida]: success
 [2024-04-20 14:35:31] INFO root fetch - main [MainThread]: Store serial: [22855700]
+[2024-04-20 14:37:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855700]
+[2024-04-20 14:37:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rttm-manager
+[2024-04-20 14:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asgebsmanager
+[2024-04-20 14:37:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bellek
+[2024-04-20 14:37:40] INFO root fetch - processPackages [bellek]: New version: [0.92.2] Old Version: [0.92.1]
+[2024-04-20 14:37:40] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 14:37:40] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 14:37:40] INFO root fetch - processPackages [asgebsmanager]: New version: [1.4] Old Version: [1.3]
+[2024-04-20 14:37:40] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/06/08/d585dd2264363b6bf0ae9818eb759aa69ad1e697730e74d34ef1593a6d64/bellek-0.92.1.tar.gz
+[2024-04-20 14:37:40] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/90/e4/01268fb4ae8877e3d2cdeb52c6958d07ffa3d61802abe1a770dfa6952c35/asgebsmanager-1.3.tar.gz
+[2024-04-20 14:37:40] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/9d/4a/c5941511643d264f5a61782e4f4326daf4da0eeb5003b6bb4b638d1776b1/bellek-0.92.2.tar.gz
+[2024-04-20 14:37:40] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/14/42/b26473fa647019784f2f9476e3513f67c5c2097e3eb90c77601cedaed32b/asgebsmanager-1.4.tar.gz
+[2024-04-20 14:37:40] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 14:37:40] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.1.tar.gz tmp/bellek-0.92.2.tar.gz --markdown 20240420/b/bellek/0.92.1-0.92.2/README.md --exclude *.pyd
+[2024-04-20 14:37:40] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-20 14:37:40] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-1.3.tar.gz tmp/asgebsmanager-1.4.tar.gz --markdown 20240420/a/asgebsmanager/1.3-1.4/README.md --exclude *.pyd
+[2024-04-20 14:37:41] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.3.tar.gz]
+[2024-04-20 14:37:41] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.4.tar.gz]
+[2024-04-20 14:37:41] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-20 14:37:41] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.1.tar.gz]
+[2024-04-20 14:37:41] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.2.tar.gz]
+[2024-04-20 14:37:41] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 14:37:41] INFO root fetch - main [MainThread]: Store serial: [22855716]
