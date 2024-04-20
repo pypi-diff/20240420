@@ -9843,3 +9843,42 @@
 [2024-04-20 07:08:08] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
 [2024-04-20 07:08:08] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
 [2024-04-20 07:08:08] INFO root fetch - main [MainThread]: Store serial: [22852719]
+[2024-04-20 07:10:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852719]
+[2024-04-20 07:10:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 07:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: slicer-package-manager
+[2024-04-20 07:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slicer-package-manager-client
+[2024-04-20 07:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freeze-dried-data
+[2024-04-20 07:10:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cmgr
+[2024-04-20 07:10:18] INFO root fetch - processPackages [freeze-dried-data]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-20 07:10:18] INFO root fetch - processPackages [slicer-package-manager-client]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 07:10:18] INFO root fetch - processPackages [slicer-package-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 07:10:18] INFO root fetch - processPackages [cmgr]: New version: [0.0.7] Old Version: [0.0.4]
+[2024-04-20 07:10:18] INFO root fetch - processPackages [freeze-dried-data]: Downloading https://files.pythonhosted.org/packages/f6/04/107d05836aafc66b9bbdf1eff4a8df1da96880a54f64575dc69b80e74145/freeze_dried_data-1.2.3.tar.gz
+[2024-04-20 07:10:18] INFO root fetch - processPackages [cmgr]: Downloading https://files.pythonhosted.org/packages/4f/30/e39e6dacc298dcac0b6b9d002027d54a2ca10e389885334766b4008c4e16/cmgr-0.0.4.tar.gz
+[2024-04-20 07:10:18] INFO root fetch - processPackages [slicer-package-manager-client]: Downloading https://files.pythonhosted.org/packages/df/2f/52397445ad67f928c269d1378f667bdc2f3265a84be6195967894bd4c094/slicer-package-manager-client-0.8.0.tar.gz
+[2024-04-20 07:10:18] INFO root fetch - processPackages [slicer-package-manager]: Downloading https://files.pythonhosted.org/packages/38/a9/f2587ef43d675a8c7bc0cf5fcbfd8e13265ae519db85538f2ba7ced52a4a/slicer_package_manager-0.8.0.tar.gz
+[2024-04-20 07:10:18] INFO root fetch - processPackages [freeze-dried-data]: Downloading https://files.pythonhosted.org/packages/c9/91/5f688480ef19b7198d90875f6a9f3db3707652f7bdb4a404272f9cb718c2/freeze_dried_data-1.2.4.tar.gz
+[2024-04-20 07:10:19] INFO root fetch - processPackages [freeze-dried-data]: executing diffoscope
+[2024-04-20 07:10:19] INFO root fetch - processPackages [freeze-dried-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeze_dried_data-1.2.3.tar.gz tmp/freeze_dried_data-1.2.4.tar.gz --markdown 20240420/f/freeze-dried-data/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-20 07:10:19] INFO root fetch - processPackages [cmgr]: Downloading https://files.pythonhosted.org/packages/41/47/ddd52f5e4163670ce876900c120174f0f15a64e572b013bcd387beb9b9b3/cmgr-0.0.7.tar.gz
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager-client]: Downloading https://files.pythonhosted.org/packages/e9/ae/4860a89b02aa79186941fc895dc7d3b03cc1a695c6a8d60fb9c599b6fe7c/slicer_package_manager_client-0.9.0.tar.gz
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager-client]: executing diffoscope
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slicer-package-manager-client-0.8.0.tar.gz tmp/slicer_package_manager_client-0.9.0.tar.gz --markdown 20240420/s/slicer-package-manager-client/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 07:10:19] INFO root fetch - processPackages [cmgr]: executing diffoscope
+[2024-04-20 07:10:19] INFO root fetch - processPackages [cmgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmgr-0.0.4.tar.gz tmp/cmgr-0.0.7.tar.gz --markdown 20240420/c/cmgr/0.0.4-0.0.7/README.md --exclude *.pyd
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager]: Downloading https://files.pythonhosted.org/packages/8a/61/cbf662733570b2fa27f110b5d121e288ef5ee318ede0cafb6f55b4c45fc2/slicer_package_manager-0.9.0.tar.gz
+[2024-04-20 07:10:19] INFO root fetch - processPackages [freeze-dried-data]: Remove: archive file [/home/abi/fetcher/tmp/freeze_dried_data-1.2.3.tar.gz]
+[2024-04-20 07:10:19] INFO root fetch - processPackages [freeze-dried-data]: Remove: archive file [/home/abi/fetcher/tmp/freeze_dried_data-1.2.4.tar.gz]
+[2024-04-20 07:10:19] INFO root fetch - main [MainThread]: End processing [freeze-dried-data]: success
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager]: executing diffoscope
+[2024-04-20 07:10:19] INFO root fetch - processPackages [slicer-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slicer_package_manager-0.8.0.tar.gz tmp/slicer_package_manager-0.9.0.tar.gz --markdown 20240420/s/slicer-package-manager/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 07:10:20] INFO root fetch - processPackages [slicer-package-manager-client]: Remove: archive file [/home/abi/fetcher/tmp/slicer-package-manager-client-0.8.0.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - processPackages [cmgr]: Remove: archive file [/home/abi/fetcher/tmp/cmgr-0.0.4.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - processPackages [slicer-package-manager-client]: Remove: archive file [/home/abi/fetcher/tmp/slicer_package_manager_client-0.9.0.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - processPackages [cmgr]: Remove: archive file [/home/abi/fetcher/tmp/cmgr-0.0.7.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - main [MainThread]: End processing [slicer-package-manager-client]: success
+[2024-04-20 07:10:20] INFO root fetch - main [MainThread]: End processing [cmgr]: success
+[2024-04-20 07:10:20] INFO root fetch - processPackages [slicer-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/slicer_package_manager-0.8.0.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - processPackages [slicer-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/slicer_package_manager-0.9.0.tar.gz]
+[2024-04-20 07:10:20] INFO root fetch - main [MainThread]: End processing [slicer-package-manager]: success
+[2024-04-20 07:10:20] INFO root fetch - main [MainThread]: Store serial: [22852731]
