@@ -8372,3 +8372,33 @@
 [2024-04-20 05:19:12] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.6.tar.gz]
 [2024-04-20 05:19:12] INFO root fetch - main [MainThread]: End processing [retk]: success
 [2024-04-20 05:19:12] INFO root fetch - main [MainThread]: Store serial: [22852068]
+[2024-04-20 05:21:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852068]
+[2024-04-20 05:21:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 05:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TheSilent
+[2024-04-20 05:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oakvar
+[2024-04-20 05:21:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypi-cleanup
+[2024-04-20 05:21:21] INFO root fetch - processPackages [pypi-cleanup]: New version: [0.1.6.dev20240420025215] Old Version: [0.1.6.dev20240420021837]
+[2024-04-20 05:21:21] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-04-20 05:21:21] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 05:21:21] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/56/02/d19615e12248f3bf118e571ca54ec2f24f1cbc61cb23d9ac3c84a6ce3b21/pypi_cleanup-0.1.6.dev20240420021837.tar.gz
+[2024-04-20 05:21:21] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 05:21:21] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 05:21:21] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/01/bc/9e8694f56eec2c7926b8e0a05c4797f8dbfc820072acb6b31f214d039d05/pypi_cleanup-0.1.6.dev20240420025215.tar.gz
+[2024-04-20 05:21:21] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 05:21:21] INFO root fetch - processPackages [pypi-cleanup]: executing diffoscope
+[2024-04-20 05:21:21] INFO root fetch - processPackages [pypi-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz tmp/pypi_cleanup-0.1.6.dev20240420025215.tar.gz --markdown 20240420/p/pypi-cleanup/0.1.6.dev20240420021837-0.1.6.dev20240420025215/README.md --exclude *.pyd
+[2024-04-20 05:21:21] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 05:21:21] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 05:21:21] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-04-20 05:21:22] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz]
+[2024-04-20 05:21:22] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cleanup-0.1.6.dev20240420025215.tar.gz]
+[2024-04-20 05:21:22] INFO root fetch - main [MainThread]: End processing [pypi-cleanup]: success
+[2024-04-20 05:21:22] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 05:21:22] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 05:21:22] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 05:21:22] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 05:21:22] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240420/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-04-20 05:21:24] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 05:21:24] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-04-20 05:21:24] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 05:21:24] INFO root fetch - main [MainThread]: Store serial: [22852076]
