@@ -12142,3 +12142,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 
 [2024-04-20 10:24:43] INFO root fetch - main [MainThread]: End processing [devpi-client] error
 [2024-04-20 10:24:43] INFO root fetch - main [MainThread]: Store serial: [22853908]
+[2024-04-20 10:26:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853908]
+[2024-04-20 10:26:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 10:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartmoneyconcepts
+[2024-04-20 10:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pandas-wizard
+[2024-04-20 10:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metapensiero.sphinx.patchdb
+[2024-04-20 10:26:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: siegeapi
+[2024-04-20 10:26:52] INFO root fetch - processPackages [pandas-wizard]: New version: [1.0.1.dev0] Old Version: [1.0.0.dev0]
+[2024-04-20 10:26:52] INFO root fetch - processPackages [smartmoneyconcepts]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 10:26:52] INFO root fetch - processPackages [pandas-wizard]: Downloading https://files.pythonhosted.org/packages/21/b9/f665cfefbd0582f10deac18a0425f0f7031aeaa6ffe45d941c84d712e7c7/pandas-wizard-1.0.0.dev0.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [siegeapi]: New version: [6.3.0] Old Version: [6.2.5]
+[2024-04-20 10:26:52] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: New version: [4.0.dev9] Old Version: [4.0.dev8]
+[2024-04-20 10:26:52] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/f1/78/6c9b6e5371a0fb7e36f58bdb10614bb8b7bb315cbb8ab3c6ea49d7e529dd/smartmoneyconcepts-0.0.8.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [siegeapi]: Downloading https://files.pythonhosted.org/packages/34/c0/bbf7e7aa105b725f2960e45dc63e730a83aa31a0f9ffd0109199655c2211/siegeapi-6.2.5.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/e5/02/5722e9ce47fdffc5f57c12e70a4d798ff9db9d74b5ee55b87ecf1a911b4f/metapensiero.sphinx.patchdb-4.0.dev8.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [pandas-wizard]: Downloading https://files.pythonhosted.org/packages/a8/56/74ff7fc8a0fc3f97474b7f160033dc804a3939827a3c0d96fbe4e45784d6/pandas_wizard-1.0.1.dev0-py3-none-any.whl
+[2024-04-20 10:26:52] INFO root fetch - processPackages [pandas-wizard]: executing diffoscope
+[2024-04-20 10:26:52] INFO root fetch - processPackages [pandas-wizard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas-wizard-1.0.0.dev0.tar.gz tmp/pandas_wizard-1.0.1.dev0-py3-none-any.whl.zip --markdown 20240420/p/pandas-wizard/1.0.0.dev0-1.0.1.dev0/README.md --exclude *.pyd
+[2024-04-20 10:26:52] INFO root fetch - processPackages [smartmoneyconcepts]: Downloading https://files.pythonhosted.org/packages/3e/3a/6fbe8ae2e70531c6cc84ee0b2ab73fefeabb01453d7ba374185fee6508fb/smartmoneyconcepts-0.0.9.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Downloading https://files.pythonhosted.org/packages/d3/5b/f7e1da5696e2ab5d814b0e0045be1c4bf2c39571fb7bfbe06d970143172f/metapensiero.sphinx.patchdb-4.0.dev9.tar.gz
+[2024-04-20 10:26:52] INFO root fetch - processPackages [siegeapi]: Downloading https://files.pythonhosted.org/packages/01/df/db6ae908f3e79433882e350afdb8648357b8055abbac1ade56344f001085/siegeapi-6.3.0.tar.gz
+[2024-04-20 10:26:53] INFO root fetch - processPackages [smartmoneyconcepts]: executing diffoscope
+[2024-04-20 10:26:53] INFO root fetch - processPackages [smartmoneyconcepts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartmoneyconcepts-0.0.8.tar.gz tmp/smartmoneyconcepts-0.0.9.tar.gz --markdown 20240420/s/smartmoneyconcepts/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 10:26:53] INFO root fetch - processPackages [siegeapi]: executing diffoscope
+[2024-04-20 10:26:53] INFO root fetch - processPackages [siegeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siegeapi-6.2.5.tar.gz tmp/siegeapi-6.3.0.tar.gz --markdown 20240420/s/siegeapi/6.2.5-6.3.0/README.md --exclude *.pyd
+[2024-04-20 10:26:53] INFO root fetch - processPackages [pandas-wizard]: Remove: archive file [/home/abi/fetcher/tmp/pandas-wizard-1.0.0.dev0.tar.gz]
+[2024-04-20 10:26:53] INFO root fetch - processPackages [pandas-wizard]: Remove: archive file [/home/abi/fetcher/tmp/pandas_wizard-1.0.1.dev0-py3-none-any.whl.zip]
+[2024-04-20 10:26:53] INFO root fetch - main [MainThread]: End processing [pandas-wizard]: success
+[2024-04-20 10:26:53] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: executing diffoscope
+[2024-04-20 10:26:53] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metapensiero.sphinx.patchdb-4.0.dev8.tar.gz tmp/metapensiero.sphinx.patchdb-4.0.dev9.tar.gz --markdown 20240420/m/metapensiero.sphinx.patchdb/4.0.dev8-4.0.dev9/README.md --exclude *.pyd
+[2024-04-20 10:26:53] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.8.tar.gz]
+[2024-04-20 10:26:53] INFO root fetch - processPackages [smartmoneyconcepts]: Remove: archive file [/home/abi/fetcher/tmp/smartmoneyconcepts-0.0.9.tar.gz]
+[2024-04-20 10:26:53] INFO root fetch - main [MainThread]: End processing [smartmoneyconcepts]: success
+[2024-04-20 10:26:53] INFO root fetch - processPackages [siegeapi]: Remove: archive file [/home/abi/fetcher/tmp/siegeapi-6.2.5.tar.gz]
+[2024-04-20 10:26:53] INFO root fetch - processPackages [siegeapi]: Remove: archive file [/home/abi/fetcher/tmp/siegeapi-6.3.0.tar.gz]
+[2024-04-20 10:26:53] INFO root fetch - main [MainThread]: End processing [siegeapi]: success
+[2024-04-20 10:26:54] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Remove: archive file [/home/abi/fetcher/tmp/metapensiero.sphinx.patchdb-4.0.dev8.tar.gz]
+[2024-04-20 10:26:54] INFO root fetch - processPackages [metapensiero.sphinx.patchdb]: Remove: archive file [/home/abi/fetcher/tmp/metapensiero.sphinx.patchdb-4.0.dev9.tar.gz]
+[2024-04-20 10:26:54] INFO root fetch - main [MainThread]: End processing [metapensiero.sphinx.patchdb]: success
+[2024-04-20 10:26:54] INFO root fetch - main [MainThread]: Store serial: [22853920]
