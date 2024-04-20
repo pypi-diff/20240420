@@ -22560,3 +22560,51 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:55:28] INFO root fetch - processPackages [nerfw]: Remove: archive file [/home/abi/fetcher/tmp/nerfw-0.1.6.tar.gz]
 [2024-04-20 21:55:28] INFO root fetch - main [MainThread]: End processing [nerfw]: success
 [2024-04-20 21:55:28] INFO root fetch - main [MainThread]: Store serial: [22859008]
+[2024-04-20 21:57:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859008]
+[2024-04-20 21:57:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC201
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jarvis-orm
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grafana-wtf
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retell-sdk
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: krakenpull
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: location-local
+[2024-04-20 21:57:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sphinxcontrib-rust
+[2024-04-20 21:57:39] INFO root fetch - processPackages [jarvis-orm]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 21:57:39] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 21:57:39] WARNING root fetch - processPackages [sphinxcontrib-rust]: Skipping, unable to determine old version
+[2024-04-20 21:57:39] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-rust] error
+[2024-04-20 21:57:39] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/cd/e7/6107286fc0a3e702ddeb64636ccb6f11251d7526a966beffe75eb51e9c89/jarvis_orm-0.0.2.tar.gz
+[2024-04-20 21:57:39] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-04-20 21:57:39] WARNING root fetch - processPackages [PythonTestLJC201]: Skipping, unable to determine old version
+[2024-04-20 21:57:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC201] error
+[2024-04-20 21:57:39] WARNING root fetch - processPackages [krakenpull]: Skipping, unable to determine old version
+[2024-04-20 21:57:39] INFO root fetch - processPackages [grafana-wtf]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-20 21:57:39] INFO root fetch - main [MainThread]: End processing [krakenpull] error
+[2024-04-20 21:57:39] INFO root fetch - processPackages [retell-sdk]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-04-20 21:57:39] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-04-20 21:57:39] INFO root fetch - processPackages [grafana-wtf]: Downloading https://files.pythonhosted.org/packages/03/46/3c2947587455a09e6fc9e6a00491c38dc3d038127d142314029a921d4c82/grafana-wtf-0.8.1.tar.gz
+[2024-04-20 21:57:39] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/b6/68/845da4923eb776c79a8510e0c0d3d15cc54a87ac82e01d35ebd19b490f25/retell_sdk-3.6.0.tar.gz
+[2024-04-20 21:57:39] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-04-20 21:57:39] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240420/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 21:57:39] INFO root fetch - processPackages [jarvis-orm]: Downloading https://files.pythonhosted.org/packages/c9/76/222b6329a4418552937b6666e09d4a06f9aaddf4d45b9b72207b692adf61/jarvis_orm-0.0.3.tar.gz
+[2024-04-20 21:57:39] INFO root fetch - processPackages [jarvis-orm]: executing diffoscope
+[2024-04-20 21:57:39] INFO root fetch - processPackages [jarvis-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jarvis_orm-0.0.2.tar.gz tmp/jarvis_orm-0.0.3.tar.gz --markdown 20240420/j/jarvis-orm/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 21:57:40] INFO root fetch - processPackages [grafana-wtf]: Downloading https://files.pythonhosted.org/packages/8f/df/038fd6635aab21eb312317cc01fbe2e36c7e666f23cd7e40960bc2373f4e/grafana-wtf-0.9.0.tar.gz
+[2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: Downloading https://files.pythonhosted.org/packages/12/c5/46e2607eb01710e636d29565e49efd918386512b00d0593fc7d7ae1b1775/retell_sdk-3.7.0.tar.gz
+[2024-04-20 21:57:40] INFO root fetch - processPackages [grafana-wtf]: executing diffoscope
+[2024-04-20 21:57:40] INFO root fetch - processPackages [grafana-wtf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grafana-wtf-0.8.1.tar.gz tmp/grafana-wtf-0.9.0.tar.gz --markdown 20240420/g/grafana-wtf/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: executing diffoscope
+[2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retell_sdk-3.6.0.tar.gz tmp/retell_sdk-3.7.0.tar.gz --markdown 20240420/r/retell-sdk/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-04-20 21:57:40] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-04-20 21:57:40] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.2.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.3.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - main [MainThread]: End processing [jarvis-orm]: success
+[2024-04-20 21:57:40] INFO root fetch - processPackages [grafana-wtf]: Remove: archive file [/home/abi/fetcher/tmp/grafana-wtf-0.8.1.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - processPackages [grafana-wtf]: Remove: archive file [/home/abi/fetcher/tmp/grafana-wtf-0.9.0.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - main [MainThread]: End processing [grafana-wtf]: success
+[2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.6.0.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.7.0.tar.gz]
+[2024-04-20 21:57:40] INFO root fetch - main [MainThread]: End processing [retell-sdk]: success
+[2024-04-20 21:57:40] INFO root fetch - main [MainThread]: Store serial: [22859033]
