@@ -18048,3 +18048,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:20:29] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.5.0.tar.gz]
 [2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [ticts]: success
 [2024-04-20 17:20:29] INFO root fetch - main [MainThread]: Store serial: [22856891]
+[2024-04-20 17:22:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856891]
+[2024-04-20 17:22:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC102
+[2024-04-20 17:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bgutils-hddly
+[2024-04-20 17:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: runem
+[2024-04-20 17:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sawsi
+[2024-04-20 17:22:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: iwashi
+[2024-04-20 17:22:38] INFO root fetch - processPackages [iwashi]: New version: [3.0.0] Old Version: [2.2.2]
+[2024-04-20 17:22:38] WARNING root fetch - processPackages [PythonTestLJC102]: Skipping, unable to determine old version
+[2024-04-20 17:22:38] INFO root fetch - main [MainThread]: End processing [PythonTestLJC102] error
+[2024-04-20 17:22:38] INFO root fetch - processPackages [runem]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 17:22:38] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-20 17:22:38] INFO root fetch - processPackages [sawsi]: New version: [9.9] Old Version: [9.8]
+[2024-04-20 17:22:39] INFO root fetch - processPackages [runem]: Downloading https://files.pythonhosted.org/packages/28/65/fdfa792de2f6558551fe264a3436e1af27d1a73979e3ad0dfc39e21f23f0/runem-0.0.8.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-04-20 17:22:39] INFO root fetch - processPackages [iwashi]: Downloading https://files.pythonhosted.org/packages/89/62/4b14f93702c3953f93dff5ab81b0a26267538dfe0ab727361f86ff43ac6a/iwashi-2.2.2.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/a5/89/e5230b963c36d9342bd53c4174b8b4f9595f77c5aa510614cf80ac5315a0/sawsi-9.8.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [iwashi]: Downloading https://files.pythonhosted.org/packages/a0/af/457c47d0018d634ca553669a4b9ca9dd6b92cb6ddeb9273fd545c2cc0f26/iwashi-3.0.0.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [runem]: Downloading https://files.pythonhosted.org/packages/6a/6d/bf8eaf2c99dcc17e3bfe15180ab5a59e05aab03c392c2b67617613e61e5c/runem-0.0.9.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-04-20 17:22:39] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240420/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-20 17:22:39] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/69/c2/e945385340121de75cca5d00aa9ac99f3d874c5977239a7d7efe5e969e17/sawsi-9.9.tar.gz
+[2024-04-20 17:22:39] INFO root fetch - processPackages [runem]: executing diffoscope
+[2024-04-20 17:22:39] INFO root fetch - processPackages [runem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runem-0.0.8.tar.gz tmp/runem-0.0.9.tar.gz --markdown 20240420/r/runem/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 17:22:39] INFO root fetch - processPackages [iwashi]: executing diffoscope
+[2024-04-20 17:22:39] INFO root fetch - processPackages [iwashi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iwashi-2.2.2.tar.gz tmp/iwashi-3.0.0.tar.gz --markdown 20240420/i/iwashi/2.2.2-3.0.0/README.md --exclude *.pyd
+[2024-04-20 17:22:39] INFO root fetch - processPackages [sawsi]: executing diffoscope
+[2024-04-20 17:22:39] INFO root fetch - processPackages [sawsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sawsi-9.8.tar.gz tmp/sawsi-9.9.tar.gz --markdown 20240420/s/sawsi/9.8-9.9/README.md --exclude *.pyd
+[2024-04-20 17:22:40] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-04-20 17:22:40] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-04-20 17:22:40] INFO root fetch - processPackages [runem]: Remove: archive file [/home/abi/fetcher/tmp/runem-0.0.8.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - processPackages [runem]: Remove: archive file [/home/abi/fetcher/tmp/runem-0.0.9.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - main [MainThread]: End processing [runem]: success
+[2024-04-20 17:22:40] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.8.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.9.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - main [MainThread]: End processing [sawsi]: success
+[2024-04-20 17:22:40] INFO root fetch - processPackages [iwashi]: Remove: archive file [/home/abi/fetcher/tmp/iwashi-2.2.2.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - processPackages [iwashi]: Remove: archive file [/home/abi/fetcher/tmp/iwashi-3.0.0.tar.gz]
+[2024-04-20 17:22:40] INFO root fetch - main [MainThread]: End processing [iwashi]: success
+[2024-04-20 17:22:40] INFO root fetch - main [MainThread]: Store serial: [22856908]
