@@ -15335,3 +15335,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:09:01] INFO root fetch - processPackages [greyhorse]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse-0.4.2.tar.gz]
 [2024-04-20 14:09:01] INFO root fetch - main [MainThread]: End processing [greyhorse]: success
 [2024-04-20 14:09:01] INFO root fetch - main [MainThread]: Store serial: [22855487]
+[2024-04-20 14:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855487]
+[2024-04-20 14:11:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC040
+[2024-04-20 14:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-20 14:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC041
+[2024-04-20 14:11:11] INFO root fetch - processPackages [bellek]: New version: [0.92.1] Old Version: [0.92.0]
+[2024-04-20 14:11:11] WARNING root fetch - processPackages [PythonTestLJC040]: Skipping, unable to determine old version
+[2024-04-20 14:11:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC040] error
+[2024-04-20 14:11:11] WARNING root fetch - processPackages [PythonTestLJC041]: Skipping, unable to determine old version
+[2024-04-20 14:11:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC041] error
+[2024-04-20 14:11:11] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/9f/0e/fdec8dee0d11b9a67e8e3a38ceb9eed87596045eafada76cbee6b37751b4/bellek-0.92.0.tar.gz
+[2024-04-20 14:11:11] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/06/08/d585dd2264363b6bf0ae9818eb759aa69ad1e697730e74d34ef1593a6d64/bellek-0.92.1.tar.gz
+[2024-04-20 14:11:11] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 14:11:11] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.0.tar.gz tmp/bellek-0.92.1.tar.gz --markdown 20240420/b/bellek/0.92.0-0.92.1/README.md --exclude *.pyd
+[2024-04-20 14:11:12] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.0.tar.gz]
+[2024-04-20 14:11:12] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.1.tar.gz]
+[2024-04-20 14:11:12] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 14:11:12] INFO root fetch - main [MainThread]: Store serial: [22855502]
