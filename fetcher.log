@@ -19528,3 +19528,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:57:22] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.6.tar.gz]
 [2024-04-20 18:57:22] INFO root fetch - main [MainThread]: End processing [notfunny]: success
 [2024-04-20 18:57:22] INFO root fetch - main [MainThread]: Store serial: [22857620]
+[2024-04-20 18:59:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857620]
+[2024-04-20 18:59:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC137
+[2024-04-20 18:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stockdex
+[2024-04-20 18:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notfunny
+[2024-04-20 18:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dingtalk-stream
+[2024-04-20 18:59:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: parrot-api-core
+[2024-04-20 18:59:31] INFO root fetch - processPackages [notfunny]: New version: [0.5.6] Old Version: [0.5.4]
+[2024-04-20 18:59:31] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/17/cd/92a0dfd9eaef43e6b37d3ede720fcc9169bba3b0c7ac449b6476c1376137/notfunny-0.5.4.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [stockdex]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-20 18:59:31] WARNING root fetch - processPackages [PythonTestLJC137]: Skipping, unable to determine old version
+[2024-04-20 18:59:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC137] error
+[2024-04-20 18:59:31] INFO root fetch - processPackages [parrot-api-core]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 18:59:31] INFO root fetch - processPackages [dingtalk-stream]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 18:59:31] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/37/05/ab4e68366df13ec9a36235d4dadc66588992f1ba567dcf5f7f29b8eb1348/stockdex-0.3.8.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [parrot-api-core]: Downloading https://files.pythonhosted.org/packages/56/37/d60ddf9ff870748246b4b67ff93746b6aaf1cfbd2a95a72d5e5576a48b86/parrot-api-core-0.1.8.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/19/12/dcc2a0268acefb33c08068821b01804fcb76f50039c9de8ce905591162cb/dingtalk-stream-0.9.2.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/98/4e/09dc6bd5fa6420ae082e4626092d30c6d8c08cf73763a92e19c41b57799d/notfunny-0.5.6.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:59:31] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.4.tar.gz tmp/notfunny-0.5.6.tar.gz --markdown 20240420/n/notfunny/0.5.4-0.5.6/README.md --exclude *.pyd
+[2024-04-20 18:59:31] INFO root fetch - processPackages [dingtalk-stream]: Downloading https://files.pythonhosted.org/packages/22/60/4fcc2bd699ce6c580184e729da62bead180571108decfe08966eea8e28a8/dingtalk-stream-0.9.3.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [parrot-api-core]: Downloading https://files.pythonhosted.org/packages/8c/20/72cbe602298f9a73e8761bd58f2c9f31b79b1c4dc2fa69dee34ae9969d80/parrot-api-core-0.1.9.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [stockdex]: Downloading https://files.pythonhosted.org/packages/1d/4b/9ee626f45679c90979b1f21bfbe4b576b940580a865e0a0da19692b805d2/stockdex-0.3.9.tar.gz
+[2024-04-20 18:59:31] INFO root fetch - processPackages [parrot-api-core]: executing diffoscope
+[2024-04-20 18:59:31] INFO root fetch - processPackages [parrot-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parrot-api-core-0.1.8.tar.gz tmp/parrot-api-core-0.1.9.tar.gz --markdown 20240420/p/parrot-api-core/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 18:59:31] INFO root fetch - processPackages [dingtalk-stream]: executing diffoscope
+[2024-04-20 18:59:31] INFO root fetch - processPackages [dingtalk-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingtalk-stream-0.9.2.tar.gz tmp/dingtalk-stream-0.9.3.tar.gz --markdown 20240420/d/dingtalk-stream/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 18:59:32] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.4.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.6.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:59:32] INFO root fetch - processPackages [dingtalk-stream]: Remove: archive file [/home/abi/fetcher/tmp/dingtalk-stream-0.9.2.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - processPackages [dingtalk-stream]: Remove: archive file [/home/abi/fetcher/tmp/dingtalk-stream-0.9.3.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - main [MainThread]: End processing [dingtalk-stream]: success
+[2024-04-20 18:59:32] INFO root fetch - processPackages [parrot-api-core]: Remove: archive file [/home/abi/fetcher/tmp/parrot-api-core-0.1.8.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - processPackages [parrot-api-core]: Remove: archive file [/home/abi/fetcher/tmp/parrot-api-core-0.1.9.tar.gz]
+[2024-04-20 18:59:32] INFO root fetch - main [MainThread]: End processing [parrot-api-core]: success
+[2024-04-20 18:59:33] INFO root fetch - processPackages [stockdex]: executing diffoscope
+[2024-04-20 18:59:33] INFO root fetch - processPackages [stockdex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdex-0.3.8.tar.gz tmp/stockdex-0.3.9.tar.gz --markdown 20240420/s/stockdex/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-20 18:59:34] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.8.tar.gz]
+[2024-04-20 18:59:34] INFO root fetch - processPackages [stockdex]: Remove: archive file [/home/abi/fetcher/tmp/stockdex-0.3.9.tar.gz]
+[2024-04-20 18:59:34] INFO root fetch - main [MainThread]: End processing [stockdex]: success
+[2024-04-20 18:59:34] INFO root fetch - main [MainThread]: Store serial: [22857635]
