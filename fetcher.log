@@ -20438,3 +20438,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:47:58] INFO root fetch - processPackages [django-publications]: Remove: archive file [/home/abi/fetcher/tmp/django_publications-1.2.0.tar.gz]
 [2024-04-20 19:47:58] INFO root fetch - main [MainThread]: End processing [django-publications]: success
 [2024-04-20 19:47:58] INFO root fetch - main [MainThread]: Store serial: [22858002]
+[2024-04-20 19:50:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858002]
+[2024-04-20 19:50:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 19:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekartifacts
+[2024-04-20 19:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botasaurus2
+[2024-04-20 19:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbrepo
+[2024-04-20 19:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-l10n-br-purchase
+[2024-04-20 19:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: croniter
+[2024-04-20 19:50:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: New version: [14.0.3.5.1.dev4] Old Version: [14.0.3.5.0]
+[2024-04-20 19:50:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: Downloading https://files.pythonhosted.org/packages/6d/a7/88706ff251809a148e1b1b60ca8f7756b3d3075d069f33e9edaa97e22b56/odoo14_addon_l10n_br_purchase-14.0.3.5.0-py3-none-any.whl
+[2024-04-20 19:50:07] INFO root fetch - processPackages [dekartifacts]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 19:50:07] INFO root fetch - processPackages [botasaurus2]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-04-20 19:50:07] INFO root fetch - processPackages [dbrepo]: New version: [1.4.2rc14] Old Version: [1.4.2rc13]
+[2024-04-20 19:50:07] INFO root fetch - processPackages [croniter]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-20 19:50:07] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/37/4e/392bba22d8e60f5a82bc5266352a8e73a1f4fb10e8977ca3192892dbab21/botasaurus2-1.4.5.tar.gz
+[2024-04-20 19:50:07] INFO root fetch - processPackages [dekartifacts]: Downloading https://files.pythonhosted.org/packages/58/69/b21943897445e64b646a1edbf90f09e5e6a3c6013960176a9d379671eb28/dekartifacts-0.1.98.tar.gz
+[2024-04-20 19:50:07] INFO root fetch - processPackages [dbrepo]: Downloading https://files.pythonhosted.org/packages/e2/79/d304d2e61d6fc9c2771b4e15913020d4682cf2c3c0d5f8268ee2cb78377f/dbrepo-1.4.2rc13.tar.gz
+[2024-04-20 19:50:07] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/7f/ef/ee405df01052969bc7b243b9ffdcebb7adf32e10d6181db4add197948c7a/croniter-2.0.3.tar.gz
+[2024-04-20 19:50:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: Downloading https://files.pythonhosted.org/packages/0e/f6/cc3c2fed73d9f800bf3126e3d065e9d9539fe49eece508ab43a86a40a5a4/odoo14_addon_l10n_br_purchase-14.0.3.5.1.dev4-py3-none-any.whl
+[2024-04-20 19:50:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: executing diffoscope
+[2024-04-20 19:50:07] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_purchase-14.0.3.5.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_purchase-14.0.3.5.1.dev4-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-l10n-br-purchase/14.0.3.5.0-14.0.3.5.1.dev4/README.md --exclude *.pyd
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dbrepo]: Downloading https://files.pythonhosted.org/packages/65/2f/0b16d85332107c2c57bc4c96f4349c0da997f63c2a2fa6cea1b7afc25ef3/dbrepo-1.4.2rc14.tar.gz
+[2024-04-20 19:50:08] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/f4/cd/ef1fce52cfc9f3e756187ec625ab930f577d2abe9463a72773844ca614c5/croniter-2.0.4.tar.gz
+[2024-04-20 19:50:08] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/32/53/21b0abac8c926ee0c03b167c31ecb7a290ef78b5a7fab33ea7c23a4a9a59/botasaurus2-1.4.6.tar.gz
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dekartifacts]: Downloading https://files.pythonhosted.org/packages/dd/26/b83d65c69ec2a34f35c70546dd98d76802ed8d6a94843a2e86d6336263f4/dekartifacts-0.1.99.tar.gz
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dbrepo]: executing diffoscope
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dbrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrepo-1.4.2rc13.tar.gz tmp/dbrepo-1.4.2rc14.tar.gz --markdown 20240420/d/dbrepo/1.4.2rc13-1.4.2rc14/README.md --exclude *.pyd
+[2024-04-20 19:50:08] INFO root fetch - processPackages [botasaurus2]: executing diffoscope
+[2024-04-20 19:50:08] INFO root fetch - processPackages [botasaurus2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus2-1.4.5.tar.gz tmp/botasaurus2-1.4.6.tar.gz --markdown 20240420/b/botasaurus2/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dekartifacts]: executing diffoscope
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dekartifacts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekartifacts-0.1.98.tar.gz tmp/dekartifacts-0.1.99.tar.gz --markdown 20240420/d/dekartifacts/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 19:50:08] INFO root fetch - processPackages [croniter]: executing diffoscope
+[2024-04-20 19:50:08] INFO root fetch - processPackages [croniter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croniter-2.0.3.tar.gz tmp/croniter-2.0.4.tar.gz --markdown 20240420/c/croniter/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-04-20 19:50:08] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_purchase-14.0.3.5.0-py3-none-any.whl.zip]
+[2024-04-20 19:50:08] INFO root fetch - processPackages [odoo14-addon-l10n-br-purchase]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_purchase-14.0.3.5.1.dev4-py3-none-any.whl.zip]
+[2024-04-20 19:50:08] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-purchase]: success
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dekartifacts]: Remove: archive file [/home/abi/fetcher/tmp/dekartifacts-0.1.98.tar.gz]
+[2024-04-20 19:50:08] INFO root fetch - processPackages [dekartifacts]: Remove: archive file [/home/abi/fetcher/tmp/dekartifacts-0.1.99.tar.gz]
+[2024-04-20 19:50:08] INFO root fetch - main [MainThread]: End processing [dekartifacts]: success
+[2024-04-20 19:50:09] INFO root fetch - processPackages [dbrepo]: Remove: archive file [/home/abi/fetcher/tmp/dbrepo-1.4.2rc13.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - processPackages [dbrepo]: Remove: archive file [/home/abi/fetcher/tmp/dbrepo-1.4.2rc14.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - main [MainThread]: End processing [dbrepo]: success
+[2024-04-20 19:50:09] INFO root fetch - processPackages [croniter]: Remove: archive file [/home/abi/fetcher/tmp/croniter-2.0.3.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - processPackages [croniter]: Remove: archive file [/home/abi/fetcher/tmp/croniter-2.0.4.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - main [MainThread]: End processing [croniter]: success
+[2024-04-20 19:50:09] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.4.5.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.4.6.tar.gz]
+[2024-04-20 19:50:09] INFO root fetch - main [MainThread]: End processing [botasaurus2]: success
+[2024-04-20 19:50:09] INFO root fetch - main [MainThread]: Store serial: [22858016]
