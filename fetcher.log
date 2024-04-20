@@ -13593,3 +13593,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:05:48] INFO root fetch - processPackages [xrpld-netgen]: Remove: archive file [/home/abi/fetcher/tmp/xrpld_netgen-1.9.0.tar.gz]
 [2024-04-20 12:05:48] INFO root fetch - main [MainThread]: End processing [xrpld-netgen]: success
 [2024-04-20 12:05:48] INFO root fetch - main [MainThread]: Store serial: [22854636]
+[2024-04-20 12:07:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854636]
+[2024-04-20 12:07:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mxbt
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: illuminatapp
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PBasicMaths
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: magictk
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ovinc-client
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ovinc-client]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-20 12:07:57] INFO root fetch - processPackages [illuminatapp]: New version: [1.3.7] Old Version: [1.3.6]
+[2024-04-20 12:07:57] WARNING root fetch - processPackages [PBasicMaths]: Skipping, unable to determine old version
+[2024-04-20 12:07:57] INFO root fetch - main [MainThread]: End processing [PBasicMaths] error
+[2024-04-20 12:07:57] INFO root fetch - processPackages [magictk]: New version: [0.0.2.41] Old Version: [0.0.2.37]
+[2024-04-20 12:07:57] INFO root fetch - processPackages [mxbt]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-20 12:07:57] INFO root fetch - processPackages [ovinc-client]: Downloading https://files.pythonhosted.org/packages/83/1b/9a7bd22eafd130bebd6d8c549a517ede8e83783153f0bafbdb3d8244715d/ovinc_client-0.1.9.tar.gz
+[2024-04-20 12:07:57] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/b4/72/f0c928754da1c639fead70cd7c0a36c74d322d43e4f182e06373a9535054/magictk-0.0.2.37.tar.gz
+[2024-04-20 12:07:57] INFO root fetch - processPackages [mxbt]: Downloading https://files.pythonhosted.org/packages/a5/08/60dd8d9c6e63b3b3d7eb8041a468f547d610e7ec2a83a81d90abdceb15bb/mxbt-0.3.3.tar.gz
+[2024-04-20 12:07:58] INFO root fetch - processPackages [illuminatapp]: Downloading https://files.pythonhosted.org/packages/e0/f7/53431001c34c35752c9085051d0d05c7a3c12648ee71b1408b2e84fb0b02/illuminatapp-1.3.6.tar.gz
+[2024-04-20 12:07:58] WARNING root fetch - processPackages [illuminatapp]: Skipping package: exceeds size limit 42146427>=10485760
+[2024-04-20 12:07:58] INFO root fetch - main [MainThread]: End processing [illuminatapp] error
+[2024-04-20 12:07:58] INFO root fetch - processPackages [ovinc-client]: Downloading https://files.pythonhosted.org/packages/08/de/d5e04a8ecbd44d466cd45f92095d306ee568c957056a90ac6d57e9da5c75/ovinc_client-0.2.0.tar.gz
+[2024-04-20 12:07:58] INFO root fetch - processPackages [mxbt]: Downloading https://files.pythonhosted.org/packages/2d/dc/7b9bba5b1f2ecfb2a737e8a0666eb27162522909e6228bf765721761b019/mxbt-0.3.4.tar.gz
+[2024-04-20 12:07:58] INFO root fetch - processPackages [magictk]: Downloading https://files.pythonhosted.org/packages/fa/c0/d0089b8f1df5f40a63b38506e0411d786fc9de334ce521a9823ccdb29d23/magictk-0.0.2.41.tar.gz
+[2024-04-20 12:07:58] INFO root fetch - processPackages [ovinc-client]: executing diffoscope
+[2024-04-20 12:07:58] INFO root fetch - processPackages [ovinc-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovinc_client-0.1.9.tar.gz tmp/ovinc_client-0.2.0.tar.gz --markdown 20240420/o/ovinc-client/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-20 12:07:58] INFO root fetch - processPackages [mxbt]: executing diffoscope
+[2024-04-20 12:07:58] INFO root fetch - processPackages [mxbt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxbt-0.3.3.tar.gz tmp/mxbt-0.3.4.tar.gz --markdown 20240420/m/mxbt/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-20 12:07:58] INFO root fetch - processPackages [magictk]: executing diffoscope
+[2024-04-20 12:07:58] INFO root fetch - processPackages [magictk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magictk-0.0.2.37.tar.gz tmp/magictk-0.0.2.41.tar.gz --markdown 20240420/m/magictk/0.0.2.37-0.0.2.41/README.md --exclude *.pyd
+[2024-04-20 12:07:58] INFO root fetch - processPackages [mxbt]: Remove: archive file [/home/abi/fetcher/tmp/mxbt-0.3.3.tar.gz]
+[2024-04-20 12:07:58] INFO root fetch - processPackages [mxbt]: Remove: archive file [/home/abi/fetcher/tmp/mxbt-0.3.4.tar.gz]
+[2024-04-20 12:07:58] INFO root fetch - main [MainThread]: End processing [mxbt]: success
+[2024-04-20 12:07:59] INFO root fetch - processPackages [ovinc-client]: Remove: archive file [/home/abi/fetcher/tmp/ovinc_client-0.1.9.tar.gz]
+[2024-04-20 12:07:59] INFO root fetch - processPackages [ovinc-client]: Remove: archive file [/home/abi/fetcher/tmp/ovinc_client-0.2.0.tar.gz]
+[2024-04-20 12:07:59] INFO root fetch - main [MainThread]: End processing [ovinc-client]: success
+[2024-04-20 12:07:59] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.37.tar.gz]
+[2024-04-20 12:07:59] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.41.tar.gz]
+[2024-04-20 12:07:59] INFO root fetch - main [MainThread]: End processing [magictk]: success
+[2024-04-20 12:07:59] INFO root fetch - main [MainThread]: Store serial: [22854649]
