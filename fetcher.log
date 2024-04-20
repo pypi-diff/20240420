@@ -22608,3 +22608,63 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:57:40] INFO root fetch - processPackages [retell-sdk]: Remove: archive file [/home/abi/fetcher/tmp/retell_sdk-3.7.0.tar.gz]
 [2024-04-20 21:57:40] INFO root fetch - main [MainThread]: End processing [retell-sdk]: success
 [2024-04-20 21:57:40] INFO root fetch - main [MainThread]: Store serial: [22859033]
+[2024-04-20 21:59:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859033]
+[2024-04-20 21:59:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixel-forge
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NEMO-rs2-access
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC202
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-structured-output
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rooms-shared-services
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: contact-notes-local
+[2024-04-20 21:59:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nestpython
+[2024-04-20 21:59:49] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-20 21:59:49] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [NEMO-rs2-access]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-20 21:59:49] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-20 21:59:49] WARNING root fetch - processPackages [PythonTestLJC202]: Skipping, unable to determine old version
+[2024-04-20 21:59:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC202] error
+[2024-04-20 21:59:49] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:59:49] INFO root fetch - processPackages [pixel-forge]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 21:59:49] INFO root fetch - processPackages [llm-structured-output]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 21:59:49] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [NEMO-rs2-access]: Downloading https://files.pythonhosted.org/packages/43/60/2d91139d12513eaae809b43f7180716d006528de3ccc16788811637510ce/NEMO_rs2_access-1.5.3-py3-none-any.whl
+[2024-04-20 21:59:49] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/61/ae/e19591d0784d773b0273b839601b2d55e7e0e64e9df2fc897c5ee876f014/llm_structured_output-0.0.7.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [pixel-forge]: Downloading https://files.pythonhosted.org/packages/31/d0/e4eda2cdfba1426a5cb5c369ccc4898bc39b36771fe6f37cc4c2aac4f167/pixel_forge-0.1.0.tar.gz
+[2024-04-20 21:59:49] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-20 21:59:49] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240420/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-20 21:59:49] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-04-20 21:59:50] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-04-20 21:59:50] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240420/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:59:50] INFO root fetch - processPackages [llm-structured-output]: Downloading https://files.pythonhosted.org/packages/23/58/a6fe6fd07d1ec5c2791f5a5db0ed3b196c60d87bd8e17cc0afa3bc420f68/llm_structured_output-0.0.8.tar.gz
+[2024-04-20 21:59:50] INFO root fetch - processPackages [NEMO-rs2-access]: Downloading https://files.pythonhosted.org/packages/86/ce/f40c09a89130851be1dba6b59c24b931f4ffd4621f9e8af303a7a3cb3e1f/NEMO_rs2_access-1.5.4-py3-none-any.whl
+[2024-04-20 21:59:50] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-20 21:59:50] INFO root fetch - processPackages [pixel-forge]: Downloading https://files.pythonhosted.org/packages/92/ef/aa7dafbdfbbbff8486c4b3355b7cce1bf2eace42e0299dc2191c1cfd7b56/pixel_forge-0.1.1.tar.gz
+[2024-04-20 21:59:50] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-20 21:59:50] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240420/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-20 21:59:50] INFO root fetch - processPackages [llm-structured-output]: executing diffoscope
+[2024-04-20 21:59:50] INFO root fetch - processPackages [llm-structured-output]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_structured_output-0.0.7.tar.gz tmp/llm_structured_output-0.0.8.tar.gz --markdown 20240420/l/llm-structured-output/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 21:59:50] INFO root fetch - processPackages [NEMO-rs2-access]: executing diffoscope
+[2024-04-20 21:59:50] INFO root fetch - processPackages [NEMO-rs2-access]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_rs2_access-1.5.3-py3-none-any.whl.zip tmp/NEMO_rs2_access-1.5.4-py3-none-any.whl.zip --markdown 20240420/N/NEMO-rs2-access/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-20 21:59:50] INFO root fetch - processPackages [pixel-forge]: executing diffoscope
+[2024-04-20 21:59:50] INFO root fetch - processPackages [pixel-forge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixel_forge-0.1.0.tar.gz tmp/pixel_forge-0.1.1.tar.gz --markdown 20240420/p/pixel-forge/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 21:59:50] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-20 21:59:50] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-20 21:59:50] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-20 21:59:50] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-04-20 21:59:50] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-04-20 21:59:50] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-04-20 21:59:51] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.7.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - processPackages [llm-structured-output]: Remove: archive file [/home/abi/fetcher/tmp/llm_structured_output-0.0.8.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - main [MainThread]: End processing [llm-structured-output]: success
+[2024-04-20 21:59:51] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-20 21:59:51] INFO root fetch - processPackages [pixel-forge]: Remove: archive file [/home/abi/fetcher/tmp/pixel_forge-0.1.0.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - processPackages [pixel-forge]: Remove: archive file [/home/abi/fetcher/tmp/pixel_forge-0.1.1.tar.gz]
+[2024-04-20 21:59:51] INFO root fetch - main [MainThread]: End processing [pixel-forge]: success
+[2024-04-20 21:59:51] INFO root fetch - processPackages [NEMO-rs2-access]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_rs2_access-1.5.3-py3-none-any.whl.zip]
+[2024-04-20 21:59:51] INFO root fetch - processPackages [NEMO-rs2-access]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_rs2_access-1.5.4-py3-none-any.whl.zip]
+[2024-04-20 21:59:51] INFO root fetch - main [MainThread]: End processing [NEMO-rs2-access]: success
+[2024-04-20 21:59:51] INFO root fetch - main [MainThread]: Store serial: [22859063]
