@@ -2858,3 +2858,78 @@
 [2024-04-20 02:45:50] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202404190044.tar.gz]
 [2024-04-20 02:45:50] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2024-04-20 02:45:50] INFO root fetch - main [MainThread]: Store serial: [22850074]
+[2024-04-20 02:47:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850074]
+[2024-04-20 02:47:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: across-burstcube
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rattail
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-uwg
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymud
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dragonfly-radiance
+[2024-04-20 02:47:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lbt-honeybee
+[2024-04-20 02:47:59] INFO root fetch - processPackages [across-burstcube]: New version: [0.4] Old Version: [0.0.4]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [flatpack]: New version: [3.3.8] Old Version: [3.3.7]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [rattail]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [pymud]: New version: [0.19.4] Old Version: [0.19.3.post2]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/71/c207efa3740c71b1fb18bab347f88a5f012df6b6fc4318d946d1c7c1fdc9/flatpack-3.3.7.tar.gz
+[2024-04-20 02:47:59] INFO root fetch - processPackages [lbt-honeybee]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-20 02:47:59] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 02:47:59] INFO root fetch - processPackages [across-burstcube]: Downloading https://files.pythonhosted.org/packages/28/97/0a2737de5c68432b3c036edf7d8b0c8d6587f5bc45f5dda762dfbe2ed39f/across_burstcube-0.0.4.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/8a/ab/1d0b66effa702be7aef6de038a0b9a0727d9d4053df5c56aa1ee5b1d9b45/rattail-0.9.98.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a2/41/805cddd3de27bfc114d3b54bbf0a558b1d450bb0bc346c8bbfc9f9e1ca04/dragonfly-radiance-0.3.8.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [across-burstcube]: Downloading https://files.pythonhosted.org/packages/d7/9c/3ee831c22b731c6ecb531c514547a19808e49cd78283b3874e2513742d94/across_burstcube-0.4.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/b5/a0/c6742c4b1a93565a552f073a8cad3689b9e2edcf401d45bd9fddf0485a8d/lbt-honeybee-0.8.98.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [pymud]: Downloading https://files.pythonhosted.org/packages/f1/d6/5db6c1aab86ec968bf8b5613b60e48f2215cf0533d9c0ef304621080c9b6/pymud-0.19.3.post2.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [across-burstcube]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [across-burstcube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/across_burstcube-0.0.4.tar.gz tmp/across_burstcube-0.4.tar.gz --markdown 20240420/a/across-burstcube/0.0.4-0.4/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.7.tar.gz tmp/flatpack-3.3.8.tar.gz --markdown 20240420/f/flatpack/3.3.7-3.3.8/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a9/93/8933c5c67b8d336f624b3e7f9cb128678c38867dac08b6bb30a824b7cb3d/dragonfly-radiance-0.3.9.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [lbt-honeybee]: Downloading https://files.pythonhosted.org/packages/f1/61/4f36e668d3e1767b0f4d921481ad087bec472a2afc14ea20f916e083c690/lbt-honeybee-0.8.99.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [pymud]: Downloading https://files.pythonhosted.org/packages/5a/1a/8be189b15792b5b5d3d5257e0326232b296ff8680092dcf89f2636d264ab/pymud-0.19.4.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [rattail]: Downloading https://files.pythonhosted.org/packages/1e/c3/79e6d80f4a830a425f80fae7cf7f242293341bfd63e5d6f25421dfd44465/rattail-0.9.99.tar.gz
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.3.8.tar.gz tmp/dragonfly-radiance-0.3.9.tar.gz --markdown 20240420/d/dragonfly-radiance/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [lbt-honeybee]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [lbt-honeybee]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-honeybee-0.8.98.tar.gz tmp/lbt-honeybee-0.8.99.tar.gz --markdown 20240420/l/lbt-honeybee/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [pymud]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [pymud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymud-0.19.3.post2.tar.gz tmp/pymud-0.19.4.tar.gz --markdown 20240420/p/pymud/0.19.3.post2-0.19.4/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240420/d/dragonfly-uwg/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [rattail]: executing diffoscope
+[2024-04-20 02:48:00] INFO root fetch - processPackages [rattail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-0.9.98.tar.gz tmp/rattail-0.9.99.tar.gz --markdown 20240420/r/rattail/0.9.98-0.9.99/README.md --exclude *.pyd
+[2024-04-20 02:48:00] INFO root fetch - processPackages [across-burstcube]: Remove: archive file [/home/abi/fetcher/tmp/across_burstcube-0.0.4.tar.gz]
+[2024-04-20 02:48:00] INFO root fetch - processPackages [across-burstcube]: Remove: archive file [/home/abi/fetcher/tmp/across_burstcube-0.4.tar.gz]
+[2024-04-20 02:48:00] INFO root fetch - main [MainThread]: End processing [across-burstcube]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.7.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.8.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.98.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [lbt-honeybee]: Remove: archive file [/home/abi/fetcher/tmp/lbt-honeybee-0.8.99.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [lbt-honeybee]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-04-20 02:48:01] INFO root fetch - processPackages [pymud]: Remove: archive file [/home/abi/fetcher/tmp/pymud-0.19.3.post2.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - processPackages [pymud]: Remove: archive file [/home/abi/fetcher/tmp/pymud-0.19.4.tar.gz]
+[2024-04-20 02:48:01] INFO root fetch - main [MainThread]: End processing [pymud]: success
+[2024-04-20 02:48:02] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.98.tar.gz]
+[2024-04-20 02:48:02] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.99.tar.gz]
+[2024-04-20 02:48:02] INFO root fetch - main [MainThread]: End processing [rattail]: success
+[2024-04-20 02:48:02] INFO root fetch - main [MainThread]: Store serial: [22850098]
