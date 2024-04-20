@@ -10625,3 +10625,26 @@
 [2024-04-20 08:37:38] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
 [2024-04-20 08:37:38] INFO root fetch - main [MainThread]: End processing [wah]: success
 [2024-04-20 08:37:38] INFO root fetch - main [MainThread]: Store serial: [22853160]
+[2024-04-20 08:39:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853160]
+[2024-04-20 08:39:46] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 08:41:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853160]
+[2024-04-20 08:41:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:41:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mytot
+[2024-04-20 08:41:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wah
+[2024-04-20 08:41:51] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-04-20 08:41:52] INFO root fetch - processPackages [mytot]: New version: [2024.4.20.144003] Old Version: [2024.4.18.180102]
+[2024-04-20 08:41:52] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/e7/53/932a1cf40c295f539b3e272e5c6ba9fe88b253e6a07abdab9c79719afeef/mytot-2024.4.18.180102-py3-none-any.whl
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240420/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 08:41:52] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/81/a885e08103ab4f871094b84134fcfb583786cdb712420a77580218f380e4/mytot-2024.4.20.144003-py3-none-any.whl
+[2024-04-20 08:41:52] INFO root fetch - processPackages [mytot]: executing diffoscope
+[2024-04-20 08:41:52] INFO root fetch - processPackages [mytot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytot-2024.4.18.180102-py3-none-any.whl.zip tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip --markdown 20240420/m/mytot/2024.4.18.180102-2024.4.20.144003/README.md --exclude *.pyd
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-04-20 08:41:52] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-04-20 08:41:52] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-04-20 08:41:53] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.18.180102-py3-none-any.whl.zip]
+[2024-04-20 08:41:53] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip]
+[2024-04-20 08:41:53] INFO root fetch - main [MainThread]: End processing [mytot]: success
+[2024-04-20 08:41:53] INFO root fetch - main [MainThread]: Store serial: [22853164]
