@@ -11153,3 +11153,30 @@
 [2024-04-20 09:08:31] INFO root fetch - processPackages [fluidimage]: Remove: archive file [/home/abi/fetcher/tmp/fluidimage-0.4.6-cp39-cp39-macosx_10_9_x86_64.whl.zip]
 [2024-04-20 09:08:31] INFO root fetch - main [MainThread]: End processing [fluidimage]: success
 [2024-04-20 09:08:31] INFO root fetch - main [MainThread]: Store serial: [22853372]
+[2024-04-20 09:10:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853372]
+[2024-04-20 09:10:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 09:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netbound
+[2024-04-20 09:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mal-helper
+[2024-04-20 09:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clnw
+[2024-04-20 09:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mingzi
+[2024-04-20 09:10:40] INFO root fetch - processPackages [mingzi]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-20 09:10:41] WARNING root fetch - processPackages [mal-helper]: Skipping, unable to determine old version
+[2024-04-20 09:10:41] INFO root fetch - main [MainThread]: End processing [mal-helper] error
+[2024-04-20 09:10:41] WARNING root fetch - processPackages [clnw]: Skipping, unable to determine old version
+[2024-04-20 09:10:41] INFO root fetch - main [MainThread]: End processing [clnw] error
+[2024-04-20 09:10:41] INFO root fetch - processPackages [netbound]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/9e/40/f692b3192e9eb56a04f4b64e714b7a759c4fea55efb238e6513ff700ebf8/mingzi-1.2.0.tar.gz
+[2024-04-20 09:10:41] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/9c/ee/f89027b09e67ef76da5b4193174903df8d97c42510bc6e06d0cb30c508a2/netbound-0.1.8.tar.gz
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/48/de/63a924b12ffc6c7bff8fcddc13129848a0894bbe356a16b8401472e753c1/mingzi-1.2.1.tar.gz
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: executing diffoscope
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingzi-1.2.0.tar.gz tmp/mingzi-1.2.1.tar.gz --markdown 20240420/m/mingzi/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-20 09:10:41] INFO root fetch - processPackages [netbound]: Downloading https://files.pythonhosted.org/packages/e1/c7/9bed379e99d5f984cf1fa304c3bebcf19b87ce8e3507b5ee0028fae5631f/netbound-0.1.9.tar.gz
+[2024-04-20 09:10:41] INFO root fetch - processPackages [netbound]: executing diffoscope
+[2024-04-20 09:10:41] INFO root fetch - processPackages [netbound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbound-0.1.8.tar.gz tmp/netbound-0.1.9.tar.gz --markdown 20240420/n/netbound/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.0.tar.gz]
+[2024-04-20 09:10:41] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.1.tar.gz]
+[2024-04-20 09:10:41] INFO root fetch - main [MainThread]: End processing [mingzi]: success
+[2024-04-20 09:10:42] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.8.tar.gz]
+[2024-04-20 09:10:42] INFO root fetch - processPackages [netbound]: Remove: archive file [/home/abi/fetcher/tmp/netbound-0.1.9.tar.gz]
+[2024-04-20 09:10:42] INFO root fetch - main [MainThread]: End processing [netbound]: success
+[2024-04-20 09:10:42] INFO root fetch - main [MainThread]: Store serial: [22853395]
