@@ -9670,3 +9670,24 @@
 [2024-04-20 06:50:42] INFO root fetch - processPackages [anycrc]: Remove: archive file [/home/abi/fetcher/tmp/anycrc-0.3.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-20 06:50:42] INFO root fetch - main [MainThread]: End processing [anycrc]: success
 [2024-04-20 06:50:42] INFO root fetch - main [MainThread]: Store serial: [22852641]
+[2024-04-20 06:52:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852641]
+[2024-04-20 06:52:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hgraph
+[2024-04-20 06:52:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biotech
+[2024-04-20 06:52:51] INFO root fetch - processPackages [biotech]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-20 06:52:51] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/f5/25/8bed66fa577188e128676232d8046beba0df288d331f5f616aaaf678a666/biotech-1.1.4.tar.gz
+[2024-04-20 06:52:51] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 06:52:51] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-04-20 06:52:52] INFO root fetch - processPackages [biotech]: Downloading https://files.pythonhosted.org/packages/68/8c/3adcfb16be6f22cd2489ca71eaa025433d3d1126ebc6609f402af7a1a6e3/biotech-1.1.5.tar.gz
+[2024-04-20 06:52:52] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/22/05/43ea3ada7d538f8592b51d36721d624366793ada729a497eaaff2db9b540/hgraph-0.2.9.tar.gz
+[2024-04-20 06:52:52] INFO root fetch - processPackages [biotech]: executing diffoscope
+[2024-04-20 06:52:52] INFO root fetch - processPackages [biotech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotech-1.1.4.tar.gz tmp/biotech-1.1.5.tar.gz --markdown 20240420/b/biotech/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-20 06:52:52] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-04-20 06:52:52] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9.tar.gz --markdown 20240420/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 06:52:53] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-04-20 06:52:53] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
+[2024-04-20 06:52:53] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-04-20 06:52:59] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.4.tar.gz]
+[2024-04-20 06:52:59] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.5.tar.gz]
+[2024-04-20 06:52:59] INFO root fetch - main [MainThread]: End processing [biotech]: success
+[2024-04-20 06:52:59] INFO root fetch - main [MainThread]: Store serial: [22852673]
