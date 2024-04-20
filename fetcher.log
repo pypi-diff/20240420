@@ -12987,3 +12987,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:30:52] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
 [2024-04-20 11:30:52] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
 [2024-04-20 11:30:52] INFO root fetch - main [MainThread]: Store serial: [22854362]
+[2024-04-20 11:32:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854362]
+[2024-04-20 11:33:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 11:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tsa-course
+[2024-04-20 11:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-04-20 11:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: acctf
+[2024-04-20 11:33:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pasta-man
+[2024-04-20 11:33:01] INFO root fetch - processPackages [tsa-course]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 11:33:01] INFO root fetch - processPackages [tsa-course]: Downloading https://files.pythonhosted.org/packages/bd/f9/a614216a93e39a939310ca9e2b78a2bc73781e52c8b0120c366992490522/tsa_course-0.2.0.tar.gz
+[2024-04-20 11:33:01] INFO root fetch - processPackages [pasta-man]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 11:33:01] INFO root fetch - processPackages [sfmanager]: New version: [0.1.1b5] Old Version: [0.1.1b3]
+[2024-04-20 11:33:01] INFO root fetch - processPackages [pasta-man]: Downloading https://files.pythonhosted.org/packages/f3/98/fd5db769ab35b9d4221c6f05e325e09ddd0ab7ecc6a9ac07ed7b8189ddca/pasta_man-1.0.8.tar.gz
+[2024-04-20 11:33:01] INFO root fetch - processPackages [acctf]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-20 11:33:01] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/9a/e0/c97ddd72700790acfd69c25075f73e6b71e6f342ea638d78cfef06301fd5/sfmanager-0.1.1b3.tar.gz
+[2024-04-20 11:33:01] INFO root fetch - processPackages [tsa-course]: Downloading https://files.pythonhosted.org/packages/90/0d/cbef3a5324957b0721147ff5476fb54a3128ab149116d8c04cd4585f7a90/tsa_course-0.2.1.tar.gz
+[2024-04-20 11:33:01] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/7c/20/a92ec7ebbb9237c893e89544fe21423a8c81f8a7242667db4f0c5a3ded0b/acctf-0.3.1.tar.gz
+[2024-04-20 11:33:01] INFO root fetch - processPackages [tsa-course]: executing diffoscope
+[2024-04-20 11:33:01] INFO root fetch - processPackages [tsa-course]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsa_course-0.2.0.tar.gz tmp/tsa_course-0.2.1.tar.gz --markdown 20240420/t/tsa-course/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 11:33:02] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/51/79/9ab6b0c5014cae4fc6b9c80f0d76cc2afe10020a95d3a337babfa8a16bcc/sfmanager-0.1.1b5.tar.gz
+[2024-04-20 11:33:02] INFO root fetch - processPackages [pasta-man]: Downloading https://files.pythonhosted.org/packages/47/13/8f823f9f944f8411c7e035a2cb166d5820e6fcc036d266460790b4de451a/pasta_man-1.0.9.tar.gz
+[2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: Downloading https://files.pythonhosted.org/packages/db/10/0c1fa271822551f59b6179bcfa9cd12eba88985237ca2a2b72a416c60d32/acctf-0.4.0.tar.gz
+[2024-04-20 11:33:02] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 11:33:02] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b3.tar.gz tmp/sfmanager-0.1.1b5.tar.gz --markdown 20240420/s/sfmanager/0.1.1b3-0.1.1b5/README.md --exclude *.pyd
+[2024-04-20 11:33:02] INFO root fetch - processPackages [pasta-man]: executing diffoscope
+[2024-04-20 11:33:02] INFO root fetch - processPackages [pasta-man]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pasta_man-1.0.8.tar.gz tmp/pasta_man-1.0.9.tar.gz --markdown 20240420/p/pasta-man/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: executing diffoscope
+[2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acctf-0.3.1.tar.gz tmp/acctf-0.4.0.tar.gz --markdown 20240420/a/acctf/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 11:33:02] INFO root fetch - processPackages [tsa-course]: Remove: archive file [/home/abi/fetcher/tmp/tsa_course-0.2.0.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - processPackages [tsa-course]: Remove: archive file [/home/abi/fetcher/tmp/tsa_course-0.2.1.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - main [MainThread]: End processing [tsa-course]: success
+[2024-04-20 11:33:02] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b3.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b5.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 11:33:02] INFO root fetch - processPackages [pasta-man]: Remove: archive file [/home/abi/fetcher/tmp/pasta_man-1.0.8.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - processPackages [pasta-man]: Remove: archive file [/home/abi/fetcher/tmp/pasta_man-1.0.9.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - main [MainThread]: End processing [pasta-man]: success
+[2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.3.1.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.4.0.tar.gz]
+[2024-04-20 11:33:02] INFO root fetch - main [MainThread]: End processing [acctf]: success
+[2024-04-20 11:33:02] INFO root fetch - main [MainThread]: Store serial: [22854374]
