@@ -18090,3 +18090,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:22:40] INFO root fetch - processPackages [iwashi]: Remove: archive file [/home/abi/fetcher/tmp/iwashi-3.0.0.tar.gz]
 [2024-04-20 17:22:40] INFO root fetch - main [MainThread]: End processing [iwashi]: success
 [2024-04-20 17:22:40] INFO root fetch - main [MainThread]: Store serial: [22856908]
+[2024-04-20 17:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856908]
+[2024-04-20 17:24:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: felicien
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC103
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ml-indie-tools
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bgutils-hddly
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: greyhorse-rmq
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: callite
+[2024-04-20 17:24:49] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-20 17:24:49] WARNING root fetch - processPackages [callite]: Skipping, unable to determine old version
+[2024-04-20 17:24:49] INFO root fetch - main [MainThread]: End processing [callite] error
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 17:24:49] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2024-04-20 17:24:49] WARNING root fetch - processPackages [PythonTestLJC103]: Skipping, unable to determine old version
+[2024-04-20 17:24:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC103] error
+[2024-04-20 17:24:49] ERROR root fetch - processPackages [felicien]: Unable to get metadata: No such project 'felicien'
+[2024-04-20 17:24:49] INFO root fetch - main [MainThread]: End processing [felicien] error
+[2024-04-20 17:24:49] INFO root fetch - processPackages [greyhorse-rmq]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-20 17:24:49] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2024-04-20 17:24:49] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-20 17:24:49] INFO root fetch - processPackages [greyhorse-rmq]: Downloading https://files.pythonhosted.org/packages/69/15/ceef0fd20f58d12b368eb30819af135485427d9f848b1d4292760a58b1a1/greyhorse_rmq-0.1.tar.gz
+[2024-04-20 17:24:49] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2024-04-20 17:24:49] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20240420/b/bgutils-hddly/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-20 17:24:50] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-20 17:24:50] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240420/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 17:24:50] INFO root fetch - processPackages [greyhorse-rmq]: Downloading https://files.pythonhosted.org/packages/99/36/10d32298226deeee6062f0d76a951c027e97ed4aef5618e474074d4e2973/greyhorse_rmq-0.2.tar.gz
+[2024-04-20 17:24:50] INFO root fetch - processPackages [greyhorse-rmq]: executing diffoscope
+[2024-04-20 17:24:50] INFO root fetch - processPackages [greyhorse-rmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greyhorse_rmq-0.1.tar.gz tmp/greyhorse_rmq-0.2.tar.gz --markdown 20240420/g/greyhorse-rmq/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 17:24:50] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip]
+[2024-04-20 17:24:50] INFO root fetch - processPackages [bgutils-hddly]: Remove: archive file [/home/abi/fetcher/tmp/bgutils_hddly-1.1.9.tar.gz]
+[2024-04-20 17:24:50] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2024-04-20 17:24:50] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-20 17:24:50] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-20 17:24:50] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-20 17:24:51] INFO root fetch - processPackages [greyhorse-rmq]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_rmq-0.1.tar.gz]
+[2024-04-20 17:24:51] INFO root fetch - processPackages [greyhorse-rmq]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_rmq-0.2.tar.gz]
+[2024-04-20 17:24:51] INFO root fetch - main [MainThread]: End processing [greyhorse-rmq]: success
+[2024-04-20 17:24:51] INFO root fetch - main [MainThread]: Store serial: [22856931]
