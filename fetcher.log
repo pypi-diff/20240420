@@ -11352,3 +11352,24 @@
 [2024-04-20 09:21:39] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.2.tar.gz]
 [2024-04-20 09:21:39] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
 [2024-04-20 09:21:39] INFO root fetch - main [MainThread]: Store serial: [22853550]
+[2024-04-20 09:23:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853550]
+[2024-04-20 09:23:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:23:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FreeBack
+[2024-04-20 09:23:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-gmail
+[2024-04-20 09:23:49] INFO root fetch - processPackages [FreeBack]: New version: [4.1.0a0] Old Version: [3.0.1a0]
+[2024-04-20 09:23:49] INFO root fetch - processPackages [fast-gmail]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-20 09:23:49] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/11/4c/7143894d97a05122d51509a130f732cf8362777e68234c76b7630158cbeb/FreeBack-3.0.1a0.tar.gz
+[2024-04-20 09:23:49] INFO root fetch - processPackages [fast-gmail]: Downloading https://files.pythonhosted.org/packages/30/b5/73b6f3cfa4e809e8ab55fcb6e824a348a3eb40257304ec6b212f965a59fd/fast_gmail-1.0.6.tar.gz
+[2024-04-20 09:23:50] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/0f/7f/6925cb8526283d13b31ccf36e92171940131ff9056c8485c1bb8e5b23276/FreeBack-4.1.0a0.tar.gz
+[2024-04-20 09:23:50] INFO root fetch - processPackages [fast-gmail]: Downloading https://files.pythonhosted.org/packages/dc/50/677c89ef5e172a39c51a2cebd1712bff93a13bf05baaa8c18004a687e302/fast_gmail-1.0.7.tar.gz
+[2024-04-20 09:23:50] INFO root fetch - processPackages [FreeBack]: executing diffoscope
+[2024-04-20 09:23:50] INFO root fetch - processPackages [FreeBack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeBack-3.0.1a0.tar.gz tmp/FreeBack-4.1.0a0.tar.gz --markdown 20240420/F/FreeBack/3.0.1a0-4.1.0a0/README.md --exclude *.pyd
+[2024-04-20 09:23:50] INFO root fetch - processPackages [fast-gmail]: executing diffoscope
+[2024-04-20 09:23:50] INFO root fetch - processPackages [fast-gmail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_gmail-1.0.6.tar.gz tmp/fast_gmail-1.0.7.tar.gz --markdown 20240420/f/fast-gmail/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-20 09:23:51] INFO root fetch - processPackages [fast-gmail]: Remove: archive file [/home/abi/fetcher/tmp/fast_gmail-1.0.6.tar.gz]
+[2024-04-20 09:23:51] INFO root fetch - processPackages [fast-gmail]: Remove: archive file [/home/abi/fetcher/tmp/fast_gmail-1.0.7.tar.gz]
+[2024-04-20 09:23:51] INFO root fetch - main [MainThread]: End processing [fast-gmail]: success
+[2024-04-20 09:23:51] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-3.0.1a0.tar.gz]
+[2024-04-20 09:23:51] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.1.0a0.tar.gz]
+[2024-04-20 09:23:51] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
+[2024-04-20 09:23:51] INFO root fetch - main [MainThread]: Store serial: [22853564]
