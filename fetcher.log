@@ -15410,3 +15410,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:15:33] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.7.tar.gz]
 [2024-04-20 14:15:33] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 14:15:33] INFO root fetch - main [MainThread]: Store serial: [22855539]
+[2024-04-20 14:17:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855539]
+[2024-04-20 14:17:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 14:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC046
+[2024-04-20 14:17:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zwj-Pypi
+[2024-04-20 14:17:41] INFO root fetch - processPackages [snailshell]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-20 14:17:41] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/f4/2e/70272107c10ad674276dc68fcaecd0124b24ab4d06b1b132d2a3baadae12/snailshell-0.2.7.tar.gz
+[2024-04-20 14:17:41] WARNING root fetch - processPackages [PythonTestLJC046]: Skipping, unable to determine old version
+[2024-04-20 14:17:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC046] error
+[2024-04-20 14:17:41] WARNING root fetch - processPackages [zwj-Pypi]: Skipping, unable to determine old version
+[2024-04-20 14:17:41] INFO root fetch - main [MainThread]: End processing [zwj-Pypi] error
+[2024-04-20 14:17:42] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-20 14:17:43] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 14:17:43] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.7.tar.gz tmp/snailshell-0.2.8.tar.gz --markdown 20240420/s/snailshell/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-20 14:17:44] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.7.tar.gz]
+[2024-04-20 14:17:44] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-20 14:17:44] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 14:17:44] INFO root fetch - main [MainThread]: Store serial: [22855552]
