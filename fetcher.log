@@ -2699,3 +2699,36 @@
 [2024-04-20 02:36:59] INFO root fetch - processPackages [tendril-auth]: Remove: archive file [/home/abi/fetcher/tmp/tendril_auth-0.4.2.tar.gz]
 [2024-04-20 02:36:59] INFO root fetch - main [MainThread]: End processing [tendril-auth]: success
 [2024-04-20 02:36:59] INFO root fetch - main [MainThread]: Store serial: [22849992]
+[2024-04-20 02:39:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849992]
+[2024-04-20 02:39:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 02:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dbrownell-DevTools
+[2024-04-20 02:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: predibase-api
+[2024-04-20 02:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: predibase
+[2024-04-20 02:39:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: d-jwt-auth
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase-api]: New version: [2024.4.7] Old Version: [2024.4.6]
+[2024-04-20 02:39:08] INFO root fetch - processPackages [dbrownell-DevTools]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-20 02:39:08] WARNING root fetch - processPackages [d-jwt-auth]: Skipping, unable to determine old version
+[2024-04-20 02:39:08] INFO root fetch - main [MainThread]: End processing [d-jwt-auth] error
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase]: New version: [2024.4.7] Old Version: [2024.4.6]
+[2024-04-20 02:39:08] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/e4/4d/0e19372b5607400e51d720966eaf41f18a1b6b007cc87ac6eb6d9f8becb6/dbrownell_DevTools-0.8.1-py3-none-any.whl
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/6b/35/42bc98275a33357d9751b8b2c4199ee41ced379d24c4fd408d32962bcc0c/predibase-api-2024.4.6.tar.gz
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/5a/70/521bf5c2c0e8e861168e48d8a3563dbad0aa265fbffde23796cc57fd9f37/predibase-2024.4.6.tar.gz
+[2024-04-20 02:39:08] INFO root fetch - processPackages [dbrownell-DevTools]: Downloading https://files.pythonhosted.org/packages/6a/4c/d64b516137d9b57df6580e99ae3c7beb287715418efefbdf0c8260ba6e5d/dbrownell_DevTools-0.9.0-py3-none-any.whl
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase-api]: Downloading https://files.pythonhosted.org/packages/12/73/1e8ca9686d6fdbd41b63304d8a69affc8a09b91134e599f0ab3a73fdfc20/predibase-api-2024.4.7.tar.gz
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase]: Downloading https://files.pythonhosted.org/packages/aa/c9/397c7ccd97273320d2617aab083c03247a5a554b344cabb4fd5ca9fd873d/predibase-2024.4.7.tar.gz
+[2024-04-20 02:39:08] INFO root fetch - processPackages [dbrownell-DevTools]: executing diffoscope
+[2024-04-20 02:39:08] INFO root fetch - processPackages [dbrownell-DevTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip --markdown 20240420/d/dbrownell-DevTools/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase-api]: executing diffoscope
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-api-2024.4.6.tar.gz tmp/predibase-api-2024.4.7.tar.gz --markdown 20240420/p/predibase-api/2024.4.6-2024.4.7/README.md --exclude *.pyd
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase]: executing diffoscope
+[2024-04-20 02:39:08] INFO root fetch - processPackages [predibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/predibase-2024.4.6.tar.gz tmp/predibase-2024.4.7.tar.gz --markdown 20240420/p/predibase/2024.4.6-2024.4.7/README.md --exclude *.pyd
+[2024-04-20 02:39:09] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.8.1-py3-none-any.whl.zip]
+[2024-04-20 02:39:09] INFO root fetch - processPackages [dbrownell-DevTools]: Remove: archive file [/home/abi/fetcher/tmp/dbrownell_DevTools-0.9.0-py3-none-any.whl.zip]
+[2024-04-20 02:39:09] INFO root fetch - main [MainThread]: End processing [dbrownell-DevTools]: success
+[2024-04-20 02:39:09] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.6.tar.gz]
+[2024-04-20 02:39:09] INFO root fetch - processPackages [predibase-api]: Remove: archive file [/home/abi/fetcher/tmp/predibase-api-2024.4.7.tar.gz]
+[2024-04-20 02:39:09] INFO root fetch - main [MainThread]: End processing [predibase-api]: success
+[2024-04-20 02:39:09] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.6.tar.gz]
+[2024-04-20 02:39:09] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.7.tar.gz]
+[2024-04-20 02:39:09] INFO root fetch - main [MainThread]: End processing [predibase]: success
+[2024-04-20 02:39:09] INFO root fetch - main [MainThread]: Store serial: [22850002]
