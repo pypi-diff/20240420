@@ -19645,3 +19645,75 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:03:55] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-2.0.0-py3-none-any.whl.zip]
 [2024-04-20 19:03:55] INFO root fetch - main [MainThread]: End processing [face-authenticator]: success
 [2024-04-20 19:03:55] INFO root fetch - main [MainThread]: Store serial: [22857663]
+[2024-04-20 19:05:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857663]
+[2024-04-20 19:06:03] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-learning-nlp
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: provisioner-installers-plugin
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcp-pilot
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ignition-gemini
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hugo
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: theoddevegame
+[2024-04-20 19:06:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC140
+[2024-04-20 19:06:03] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:06:03] WARNING root fetch - processPackages [provisioner-installers-plugin]: Skipping, unable to determine old version
+[2024-04-20 19:06:03] INFO root fetch - main [MainThread]: End processing [provisioner-installers-plugin] error
+[2024-04-20 19:06:03] INFO root fetch - processPackages [bellek]: New version: [0.92.6] Old Version: [0.92.5]
+[2024-04-20 19:06:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [hugo]: New version: [0.125.2] Old Version: [0.125.1]
+[2024-04-20 19:06:04] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1b/37/13887a96852d1e5e24ecafc7128aee04cc9fca236ebd1d69304bbccc937b/bellek-0.92.5.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 19:06:04] INFO root fetch - processPackages [theoddevegame]: New version: [1.1] Old Version: [1.0.1]
+[2024-04-20 19:06:04] INFO root fetch - processPackages [ignition-gemini]: New version: [1.0.0] Old Version: [0.2.1]
+[2024-04-20 19:06:04] WARNING root fetch - processPackages [PythonTestLJC140]: Skipping, unable to determine old version
+[2024-04-20 19:06:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC140] error
+[2024-04-20 19:06:04] INFO root fetch - processPackages [gcp-pilot]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-20 19:06:04] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/07/6a/82298f622f751b9b19823b11eb27b9fc1015a38c958319e370ce110c0d21/hugo-0.125.1.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/08/e9/1243946d77b2d52743a4f9cce236da19441c4c11d395d09107800815ea6d/CI-CD-SergiCastillo-0.2.5.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [theoddevegame]: Downloading https://files.pythonhosted.org/packages/7a/8e/fc13dd5ae69b843108b151e85993e5bb5808971afac012e690cb7e9dad4d/theoddevegame-1.0.1.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [ignition-gemini]: Downloading https://files.pythonhosted.org/packages/21/70/9864e28cac6329a6a34959061ea3307b1198b17a2a5c0d3964e78504b225/ignition_gemini-0.2.1.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/78/4c/904d9bfad08e100e7292aa65ba02bb2970a1847c9b70f40c2e5b5f7c0394/gcp_pilot-1.8.0.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:06:04] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/76/c9/09ca7104e754fc539d50dde49ddf61ca0c6b6f865f7f416239d241609649/bellek-0.92.6.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.5.tar.gz tmp/bellek-0.92.6.tar.gz --markdown 20240420/b/bellek/0.92.5-0.92.6/README.md --exclude *.pyd
+[2024-04-20 19:06:04] INFO root fetch - processPackages [hugo]: Downloading https://files.pythonhosted.org/packages/ce/21/4445d204f9bcaf6e7b60e182c1aca783d655044f1ee2434da4dba0f93017/hugo-0.125.2.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/84/ea/657a8aa71cbf53622e7217098053c99c05c47d166a5062ceb7975e2bb25d/CI-CD-SergiCastillo-0.2.6.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [ignition-gemini]: Downloading https://files.pythonhosted.org/packages/dd/c1/e20a471e78640857f8fa80ed31d2ffaf6541301fec0ce403717425c87e58/ignition_gemini-1.0.0.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [theoddevegame]: Downloading https://files.pythonhosted.org/packages/c8/11/2475ddf9ad797787a973cc8944cda94035ba010db1e7b1730b5ae504d069/theoddevegame-1.1.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [hugo]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [hugo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hugo-0.125.1.tar.gz tmp/hugo-0.125.2.tar.gz --markdown 20240420/h/hugo/0.125.1-0.125.2/README.md --exclude *.pyd
+[2024-04-20 19:06:04] INFO root fetch - processPackages [gcp-pilot]: Downloading https://files.pythonhosted.org/packages/77/21/e21af36c6a9ae3ffd798bb349a5af13504c2c3ec3e5361bdfcd34b9fa888/gcp_pilot-1.9.0.tar.gz
+[2024-04-20 19:06:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.2.5.tar.gz tmp/CI-CD-SergiCastillo-0.2.6.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 19:06:04] INFO root fetch - processPackages [ignition-gemini]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [ignition-gemini]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ignition_gemini-0.2.1.tar.gz tmp/ignition_gemini-1.0.0.tar.gz --markdown 20240420/i/ignition-gemini/0.2.1-1.0.0/README.md --exclude *.pyd
+[2024-04-20 19:06:04] INFO root fetch - processPackages [theoddevegame]: executing diffoscope
+[2024-04-20 19:06:04] INFO root fetch - processPackages [theoddevegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theoddevegame-1.0.1.tar.gz tmp/theoddevegame-1.1.tar.gz --markdown 20240420/t/theoddevegame/1.0.1-1.1/README.md --exclude *.pyd
+[2024-04-20 19:06:05] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [gcp-pilot]: executing diffoscope
+[2024-04-20 19:06:05] INFO root fetch - processPackages [gcp-pilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pilot-1.8.0.tar.gz tmp/gcp_pilot-1.9.0.tar.gz --markdown 20240420/g/gcp-pilot/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-20 19:06:05] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.5.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.6.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.5.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.6.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.125.1.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [hugo]: Remove: archive file [/home/abi/fetcher/tmp/hugo-0.125.2.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [hugo]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [theoddevegame]: Remove: archive file [/home/abi/fetcher/tmp/theoddevegame-1.0.1.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [theoddevegame]: Remove: archive file [/home/abi/fetcher/tmp/theoddevegame-1.1.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [theoddevegame]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [gcp-pilot]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pilot-1.8.0.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [gcp-pilot]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pilot-1.9.0.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [gcp-pilot]: success
+[2024-04-20 19:06:05] INFO root fetch - processPackages [ignition-gemini]: Remove: archive file [/home/abi/fetcher/tmp/ignition_gemini-0.2.1.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - processPackages [ignition-gemini]: Remove: archive file [/home/abi/fetcher/tmp/ignition_gemini-1.0.0.tar.gz]
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: End processing [ignition-gemini]: success
+[2024-04-20 19:06:05] INFO root fetch - main [MainThread]: Store serial: [22857689]
