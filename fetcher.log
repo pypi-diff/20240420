@@ -9509,3 +9509,27 @@
 [2024-04-20 06:35:36] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
 [2024-04-20 06:35:36] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
 [2024-04-20 06:35:36] INFO root fetch - main [MainThread]: Store serial: [22852551]
+[2024-04-20 06:37:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852551]
+[2024-04-20 06:37:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 06:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flamme
+[2024-04-20 06:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: async-mojang
+[2024-04-20 06:37:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiavatar
+[2024-04-20 06:37:44] INFO root fetch - processPackages [flamme]: New version: [0.0.9] Old Version: [0.0.8a1]
+[2024-04-20 06:37:44] INFO root fetch - processPackages [flamme]: Downloading https://files.pythonhosted.org/packages/82/a7/78b097dd39d2b564a47d15e8010ec96499b20fc8f3887469ebd5275302a9/flamme-0.0.8a1.tar.gz
+[2024-04-20 06:37:44] INFO root fetch - processPackages [aiavatar]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-04-20 06:37:44] WARNING root fetch - processPackages [async-mojang]: Skipping, unable to determine old version
+[2024-04-20 06:37:44] INFO root fetch - main [MainThread]: End processing [async-mojang] error
+[2024-04-20 06:37:44] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/e0/4a/83049b02fef8b69e3510f6913a546981966f6af44098fef5426d89ad4c87/aiavatar-0.4.5-py3-none-any.whl
+[2024-04-20 06:37:44] INFO root fetch - processPackages [flamme]: Downloading https://files.pythonhosted.org/packages/95/b9/67cd6cad72d4221f3d61e760b91b826e3165de0cf760406862c63ea1de01/flamme-0.0.9.tar.gz
+[2024-04-20 06:37:45] INFO root fetch - processPackages [flamme]: executing diffoscope
+[2024-04-20 06:37:45] INFO root fetch - processPackages [flamme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flamme-0.0.8a1.tar.gz tmp/flamme-0.0.9.tar.gz --markdown 20240420/f/flamme/0.0.8a1-0.0.9/README.md --exclude *.pyd
+[2024-04-20 06:37:45] INFO root fetch - processPackages [aiavatar]: Downloading https://files.pythonhosted.org/packages/d3/10/f2aee96841dc7ee759bc7eb19f6c91ce99b65f893186ee444d18b01d73a2/aiavatar-0.5.0-py3-none-any.whl
+[2024-04-20 06:37:45] INFO root fetch - processPackages [aiavatar]: executing diffoscope
+[2024-04-20 06:37:45] INFO root fetch - processPackages [aiavatar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiavatar-0.4.5-py3-none-any.whl.zip tmp/aiavatar-0.5.0-py3-none-any.whl.zip --markdown 20240420/a/aiavatar/0.4.5-0.5.0/README.md --exclude *.pyd
+[2024-04-20 06:37:45] INFO root fetch - processPackages [flamme]: Remove: archive file [/home/abi/fetcher/tmp/flamme-0.0.8a1.tar.gz]
+[2024-04-20 06:37:45] INFO root fetch - processPackages [flamme]: Remove: archive file [/home/abi/fetcher/tmp/flamme-0.0.9.tar.gz]
+[2024-04-20 06:37:45] INFO root fetch - main [MainThread]: End processing [flamme]: success
+[2024-04-20 06:37:46] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.4.5-py3-none-any.whl.zip]
+[2024-04-20 06:37:46] INFO root fetch - processPackages [aiavatar]: Remove: archive file [/home/abi/fetcher/tmp/aiavatar-0.5.0-py3-none-any.whl.zip]
+[2024-04-20 06:37:46] INFO root fetch - main [MainThread]: End processing [aiavatar]: success
+[2024-04-20 06:37:46] INFO root fetch - main [MainThread]: Store serial: [22852561]
