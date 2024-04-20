@@ -13835,3 +13835,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:23:16] INFO root fetch - processPackages [aiotieba]: Remove: archive file [/home/abi/fetcher/tmp/aiotieba-4.4.4.tar.gz]
 [2024-04-20 12:23:16] INFO root fetch - main [MainThread]: End processing [aiotieba]: success
 [2024-04-20 12:23:16] INFO root fetch - main [MainThread]: Store serial: [22854781]
+[2024-04-20 12:25:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854781]
+[2024-04-20 12:25:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 12:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: avilla-onebot-v11
+[2024-04-20 12:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-somfy
+[2024-04-20 12:25:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cutseq
+[2024-04-20 12:25:25] WARNING root fetch - processPackages [cutseq]: Skipping, unable to determine old version
+[2024-04-20 12:25:25] INFO root fetch - main [MainThread]: End processing [cutseq] error
+[2024-04-20 12:25:25] INFO root fetch - processPackages [avilla-onebot-v11]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2024-04-20 12:25:25] WARNING root fetch - processPackages [python-somfy]: Skipping, unable to determine old version
+[2024-04-20 12:25:25] INFO root fetch - main [MainThread]: End processing [python-somfy] error
+[2024-04-20 12:25:25] INFO root fetch - processPackages [avilla-onebot-v11]: Downloading https://files.pythonhosted.org/packages/85/bf/eac28e8be6e85803fded079dd77a80b1247a8266594c59f6788dd558ff9c/avilla_onebot_v11-1.0.0a6.tar.gz
+[2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: Downloading https://files.pythonhosted.org/packages/fb/14/4debba4e20d757c2a226b9dea3971262de6362af2d583eb4e52a748e7683/avilla_onebot_v11-1.0.0a7.tar.gz
+[2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: executing diffoscope
+[2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avilla_onebot_v11-1.0.0a6.tar.gz tmp/avilla_onebot_v11-1.0.0a7.tar.gz --markdown 20240420/a/avilla-onebot-v11/1.0.0a6-1.0.0a7/README.md --exclude *.pyd
+[2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: Remove: archive file [/home/abi/fetcher/tmp/avilla_onebot_v11-1.0.0a6.tar.gz]
+[2024-04-20 12:25:26] INFO root fetch - processPackages [avilla-onebot-v11]: Remove: archive file [/home/abi/fetcher/tmp/avilla_onebot_v11-1.0.0a7.tar.gz]
+[2024-04-20 12:25:26] INFO root fetch - main [MainThread]: End processing [avilla-onebot-v11]: success
+[2024-04-20 12:25:26] INFO root fetch - main [MainThread]: Store serial: [22854791]
