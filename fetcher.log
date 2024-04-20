@@ -23710,3 +23710,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:17:07] INFO root fetch - processPackages [molecularnetwork]: Remove: archive file [/home/abi/fetcher/tmp/molecularnetwork-0.4.2.tar.gz]
 [2024-04-20 23:17:07] INFO root fetch - main [MainThread]: End processing [molecularnetwork]: success
 [2024-04-20 23:17:07] INFO root fetch - main [MainThread]: Store serial: [22859569]
+[2024-04-20 23:19:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859569]
+[2024-04-20 23:19:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 23:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nog642-util
+[2024-04-20 23:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC231
+[2024-04-20 23:19:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-lib
+[2024-04-20 23:19:17] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2024-04-20 23:19:17] INFO root fetch - processPackages [nog642-util]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-04-20 23:19:17] WARNING root fetch - processPackages [PythonTestLJC231]: Skipping, unable to determine old version
+[2024-04-20 23:19:17] INFO root fetch - main [MainThread]: End processing [PythonTestLJC231] error
+[2024-04-20 23:19:17] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/e9/13/4188899d6b95c46737dcb91b618d7f043ee4fc94128efb54e8917315026d/dialog_lib-0.0.1.8.tar.gz
+[2024-04-20 23:19:18] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/85/ee/8f2543b32d9c20c36da8233babaef9ef0d92c5f4af9f25577c1b1d83c657/nog642_util-0.0.0.tar.gz
+[2024-04-20 23:19:18] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/a6/99/91b03e62dec54e7fb1c05a8fb35ed00fe60baf6eb48ab34311a56782abd6/dialog_lib-0.0.1.9.tar.gz
+[2024-04-20 23:19:18] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-04-20 23:19:18] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.8.tar.gz tmp/dialog_lib-0.0.1.9.tar.gz --markdown 20240420/d/dialog-lib/0.0.1.8-0.0.1.9/README.md --exclude *.pyd
+[2024-04-20 23:19:18] INFO root fetch - processPackages [nog642-util]: Downloading https://files.pythonhosted.org/packages/af/cc/46eeb74ff34342f992de4642ce7d7d93648fb5fa8a5b17b03fd63e7de584/nog642_util-0.1.0.tar.gz
+[2024-04-20 23:19:18] INFO root fetch - processPackages [nog642-util]: executing diffoscope
+[2024-04-20 23:19:18] INFO root fetch - processPackages [nog642-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nog642_util-0.0.0.tar.gz tmp/nog642_util-0.1.0.tar.gz --markdown 20240420/n/nog642-util/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-04-20 23:19:18] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.8.tar.gz]
+[2024-04-20 23:19:18] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.9.tar.gz]
+[2024-04-20 23:19:18] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-04-20 23:19:19] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.0.0.tar.gz]
+[2024-04-20 23:19:19] INFO root fetch - processPackages [nog642-util]: Remove: archive file [/home/abi/fetcher/tmp/nog642_util-0.1.0.tar.gz]
+[2024-04-20 23:19:19] INFO root fetch - main [MainThread]: End processing [nog642-util]: success
+[2024-04-20 23:19:19] INFO root fetch - main [MainThread]: Store serial: [22859580]
