@@ -19422,3 +19422,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:50:46] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.1.tar.gz]
 [2024-04-20 18:50:46] INFO root fetch - main [MainThread]: End processing [python-115]: success
 [2024-04-20 18:50:46] INFO root fetch - main [MainThread]: Store serial: [22857571]
+[2024-04-20 18:52:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857571]
+[2024-04-20 18:52:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: noteshrunk
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restcraft
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC135
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: face-authenticator
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyweatherfr
+[2024-04-20 18:52:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dash-mantine-components
+[2024-04-20 18:52:55] INFO root fetch - processPackages [cerbogen]: New version: [0.0.39] Old Version: [0.0.38]
+[2024-04-20 18:52:55] INFO root fetch - processPackages [noteshrunk]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-20 18:52:55] INFO root fetch - processPackages [restcraft]: New version: [0.0.11] Old Version: [0.0.10]
+[2024-04-20 18:52:55] WARNING root fetch - processPackages [face-authenticator]: Skipping, unable to determine old version
+[2024-04-20 18:52:55] INFO root fetch - main [MainThread]: End processing [face-authenticator] error
+[2024-04-20 18:52:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/fa/ee/75bd40be70b526e73ff03f1860254b699011ab0366c3e70b06534cb750f2/cerbogen-0.0.38.tar.gz
+[2024-04-20 18:52:55] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/e5/22/1aa5c8f535b824c6e2d6e4edddfd64e33a2fde9d63751a0499265410bf47/noteshrunk-1.4.0.tar.gz
+[2024-04-20 18:52:55] WARNING root fetch - processPackages [PythonTestLJC135]: Skipping, unable to determine old version
+[2024-04-20 18:52:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC135] error
+[2024-04-20 18:52:55] INFO root fetch - processPackages [pyweatherfr]: New version: [5.3.0] Old Version: [5.2.5]
+[2024-04-20 18:52:55] INFO root fetch - processPackages [dash-mantine-components]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 18:52:55] ERROR root fetch - processPackages [restcraft]: Unable to fetch info: No such project/version 'restcraft' 0.0.10
+[2024-04-20 18:52:55] INFO root fetch - main [MainThread]: End processing [restcraft] error
+[2024-04-20 18:52:55] INFO root fetch - processPackages [dash-mantine-components]: Downloading https://files.pythonhosted.org/packages/90/b3/8be0020523f382bf603a975983ffdadae4b9ca09586016b9556bf2dea6d9/dash_mantine_components-0.8.0.tar.gz
+[2024-04-20 18:52:55] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/1b/3d/8b58243ebd92987e366a8109f99d81e40f1eb0367dafb0eedcc26dc48196/pyweatherfr-5.2.5.tar.gz
+[2024-04-20 18:52:55] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/44/7d/132ec62caee57ed486cdf4eb8d8568da9c1ac7b95d4ea3250cda1fc299b5/cerbogen-0.0.39.tar.gz
+[2024-04-20 18:52:55] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/29/2e/3cce247cb48409ec9375364c4c9340e25f6c49fa6ef0f26bb59142edfaba/noteshrunk-1.4.1.tar.gz
+[2024-04-20 18:52:55] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:52:55] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.38.tar.gz tmp/cerbogen-0.0.39.tar.gz --markdown 20240420/c/cerbogen/0.0.38-0.0.39/README.md --exclude *.pyd
+[2024-04-20 18:52:55] INFO root fetch - processPackages [noteshrunk]: executing diffoscope
+[2024-04-20 18:52:55] INFO root fetch - processPackages [noteshrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteshrunk-1.4.0.tar.gz tmp/noteshrunk-1.4.1.tar.gz --markdown 20240420/n/noteshrunk/1.4.0-1.4.1/README.md --exclude *.pyd
+[2024-04-20 18:52:56] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/9a/d8/3f26a6d88a92c5b934e32fe091ab6fb94396845bd0185820c727286dd363/pyweatherfr-5.3.0.tar.gz
+[2024-04-20 18:52:56] INFO root fetch - processPackages [dash-mantine-components]: Downloading https://files.pythonhosted.org/packages/a4/05/890b33093331e1bec298f61bf10f3de72d6c1127528d100493ed8b998b08/dash_mantine_components-0.9.0.tar.gz
+[2024-04-20 18:52:56] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-20 18:52:56] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-5.2.5.tar.gz tmp/pyweatherfr-5.3.0.tar.gz --markdown 20240420/p/pyweatherfr/5.2.5-5.3.0/README.md --exclude *.pyd
+[2024-04-20 18:52:56] INFO root fetch - processPackages [dash-mantine-components]: executing diffoscope
+[2024-04-20 18:52:56] INFO root fetch - processPackages [dash-mantine-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_mantine_components-0.8.0.tar.gz tmp/dash_mantine_components-0.9.0.tar.gz --markdown 20240420/d/dash-mantine-components/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 18:52:56] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.38.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.39.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:52:56] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.4.0.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.4.1.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
+[2024-04-20 18:52:56] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.2.5.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-5.3.0.tar.gz]
+[2024-04-20 18:52:56] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-20 18:53:02] INFO root fetch - processPackages [dash-mantine-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_mantine_components-0.8.0.tar.gz]
+[2024-04-20 18:53:02] INFO root fetch - processPackages [dash-mantine-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_mantine_components-0.9.0.tar.gz]
+[2024-04-20 18:53:02] INFO root fetch - main [MainThread]: End processing [dash-mantine-components]: success
+[2024-04-20 18:53:02] INFO root fetch - main [MainThread]: Store serial: [22857598]
