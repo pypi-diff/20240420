@@ -21446,3 +21446,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:47:03] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.44.tar.gz]
 [2024-04-20 20:47:03] INFO root fetch - main [MainThread]: End processing [datapools]: success
 [2024-04-20 20:47:03] INFO root fetch - main [MainThread]: Store serial: [22858507]
+[2024-04-20 20:49:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858507]
+[2024-04-20 20:49:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 20:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-location-local
+[2024-04-20 20:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edstem-assignment-tracker
+[2024-04-20 20:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utubes
+[2024-04-20 20:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-chip-filter
+[2024-04-20 20:49:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC177
+[2024-04-20 20:49:12] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 20:49:12] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 20:49:12] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/98/42/e2dc7f0c671976cd476a05c8831f3b2f50227776ed5eff764f5e6f75c0d6/streamlit-chip-filter-0.0.5.tar.gz
+[2024-04-20 20:49:12] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 20:49:12] INFO root fetch - processPackages [utubes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:49:12] WARNING root fetch - processPackages [PythonTestLJC177]: Skipping, unable to determine old version
+[2024-04-20 20:49:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC177] error
+[2024-04-20 20:49:12] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:49:12] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 20:49:12] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/d2/e5/91bc5e73a5bce4b80f48a5e9e9b1bd239404484593fa343462a49eb01099/utubes-0.0.8.tar.gz
+[2024-04-20 20:49:12] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-04-20 20:49:12] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 20:49:12] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 20:49:12] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/0a/53/eeb946d152da64d375b9bf98330d7e4ffb8f15579165288dda7d2a5e17bd/streamlit-chip-filter-0.0.6.tar.gz
+[2024-04-20 20:49:13] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/aa/9e/f4f060addff3038b06e174480b907bd2e35e83a1950b27a245be95c891d8/utubes-0.0.9.tar.gz
+[2024-04-20 20:49:13] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-04-20 20:49:13] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 20:49:13] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.5.tar.gz tmp/streamlit-chip-filter-0.0.6.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 20:49:13] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-04-20 20:49:13] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240420/c/contact-location-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:49:13] INFO root fetch - processPackages [utubes]: executing diffoscope
+[2024-04-20 20:49:13] INFO root fetch - processPackages [utubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utubes-0.0.8.tar.gz tmp/utubes-0.0.9.tar.gz --markdown 20240420/u/utubes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:49:13] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 20:49:13] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.8.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - main [MainThread]: End processing [utubes]: success
+[2024-04-20 20:49:13] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-04-20 20:49:13] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-04-20 20:49:26] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.5.tar.gz]
+[2024-04-20 20:49:26] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.6.tar.gz]
+[2024-04-20 20:49:26] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 20:49:26] INFO root fetch - main [MainThread]: Store serial: [22858523]
