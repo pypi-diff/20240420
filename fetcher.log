@@ -18735,3 +18735,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:02:38] INFO root fetch - processPackages [vokab]: Remove: archive file [/home/abi/fetcher/tmp/vokab-0.0.2.tar.gz]
 [2024-04-20 18:02:38] INFO root fetch - main [MainThread]: End processing [vokab]: success
 [2024-04-20 18:02:38] INFO root fetch - main [MainThread]: Store serial: [22857238]
+[2024-04-20 18:04:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857238]
+[2024-04-20 18:04:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-learning-nlp
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pokerengine
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hasura-ndc
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vbgpt
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: json-duplicate-keys
+[2024-04-20 18:04:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: beepy-web
+[2024-04-20 18:04:47] INFO root fetch - processPackages [hasura-ndc]: New version: [0.9] Old Version: [0.8]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [pokerengine]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [beepy-web]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/d0/83/a856a2bdda5af4564aa8c237b8eadc3f4d0ca2ab378a66f7c47142f8f79d/pokerengine-1.1.2.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [hasura-ndc]: Downloading https://files.pythonhosted.org/packages/d9/8b/9bbf503188f323ee94f4d2a17fa0359ecab029eb6ecb3442dfaf4a27d2e9/hasura_ndc-0.8.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [vbgpt]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [json-duplicate-keys]: New version: [23.2.7] Old Version: [22.5.28]
+[2024-04-20 18:04:47] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/ed/29/bca280054e4ddd8da072f5aac651ea2d37a17613afdd13b0429a0745fdff/beepy_web-0.9.6.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [vbgpt]: Downloading https://files.pythonhosted.org/packages/7f/bd/b822ad5ab99b38099053bf1fcdcab18c285165280f79a2607582da469e09/vbgpt-0.1.0.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [json-duplicate-keys]: Downloading https://files.pythonhosted.org/packages/99/eb/d6c4d1c5db5bb561c002595a90e3fca2a0a2d8be3756243f10d354369c0f/json_duplicate_keys-22.5.28.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [hasura-ndc]: Downloading https://files.pythonhosted.org/packages/5f/f7/1b367d5314b36f0455d681606d67e34c257b523b472099e9742d8ab8aebb/hasura_ndc-0.9.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/0b/01/2b0fad8489342b797712f6eef219b5b3867d961ef4017dbf133411d8aabd/beepy_web-0.9.7.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/3b/68/895b55d004c4d5327dc63639f818645a7865ae8fc383aa7811c70b2498f9/pokerengine-1.1.3.tar.gz
+[2024-04-20 18:04:47] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 18:04:47] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 18:04:47] INFO root fetch - processPackages [hasura-ndc]: executing diffoscope
+[2024-04-20 18:04:47] INFO root fetch - processPackages [hasura-ndc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hasura_ndc-0.8.tar.gz tmp/hasura_ndc-0.9.tar.gz --markdown 20240420/h/hasura-ndc/0.8-0.9/README.md --exclude *.pyd
+[2024-04-20 18:04:47] INFO root fetch - processPackages [beepy-web]: executing diffoscope
+[2024-04-20 18:04:47] INFO root fetch - processPackages [beepy-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beepy_web-0.9.6.tar.gz tmp/beepy_web-0.9.7.tar.gz --markdown 20240420/b/beepy-web/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-20 18:04:47] INFO root fetch - processPackages [pokerengine]: executing diffoscope
+[2024-04-20 18:04:47] INFO root fetch - processPackages [pokerengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerengine-1.1.2.tar.gz tmp/pokerengine-1.1.3.tar.gz --markdown 20240420/p/pokerengine/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-04-20 18:04:47] INFO root fetch - processPackages [vbgpt]: Downloading https://files.pythonhosted.org/packages/26/0d/931674afee4cdf1f25d30f93a881e601d109fc1f03d6ba5bd60a4cca1b6b/vbgpt-0.1.1.tar.gz
+[2024-04-20 18:04:48] INFO root fetch - processPackages [json-duplicate-keys]: Downloading https://files.pythonhosted.org/packages/67/1a/1709bccb04e7b09145ef38573d5e5e8c90c93ebb20b4d1278110b9a43c85/json_duplicate_keys-23.2.7.tar.gz
+[2024-04-20 18:04:48] INFO root fetch - processPackages [vbgpt]: executing diffoscope
+[2024-04-20 18:04:48] INFO root fetch - processPackages [vbgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbgpt-0.1.0.tar.gz tmp/vbgpt-0.1.1.tar.gz --markdown 20240420/v/vbgpt/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 18:04:48] INFO root fetch - processPackages [json-duplicate-keys]: executing diffoscope
+[2024-04-20 18:04:48] INFO root fetch - processPackages [json-duplicate-keys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_duplicate_keys-22.5.28.tar.gz tmp/json_duplicate_keys-23.2.7.tar.gz --markdown 20240420/j/json-duplicate-keys/22.5.28-23.2.7/README.md --exclude *.pyd
+[2024-04-20 18:04:48] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 18:04:48] INFO root fetch - processPackages [hasura-ndc]: Remove: archive file [/home/abi/fetcher/tmp/hasura_ndc-0.8.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [hasura-ndc]: Remove: archive file [/home/abi/fetcher/tmp/hasura_ndc-0.9.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [hasura-ndc]: success
+[2024-04-20 18:04:48] INFO root fetch - processPackages [vbgpt]: Remove: archive file [/home/abi/fetcher/tmp/vbgpt-0.1.0.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [vbgpt]: Remove: archive file [/home/abi/fetcher/tmp/vbgpt-0.1.1.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [vbgpt]: success
+[2024-04-20 18:04:48] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.2.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.3.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
+[2024-04-20 18:04:48] INFO root fetch - processPackages [json-duplicate-keys]: Remove: archive file [/home/abi/fetcher/tmp/json_duplicate_keys-22.5.28.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [json-duplicate-keys]: Remove: archive file [/home/abi/fetcher/tmp/json_duplicate_keys-23.2.7.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [json-duplicate-keys]: success
+[2024-04-20 18:04:48] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.6.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.7.tar.gz]
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
+[2024-04-20 18:04:48] INFO root fetch - main [MainThread]: Store serial: [22857257]
