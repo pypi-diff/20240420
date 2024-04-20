@@ -23219,3 +23219,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:39:20] INFO root fetch - processPackages [PySDM-examples]: Remove: archive file [/home/abi/fetcher/tmp/PySDM-examples-2.9.tar.gz]
 [2024-04-20 22:39:20] INFO root fetch - main [MainThread]: End processing [PySDM-examples]: success
 [2024-04-20 22:39:20] INFO root fetch - main [MainThread]: Store serial: [22859350]
+[2024-04-20 22:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859350]
+[2024-04-20 22:41:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC217
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziptimezone
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FrustrationDynamiX
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-offset
+[2024-04-20 22:41:29] INFO root fetch - processPackages [FrustrationDynamiX]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 22:41:29] INFO root fetch - processPackages [llm-offset]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.7] Old Version: [0.10.6]
+[2024-04-20 22:41:29] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/59/2a/9ed13dd0d0d145e20b3b7cbbb054053131f8b171e9438052cfd3b6905a6b/llm_offset-0.5.1.tar.gz
+[2024-04-20 22:41:29] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/6f/82/c0b82329b1c79ba48ec600445144ed579b291eb675ebce61bca40d013c65/ziptimezone-0.10.6.tar.gz
+[2024-04-20 22:41:29] WARNING root fetch - processPackages [PythonTestLJC217]: Skipping, unable to determine old version
+[2024-04-20 22:41:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC217] error
+[2024-04-20 22:41:29] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/a7/ad/13140c6f11e4925b03c8ea76cc71794a295e72302c67af7828bacfe4e30c/FrustrationDynamiX-0.1.0.tar.gz
+[2024-04-20 22:41:30] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/9c/19/60f44f5da133cf64780c86a972ab17081124fa3ca642ae2d1c45efffd83b/ziptimezone-0.10.7.tar.gz
+[2024-04-20 22:41:30] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/03/99/c2fd772acf1f405f50623830febe65930c05d6849144e5c1f3d1a285b106/llm_offset-0.6.0.tar.gz
+[2024-04-20 22:41:30] INFO root fetch - processPackages [FrustrationDynamiX]: Downloading https://files.pythonhosted.org/packages/16/a9/317ac1496c1e7808880c9a33e3568c4f71eeff3ef2683acb2bbde89bc244/FrustrationDynamiX-0.2.0.tar.gz
+[2024-04-20 22:41:30] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 22:41:30] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.6.tar.gz tmp/ziptimezone-0.10.7.tar.gz --markdown 20240420/z/ziptimezone/0.10.6-0.10.7/README.md --exclude *.pyd
+[2024-04-20 22:41:30] INFO root fetch - processPackages [llm-offset]: executing diffoscope
+[2024-04-20 22:41:30] INFO root fetch - processPackages [llm-offset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_offset-0.5.1.tar.gz tmp/llm_offset-0.6.0.tar.gz --markdown 20240420/l/llm-offset/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-20 22:41:30] INFO root fetch - processPackages [FrustrationDynamiX]: executing diffoscope
+[2024-04-20 22:41:30] INFO root fetch - processPackages [FrustrationDynamiX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FrustrationDynamiX-0.1.0.tar.gz tmp/FrustrationDynamiX-0.2.0.tar.gz --markdown 20240420/F/FrustrationDynamiX/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 22:41:30] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.6.tar.gz]
+[2024-04-20 22:41:30] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.7.tar.gz]
+[2024-04-20 22:41:30] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 22:41:30] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.5.1.tar.gz]
+[2024-04-20 22:41:30] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.6.0.tar.gz]
+[2024-04-20 22:41:30] INFO root fetch - main [MainThread]: End processing [llm-offset]: success
+[2024-04-20 22:41:31] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.1.0.tar.gz]
+[2024-04-20 22:41:31] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.0.tar.gz]
+[2024-04-20 22:41:31] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
+[2024-04-20 22:41:31] INFO root fetch - main [MainThread]: Store serial: [22859364]

@@ -1,0 +1,46 @@
+# Comparing `tmp/llm_offset-0.5.1.tar.gz` & `tmp/llm_offset-0.6.0.tar.gz`
+
+## filetype from file(1)
+
+```diff
+@@ -1 +1 @@
+-gzip compressed data, was "llm_offset-0.5.1.tar", last modified: Sat Apr 20 05:05:14 2024, max compression
++gzip compressed data, was "llm_offset-0.6.0.tar", last modified: Sat Apr 20 20:38:00 2024, max compression
+```
+
+## Comparing `llm_offset-0.5.1.tar` & `llm_offset-0.6.0.tar`
+
+### file list
+
+```diff
+@@ -1,14 +1,14 @@
+-drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 05:05:14.372707 llm_offset-0.5.1/
+--rw-r--r--   0 adityakakarla   (501) staff       (20)      187 2024-04-20 05:05:14.372555 llm_offset-0.5.1/PKG-INFO
+--rw-r--r--   0 adityakakarla   (501) staff       (20)       91 2024-04-20 04:01:32.000000 llm_offset-0.5.1/README.md
+-drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 05:05:14.371059 llm_offset-0.5.1/llm_offset/
+--rw-r--r--   0 adityakakarla   (501) staff       (20)       42 2024-04-20 05:05:02.000000 llm_offset-0.5.1/llm_offset/__init__.py
+--rw-r--r--   0 adityakakarla   (501) staff       (20)      414 2024-04-20 04:45:52.000000 llm_offset-0.5.1/llm_offset/interceptor.py
+-drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 05:05:14.372285 llm_offset-0.5.1/llm_offset.egg-info/
+--rw-r--r--   0 adityakakarla   (501) staff       (20)      187 2024-04-20 05:05:14.000000 llm_offset-0.5.1/llm_offset.egg-info/PKG-INFO
+--rw-r--r--   0 adityakakarla   (501) staff       (20)      236 2024-04-20 05:05:14.000000 llm_offset-0.5.1/llm_offset.egg-info/SOURCES.txt
+--rw-r--r--   0 adityakakarla   (501) staff       (20)        1 2024-04-20 05:05:14.000000 llm_offset-0.5.1/llm_offset.egg-info/dependency_links.txt
+--rw-r--r--   0 adityakakarla   (501) staff       (20)        7 2024-04-20 05:05:14.000000 llm_offset-0.5.1/llm_offset.egg-info/requires.txt
+--rw-r--r--   0 adityakakarla   (501) staff       (20)       11 2024-04-20 05:05:14.000000 llm_offset-0.5.1/llm_offset.egg-info/top_level.txt
+--rw-r--r--   0 adityakakarla   (501) staff       (20)       38 2024-04-20 05:05:14.372750 llm_offset-0.5.1/setup.cfg
+--rw-r--r--   0 adityakakarla   (501) staff       (20)      322 2024-04-20 05:05:12.000000 llm_offset-0.5.1/setup.py
++drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 20:38:00.489133 llm_offset-0.6.0/
++-rw-r--r--   0 adityakakarla   (501) staff       (20)      188 2024-04-20 20:38:00.489015 llm_offset-0.6.0/PKG-INFO
++-rw-r--r--   0 adityakakarla   (501) staff       (20)       92 2024-04-20 20:35:51.000000 llm_offset-0.6.0/README.md
++drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 20:38:00.488050 llm_offset-0.6.0/llm_offset/
++-rw-r--r--   0 adityakakarla   (501) staff       (20)       42 2024-04-20 05:05:02.000000 llm_offset-0.6.0/llm_offset/__init__.py
++-rw-r--r--   0 adityakakarla   (501) staff       (20)      539 2024-04-20 20:32:50.000000 llm_offset-0.6.0/llm_offset/interceptor.py
++drwxr-xr-x   0 adityakakarla   (501) staff       (20)        0 2024-04-20 20:38:00.488821 llm_offset-0.6.0/llm_offset.egg-info/
++-rw-r--r--   0 adityakakarla   (501) staff       (20)      188 2024-04-20 20:38:00.000000 llm_offset-0.6.0/llm_offset.egg-info/PKG-INFO
++-rw-r--r--   0 adityakakarla   (501) staff       (20)      236 2024-04-20 20:38:00.000000 llm_offset-0.6.0/llm_offset.egg-info/SOURCES.txt
++-rw-r--r--   0 adityakakarla   (501) staff       (20)        1 2024-04-20 20:38:00.000000 llm_offset-0.6.0/llm_offset.egg-info/dependency_links.txt
++-rw-r--r--   0 adityakakarla   (501) staff       (20)        7 2024-04-20 20:38:00.000000 llm_offset-0.6.0/llm_offset.egg-info/requires.txt
++-rw-r--r--   0 adityakakarla   (501) staff       (20)       11 2024-04-20 20:38:00.000000 llm_offset-0.6.0/llm_offset.egg-info/top_level.txt
++-rw-r--r--   0 adityakakarla   (501) staff       (20)       38 2024-04-20 20:38:00.489170 llm_offset-0.6.0/setup.cfg
++-rw-r--r--   0 adityakakarla   (501) staff       (20)      322 2024-04-20 20:35:29.000000 llm_offset-0.6.0/setup.py
+```
+
