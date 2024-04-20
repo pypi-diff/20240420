@@ -15648,3 +15648,55 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:28:58] INFO root fetch - processPackages [dclab]: Remove: archive file [/home/abi/fetcher/tmp/dclab-0.9.1.tar.gz]
 [2024-04-20 14:28:58] INFO root fetch - main [MainThread]: End processing [dclab]: success
 [2024-04-20 14:28:58] INFO root fetch - main [MainThread]: Store serial: [22855638]
+[2024-04-20 14:31:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855638]
+[2024-04-20 14:31:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tui-dsg
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tui-dsg
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyblu
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: user-context-remote
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipfabric-tables-to-excel
+[2024-04-20 14:31:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pupils
+[2024-04-20 14:31:06] INFO root fetch - processPackages [tui-dsg]: New version: [202404201342] Old Version: [202404201018]
+[2024-04-20 14:31:06] INFO root fetch - processPackages [pyblu]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 14:31:06] INFO root fetch - processPackages [tui-dsg]: New version: [202404201342] Old Version: [202404201018]
+[2024-04-20 14:31:06] WARNING root fetch - processPackages [ipfabric-tables-to-excel]: Skipping, unable to determine old version
+[2024-04-20 14:31:06] INFO root fetch - main [MainThread]: End processing [ipfabric-tables-to-excel] error
+[2024-04-20 14:31:07] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 14:31:07] WARNING root fetch - processPackages [pupils]: Skipping, unable to determine old version
+[2024-04-20 14:31:07] INFO root fetch - main [MainThread]: End processing [pupils] error
+[2024-04-20 14:31:07] INFO root fetch - processPackages [user-context-remote]: New version: [0.0.75] Old Version: [0.0.74]
+[2024-04-20 14:31:07] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/28/b0/886ea56c585284cce546c9d4240fffd25f4c89c640ba70c58daf912e65bf/pyblu-0.1.0.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/64/1a/04ae10622e95c520162e1650c13e16f5cf5e64e723a0f0362ea311b7cd73/tui_dsg-202404201018.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/64/1a/04ae10622e95c520162e1650c13e16f5cf5e64e723a0f0362ea311b7cd73/tui_dsg-202404201018.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/ed/35/089558e94a624f77f94d888f262aeb86937e7274b1acbaedccc2b11ae401/user-context-remote-0.0.74.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/b2/be/153317c24f5f80a05916007d702170bc636e1c613b348ff96370229f422a/tui_dsg-202404201342.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/d6/10/ba4c8b77087e34c4c62668dd74e2cbd7ae6cd7d4a89150c249faee998324/pyblu-0.2.0.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: Downloading https://files.pythonhosted.org/packages/b2/be/153317c24f5f80a05916007d702170bc636e1c613b348ff96370229f422a/tui_dsg-202404201342.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: executing diffoscope
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsg-202404201018.tar.gz tmp/tui_dsg-202404201342.tar.gz --markdown 20240420/t/tui-dsg/202404201018-202404201342/README.md --exclude *.pyd
+[2024-04-20 14:31:07] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-20 14:31:07] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.1.0.tar.gz tmp/pyblu-0.2.0.tar.gz --markdown 20240420/p/pyblu/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: executing diffoscope
+[2024-04-20 14:31:07] INFO root fetch - processPackages [tui-dsg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tui_dsg-202404201018.tar.gz tmp/tui_dsg-202404201342.tar.gz --markdown 20240420/t/tui-dsg/202404201018-202404201342/README.md --exclude *.pyd
+[2024-04-20 14:31:07] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 14:31:07] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 14:31:07] INFO root fetch - processPackages [user-context-remote]: Downloading https://files.pythonhosted.org/packages/9b/56/be0c2f9b1f1414e323b30621dddbd2d8d5618a91d21d785b8c4642c39dc7/user_context_remote-0.0.75.tar.gz
+[2024-04-20 14:31:07] INFO root fetch - processPackages [user-context-remote]: executing diffoscope
+[2024-04-20 14:31:07] INFO root fetch - processPackages [user-context-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/user-context-remote-0.0.74.tar.gz tmp/user_context_remote-0.0.75.tar.gz --markdown 20240420/u/user-context-remote/0.0.74-0.0.75/README.md --exclude *.pyd
+[2024-04-20 14:31:08] INFO root fetch - processPackages [tui-dsg]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsg-202404201018.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - processPackages [tui-dsg]: Remove: archive file [/home/abi/fetcher/tmp/tui_dsg-202404201342.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
+[2024-04-20 14:31:08] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.1.0.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.2.0.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-20 14:31:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 14:31:08] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user-context-remote-0.0.74.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - processPackages [user-context-remote]: Remove: archive file [/home/abi/fetcher/tmp/user_context_remote-0.0.75.tar.gz]
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: End processing [user-context-remote]: success
+[2024-04-20 14:31:08] INFO root fetch - main [MainThread]: Store serial: [22855662]
