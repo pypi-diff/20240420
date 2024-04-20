@@ -8793,3 +8793,45 @@
 [2024-04-20 05:49:43] INFO root fetch - processPackages [java1]: Remove: archive file [/home/abi/fetcher/tmp/java1-0.3.0.tar.gz]
 [2024-04-20 05:49:43] INFO root fetch - main [MainThread]: End processing [java1]: success
 [2024-04-20 05:49:43] INFO root fetch - main [MainThread]: Store serial: [22852229]
+[2024-04-20 05:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852229]
+[2024-04-20 05:51:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 05:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feagi-connector
+[2024-04-20 05:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pssr
+[2024-04-20 05:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xiaogpt
+[2024-04-20 05:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edstem-assignment-tracker
+[2024-04-20 05:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: UQPyL
+[2024-04-20 05:51:53] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 05:51:53] INFO root fetch - processPackages [xiaogpt]: New version: [2.61] Old Version: [2.60]
+[2024-04-20 05:51:53] INFO root fetch - processPackages [pssr]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 05:51:53] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 05:51:53] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/8f/cf/564623a23b27ae8a61cd0458779a0517f23132e8cbc0517aa01124b3f503/xiaogpt-2.60.tar.gz
+[2024-04-20 05:51:53] INFO root fetch - processPackages [feagi-connector]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 05:51:53] WARNING root fetch - processPackages [UQPyL]: Skipping, unable to determine old version
+[2024-04-20 05:51:53] INFO root fetch - main [MainThread]: End processing [UQPyL] error
+[2024-04-20 05:51:53] INFO root fetch - processPackages [pssr]: Downloading https://files.pythonhosted.org/packages/3a/01/cee9a681c684ab5f700b32507f65a26f93c2d541a8781b42779839bbeb62/pssr-1.0.1.tar.gz
+[2024-04-20 05:51:53] INFO root fetch - processPackages [feagi-connector]: Downloading https://files.pythonhosted.org/packages/d3/fd/bdabaf6fe65fd31c8dfd05951cff380d2321c4eb2cf1c2e0891b094d60c3/feagi_connector-0.0.5.tar.gz
+[2024-04-20 05:51:53] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 05:51:53] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 05:51:53] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 05:51:53] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/45/e2/16f8d57bf16c48602ac100d62856167fe31108343d9a587f08b40c5a1a47/xiaogpt-2.61.tar.gz
+[2024-04-20 05:51:54] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-04-20 05:51:54] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.60.tar.gz tmp/xiaogpt-2.61.tar.gz --markdown 20240420/x/xiaogpt/2.60-2.61/README.md --exclude *.pyd
+[2024-04-20 05:51:54] INFO root fetch - processPackages [feagi-connector]: Downloading https://files.pythonhosted.org/packages/03/d8/dac5ccd545b76f0e188adda05a1e6b91228706f19e1ce62ff77dce4da6fe/feagi_connector-0.0.6.tar.gz
+[2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: Downloading https://files.pythonhosted.org/packages/4e/37/cee791261a913dd3e43429bef8c3a1d9dc8b810b7b3a3e120322f00a20cf/pssr-1.0.2.tar.gz
+[2024-04-20 05:51:54] INFO root fetch - processPackages [feagi-connector]: executing diffoscope
+[2024-04-20 05:51:54] INFO root fetch - processPackages [feagi-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feagi_connector-0.0.5.tar.gz tmp/feagi_connector-0.0.6.tar.gz --markdown 20240420/f/feagi-connector/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: executing diffoscope
+[2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pssr-1.0.1.tar.gz tmp/pssr-1.0.2.tar.gz --markdown 20240420/p/pssr/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 05:51:54] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 05:51:54] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.60.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.61.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-04-20 05:51:54] INFO root fetch - processPackages [feagi-connector]: Remove: archive file [/home/abi/fetcher/tmp/feagi_connector-0.0.5.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - processPackages [feagi-connector]: Remove: archive file [/home/abi/fetcher/tmp/feagi_connector-0.0.6.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - main [MainThread]: End processing [feagi-connector]: success
+[2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: Remove: archive file [/home/abi/fetcher/tmp/pssr-1.0.1.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: Remove: archive file [/home/abi/fetcher/tmp/pssr-1.0.2.tar.gz]
+[2024-04-20 05:51:54] INFO root fetch - main [MainThread]: End processing [pssr]: success
+[2024-04-20 05:51:54] INFO root fetch - main [MainThread]: Store serial: [22852258]
