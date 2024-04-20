@@ -17431,3 +17431,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:36:20] INFO root fetch - processPackages [libesedb-python]: Remove: archive file [/home/abi/fetcher/tmp/libesedb-python-20240420.tar.gz]
 [2024-04-20 16:36:20] INFO root fetch - main [MainThread]: End processing [libesedb-python]: success
 [2024-04-20 16:36:20] INFO root fetch - main [MainThread]: Store serial: [22856640]
+[2024-04-20 16:38:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856640]
+[2024-04-20 16:38:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napari-findaureus
+[2024-04-20 16:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:38:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: la-coding-theory
+[2024-04-20 16:38:30] INFO root fetch - processPackages [napari-findaureus]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 16:38:30] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 16:38:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/93/f1/e5da5e9c2a082c3a99d7f2220d60e5864c062a587a436bd30386228a5243/few_shot_learning_nlp-0.0.7.tar.gz
+[2024-04-20 16:38:30] INFO root fetch - processPackages [napari-findaureus]: Downloading https://files.pythonhosted.org/packages/ab/3a/6f2d5729216e4fc05c293b5732cef08b96d6243301bc5d81f2fdd7844e38/napari_findaureus-0.0.2.tar.gz
+[2024-04-20 16:38:30] INFO root fetch - processPackages [la-coding-theory]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 16:38:30] INFO root fetch - processPackages [la-coding-theory]: Downloading https://files.pythonhosted.org/packages/85/5e/5e7ff2fab1aa90cba4a00e06f1caa545b7bd6aa145d6ae2b65da54bbad5d/la_coding_theory-0.0.2.tar.gz
+[2024-04-20 16:38:30] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 16:38:30] INFO root fetch - processPackages [napari-findaureus]: Downloading https://files.pythonhosted.org/packages/63/a2/a2ab3536b6c632bc80cf4903acb1557be3661b353aa3c68bb81a109deb28/napari_findaureus-0.0.3.tar.gz
+[2024-04-20 16:38:30] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:38:30] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.7.tar.gz tmp/few_shot_learning_nlp-0.0.8.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 16:38:31] INFO root fetch - processPackages [napari-findaureus]: executing diffoscope
+[2024-04-20 16:38:31] INFO root fetch - processPackages [napari-findaureus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_findaureus-0.0.2.tar.gz tmp/napari_findaureus-0.0.3.tar.gz --markdown 20240420/n/napari-findaureus/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: Downloading https://files.pythonhosted.org/packages/93/5f/68067d0f069bb178df2bb9b91ddffd66ea7c2a802c8e750c86d5e3279bb6/la_coding_theory-0.0.3.tar.gz
+[2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: executing diffoscope
+[2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/la_coding_theory-0.0.2.tar.gz tmp/la_coding_theory-0.0.3.tar.gz --markdown 20240420/l/la-coding-theory/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 16:38:31] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.7.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:38:31] INFO root fetch - processPackages [napari-findaureus]: Remove: archive file [/home/abi/fetcher/tmp/napari_findaureus-0.0.2.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - processPackages [napari-findaureus]: Remove: archive file [/home/abi/fetcher/tmp/napari_findaureus-0.0.3.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - main [MainThread]: End processing [napari-findaureus]: success
+[2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: Remove: archive file [/home/abi/fetcher/tmp/la_coding_theory-0.0.2.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - processPackages [la-coding-theory]: Remove: archive file [/home/abi/fetcher/tmp/la_coding_theory-0.0.3.tar.gz]
+[2024-04-20 16:38:31] INFO root fetch - main [MainThread]: End processing [la-coding-theory]: success
+[2024-04-20 16:38:31] INFO root fetch - main [MainThread]: Store serial: [22856649]
