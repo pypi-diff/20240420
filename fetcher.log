@@ -7638,3 +7638,15 @@
 [2024-04-20 04:11:35] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.1-py3-none-any.whl.zip]
 [2024-04-20 04:11:35] INFO root fetch - main [MainThread]: End processing [PerplexiPy]: success
 [2024-04-20 04:11:35] INFO root fetch - main [MainThread]: Store serial: [22851776]
+[2024-04-20 04:13:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851776]
+[2024-04-20 04:13:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 04:13:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mfs-styletts2
+[2024-04-20 04:13:43] INFO root fetch - processPackages [mfs-styletts2]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 04:13:43] INFO root fetch - processPackages [mfs-styletts2]: Downloading https://files.pythonhosted.org/packages/b6/a9/fd86668daffbca357fcaee427a7c1a708ea1567c3ea3732a70c500e22f88/mfs-styletts2-1.0.0.tar.gz
+[2024-04-20 04:13:44] INFO root fetch - processPackages [mfs-styletts2]: Downloading https://files.pythonhosted.org/packages/45/22/1cc87e4f9e6e37d72e62b99f3a97ac45f310223d75b4dd77cb67d882169b/mfs-styletts2-1.0.1.tar.gz
+[2024-04-20 04:13:44] INFO root fetch - processPackages [mfs-styletts2]: executing diffoscope
+[2024-04-20 04:13:44] INFO root fetch - processPackages [mfs-styletts2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mfs-styletts2-1.0.0.tar.gz tmp/mfs-styletts2-1.0.1.tar.gz --markdown 20240420/m/mfs-styletts2/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 04:13:45] INFO root fetch - processPackages [mfs-styletts2]: Remove: archive file [/home/abi/fetcher/tmp/mfs-styletts2-1.0.0.tar.gz]
+[2024-04-20 04:13:45] INFO root fetch - processPackages [mfs-styletts2]: Remove: archive file [/home/abi/fetcher/tmp/mfs-styletts2-1.0.1.tar.gz]
+[2024-04-20 04:13:45] INFO root fetch - main [MainThread]: End processing [mfs-styletts2]: success
+[2024-04-20 04:13:45] INFO root fetch - main [MainThread]: Store serial: [22851779]
