@@ -3150,3 +3150,51 @@
 [2024-04-20 02:59:14] INFO root fetch - processPackages [perspectiveapi]: Remove: archive file [/home/abi/fetcher/tmp/perspectiveapi-1.1.0.tar.gz]
 [2024-04-20 02:59:14] INFO root fetch - main [MainThread]: End processing [perspectiveapi]: success
 [2024-04-20 02:59:14] INFO root fetch - main [MainThread]: Store serial: [22850248]
+[2024-04-20 03:01:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850248]
+[2024-04-20 03:01:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hash-rename
+[2024-04-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outputstyles
+[2024-04-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: safe-store
+[2024-04-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fftvis
+[2024-04-20 03:01:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 03:01:23] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 03:01:23] INFO root fetch - processPackages [outputstyles]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 03:01:23] INFO root fetch - processPackages [hash-rename]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 03:01:23] INFO root fetch - processPackages [safe-store]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-04-20 03:01:23] INFO root fetch - processPackages [fftvis]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-20 03:01:23] INFO root fetch - processPackages [outputstyles]: Downloading https://files.pythonhosted.org/packages/0f/55/794c96adec6a60fee4f95e5b03446897602ed9005457b09c89aa6fa5cc9a/outputstyles-0.1.3.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/da/c5/c292f6d1b529905c09d5c486a8b5700346dc01fa48ea72e6e081f8a22c81/hash_rename-0.1.0.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [safe-store]: Downloading https://files.pythonhosted.org/packages/54/c8/76290ef1497aa34b542bf1eb1571cea31d2a8d016b392478cae06dde172f/safe_store-0.6.5.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [fftvis]: Downloading https://files.pythonhosted.org/packages/29/ab/7227615097b61a22c66d05d7ae71b130490a11b3ed85c48a74b840c9a836/fftvis-0.0.4.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/89/a6/970ad5cb768936590c7083d4fcdb9ebcac5766108acafa9006dbd2312d66/hash_rename-0.2.0.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [safe-store]: Downloading https://files.pythonhosted.org/packages/62/51/25cec299f078efb6143b15d5445286b854dfb7a0c7706801d5a85a4457df/safe_store-0.6.6.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [outputstyles]: Downloading https://files.pythonhosted.org/packages/1c/92/9a4ec5b4624fdc8ffb3e0b87d2b3770a65552ebae050ee4e926c6ce1d932/outputstyles-0.1.4.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [hash-rename]: executing diffoscope
+[2024-04-20 03:01:23] INFO root fetch - processPackages [hash-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hash_rename-0.1.0.tar.gz tmp/hash_rename-0.2.0.tar.gz --markdown 20240420/h/hash-rename/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 03:01:23] INFO root fetch - processPackages [safe-store]: executing diffoscope
+[2024-04-20 03:01:23] INFO root fetch - processPackages [safe-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/safe_store-0.6.5.tar.gz tmp/safe_store-0.6.6.tar.gz --markdown 20240420/s/safe-store/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-04-20 03:01:23] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [outputstyles]: executing diffoscope
+[2024-04-20 03:01:23] INFO root fetch - processPackages [outputstyles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outputstyles-0.1.3.tar.gz tmp/outputstyles-0.1.4.tar.gz --markdown 20240420/o/outputstyles/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 03:01:23] INFO root fetch - processPackages [fftvis]: Downloading https://files.pythonhosted.org/packages/4b/74/85104dbbcdbee5bd52168f9b76f34b896b4fdd3da8e2b92fcf136f2064b9/fftvis-0.0.6.tar.gz
+[2024-04-20 03:01:23] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 03:01:23] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 03:01:23] INFO root fetch - processPackages [fftvis]: executing diffoscope
+[2024-04-20 03:01:23] INFO root fetch - processPackages [fftvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fftvis-0.0.4.tar.gz tmp/fftvis-0.0.6.tar.gz --markdown 20240420/f/fftvis/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-04-20 03:01:24] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.1.0.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.2.0.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: End processing [hash-rename]: success
+[2024-04-20 03:01:24] INFO root fetch - processPackages [safe-store]: Remove: archive file [/home/abi/fetcher/tmp/safe_store-0.6.5.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - processPackages [safe-store]: Remove: archive file [/home/abi/fetcher/tmp/safe_store-0.6.6.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: End processing [safe-store]: success
+[2024-04-20 03:01:24] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 03:01:24] INFO root fetch - processPackages [outputstyles]: Remove: archive file [/home/abi/fetcher/tmp/outputstyles-0.1.3.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - processPackages [outputstyles]: Remove: archive file [/home/abi/fetcher/tmp/outputstyles-0.1.4.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: End processing [outputstyles]: success
+[2024-04-20 03:01:24] INFO root fetch - processPackages [fftvis]: Remove: archive file [/home/abi/fetcher/tmp/fftvis-0.0.4.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - processPackages [fftvis]: Remove: archive file [/home/abi/fetcher/tmp/fftvis-0.0.6.tar.gz]
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: End processing [fftvis]: success
+[2024-04-20 03:01:24] INFO root fetch - main [MainThread]: Store serial: [22850263]
