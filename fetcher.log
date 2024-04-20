@@ -21178,3 +21178,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:29:35] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.1.tar.gz]
 [2024-04-20 20:29:35] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-04-20 20:29:35] INFO root fetch - main [MainThread]: Store serial: [22858380]
+[2024-04-20 20:31:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858380]
+[2024-04-20 20:31:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HimDonHaiDraws
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cs2-battle-bot-api-client
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphsignal
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: speechtoolkit
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: esbonio
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrealsense2
+[2024-04-20 20:31:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: transcribe-me
+[2024-04-20 20:31:44] WARNING root fetch - processPackages [transcribe-me]: Skipping, unable to determine old version
+[2024-04-20 20:31:44] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-20 20:31:44] INFO root fetch - processPackages [speechtoolkit]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 20:31:44] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:31:44] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/f7/c7/de71852151b96abc22402d51520dec933ad3d536c7643250c995272201cd/speechtoolkit-0.0.1.tar.gz
+[2024-04-20 20:31:44] WARNING root fetch - processPackages [HimDonHaiDraws]: Skipping, unable to determine old version
+[2024-04-20 20:31:44] INFO root fetch - main [MainThread]: End processing [HimDonHaiDraws] error
+[2024-04-20 20:31:44] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-20 20:31:44] INFO root fetch - processPackages [esbonio]: New version: [1.0.0b2] Old Version: [1.0.0b1]
+[2024-04-20 20:31:44] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-20 20:31:44] INFO root fetch - processPackages [pyrealsense2]: New version: [2.9.1] Old Version: [2.55.1.6481]
+[2024-04-20 20:31:45] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/8a/ce/6c4ad532d461693620e6155f4cc8c8495b148d9bef62b7204619e41f19ec/graphsignal-0.9.4.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [esbonio]: Downloading https://files.pythonhosted.org/packages/44/ce/cf518d71d8f3250737128dfc2888ce3b0d9b790ac4e211bcba0bda881fe6/esbonio-1.0.0b1.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-20 20:31:45] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240420/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:31:45] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/5b/46/05dfe90d39d754618e5b9e551c918b9cc2c850bf8d24c83e628905d592b5/speechtoolkit-0.0.2.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [pyrealsense2]: Downloading https://files.pythonhosted.org/packages/6e/0a/2e406381615c731e977441c81f94065075063b9a2948dc0165681abc33ca/pyrealsense2-2.55.1.6481-cp311-cp311-manylinux1_x86_64.whl
+[2024-04-20 20:31:45] INFO root fetch - processPackages [speechtoolkit]: executing diffoscope
+[2024-04-20 20:31:45] INFO root fetch - processPackages [speechtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechtoolkit-0.0.1.tar.gz tmp/speechtoolkit-0.0.2.tar.gz --markdown 20240420/s/speechtoolkit/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 20:31:45] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/63/9a/d9360e506d4b48251d07845d69b0a9facd3465a3c270adacda14a215a8a8/graphsignal-0.9.5.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [esbonio]: Downloading https://files.pythonhosted.org/packages/80/a3/c6c578ecdb3eaa4714e0b2548bf0d4b3ab9495700df3518dfebb1017329d/esbonio-1.0.0b2.tar.gz
+[2024-04-20 20:31:45] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2024-04-20 20:31:45] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20240420/g/graphsignal/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-20 20:31:45] INFO root fetch - processPackages [esbonio]: executing diffoscope
+[2024-04-20 20:31:45] INFO root fetch - processPackages [esbonio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esbonio-1.0.0b1.tar.gz tmp/esbonio-1.0.0b2.tar.gz --markdown 20240420/e/esbonio/1.0.0b1-1.0.0b2/README.md --exclude *.pyd
+[2024-04-20 20:31:45] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.1.tar.gz]
+[2024-04-20 20:31:45] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.2.tar.gz]
+[2024-04-20 20:31:45] INFO root fetch - main [MainThread]: End processing [speechtoolkit]: success
+[2024-04-20 20:31:46] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-20 20:31:46] INFO root fetch - processPackages [graphsignal]: Remove: archive file [/home/abi/fetcher/tmp/graphsignal-0.9.4.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - processPackages [graphsignal]: Remove: archive file [/home/abi/fetcher/tmp/graphsignal-0.9.5.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2024-04-20 20:31:46] INFO root fetch - processPackages [esbonio]: Remove: archive file [/home/abi/fetcher/tmp/esbonio-1.0.0b1.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - processPackages [esbonio]: Remove: archive file [/home/abi/fetcher/tmp/esbonio-1.0.0b2.tar.gz]
+[2024-04-20 20:31:46] INFO root fetch - main [MainThread]: End processing [esbonio]: success
+[2024-04-20 20:31:47] INFO root fetch - processPackages [pyrealsense2]: Downloading https://files.pythonhosted.org/packages/2b/17/f3edbed050b512363a84cce9f7c560ef01099eecf5efeed5e088efaa66db/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl
+[2024-04-20 20:31:47] INFO root fetch - processPackages [pyrealsense2]: executing diffoscope
+[2024-04-20 20:31:47] INFO root fetch - processPackages [pyrealsense2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrealsense2-2.55.1.6481-cp311-cp311-manylinux1_x86_64.whl.zip tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip --markdown 20240420/p/pyrealsense2/2.55.1.6481-2.9.1/README.md --exclude *.pyd
+[2024-04-20 20:31:48] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.55.1.6481-cp311-cp311-manylinux1_x86_64.whl.zip]
+[2024-04-20 20:31:48] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip]
+[2024-04-20 20:31:48] INFO root fetch - main [MainThread]: End processing [pyrealsense2]: success
+[2024-04-20 20:31:48] INFO root fetch - main [MainThread]: Store serial: [22858401]
