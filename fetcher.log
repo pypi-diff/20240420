@@ -16078,3 +16078,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:59:26] INFO root fetch - processPackages [cmake-language-server]: Remove: archive file [/home/abi/fetcher/tmp/cmake_language_server-0.1.9.tar.gz]
 [2024-04-20 14:59:26] INFO root fetch - main [MainThread]: End processing [cmake-language-server]: success
 [2024-04-20 14:59:26] INFO root fetch - main [MainThread]: Store serial: [22855846]
+[2024-04-20 15:01:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855846]
+[2024-04-20 15:01:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: KUtil-jakubaugustyn
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziptimezone
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: i18nice
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.5] Old Version: [0.10.4]
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/77/a2/a0a6756ebe5b53288e9e7c1c6bdfbe26754c7baae3a9da2d0b0de72a0a07/ziptimezone-0.10.4.tar.gz
+[2024-04-20 15:01:35] INFO root fetch - processPackages [KUtil-jakubaugustyn]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 15:01:35] INFO root fetch - processPackages [i18nice]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 15:01:35] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/97/e3/f29500752ddd8a31a02691e45ba241b07fcd3d8e6507f1cb24eb88b248a3/kutil_jakubaugustyn-0.0.5.tar.gz
+[2024-04-20 15:01:35] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/89/25/bbbe63c8f2bd4f96d2e3ab3cca9472b4afa0633d474bf080462a67bc3bbc/ziptimezone-0.10.5.tar.gz
+[2024-04-20 15:01:35] INFO root fetch - processPackages [i18nice]: Downloading https://files.pythonhosted.org/packages/72/30/8ac9dd93101ad6c35138f312d618a7bff5d5e807d324ce8bf90e59f750ea/i18nice-0.9.0.tar.gz
+[2024-04-20 15:01:36] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 15:01:36] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.4.tar.gz tmp/ziptimezone-0.10.5.tar.gz --markdown 20240420/z/ziptimezone/0.10.4-0.10.5/README.md --exclude *.pyd
+[2024-04-20 15:01:36] INFO root fetch - processPackages [i18nice]: Downloading https://files.pythonhosted.org/packages/68/c5/dcb5bd7276acea371082b954fc1eda7db083c48caee940fb73b784c62397/i18nice-0.9.1.tar.gz
+[2024-04-20 15:01:36] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Downloading https://files.pythonhosted.org/packages/63/78/d7c222c8a7d642ec8dec9d96d953d65f65c5569f5e38126e53ee38e7e3fa/kutil_jakubaugustyn-0.0.6.tar.gz
+[2024-04-20 15:01:36] INFO root fetch - processPackages [i18nice]: executing diffoscope
+[2024-04-20 15:01:36] INFO root fetch - processPackages [i18nice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/i18nice-0.9.0.tar.gz tmp/i18nice-0.9.1.tar.gz --markdown 20240420/i/i18nice/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 15:01:36] INFO root fetch - processPackages [KUtil-jakubaugustyn]: executing diffoscope
+[2024-04-20 15:01:36] INFO root fetch - processPackages [KUtil-jakubaugustyn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kutil_jakubaugustyn-0.0.5.tar.gz tmp/kutil_jakubaugustyn-0.0.6.tar.gz --markdown 20240420/K/KUtil-jakubaugustyn/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 15:01:36] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.4.tar.gz]
+[2024-04-20 15:01:36] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.5.tar.gz]
+[2024-04-20 15:01:36] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 15:01:36] INFO root fetch - processPackages [i18nice]: Remove: archive file [/home/abi/fetcher/tmp/i18nice-0.9.0.tar.gz]
+[2024-04-20 15:01:36] INFO root fetch - processPackages [i18nice]: Remove: archive file [/home/abi/fetcher/tmp/i18nice-0.9.1.tar.gz]
+[2024-04-20 15:01:36] INFO root fetch - main [MainThread]: End processing [i18nice]: success
+[2024-04-20 15:01:37] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/kutil_jakubaugustyn-0.0.5.tar.gz]
+[2024-04-20 15:01:37] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/kutil_jakubaugustyn-0.0.6.tar.gz]
+[2024-04-20 15:01:37] INFO root fetch - main [MainThread]: End processing [KUtil-jakubaugustyn]: success
+[2024-04-20 15:01:37] INFO root fetch - main [MainThread]: Store serial: [22855855]
