@@ -1877,3 +1877,75 @@
 [2024-04-20 02:04:07] INFO root fetch - processPackages [taskiq]: Remove: archive file [/home/abi/fetcher/tmp/taskiq-0.9.3.tar.gz]
 [2024-04-20 02:04:07] INFO root fetch - main [MainThread]: End processing [taskiq]: success
 [2024-04-20 02:04:07] INFO root fetch - main [MainThread]: Store serial: [22849640]
+[2024-04-20 02:06:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849640]
+[2024-04-20 02:06:15] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mct-nightly
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-filestore
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyaogmaneo
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: superdupper
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxkern-nightly
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pkg-Sam-CPP
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: event-post-package
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: onnxscript
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ladybug-core
+[2024-04-20 02:06:15] WARNING root fetch - processPackages [event-post-package]: Skipping, unable to determine old version
+[2024-04-20 02:06:15] INFO root fetch - main [MainThread]: End processing [event-post-package] error
+[2024-04-20 02:06:15] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240419.358] Old Version: [2.0.0.20240418.439]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240419] Old Version: [0.1.0.dev20240418]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [superdupper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 02:06:15] WARNING root fetch - processPackages [pkg-Sam-CPP]: Skipping, unable to determine old version
+[2024-04-20 02:06:15] INFO root fetch - main [MainThread]: End processing [pkg-Sam-CPP] error
+[2024-04-20 02:06:15] INFO root fetch - processPackages [pyaogmaneo]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [tendril-filestore]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/8a/fc/87cf8903a51b7a788e0e3c80c29d8ecbee45fe8feb62bbc6a3641170017a/mct-nightly-2.0.0.20240418.439.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [ladybug-core]: New version: [0.42.9] Old Version: [0.42.8]
+[2024-04-20 02:06:15] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/a5/f2/744b2f96d3af4d079013ee61b94bae0db326ef7b793e64c4b266ab4f22dd/onnxscript-0.1.0.dev20240418.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/2b/23/1d1e615b7840b49e9194dc5ea53dfa94115c6cf77bb568bfd981e7732725/superdupper-0.0.8.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [tendril-filestore]: Downloading https://files.pythonhosted.org/packages/bb/53/c523bfc265a481abbb1f1def7aeb26a9f97e9586f35ac0e2bd34ed0cf2ed/tendril-filestore-0.4.0.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-04-20 02:06:15] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/36/ae/0189d4b53af7fe8b2656aa236f54a3b6da6fc65ff66654c538baadf678d1/pyaogmaneo-2.5.1.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/65/39/440bbf73af1908ee08006a7a71b91e3c7ceb3e340f2a0334b9e091511de9/ladybug-core-0.42.8.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240420/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/ae/02/1ba3cc4b90db7375f1a96ee7f5c797f4851791baf82c0bf184bef4c5f71b/mct-nightly-2.0.0.20240419.358.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/9c/60/8439940b99faa4223f183c80fde832222e7dc706c53ef75eed365094301e/superdupper-0.0.9.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/7f/4e/b42ce4100b6848516196eb250c25be2e54f58b95cefb2b042f27af54b118/pyaogmaneo-2.5.2.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/50/5c/eb997a376bb71746f1a0b095fd30b27a727f9c529683ee2213e9d58b1ade/onnxscript-0.1.0.dev20240419.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240418.439.tar.gz tmp/mct-nightly-2.0.0.20240419.358.tar.gz --markdown 20240420/m/mct-nightly/2.0.0.20240418.439-2.0.0.20240419.358/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.8.tar.gz tmp/superdupper-0.0.9.tar.gz --markdown 20240420/s/superdupper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [tendril-filestore]: Downloading https://files.pythonhosted.org/packages/c1/26/39028c3662d0f1bc5acd4c044e0193902a97633442d2217252ead36e1291/tendril_filestore-0.4.1.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [ladybug-core]: Downloading https://files.pythonhosted.org/packages/05/39/ad2de8ecb5085f93473c7a56fb92b7cbfad1ed03321c5209b36c5bf8bf3f/ladybug-core-0.42.9.tar.gz
+[2024-04-20 02:06:16] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240418.tar.gz tmp/onnxscript-0.1.0.dev20240419.tar.gz --markdown 20240420/o/onnxscript/0.1.0.dev20240418-0.1.0.dev20240419/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [pyaogmaneo]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [pyaogmaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaogmaneo-2.5.1.tar.gz tmp/pyaogmaneo-2.5.2.tar.gz --markdown 20240420/p/pyaogmaneo/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [tendril-filestore]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [tendril-filestore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril-filestore-0.4.0.tar.gz tmp/tendril_filestore-0.4.1.tar.gz --markdown 20240420/t/tendril-filestore/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [ladybug-core]: executing diffoscope
+[2024-04-20 02:06:16] INFO root fetch - processPackages [ladybug-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-core-0.42.8.tar.gz tmp/ladybug-core-0.42.9.tar.gz --markdown 20240420/l/ladybug-core/0.42.8-0.42.9/README.md --exclude *.pyd
+[2024-04-20 02:06:16] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-04-20 02:06:16] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-04-20 02:06:16] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-04-20 02:06:16] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.8.tar.gz]
+[2024-04-20 02:06:16] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.9.tar.gz]
+[2024-04-20 02:06:16] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 02:06:17] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.5.1.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.5.2.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - main [MainThread]: End processing [pyaogmaneo]: success
+[2024-04-20 02:06:17] INFO root fetch - processPackages [tendril-filestore]: Remove: archive file [/home/abi/fetcher/tmp/tendril-filestore-0.4.0.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - processPackages [tendril-filestore]: Remove: archive file [/home/abi/fetcher/tmp/tendril_filestore-0.4.1.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - main [MainThread]: End processing [tendril-filestore]: success
+[2024-04-20 02:06:17] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.8.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - processPackages [ladybug-core]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-core-0.42.9.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - main [MainThread]: End processing [ladybug-core]: success
+[2024-04-20 02:06:17] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240418.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240419.tar.gz]
+[2024-04-20 02:06:17] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-20 02:06:18] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240418.439.tar.gz]
+[2024-04-20 02:06:18] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240419.358.tar.gz]
+[2024-04-20 02:06:18] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-20 02:06:18] INFO root fetch - main [MainThread]: Store serial: [22849694]
