@@ -15898,3 +15898,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:46:24] INFO root fetch - processPackages [Calkulate]: Remove: archive file [/home/abi/fetcher/tmp/Calkulate-3.1.0.tar.gz]
 [2024-04-20 14:46:24] INFO root fetch - main [MainThread]: End processing [Calkulate]: success
 [2024-04-20 14:46:24] INFO root fetch - main [MainThread]: Store serial: [22855778]
+[2024-04-20 14:48:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855778]
+[2024-04-20 14:48:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 14:48:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC047
+[2024-04-20 14:48:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pokerengine
+[2024-04-20 14:48:33] INFO root fetch - processPackages [pokerengine]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-20 14:48:33] WARNING root fetch - processPackages [PythonTestLJC047]: Skipping, unable to determine old version
+[2024-04-20 14:48:33] INFO root fetch - main [MainThread]: End processing [PythonTestLJC047] error
+[2024-04-20 14:48:33] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/9a/6c/52f1455108229465ffb36246387b216d433046f6a3b4c526c30e6c734ada/pokerengine-1.1.tar.gz
+[2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/ea/bc/47bd5c77abc4dec5c6d13038e9c0e26dc13d2a18d0dfa13c9b4f51c583b9/pokerengine-1.1.1.tar.gz
+[2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: executing diffoscope
+[2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerengine-1.1.tar.gz tmp/pokerengine-1.1.1.tar.gz --markdown 20240420/p/pokerengine/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.tar.gz]
+[2024-04-20 14:48:34] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.1.tar.gz]
+[2024-04-20 14:48:34] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
+[2024-04-20 14:48:34] INFO root fetch - main [MainThread]: Store serial: [22855786]
