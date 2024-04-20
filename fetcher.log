@@ -19241,3 +19241,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:42:03] WARNING root fetch - processPackages [felicien]: Skipping, unable to determine old version
 [2024-04-20 18:42:03] INFO root fetch - main [MainThread]: End processing [felicien] error
 [2024-04-20 18:42:03] INFO root fetch - main [MainThread]: Store serial: [22857490]
+[2024-04-20 18:44:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857490]
+[2024-04-20 18:44:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-learning-nlp
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: JaxFin
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spice-rack
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dolibarrpy
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: noteshrunk
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mepost-sdk
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: few-shot-learning-nlp
+[2024-04-20 18:44:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC132
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 18:44:12] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-20 18:44:12] INFO root fetch - processPackages [noteshrunk]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-20 18:44:12] WARNING root fetch - processPackages [mepost-sdk]: Skipping, unable to determine old version
+[2024-04-20 18:44:12] INFO root fetch - main [MainThread]: End processing [mepost-sdk] error
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [JaxFin]: New version: [0.3.3] Old Version: [0.3.2.dev0]
+[2024-04-20 18:44:12] WARNING root fetch - processPackages [PythonTestLJC132]: Skipping, unable to determine old version
+[2024-04-20 18:44:12] INFO root fetch - main [MainThread]: End processing [PythonTestLJC132] error
+[2024-04-20 18:44:12] INFO root fetch - processPackages [spice-rack]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 18:44:12] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/30/bb/da51d93232f2185d5945674ffed8d0c143b439f7829a25ff6a1d5ca03935/dolibarrpy-0.2.4.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/6d/99/3a276d605ae0464d1eaddeb4fb330b7b87c19fd5c5bcdade35ef3d9d88b0/noteshrunk-1.3.0.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [JaxFin]: Downloading https://files.pythonhosted.org/packages/d0/2c/1c74f90987e96a637e1f54e15726c7a7191dcf50828a9815f519bd368758/JaxFin-0.3.2.dev0.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [spice-rack]: Downloading https://files.pythonhosted.org/packages/ca/63/ccbd8063d226bb6e1990bd3f7535eb70fb6cafcc4a774ef410ab56b6c645/spice_rack-0.8.0.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [noteshrunk]: Downloading https://files.pythonhosted.org/packages/e5/22/1aa5c8f535b824c6e2d6e4edddfd64e33a2fde9d63751a0499265410bf47/noteshrunk-1.4.0.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/6a/1d/9e03d9830c15781c49dd5da13d716bb5f68c877f326ce1f7b38c35813604/dolibarrpy-0.2.5.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 18:44:12] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 18:44:12] INFO root fetch - processPackages [noteshrunk]: executing diffoscope
+[2024-04-20 18:44:12] INFO root fetch - processPackages [noteshrunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noteshrunk-1.3.0.tar.gz tmp/noteshrunk-1.4.0.tar.gz --markdown 20240420/n/noteshrunk/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-04-20 18:44:12] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 18:44:12] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.4.tar.gz tmp/dolibarrpy-0.2.5.tar.gz --markdown 20240420/d/dolibarrpy/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-20 18:44:12] INFO root fetch - processPackages [JaxFin]: Downloading https://files.pythonhosted.org/packages/12/4f/fc711156996ab9f8435d515d406c17005b87a4dad877deb6af0a9c1c0c26/jaxfin-0.3.3.tar.gz
+[2024-04-20 18:44:12] INFO root fetch - processPackages [spice-rack]: Downloading https://files.pythonhosted.org/packages/d5/37/fd62503ec3946c8946ec94f9b6d3765d080e52b6e18829f4924e4bdab4b7/spice_rack-0.9.0.tar.gz
+[2024-04-20 18:44:13] INFO root fetch - processPackages [JaxFin]: executing diffoscope
+[2024-04-20 18:44:13] INFO root fetch - processPackages [JaxFin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JaxFin-0.3.2.dev0.tar.gz tmp/jaxfin-0.3.3.tar.gz --markdown 20240420/J/JaxFin/0.3.2.dev0-0.3.3/README.md --exclude *.pyd
+[2024-04-20 18:44:13] INFO root fetch - processPackages [spice-rack]: executing diffoscope
+[2024-04-20 18:44:13] INFO root fetch - processPackages [spice-rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spice_rack-0.8.0.tar.gz tmp/spice_rack-0.9.0.tar.gz --markdown 20240420/s/spice-rack/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 18:44:13] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 18:44:13] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.4.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.5.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 18:44:13] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.3.0.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - processPackages [noteshrunk]: Remove: archive file [/home/abi/fetcher/tmp/noteshrunk-1.4.0.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [noteshrunk]: success
+[2024-04-20 18:44:13] INFO root fetch - processPackages [JaxFin]: Remove: archive file [/home/abi/fetcher/tmp/JaxFin-0.3.2.dev0.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - processPackages [JaxFin]: Remove: archive file [/home/abi/fetcher/tmp/jaxfin-0.3.3.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [JaxFin]: success
+[2024-04-20 18:44:13] INFO root fetch - processPackages [spice-rack]: Remove: archive file [/home/abi/fetcher/tmp/spice_rack-0.8.0.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - processPackages [spice-rack]: Remove: archive file [/home/abi/fetcher/tmp/spice_rack-0.9.0.tar.gz]
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: End processing [spice-rack]: success
+[2024-04-20 18:44:13] INFO root fetch - main [MainThread]: Store serial: [22857517]
