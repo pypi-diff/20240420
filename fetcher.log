@@ -14592,3 +14592,45 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:18:26] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 16933462>=10485760
 [2024-04-20 13:18:26] INFO root fetch - main [MainThread]: End processing [music-assistant] error
 [2024-04-20 13:18:26] INFO root fetch - main [MainThread]: Store serial: [22855068]
+[2024-04-20 13:20:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855068]
+[2024-04-20 13:20:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 13:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC026
+[2024-04-20 13:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain_zhipu
+[2024-04-20 13:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hfutils
+[2024-04-20 13:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: contact-profiles-local
+[2024-04-20 13:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: astabc
+[2024-04-20 13:20:35] INFO root fetch - processPackages [hfutils]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 13:20:35] INFO root fetch - processPackages [astabc]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 13:20:35] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/5c/a8/5aa27d84b727b8f7562eae597a78d1ea9cdce4243ec822d14eafdb2eaed1/hfutils-0.1.0.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/d8/92/568ed5e804d80935f81bee690cfb1225b6c7a438f08a41287fd3caed9767/astabc-0.1.4.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [langchain_zhipu]: New version: [4.1.2] Old Version: [4.1.1]
+[2024-04-20 13:20:35] INFO root fetch - processPackages [contact-profiles-local]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 13:20:35] WARNING root fetch - processPackages [PythonTestLJC026]: Skipping, unable to determine old version
+[2024-04-20 13:20:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC026] error
+[2024-04-20 13:20:35] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/96/47/de75c3186a0717254dfbb13ba66fdddb6265ee5e80387b5b04c2a0e1b129/langchain_zhipu-4.1.1.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [contact-profiles-local]: Downloading https://files.pythonhosted.org/packages/95/42/dbaa3adbc0c374e1ee87ca45adbdd9bc676b2bf2421d01104ff06256c96e/contact-profiles-local-0.0.6.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/2c/8b/db3e1493a74b2a48faa9c8465c595e07d6a4ffeb48a1417be1d654a2b029/astabc-0.1.5.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/32/f8/e0b582f130044093f3b24ce491919a6cceb8323907ec222a8af12d558636/hfutils-0.1.1.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [hfutils]: executing diffoscope
+[2024-04-20 13:20:35] INFO root fetch - processPackages [hfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfutils-0.1.0.tar.gz tmp/hfutils-0.1.1.tar.gz --markdown 20240420/h/hfutils/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 13:20:35] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-20 13:20:35] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.4.tar.gz tmp/astabc-0.1.5.tar.gz --markdown 20240420/a/astabc/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 13:20:35] INFO root fetch - processPackages [langchain_zhipu]: Downloading https://files.pythonhosted.org/packages/d5/b6/69e74017d78e1fd61385d2a1fe0e2d580f1078948deb24ae4f08c6429654/langchain_zhipu-4.1.2.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [contact-profiles-local]: Downloading https://files.pythonhosted.org/packages/45/15/ea690ffdecafc1d0ccf6b2970f93264e017bb7640423e931b7caabfca245/contact_profiles_local-0.0.7.tar.gz
+[2024-04-20 13:20:35] INFO root fetch - processPackages [langchain_zhipu]: executing diffoscope
+[2024-04-20 13:20:35] INFO root fetch - processPackages [langchain_zhipu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain_zhipu-4.1.1.tar.gz tmp/langchain_zhipu-4.1.2.tar.gz --markdown 20240420/l/langchain_zhipu/4.1.1-4.1.2/README.md --exclude *.pyd
+[2024-04-20 13:20:35] INFO root fetch - processPackages [contact-profiles-local]: executing diffoscope
+[2024-04-20 13:20:35] INFO root fetch - processPackages [contact-profiles-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-profiles-local-0.0.6.tar.gz tmp/contact_profiles_local-0.0.7.tar.gz --markdown 20240420/c/contact-profiles-local/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 13:20:36] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.0.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.1.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - main [MainThread]: End processing [hfutils]: success
+[2024-04-20 13:20:36] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.4.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.5.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-20 13:20:36] INFO root fetch - processPackages [contact-profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-profiles-local-0.0.6.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - processPackages [contact-profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/contact_profiles_local-0.0.7.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - main [MainThread]: End processing [contact-profiles-local]: success
+[2024-04-20 13:20:36] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.1.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.2.tar.gz]
+[2024-04-20 13:20:36] INFO root fetch - main [MainThread]: End processing [langchain_zhipu]: success
+[2024-04-20 13:20:36] INFO root fetch - main [MainThread]: Store serial: [22855086]
