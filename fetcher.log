@@ -11195,3 +11195,24 @@
 [2024-04-20 09:12:53] INFO root fetch - processPackages [lifx-photons-arranger]: Remove: archive file [/home/abi/fetcher/tmp/lifx_photons_arranger-0.9.0.tar.gz]
 [2024-04-20 09:12:53] INFO root fetch - main [MainThread]: End processing [lifx-photons-arranger]: success
 [2024-04-20 09:12:53] INFO root fetch - main [MainThread]: Store serial: [22853402]
+[2024-04-20 09:14:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853402]
+[2024-04-20 09:15:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ormsgpack
+[2024-04-20 09:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mrml
+[2024-04-20 09:15:02] INFO root fetch - processPackages [ormsgpack]: New version: [1.5.0] Old Version: [1.4.2]
+[2024-04-20 09:15:03] INFO root fetch - processPackages [ormsgpack]: Downloading https://files.pythonhosted.org/packages/43/89/871277ac91b44434b79ae311d37abf7fb88d3f9888a52644963e95a2d2f2/ormsgpack-1.4.2.tar.gz
+[2024-04-20 09:15:03] INFO root fetch - processPackages [ormsgpack]: Downloading https://files.pythonhosted.org/packages/c5/70/11a6ab33136c2f98bb64e96743a55c7a87b87bae0413460cab7cc5764951/ormsgpack-1.5.0.tar.gz
+[2024-04-20 09:15:03] INFO root fetch - processPackages [mrml]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-20 09:15:03] INFO root fetch - processPackages [ormsgpack]: executing diffoscope
+[2024-04-20 09:15:03] INFO root fetch - processPackages [ormsgpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ormsgpack-1.4.2.tar.gz tmp/ormsgpack-1.5.0.tar.gz --markdown 20240420/o/ormsgpack/1.4.2-1.5.0/README.md --exclude *.pyd
+[2024-04-20 09:15:03] INFO root fetch - processPackages [mrml]: Downloading https://files.pythonhosted.org/packages/df/79/578665226919e0d5f480879e681e9ae1ce12c08eab75acbaf42c2f0152f8/mrml-0.1.7.tar.gz
+[2024-04-20 09:15:04] INFO root fetch - processPackages [mrml]: Downloading https://files.pythonhosted.org/packages/ac/13/169cc9da7395fa198b34039b2270f48b209e598a335aacda1049e0b01260/mrml-0.1.8.tar.gz
+[2024-04-20 09:15:04] INFO root fetch - processPackages [mrml]: executing diffoscope
+[2024-04-20 09:15:04] INFO root fetch - processPackages [mrml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrml-0.1.7.tar.gz tmp/mrml-0.1.8.tar.gz --markdown 20240420/m/mrml/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-04-20 09:15:04] INFO root fetch - processPackages [ormsgpack]: Remove: archive file [/home/abi/fetcher/tmp/ormsgpack-1.4.2.tar.gz]
+[2024-04-20 09:15:04] INFO root fetch - processPackages [ormsgpack]: Remove: archive file [/home/abi/fetcher/tmp/ormsgpack-1.5.0.tar.gz]
+[2024-04-20 09:15:04] INFO root fetch - main [MainThread]: End processing [ormsgpack]: success
+[2024-04-20 09:15:06] INFO root fetch - processPackages [mrml]: Remove: archive file [/home/abi/fetcher/tmp/mrml-0.1.7.tar.gz]
+[2024-04-20 09:15:06] INFO root fetch - processPackages [mrml]: Remove: archive file [/home/abi/fetcher/tmp/mrml-0.1.8.tar.gz]
+[2024-04-20 09:15:06] INFO root fetch - main [MainThread]: End processing [mrml]: success
+[2024-04-20 09:15:06] INFO root fetch - main [MainThread]: Store serial: [22853435]
