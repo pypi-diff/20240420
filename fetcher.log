@@ -19744,3 +19744,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:08:16] INFO root fetch - processPackages [BTCoreSharedLibs]: Remove: archive file [/home/abi/fetcher/tmp/btcoresharedlibs-0.0.3.tar.gz]
 [2024-04-20 19:08:16] INFO root fetch - main [MainThread]: End processing [BTCoreSharedLibs]: success
 [2024-04-20 19:08:16] INFO root fetch - main [MainThread]: Store serial: [22857703]
+[2024-04-20 19:10:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857703]
+[2024-04-20 19:10:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 19:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aliste
+[2024-04-20 19:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jutge-toolkit
+[2024-04-20 19:10:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: browser-hub
+[2024-04-20 19:10:26] WARNING root fetch - processPackages [browser-hub]: Skipping, unable to determine old version
+[2024-04-20 19:10:26] INFO root fetch - processPackages [aliste]: New version: [1.0.0] Old Version: [0.1.9]
+[2024-04-20 19:10:26] INFO root fetch - main [MainThread]: End processing [browser-hub] error
+[2024-04-20 19:10:26] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/8d/4b/e8d17056a492b236f38c153fc4352d7fce852585bf0d203fbafa7304fd33/aliste-0.1.9.tar.gz
+[2024-04-20 19:10:26] INFO root fetch - processPackages [jutge-toolkit]: New version: [2.9.3] Old Version: [2.9.0]
+[2024-04-20 19:10:26] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/5a/59/d12c51d9ffef64773b0d01d8903a70059420daa7d9f0f75df9c79f9449ae/aliste-1.0.0.tar.gz
+[2024-04-20 19:10:26] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/ff/4f/d0a52919eda665c3817f2176fd5ab97b063cbcafc538ab2c40dfcc2f75ed/jutge-toolkit-2.9.0.tar.gz
+[2024-04-20 19:10:26] INFO root fetch - processPackages [aliste]: executing diffoscope
+[2024-04-20 19:10:26] INFO root fetch - processPackages [aliste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliste-0.1.9.tar.gz tmp/aliste-1.0.0.tar.gz --markdown 20240420/a/aliste/0.1.9-1.0.0/README.md --exclude *.pyd
+[2024-04-20 19:10:26] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/b3/81/24be98023b2914c7e91f3c6b61cd7020fee7c60083c0171be99196d552df/jutge-toolkit-2.9.3.tar.gz
+[2024-04-20 19:10:27] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-0.1.9.tar.gz]
+[2024-04-20 19:10:27] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-1.0.0.tar.gz]
+[2024-04-20 19:10:27] INFO root fetch - main [MainThread]: End processing [aliste]: success
+[2024-04-20 19:10:27] INFO root fetch - processPackages [jutge-toolkit]: executing diffoscope
+[2024-04-20 19:10:27] INFO root fetch - processPackages [jutge-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutge-toolkit-2.9.0.tar.gz tmp/jutge-toolkit-2.9.3.tar.gz --markdown 20240420/j/jutge-toolkit/2.9.0-2.9.3/README.md --exclude *.pyd
+[2024-04-20 19:10:27] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.0.tar.gz]
+[2024-04-20 19:10:27] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.3.tar.gz]
+[2024-04-20 19:10:27] INFO root fetch - main [MainThread]: End processing [jutge-toolkit]: success
+[2024-04-20 19:10:27] INFO root fetch - main [MainThread]: Store serial: [22857712]
