@@ -19516,3 +19516,15 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mepost-sdk-0.1.1.tar.gz]
 [2024-04-20 18:55:12] INFO root fetch - main [MainThread]: End processing [mepost-sdk]: success
 [2024-04-20 18:55:12] INFO root fetch - main [MainThread]: Store serial: [22857618]
+[2024-04-20 18:57:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857618]
+[2024-04-20 18:57:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 18:57:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-20 18:57:21] INFO root fetch - processPackages [notfunny]: New version: [0.5.6] Old Version: [0.5.4]
+[2024-04-20 18:57:21] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/17/cd/92a0dfd9eaef43e6b37d3ede720fcc9169bba3b0c7ac449b6476c1376137/notfunny-0.5.4.tar.gz
+[2024-04-20 18:57:21] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/98/4e/09dc6bd5fa6420ae082e4626092d30c6d8c08cf73763a92e19c41b57799d/notfunny-0.5.6.tar.gz
+[2024-04-20 18:57:21] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:57:21] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.4.tar.gz tmp/notfunny-0.5.6.tar.gz --markdown 20240420/n/notfunny/0.5.4-0.5.6/README.md --exclude *.pyd
+[2024-04-20 18:57:22] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.4.tar.gz]
+[2024-04-20 18:57:22] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.6.tar.gz]
+[2024-04-20 18:57:22] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:57:22] INFO root fetch - main [MainThread]: Store serial: [22857620]
