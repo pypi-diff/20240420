@@ -17365,3 +17365,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:29:43] INFO root fetch - processPackages [xskj-pyAnn]: Remove: archive file [/home/abi/fetcher/tmp/xskj-pyAnn-0.2.0.tar.gz]
 [2024-04-20 16:29:43] INFO root fetch - main [MainThread]: End processing [xskj-pyAnn]: success
 [2024-04-20 16:29:43] INFO root fetch - main [MainThread]: Store serial: [22856604]
+[2024-04-20 16:31:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856604]
+[2024-04-20 16:31:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 16:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: codeargument-python
+[2024-04-20 16:31:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-indie-tools
+[2024-04-20 16:31:52] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 16:31:52] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-20 16:31:52] WARNING root fetch - processPackages [codeargument-python]: Skipping, unable to determine old version
+[2024-04-20 16:31:52] INFO root fetch - main [MainThread]: End processing [codeargument-python] error
+[2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240420/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-20 16:31:53] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-20 16:31:53] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-20 16:31:53] INFO root fetch - main [MainThread]: Store serial: [22856612]
