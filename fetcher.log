@@ -9753,3 +9753,24 @@
 [2024-04-20 07:01:37] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc68.post1.tar.gz]
 [2024-04-20 07:01:37] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-20 07:01:37] INFO root fetch - main [MainThread]: Store serial: [22852694]
+[2024-04-20 07:03:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852694]
+[2024-04-20 07:03:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 07:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kodekloud-downloader
+[2024-04-20 07:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: talkytrend
+[2024-04-20 07:03:45] INFO root fetch - processPackages [kodekloud-downloader]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-20 07:03:45] INFO root fetch - processPackages [talkytrend]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 07:03:46] INFO root fetch - processPackages [kodekloud-downloader]: Downloading https://files.pythonhosted.org/packages/28/af/15b623a90e40eab333c878bda1f51def34e276b529d4a6f3f89d463c0292/kodekloud_downloader-0.1.2.tar.gz
+[2024-04-20 07:03:46] INFO root fetch - processPackages [talkytrend]: Downloading https://files.pythonhosted.org/packages/ea/1a/d04f1433816847e928b17d9e6c0e90e8459f488952009fe839e87a89d7fa/talkytrend-2.0.8.tar.gz
+[2024-04-20 07:03:46] INFO root fetch - processPackages [kodekloud-downloader]: Downloading https://files.pythonhosted.org/packages/1c/44/0f566220beb69e592b18abca47fea298f9d111de7210cc1cb9556bca2488/kodekloud_downloader-0.1.3.tar.gz
+[2024-04-20 07:03:46] INFO root fetch - processPackages [talkytrend]: Downloading https://files.pythonhosted.org/packages/a8/ac/85c2085482e8605071233f8932cefc380144eddfe79bd52977eb45970c7f/talkytrend-2.0.9.tar.gz
+[2024-04-20 07:03:46] INFO root fetch - processPackages [kodekloud-downloader]: executing diffoscope
+[2024-04-20 07:03:46] INFO root fetch - processPackages [kodekloud-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kodekloud_downloader-0.1.2.tar.gz tmp/kodekloud_downloader-0.1.3.tar.gz --markdown 20240420/k/kodekloud-downloader/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-20 07:03:46] INFO root fetch - processPackages [talkytrend]: executing diffoscope
+[2024-04-20 07:03:46] INFO root fetch - processPackages [talkytrend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talkytrend-2.0.8.tar.gz tmp/talkytrend-2.0.9.tar.gz --markdown 20240420/t/talkytrend/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 07:03:47] INFO root fetch - processPackages [kodekloud-downloader]: Remove: archive file [/home/abi/fetcher/tmp/kodekloud_downloader-0.1.2.tar.gz]
+[2024-04-20 07:03:47] INFO root fetch - processPackages [kodekloud-downloader]: Remove: archive file [/home/abi/fetcher/tmp/kodekloud_downloader-0.1.3.tar.gz]
+[2024-04-20 07:03:47] INFO root fetch - main [MainThread]: End processing [kodekloud-downloader]: success
+[2024-04-20 07:03:47] INFO root fetch - processPackages [talkytrend]: Remove: archive file [/home/abi/fetcher/tmp/talkytrend-2.0.8.tar.gz]
+[2024-04-20 07:03:47] INFO root fetch - processPackages [talkytrend]: Remove: archive file [/home/abi/fetcher/tmp/talkytrend-2.0.9.tar.gz]
+[2024-04-20 07:03:47] INFO root fetch - main [MainThread]: End processing [talkytrend]: success
+[2024-04-20 07:03:47] INFO root fetch - main [MainThread]: Store serial: [22852700]
