@@ -8495,3 +8495,54 @@
 [2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
 [2024-04-20 05:32:21] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
 [2024-04-20 05:32:21] INFO root fetch - main [MainThread]: Store serial: [22852119]
+[2024-04-20 05:34:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852119]
+[2024-04-20 05:34:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-contract-queue-job
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fisspy
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-contract
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edstem-assignment-tracker
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TheSilent
+[2024-04-20 05:34:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addons-oca-cooperative
+[2024-04-20 05:34:30] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 05:34:30] WARNING root fetch - processPackages [odoo-addon-contract-queue-job]: Skipping, unable to determine old version
+[2024-04-20 05:34:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-contract-queue-job] error
+[2024-04-20 05:34:30] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 05:34:30] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 05:34:30] INFO root fetch - processPackages [odoo-addons-oca-contract]: New version: [16.0.20240419.0] Old Version: [16.0.20240220.0]
+[2024-04-20 05:34:30] INFO root fetch - processPackages [fisspy]: New version: [1.0.0] Old Version: [0.9.80]
+[2024-04-20 05:34:30] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: New version: [16.0.20240419.0] Old Version: [16.0.20240202.0]
+[2024-04-20 05:34:30] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 05:34:30] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 05:34:30] INFO root fetch - processPackages [odoo-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/94/d2/37e954260eac8ad28347e79f89e66ea96bbdbdc7d2d9eb382f7491cae81c/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl
+[2024-04-20 05:34:30] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/56/2c/a383b42031166bae4742a4a1ba17d1e7ed0a6b5cbda27cf3414b2be4a6f2/fisspy-0.9.80.tar.gz
+[2024-04-20 05:34:30] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: Downloading https://files.pythonhosted.org/packages/b9/cc/cddab601d5016b0b7a662120ff21520a20bbb06a2d8801b2eca84901aa9c/odoo_addons_oca_cooperative-16.0.20240202.0-py3-none-any.whl
+[2024-04-20 05:34:30] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 05:34:30] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 05:34:30] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 05:34:30] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 05:34:30] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-contract]: Downloading https://files.pythonhosted.org/packages/e6/fe/24ee42a23ba729a22a989a30b18bb727bed020dbee6ef7d7e6cdf7f03b42/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl
+[2024-04-20 05:34:31] INFO root fetch - processPackages [fisspy]: Downloading https://files.pythonhosted.org/packages/9c/0d/df47279533ee6e1a6d2466652d0f33fe8f7d882216251ade7b67e74f48be/fisspy-1.0.0.tar.gz
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-contract]: executing diffoscope
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-contract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl.zip tmp/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl.zip --markdown 20240420/o/odoo-addons-oca-contract/16.0.20240220.0-16.0.20240419.0/README.md --exclude *.pyd
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: Downloading https://files.pythonhosted.org/packages/97/f0/f7bcddf7e71f8bf75dafa6fdf8e7bdfe5ce12a7c3a91ea8833754dfba19d/odoo_addons_oca_cooperative-16.0.20240419.0-py3-none-any.whl
+[2024-04-20 05:34:31] INFO root fetch - processPackages [fisspy]: executing diffoscope
+[2024-04-20 05:34:31] INFO root fetch - processPackages [fisspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fisspy-0.9.80.tar.gz tmp/fisspy-1.0.0.tar.gz --markdown 20240420/f/fisspy/0.9.80-1.0.0/README.md --exclude *.pyd
+[2024-04-20 05:34:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 05:34:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 05:34:31] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: executing diffoscope
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_cooperative-16.0.20240202.0-py3-none-any.whl.zip tmp/odoo_addons_oca_cooperative-16.0.20240419.0-py3-none-any.whl.zip --markdown 20240420/o/odoo-addons-oca-cooperative/16.0.20240202.0-16.0.20240419.0/README.md --exclude *.pyd
+[2024-04-20 05:34:31] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 05:34:31] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 05:34:31] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_contract-16.0.20240220.0-py3-none-any.whl.zip]
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-contract]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_contract-16.0.20240419.0-py3-none-any.whl.zip]
+[2024-04-20 05:34:31] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-contract]: success
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_cooperative-16.0.20240202.0-py3-none-any.whl.zip]
+[2024-04-20 05:34:31] INFO root fetch - processPackages [odoo-addons-oca-cooperative]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_cooperative-16.0.20240419.0-py3-none-any.whl.zip]
+[2024-04-20 05:34:31] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-cooperative]: success
+[2024-04-20 05:34:32] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-0.9.80.tar.gz]
+[2024-04-20 05:34:32] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.0.tar.gz]
+[2024-04-20 05:34:32] INFO root fetch - main [MainThread]: End processing [fisspy]: success
+[2024-04-20 05:34:32] INFO root fetch - main [MainThread]: Store serial: [22852133]
