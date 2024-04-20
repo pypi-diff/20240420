@@ -19344,3 +19344,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:46:25] INFO root fetch - processPackages [emoji-data]: Remove: archive file [/home/abi/fetcher/tmp/emoji_data-0.3.tar.gz]
 [2024-04-20 18:46:25] INFO root fetch - main [MainThread]: End processing [emoji-data]: success
 [2024-04-20 18:46:25] INFO root fetch - main [MainThread]: Store serial: [22857533]
+[2024-04-20 18:48:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857533]
+[2024-04-20 18:48:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domb-napari
+[2024-04-20 18:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC133
+[2024-04-20 18:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rooms-shared-services
+[2024-04-20 18:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cerbogen
+[2024-04-20 18:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-class
+[2024-04-20 18:48:34] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-20 18:48:34] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-20 18:48:34] INFO root fetch - processPackages [domb-napari]: New version: [2024.2.29] Old Version: [2024.2.13.1]
+[2024-04-20 18:48:34] INFO root fetch - processPackages [fastapi-class]: New version: [3.6.0] Old Version: [3.5.0]
+[2024-04-20 18:48:34] INFO root fetch - processPackages [cerbogen]: New version: [0.0.38] Old Version: [0.0.37]
+[2024-04-20 18:48:34] WARNING root fetch - processPackages [PythonTestLJC133]: Skipping, unable to determine old version
+[2024-04-20 18:48:34] INFO root fetch - main [MainThread]: End processing [PythonTestLJC133] error
+[2024-04-20 18:48:35] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/57/e7/f7adafdc1a202c0369fb4d955aeff49c0970b648c5185223baf1627af802/cerbogen-0.0.37.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [domb-napari]: Downloading https://files.pythonhosted.org/packages/ce/51/33500913000dee079ec54eb4bd6c9efc5c55f46697664019bbd5f694c40e/domb-napari-2024.2.13.1.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [fastapi-class]: Downloading https://files.pythonhosted.org/packages/92/a1/962de7e416f0aa9722326e80f7425cc3acc19b5618d935c9e336a06b7a4f/fastapi_class-3.5.0.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-20 18:48:35] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240420/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-20 18:48:35] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/fa/ee/75bd40be70b526e73ff03f1860254b699011ab0366c3e70b06534cb750f2/cerbogen-0.0.38.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [domb-napari]: Downloading https://files.pythonhosted.org/packages/dd/c8/b79030e68f56e6fff217953d6d50b8af0700cf8300d7abe0a3d305c338ae/domb-napari-2024.2.29.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [domb-napari]: executing diffoscope
+[2024-04-20 18:48:35] INFO root fetch - processPackages [domb-napari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domb-napari-2024.2.13.1.tar.gz tmp/domb-napari-2024.2.29.tar.gz --markdown 20240420/d/domb-napari/2024.2.13.1-2024.2.29/README.md --exclude *.pyd
+[2024-04-20 18:48:35] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:48:35] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.37.tar.gz tmp/cerbogen-0.0.38.tar.gz --markdown 20240420/c/cerbogen/0.0.37-0.0.38/README.md --exclude *.pyd
+[2024-04-20 18:48:35] INFO root fetch - processPackages [fastapi-class]: Downloading https://files.pythonhosted.org/packages/7b/38/15dd1f1aed9b78eb5e5ebe117e4dd8900b4b6f50a1aef5d053c3003c5eaf/fastapi_class-3.6.0.tar.gz
+[2024-04-20 18:48:35] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-20 18:48:35] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-20 18:48:35] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-20 18:48:35] INFO root fetch - processPackages [fastapi-class]: executing diffoscope
+[2024-04-20 18:48:35] INFO root fetch - processPackages [fastapi-class]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_class-3.5.0.tar.gz tmp/fastapi_class-3.6.0.tar.gz --markdown 20240420/f/fastapi-class/3.5.0-3.6.0/README.md --exclude *.pyd
+[2024-04-20 18:48:36] INFO root fetch - processPackages [domb-napari]: Remove: archive file [/home/abi/fetcher/tmp/domb-napari-2024.2.13.1.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - processPackages [domb-napari]: Remove: archive file [/home/abi/fetcher/tmp/domb-napari-2024.2.29.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - main [MainThread]: End processing [domb-napari]: success
+[2024-04-20 18:48:36] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.37.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.38.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:48:36] INFO root fetch - processPackages [fastapi-class]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_class-3.5.0.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - processPackages [fastapi-class]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_class-3.6.0.tar.gz]
+[2024-04-20 18:48:36] INFO root fetch - main [MainThread]: End processing [fastapi-class]: success
+[2024-04-20 18:48:36] INFO root fetch - main [MainThread]: Store serial: [22857551]
