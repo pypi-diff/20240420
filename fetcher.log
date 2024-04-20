@@ -11962,3 +11962,36 @@
 [2024-04-20 10:18:11] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
 [2024-04-20 10:18:11] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
 [2024-04-20 10:18:11] INFO root fetch - main [MainThread]: Store serial: [22853867]
+[2024-04-20 10:20:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853867]
+[2024-04-20 10:20:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 10:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: offish
+[2024-04-20 10:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: econkit
+[2024-04-20 10:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xls-updater
+[2024-04-20 10:20:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flechemano
+[2024-04-20 10:20:20] INFO root fetch - processPackages [xls-updater]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-20 10:20:20] INFO root fetch - processPackages [flechemano]: New version: [0.6] Old Version: [0.5]
+[2024-04-20 10:20:20] INFO root fetch - processPackages [xls-updater]: Downloading https://files.pythonhosted.org/packages/7d/1d/98c2c9643e4809caeb319472de9a01b6696acbf621d1ceb74f6d1acceacc/xls_updater-0.1.9.tar.gz
+[2024-04-20 10:20:20] WARNING root fetch - processPackages [offish]: Skipping, unable to determine old version
+[2024-04-20 10:20:20] INFO root fetch - main [MainThread]: End processing [offish] error
+[2024-04-20 10:20:20] INFO root fetch - processPackages [econkit]: New version: [0.4.0.3] Old Version: [0.4.0.2]
+[2024-04-20 10:20:20] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/f6/2d/e9ac675a947f6ddc7822dd9a061302fd2218a1a993bd2478d62f2559bfae/flechemano-0.5.tar.gz
+[2024-04-20 10:20:20] INFO root fetch - processPackages [xls-updater]: Downloading https://files.pythonhosted.org/packages/f0/79/e7afd3a58f5470d949f347e20a450e3f8a5ccdd289984b447435cb2a4ab1/xls_updater-0.2.0.tar.gz
+[2024-04-20 10:20:20] INFO root fetch - processPackages [econkit]: Downloading https://files.pythonhosted.org/packages/d7/7f/320982d1a192076e31c317bbeb2514adea9e0c1670625d5f1369ab2940b9/econkit-0.4.0.2.tar.gz
+[2024-04-20 10:20:20] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/3a/fa/304a9f98691c507d9051bb7c798aec0f0e5808e51beedca06dd990b446ca/flechemano-0.6.tar.gz
+[2024-04-20 10:20:20] INFO root fetch - processPackages [flechemano]: executing diffoscope
+[2024-04-20 10:20:20] INFO root fetch - processPackages [flechemano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flechemano-0.5.tar.gz tmp/flechemano-0.6.tar.gz --markdown 20240420/f/flechemano/0.5-0.6/README.md --exclude *.pyd
+[2024-04-20 10:20:20] INFO root fetch - processPackages [econkit]: Downloading https://files.pythonhosted.org/packages/e2/54/830df2ff994a242f4b66307e8ca7520b181f6c65446b3af71b780dd62945/econkit-0.4.0.3.tar.gz
+[2024-04-20 10:20:20] INFO root fetch - processPackages [econkit]: executing diffoscope
+[2024-04-20 10:20:20] INFO root fetch - processPackages [econkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/econkit-0.4.0.2.tar.gz tmp/econkit-0.4.0.3.tar.gz --markdown 20240420/e/econkit/0.4.0.2-0.4.0.3/README.md --exclude *.pyd
+[2024-04-20 10:20:20] INFO root fetch - processPackages [xls-updater]: executing diffoscope
+[2024-04-20 10:20:20] INFO root fetch - processPackages [xls-updater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xls_updater-0.1.9.tar.gz tmp/xls_updater-0.2.0.tar.gz --markdown 20240420/x/xls-updater/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-20 10:20:21] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.5.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.6.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - main [MainThread]: End processing [flechemano]: success
+[2024-04-20 10:20:21] INFO root fetch - processPackages [econkit]: Remove: archive file [/home/abi/fetcher/tmp/econkit-0.4.0.2.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - processPackages [econkit]: Remove: archive file [/home/abi/fetcher/tmp/econkit-0.4.0.3.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - main [MainThread]: End processing [econkit]: success
+[2024-04-20 10:20:21] INFO root fetch - processPackages [xls-updater]: Remove: archive file [/home/abi/fetcher/tmp/xls_updater-0.1.9.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - processPackages [xls-updater]: Remove: archive file [/home/abi/fetcher/tmp/xls_updater-0.2.0.tar.gz]
+[2024-04-20 10:20:21] INFO root fetch - main [MainThread]: End processing [xls-updater]: success
+[2024-04-20 10:20:21] INFO root fetch - main [MainThread]: Store serial: [22853877]
