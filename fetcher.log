@@ -10220,3 +10220,42 @@
 [2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.12.tar.gz]
 [2024-04-20 07:53:49] INFO root fetch - main [MainThread]: End processing [metalattice]: success
 [2024-04-20 07:53:49] INFO root fetch - main [MainThread]: Store serial: [22852972]
+[2024-04-20 07:55:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852972]
+[2024-04-20 07:55:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 07:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lib-pybroker
+[2024-04-20 07:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-sale-order-line-variant-description
+[2024-04-20 07:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: linktest
+[2024-04-20 07:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: networkx-graph
+[2024-04-20 07:55:58] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: New version: [16.0.1.1.0.2] Old Version: [16.0.1.1.0.1]
+[2024-04-20 07:55:58] INFO root fetch - processPackages [linktest]: New version: [2.5.7] Old Version: [2.5.6]
+[2024-04-20 07:55:58] INFO root fetch - processPackages [lib-pybroker]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-20 07:55:58] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: Downloading https://files.pythonhosted.org/packages/ed/4c/44345afbc78a02f9a1cb29c59f921b876093ea6bc489e7cf8af06b65e170/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.1-py3-none-any.whl
+[2024-04-20 07:55:58] INFO root fetch - processPackages [networkx-graph]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 07:55:58] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/4f/22/523f3c5b8668da25f9a52a1ccb489c3b2c58037460362f16a53b86e151fe/linktest-2.5.6.tar.gz
+[2024-04-20 07:55:58] INFO root fetch - processPackages [lib-pybroker]: Downloading https://files.pythonhosted.org/packages/34/3c/7a7a15f5a575198f5681a2eacd112a20ad5dca5783c6e8b758896a6818cf/lib-pybroker-1.1.8.tar.gz
+[2024-04-20 07:55:59] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/8e/41/d24289a2a055e01e1d748ddaa1a96ee712090b0427dc1f8ba83c76ed6ad6/networkx_graph-0.2.0.tar.gz
+[2024-04-20 07:55:59] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: Downloading https://files.pythonhosted.org/packages/a2/fd/f530c0d696211b4f12749c7e7efb7d8baf8fcac2d176c81cc87245add26c/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.2-py3-none-any.whl
+[2024-04-20 07:55:59] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/a1/aa/2a431aaa433272148940914bfacb5d358afabfb61fed51231530a0422639/linktest-2.5.7.tar.gz
+[2024-04-20 07:55:59] INFO root fetch - processPackages [lib-pybroker]: Downloading https://files.pythonhosted.org/packages/92/47/5d3c2f878c1e65d38032b9450a585161c2761a80814b046f502951c65eed/lib-pybroker-1.1.9.tar.gz
+[2024-04-20 07:55:59] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: executing diffoscope
+[2024-04-20 07:55:59] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-sale-order-line-variant-description/16.0.1.1.0.1-16.0.1.1.0.2/README.md --exclude *.pyd
+[2024-04-20 07:55:59] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-04-20 07:55:59] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.5.6.tar.gz tmp/linktest-2.5.7.tar.gz --markdown 20240420/l/linktest/2.5.6-2.5.7/README.md --exclude *.pyd
+[2024-04-20 07:55:59] INFO root fetch - processPackages [lib-pybroker]: executing diffoscope
+[2024-04-20 07:55:59] INFO root fetch - processPackages [lib-pybroker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib-pybroker-1.1.8.tar.gz tmp/lib-pybroker-1.1.9.tar.gz --markdown 20240420/l/lib-pybroker/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-20 07:55:59] INFO root fetch - processPackages [networkx-graph]: Downloading https://files.pythonhosted.org/packages/9a/86/2cd079520c7a7273129f8f81d6322e3aaf9bf1db76f9ac195e4dc476f087/networkx_graph-0.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 07:55:59] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.5.6.tar.gz]
+[2024-04-20 07:55:59] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.5.7.tar.gz]
+[2024-04-20 07:55:59] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-04-20 07:55:59] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-04-20 07:55:59] INFO root fetch - processPackages [odoo-addon-sale-order-line-variant-description]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_order_line_variant_description-16.0.1.1.0.2-py3-none-any.whl.zip]
+[2024-04-20 07:55:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-line-variant-description]: success
+[2024-04-20 07:55:59] INFO root fetch - processPackages [lib-pybroker]: Remove: archive file [/home/abi/fetcher/tmp/lib-pybroker-1.1.8.tar.gz]
+[2024-04-20 07:55:59] INFO root fetch - processPackages [lib-pybroker]: Remove: archive file [/home/abi/fetcher/tmp/lib-pybroker-1.1.9.tar.gz]
+[2024-04-20 07:55:59] INFO root fetch - main [MainThread]: End processing [lib-pybroker]: success
+[2024-04-20 07:56:00] INFO root fetch - processPackages [networkx-graph]: executing diffoscope
+[2024-04-20 07:56:00] INFO root fetch - processPackages [networkx-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx_graph-0.2.0.tar.gz tmp/networkx_graph-0.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240420/n/networkx-graph/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 07:56:01] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.0.tar.gz]
+[2024-04-20 07:56:01] INFO root fetch - processPackages [networkx-graph]: Remove: archive file [/home/abi/fetcher/tmp/networkx_graph-0.2.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 07:56:01] INFO root fetch - main [MainThread]: End processing [networkx-graph]: success
+[2024-04-20 07:56:01] INFO root fetch - main [MainThread]: Store serial: [22852982]
