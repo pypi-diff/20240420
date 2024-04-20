@@ -14988,3 +14988,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:51:32] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.post1.tar.gz]
 [2024-04-20 13:51:32] INFO root fetch - main [MainThread]: End processing [liba]: success
 [2024-04-20 13:51:32] INFO root fetch - main [MainThread]: Store serial: [22855301]
+[2024-04-20 13:53:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855301]
+[2024-04-20 13:53:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sybil-engine
+[2024-04-20 13:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: telegram-notifier-client
+[2024-04-20 13:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: restcraft
+[2024-04-20 13:53:41] WARNING root fetch - processPackages [restcraft]: Skipping, unable to determine old version
+[2024-04-20 13:53:41] INFO root fetch - main [MainThread]: End processing [restcraft] error
+[2024-04-20 13:53:41] INFO root fetch - processPackages [sybil-engine]: New version: [6.9.4] Old Version: [6.9.3]
+[2024-04-20 13:53:41] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/01/18/17483ff280e46500ac9a874c6655b3d124b118a8dbdb1ab5f70b1c45c6b7/sybil_engine-6.9.3.tar.gz
+[2024-04-20 13:53:41] INFO root fetch - processPackages [telegram-notifier-client]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 13:53:41] INFO root fetch - processPackages [telegram-notifier-client]: Downloading https://files.pythonhosted.org/packages/57/93/4863d1f489563a4ad8849bb79c757b797b9a43fc62db583e622bb3f999a2/telegram_notifier_client-1.0.8.tar.gz
+[2024-04-20 13:53:41] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/c6/29/5a2d76913840b15393414e96c47add12dfc9990446e9cda3ea78e7b4c4ff/sybil_engine-6.9.4.tar.gz
+[2024-04-20 13:53:41] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-20 13:53:41] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-6.9.3.tar.gz tmp/sybil_engine-6.9.4.tar.gz --markdown 20240420/s/sybil-engine/6.9.3-6.9.4/README.md --exclude *.pyd
+[2024-04-20 13:53:41] INFO root fetch - processPackages [telegram-notifier-client]: Downloading https://files.pythonhosted.org/packages/8d/84/77aad12e36dd94f10c82509caa507c491eb536f68c963b63fc624ba41456/telegram_notifier_client-1.0.9.tar.gz
+[2024-04-20 13:53:42] INFO root fetch - processPackages [telegram-notifier-client]: executing diffoscope
+[2024-04-20 13:53:42] INFO root fetch - processPackages [telegram-notifier-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_notifier_client-1.0.8.tar.gz tmp/telegram_notifier_client-1.0.9.tar.gz --markdown 20240420/t/telegram-notifier-client/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 13:53:42] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.9.3.tar.gz]
+[2024-04-20 13:53:42] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.9.4.tar.gz]
+[2024-04-20 13:53:42] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-20 13:53:42] INFO root fetch - processPackages [telegram-notifier-client]: Remove: archive file [/home/abi/fetcher/tmp/telegram_notifier_client-1.0.8.tar.gz]
+[2024-04-20 13:53:42] INFO root fetch - processPackages [telegram-notifier-client]: Remove: archive file [/home/abi/fetcher/tmp/telegram_notifier_client-1.0.9.tar.gz]
+[2024-04-20 13:53:42] INFO root fetch - main [MainThread]: End processing [telegram-notifier-client]: success
+[2024-04-20 13:53:42] INFO root fetch - main [MainThread]: Store serial: [22855323]
