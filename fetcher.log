@@ -15101,3 +15101,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:58:08] INFO root fetch - processPackages [PyQt-builder]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-builder-1.9.1.tar.gz]
 [2024-04-20 13:58:08] INFO root fetch - main [MainThread]: End processing [PyQt-builder]: success
 [2024-04-20 13:58:08] INFO root fetch - main [MainThread]: Store serial: [22855381]
+[2024-04-20 14:00:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855381]
+[2024-04-20 14:00:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 14:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuptech
+[2024-04-20 14:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ziptimezone
+[2024-04-20 14:00:17] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.1] Old Version: [0.10.0]
+[2024-04-20 14:00:17] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-20 14:00:17] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/96/9c/0079cde9d837dc421fc902e35c0989af2627ce4b9accf32b52a7e5a3b5c3/ziptimezone-0.10.0.tar.gz
+[2024-04-20 14:00:17] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/8e/d5/e77993cf4d46334c5f088a145e040eecbc7e63585003ab5cb8c5556b349f/pyuptech-0.1.2.tar.gz
+[2024-04-20 14:00:18] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/31/fa/c6d4aacd7093c4ed8c274d159aa45ab04e7b7b5c2082e0d61b69115e9d6b/ziptimezone-0.10.1.tar.gz
+[2024-04-20 14:00:18] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 14:00:18] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.0.tar.gz tmp/ziptimezone-0.10.1.tar.gz --markdown 20240420/z/ziptimezone/0.10.0-0.10.1/README.md --exclude *.pyd
+[2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/68/6f/1a8038f4725da771156ffa5c814d79bcdeb300357222e58eb455a707d5ca/pyuptech-0.1.3.tar.gz
+[2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.2.tar.gz tmp/pyuptech-0.1.3.tar.gz --markdown 20240420/p/pyuptech/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-20 14:00:18] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.0.tar.gz]
+[2024-04-20 14:00:18] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.1.tar.gz]
+[2024-04-20 14:00:18] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.2.tar.gz]
+[2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3.tar.gz]
+[2024-04-20 14:00:18] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 14:00:18] INFO root fetch - main [MainThread]: Store serial: [22855388]
