@@ -14876,3 +14876,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:40:33] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.2.tar.gz]
 [2024-04-20 13:40:33] INFO root fetch - main [MainThread]: End processing [mingzi]: success
 [2024-04-20 13:40:33] INFO root fetch - main [MainThread]: Store serial: [22855249]
+[2024-04-20 13:42:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855249]
+[2024-04-20 13:42:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 13:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HyperRez
+[2024-04-20 13:42:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-indie-tools
+[2024-04-20 13:42:41] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 13:42:41] INFO root fetch - processPackages [HyperRez]: New version: [2.0] Old Version: [1.0.0]
+[2024-04-20 13:42:41] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: Downloading https://files.pythonhosted.org/packages/98/de/80dbd376dab802f074b4e9ed479a1e2dd77947f64f534ccae72c51855bef/HyperRez-1.0.0.tar.gz
+[2024-04-20 13:42:42] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-20 13:42:42] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-20 13:42:42] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240420/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: Downloading https://files.pythonhosted.org/packages/60/65/10cb9b9fae7c508b31bb1814630220563566f75e25e3211bd93332650804/HyperRez-2.0.tar.gz
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: executing diffoscope
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HyperRez-1.0.0.tar.gz tmp/HyperRez-2.0.tar.gz --markdown 20240420/H/HyperRez/1.0.0-2.0/README.md --exclude *.pyd
+[2024-04-20 13:42:42] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-20 13:42:42] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-20 13:42:42] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: Remove: archive file [/home/abi/fetcher/tmp/HyperRez-1.0.0.tar.gz]
+[2024-04-20 13:42:42] INFO root fetch - processPackages [HyperRez]: Remove: archive file [/home/abi/fetcher/tmp/HyperRez-2.0.tar.gz]
+[2024-04-20 13:42:42] INFO root fetch - main [MainThread]: End processing [HyperRez]: success
+[2024-04-20 13:42:42] INFO root fetch - main [MainThread]: Store serial: [22855255]
