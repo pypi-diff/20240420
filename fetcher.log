@@ -1830,3 +1830,12 @@
 [2024-04-20 01:59:47] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.8.tar.gz]
 [2024-04-20 01:59:47] INFO root fetch - main [MainThread]: End processing [superdupper]: success
 [2024-04-20 01:59:47] INFO root fetch - main [MainThread]: Store serial: [22849608]
+[2024-04-20 02:01:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849608]
+[2024-04-20 02:01:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 02:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: example-pkg-rubancpp
+[2024-04-20 02:01:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npiai
+[2024-04-20 02:01:55] WARNING root fetch - processPackages [npiai]: Skipping, unable to determine old version
+[2024-04-20 02:01:55] INFO root fetch - main [MainThread]: End processing [npiai] error
+[2024-04-20 02:01:55] WARNING root fetch - processPackages [example-pkg-rubancpp]: Skipping, unable to determine old version
+[2024-04-20 02:01:55] INFO root fetch - main [MainThread]: End processing [example-pkg-rubancpp] error
+[2024-04-20 02:01:55] INFO root fetch - main [MainThread]: Store serial: [22849617]
