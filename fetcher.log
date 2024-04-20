@@ -21737,3 +21737,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:06:57] INFO root fetch - processPackages [better-bing-image-downloader]: Remove: archive file [/home/abi/fetcher/tmp/better_bing_image_downloader-1.1.2.tar.gz]
 [2024-04-20 21:06:57] INFO root fetch - main [MainThread]: End processing [better-bing-image-downloader]: success
 [2024-04-20 21:06:57] INFO root fetch - main [MainThread]: Store serial: [22858638]
+[2024-04-20 21:09:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858638]
+[2024-04-20 21:09:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 21:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC184
+[2024-04-20 21:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: esoc-events
+[2024-04-20 21:09:06] WARNING root fetch - processPackages [PythonTestLJC184]: Skipping, unable to determine old version
+[2024-04-20 21:09:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC184] error
+[2024-04-20 21:09:06] INFO root fetch - processPackages [esoc-events]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 21:09:06] INFO root fetch - processPackages [esoc-events]: Downloading https://files.pythonhosted.org/packages/6f/7a/e433ddd666e1c80798dd003daacd8d187b41c7fb180330075798fad016ad/esoc_events-0.0.1.tar.gz
+[2024-04-20 21:09:06] INFO root fetch - processPackages [esoc-events]: Downloading https://files.pythonhosted.org/packages/79/1b/6abfde9c47097aabb8b00f6d6997b542915e4b9584a3dfa3b23580ecfc02/esoc_events-0.0.2.tar.gz
+[2024-04-20 21:09:07] INFO root fetch - processPackages [esoc-events]: executing diffoscope
+[2024-04-20 21:09:07] INFO root fetch - processPackages [esoc-events]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esoc_events-0.0.1.tar.gz tmp/esoc_events-0.0.2.tar.gz --markdown 20240420/e/esoc-events/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 21:09:07] INFO root fetch - processPackages [esoc-events]: Remove: archive file [/home/abi/fetcher/tmp/esoc_events-0.0.1.tar.gz]
+[2024-04-20 21:09:07] INFO root fetch - processPackages [esoc-events]: Remove: archive file [/home/abi/fetcher/tmp/esoc_events-0.0.2.tar.gz]
+[2024-04-20 21:09:07] INFO root fetch - main [MainThread]: End processing [esoc-events]: success
+[2024-04-20 21:09:07] INFO root fetch - main [MainThread]: Store serial: [22858646]
