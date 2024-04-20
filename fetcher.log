@@ -20677,3 +20677,81 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:03:09] INFO root fetch - processPackages [copasul]: Remove: archive file [/home/abi/fetcher/tmp/copasul-1.5.3.tar.gz]
 [2024-04-20 20:03:09] INFO root fetch - main [MainThread]: End processing [copasul]: success
 [2024-04-20 20:03:09] INFO root fetch - main [MainThread]: Store serial: [22858104]
+[2024-04-20 20:05:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858104]
+[2024-04-20 20:05:18] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ark-mainsail
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: txt2ebook
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stela-publishing
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tire-code-parser
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kv-api
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC161
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kv-fs
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kv-sqlite-sync
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: anydi
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-api]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-sqlite-sync]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-fs]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [anydi]: New version: [0.24.0] Old Version: [0.23.0]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [tire-code-parser]: New version: [0.8.0] Old Version: [0.2.0]
+[2024-04-20 20:05:18] WARNING root fetch - processPackages [PythonTestLJC161]: Skipping, unable to determine old version
+[2024-04-20 20:05:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC161] error
+[2024-04-20 20:05:18] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.84]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/37/54/23cce8ded6eb2d05d11a6311b62f223f72fddc2b4f1b9b78c2b4bf76541d/kv_api-0.1.4.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-sqlite-sync]: Downloading https://files.pythonhosted.org/packages/30/4e/c3ae23b4c06b8912ca39cb42d87b79b3d5324fc98f4152bfd9eed88720ea/kv_sqlite_sync-0.1.4.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/cf/32/03377517184b15ea9db7021260ce713787d2fe7d662a20f3538c2cc90766/kv_fs-0.1.6.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/63/89/8f614e1a40bea18b107d7ca58c5c2f3c93ad6eecdbe1ec94dad4d5f10472/tire_code_parser-0.2.0.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/27/f8/81c03b2b5e281b0719d061c47275820fdb1b4398ef92a49861d45b99983f/txt2ebook-0.1.84.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [stela-publishing]: New version: [0.2.26] Old Version: [0.2.25]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ark-mainsail]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-20 20:05:18] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/1b/25/0391552bfb8f6045360975f8a7fdb2629b17fc607b46a15de9a1e0099e3b/anydi-0.23.0.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [stela-publishing]: Downloading https://files.pythonhosted.org/packages/9d/85/cfb1e65040d74da1d5f9e8d2c79ba6f581abaf1ff33898d27e03e53e3d17/stela_publishing-0.2.25.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/0b/6a/145e9dc350c36ea93515877c5f13a8f53a0c97a39f67e546c83b13052224/ark-mainsail-1.0.1.tar.gz
+[2024-04-20 20:05:18] INFO root fetch - processPackages [kv-sqlite-sync]: Downloading https://files.pythonhosted.org/packages/88/6f/6e50965bce2e0ca33f49cb0dc9149d92bf6e6c0e075925996256feed2a89/kv_sqlite_sync-0.1.5.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-fs]: Downloading https://files.pythonhosted.org/packages/e9/b6/8b11f754ad6effdaffcbfca1db026c272d2e5a0464a3c3997dc524e0d9af/kv_fs-0.1.7.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/ef/15/b4833c532933e87c69e1faaf6fa70b206aa5fce4bd9f23b0fdf3ac852b48/tire-code-parser-0.8.0.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/46/41/c512c317eb2ae2d35249254bf75a51ac5cb3082e4b2c8992d9c73bfdc0a1/kv_api-0.1.5.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-sqlite-sync]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-sqlite-sync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_sqlite_sync-0.1.4.tar.gz tmp/kv_sqlite_sync-0.1.5.tar.gz --markdown 20240420/k/kv-sqlite-sync/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-fs]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-fs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_fs-0.1.6.tar.gz tmp/kv_fs-0.1.7.tar.gz --markdown 20240420/k/kv-fs/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [tire-code-parser]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [tire-code-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tire_code_parser-0.2.0.tar.gz tmp/tire-code-parser-0.8.0.tar.gz --markdown 20240420/t/tire-code-parser/0.2.0-0.8.0/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.84.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20240420/t/txt2ebook/0.1.84-0.1.9/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-api]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [kv-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv_api-0.1.4.tar.gz tmp/kv_api-0.1.5.tar.gz --markdown 20240420/k/kv-api/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [ark-mainsail]: Downloading https://files.pythonhosted.org/packages/63/ad/865a49a1829dad8b7764bffaf2d335c8ee0f43d7cec306097082a7c3ef84/ark-mainsail-1.1.0.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [stela-publishing]: Downloading https://files.pythonhosted.org/packages/8c/07/4ead17c85f5b25899bf36dc853ce4b43734de27db8900e271ec2651b8aec/stela_publishing-0.2.26.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [ark-mainsail]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [ark-mainsail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ark-mainsail-1.0.1.tar.gz tmp/ark-mainsail-1.1.0.tar.gz --markdown 20240420/a/ark-mainsail/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [anydi]: Downloading https://files.pythonhosted.org/packages/bf/a9/addf542c782670340612618feb1446b5ae923e05e8b60752258ec76ca7ee/anydi-0.24.0.tar.gz
+[2024-04-20 20:05:19] INFO root fetch - processPackages [stela-publishing]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [stela-publishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stela_publishing-0.2.25.tar.gz tmp/stela_publishing-0.2.26.tar.gz --markdown 20240420/s/stela-publishing/0.2.25-0.2.26/README.md --exclude *.pyd
+[2024-04-20 20:05:19] INFO root fetch - processPackages [anydi]: executing diffoscope
+[2024-04-20 20:05:19] INFO root fetch - processPackages [anydi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anydi-0.23.0.tar.gz tmp/anydi-0.24.0.tar.gz --markdown 20240420/a/anydi/0.23.0-0.24.0/README.md --exclude *.pyd
+[2024-04-20 20:05:20] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire_code_parser-0.2.0.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.8.0.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [tire-code-parser]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.6.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-fs]: Remove: archive file [/home/abi/fetcher/tmp/kv_fs-0.1.7.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [kv-fs]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.4.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv_api-0.1.5.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [kv-api]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-sqlite-sync]: Remove: archive file [/home/abi/fetcher/tmp/kv_sqlite_sync-0.1.4.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [kv-sqlite-sync]: Remove: archive file [/home/abi/fetcher/tmp/kv_sqlite_sync-0.1.5.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [kv-sqlite-sync]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.84.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [txt2ebook]: Remove: archive file [/home/abi/fetcher/tmp/txt2ebook-0.1.9.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.0.1.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [ark-mainsail]: Remove: archive file [/home/abi/fetcher/tmp/ark-mainsail-1.1.0.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [ark-mainsail]: success
+[2024-04-20 20:05:20] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.23.0.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - processPackages [anydi]: Remove: archive file [/home/abi/fetcher/tmp/anydi-0.24.0.tar.gz]
+[2024-04-20 20:05:20] INFO root fetch - main [MainThread]: End processing [anydi]: success
+[2024-04-20 20:05:21] INFO root fetch - processPackages [stela-publishing]: Remove: archive file [/home/abi/fetcher/tmp/stela_publishing-0.2.25.tar.gz]
+[2024-04-20 20:05:21] INFO root fetch - processPackages [stela-publishing]: Remove: archive file [/home/abi/fetcher/tmp/stela_publishing-0.2.26.tar.gz]
+[2024-04-20 20:05:21] INFO root fetch - main [MainThread]: End processing [stela-publishing]: success
+[2024-04-20 20:05:21] INFO root fetch - main [MainThread]: Store serial: [22858133]
