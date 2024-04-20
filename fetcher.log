@@ -10610,3 +10610,18 @@
 [2024-04-20 08:35:28] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-99.0.0.tar.gz]
 [2024-04-20 08:35:28] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
 [2024-04-20 08:35:28] INFO root fetch - main [MainThread]: Store serial: [22853154]
+[2024-04-20 08:37:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853154]
+[2024-04-20 08:37:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oktay1024
+[2024-04-20 08:37:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wah
+[2024-04-20 08:37:37] INFO root fetch - processPackages [wah]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 08:37:37] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/1e/98/86b56f53d2270da5a315b2f0d5733e61fd0dabbbde1d17bcff2dd938939e/wah-0.1.8.tar.gz
+[2024-04-20 08:37:37] WARNING root fetch - processPackages [oktay1024]: Skipping, unable to determine old version
+[2024-04-20 08:37:37] INFO root fetch - main [MainThread]: End processing [oktay1024] error
+[2024-04-20 08:37:37] INFO root fetch - processPackages [wah]: Downloading https://files.pythonhosted.org/packages/6c/57/7be641139065b67640542a312a3988d0a93024cdc145ea667b7e8d432eb8/wah-0.1.9.tar.gz
+[2024-04-20 08:37:37] INFO root fetch - processPackages [wah]: executing diffoscope
+[2024-04-20 08:37:37] INFO root fetch - processPackages [wah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wah-0.1.8.tar.gz tmp/wah-0.1.9.tar.gz --markdown 20240420/w/wah/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 08:37:38] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.8.tar.gz]
+[2024-04-20 08:37:38] INFO root fetch - processPackages [wah]: Remove: archive file [/home/abi/fetcher/tmp/wah-0.1.9.tar.gz]
+[2024-04-20 08:37:38] INFO root fetch - main [MainThread]: End processing [wah]: success
+[2024-04-20 08:37:38] INFO root fetch - main [MainThread]: Store serial: [22853160]
