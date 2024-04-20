@@ -14027,3 +14027,15 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:38:32] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240419.tar.gz]
 [2024-04-20 12:38:32] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-04-20 12:38:32] INFO root fetch - main [MainThread]: Store serial: [22854839]
+[2024-04-20 12:40:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854839]
+[2024-04-20 12:40:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 12:40:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymemgpt-nightly
+[2024-04-20 12:40:40] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-04-20 12:40:40] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-04-20 12:40:41] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-04-20 12:40:41] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-04-20 12:40:41] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240420/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-04-20 12:40:42] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-04-20 12:40:42] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-04-20 12:40:42] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-04-20 12:40:42] INFO root fetch - main [MainThread]: Store serial: [22854843]
