@@ -1949,3 +1949,36 @@
 [2024-04-20 02:06:18] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240419.358.tar.gz]
 [2024-04-20 02:06:18] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-04-20 02:06:18] INFO root fetch - main [MainThread]: Store serial: [22849694]
+[2024-04-20 02:08:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849694]
+[2024-04-20 02:08:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxutils-nightly
+[2024-04-20 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npiai-proto
+[2024-04-20 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: megadetector
+[2024-04-20 02:08:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-common
+[2024-04-20 02:08:27] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240419] Old Version: [0.0.8.dev20240418]
+[2024-04-20 02:08:27] INFO root fetch - processPackages [megadetector]: New version: [5.0.8] Old Version: [5.0.7]
+[2024-04-20 02:08:27] WARNING root fetch - processPackages [npiai-proto]: Skipping, unable to determine old version
+[2024-04-20 02:08:27] INFO root fetch - main [MainThread]: End processing [npiai-proto] error
+[2024-04-20 02:08:27] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/0c/d7/0c8b9422ac4eb349508326cb75bf1c2c8b5cdd94dfbf8d847f1d4731aa55/jaxutils-nightly-0.0.8.dev20240418.tar.gz
+[2024-04-20 02:08:27] INFO root fetch - processPackages [megadetector]: Downloading https://files.pythonhosted.org/packages/63/33/4bcbaece5ce69700831c2d4db53d09c158e79c0c1be68e506e4d74057cf5/megadetector-5.0.7.tar.gz
+[2024-04-20 02:08:27] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/67/81/97f878ff02ab4fc0d22e8fae44c76c9606e9d8b06a0ffc164eeae045c3ed/jaxutils-nightly-0.0.8.dev20240419.tar.gz
+[2024-04-20 02:08:27] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-04-20 02:08:27] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240418.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240419.tar.gz --markdown 20240420/j/jaxutils-nightly/0.0.8.dev20240418-0.0.8.dev20240419/README.md --exclude *.pyd
+[2024-04-20 02:08:28] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-20 02:08:28] INFO root fetch - processPackages [megadetector]: Downloading https://files.pythonhosted.org/packages/5e/de/9bde6bcb4ea0d4ed12776912e30cbb21cdb2506d498f1d6813e95b224120/megadetector-5.0.8.tar.gz
+[2024-04-20 02:08:28] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-20 02:08:28] INFO root fetch - processPackages [megadetector]: executing diffoscope
+[2024-04-20 02:08:28] INFO root fetch - processPackages [megadetector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadetector-5.0.7.tar.gz tmp/megadetector-5.0.8.tar.gz --markdown 20240420/m/megadetector/5.0.7-5.0.8/README.md --exclude *.pyd
+[2024-04-20 02:08:28] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240418.tar.gz]
+[2024-04-20 02:08:28] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240419.tar.gz]
+[2024-04-20 02:08:28] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-04-20 02:08:28] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-20 02:08:29] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-20 02:08:29] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240420/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-20 02:08:30] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.7.tar.gz]
+[2024-04-20 02:08:30] INFO root fetch - processPackages [megadetector]: Remove: archive file [/home/abi/fetcher/tmp/megadetector-5.0.8.tar.gz]
+[2024-04-20 02:08:30] INFO root fetch - main [MainThread]: End processing [megadetector]: success
+[2024-04-20 02:08:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-20 02:08:30] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-20 02:08:30] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-20 02:08:30] INFO root fetch - main [MainThread]: Store serial: [22849707]
