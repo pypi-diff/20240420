@@ -10510,3 +10510,11 @@
 [2024-04-20 08:24:27] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.9.tar.gz]
 [2024-04-20 08:24:27] INFO root fetch - main [MainThread]: End processing [tdf_tool]: success
 [2024-04-20 08:24:27] INFO root fetch - main [MainThread]: Store serial: [22853129]
+[2024-04-20 08:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853129]
+[2024-04-20 08:26:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 08:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: illuminatapp
+[2024-04-20 08:26:37] INFO root fetch - processPackages [illuminatapp]: New version: [1.2.7] Old Version: [1.2.5]
+[2024-04-20 08:26:37] INFO root fetch - processPackages [illuminatapp]: Downloading https://files.pythonhosted.org/packages/68/46/cbe80bf78b466cfcbc2d60bc7139f6dda0898196107d506ce242b306b6d8/illuminatapp-1.2.5.tar.gz
+[2024-04-20 08:26:37] WARNING root fetch - processPackages [illuminatapp]: Skipping package: exceeds size limit 34401557>=10485760
+[2024-04-20 08:26:37] INFO root fetch - main [MainThread]: End processing [illuminatapp] error
+[2024-04-20 08:26:37] INFO root fetch - main [MainThread]: Store serial: [22853131]
