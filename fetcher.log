@@ -20889,3 +20889,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:11:55] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
 [2024-04-20 20:11:55] INFO root fetch - main [MainThread]: End processing [phidata]: success
 [2024-04-20 20:11:55] INFO root fetch - main [MainThread]: Store serial: [22858203]
+[2024-04-20 20:14:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858203]
+[2024-04-20 20:14:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 20:14:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cltk
+[2024-04-20 20:14:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botasaurus2
+[2024-04-20 20:14:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tablinum
+[2024-04-20 20:14:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edstem-assignment-tracker
+[2024-04-20 20:14:05] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 20:14:05] INFO root fetch - processPackages [botasaurus2]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-04-20 20:14:05] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 20:14:05] WARNING root fetch - processPackages [tablinum]: Skipping, unable to determine old version
+[2024-04-20 20:14:05] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/37/4e/392bba22d8e60f5a82bc5266352a8e73a1f4fb10e8977ca3192892dbab21/botasaurus2-1.4.5.tar.gz
+[2024-04-20 20:14:05] INFO root fetch - main [MainThread]: End processing [tablinum] error
+[2024-04-20 20:14:05] INFO root fetch - processPackages [cltk]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-20 20:14:05] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 20:14:05] INFO root fetch - processPackages [botasaurus2]: Downloading https://files.pythonhosted.org/packages/32/53/21b0abac8c926ee0c03b167c31ecb7a290ef78b5a7fab33ea7c23a4a9a59/botasaurus2-1.4.6.tar.gz
+[2024-04-20 20:14:05] INFO root fetch - processPackages [cltk]: Downloading https://files.pythonhosted.org/packages/be/95/90cd16a9dfadda0af41a78af46372fbabd90d73bafd3e772d1232b7d7d0b/cltk-1.2.4.tar.gz
+[2024-04-20 20:14:06] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 20:14:06] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 20:14:06] INFO root fetch - processPackages [botasaurus2]: executing diffoscope
+[2024-04-20 20:14:06] INFO root fetch - processPackages [botasaurus2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus2-1.4.5.tar.gz tmp/botasaurus2-1.4.6.tar.gz --markdown 20240420/b/botasaurus2/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-04-20 20:14:06] INFO root fetch - processPackages [cltk]: Downloading https://files.pythonhosted.org/packages/b8/1c/e7764a5cfe420266ef71f3994ff7d7a2fa1e6b4072a0471c18821153b607/cltk-1.2.5.tar.gz
+[2024-04-20 20:14:06] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 20:14:06] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 20:14:06] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 20:14:06] INFO root fetch - processPackages [cltk]: executing diffoscope
+[2024-04-20 20:14:06] INFO root fetch - processPackages [cltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cltk-1.2.4.tar.gz tmp/cltk-1.2.5.tar.gz --markdown 20240420/c/cltk/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-04-20 20:14:06] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.4.5.tar.gz]
+[2024-04-20 20:14:06] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.4.6.tar.gz]
+[2024-04-20 20:14:06] INFO root fetch - main [MainThread]: End processing [botasaurus2]: success
+[2024-04-20 20:14:07] INFO root fetch - processPackages [cltk]: Remove: archive file [/home/abi/fetcher/tmp/cltk-1.2.4.tar.gz]
+[2024-04-20 20:14:07] INFO root fetch - processPackages [cltk]: Remove: archive file [/home/abi/fetcher/tmp/cltk-1.2.5.tar.gz]
+[2024-04-20 20:14:07] INFO root fetch - main [MainThread]: End processing [cltk]: success
+[2024-04-20 20:14:07] INFO root fetch - main [MainThread]: Store serial: [22858218]
