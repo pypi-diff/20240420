@@ -17083,3 +17083,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:10:05] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract_cli-0.9.9.tar.gz]
 [2024-04-20 16:10:05] INFO root fetch - main [MainThread]: End processing [datacontract-cli]: success
 [2024-04-20 16:10:05] INFO root fetch - main [MainThread]: Store serial: [22856480]
+[2024-04-20 16:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856480]
+[2024-04-20 16:12:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 16:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC077
+[2024-04-20 16:12:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-logs
+[2024-04-20 16:12:14] INFO root fetch - processPackages [mo-logs]: New version: [8.591.24111] Old Version: [8.584.24095]
+[2024-04-20 16:12:15] WARNING root fetch - processPackages [PythonTestLJC077]: Skipping, unable to determine old version
+[2024-04-20 16:12:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC077] error
+[2024-04-20 16:12:15] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/63/3f/1f5f6c9686a37ea58cfaa43a0114b40059555ed94709c11f9d8e6048a300/mo-logs-8.584.24095.tar.gz
+[2024-04-20 16:12:15] INFO root fetch - processPackages [mo-logs]: Downloading https://files.pythonhosted.org/packages/c5/76/a210e5002f863fcfe2e50574d5b96b474c855bb709d5fb90f579d9d7fb62/mo_logs-8.591.24111.tar.gz
+[2024-04-20 16:12:15] INFO root fetch - processPackages [mo-logs]: executing diffoscope
+[2024-04-20 16:12:15] INFO root fetch - processPackages [mo-logs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-logs-8.584.24095.tar.gz tmp/mo_logs-8.591.24111.tar.gz --markdown 20240420/m/mo-logs/8.584.24095-8.591.24111/README.md --exclude *.pyd
+[2024-04-20 16:12:16] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo-logs-8.584.24095.tar.gz]
+[2024-04-20 16:12:16] INFO root fetch - processPackages [mo-logs]: Remove: archive file [/home/abi/fetcher/tmp/mo_logs-8.591.24111.tar.gz]
+[2024-04-20 16:12:16] INFO root fetch - main [MainThread]: End processing [mo-logs]: success
+[2024-04-20 16:12:16] INFO root fetch - main [MainThread]: Store serial: [22856488]
