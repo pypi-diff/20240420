@@ -19895,3 +19895,78 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:14:49] INFO root fetch - main [MainThread]: End processing [rtrie]: success
 [2024-04-20 19:14:49] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-20 19:14:49] INFO root fetch - main [MainThread]: Store serial: [22857755]
+[2024-04-20 19:16:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857755]
+[2024-04-20 19:16:58] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: esbmc-ai
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aliste
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inkcpp-py
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: face-authenticator
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aqlm
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flet-easy
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rtrie
+[2024-04-20 19:16:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: maestral-qt
+[2024-04-20 19:16:58] INFO root fetch - processPackages [face-authenticator]: New version: [3.0.0] Old Version: [2.1.0]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [rtrie]: New version: [1.0.0] Old Version: [0.1.3]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aliste]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [esbmc-ai]: New version: [0.5.0rc4] Old Version: [0.5.0rc3]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [flet-easy]: New version: [0.2.0.dev15] Old Version: [0.2.0.dev14]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [inkcpp-py]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aqlm]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/5a/59/d12c51d9ffef64773b0d01d8903a70059420daa7d9f0f75df9c79f9449ae/aliste-1.0.0.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/b0/49/b5f673e7a5b8e6d4081b889e4e5ac51190aead05bcbb38ac7451ca92ccc2/face_authenticator-2.1.0-py3-none-any.whl
+[2024-04-20 19:16:58] INFO root fetch - processPackages [maestral-qt]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-20 19:16:58] INFO root fetch - processPackages [rtrie]: Downloading https://files.pythonhosted.org/packages/cd/83/50f6c9e6952d180dd30e8af8b43faf5ed48a5bbd987eacdb7fc76c6107c1/rtrie-0.1.3.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [esbmc-ai]: Downloading https://files.pythonhosted.org/packages/5d/6d/b5c941f0fcf179a85f88e1635dd1621f5adb3c8f261a56a25610b6571d3a/esbmc_ai-0.5.0rc3.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [inkcpp-py]: Downloading https://files.pythonhosted.org/packages/40/d8/19f73ab5d5c4ff0e5b6dc8c285e8cff5543981812e11641752c4755fc21e/inkcpp-py-0.1.4.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aqlm]: Downloading https://files.pythonhosted.org/packages/76/4a/5e4198b3a20466a964c4d4460639aba15dedcd71f1d39d96881ad440ece1/aqlm-1.1.4.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [flet-easy]: Downloading https://files.pythonhosted.org/packages/44/ad/d3bf9f210eb7e0ab76ef490cd7d3f93532c516461bd9b04b1f278cc41cf8/flet_easy-0.2.0.dev14.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/ca/5b/d8caa1031c80b11cdc29014e2b46417b7ccd70492ae2a21baa20fc151ad4/maestral-qt-1.9.3.dev0.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [rtrie]: Downloading https://files.pythonhosted.org/packages/ef/c6/d0ed87eb9364f4a940cb22a2668c5ea927567f15cf8e0065e354dedb1dbc/rtrie-1.0.0.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aliste]: Downloading https://files.pythonhosted.org/packages/51/3a/0f2d95279adedb37efb2c25f54e808f4ed07b7e75648974e2f098894a896/aliste-1.0.1.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [rtrie]: executing diffoscope
+[2024-04-20 19:16:58] INFO root fetch - processPackages [rtrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtrie-0.1.3.tar.gz tmp/rtrie-1.0.0.tar.gz --markdown 20240420/r/rtrie/0.1.3-1.0.0/README.md --exclude *.pyd
+[2024-04-20 19:16:58] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/c4/ff/dddd22445c6b3b8f8aec013a5b5f82a9f70243c5ba34bced0b1d6306b747/face_authenticator-3.0.0-py3-none-any.whl
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aliste]: executing diffoscope
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aliste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliste-1.0.0.tar.gz tmp/aliste-1.0.1.tar.gz --markdown 20240420/a/aliste/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 19:16:58] INFO root fetch - processPackages [esbmc-ai]: Downloading https://files.pythonhosted.org/packages/d9/9b/72a6381b4c3ed61da2bef77eece47ccfea0687d7783d4cd232604405a7fb/esbmc_ai-0.5.0rc4.tar.gz
+[2024-04-20 19:16:58] INFO root fetch - processPackages [aqlm]: Downloading https://files.pythonhosted.org/packages/fc/84/5a95d6f878bff93ed17411984a87163ad03893133d4f01bdac89d5b70e49/aqlm-1.1.5.tar.gz
+[2024-04-20 19:16:59] INFO root fetch - processPackages [face-authenticator]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [face-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face_authenticator-2.1.0-py3-none-any.whl.zip tmp/face_authenticator-3.0.0-py3-none-any.whl.zip --markdown 20240420/f/face-authenticator/2.1.0-3.0.0/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [flet-easy]: Downloading https://files.pythonhosted.org/packages/21/66/563b52f49294887a95085e033800c4e4010255e286a349923c1246701acc/flet_easy-0.2.0.dev15.tar.gz
+[2024-04-20 19:16:59] INFO root fetch - processPackages [maestral-qt]: Downloading https://files.pythonhosted.org/packages/60/bb/867f31892f82fb99c9fae8cf6afcd087c1875aceb49b6b96e0319ee6e647/maestral_qt-1.9.3.dev1.tar.gz
+[2024-04-20 19:16:59] INFO root fetch - processPackages [esbmc-ai]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [esbmc-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esbmc_ai-0.5.0rc3.tar.gz tmp/esbmc_ai-0.5.0rc4.tar.gz --markdown 20240420/e/esbmc-ai/0.5.0rc3-0.5.0rc4/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [inkcpp-py]: Downloading https://files.pythonhosted.org/packages/05/35/fbba6da219b7c54e3fc2ce79727932e55b496df0a62716dc3e6f0ca3c15e/inkcpp_py-0.1.5.tar.gz
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aqlm]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aqlm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqlm-1.1.4.tar.gz tmp/aqlm-1.1.5.tar.gz --markdown 20240420/a/aqlm/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [flet-easy]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [flet-easy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flet_easy-0.2.0.dev14.tar.gz tmp/flet_easy-0.2.0.dev15.tar.gz --markdown 20240420/f/flet-easy/0.2.0.dev14-0.2.0.dev15/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [inkcpp-py]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [inkcpp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inkcpp-py-0.1.4.tar.gz tmp/inkcpp_py-0.1.5.tar.gz --markdown 20240420/i/inkcpp-py/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [maestral-qt]: executing diffoscope
+[2024-04-20 19:16:59] INFO root fetch - processPackages [maestral-qt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-qt-1.9.3.dev0.tar.gz tmp/maestral_qt-1.9.3.dev1.tar.gz --markdown 20240420/m/maestral-qt/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-1.0.0.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aliste]: Remove: archive file [/home/abi/fetcher/tmp/aliste-1.0.1.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - main [MainThread]: End processing [aliste]: success
+[2024-04-20 19:16:59] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-2.1.0-py3-none-any.whl.zip]
+[2024-04-20 19:16:59] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-3.0.0-py3-none-any.whl.zip]
+[2024-04-20 19:16:59] INFO root fetch - main [MainThread]: End processing [face-authenticator]: success
+[2024-04-20 19:16:59] INFO root fetch - processPackages [rtrie]: Remove: archive file [/home/abi/fetcher/tmp/rtrie-0.1.3.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - processPackages [rtrie]: Remove: archive file [/home/abi/fetcher/tmp/rtrie-1.0.0.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - main [MainThread]: End processing [rtrie]: success
+[2024-04-20 19:16:59] INFO root fetch - processPackages [esbmc-ai]: Remove: archive file [/home/abi/fetcher/tmp/esbmc_ai-0.5.0rc3.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - processPackages [esbmc-ai]: Remove: archive file [/home/abi/fetcher/tmp/esbmc_ai-0.5.0rc4.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - main [MainThread]: End processing [esbmc-ai]: success
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aqlm]: Remove: archive file [/home/abi/fetcher/tmp/aqlm-1.1.4.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - processPackages [aqlm]: Remove: archive file [/home/abi/fetcher/tmp/aqlm-1.1.5.tar.gz]
+[2024-04-20 19:16:59] INFO root fetch - main [MainThread]: End processing [aqlm]: success
+[2024-04-20 19:17:00] INFO root fetch - processPackages [flet-easy]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy-0.2.0.dev14.tar.gz]
+[2024-04-20 19:17:00] INFO root fetch - processPackages [flet-easy]: Remove: archive file [/home/abi/fetcher/tmp/flet_easy-0.2.0.dev15.tar.gz]
+[2024-04-20 19:17:00] INFO root fetch - main [MainThread]: End processing [flet-easy]: success
+[2024-04-20 19:17:00] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral-qt-1.9.3.dev0.tar.gz]
+[2024-04-20 19:17:00] INFO root fetch - processPackages [maestral-qt]: Remove: archive file [/home/abi/fetcher/tmp/maestral_qt-1.9.3.dev1.tar.gz]
+[2024-04-20 19:17:00] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
+[2024-04-20 19:17:01] INFO root fetch - processPackages [inkcpp-py]: Remove: archive file [/home/abi/fetcher/tmp/inkcpp-py-0.1.4.tar.gz]
+[2024-04-20 19:17:01] INFO root fetch - processPackages [inkcpp-py]: Remove: archive file [/home/abi/fetcher/tmp/inkcpp_py-0.1.5.tar.gz]
+[2024-04-20 19:17:01] INFO root fetch - main [MainThread]: End processing [inkcpp-py]: success
+[2024-04-20 19:17:01] INFO root fetch - main [MainThread]: Store serial: [22857777]
