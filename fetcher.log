@@ -12589,3 +12589,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:05:59] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240419.tar.gz]
 [2024-04-20 11:05:59] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-04-20 11:05:59] INFO root fetch - main [MainThread]: Store serial: [22854175]
+[2024-04-20 11:08:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854175]
+[2024-04-20 11:08:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: surrealist
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qdataclass
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: illuminatapp
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kvix
+[2024-04-20 11:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: muko
+[2024-04-20 11:08:09] INFO root fetch - processPackages [muko]: New version: [2.26] Old Version: [2.25]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc74.post1] Old Version: [0.0.2rc73.post1]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [illuminatapp]: New version: [1.3.4] Old Version: [1.2.7]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/21/c4/4651bb631e1a01a74ee7f90b7e3b0814deee641823a1af4a74b6e9e4f363/muko-2.25-py3-none-any.whl
+[2024-04-20 11:08:09] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/d5/47/0320bd8a540d21890af3d1e83753f02aff73c7bd88c90e87e4f8ed55c7dc/py_dbchat-0.0.2rc73.post1.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [qdataclass]: New version: [1.0.2] Old Version: [1.0.0]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [kvix]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [surrealist]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 11:08:09] INFO root fetch - processPackages [illuminatapp]: Downloading https://files.pythonhosted.org/packages/12/9a/ac374dff22e34262eb28a9ba733ea18deaada0109dd1a5713a628b323aba/illuminatapp-1.2.7.tar.gz
+[2024-04-20 11:08:09] WARNING root fetch - processPackages [illuminatapp]: Skipping package: exceeds size limit 42143025>=10485760
+[2024-04-20 11:08:09] INFO root fetch - main [MainThread]: End processing [illuminatapp] error
+[2024-04-20 11:08:09] INFO root fetch - processPackages [qdataclass]: Downloading https://files.pythonhosted.org/packages/f9/4f/583408df0ce67402ebd0541bf971f2d08d1aa317b634c4466dd996e6501f/qdataclass-1.0.0.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [surrealist]: Downloading https://files.pythonhosted.org/packages/eb/49/9f2f05f98db5e1e00986f347549adfd5525ccf3b8f9f896ad3ffee46a720/surrealist-0.4.0.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [kvix]: Downloading https://files.pythonhosted.org/packages/88/3d/32bdcd9e581f02aa6d83f4714106e6233c128abb794009897b178839ba61/kvix-0.1.1.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/14/59/231bd852222bcf096c99f482e23b70fe1b9d2ac684863c439d7a15c596b7/py_dbchat-0.0.2rc74.post1.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 11:08:09] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc73.post1.tar.gz tmp/py_dbchat-0.0.2rc74.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc73.post1-0.0.2rc74.post1/README.md --exclude *.pyd
+[2024-04-20 11:08:09] INFO root fetch - processPackages [surrealist]: Downloading https://files.pythonhosted.org/packages/96/c4/3c5547e0c61e63cdd1f41133c152393c5f23b765317fdd035b5fb3989111/surrealist-0.4.1.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/b6/ce/849799a92569ec37c8773a455cdf99a296e3b3f20020443d905c4a011536/muko-2.26-py3-none-any.whl
+[2024-04-20 11:08:09] INFO root fetch - processPackages [kvix]: Downloading https://files.pythonhosted.org/packages/6e/c1/4f71f92bc3cf9492e0cf077e285952004cd513f8a5447975841c6ffe5a88/kvix-0.1.2.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [qdataclass]: Downloading https://files.pythonhosted.org/packages/c9/0a/df57236216b203a0512bcce5293ba5b0c42ee008fc0af4d6d33b162f85be/qdataclass-1.0.2.tar.gz
+[2024-04-20 11:08:09] INFO root fetch - processPackages [kvix]: executing diffoscope
+[2024-04-20 11:08:09] INFO root fetch - processPackages [kvix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kvix-0.1.1.tar.gz tmp/kvix-0.1.2.tar.gz --markdown 20240420/k/kvix/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 11:08:09] INFO root fetch - processPackages [qdataclass]: executing diffoscope
+[2024-04-20 11:08:09] INFO root fetch - processPackages [qdataclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qdataclass-1.0.0.tar.gz tmp/qdataclass-1.0.2.tar.gz --markdown 20240420/q/qdataclass/1.0.0-1.0.2/README.md --exclude *.pyd
+[2024-04-20 11:08:09] INFO root fetch - processPackages [surrealist]: executing diffoscope
+[2024-04-20 11:08:09] INFO root fetch - processPackages [surrealist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surrealist-0.4.0.tar.gz tmp/surrealist-0.4.1.tar.gz --markdown 20240420/s/surrealist/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 11:08:10] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-04-20 11:08:10] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.25-py3-none-any.whl.zip tmp/muko-2.26-py3-none-any.whl.zip --markdown 20240420/m/muko/2.25-2.26/README.md --exclude *.pyd
+[2024-04-20 11:08:10] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc73.post1.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc74.post1.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 11:08:10] INFO root fetch - processPackages [qdataclass]: Remove: archive file [/home/abi/fetcher/tmp/qdataclass-1.0.0.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - processPackages [qdataclass]: Remove: archive file [/home/abi/fetcher/tmp/qdataclass-1.0.2.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [qdataclass]: success
+[2024-04-20 11:08:10] INFO root fetch - processPackages [kvix]: Remove: archive file [/home/abi/fetcher/tmp/kvix-0.1.1.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - processPackages [kvix]: Remove: archive file [/home/abi/fetcher/tmp/kvix-0.1.2.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [kvix]: success
+[2024-04-20 11:08:10] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.25-py3-none-any.whl.zip]
+[2024-04-20 11:08:10] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.26-py3-none-any.whl.zip]
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-04-20 11:08:10] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.4.0.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - processPackages [surrealist]: Remove: archive file [/home/abi/fetcher/tmp/surrealist-0.4.1.tar.gz]
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: End processing [surrealist]: success
+[2024-04-20 11:08:10] INFO root fetch - main [MainThread]: Store serial: [22854193]
