@@ -23079,3 +23079,9 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:28:27] INFO root fetch - processPackages [shapeout2]: Remove: archive file [/home/abi/fetcher/tmp/shapeout2-2.9.6.tar.gz]
 [2024-04-20 22:28:27] INFO root fetch - main [MainThread]: End processing [shapeout2]: success
 [2024-04-20 22:28:27] INFO root fetch - main [MainThread]: Store serial: [22859270]
+[2024-04-20 22:30:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859270]
+[2024-04-20 22:30:36] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 22:30:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC213
+[2024-04-20 22:30:36] WARNING root fetch - processPackages [PythonTestLJC213]: Skipping, unable to determine old version
+[2024-04-20 22:30:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC213] error
+[2024-04-20 22:30:36] INFO root fetch - main [MainThread]: Store serial: [22859275]
