@@ -13413,3 +13413,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:52:44] INFO root fetch - processPackages [ovinc-client]: Remove: archive file [/home/abi/fetcher/tmp/ovinc_client-0.2.0.tar.gz]
 [2024-04-20 11:52:44] INFO root fetch - main [MainThread]: End processing [ovinc-client]: success
 [2024-04-20 11:52:44] INFO root fetch - main [MainThread]: Store serial: [22854570]
+[2024-04-20 11:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854570]
+[2024-04-20 11:54:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 11:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EntropyHub
+[2024-04-20 11:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheSilent
+[2024-04-20 11:54:52] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 11:54:52] INFO root fetch - processPackages [EntropyHub]: New version: [1.0.1] Old Version: [1.0.0.post1]
+[2024-04-20 11:54:52] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 11:54:53] INFO root fetch - processPackages [EntropyHub]: Downloading https://files.pythonhosted.org/packages/a4/7f/220cb3b17eb8cd43500d3b022bd3b890a189bb97e9eaf14e074a853ebb00/EntropyHub-1.0.0.post1.tar.gz
+[2024-04-20 11:54:53] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 11:54:53] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 11:54:53] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 11:54:53] INFO root fetch - processPackages [EntropyHub]: Downloading https://files.pythonhosted.org/packages/4f/ae/8b99d0925bedcb326e965d95fb4d90eaac02903db2bf4c5d264ff3e5954b/EntropyHub-1.0.1.tar.gz
+[2024-04-20 11:54:53] INFO root fetch - processPackages [EntropyHub]: executing diffoscope
+[2024-04-20 11:54:53] INFO root fetch - processPackages [EntropyHub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EntropyHub-1.0.0.post1.tar.gz tmp/EntropyHub-1.0.1.tar.gz --markdown 20240420/E/EntropyHub/1.0.0.post1-1.0.1/README.md --exclude *.pyd
+[2024-04-20 11:54:53] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 11:54:53] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 11:54:53] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 11:54:54] INFO root fetch - processPackages [EntropyHub]: Remove: archive file [/home/abi/fetcher/tmp/EntropyHub-1.0.0.post1.tar.gz]
+[2024-04-20 11:54:54] INFO root fetch - processPackages [EntropyHub]: Remove: archive file [/home/abi/fetcher/tmp/EntropyHub-1.0.1.tar.gz]
+[2024-04-20 11:54:54] INFO root fetch - main [MainThread]: End processing [EntropyHub]: success
+[2024-04-20 11:54:54] INFO root fetch - main [MainThread]: Store serial: [22854576]
