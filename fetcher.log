@@ -7777,3 +7777,18 @@
 [2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.35.0.tar.gz]
 [2024-04-20 04:22:30] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
 [2024-04-20 04:22:30] INFO root fetch - main [MainThread]: Store serial: [22851835]
+[2024-04-20 04:24:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851835]
+[2024-04-20 04:24:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eenhoorntje-llm-lib
+[2024-04-20 04:24:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: counts
+[2024-04-20 04:24:39] WARNING root fetch - processPackages [eenhoorntje-llm-lib]: Skipping, unable to determine old version
+[2024-04-20 04:24:39] INFO root fetch - main [MainThread]: End processing [eenhoorntje-llm-lib] error
+[2024-04-20 04:24:39] INFO root fetch - processPackages [counts]: New version: [0.9.0] Old Version: [0.0.5]
+[2024-04-20 04:24:39] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/97/6a/cbef3ee933b6c4e8d41bdce610189236614364554058234c762883f52aca/counts-0.0.5.tar.gz
+[2024-04-20 04:24:39] INFO root fetch - processPackages [counts]: Downloading https://files.pythonhosted.org/packages/df/09/113063923c383d3eb905c5bc5770590c43ead0b3bd9f4ef0cbc81c6ba3ac/counts-0.9.0.tar.gz
+[2024-04-20 04:24:39] INFO root fetch - processPackages [counts]: executing diffoscope
+[2024-04-20 04:24:39] INFO root fetch - processPackages [counts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/counts-0.0.5.tar.gz tmp/counts-0.9.0.tar.gz --markdown 20240420/c/counts/0.0.5-0.9.0/README.md --exclude *.pyd
+[2024-04-20 04:24:40] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.0.5.tar.gz]
+[2024-04-20 04:24:40] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
+[2024-04-20 04:24:40] INFO root fetch - main [MainThread]: End processing [counts]: success
+[2024-04-20 04:24:40] INFO root fetch - main [MainThread]: Store serial: [22851842]
