@@ -14141,3 +14141,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:47:28] INFO root fetch - processPackages [szurubooru-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/szurubooru_toolkit-1.0.1.tar.gz]
 [2024-04-20 12:47:28] INFO root fetch - main [MainThread]: End processing [szurubooru-toolkit]: success
 [2024-04-20 12:47:28] INFO root fetch - main [MainThread]: Store serial: [22854887]
+[2024-04-20 12:49:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854887]
+[2024-04-20 12:49:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 12:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skbu-2nd-sem
+[2024-04-20 12:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC022
+[2024-04-20 12:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: music-assistant-frontend
+[2024-04-20 12:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2024-04-20 12:49:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: browser-history
+[2024-04-20 12:49:38] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 12:49:39] WARNING root fetch - processPackages [PythonTestLJC022]: Skipping, unable to determine old version
+[2024-04-20 12:49:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC022] error
+[2024-04-20 12:49:39] WARNING root fetch - processPackages [skbu-2nd-sem]: Skipping, unable to determine old version
+[2024-04-20 12:49:39] INFO root fetch - main [MainThread]: End processing [skbu-2nd-sem] error
+[2024-04-20 12:49:39] INFO root fetch - processPackages [music-assistant-frontend]: New version: [2.4.4] Old Version: [2.4.3]
+[2024-04-20 12:49:39] INFO root fetch - processPackages [browser-history]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 12:49:39] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [browser-history]: Downloading https://files.pythonhosted.org/packages/ab/f7/c37b73cfb45e6b2bb4e2fce3fa50cf70e2826dc7abb7f07cb0b51fd34572/browser-history-0.4.0.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/02/49/c7d3dda7b3c0cc75051a5bcd1358f8589219c9efd174895ce64bf3bbcb77/music-assistant-frontend-2.4.3.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 12:49:39] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 12:49:39] INFO root fetch - processPackages [browser-history]: Downloading https://files.pythonhosted.org/packages/60/22/76d11c62a41f6deec0c176632dc0942f4cf250512c5fb8313af252fa7841/browser_history-0.4.1.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/b3/ea/2dda8e75287ab574307ce9d12d58daf4878a879a3f5070e6b6605b572766/music-assistant-frontend-2.4.4.tar.gz
+[2024-04-20 12:49:39] INFO root fetch - processPackages [browser-history]: executing diffoscope
+[2024-04-20 12:49:39] INFO root fetch - processPackages [browser-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browser-history-0.4.0.tar.gz tmp/browser_history-0.4.1.tar.gz --markdown 20240420/b/browser-history/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 12:49:40] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 12:49:40] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 12:49:40] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 12:49:40] INFO root fetch - processPackages [music-assistant-frontend]: executing diffoscope
+[2024-04-20 12:49:40] INFO root fetch - processPackages [music-assistant-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music-assistant-frontend-2.4.3.tar.gz tmp/music-assistant-frontend-2.4.4.tar.gz --markdown 20240420/m/music-assistant-frontend/2.4.3-2.4.4/README.md --exclude *.pyd
+[2024-04-20 12:49:40] INFO root fetch - processPackages [browser-history]: Remove: archive file [/home/abi/fetcher/tmp/browser-history-0.4.0.tar.gz]
+[2024-04-20 12:49:40] INFO root fetch - processPackages [browser-history]: Remove: archive file [/home/abi/fetcher/tmp/browser_history-0.4.1.tar.gz]
+[2024-04-20 12:49:40] INFO root fetch - main [MainThread]: End processing [browser-history]: success
+[2024-04-20 12:49:58] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.4.3.tar.gz]
+[2024-04-20 12:49:58] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.4.4.tar.gz]
+[2024-04-20 12:49:58] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
+[2024-04-20 12:49:58] INFO root fetch - main [MainThread]: Store serial: [22854905]
