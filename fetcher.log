@@ -12367,3 +12367,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:52:57] INFO root fetch - processPackages [django-sitewide]: Remove: archive file [/home/abi/fetcher/tmp/django-sitewide-0.1.9.tar.gz]
 [2024-04-20 10:52:57] INFO root fetch - main [MainThread]: End processing [django-sitewide]: success
 [2024-04-20 10:52:57] INFO root fetch - main [MainThread]: Store serial: [22854036]
+[2024-04-20 10:55:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854036]
+[2024-04-20 10:55:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 10:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-20 10:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starparser
+[2024-04-20 10:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: so-ml-tools
+[2024-04-20 10:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: m-abac
+[2024-04-20 10:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: outpostcli
+[2024-04-20 10:55:05] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 10:55:05] INFO root fetch - processPackages [so-ml-tools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 10:55:05] INFO root fetch - processPackages [m-abac]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 10:55:05] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 10:55:05] INFO root fetch - processPackages [starparser]: New version: [1.56] Old Version: [1.55]
+[2024-04-20 10:55:05] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 10:55:05] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/fc/30/cfb5b7cf1b6c3d4b7759e52aaf120234d88b23cda57cfa671f342c8928d9/so-ml-tools-0.1.98.tar.gz
+[2024-04-20 10:55:06] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 10:55:06] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 10:55:06] INFO root fetch - processPackages [m-abac]: Downloading https://files.pythonhosted.org/packages/a8/22/871fbec7809e1d040117017c28cf827a1aecd06193fba240ce21f0f3abd5/m-abac-1.0.8.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [starparser]: Downloading https://files.pythonhosted.org/packages/b9/07/aeaf051569375d8678e62019acbb0a1ca25f20b54c7fd1b65e1d1b5376bc/starparser-1.55.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/81/44/0ba41cd45b341c34829d9698a1a7295a871d04bec34718944a8d469046a7/so-ml-tools-0.1.99.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [so-ml-tools]: executing diffoscope
+[2024-04-20 10:55:06] INFO root fetch - processPackages [so-ml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so-ml-tools-0.1.98.tar.gz tmp/so-ml-tools-0.1.99.tar.gz --markdown 20240420/s/so-ml-tools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 10:55:06] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [starparser]: Downloading https://files.pythonhosted.org/packages/8d/2a/e87b11134304e76b0f9a64eed12d95ca1d7ebb40d603f3bd80c0c7415023/starparser-1.56.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [m-abac]: Downloading https://files.pythonhosted.org/packages/c6/49/455eaa95cde1eee2859125d03f45c6ab4e080b763e40528459d0d529a74c/m-abac-1.0.9.tar.gz
+[2024-04-20 10:55:06] INFO root fetch - processPackages [starparser]: executing diffoscope
+[2024-04-20 10:55:06] INFO root fetch - processPackages [starparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starparser-1.55.tar.gz tmp/starparser-1.56.tar.gz --markdown 20240420/s/starparser/1.55-1.56/README.md --exclude *.pyd
+[2024-04-20 10:55:06] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-20 10:55:06] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240420/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 10:55:06] INFO root fetch - processPackages [m-abac]: executing diffoscope
+[2024-04-20 10:55:06] INFO root fetch - processPackages [m-abac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/m-abac-1.0.8.tar.gz tmp/m-abac-1.0.9.tar.gz --markdown 20240420/m/m-abac/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 10:55:07] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.98.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.99.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - main [MainThread]: End processing [so-ml-tools]: success
+[2024-04-20 10:55:07] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-20 10:55:07] INFO root fetch - processPackages [starparser]: Remove: archive file [/home/abi/fetcher/tmp/starparser-1.55.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - processPackages [starparser]: Remove: archive file [/home/abi/fetcher/tmp/starparser-1.56.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - main [MainThread]: End processing [starparser]: success
+[2024-04-20 10:55:07] INFO root fetch - processPackages [m-abac]: Remove: archive file [/home/abi/fetcher/tmp/m-abac-1.0.8.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - processPackages [m-abac]: Remove: archive file [/home/abi/fetcher/tmp/m-abac-1.0.9.tar.gz]
+[2024-04-20 10:55:07] INFO root fetch - main [MainThread]: End processing [m-abac]: success
+[2024-04-20 10:55:07] INFO root fetch - main [MainThread]: Store serial: [22854048]
