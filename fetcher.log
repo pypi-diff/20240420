@@ -16386,3 +16386,17 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:24:15] INFO root fetch - processPackages [stela-professional]: Remove: archive file [/home/abi/fetcher/tmp/stela_professional-0.4.1.tar.gz]
 [2024-04-20 15:24:15] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
 [2024-04-20 15:24:15] INFO root fetch - main [MainThread]: Store serial: [22856016]
+[2024-04-20 15:26:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856016]
+[2024-04-20 15:26:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 15:28:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856016]
+[2024-04-20 15:28:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 15:28:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xagpy
+[2024-04-20 15:28:29] INFO root fetch - processPackages [xagpy]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 15:28:29] INFO root fetch - processPackages [xagpy]: Downloading https://files.pythonhosted.org/packages/fe/67/85221f95f96ada4d80a39ee26cdc8489e486388a080f591429b934da7bb6/xagpy-0.1.tar.gz
+[2024-04-20 15:28:29] INFO root fetch - processPackages [xagpy]: Downloading https://files.pythonhosted.org/packages/53/da/f8be4641b623df30a168663c0f50f5bff756f3913a37d55434867b589372/xagpy-0.2.tar.gz
+[2024-04-20 15:28:29] INFO root fetch - processPackages [xagpy]: executing diffoscope
+[2024-04-20 15:28:29] INFO root fetch - processPackages [xagpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xagpy-0.1.tar.gz tmp/xagpy-0.2.tar.gz --markdown 20240420/x/xagpy/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 15:28:30] INFO root fetch - processPackages [xagpy]: Remove: archive file [/home/abi/fetcher/tmp/xagpy-0.1.tar.gz]
+[2024-04-20 15:28:30] INFO root fetch - processPackages [xagpy]: Remove: archive file [/home/abi/fetcher/tmp/xagpy-0.2.tar.gz]
+[2024-04-20 15:28:30] INFO root fetch - main [MainThread]: End processing [xagpy]: success
+[2024-04-20 15:28:30] INFO root fetch - main [MainThread]: Store serial: [22856019]
