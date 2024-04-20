@@ -11875,3 +11875,18 @@
 [2024-04-20 10:09:26] INFO root fetch - processPackages [RiskLabAI]: Remove: archive file [/home/abi/fetcher/tmp/RiskLabAI-0.0.9.tar.gz]
 [2024-04-20 10:09:26] INFO root fetch - main [MainThread]: End processing [RiskLabAI]: success
 [2024-04-20 10:09:26] INFO root fetch - main [MainThread]: Store serial: [22853840]
+[2024-04-20 10:11:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853840]
+[2024-04-20 10:11:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 10:11:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-one-dot
+[2024-04-20 10:11:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adaptix
+[2024-04-20 10:11:35] WARNING root fetch - processPackages [flake8-one-dot]: Skipping, unable to determine old version
+[2024-04-20 10:11:35] INFO root fetch - main [MainThread]: End processing [flake8-one-dot] error
+[2024-04-20 10:11:35] INFO root fetch - processPackages [adaptix]: New version: [3.0.0b5] Old Version: [3.0.0b4]
+[2024-04-20 10:11:35] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/8e/ae/c3fcbc927c4ad2ce09652e8c998edbbe672431929ec43d7dcbc1f1f7692b/adaptix-3.0.0b4.tar.gz
+[2024-04-20 10:11:36] INFO root fetch - processPackages [adaptix]: Downloading https://files.pythonhosted.org/packages/e5/a5/9efa0cf2c414462ea3ebcc459daca228c0a98dab36dfa72ca9003afb3900/adaptix-3.0.0b5.tar.gz
+[2024-04-20 10:11:36] INFO root fetch - processPackages [adaptix]: executing diffoscope
+[2024-04-20 10:11:36] INFO root fetch - processPackages [adaptix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaptix-3.0.0b4.tar.gz tmp/adaptix-3.0.0b5.tar.gz --markdown 20240420/a/adaptix/3.0.0b4-3.0.0b5/README.md --exclude *.pyd
+[2024-04-20 10:11:37] INFO root fetch - processPackages [adaptix]: Remove: archive file [/home/abi/fetcher/tmp/adaptix-3.0.0b4.tar.gz]
+[2024-04-20 10:11:37] INFO root fetch - processPackages [adaptix]: Remove: archive file [/home/abi/fetcher/tmp/adaptix-3.0.0b5.tar.gz]
+[2024-04-20 10:11:37] INFO root fetch - main [MainThread]: End processing [adaptix]: success
+[2024-04-20 10:11:37] INFO root fetch - main [MainThread]: Store serial: [22853847]
