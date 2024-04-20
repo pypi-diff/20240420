@@ -8084,3 +8084,33 @@
 [2024-04-20 04:52:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-20 04:52:05] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-20 04:52:05] INFO root fetch - main [MainThread]: Store serial: [22851927]
+[2024-04-20 04:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851927]
+[2024-04-20 04:54:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FSRS-Optimizer
+[2024-04-20 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypi-cleanup
+[2024-04-20 04:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qh3
+[2024-04-20 04:54:13] INFO root fetch - processPackages [pypi-cleanup]: New version: [0.1.6.dev20240420021837] Old Version: [0.1.5]
+[2024-04-20 04:54:13] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/0f/bb/6ff68b871296c6cc36f4d74fe35b0c9fd02f9fb13e43d1c9375adea026c8/pypi-cleanup-0.1.5.tar.gz
+[2024-04-20 04:54:13] INFO root fetch - processPackages [FSRS-Optimizer]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-04-20 04:54:13] INFO root fetch - processPackages [qh3]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 04:54:13] INFO root fetch - processPackages [pypi-cleanup]: Downloading https://files.pythonhosted.org/packages/56/02/d19615e12248f3bf118e571ca54ec2f24f1cbc61cb23d9ac3c84a6ce3b21/pypi_cleanup-0.1.6.dev20240420021837.tar.gz
+[2024-04-20 04:54:13] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/3b/99/ed9611766c54d3246138921362bf9c9277a2294c7e349cc2c73adad35fcf/FSRS-Optimizer-4.9.0.tar.gz
+[2024-04-20 04:54:13] INFO root fetch - processPackages [pypi-cleanup]: executing diffoscope
+[2024-04-20 04:54:13] INFO root fetch - processPackages [pypi-cleanup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypi-cleanup-0.1.5.tar.gz tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz --markdown 20240420/p/pypi-cleanup/0.1.5-0.1.6.dev20240420021837/README.md --exclude *.pyd
+[2024-04-20 04:54:13] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/7f/92/e93170d71d6353d562f9c88fd7a91e42e8ec7a05d827ebed61c195ca0abe/qh3-1.0.1.tar.gz
+[2024-04-20 04:54:14] INFO root fetch - processPackages [FSRS-Optimizer]: Downloading https://files.pythonhosted.org/packages/27/db/53f188d4c7d7816753b79f8815d890ddec6e330cf3864087d6e403ae05ed/FSRS-Optimizer-4.9.1.tar.gz
+[2024-04-20 04:54:14] INFO root fetch - processPackages [FSRS-Optimizer]: executing diffoscope
+[2024-04-20 04:54:14] INFO root fetch - processPackages [FSRS-Optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FSRS-Optimizer-4.9.0.tar.gz tmp/FSRS-Optimizer-4.9.1.tar.gz --markdown 20240420/F/FSRS-Optimizer/4.9.0-4.9.1/README.md --exclude *.pyd
+[2024-04-20 04:54:14] INFO root fetch - processPackages [qh3]: Downloading https://files.pythonhosted.org/packages/cf/32/b888ec56ac93ecc2a76ba605c4471f44b4a1447940af0f47b429f60ea8f6/qh3-1.0.2-pp37-pypy37_pp73-musllinux_1_1_armv7l.whl
+[2024-04-20 04:54:14] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi-cleanup-0.1.5.tar.gz]
+[2024-04-20 04:54:14] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz]
+[2024-04-20 04:54:14] INFO root fetch - main [MainThread]: End processing [pypi-cleanup]: success
+[2024-04-20 04:54:14] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.0.tar.gz]
+[2024-04-20 04:54:14] INFO root fetch - processPackages [FSRS-Optimizer]: Remove: archive file [/home/abi/fetcher/tmp/FSRS-Optimizer-4.9.1.tar.gz]
+[2024-04-20 04:54:14] INFO root fetch - main [MainThread]: End processing [FSRS-Optimizer]: success
+[2024-04-20 04:54:16] INFO root fetch - processPackages [qh3]: executing diffoscope
+[2024-04-20 04:54:16] INFO root fetch - processPackages [qh3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qh3-1.0.1.tar.gz tmp/qh3-1.0.2-pp37-pypy37_pp73-musllinux_1_1_armv7l.whl.zip --markdown 20240420/q/qh3/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 04:54:16] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.1.tar.gz]
+[2024-04-20 04:54:16] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.2-pp37-pypy37_pp73-musllinux_1_1_armv7l.whl.zip]
+[2024-04-20 04:54:16] INFO root fetch - main [MainThread]: End processing [qh3]: success
+[2024-04-20 04:54:16] INFO root fetch - main [MainThread]: Store serial: [22851967]
