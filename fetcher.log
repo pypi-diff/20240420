@@ -16681,3 +16681,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:43:51] INFO root fetch - processPackages [wuff]: Remove: archive file [/home/abi/fetcher/tmp/wuff-1.1.4-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
 [2024-04-20 15:43:51] INFO root fetch - main [MainThread]: End processing [wuff]: success
 [2024-04-20 15:43:51] INFO root fetch - main [MainThread]: Store serial: [22856201]
+[2024-04-20 15:45:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856201]
+[2024-04-20 15:46:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xiaogpt
+[2024-04-20 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flowdata
+[2024-04-20 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wrangle
+[2024-04-20 15:46:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scri
+[2024-04-20 15:46:00] INFO root fetch - processPackages [wrangle]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-20 15:46:00] INFO root fetch - processPackages [xiaogpt]: New version: [2.62] Old Version: [2.61]
+[2024-04-20 15:46:00] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/45/e2/16f8d57bf16c48602ac100d62856167fe31108343d9a587f08b40c5a1a47/xiaogpt-2.61.tar.gz
+[2024-04-20 15:46:00] WARNING root fetch - processPackages [flowdata]: Skipping, unable to determine old version
+[2024-04-20 15:46:00] INFO root fetch - main [MainThread]: End processing [flowdata] error
+[2024-04-20 15:46:00] INFO root fetch - processPackages [scri]: New version: [2022.8.9] Old Version: [2022.8.8]
+[2024-04-20 15:46:00] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/e4/a1/d66c68479281c136d5b5bfa9ea36ae4c6409892e55cce8939f8de286a2a7/wrangle-0.7.3.tar.gz
+[2024-04-20 15:46:00] INFO root fetch - processPackages [scri]: Downloading https://files.pythonhosted.org/packages/06/a1/843f84cf6efd6dcd4bbfc4fd7b92e60d29afe55cf321a2ee6e0d8ba2c3c6/scri-2022.8.8.tar.gz
+[2024-04-20 15:46:00] INFO root fetch - processPackages [xiaogpt]: Downloading https://files.pythonhosted.org/packages/73/32/0d67409a2b127822a11f7b90aec8266c719e66a3a9eeb745b4a77ad39de2/xiaogpt-2.62.tar.gz
+[2024-04-20 15:46:01] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/37/19/d7098c028accffb11a027a105beea6f561dd1342e882382599cc1ec8a378/wrangle-0.7.4.tar.gz
+[2024-04-20 15:46:01] INFO root fetch - processPackages [xiaogpt]: executing diffoscope
+[2024-04-20 15:46:01] INFO root fetch - processPackages [xiaogpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xiaogpt-2.61.tar.gz tmp/xiaogpt-2.62.tar.gz --markdown 20240420/x/xiaogpt/2.61-2.62/README.md --exclude *.pyd
+[2024-04-20 15:46:01] INFO root fetch - processPackages [wrangle]: executing diffoscope
+[2024-04-20 15:46:01] INFO root fetch - processPackages [wrangle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrangle-0.7.3.tar.gz tmp/wrangle-0.7.4.tar.gz --markdown 20240420/w/wrangle/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-20 15:46:01] INFO root fetch - processPackages [scri]: Downloading https://files.pythonhosted.org/packages/12/c6/86db24b7a4ef54f3e54907479ac9021373208ddb071cc5a2158090639538/scri-2022.8.9.tar.gz
+[2024-04-20 15:46:01] INFO root fetch - processPackages [scri]: executing diffoscope
+[2024-04-20 15:46:01] INFO root fetch - processPackages [scri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scri-2022.8.8.tar.gz tmp/scri-2022.8.9.tar.gz --markdown 20240420/s/scri/2022.8.8-2022.8.9/README.md --exclude *.pyd
+[2024-04-20 15:46:01] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.61.tar.gz]
+[2024-04-20 15:46:01] INFO root fetch - processPackages [xiaogpt]: Remove: archive file [/home/abi/fetcher/tmp/xiaogpt-2.62.tar.gz]
+[2024-04-20 15:46:01] INFO root fetch - main [MainThread]: End processing [xiaogpt]: success
+[2024-04-20 15:46:01] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.3.tar.gz]
+[2024-04-20 15:46:01] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.4.tar.gz]
+[2024-04-20 15:46:01] INFO root fetch - main [MainThread]: End processing [wrangle]: success
+[2024-04-20 15:46:02] INFO root fetch - processPackages [scri]: Remove: archive file [/home/abi/fetcher/tmp/scri-2022.8.8.tar.gz]
+[2024-04-20 15:46:02] INFO root fetch - processPackages [scri]: Remove: archive file [/home/abi/fetcher/tmp/scri-2022.8.9.tar.gz]
+[2024-04-20 15:46:02] INFO root fetch - main [MainThread]: End processing [scri]: success
+[2024-04-20 15:46:02] INFO root fetch - main [MainThread]: Store serial: [22856255]
