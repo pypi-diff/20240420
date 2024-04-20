@@ -17230,3 +17230,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:18:50] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.4.20.tar.gz]
 [2024-04-20 16:18:50] INFO root fetch - main [MainThread]: End processing [ytpb]: success
 [2024-04-20 16:18:50] INFO root fetch - main [MainThread]: Store serial: [22856551]
+[2024-04-20 16:20:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856551]
+[2024-04-20 16:21:00] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 16:21:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC080
+[2024-04-20 16:21:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auth-middleware
+[2024-04-20 16:21:00] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 16:21:00] WARNING root fetch - processPackages [PythonTestLJC080]: Skipping, unable to determine old version
+[2024-04-20 16:21:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC080] error
+[2024-04-20 16:21:00] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-04-20 16:21:00] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/82/09/803273cd28dac3a0477244fbe67e635462cb4604351a1141f5d544d12f50/auth_middleware-0.1.9.tar.gz
+[2024-04-20 16:21:00] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-20 16:21:00] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.8.tar.gz tmp/auth_middleware-0.1.9.tar.gz --markdown 20240420/a/auth-middleware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 16:21:01] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-04-20 16:21:01] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
+[2024-04-20 16:21:01] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-20 16:21:01] INFO root fetch - main [MainThread]: Store serial: [22856559]
