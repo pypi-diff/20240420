@@ -8189,3 +8189,28 @@
 [2024-04-20 05:00:48] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-04-20 05:00:48] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-04-20 05:00:48] INFO root fetch - main [MainThread]: Store serial: [22852018]
+[2024-04-20 05:02:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852018]
+[2024-04-20 05:02:56] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 05:04:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852018]
+[2024-04-20 05:05:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 05:07:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852018]
+[2024-04-20 05:07:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tdf_tool
+[2024-04-20 05:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctui
+[2024-04-20 05:07:07] INFO root fetch - processPackages [tdf_tool]: New version: [2.4.8] Old Version: [2.4.7]
+[2024-04-20 05:07:07] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/7c/02/611300afd5e067a8f20bb7eaea166691782e2bc509acbfd29d27d0ff9e10/tdf_tool-2.4.7.tar.gz
+[2024-04-20 05:07:07] INFO root fetch - processPackages [ctui]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-04-20 05:07:08] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/fb/31/8a196f4b70904daa2c5d50c081d9c6685bf0ca3a62e381d973367ce5bbf7/ctui-0.7.6.tar.gz
+[2024-04-20 05:07:08] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/e2/20/7bd3981f89deedf6ba8fdd42fc8e01b5fa47635732ea90010af530c1cbc2/tdf_tool-2.4.8.tar.gz
+[2024-04-20 05:07:08] INFO root fetch - processPackages [tdf_tool]: executing diffoscope
+[2024-04-20 05:07:08] INFO root fetch - processPackages [tdf_tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdf_tool-2.4.7.tar.gz tmp/tdf_tool-2.4.8.tar.gz --markdown 20240420/t/tdf_tool/2.4.7-2.4.8/README.md --exclude *.pyd
+[2024-04-20 05:07:08] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/a7/e1/56739c3713770eb5cbc24b4a28f20fb076cc37306afad886d09ba2b67c38/ctui-0.7.7.tar.gz
+[2024-04-20 05:07:08] INFO root fetch - processPackages [ctui]: executing diffoscope
+[2024-04-20 05:07:08] INFO root fetch - processPackages [ctui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctui-0.7.6.tar.gz tmp/ctui-0.7.7.tar.gz --markdown 20240420/c/ctui/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-04-20 05:07:09] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.6.tar.gz]
+[2024-04-20 05:07:09] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.7.tar.gz]
+[2024-04-20 05:07:09] INFO root fetch - main [MainThread]: End processing [ctui]: success
+[2024-04-20 05:07:09] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.7.tar.gz]
+[2024-04-20 05:07:09] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.8.tar.gz]
+[2024-04-20 05:07:09] INFO root fetch - main [MainThread]: End processing [tdf_tool]: success
+[2024-04-20 05:07:09] INFO root fetch - main [MainThread]: Store serial: [22852024]
