@@ -16651,3 +16651,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:41:40] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
 [2024-04-20 15:41:40] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2024-04-20 15:41:40] INFO root fetch - main [MainThread]: Store serial: [22856125]
+[2024-04-20 15:43:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856125]
+[2024-04-20 15:43:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 15:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bencode2
+[2024-04-20 15:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ruutv-tojarv
+[2024-04-20 15:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC067
+[2024-04-20 15:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wuff
+[2024-04-20 15:43:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-chip-filter
+[2024-04-20 15:43:48] WARNING root fetch - processPackages [streamlit-chip-filter]: Skipping, unable to determine old version
+[2024-04-20 15:43:48] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter] error
+[2024-04-20 15:43:48] WARNING root fetch - processPackages [PythonTestLJC067]: Skipping, unable to determine old version
+[2024-04-20 15:43:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC067] error
+[2024-04-20 15:43:48] WARNING root fetch - processPackages [ruutv-tojarv]: Skipping, unable to determine old version
+[2024-04-20 15:43:48] INFO root fetch - main [MainThread]: End processing [ruutv-tojarv] error
+[2024-04-20 15:43:48] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 15:43:49] INFO root fetch - processPackages [wuff]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-20 15:43:49] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-04-20 15:43:49] INFO root fetch - processPackages [wuff]: Downloading https://files.pythonhosted.org/packages/04/08/0bd7402acca4413e6a1db40b42e36dbe666f700266f695fd0a29c30496ab/wuff-1.1.3.tar.gz
+[2024-04-20 15:43:49] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-04-20 15:43:49] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-20 15:43:49] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240420/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 15:43:50] INFO root fetch - processPackages [wuff]: Downloading https://files.pythonhosted.org/packages/22/85/154682cf158b9d44759c1e22f9586cf0d22d0c07e6a96a15e7ae71fa2a3a/wuff-1.1.4-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-20 15:43:50] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-04-20 15:43:50] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-04-20 15:43:50] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-20 15:43:50] INFO root fetch - processPackages [wuff]: executing diffoscope
+[2024-04-20 15:43:50] INFO root fetch - processPackages [wuff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wuff-1.1.3.tar.gz tmp/wuff-1.1.4-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240420/w/wuff/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-20 15:43:51] INFO root fetch - processPackages [wuff]: Remove: archive file [/home/abi/fetcher/tmp/wuff-1.1.3.tar.gz]
+[2024-04-20 15:43:51] INFO root fetch - processPackages [wuff]: Remove: archive file [/home/abi/fetcher/tmp/wuff-1.1.4-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-20 15:43:51] INFO root fetch - main [MainThread]: End processing [wuff]: success
+[2024-04-20 15:43:51] INFO root fetch - main [MainThread]: Store serial: [22856201]
