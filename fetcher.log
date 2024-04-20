@@ -18598,3 +18598,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:53:55] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.1.tar.gz]
 [2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [fastapi-sqlmodel-starter]: success
 [2024-04-20 17:53:55] INFO root fetch - main [MainThread]: Store serial: [22857176]
+[2024-04-20 17:55:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857176]
+[2024-04-20 17:56:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 17:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: movoid-robotframework-selenium
+[2024-04-20 17:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rttm-manager
+[2024-04-20 17:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlcbase
+[2024-04-20 17:56:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyuptech
+[2024-04-20 17:56:04] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3a2] Old Version: [0.1.3a1]
+[2024-04-20 17:56:04] INFO root fetch - processPackages [movoid-robotframework-selenium]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-20 17:56:04] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 17:56:04] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 17:56:04] WARNING root fetch - processPackages [mlcbase]: Skipping, unable to determine old version
+[2024-04-20 17:56:04] INFO root fetch - main [MainThread]: End processing [mlcbase] error
+[2024-04-20 17:56:04] INFO root fetch - processPackages [movoid-robotframework-selenium]: Downloading https://files.pythonhosted.org/packages/c3/ca/72e07304d25ddcaccf06588762ccef5dbaba731b0cc644f0626d5ea71d1c/movoid_robotframework_selenium-1.2.0.tar.gz
+[2024-04-20 17:56:04] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/f4/9e/4892556821b9ff008cd3371994f36c4bd706291f41334b88ee4b4ad33e35/pyuptech-0.1.3a1.tar.gz
+[2024-04-20 17:56:05] INFO root fetch - processPackages [movoid-robotframework-selenium]: Downloading https://files.pythonhosted.org/packages/70/69/98354f509576898abc1f967f25d50bb726809cbb92e93b39dd856ef73cd4/movoid_robotframework_selenium-1.2.1.tar.gz
+[2024-04-20 17:56:05] INFO root fetch - processPackages [movoid-robotframework-selenium]: executing diffoscope
+[2024-04-20 17:56:05] INFO root fetch - processPackages [movoid-robotframework-selenium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_robotframework_selenium-1.2.0.tar.gz tmp/movoid_robotframework_selenium-1.2.1.tar.gz --markdown 20240420/m/movoid-robotframework-selenium/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/45/bb/b5f3a687da0780cfb12b41f1e9e8d756a6893178b09f4c443941913505ee/pyuptech-0.1.3a2.tar.gz
+[2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.3a1.tar.gz tmp/pyuptech-0.1.3a2.tar.gz --markdown 20240420/p/pyuptech/0.1.3a1-0.1.3a2/README.md --exclude *.pyd
+[2024-04-20 17:56:05] INFO root fetch - processPackages [movoid-robotframework-selenium]: Remove: archive file [/home/abi/fetcher/tmp/movoid_robotframework_selenium-1.2.0.tar.gz]
+[2024-04-20 17:56:05] INFO root fetch - processPackages [movoid-robotframework-selenium]: Remove: archive file [/home/abi/fetcher/tmp/movoid_robotframework_selenium-1.2.1.tar.gz]
+[2024-04-20 17:56:05] INFO root fetch - main [MainThread]: End processing [movoid-robotframework-selenium]: success
+[2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a1.tar.gz]
+[2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a2.tar.gz]
+[2024-04-20 17:56:05] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 17:56:05] INFO root fetch - main [MainThread]: Store serial: [22857188]
