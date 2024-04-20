@@ -9168,3 +9168,18 @@
 [2024-04-20 06:24:37] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
 [2024-04-20 06:24:37] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
 [2024-04-20 06:24:37] INFO root fetch - main [MainThread]: Store serial: [22852466]
+[2024-04-20 06:26:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852466]
+[2024-04-20 06:26:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-offset
+[2024-04-20 06:26:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-priming
+[2024-04-20 06:26:46] WARNING root fetch - processPackages [llm-offset]: Skipping, unable to determine old version
+[2024-04-20 06:26:46] INFO root fetch - main [MainThread]: End processing [llm-offset] error
+[2024-04-20 06:26:46] INFO root fetch - processPackages [few-shot-priming]: New version: [0.3.99] Old Version: [0.3.98]
+[2024-04-20 06:26:46] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/eb/67/d15b11d0bfb57369fa16ba7f8c97cd3ddec8f771e6da8f11a3d819004b69/few_shot_priming-0.3.98-py3-none-any.whl
+[2024-04-20 06:26:46] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/ff/11/548f6e96803602e6431dc610d736d401b20fde986f85c35c8ad19a6d0958/few_shot_priming-0.3.99-py3-none-any.whl
+[2024-04-20 06:26:47] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2024-04-20 06:26:47] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip --markdown 20240420/f/few-shot-priming/0.3.98-0.3.99/README.md --exclude *.pyd
+[2024-04-20 06:26:48] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.98-py3-none-any.whl.zip]
+[2024-04-20 06:26:48] INFO root fetch - processPackages [few-shot-priming]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_priming-0.3.99-py3-none-any.whl.zip]
+[2024-04-20 06:26:48] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2024-04-20 06:26:48] INFO root fetch - main [MainThread]: Store serial: [22852474]
