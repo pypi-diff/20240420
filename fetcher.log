@@ -19118,3 +19118,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:31:05] INFO root fetch - processPackages [jztools]: Remove: archive file [/home/abi/fetcher/tmp/jztools-0.1.5.tar.gz]
 [2024-04-20 18:31:05] INFO root fetch - main [MainThread]: End processing [jztools]: success
 [2024-04-20 18:31:05] INFO root fetch - main [MainThread]: Store serial: [22857420]
+[2024-04-20 18:33:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857420]
+[2024-04-20 18:33:14] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Fringes-GUI
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: basek2
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: textual
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: data-prep-lab
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: galapy-fit
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC128
+[2024-04-20 18:33:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: notfunny
+[2024-04-20 18:33:14] INFO root fetch - processPackages [notfunny]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-20 18:33:14] INFO root fetch - processPackages [data-prep-lab]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 18:33:14] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4e/88/fd9e76f74b75f3f8bf3f57d82bb4342f25fd2c76a2d72ff885091f766dd2/notfunny-0.5.0.tar.gz
+[2024-04-20 18:33:14] INFO root fetch - processPackages [basek2]: New version: [0.0.0.3] Old Version: [0.0.0.2]
+[2024-04-20 18:33:14] INFO root fetch - processPackages [Fringes-GUI]: New version: [1.0.0] Old Version: [0.3.3]
+[2024-04-20 18:33:14] WARNING root fetch - processPackages [PythonTestLJC128]: Skipping, unable to determine old version
+[2024-04-20 18:33:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC128] error
+[2024-04-20 18:33:14] INFO root fetch - processPackages [galapy-fit]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-20 18:33:14] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 18:33:15] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/88/56/e64b73281f5ac9698b19eb9f80d0236c009fa7dfe8cd6c61c70f19eb41a1/data_prep_lab-0.1.0.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [basek2]: Downloading https://files.pythonhosted.org/packages/87/7b/9fc5b820bc21620adb8bb9ba9ac1725988ff0c7dd1814c722622e28ecbc8/basek2-0.0.0.2.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [Fringes-GUI]: Downloading https://files.pythonhosted.org/packages/5d/fe/9a2bb33ea85c3decfc919715e97319d32bb3291bbc2f3bb92d5d9f2ef88f/fringes_gui-0.3.3.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [galapy-fit]: Downloading https://files.pythonhosted.org/packages/26/f8/e236eb0f1f700c71a2d0331f5f7c2f80d6b144d0a5016e8be17fcd8a9b50/galapy-fit-0.5.2.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/71/3843d0a81ed5c8ad734f1acf1de563e1e72af24c37b534e9dcea84b3064f/notfunny-0.5.1.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.0.tar.gz tmp/notfunny-0.5.1.tar.gz --markdown 20240420/n/notfunny/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-20 18:33:15] INFO root fetch - processPackages [data-prep-lab]: Downloading https://files.pythonhosted.org/packages/88/94/f53745c266ce80cbf1bbfd64ae03320ef2883a25602f8c0a1ee5f7882afc/data_prep_lab-0.1.1.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [basek2]: Downloading https://files.pythonhosted.org/packages/00/d7/0e372232d2de47614cb0aab24b0e0014f71a91ef596b2b42940a9ddbe87a/basek2-0.0.0.3.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [Fringes-GUI]: Downloading https://files.pythonhosted.org/packages/f3/f4/c8d9e0627e7551401242857d5d8eca64c3dc436efc58509851acd17a6a5a/fringes_gui-1.0.0.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [galapy-fit]: Downloading https://files.pythonhosted.org/packages/ff/f8/edc9011869bc4e81ebaee20554af1ab3ee75d31190b478d39368584a06fe/galapy_fit-0.5.3.tar.gz
+[2024-04-20 18:33:15] INFO root fetch - processPackages [data-prep-lab]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [data-prep-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data_prep_lab-0.1.0.tar.gz tmp/data_prep_lab-0.1.1.tar.gz --markdown 20240420/d/data-prep-lab/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 18:33:15] INFO root fetch - processPackages [basek2]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [basek2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basek2-0.0.0.2.tar.gz tmp/basek2-0.0.0.3.tar.gz --markdown 20240420/b/basek2/0.0.0.2-0.0.0.3/README.md --exclude *.pyd
+[2024-04-20 18:33:15] INFO root fetch - processPackages [Fringes-GUI]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [Fringes-GUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fringes_gui-0.3.3.tar.gz tmp/fringes_gui-1.0.0.tar.gz --markdown 20240420/F/Fringes-GUI/0.3.3-1.0.0/README.md --exclude *.pyd
+[2024-04-20 18:33:15] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240420/t/textual/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 18:33:15] INFO root fetch - processPackages [galapy-fit]: executing diffoscope
+[2024-04-20 18:33:15] INFO root fetch - processPackages [galapy-fit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galapy-fit-0.5.2.tar.gz tmp/galapy_fit-0.5.3.tar.gz --markdown 20240420/g/galapy-fit/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-20 18:33:16] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.0.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.1.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:33:16] INFO root fetch - processPackages [basek2]: Remove: archive file [/home/abi/fetcher/tmp/basek2-0.0.0.2.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [basek2]: Remove: archive file [/home/abi/fetcher/tmp/basek2-0.0.0.3.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [basek2]: success
+[2024-04-20 18:33:16] INFO root fetch - processPackages [Fringes-GUI]: Remove: archive file [/home/abi/fetcher/tmp/fringes_gui-0.3.3.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [Fringes-GUI]: Remove: archive file [/home/abi/fetcher/tmp/fringes_gui-1.0.0.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [Fringes-GUI]: success
+[2024-04-20 18:33:16] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.0.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [data-prep-lab]: Remove: archive file [/home/abi/fetcher/tmp/data_prep_lab-0.1.1.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [data-prep-lab]: success
+[2024-04-20 18:33:16] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-04-20 18:33:16] INFO root fetch - processPackages [galapy-fit]: Remove: archive file [/home/abi/fetcher/tmp/galapy-fit-0.5.2.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - processPackages [galapy-fit]: Remove: archive file [/home/abi/fetcher/tmp/galapy_fit-0.5.3.tar.gz]
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [galapy-fit]: success
+[2024-04-20 18:33:16] INFO root fetch - main [MainThread]: Store serial: [22857457]
