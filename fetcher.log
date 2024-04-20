@@ -23126,3 +23126,12 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:32:47] INFO root fetch - processPackages [metrics_layer]: Remove: archive file [/home/abi/fetcher/tmp/metrics_layer-0.9.9.tar.gz]
 [2024-04-20 22:32:47] INFO root fetch - main [MainThread]: End processing [metrics_layer]: success
 [2024-04-20 22:32:47] INFO root fetch - main [MainThread]: Store serial: [22859297]
+[2024-04-20 22:34:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859297]
+[2024-04-20 22:34:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 22:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llvm-python
+[2024-04-20 22:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC215
+[2024-04-20 22:34:56] WARNING root fetch - processPackages [llvm-python]: Skipping, unable to determine old version
+[2024-04-20 22:34:56] INFO root fetch - main [MainThread]: End processing [llvm-python] error
+[2024-04-20 22:34:56] WARNING root fetch - processPackages [PythonTestLJC215]: Skipping, unable to determine old version
+[2024-04-20 22:34:56] INFO root fetch - main [MainThread]: End processing [PythonTestLJC215] error
+[2024-04-20 22:34:56] INFO root fetch - main [MainThread]: Store serial: [22859318]
