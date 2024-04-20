@@ -7046,3 +7046,70 @@
 [2024-04-20 03:25:11] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.6rc0.tar.gz]
 [2024-04-20 03:25:11] INFO root fetch - main [MainThread]: End processing [xl2roefact]: success
 [2024-04-20 03:25:11] INFO root fetch - main [MainThread]: Store serial: [22851331]
+[2024-04-20 03:27:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851331]
+[2024-04-20 03:27:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediff
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pandera
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-shell
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xpk
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mo-times
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: funtoo-ramdisk
+[2024-04-20 03:27:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bedrock-agent
+[2024-04-20 03:27:19] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202404190125] Old Version: [1.0.0.dev202404180125]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [pandera]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [bedrock-agent]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202404190125] Old Version: [1.0.0.dev202404180125]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [tf-shell]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [funtoo-ramdisk]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/9e/a5/e3aedac092eeff49e6d3d0c1a8610db4f3a3c3b8ea518e407594f6796094/onediffx-1.0.0.dev202404180125.tar.gz
+[2024-04-20 03:27:19] INFO root fetch - processPackages [mo-times]: New version: [5.589.24111] Old Version: [5.584.24095]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [xpk]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 03:27:19] INFO root fetch - processPackages [pandera]: Downloading https://files.pythonhosted.org/packages/b0/0e/d435a4c20c8ca9269ca2ccf44f3bb98ee85b9fc9fbfda8f1952cfc2b9c43/pandera-0.8.1.tar.gz
+[2024-04-20 03:27:19] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/90/8d/dcb2ca0ea6922d35722233347cc2121567df94eb704761d162f5166f1ef3/onediff-1.0.0.dev202404180125.tar.gz
+[2024-04-20 03:27:19] INFO root fetch - processPackages [bedrock-agent]: Downloading https://files.pythonhosted.org/packages/c3/c3/7acdc1591ba0183be7b06572e3184b9c796b1d2a633c7a685892be358d87/bedrock-agent-0.0.8.tar.gz
+[2024-04-20 03:27:20] WARNING root fetch - processPackages [bedrock-agent]: Skipping package: exceeds size limit 36374436>=10485760
+[2024-04-20 03:27:20] INFO root fetch - main [MainThread]: End processing [bedrock-agent] error
+[2024-04-20 03:27:20] INFO root fetch - processPackages [tf-shell]: Downloading https://files.pythonhosted.org/packages/f8/e1/9e9bf3f55f64fb8e27a672439e3232c15e1953447dad3fcf38f38756766d/tf_shell-0.0.2-cp310-cp310-manylinux_2_35_x86_64.whl
+[2024-04-20 03:27:20] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/da/10/6845e02bd9911747d6a07451e6cce1a5caefbd54071cb663fe12744e3e3c/mo-times-5.584.24095.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [funtoo-ramdisk]: Downloading https://files.pythonhosted.org/packages/fa/a9/ef20abf6a7c37f79dec2d67bb8b8d1fefefc573195f32eb943558d8597db/funtoo_ramdisk-1.1.8.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [xpk]: Downloading https://files.pythonhosted.org/packages/7e/72/e70ebb7d09b3b5492a919f8a6f8134b8e006379fcab53545f7fac1038225/xpk-0.4.0.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [pandera]: Downloading https://files.pythonhosted.org/packages/0b/8f/199b2d6886d40d20c9382c189d0b40c6118c2df6f0df21e9e78ab886aaea/pandera-0.9.0.tar.gz
+[2024-04-20 03:27:20] WARNING root fetch - processPackages [tf-shell]: Skipping package: exceeds size limit 16006706>=10485760
+[2024-04-20 03:27:20] INFO root fetch - main [MainThread]: End processing [tf-shell] error
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/35/3f/caefbb7da30501c1a5ed372df2df008a27790cc3752effb4e944edaba820/onediffx-1.0.0.dev202404190125.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/39/97/851db73cc7c30718182ed9269371b226655b5c4f843a2b7f652a50b50d5d/onediff-1.0.0.dev202404190125.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [pandera]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [pandera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandera-0.8.1.tar.gz tmp/pandera-0.9.0.tar.gz --markdown 20240420/p/pandera/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202404180125.tar.gz tmp/onediffx-1.0.0.dev202404190125.tar.gz --markdown 20240420/o/onediffx/1.0.0.dev202404180125-1.0.0.dev202404190125/README.md --exclude *.pyd
+[2024-04-20 03:27:20] INFO root fetch - processPackages [mo-times]: Downloading https://files.pythonhosted.org/packages/2e/ac/b4f0f8c673e3e7d0c4937bc28758824c27f2554b7e5c3854054e58cd49e9/mo_times-5.589.24111.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202404180125.tar.gz tmp/onediff-1.0.0.dev202404190125.tar.gz --markdown 20240420/o/onediff/1.0.0.dev202404180125-1.0.0.dev202404190125/README.md --exclude *.pyd
+[2024-04-20 03:27:20] INFO root fetch - processPackages [xpk]: Downloading https://files.pythonhosted.org/packages/38/1e/333aa81faacc5777479d79e70c6a85775f49064da63509eb344eb4ced9b6/xpk-0.5.0.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [funtoo-ramdisk]: Downloading https://files.pythonhosted.org/packages/dd/08/9f1cdd46afa442da53cf8c4372adc9059d36e9e99c7fd438132df3f19a43/funtoo_ramdisk-1.1.9.tar.gz
+[2024-04-20 03:27:20] INFO root fetch - processPackages [funtoo-ramdisk]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [funtoo-ramdisk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funtoo_ramdisk-1.1.8.tar.gz tmp/funtoo_ramdisk-1.1.9.tar.gz --markdown 20240420/f/funtoo-ramdisk/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-04-20 03:27:20] INFO root fetch - processPackages [mo-times]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [mo-times]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-times-5.584.24095.tar.gz tmp/mo_times-5.589.24111.tar.gz --markdown 20240420/m/mo-times/5.584.24095-5.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:27:20] INFO root fetch - processPackages [xpk]: executing diffoscope
+[2024-04-20 03:27:20] INFO root fetch - processPackages [xpk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpk-0.4.0.tar.gz tmp/xpk-0.5.0.tar.gz --markdown 20240420/x/xpk/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 03:27:21] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404180125.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202404190125.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-20 03:27:21] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404180125.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202404190125.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-20 03:27:21] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo-times-5.584.24095.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [mo-times]: Remove: archive file [/home/abi/fetcher/tmp/mo_times-5.589.24111.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [mo-times]: success
+[2024-04-20 03:27:21] INFO root fetch - processPackages [pandera]: Remove: archive file [/home/abi/fetcher/tmp/pandera-0.8.1.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [pandera]: Remove: archive file [/home/abi/fetcher/tmp/pandera-0.9.0.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [pandera]: success
+[2024-04-20 03:27:21] INFO root fetch - processPackages [xpk]: Remove: archive file [/home/abi/fetcher/tmp/xpk-0.4.0.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [xpk]: Remove: archive file [/home/abi/fetcher/tmp/xpk-0.5.0.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [xpk]: success
+[2024-04-20 03:27:21] INFO root fetch - processPackages [funtoo-ramdisk]: Remove: archive file [/home/abi/fetcher/tmp/funtoo_ramdisk-1.1.8.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - processPackages [funtoo-ramdisk]: Remove: archive file [/home/abi/fetcher/tmp/funtoo_ramdisk-1.1.9.tar.gz]
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [funtoo-ramdisk]: success
+[2024-04-20 03:27:21] INFO root fetch - main [MainThread]: Store serial: [22851407]
