@@ -10396,3 +10396,36 @@
 [2024-04-20 08:13:19] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240419.tar.gz]
 [2024-04-20 08:13:19] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-20 08:13:19] INFO root fetch - main [MainThread]: Store serial: [22853080]
+[2024-04-20 08:15:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853080]
+[2024-04-20 08:15:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lylfake
+[2024-04-20 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2024-04-20 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: function2widgets
+[2024-04-20 08:15:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fake-bpy-module
+[2024-04-20 08:15:28] WARNING root fetch - processPackages [lylfake]: Skipping, unable to determine old version
+[2024-04-20 08:15:28] INFO root fetch - main [MainThread]: End processing [lylfake] error
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240419] Old Version: [20240418]
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240419] Old Version: [20240418]
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/3c/4c/33322dadec975fb8e5c6dfac0a5c49252bcf874f299905d2c486da32a494/fake_bpy_module-20240418.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [function2widgets]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/90/c1/1cfd1c14c46b4202e787f3e423e53af828a4ce08db2d755ddfb34631df43/fake_bpy_module_latest-20240418.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/8d/1f/9c80cc0aab57113a16bdbcc707f880482de6978e247d641da138c8c8c73d/function2widgets-0.6.8.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/01/b8/92ba760462cd0e40b0de9904f4b48e4cc974dbecb05078806bf1adac9343/fake_bpy_module_latest-20240419.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/70/0c/e955ad8772eaa9312e939d01d105849a859da4ead7b53e9545ce89adcacf/fake_bpy_module-20240419.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/33/ed/124419d49f595a1f7fda6ac265ce6834078b604e525ad52a5c3168e69ad1/function2widgets-0.6.9.tar.gz
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240418.tar.gz tmp/fake_bpy_module_latest-20240419.tar.gz --markdown 20240420/f/fake-bpy-module-latest/20240418-20240419/README.md --exclude *.pyd
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-04-20 08:15:28] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240418.tar.gz tmp/fake_bpy_module-20240419.tar.gz --markdown 20240420/f/fake-bpy-module/20240418-20240419/README.md --exclude *.pyd
+[2024-04-20 08:15:28] INFO root fetch - processPackages [function2widgets]: executing diffoscope
+[2024-04-20 08:15:28] INFO root fetch - processPackages [function2widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function2widgets-0.6.8.tar.gz tmp/function2widgets-0.6.9.tar.gz --markdown 20240420/f/function2widgets/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-04-20 08:15:29] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.8.tar.gz]
+[2024-04-20 08:15:29] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.9.tar.gz]
+[2024-04-20 08:15:29] INFO root fetch - main [MainThread]: End processing [function2widgets]: success
+[2024-04-20 08:15:36] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240418.tar.gz]
+[2024-04-20 08:15:36] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240419.tar.gz]
+[2024-04-20 08:15:36] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-04-20 08:15:36] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240418.tar.gz]
+[2024-04-20 08:15:36] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240419.tar.gz]
+[2024-04-20 08:15:36] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-04-20 08:15:36] INFO root fetch - main [MainThread]: Store serial: [22853092]
