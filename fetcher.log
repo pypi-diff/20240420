@@ -19386,3 +19386,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:48:36] INFO root fetch - processPackages [fastapi-class]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_class-3.6.0.tar.gz]
 [2024-04-20 18:48:36] INFO root fetch - main [MainThread]: End processing [fastapi-class]: success
 [2024-04-20 18:48:36] INFO root fetch - main [MainThread]: Store serial: [22857551]
+[2024-04-20 18:50:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857551]
+[2024-04-20 18:50:45] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-115
+[2024-04-20 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sawsi
+[2024-04-20 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC134
+[2024-04-20 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mepost-sdk
+[2024-04-20 18:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cerbogen
+[2024-04-20 18:50:45] WARNING root fetch - processPackages [mepost-sdk]: Skipping, unable to determine old version
+[2024-04-20 18:50:45] INFO root fetch - main [MainThread]: End processing [mepost-sdk] error
+[2024-04-20 18:50:45] INFO root fetch - processPackages [python-115]: New version: [0.0.6.1] Old Version: [0.0.6]
+[2024-04-20 18:50:45] INFO root fetch - processPackages [cerbogen]: New version: [0.0.38] Old Version: [0.0.37]
+[2024-04-20 18:50:45] INFO root fetch - processPackages [sawsi]: New version: [9.9] Old Version: [9.8]
+[2024-04-20 18:50:45] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/9a/1a/2782937e8ee7d821b8ff17bfe7ceccbd1c775de94ffe5f8c33a84be9a2ca/python_115-0.0.6.tar.gz
+[2024-04-20 18:50:45] WARNING root fetch - processPackages [PythonTestLJC134]: Skipping, unable to determine old version
+[2024-04-20 18:50:45] INFO root fetch - main [MainThread]: End processing [PythonTestLJC134] error
+[2024-04-20 18:50:45] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/57/e7/f7adafdc1a202c0369fb4d955aeff49c0970b648c5185223baf1627af802/cerbogen-0.0.37.tar.gz
+[2024-04-20 18:50:45] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/a5/89/e5230b963c36d9342bd53c4174b8b4f9595f77c5aa510614cf80ac5315a0/sawsi-9.8.tar.gz
+[2024-04-20 18:50:45] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/77/c4/cbe09f4a6e3d6b40d3d81e7abc4c484a899e6192dc710bd8fb0b2ef8dc5a/python_115-0.0.6.1.tar.gz
+[2024-04-20 18:50:45] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/fa/ee/75bd40be70b526e73ff03f1860254b699011ab0366c3e70b06534cb750f2/cerbogen-0.0.38.tar.gz
+[2024-04-20 18:50:45] INFO root fetch - processPackages [sawsi]: Downloading https://files.pythonhosted.org/packages/69/c2/e945385340121de75cca5d00aa9ac99f3d874c5977239a7d7efe5e969e17/sawsi-9.9.tar.gz
+[2024-04-20 18:50:45] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-20 18:50:45] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.tar.gz tmp/python_115-0.0.6.1.tar.gz --markdown 20240420/p/python-115/0.0.6-0.0.6.1/README.md --exclude *.pyd
+[2024-04-20 18:50:45] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:50:45] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.37.tar.gz tmp/cerbogen-0.0.38.tar.gz --markdown 20240420/c/cerbogen/0.0.37-0.0.38/README.md --exclude *.pyd
+[2024-04-20 18:50:45] INFO root fetch - processPackages [sawsi]: executing diffoscope
+[2024-04-20 18:50:45] INFO root fetch - processPackages [sawsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sawsi-9.8.tar.gz tmp/sawsi-9.9.tar.gz --markdown 20240420/s/sawsi/9.8-9.9/README.md --exclude *.pyd
+[2024-04-20 18:50:46] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.37.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.38.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:50:46] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.8.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - processPackages [sawsi]: Remove: archive file [/home/abi/fetcher/tmp/sawsi-9.9.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - main [MainThread]: End processing [sawsi]: success
+[2024-04-20 18:50:46] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.1.tar.gz]
+[2024-04-20 18:50:46] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-20 18:50:46] INFO root fetch - main [MainThread]: Store serial: [22857571]
