@@ -15513,3 +15513,15 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:22:08] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
 [2024-04-20 14:22:08] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 14:22:08] INFO root fetch - main [MainThread]: Store serial: [22855589]
+[2024-04-20 14:24:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855589]
+[2024-04-20 14:24:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dolibarrpy
+[2024-04-20 14:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rttm
+[2024-04-20 14:24:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rttm-manager
+[2024-04-20 14:24:17] WARNING root fetch - processPackages [rttm]: Skipping, unable to determine old version
+[2024-04-20 14:24:17] INFO root fetch - main [MainThread]: End processing [rttm] error
+[2024-04-20 14:24:17] WARNING root fetch - processPackages [dolibarrpy]: Skipping, unable to determine old version
+[2024-04-20 14:24:17] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 14:24:17] INFO root fetch - main [MainThread]: End processing [dolibarrpy] error
+[2024-04-20 14:24:17] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 14:24:17] INFO root fetch - main [MainThread]: Store serial: [22855602]
