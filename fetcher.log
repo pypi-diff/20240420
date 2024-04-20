@@ -13631,3 +13631,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:07:59] INFO root fetch - processPackages [magictk]: Remove: archive file [/home/abi/fetcher/tmp/magictk-0.0.2.41.tar.gz]
 [2024-04-20 12:07:59] INFO root fetch - main [MainThread]: End processing [magictk]: success
 [2024-04-20 12:07:59] INFO root fetch - main [MainThread]: Store serial: [22854649]
+[2024-04-20 12:10:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854649]
+[2024-04-20 12:10:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 12:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 12:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-keras-nightly
+[2024-04-20 12:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-evm
+[2024-04-20 12:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: napari-findaureus
+[2024-04-20 12:10:09] INFO root fetch - processPackages [snailshell]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 12:10:09] INFO root fetch - processPackages [napari-findaureus]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 12:10:09] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024041909] Old Version: [2.17.0.dev2024041809]
+[2024-04-20 12:10:09] INFO root fetch - processPackages [pytest-evm]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 12:10:09] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/27/22/ade224815ad5c78584f26f19d041337ba2b5abf250190b08ec8a52e7bfe9/snailshell-0.1.0.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/2a/59/4c71bad943ff66a40678899d94afecfa45e8ba52a1fa51e2625d140a0526/tf_keras_nightly-2.17.0.dev2024041809.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [napari-findaureus]: Downloading https://files.pythonhosted.org/packages/fe/ff/07b22e6d3eba4be24240535f0f3c7e7ae2c7c69d1383c5e3cbaceceaa364/napari_findaureus-0.0.1.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [pytest-evm]: Downloading https://files.pythonhosted.org/packages/33/e6/936ff0e4d469c43fed06626b3c86ecfdf0b9eb599b6e071e68b5f7cc91b5/pytest_evm-0.1.1.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/7f/6d/6baf06ab62f0be33ee84846d2d479cad85dd015af1470dc5a2cca48fdfbe/tf_keras_nightly-2.17.0.dev2024041909.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [napari-findaureus]: Downloading https://files.pythonhosted.org/packages/ab/3a/6f2d5729216e4fc05c293b5732cef08b96d6243301bc5d81f2fdd7844e38/napari_findaureus-0.0.2.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [pytest-evm]: Downloading https://files.pythonhosted.org/packages/d2/03/61b876b4c77ccaf2a0460a746e30ab441bdffc119dbb19feab6db76b0d8a/pytest_evm-0.1.2.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [napari-findaureus]: executing diffoscope
+[2024-04-20 12:10:09] INFO root fetch - processPackages [napari-findaureus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napari_findaureus-0.0.1.tar.gz tmp/napari_findaureus-0.0.2.tar.gz --markdown 20240420/n/napari-findaureus/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 12:10:09] INFO root fetch - processPackages [pytest-evm]: executing diffoscope
+[2024-04-20 12:10:09] INFO root fetch - processPackages [pytest-evm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_evm-0.1.1.tar.gz tmp/pytest_evm-0.1.2.tar.gz --markdown 20240420/p/pytest-evm/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 12:10:09] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/1f/c1/d5ce3199a9e61dad400b301f53c3bb5cc4b43acb5bca2dac9b2503c1f4ff/snailshell-0.2.0.tar.gz
+[2024-04-20 12:10:09] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-20 12:10:09] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024041809.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024041909.tar.gz --markdown 20240420/t/tf-keras-nightly/2.17.0.dev2024041809-2.17.0.dev2024041909/README.md --exclude *.pyd
+[2024-04-20 12:10:10] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 12:10:10] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.1.0.tar.gz tmp/snailshell-0.2.0.tar.gz --markdown 20240420/s/snailshell/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 12:10:10] INFO root fetch - processPackages [napari-findaureus]: Remove: archive file [/home/abi/fetcher/tmp/napari_findaureus-0.0.1.tar.gz]
+[2024-04-20 12:10:10] INFO root fetch - processPackages [napari-findaureus]: Remove: archive file [/home/abi/fetcher/tmp/napari_findaureus-0.0.2.tar.gz]
+[2024-04-20 12:10:10] INFO root fetch - main [MainThread]: End processing [napari-findaureus]: success
+[2024-04-20 12:10:10] INFO root fetch - processPackages [pytest-evm]: Remove: archive file [/home/abi/fetcher/tmp/pytest_evm-0.1.1.tar.gz]
+[2024-04-20 12:10:10] INFO root fetch - processPackages [pytest-evm]: Remove: archive file [/home/abi/fetcher/tmp/pytest_evm-0.1.2.tar.gz]
+[2024-04-20 12:10:10] INFO root fetch - main [MainThread]: End processing [pytest-evm]: success
+[2024-04-20 12:10:11] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.1.0.tar.gz]
+[2024-04-20 12:10:11] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.0.tar.gz]
+[2024-04-20 12:10:11] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 12:10:12] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024041809.tar.gz]
+[2024-04-20 12:10:12] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024041909.tar.gz]
+[2024-04-20 12:10:12] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-20 12:10:12] INFO root fetch - main [MainThread]: Store serial: [22854661]
