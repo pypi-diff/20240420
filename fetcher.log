@@ -11379,3 +11379,27 @@
 [2024-04-20 09:25:59] WARNING root fetch - processPackages [kitsunekko-tools]: Skipping, unable to determine old version
 [2024-04-20 09:25:59] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools] error
 [2024-04-20 09:25:59] INFO root fetch - main [MainThread]: Store serial: [22853572]
+[2024-04-20 09:28:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853572]
+[2024-04-20 09:28:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:28:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aryan-basic-math-operations
+[2024-04-20 09:28:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xklb
+[2024-04-20 09:28:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: munet
+[2024-04-20 09:28:08] WARNING root fetch - processPackages [aryan-basic-math-operations]: Skipping, unable to determine old version
+[2024-04-20 09:28:08] INFO root fetch - main [MainThread]: End processing [aryan-basic-math-operations] error
+[2024-04-20 09:28:09] INFO root fetch - processPackages [munet]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 09:28:09] INFO root fetch - processPackages [xklb]: New version: [2.6.9] Old Version: [2.6.7]
+[2024-04-20 09:28:09] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/ab/ab/50abc3289545adb952eebcb12b5d75cd68c3deddb2ead102309f6b23b3fd/munet-0.9.8.tar.gz
+[2024-04-20 09:28:09] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/c0/69/2094cbc3ea1d5a61a495e8303da8cddfa7571c720b175d62baf286a00111/xklb-2.6.7.tar.gz
+[2024-04-20 09:28:09] INFO root fetch - processPackages [munet]: Downloading https://files.pythonhosted.org/packages/e9/a7/16aef984464ad235996a4918e7377bd5e40cd015eb9b5cae381b237aeba4/munet-0.9.9.tar.gz
+[2024-04-20 09:28:09] INFO root fetch - processPackages [munet]: executing diffoscope
+[2024-04-20 09:28:09] INFO root fetch - processPackages [munet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/munet-0.9.8.tar.gz tmp/munet-0.9.9.tar.gz --markdown 20240420/m/munet/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 09:28:09] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/38/2a/2958f5a1fedda07c3aa6cb197a1270734f34698793fb935ae5debd5e8c0c/xklb-2.6.9.tar.gz
+[2024-04-20 09:28:10] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2024-04-20 09:28:10] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-2.6.7.tar.gz tmp/xklb-2.6.9.tar.gz --markdown 20240420/x/xklb/2.6.7-2.6.9/README.md --exclude *.pyd
+[2024-04-20 09:28:10] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.8.tar.gz]
+[2024-04-20 09:28:10] INFO root fetch - processPackages [munet]: Remove: archive file [/home/abi/fetcher/tmp/munet-0.9.9.tar.gz]
+[2024-04-20 09:28:10] INFO root fetch - main [MainThread]: End processing [munet]: success
+[2024-04-20 09:28:11] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.7.tar.gz]
+[2024-04-20 09:28:11] INFO root fetch - processPackages [xklb]: Remove: archive file [/home/abi/fetcher/tmp/xklb-2.6.9.tar.gz]
+[2024-04-20 09:28:11] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2024-04-20 09:28:11] INFO root fetch - main [MainThread]: Store serial: [22853583]
