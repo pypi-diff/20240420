@@ -7578,3 +7578,45 @@
 [2024-04-20 04:07:13] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.2.tar.gz]
 [2024-04-20 04:07:13] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
 [2024-04-20 04:07:13] INFO root fetch - main [MainThread]: Store serial: [22851747]
+[2024-04-20 04:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851747]
+[2024-04-20 04:09:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 04:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: appmesh
+[2024-04-20 04:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gdpx
+[2024-04-20 04:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: disposable-email-domains
+[2024-04-20 04:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysettrie
+[2024-04-20 04:09:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2024-04-20 04:09:23] INFO root fetch - processPackages [appmesh]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-20 04:09:23] WARNING root fetch - processPackages [pysettrie]: Skipping, unable to determine old version
+[2024-04-20 04:09:23] INFO root fetch - main [MainThread]: End processing [pysettrie] error
+[2024-04-20 04:09:23] INFO root fetch - processPackages [disposable-email-domains]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 04:09:23] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 04:09:23] INFO root fetch - processPackages [gdpx]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 04:09:23] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 04:09:23] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/f6/a5/89f67998bf4730468e2530767fa3465c39e38bc01a2f7edd084fb16a4cc5/appmesh-0.8.3-py3-none-any.whl
+[2024-04-20 04:09:23] INFO root fetch - processPackages [disposable-email-domains]: Downloading https://files.pythonhosted.org/packages/4d/24/74930e418d9a40ac2b25cbae9c9c11ec44dc23132691e241c2adaf455430/disposable-email-domains-0.0.98.tar.gz
+[2024-04-20 04:09:23] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 04:09:23] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/e1/05/2aa2754138ac670a4828eb16f8fbe508a902bee63c187f9f63eedda46a3b/gdpx-0.0.6.tar.gz
+[2024-04-20 04:09:23] INFO root fetch - processPackages [appmesh]: Downloading https://files.pythonhosted.org/packages/c5/74/02173baac98d66f3abd5acd0d33580c13ac2acab20daaeac63cecaf42da6/appmesh-0.8.4-py3-none-any.whl
+[2024-04-20 04:09:23] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 04:09:23] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 04:09:23] INFO root fetch - processPackages [appmesh]: executing diffoscope
+[2024-04-20 04:09:23] INFO root fetch - processPackages [appmesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appmesh-0.8.3-py3-none-any.whl.zip tmp/appmesh-0.8.4-py3-none-any.whl.zip --markdown 20240420/a/appmesh/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-04-20 04:09:24] INFO root fetch - processPackages [gdpx]: Downloading https://files.pythonhosted.org/packages/5c/a1/b92307c5b0e3d7150a127491d6f24c8c3108eb4ba06f59abcf213b4baccc/gdpx-0.0.7.tar.gz
+[2024-04-20 04:09:24] INFO root fetch - processPackages [disposable-email-domains]: Downloading https://files.pythonhosted.org/packages/7f/4b/92f7d0b9e8f8b9aad4e9b5b72b72c68372376fcaa5cc1286cf807cdf3878/disposable-email-domains-0.0.99.tar.gz
+[2024-04-20 04:09:24] INFO root fetch - processPackages [gdpx]: executing diffoscope
+[2024-04-20 04:09:24] INFO root fetch - processPackages [gdpx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gdpx-0.0.6.tar.gz tmp/gdpx-0.0.7.tar.gz --markdown 20240420/g/gdpx/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 04:09:24] INFO root fetch - processPackages [disposable-email-domains]: executing diffoscope
+[2024-04-20 04:09:24] INFO root fetch - processPackages [disposable-email-domains]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/disposable-email-domains-0.0.98.tar.gz tmp/disposable-email-domains-0.0.99.tar.gz --markdown 20240420/d/disposable-email-domains/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 04:09:24] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 04:09:24] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 04:09:24] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 04:09:24] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.3-py3-none-any.whl.zip]
+[2024-04-20 04:09:24] INFO root fetch - processPackages [appmesh]: Remove: archive file [/home/abi/fetcher/tmp/appmesh-0.8.4-py3-none-any.whl.zip]
+[2024-04-20 04:09:24] INFO root fetch - main [MainThread]: End processing [appmesh]: success
+[2024-04-20 04:09:24] INFO root fetch - processPackages [disposable-email-domains]: Remove: archive file [/home/abi/fetcher/tmp/disposable-email-domains-0.0.98.tar.gz]
+[2024-04-20 04:09:24] INFO root fetch - processPackages [disposable-email-domains]: Remove: archive file [/home/abi/fetcher/tmp/disposable-email-domains-0.0.99.tar.gz]
+[2024-04-20 04:09:24] INFO root fetch - main [MainThread]: End processing [disposable-email-domains]: success
+[2024-04-20 04:09:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.6.tar.gz]
+[2024-04-20 04:09:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.7.tar.gz]
+[2024-04-20 04:09:25] INFO root fetch - main [MainThread]: End processing [gdpx]: success
+[2024-04-20 04:09:25] INFO root fetch - main [MainThread]: Store serial: [22851761]
