@@ -13901,3 +13901,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:27:36] INFO root fetch - processPackages [poonia]: Remove: archive file [/home/abi/fetcher/tmp/poonia-0.1.9.tar.gz]
 [2024-04-20 12:27:36] INFO root fetch - main [MainThread]: End processing [poonia]: success
 [2024-04-20 12:27:36] INFO root fetch - main [MainThread]: Store serial: [22854805]
+[2024-04-20 12:29:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854805]
+[2024-04-20 12:29:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ALLMDEV
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silicon-analyser
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ALLMDEV]: New version: [1.2.1] Old Version: [1.2]
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/b1/64/87acfc71108711d575f04281a118ae7860d75c2c2ca4a7b24d10ca3c67c4/ALLMDEV-1.2-py3-none-any.whl
+[2024-04-20 12:29:45] INFO root fetch - processPackages [silicon-analyser]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 12:29:45] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/f7/e8/fff64966ef8d385989b9d317837fb61c8888709181b7dfa8ca5b32ce5f3f/silicon_analyser-1.0.8.tar.gz
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/25/5f/d1fb45302219c4425cd54e7bba2a16b49e8d9b344a282037bb1ae5c421f9/ALLMDEV-1.2.1-py3-none-any.whl
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-04-20 12:29:45] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.2-py3-none-any.whl.zip tmp/ALLMDEV-1.2.1-py3-none-any.whl.zip --markdown 20240420/A/ALLMDEV/1.2-1.2.1/README.md --exclude *.pyd
+[2024-04-20 12:29:45] INFO root fetch - processPackages [silicon-analyser]: Downloading https://files.pythonhosted.org/packages/02/71/4e868d39fdedd525925c11d72f9f57f42247154c5f31deb5e3dbd38450f7/silicon_analyser-1.0.9.tar.gz
+[2024-04-20 12:29:46] INFO root fetch - processPackages [silicon-analyser]: executing diffoscope
+[2024-04-20 12:29:46] INFO root fetch - processPackages [silicon-analyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silicon_analyser-1.0.8.tar.gz tmp/silicon_analyser-1.0.9.tar.gz --markdown 20240420/s/silicon-analyser/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 12:29:46] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2-py3-none-any.whl.zip]
+[2024-04-20 12:29:46] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.2.1-py3-none-any.whl.zip]
+[2024-04-20 12:29:46] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-04-20 12:29:46] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.8.tar.gz]
+[2024-04-20 12:29:46] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.9.tar.gz]
+[2024-04-20 12:29:46] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
+[2024-04-20 12:29:46] INFO root fetch - main [MainThread]: Store serial: [22854810]
