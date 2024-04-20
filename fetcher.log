@@ -14456,3 +14456,131 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:14:06] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-04-20 13:14:06] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-04-20 13:14:06] INFO root fetch - main [MainThread]: Store serial: [22855053]
+[2024-04-20 13:16:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855053]
+[2024-04-20 13:16:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 13:16:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyutube
+[2024-04-20 13:16:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-20 13:16:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-esimd-21
+[2024-04-20 13:16:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfineflow
+[2024-04-20 13:16:15] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240420] Old Version: [2.5.0b20240419]
+[2024-04-20 13:16:15] INFO root fetch - processPackages [pyfineflow]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-20 13:16:15] INFO root fetch - processPackages [cerbogen]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-20 13:16:15] INFO root fetch - processPackages [pyutube]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-20 13:16:15] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/9d/07/b24b50059f3992a2402c681590f67d834e771afe66951fc9b3c4c7e60c64/bigdl_core_xe_esimd_21-2.5.0b20240419-cp39-cp39-win_amd64.whl
+[2024-04-20 13:16:15] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/0e/19/8c9b5862486b7a2c1c5e0b57e91663467321bcac7a6a468ee5ea83da4a5e/pyfineflow-1.1.1.tar.gz
+[2024-04-20 13:16:15] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/3d/7b/fec9893f45cf7aecb80cfbc5ccea6c08ea3ba12980b84c4ad86b0041e7c8/cerbogen-0.0.16.tar.gz
+[2024-04-20 13:16:15] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/0d/ce/15e259414dfa659ea1d2fa88a0ad8463a50e14b95b1c1d64eae08021d16b/pyutube-1.2.0.tar.gz
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/35/c1/2afc1529fd5e9e13215328356935736b3accaada8ddc7aa6b188aa78e88b/pyfineflow-1.1.2.tar.gz
+[2024-04-20 13:16:16] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/11/cb/bf8998b1898d15646a72a2810715497decb91b784759b4fd40d19a147960/cerbogen-0.0.17.tar.gz
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyutube]: Downloading https://files.pythonhosted.org/packages/01/a3/5895e34a2350bff479cd34111a1a1f49c14fe3a5ebfccc9106f58d5e5850/pyutube-1.2.1.tar.gz
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyfineflow]: executing diffoscope
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyfineflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfineflow-1.1.1.tar.gz tmp/pyfineflow-1.1.2.tar.gz --markdown 20240420/p/pyfineflow/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-20 13:16:16] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 13:16:16] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.16.tar.gz tmp/cerbogen-0.0.17.tar.gz --markdown 20240420/c/cerbogen/0.0.16-0.0.17/README.md --exclude *.pyd
+[2024-04-20 13:16:16] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/02/3f/a2c309ac0008c65ce34f0e646c40640f12c914dd83adabe6578f876a3ec7/bigdl_core_xe_esimd_21-2.5.0b20240420-cp310-cp310-win_amd64.whl
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyutube]: executing diffoscope
+[2024-04-20 13:16:16] INFO root fetch - processPackages [pyutube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutube-1.2.0.tar.gz tmp/pyutube-1.2.1.tar.gz --markdown 20240420/p/pyutube/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-20 13:16:16] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-04-20 13:16:16] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240419-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240420-cp310-cp310-win_amd64.whl.zip --markdown 20240420/b/bigdl-core-xe-esimd-21/2.5.0b20240419-2.5.0b20240420/README.md --exclude *.pyd
+[2024-04-20 13:16:17] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.16.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.17.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 13:16:17] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.1.1.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.1.2.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - main [MainThread]: End processing [pyfineflow]: success
+[2024-04-20 13:16:17] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.0.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - processPackages [pyutube]: Remove: archive file [/home/abi/fetcher/tmp/pyutube-1.2.1.tar.gz]
+[2024-04-20 13:16:17] INFO root fetch - main [MainThread]: End processing [pyutube]: success
+[2024-04-20 13:16:17] ERROR root fetch - processPackages [bigdl-core-xe-esimd-21]: Diffoscope failed: time="2024-04-20T13:16:16+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140446705655296)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/zip.py", line 217, in compare
+    x = super().compare(other, source)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/ar.py", line 71, in compare_details
+    Difference.from_text_readers(
+  File "/srv/diffoscope/diffoscope/difference.py", line 258, in from_text_readers
+    return Difference.from_feeder(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/difference.py", line 214, in from_feeder
+    unified_diff = diff(feeder1, feeder2)
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/diff.py", line 334, in diff
+    with FIFOFeeder(feeder1, fifo1_path) as fifo1, FIFOFeeder(
+  File "/srv/diffoscope/diffoscope/diff.py", line 225, in __exit__
+    self.join()
+  File "/srv/diffoscope/diffoscope/diff.py", line 258, in join
+    raise self._exception
+  File "/srv/diffoscope/diffoscope/diff.py", line 249, in run
+    end_nl = self.feeder(fifo)
+             ^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/feeders.py", line 79, in feeder
+    for buf in in_file:
+  File "/srv/diffoscope/diffoscope/comparators/utils/libarchive.py", line 134, in list_libarchive
+    for entry in archive:
+  File "/usr/lib/python3/dist-packages/libarchive/read.py", line 26, in __iter__
+    r = read_next_header2(archive_p, entry_p)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 91, in check_int
+    raise archive_error(args[0], retcode)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/libarchive/ffi.py", line 75, in archive_error
+    raise ArchiveError(msg, errno(archive_p), retcode, archive_p)
+libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, archive_p=140446839872864)
+
+[2024-04-20 13:16:17] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
+[2024-04-20 13:16:17] INFO root fetch - main [MainThread]: Store serial: [22855065]
