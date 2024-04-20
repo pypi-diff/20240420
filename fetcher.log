@@ -15353,3 +15353,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:11:12] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.1.tar.gz]
 [2024-04-20 14:11:12] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-04-20 14:11:12] INFO root fetch - main [MainThread]: Store serial: [22855502]
+[2024-04-20 14:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855502]
+[2024-04-20 14:13:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 14:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC042
+[2024-04-20 14:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cuxrft
+[2024-04-20 14:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC043
+[2024-04-20 14:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esme
+[2024-04-20 14:13:21] INFO root fetch - processPackages [cuxrft]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 14:13:21] WARNING root fetch - processPackages [PythonTestLJC042]: Skipping, unable to determine old version
+[2024-04-20 14:13:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC042] error
+[2024-04-20 14:13:21] WARNING root fetch - processPackages [PythonTestLJC043]: Skipping, unable to determine old version
+[2024-04-20 14:13:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC043] error
+[2024-04-20 14:13:21] WARNING root fetch - processPackages [esme]: Skipping, unable to determine old version
+[2024-04-20 14:13:21] INFO root fetch - main [MainThread]: End processing [esme] error
+[2024-04-20 14:13:21] INFO root fetch - processPackages [cuxrft]: Downloading https://files.pythonhosted.org/packages/2d/b3/edcdc8af1bfbf0a473ae386ba4fc3177015d97d8c683c72f1d6a28878e10/cuxrft-0.0.8.tar.gz
+[2024-04-20 14:13:21] INFO root fetch - processPackages [cuxrft]: Downloading https://files.pythonhosted.org/packages/21/a1/7fc4cc2fbc84a78e4c0815649d9a74421043075f29ef60a47ede639fa8cf/cuxrft-0.0.9.tar.gz
+[2024-04-20 14:13:21] INFO root fetch - processPackages [cuxrft]: executing diffoscope
+[2024-04-20 14:13:21] INFO root fetch - processPackages [cuxrft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cuxrft-0.0.8.tar.gz tmp/cuxrft-0.0.9.tar.gz --markdown 20240420/c/cuxrft/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 14:13:22] INFO root fetch - processPackages [cuxrft]: Remove: archive file [/home/abi/fetcher/tmp/cuxrft-0.0.8.tar.gz]
+[2024-04-20 14:13:22] INFO root fetch - processPackages [cuxrft]: Remove: archive file [/home/abi/fetcher/tmp/cuxrft-0.0.9.tar.gz]
+[2024-04-20 14:13:22] INFO root fetch - main [MainThread]: End processing [cuxrft]: success
+[2024-04-20 14:13:22] INFO root fetch - main [MainThread]: Store serial: [22855521]
