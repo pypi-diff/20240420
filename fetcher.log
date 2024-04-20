@@ -22267,3 +22267,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:39:56] INFO root fetch - processPackages [wagtail-fedit]: Remove: archive file [/home/abi/fetcher/tmp/wagtail_fedit-1.5.1a3.tar.gz]
 [2024-04-20 21:39:56] INFO root fetch - main [MainThread]: End processing [wagtail-fedit]: success
 [2024-04-20 21:39:56] INFO root fetch - main [MainThread]: Store serial: [22858907]
+[2024-04-20 21:42:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858907]
+[2024-04-20 21:42:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libexe-python
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlrepo
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rooms-shared-services
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC196
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: streamlit-chip-filter
+[2024-04-20 21:42:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphlit-client
+[2024-04-20 21:42:05] INFO root fetch - processPackages [sqlrepo]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-04-20 21:42:05] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:42:05] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-20 21:42:05] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/dc/55/035e9bb8cde905fbb03067e395fb23aa00bb77fd8bd8525507c49d72a1fd/streamlit-chip-filter-0.0.8.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [sqlrepo]: Downloading https://files.pythonhosted.org/packages/18/67/3a9b223cb01df85ebd8936107f2919ef43bd764f6e3bef7d2c8a5192adbe/sqlrepo-1.2.1.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420001] Old Version: [1.0.20240417002]
+[2024-04-20 21:42:05] WARNING root fetch - processPackages [PythonTestLJC196]: Skipping, unable to determine old version
+[2024-04-20 21:42:05] INFO root fetch - main [MainThread]: End processing [PythonTestLJC196] error
+[2024-04-20 21:42:05] INFO root fetch - processPackages [libexe-python]: New version: [20240420] Old Version: [20240205]
+[2024-04-20 21:42:05] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [sqlrepo]: Downloading https://files.pythonhosted.org/packages/cc/57/a0c7915ba6bddf613787c6b6576ed73f1559fc32b1f9138fe72dda71e5a5/sqlrepo-1.3.0.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/b3/23/224de015ff9d95ae0ae2ec14c437dd10cd88212628735c577cb3849d7e5d/graphlit_client-1.0.20240417002.tar.gz
+[2024-04-20 21:42:05] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-20 21:42:05] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240420/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-20 21:42:06] INFO root fetch - processPackages [sqlrepo]: executing diffoscope
+[2024-04-20 21:42:06] INFO root fetch - processPackages [sqlrepo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlrepo-1.2.1.tar.gz tmp/sqlrepo-1.3.0.tar.gz --markdown 20240420/s/sqlrepo/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-04-20 21:42:06] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/70/08/2c59c45571039d434ba5bb5190d8867f7084c5a22e0576379b2a84e27364/streamlit-chip-filter-0.0.9.tar.gz
+[2024-04-20 21:42:06] INFO root fetch - processPackages [libexe-python]: Downloading https://files.pythonhosted.org/packages/5d/ba/1ee3055e84f6e3b701f2d61f732040b0be9ffd61740ff4196cb8bdbfa436/libexe-python-20240205.tar.gz
+[2024-04-20 21:42:06] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 21:42:06] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.8.tar.gz tmp/streamlit-chip-filter-0.0.9.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:42:06] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/90/d8/1a0b19f38fa93f01f7c1b26ea1c1024bd1a91b6c4ee0413c48fd13a2708c/graphlit_client-1.0.20240420001.tar.gz
+[2024-04-20 21:42:06] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-20 21:42:06] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240417002.tar.gz tmp/graphlit_client-1.0.20240420001.tar.gz --markdown 20240420/g/graphlit-client/1.0.20240417002-1.0.20240420001/README.md --exclude *.pyd
+[2024-04-20 21:42:06] INFO root fetch - processPackages [sqlrepo]: Remove: archive file [/home/abi/fetcher/tmp/sqlrepo-1.2.1.tar.gz]
+[2024-04-20 21:42:06] INFO root fetch - processPackages [sqlrepo]: Remove: archive file [/home/abi/fetcher/tmp/sqlrepo-1.3.0.tar.gz]
+[2024-04-20 21:42:06] INFO root fetch - main [MainThread]: End processing [sqlrepo]: success
+[2024-04-20 21:42:06] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-20 21:42:06] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-20 21:42:06] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-20 21:42:07] INFO root fetch - processPackages [libexe-python]: Downloading https://files.pythonhosted.org/packages/99/f2/a12ef818eec6859f194f16a73cae4d16251845aae79a181656aeabd3cbb2/libexe-python-20240420.tar.gz
+[2024-04-20 21:42:07] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240417002.tar.gz]
+[2024-04-20 21:42:07] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420001.tar.gz]
+[2024-04-20 21:42:07] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-20 21:42:07] INFO root fetch - processPackages [libexe-python]: executing diffoscope
+[2024-04-20 21:42:07] INFO root fetch - processPackages [libexe-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libexe-python-20240205.tar.gz tmp/libexe-python-20240420.tar.gz --markdown 20240420/l/libexe-python/20240205-20240420/README.md --exclude *.pyd
+[2024-04-20 21:42:12] INFO root fetch - processPackages [libexe-python]: Remove: archive file [/home/abi/fetcher/tmp/libexe-python-20240205.tar.gz]
+[2024-04-20 21:42:12] INFO root fetch - processPackages [libexe-python]: Remove: archive file [/home/abi/fetcher/tmp/libexe-python-20240420.tar.gz]
+[2024-04-20 21:42:12] INFO root fetch - main [MainThread]: End processing [libexe-python]: success
+[2024-04-20 21:42:19] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.8.tar.gz]
+[2024-04-20 21:42:19] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.9.tar.gz]
+[2024-04-20 21:42:19] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 21:42:19] INFO root fetch - main [MainThread]: Store serial: [22858926]
