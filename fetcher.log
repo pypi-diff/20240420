@@ -15122,3 +15122,69 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 14:00:18] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3.tar.gz]
 [2024-04-20 14:00:18] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
 [2024-04-20 14:00:18] INFO root fetch - main [MainThread]: Store serial: [22855388]
+[2024-04-20 14:02:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855388]
+[2024-04-20 14:02:27] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pqsdk
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC035
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:02:27] INFO root fetch - processPackages [pqsdk]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 14:02:27] WARNING root fetch - processPackages [PythonTestLJC035]: Skipping, unable to determine old version
+[2024-04-20 14:02:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC035] error
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:27] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/75/15/c4c9916a32afe78e6b3d63b3cad0bdbfc5a873c4573353395ef455e0569f/pqsdk-0.0.1.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [pqsdk]: Downloading https://files.pythonhosted.org/packages/76/05/4b4d3eb38933cf07e7009c31231d0709a1b890788d6b574602deb78f4abe/pqsdk-0.0.2.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:02:28] INFO root fetch - processPackages [pqsdk]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [pqsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pqsdk-0.0.1.tar.gz tmp/pqsdk-0.0.2.tar.gz --markdown 20240420/p/pqsdk/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:02:28] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:02:29] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.1.tar.gz]
+[2024-04-20 14:02:29] INFO root fetch - processPackages [pqsdk]: Remove: archive file [/home/abi/fetcher/tmp/pqsdk-0.0.2.tar.gz]
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [pqsdk]: success
+[2024-04-20 14:02:29] INFO root fetch - processPackages [airflow-provider-sapiq]: Remove: archive file [/home/abi/fetcher/tmp/airflow_provider_sapiq-0.1.7.tar.gz]
+[2024-04-20 14:02:29] INFO root fetch - processPackages [airflow-provider-sapiq]: Remove: archive file [/home/abi/fetcher/tmp/airflow_provider_sapiq-0.2.0.tar.gz]
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:02:29] INFO root fetch - main [MainThread]: Store serial: [22855413]
