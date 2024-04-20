@@ -16230,3 +16230,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:13:10] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.4.20-cp312-cp312-manylinux2014_x86_64.whl.zip]
 [2024-04-20 15:13:10] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2024-04-20 15:13:10] INFO root fetch - main [MainThread]: Store serial: [22855922]
+[2024-04-20 15:15:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855922]
+[2024-04-20 15:15:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 15:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC056
+[2024-04-20 15:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solaredge2mqtt
+[2024-04-20 15:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlrun-pipelines-kfp-v2-experiment
+[2024-04-20 15:15:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asgebsmanager
+[2024-04-20 15:15:25] INFO root fetch - processPackages [asgebsmanager]: New version: [1.5] Old Version: [1.4]
+[2024-04-20 15:15:25] INFO root fetch - processPackages [solaredge2mqtt]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 15:15:25] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/14/42/b26473fa647019784f2f9476e3513f67c5c2097e3eb90c77601cedaed32b/asgebsmanager-1.4.tar.gz
+[2024-04-20 15:15:25] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/6c/b6/0b9f57b107df49ec80c3be96fffd8b3daad3fc04af359ea2c268d2b525b0/solaredge2mqtt-1.0.8.tar.gz
+[2024-04-20 15:15:25] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 15:15:25] WARNING root fetch - processPackages [PythonTestLJC056]: Skipping, unable to determine old version
+[2024-04-20 15:15:25] INFO root fetch - main [MainThread]: End processing [PythonTestLJC056] error
+[2024-04-20 15:15:26] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Downloading https://files.pythonhosted.org/packages/70/a2/f72d08948e13a27974c87ef4c1d8d740d5502e9d8702f171ac49fdd5bbef/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl
+[2024-04-20 15:15:26] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/ca/c5/a64aea7e2c53a6394780bba16ed730d8ac2ea082c079e0a277582653596a/solaredge2mqtt-1.0.9.tar.gz
+[2024-04-20 15:15:26] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/c9/be/13f30db6eba2d284cf2b797e40a8eb5b78ee84eb43c72c5bb1fb7b6b911e/asgebsmanager-1.5.tar.gz
+[2024-04-20 15:15:26] INFO root fetch - processPackages [solaredge2mqtt]: executing diffoscope
+[2024-04-20 15:15:26] INFO root fetch - processPackages [solaredge2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge2mqtt-1.0.8.tar.gz tmp/solaredge2mqtt-1.0.9.tar.gz --markdown 20240420/s/solaredge2mqtt/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 15:15:26] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-20 15:15:26] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-1.4.tar.gz tmp/asgebsmanager-1.5.tar.gz --markdown 20240420/a/asgebsmanager/1.4-1.5/README.md --exclude *.pyd
+[2024-04-20 15:15:26] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Downloading https://files.pythonhosted.org/packages/72/f3/89f1a63af56f30d8e6c993786e523fa6bc6b1cf764bbb4d35919d2ac69ef/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl
+[2024-04-20 15:15:26] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: executing diffoscope
+[2024-04-20 15:15:26] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl.zip tmp/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl.zip --markdown 20240420/m/mlrun-pipelines-kfp-v2-experiment/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 15:15:26] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.4.tar.gz]
+[2024-04-20 15:15:26] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.5.tar.gz]
+[2024-04-20 15:15:26] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-20 15:15:27] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl.zip]
+[2024-04-20 15:15:27] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl.zip]
+[2024-04-20 15:15:27] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v2-experiment]: success
+[2024-04-20 15:15:27] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.8.tar.gz]
+[2024-04-20 15:15:27] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
+[2024-04-20 15:15:27] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
+[2024-04-20 15:15:27] INFO root fetch - main [MainThread]: Store serial: [22855938]
