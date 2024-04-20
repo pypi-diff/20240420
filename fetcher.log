@@ -18475,3 +18475,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:47:22] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
 [2024-04-20 17:47:22] INFO root fetch - main [MainThread]: End processing [travertine]: success
 [2024-04-20 17:47:22] INFO root fetch - main [MainThread]: Store serial: [22857091]
+[2024-04-20 17:49:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857091]
+[2024-04-20 17:49:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC112
+[2024-04-20 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: valor-client
+[2024-04-20 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm
+[2024-04-20 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lxns
+[2024-04-20 17:49:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: circlejerk
+[2024-04-20 17:49:31] INFO root fetch - processPackages [valor-client]: New version: [0.22.0] Old Version: [0.21.4]
+[2024-04-20 17:49:31] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-20 17:49:31] INFO root fetch - processPackages [lxns]: New version: [0.1.0] Old Version: [0.0a3]
+[2024-04-20 17:49:31] WARNING root fetch - processPackages [circlejerk]: Skipping, unable to determine old version
+[2024-04-20 17:49:31] INFO root fetch - main [MainThread]: End processing [circlejerk] error
+[2024-04-20 17:49:31] WARNING root fetch - processPackages [PythonTestLJC112]: Skipping, unable to determine old version
+[2024-04-20 17:49:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC112] error
+[2024-04-20 17:49:31] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-20 17:49:31] INFO root fetch - processPackages [valor-client]: Downloading https://files.pythonhosted.org/packages/a0/6f/0622c8725f2dd481c9caf32db93b4dafb23a82fceb95f3f1cabceda3d185/valor_client-0.21.4.tar.gz
+[2024-04-20 17:49:31] INFO root fetch - processPackages [lxns]: Downloading https://files.pythonhosted.org/packages/18/6d/1f08d6f5509b1583d7891f3818e2f42d4d2e54630283c9d501f77252206b/lxns-0.0a3.tar.gz
+[2024-04-20 17:49:32] INFO root fetch - processPackages [valor-client]: Downloading https://files.pythonhosted.org/packages/fb/ad/319cfd1363d6664af4fd07ffc1ae1a3010de3a4406a4b75d33b149b048d9/valor_client-0.22.0.tar.gz
+[2024-04-20 17:49:32] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-20 17:49:32] INFO root fetch - processPackages [valor-client]: executing diffoscope
+[2024-04-20 17:49:32] INFO root fetch - processPackages [valor-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valor_client-0.21.4.tar.gz tmp/valor_client-0.22.0.tar.gz --markdown 20240420/v/valor-client/0.21.4-0.22.0/README.md --exclude *.pyd
+[2024-04-20 17:49:32] INFO root fetch - processPackages [lxns]: Downloading https://files.pythonhosted.org/packages/ef/b9/e9847504f519b60e0b60234036d03f5b5deaa12e33a8c3e1cde8b80b620e/lxns-0.1.0.tar.gz
+[2024-04-20 17:49:32] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-20 17:49:32] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240420/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-04-20 17:49:32] INFO root fetch - processPackages [lxns]: executing diffoscope
+[2024-04-20 17:49:32] INFO root fetch - processPackages [lxns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lxns-0.0a3.tar.gz tmp/lxns-0.1.0.tar.gz --markdown 20240420/l/lxns/0.0a3-0.1.0/README.md --exclude *.pyd
+[2024-04-20 17:49:32] INFO root fetch - processPackages [valor-client]: Remove: archive file [/home/abi/fetcher/tmp/valor_client-0.21.4.tar.gz]
+[2024-04-20 17:49:32] INFO root fetch - processPackages [valor-client]: Remove: archive file [/home/abi/fetcher/tmp/valor_client-0.22.0.tar.gz]
+[2024-04-20 17:49:32] INFO root fetch - main [MainThread]: End processing [valor-client]: success
+[2024-04-20 17:49:33] INFO root fetch - processPackages [lxns]: Remove: archive file [/home/abi/fetcher/tmp/lxns-0.0a3.tar.gz]
+[2024-04-20 17:49:33] INFO root fetch - processPackages [lxns]: Remove: archive file [/home/abi/fetcher/tmp/lxns-0.1.0.tar.gz]
+[2024-04-20 17:49:33] INFO root fetch - main [MainThread]: End processing [lxns]: success
+[2024-04-20 17:49:33] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-20 17:49:33] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-20 17:49:33] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-20 17:49:33] INFO root fetch - main [MainThread]: Store serial: [22857122]
