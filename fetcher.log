@@ -21256,3 +21256,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:33:58] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
 [2024-04-20 20:33:58] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
 [2024-04-20 20:33:58] INFO root fetch - main [MainThread]: Store serial: [22858417]
+[2024-04-20 20:36:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858417]
+[2024-04-20 20:36:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HimDonHaiDraws
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batchalign
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC172
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: denpy
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simpleCalculatorPlan11
+[2024-04-20 20:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xvideos-api
+[2024-04-20 20:36:07] INFO root fetch - processPackages [HimDonHaiDraws]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 20:36:07] WARNING root fetch - processPackages [PythonTestLJC172]: Skipping, unable to determine old version
+[2024-04-20 20:36:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC172] error
+[2024-04-20 20:36:07] WARNING root fetch - processPackages [simpleCalculatorPlan11]: Skipping, unable to determine old version
+[2024-04-20 20:36:07] INFO root fetch - main [MainThread]: End processing [simpleCalculatorPlan11] error
+[2024-04-20 20:36:07] INFO root fetch - processPackages [denpy]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 20:36:07] INFO root fetch - processPackages [xvideos-api]: New version: [1.3] Old Version: [1.2]
+[2024-04-20 20:36:07] INFO root fetch - processPackages [batchalign]: New version: [0.7.1b4] Old Version: [0.7.1b3]
+[2024-04-20 20:36:07] INFO root fetch - processPackages [HimDonHaiDraws]: Downloading https://files.pythonhosted.org/packages/d9/71/4bb868bb065a91697b2fd24411bf3f88662e559119a51d3b79b2ddf223d8/HimDonHaiDraws-0.1.tar.gz
+[2024-04-20 20:36:07] INFO root fetch - processPackages [denpy]: Downloading https://files.pythonhosted.org/packages/4f/57/4ac04fedd04f7c23ba57d7a4b08118b53bb29da058ee521ed83b2c792695/denpy-0.2.0.tar.gz
+[2024-04-20 20:36:07] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/99/fa/d399e0733c840660993b41993f2f8f96fadb6715a216ffc5b8a2dbbf0ba9/batchalign-0.7.1b3.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [xvideos-api]: Downloading https://files.pythonhosted.org/packages/a3/3c/90c68be032e15acbd73f5652b73975a1024d950053f6a6ac170e431d616b/xvideos_api-1.2.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [HimDonHaiDraws]: Downloading https://files.pythonhosted.org/packages/b7/aa/af7ac47a2e7e7f6f37755e805d1a12b32b833381419e9e7e5976e5b973b0/HimDonHaiDraws-0.2.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [denpy]: Downloading https://files.pythonhosted.org/packages/ce/5a/21ba9752102fcf7ac2952ec3e14ed45391f5f166bdf56e9c8f767d80be2c/denpy-0.2.1.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [HimDonHaiDraws]: executing diffoscope
+[2024-04-20 20:36:08] INFO root fetch - processPackages [HimDonHaiDraws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HimDonHaiDraws-0.1.tar.gz tmp/HimDonHaiDraws-0.2.tar.gz --markdown 20240420/H/HimDonHaiDraws/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 20:36:08] INFO root fetch - processPackages [batchalign]: Downloading https://files.pythonhosted.org/packages/75/d7/853a37dc4108c1cdd5b2a368e5cbec7e16b80305a3315c67e047b402fb8e/batchalign-0.7.1b4.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [xvideos-api]: Downloading https://files.pythonhosted.org/packages/a4/88/c59b1ff75b54b0cfcdf7a242a7e079bdc2283cc3b2022c1ac5d3fb153af8/xvideos_api-1.3.tar.gz
+[2024-04-20 20:36:08] INFO root fetch - processPackages [denpy]: executing diffoscope
+[2024-04-20 20:36:08] INFO root fetch - processPackages [denpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denpy-0.2.0.tar.gz tmp/denpy-0.2.1.tar.gz --markdown 20240420/d/denpy/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 20:36:08] INFO root fetch - processPackages [batchalign]: executing diffoscope
+[2024-04-20 20:36:08] INFO root fetch - processPackages [batchalign]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/batchalign-0.7.1b3.tar.gz tmp/batchalign-0.7.1b4.tar.gz --markdown 20240420/b/batchalign/0.7.1b3-0.7.1b4/README.md --exclude *.pyd
+[2024-04-20 20:36:08] INFO root fetch - processPackages [xvideos-api]: executing diffoscope
+[2024-04-20 20:36:08] INFO root fetch - processPackages [xvideos-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xvideos_api-1.2.tar.gz tmp/xvideos_api-1.3.tar.gz --markdown 20240420/x/xvideos-api/1.2-1.3/README.md --exclude *.pyd
+[2024-04-20 20:36:08] INFO root fetch - processPackages [HimDonHaiDraws]: Remove: archive file [/home/abi/fetcher/tmp/HimDonHaiDraws-0.1.tar.gz]
+[2024-04-20 20:36:08] INFO root fetch - processPackages [HimDonHaiDraws]: Remove: archive file [/home/abi/fetcher/tmp/HimDonHaiDraws-0.2.tar.gz]
+[2024-04-20 20:36:08] INFO root fetch - main [MainThread]: End processing [HimDonHaiDraws]: success
+[2024-04-20 20:36:09] INFO root fetch - processPackages [denpy]: Remove: archive file [/home/abi/fetcher/tmp/denpy-0.2.0.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - processPackages [denpy]: Remove: archive file [/home/abi/fetcher/tmp/denpy-0.2.1.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - main [MainThread]: End processing [denpy]: success
+[2024-04-20 20:36:09] INFO root fetch - processPackages [xvideos-api]: Remove: archive file [/home/abi/fetcher/tmp/xvideos_api-1.2.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - processPackages [xvideos-api]: Remove: archive file [/home/abi/fetcher/tmp/xvideos_api-1.3.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - main [MainThread]: End processing [xvideos-api]: success
+[2024-04-20 20:36:09] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b3.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - processPackages [batchalign]: Remove: archive file [/home/abi/fetcher/tmp/batchalign-0.7.1b4.tar.gz]
+[2024-04-20 20:36:09] INFO root fetch - main [MainThread]: End processing [batchalign]: success
+[2024-04-20 20:36:09] INFO root fetch - main [MainThread]: Store serial: [22858437]
