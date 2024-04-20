@@ -19471,3 +19471,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:53:02] INFO root fetch - processPackages [dash-mantine-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_mantine_components-0.9.0.tar.gz]
 [2024-04-20 18:53:02] INFO root fetch - main [MainThread]: End processing [dash-mantine-components]: success
 [2024-04-20 18:53:02] INFO root fetch - main [MainThread]: Store serial: [22857598]
+[2024-04-20 18:55:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857598]
+[2024-04-20 18:55:11] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mepost-sdk
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greyhorse-redis
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC136
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 18:55:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: notfunny
+[2024-04-20 18:55:11] INFO root fetch - processPackages [mepost-sdk]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 18:55:11] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-20 18:55:11] INFO root fetch - processPackages [cerbogen]: New version: [0.0.40] Old Version: [0.0.39]
+[2024-04-20 18:55:11] INFO root fetch - processPackages [notfunny]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-04-20 18:55:11] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/cb/8b/0e05686a98ac5b4623dfc8e84e621133d1af3755795f343f01819c1186c3/CI-CD-SergiCastillo-0.2.3.tar.gz
+[2024-04-20 18:55:11] WARNING root fetch - processPackages [PythonTestLJC136]: Skipping, unable to determine old version
+[2024-04-20 18:55:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC136] error
+[2024-04-20 18:55:11] WARNING root fetch - processPackages [greyhorse-redis]: Skipping, unable to determine old version
+[2024-04-20 18:55:11] INFO root fetch - main [MainThread]: End processing [greyhorse-redis] error
+[2024-04-20 18:55:11] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/b5/e2/48ed160ce9897f8e7cbe9159128f6592d2cd437329fb87dd2819ae99b230/notfunny-0.5.3.tar.gz
+[2024-04-20 18:55:11] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/44/7d/132ec62caee57ed486cdf4eb8d8568da9c1ac7b95d4ea3250cda1fc299b5/cerbogen-0.0.39.tar.gz
+[2024-04-20 18:55:11] INFO root fetch - processPackages [mepost-sdk]: Downloading https://files.pythonhosted.org/packages/f9/8a/ded20b1eef382ffc9264e62657870d8d8a8878efebde7c7f5964286b0d21/mepost-sdk-0.1.0.tar.gz
+[2024-04-20 18:55:11] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/8d/9d/c1b70e7b80364e1d762e3c958585e8dd3110019c0ed6e68cafeb091795d6/CI-CD-SergiCastillo-0.2.4.tar.gz
+[2024-04-20 18:55:11] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/8b/da/f1f1a7dd14c521b7ae57c5e5822e9987e15d436c3f9dc98158493bb4da9b/cerbogen-0.0.40.tar.gz
+[2024-04-20 18:55:11] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/17/cd/92a0dfd9eaef43e6b37d3ede720fcc9169bba3b0c7ac449b6476c1376137/notfunny-0.5.4.tar.gz
+[2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: Downloading https://files.pythonhosted.org/packages/b1/a5/b3c416aee26cac2ecdc8a0ff19cb9fa8c7382f9c9b1c445f0651c92c06e2/mepost-sdk-0.1.1.tar.gz
+[2024-04-20 18:55:12] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 18:55:12] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.2.3.tar.gz tmp/CI-CD-SergiCastillo-0.2.4.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-20 18:55:12] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:55:12] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.3.tar.gz tmp/notfunny-0.5.4.tar.gz --markdown 20240420/n/notfunny/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-04-20 18:55:12] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:55:12] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.39.tar.gz tmp/cerbogen-0.0.40.tar.gz --markdown 20240420/c/cerbogen/0.0.39-0.0.40/README.md --exclude *.pyd
+[2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: executing diffoscope
+[2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mepost-sdk-0.1.0.tar.gz tmp/mepost-sdk-0.1.1.tar.gz --markdown 20240420/m/mepost-sdk/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 18:55:12] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.3.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.4.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 18:55:12] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.39.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.40.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:55:12] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.3.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.4.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mepost-sdk-0.1.0.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - processPackages [mepost-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mepost-sdk-0.1.1.tar.gz]
+[2024-04-20 18:55:12] INFO root fetch - main [MainThread]: End processing [mepost-sdk]: success
+[2024-04-20 18:55:12] INFO root fetch - main [MainThread]: Store serial: [22857618]
