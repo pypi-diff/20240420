@@ -17189,3 +17189,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:16:37] INFO root fetch - processPackages [StringDataDeque]: Remove: archive file [/home/abi/fetcher/tmp/stringdatadeque-1.0.2.tar.gz]
 [2024-04-20 16:16:37] INFO root fetch - main [MainThread]: End processing [StringDataDeque]: success
 [2024-04-20 16:16:37] INFO root fetch - main [MainThread]: Store serial: [22856524]
+[2024-04-20 16:18:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856524]
+[2024-04-20 16:18:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC079
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: blues-lib
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ytpb
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: steelpy
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cerbogen
+[2024-04-20 16:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: memium
+[2024-04-20 16:18:46] INFO root fetch - processPackages [cerbogen]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-04-20 16:18:46] INFO root fetch - processPackages [steelpy]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-20 16:18:46] WARNING root fetch - processPackages [PythonTestLJC079]: Skipping, unable to determine old version
+[2024-04-20 16:18:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC079] error
+[2024-04-20 16:18:46] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/82/a9/f326ee8d2774e928dd1568e252d317fbcd0908f37194239a7e8d19cbbf52/cerbogen-0.0.18.tar.gz
+[2024-04-20 16:18:47] INFO root fetch - processPackages [memium]: New version: [0.7.0] Old Version: [0.19.0]
+[2024-04-20 16:18:47] WARNING root fetch - processPackages [blues-lib]: Skipping, unable to determine old version
+[2024-04-20 16:18:47] INFO root fetch - main [MainThread]: End processing [blues-lib] error
+[2024-04-20 16:18:47] INFO root fetch - processPackages [ytpb]: New version: [2024.4.20] Old Version: [2024.4.12]
+[2024-04-20 16:18:47] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/d6/ad/273350ee2615685c2dadd545cd63751cdde206b1da39f94c8c3d47bf127b/steelpy-1.0.3.tar.gz
+[2024-04-20 16:18:47] WARNING root fetch - processPackages [cerbogen]: Skipping package: exceeds size limit 26130831>=10485760
+[2024-04-20 16:18:47] INFO root fetch - main [MainThread]: End processing [cerbogen] error
+[2024-04-20 16:18:47] INFO root fetch - processPackages [ytpb]: Downloading https://files.pythonhosted.org/packages/80/d1/19eb43bfe407aac6f925ca6672e013a13193b78fe5e5bea8cc89a148c17f/ytpb-2024.4.12.tar.gz
+[2024-04-20 16:18:47] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/ed/38/c74d4bdf55fdb424385e04f9fea3babcb97b8bef8daeff5129a9d1e64cc4/memium-0.19.0.tar.gz
+[2024-04-20 16:18:47] INFO root fetch - processPackages [steelpy]: Downloading https://files.pythonhosted.org/packages/ac/41/9387a016338e64462a382519d0f12df70e87e13c7ea88d2cbacb4249b356/steelpy-1.1.0.tar.gz
+[2024-04-20 16:18:47] INFO root fetch - processPackages [steelpy]: executing diffoscope
+[2024-04-20 16:18:47] INFO root fetch - processPackages [steelpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/steelpy-1.0.3.tar.gz tmp/steelpy-1.1.0.tar.gz --markdown 20240420/s/steelpy/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-20 16:18:47] INFO root fetch - processPackages [memium]: Downloading https://files.pythonhosted.org/packages/8a/a3/a3f5e0b58a853724e800a65c85c0df00b7d5138ea7cbb3db40d329c5f3d3/memium-0.7.0.tar.gz
+[2024-04-20 16:18:47] INFO root fetch - processPackages [memium]: executing diffoscope
+[2024-04-20 16:18:47] INFO root fetch - processPackages [memium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memium-0.19.0.tar.gz tmp/memium-0.7.0.tar.gz --markdown 20240420/m/memium/0.19.0-0.7.0/README.md --exclude *.pyd
+[2024-04-20 16:18:47] INFO root fetch - processPackages [ytpb]: Downloading https://files.pythonhosted.org/packages/73/70/4d7983ed0c267a1fbde9ba5f86b1bf03552e935d0cb5276a23ca08526d51/ytpb-2024.4.20.tar.gz
+[2024-04-20 16:18:48] INFO root fetch - processPackages [ytpb]: executing diffoscope
+[2024-04-20 16:18:48] INFO root fetch - processPackages [ytpb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytpb-2024.4.12.tar.gz tmp/ytpb-2024.4.20.tar.gz --markdown 20240420/y/ytpb/2024.4.12-2024.4.20/README.md --exclude *.pyd
+[2024-04-20 16:18:48] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.0.3.tar.gz]
+[2024-04-20 16:18:48] INFO root fetch - processPackages [steelpy]: Remove: archive file [/home/abi/fetcher/tmp/steelpy-1.1.0.tar.gz]
+[2024-04-20 16:18:48] INFO root fetch - main [MainThread]: End processing [steelpy]: success
+[2024-04-20 16:18:48] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.19.0.tar.gz]
+[2024-04-20 16:18:48] INFO root fetch - processPackages [memium]: Remove: archive file [/home/abi/fetcher/tmp/memium-0.7.0.tar.gz]
+[2024-04-20 16:18:48] INFO root fetch - main [MainThread]: End processing [memium]: success
+[2024-04-20 16:18:50] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.4.12.tar.gz]
+[2024-04-20 16:18:50] INFO root fetch - processPackages [ytpb]: Remove: archive file [/home/abi/fetcher/tmp/ytpb-2024.4.20.tar.gz]
+[2024-04-20 16:18:50] INFO root fetch - main [MainThread]: End processing [ytpb]: success
+[2024-04-20 16:18:50] INFO root fetch - main [MainThread]: Store serial: [22856551]
