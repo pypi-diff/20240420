@@ -16326,3 +16326,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:19:51] INFO root fetch - processPackages [cace]: Remove: archive file [/home/abi/fetcher/tmp/cace-2.2.1.tar.gz]
 [2024-04-20 15:19:51] INFO root fetch - main [MainThread]: End processing [cace]: success
 [2024-04-20 15:19:51] INFO root fetch - main [MainThread]: Store serial: [22855986]
+[2024-04-20 15:21:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855986]
+[2024-04-20 15:22:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyHana
+[2024-04-20 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: few-shot-learning-nlp-pedrolsilva
+[2024-04-20 15:22:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asgebsmanager
+[2024-04-20 15:22:01] INFO root fetch - processPackages [asgebsmanager]: New version: [1.5.1] Old Version: [1.5]
+[2024-04-20 15:22:01] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/c9/be/13f30db6eba2d284cf2b797e40a8eb5b78ee84eb43c72c5bb1fb7b6b911e/asgebsmanager-1.5.tar.gz
+[2024-04-20 15:22:01] INFO root fetch - processPackages [pyHana]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 15:22:01] WARNING root fetch - processPackages [few-shot-learning-nlp-pedrolsilva]: Skipping, unable to determine old version
+[2024-04-20 15:22:01] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp-pedrolsilva] error
+[2024-04-20 15:22:01] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/f7/bd/4413dde8ffefdc3715bfdb0e2789860ce6abd12c900ecd9bdbf3df4da977/pyHana-0.0.8-py3-none-any.whl
+[2024-04-20 15:22:01] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/1d/94/ef3aad7dcb9f8c800da9044bd64b337097f91bc21a6c1a402bfeefdf022c/asgebsmanager-1.5.1.tar.gz
+[2024-04-20 15:22:02] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-20 15:22:02] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-1.5.tar.gz tmp/asgebsmanager-1.5.1.tar.gz --markdown 20240420/a/asgebsmanager/1.5-1.5.1/README.md --exclude *.pyd
+[2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: Downloading https://files.pythonhosted.org/packages/bf/0e/4838574234fed0b97643b3f635c68d512d1bed48aa073d330aae8d2a612b/pyHana-0.0.9-py3-none-any.whl
+[2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: executing diffoscope
+[2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyHana-0.0.8-py3-none-any.whl.zip tmp/pyHana-0.0.9-py3-none-any.whl.zip --markdown 20240420/p/pyHana/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 15:22:02] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.5.tar.gz]
+[2024-04-20 15:22:02] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.5.1.tar.gz]
+[2024-04-20 15:22:02] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.8-py3-none-any.whl.zip]
+[2024-04-20 15:22:02] INFO root fetch - processPackages [pyHana]: Remove: archive file [/home/abi/fetcher/tmp/pyHana-0.0.9-py3-none-any.whl.zip]
+[2024-04-20 15:22:02] INFO root fetch - main [MainThread]: End processing [pyHana]: success
+[2024-04-20 15:22:02] INFO root fetch - main [MainThread]: Store serial: [22856001]
