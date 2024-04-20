@@ -10571,3 +10571,42 @@
 [2024-04-20 08:33:05] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.7.tar.gz]
 [2024-04-20 08:33:05] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
 [2024-04-20 08:33:05] INFO root fetch - main [MainThread]: Store serial: [22853144]
+[2024-04-20 08:35:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853144]
+[2024-04-20 08:35:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oelint-parser
+[2024-04-20 08:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PureCloudPlatformClientV2
+[2024-04-20 08:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-base-external-dbsource-mysql
+[2024-04-20 08:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-base-external-dbsource
+[2024-04-20 08:35:15] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.2]
+[2024-04-20 08:35:15] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: New version: [16.0.1.0.1.9] Old Version: [16.0.1.0.1.7]
+[2024-04-20 08:35:15] INFO root fetch - processPackages [PureCloudPlatformClientV2]: New version: [99.0.0] Old Version: [98.0.0]
+[2024-04-20 08:35:15] INFO root fetch - processPackages [oelint-parser]: New version: [3.5.0] Old Version: [3.4.1]
+[2024-04-20 08:35:15] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/2c/c0/91800d23710423ae3701d533f2eb887685821d04a61d8ce88b3ef04e973d/PureCloudPlatformClientV2-98.0.0.tar.gz
+[2024-04-20 08:35:15] INFO root fetch - processPackages [oelint-parser]: Downloading https://files.pythonhosted.org/packages/c1/cf/eca63196efa2f9131063cde2bebf64544e8ffe8343bb7585b70cf6458034/oelint_parser-3.4.1.tar.gz
+[2024-04-20 08:35:15] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: Downloading https://files.pythonhosted.org/packages/ad/0d/7455201e1a586b42046a4f798fff57d3f2770a90b61bc5a8b1461d847532/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 08:35:15] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: Downloading https://files.pythonhosted.org/packages/5f/22/2787afffd2b050c381636e3671de642ff0be5ff4084f284669c6e59039cb/odoo_addon_base_external_dbsource-16.0.1.0.1.7-py3-none-any.whl
+[2024-04-20 08:35:15] INFO root fetch - processPackages [oelint-parser]: Downloading https://files.pythonhosted.org/packages/5e/2a/b30881922091ce63a242bd86c9c65ab13cb9ca902dc0f8784573ddfa12ff/oelint_parser-3.5.0.tar.gz
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: Downloading https://files.pythonhosted.org/packages/b5/fc/136059379badc7c1717fce9aa8e6c73b5668d2f2f97b66a84056b15c927c/odoo_addon_base_external_dbsource-16.0.1.0.1.9-py3-none-any.whl
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: Downloading https://files.pythonhosted.org/packages/b8/b3/be469ea750784505c276e0e871ae7d2950008a3a74e525ba7d6458774d9e/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 08:35:16] INFO root fetch - processPackages [oelint-parser]: executing diffoscope
+[2024-04-20 08:35:16] INFO root fetch - processPackages [oelint-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oelint_parser-3.4.1.tar.gz tmp/oelint_parser-3.5.0.tar.gz --markdown 20240420/o/oelint-parser/3.4.1-3.5.0/README.md --exclude *.pyd
+[2024-04-20 08:35:16] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Downloading https://files.pythonhosted.org/packages/27/4a/c79d7db4d3031ed827ca4794d7791097c946dd8a6a0ae49a7fb27c9473d8/PureCloudPlatformClientV2-99.0.0.tar.gz
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: executing diffoscope
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.7-py3-none-any.whl.zip tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.9-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-base-external-dbsource/16.0.1.0.1.7-16.0.1.0.1.9/README.md --exclude *.pyd
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: executing diffoscope
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-base-external-dbsource-mysql/16.0.1.0.0.2-16.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-20 08:35:16] INFO root fetch - processPackages [PureCloudPlatformClientV2]: executing diffoscope
+[2024-04-20 08:35:16] INFO root fetch - processPackages [PureCloudPlatformClientV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PureCloudPlatformClientV2-98.0.0.tar.gz tmp/PureCloudPlatformClientV2-99.0.0.tar.gz --markdown 20240420/P/PureCloudPlatformClientV2/98.0.0-99.0.0/README.md --exclude *.pyd
+[2024-04-20 08:35:16] INFO root fetch - processPackages [oelint-parser]: Remove: archive file [/home/abi/fetcher/tmp/oelint_parser-3.4.1.tar.gz]
+[2024-04-20 08:35:16] INFO root fetch - processPackages [oelint-parser]: Remove: archive file [/home/abi/fetcher/tmp/oelint_parser-3.5.0.tar.gz]
+[2024-04-20 08:35:16] INFO root fetch - main [MainThread]: End processing [oelint-parser]: success
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource-mysql]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_external_dbsource_mysql-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 08:35:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-external-dbsource-mysql]: success
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.7-py3-none-any.whl.zip]
+[2024-04-20 08:35:16] INFO root fetch - processPackages [odoo-addon-base-external-dbsource]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_external_dbsource-16.0.1.0.1.9-py3-none-any.whl.zip]
+[2024-04-20 08:35:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-external-dbsource]: success
+[2024-04-20 08:35:28] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-98.0.0.tar.gz]
+[2024-04-20 08:35:28] INFO root fetch - processPackages [PureCloudPlatformClientV2]: Remove: archive file [/home/abi/fetcher/tmp/PureCloudPlatformClientV2-99.0.0.tar.gz]
+[2024-04-20 08:35:28] INFO root fetch - main [MainThread]: End processing [PureCloudPlatformClientV2]: success
+[2024-04-20 08:35:28] INFO root fetch - main [MainThread]: Store serial: [22853154]
