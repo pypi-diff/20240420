@@ -22995,3 +22995,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:21:55] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.tar.gz]
 [2024-04-20 22:21:55] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
 [2024-04-20 22:21:55] INFO root fetch - main [MainThread]: Store serial: [22859231]
+[2024-04-20 22:23:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859231]
+[2024-04-20 22:24:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: google-contact-local
+[2024-04-20 22:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyspacemouse
+[2024-04-20 22:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC211
+[2024-04-20 22:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: limits
+[2024-04-20 22:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Pruning-Engine
+[2024-04-20 22:24:03] INFO root fetch - processPackages [google-contact-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:24:03] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/a8/55/f63aa14924da6703289e0881058be4b007251255a7c3affa28e065371e97/google-contact-local-0.0.8.tar.gz
+[2024-04-20 22:24:03] WARNING root fetch - processPackages [PythonTestLJC211]: Skipping, unable to determine old version
+[2024-04-20 22:24:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC211] error
+[2024-04-20 22:24:03] INFO root fetch - processPackages [pyspacemouse]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-20 22:24:03] WARNING root fetch - processPackages [Pruning-Engine]: Skipping, unable to determine old version
+[2024-04-20 22:24:03] INFO root fetch - main [MainThread]: End processing [Pruning-Engine] error
+[2024-04-20 22:24:04] INFO root fetch - processPackages [limits]: New version: [3.9.0] Old Version: [3.8.0]
+[2024-04-20 22:24:04] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/90/a0/6476b4b508a422b515b36c8e96bc42204832fa643e68545864d4ecc1f820/google-contact-local-0.0.9.tar.gz
+[2024-04-20 22:24:04] INFO root fetch - processPackages [pyspacemouse]: Downloading https://files.pythonhosted.org/packages/b3/0f/62284291a1091d267815ba4192d2f7b712f10c0bf05e2f762a3fa712a2e9/pyspacemouse-1.1.1.tar.gz
+[2024-04-20 22:24:04] INFO root fetch - processPackages [google-contact-local]: executing diffoscope
+[2024-04-20 22:24:04] INFO root fetch - processPackages [google-contact-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-contact-local-0.0.8.tar.gz tmp/google-contact-local-0.0.9.tar.gz --markdown 20240420/g/google-contact-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:24:04] INFO root fetch - processPackages [limits]: Downloading https://files.pythonhosted.org/packages/5e/58/dff803a5506e6404d72576029bf4d35ffb1df8272bbaa865acce0d313ff4/limits-3.8.0.tar.gz
+[2024-04-20 22:24:04] INFO root fetch - processPackages [pyspacemouse]: Downloading https://files.pythonhosted.org/packages/aa/7c/8885eef3826a8c65e681adc25054639c7fc93793aca0f1ac242909992b2b/pyspacemouse-1.1.2.tar.gz
+[2024-04-20 22:24:04] INFO root fetch - processPackages [pyspacemouse]: executing diffoscope
+[2024-04-20 22:24:04] INFO root fetch - processPackages [pyspacemouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspacemouse-1.1.1.tar.gz tmp/pyspacemouse-1.1.2.tar.gz --markdown 20240420/p/pyspacemouse/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-20 22:24:04] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.8.tar.gz]
+[2024-04-20 22:24:04] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.9.tar.gz]
+[2024-04-20 22:24:04] INFO root fetch - main [MainThread]: End processing [google-contact-local]: success
+[2024-04-20 22:24:04] INFO root fetch - processPackages [limits]: Downloading https://files.pythonhosted.org/packages/42/f8/6516b81e926899ebbd6ec0376fa33141fc9ef529117860a6de23fbd7e6da/limits-3.9.0.tar.gz
+[2024-04-20 22:24:05] INFO root fetch - processPackages [limits]: executing diffoscope
+[2024-04-20 22:24:05] INFO root fetch - processPackages [limits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limits-3.8.0.tar.gz tmp/limits-3.9.0.tar.gz --markdown 20240420/l/limits/3.8.0-3.9.0/README.md --exclude *.pyd
+[2024-04-20 22:24:05] INFO root fetch - processPackages [pyspacemouse]: Remove: archive file [/home/abi/fetcher/tmp/pyspacemouse-1.1.1.tar.gz]
+[2024-04-20 22:24:05] INFO root fetch - processPackages [pyspacemouse]: Remove: archive file [/home/abi/fetcher/tmp/pyspacemouse-1.1.2.tar.gz]
+[2024-04-20 22:24:05] INFO root fetch - main [MainThread]: End processing [pyspacemouse]: success
+[2024-04-20 22:24:05] INFO root fetch - processPackages [limits]: Remove: archive file [/home/abi/fetcher/tmp/limits-3.8.0.tar.gz]
+[2024-04-20 22:24:05] INFO root fetch - processPackages [limits]: Remove: archive file [/home/abi/fetcher/tmp/limits-3.9.0.tar.gz]
+[2024-04-20 22:24:05] INFO root fetch - main [MainThread]: End processing [limits]: success
+[2024-04-20 22:24:05] INFO root fetch - main [MainThread]: Store serial: [22859250]
