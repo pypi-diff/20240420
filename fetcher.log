@@ -14952,3 +14952,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:47:08] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
 [2024-04-20 13:47:08] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-04-20 13:47:08] INFO root fetch - main [MainThread]: Store serial: [22855282]
+[2024-04-20 13:49:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855282]
+[2024-04-20 13:49:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ParendumLib
+[2024-04-20 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mingzi
+[2024-04-20 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC032
+[2024-04-20 13:49:18] INFO root fetch - processPackages [mingzi]: New version: [1.2.3a0] Old Version: [1.2.2]
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/dc/0d/dad300ad1ed9f7365015776f2068dc78e399dd043503105bc60fafbc0d9f/mingzi-1.2.2.tar.gz
+[2024-04-20 13:49:19] INFO root fetch - processPackages [ParendumLib]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 13:49:19] WARNING root fetch - processPackages [PythonTestLJC032]: Skipping, unable to determine old version
+[2024-04-20 13:49:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC032] error
+[2024-04-20 13:49:19] INFO root fetch - processPackages [ParendumLib]: Downloading https://files.pythonhosted.org/packages/ff/91/372f034006157e3a1d47070e6b472589b5102fb22a6ba177aa5c1b635176/ParendumLib-0.2.1.tar.gz
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/24/6b/a5b0785254e6150559649cc3f46e2b0b3ec05486453fa88c49676a9dac4d/mingzi-1.2.3a0.tar.gz
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: executing diffoscope
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingzi-1.2.2.tar.gz tmp/mingzi-1.2.3a0.tar.gz --markdown 20240420/m/mingzi/1.2.2-1.2.3a0/README.md --exclude *.pyd
+[2024-04-20 13:49:19] INFO root fetch - processPackages [ParendumLib]: Downloading https://files.pythonhosted.org/packages/60/41/a30379203ec51e200272bd25087b8f1822b7897c919b665674d845e1f60e/ParendumLib-0.2.2.tar.gz
+[2024-04-20 13:49:19] INFO root fetch - processPackages [ParendumLib]: executing diffoscope
+[2024-04-20 13:49:19] INFO root fetch - processPackages [ParendumLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ParendumLib-0.2.1.tar.gz tmp/ParendumLib-0.2.2.tar.gz --markdown 20240420/P/ParendumLib/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.2.tar.gz]
+[2024-04-20 13:49:19] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.3a0.tar.gz]
+[2024-04-20 13:49:19] INFO root fetch - main [MainThread]: End processing [mingzi]: success
+[2024-04-20 13:49:20] INFO root fetch - processPackages [ParendumLib]: Remove: archive file [/home/abi/fetcher/tmp/ParendumLib-0.2.1.tar.gz]
+[2024-04-20 13:49:20] INFO root fetch - processPackages [ParendumLib]: Remove: archive file [/home/abi/fetcher/tmp/ParendumLib-0.2.2.tar.gz]
+[2024-04-20 13:49:20] INFO root fetch - main [MainThread]: End processing [ParendumLib]: success
+[2024-04-20 13:49:20] INFO root fetch - main [MainThread]: Store serial: [22855293]
