@@ -9962,3 +9962,21 @@
 [2024-04-20 07:23:23] INFO root fetch - processPackages [odoo-addon-mis-builder]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_mis_builder-16.0.5.1.9.8-py3-none-any.whl.zip]
 [2024-04-20 07:23:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-mis-builder]: success
 [2024-04-20 07:23:23] INFO root fetch - main [MainThread]: Store serial: [22852756]
+[2024-04-20 07:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852756]
+[2024-04-20 07:25:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-purchase-sale-inter-company
+[2024-04-20 07:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ldjcourse
+[2024-04-20 07:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pgnote
+[2024-04-20 07:25:32] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: New version: [14.0.2.2.0] Old Version: [14.0.2.1.2.dev1]
+[2024-04-20 07:25:32] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: Downloading https://files.pythonhosted.org/packages/c2/53/efc0bddd0a7ee3fdfff0aa427abe26b6ef5c6933e421c84c944e6e23e1b9/odoo14_addon_purchase_sale_inter_company-14.0.2.1.2.dev1-py3-none-any.whl
+[2024-04-20 07:25:32] WARNING root fetch - processPackages [pgnote]: Skipping, unable to determine old version
+[2024-04-20 07:25:32] INFO root fetch - main [MainThread]: End processing [pgnote] error
+[2024-04-20 07:25:32] WARNING root fetch - processPackages [ldjcourse]: Skipping, unable to determine old version
+[2024-04-20 07:25:32] INFO root fetch - main [MainThread]: End processing [ldjcourse] error
+[2024-04-20 07:25:33] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: Downloading https://files.pythonhosted.org/packages/4f/55/9feede4be96fc603c883b3bb146b957cf2494db641a14c543375fd6fbed8/odoo14_addon_purchase_sale_inter_company-14.0.2.2.0-py3-none-any.whl
+[2024-04-20 07:25:33] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: executing diffoscope
+[2024-04-20 07:25:33] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_sale_inter_company-14.0.2.1.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_purchase_sale_inter_company-14.0.2.2.0-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-purchase-sale-inter-company/14.0.2.1.2.dev1-14.0.2.2.0/README.md --exclude *.pyd
+[2024-04-20 07:25:33] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_sale_inter_company-14.0.2.1.2.dev1-py3-none-any.whl.zip]
+[2024-04-20 07:25:33] INFO root fetch - processPackages [odoo14-addon-purchase-sale-inter-company]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_purchase_sale_inter_company-14.0.2.2.0-py3-none-any.whl.zip]
+[2024-04-20 07:25:33] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-sale-inter-company]: success
+[2024-04-20 07:25:33] INFO root fetch - main [MainThread]: Store serial: [22852767]
