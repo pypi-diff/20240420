@@ -23603,3 +23603,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:08:31] INFO root fetch - processPackages [easy-ec2]: Remove: archive file [/home/abi/fetcher/tmp/easy_ec2-0.1.9.tar.gz]
 [2024-04-20 23:08:31] INFO root fetch - main [MainThread]: End processing [easy-ec2]: success
 [2024-04-20 23:08:31] INFO root fetch - main [MainThread]: Store serial: [22859531]
+[2024-04-20 23:10:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859531]
+[2024-04-20 23:10:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 23:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reflex-chat
+[2024-04-20 23:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: devicetorch
+[2024-04-20 23:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NNSOM
+[2024-04-20 23:10:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC228
+[2024-04-20 23:10:40] INFO root fetch - processPackages [reflex-chat]: New version: [0.0.1a7] Old Version: [0.0.1a6]
+[2024-04-20 23:10:40] INFO root fetch - processPackages [NNSOM]: New version: [1.7.2] Old Version: [1.7.1]
+[2024-04-20 23:10:40] INFO root fetch - processPackages [devicetorch]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-20 23:10:40] INFO root fetch - processPackages [reflex-chat]: Downloading https://files.pythonhosted.org/packages/ce/e8/05c6de857eab259157bf612d17d783d7887d62e0e74800b6c558f58fa48d/reflex-chat-0.0.1a6.tar.gz
+[2024-04-20 23:10:40] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/6c/45/9264d84ee70b81303a4338e6abe4721278dd2a97206b2e74d2145f5e2017/nnsom-1.7.1.tar.gz
+[2024-04-20 23:10:40] WARNING root fetch - processPackages [PythonTestLJC228]: Skipping, unable to determine old version
+[2024-04-20 23:10:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC228] error
+[2024-04-20 23:10:40] INFO root fetch - processPackages [devicetorch]: Downloading https://files.pythonhosted.org/packages/64/05/1bb65271e6cdf2bc63a2def2071e8aa77f0d23d331231a3af46b8d13c186/devicetorch-0.1.tar.gz
+[2024-04-20 23:10:40] INFO root fetch - processPackages [reflex-chat]: Downloading https://files.pythonhosted.org/packages/5e/58/5d6d0efb71fc693ea54a631441dbcdf011c016ed5cf8bb6da91c8ba70ae5/reflex_chat-0.0.1a7.tar.gz
+[2024-04-20 23:10:40] INFO root fetch - processPackages [reflex-chat]: executing diffoscope
+[2024-04-20 23:10:40] INFO root fetch - processPackages [reflex-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex-chat-0.0.1a6.tar.gz tmp/reflex_chat-0.0.1a7.tar.gz --markdown 20240420/r/reflex-chat/0.0.1a6-0.0.1a7/README.md --exclude *.pyd
+[2024-04-20 23:10:41] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/18/7e/8949a278d1852d8845d9fccf5a73aa4eb16769ef82d7fdb39eb2933265d6/nnsom-1.7.2.tar.gz
+[2024-04-20 23:10:41] INFO root fetch - processPackages [devicetorch]: Downloading https://files.pythonhosted.org/packages/30/46/cd43abeaf80c1312cc6026c92557dd35b9392bac5897db67b9c026ad0696/devicetorch-0.1.1.tar.gz
+[2024-04-20 23:10:41] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-20 23:10:41] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.7.1.tar.gz tmp/nnsom-1.7.2.tar.gz --markdown 20240420/N/NNSOM/1.7.1-1.7.2/README.md --exclude *.pyd
+[2024-04-20 23:10:41] INFO root fetch - processPackages [devicetorch]: executing diffoscope
+[2024-04-20 23:10:41] INFO root fetch - processPackages [devicetorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devicetorch-0.1.tar.gz tmp/devicetorch-0.1.1.tar.gz --markdown 20240420/d/devicetorch/0.1-0.1.1/README.md --exclude *.pyd
+[2024-04-20 23:10:41] INFO root fetch - processPackages [reflex-chat]: Remove: archive file [/home/abi/fetcher/tmp/reflex-chat-0.0.1a6.tar.gz]
+[2024-04-20 23:10:41] INFO root fetch - processPackages [reflex-chat]: Remove: archive file [/home/abi/fetcher/tmp/reflex_chat-0.0.1a7.tar.gz]
+[2024-04-20 23:10:41] INFO root fetch - main [MainThread]: End processing [reflex-chat]: success
+[2024-04-20 23:10:41] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.1.tar.gz]
+[2024-04-20 23:10:41] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.2.tar.gz]
+[2024-04-20 23:10:41] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-20 23:10:42] INFO root fetch - processPackages [devicetorch]: Remove: archive file [/home/abi/fetcher/tmp/devicetorch-0.1.tar.gz]
+[2024-04-20 23:10:42] INFO root fetch - processPackages [devicetorch]: Remove: archive file [/home/abi/fetcher/tmp/devicetorch-0.1.1.tar.gz]
+[2024-04-20 23:10:42] INFO root fetch - main [MainThread]: End processing [devicetorch]: success
+[2024-04-20 23:10:42] INFO root fetch - main [MainThread]: Store serial: [22859545]
