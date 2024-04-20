@@ -7792,3 +7792,17 @@
 [2024-04-20 04:24:40] INFO root fetch - processPackages [counts]: Remove: archive file [/home/abi/fetcher/tmp/counts-0.9.0.tar.gz]
 [2024-04-20 04:24:40] INFO root fetch - main [MainThread]: End processing [counts]: success
 [2024-04-20 04:24:40] INFO root fetch - main [MainThread]: Store serial: [22851842]
+[2024-04-20 04:26:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851842]
+[2024-04-20 04:26:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 04:28:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851843]
+[2024-04-20 04:28:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 04:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scratchattach
+[2024-04-20 04:28:54] INFO root fetch - processPackages [scratchattach]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-20 04:28:54] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/da/e9/c166ffbe7cd6375f93eee6f8cfcfaae5d9d9c4d96a9111433f86c88a90c2/scratchattach-1.7.0.tar.gz
+[2024-04-20 04:28:54] INFO root fetch - processPackages [scratchattach]: Downloading https://files.pythonhosted.org/packages/9c/81/dba35a87980a33c068ad72a3534ff84bae85cd56096d0b0d7af1696b4169/scratchattach-1.7.1.tar.gz
+[2024-04-20 04:28:54] INFO root fetch - processPackages [scratchattach]: executing diffoscope
+[2024-04-20 04:28:54] INFO root fetch - processPackages [scratchattach]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scratchattach-1.7.0.tar.gz tmp/scratchattach-1.7.1.tar.gz --markdown 20240420/s/scratchattach/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-20 04:28:55] INFO root fetch - processPackages [scratchattach]: Remove: archive file [/home/abi/fetcher/tmp/scratchattach-1.7.0.tar.gz]
+[2024-04-20 04:28:55] INFO root fetch - processPackages [scratchattach]: Remove: archive file [/home/abi/fetcher/tmp/scratchattach-1.7.1.tar.gz]
+[2024-04-20 04:28:55] INFO root fetch - main [MainThread]: End processing [scratchattach]: success
+[2024-04-20 04:28:55] INFO root fetch - main [MainThread]: Store serial: [22851846]
