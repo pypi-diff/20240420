@@ -2933,3 +2933,81 @@
 [2024-04-20 02:48:02] INFO root fetch - processPackages [rattail]: Remove: archive file [/home/abi/fetcher/tmp/rattail-0.9.99.tar.gz]
 [2024-04-20 02:48:02] INFO root fetch - main [MainThread]: End processing [rattail]: success
 [2024-04-20 02:48:02] INFO root fetch - main [MainThread]: Store serial: [22850098]
+[2024-04-20 02:50:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850098]
+[2024-04-20 02:50:11] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Tailbone
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioversions
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: regex-rust
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dragonfly-energy
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-sns-notify
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oakvar
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hash-rename
+[2024-04-20 02:50:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: speechtoolkit
+[2024-04-20 02:50:11] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-20 02:50:11] WARNING root fetch - processPackages [regex-rust]: Skipping, unable to determine old version
+[2024-04-20 02:50:11] INFO root fetch - main [MainThread]: End processing [regex-rust] error
+[2024-04-20 02:50:11] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [Tailbone]: New version: [0.9.95] Old Version: [0.9.94]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/e6/34/7c40209c13edc9fe7c611a00fd4b0d6e59d501613427ed6713ad6398b655/bioversions-0.5.98.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [hash-rename]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [speechtoolkit]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/63/7d/ec62f3b7c0e08e1437b2036911a0d42b75ee30ea2cbb819399bdf8b55111/cdk-sns-notify-0.0.98.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-20 02:50:11] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/da/c5/c292f6d1b529905c09d5c486a8b5700346dc01fa48ea72e6e081f8a22c81/hash_rename-0.1.0.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/f7/8c/28595781852ceb2f9253ea7d7f1b7ed3803e983086f096f69a08cae2d979/speechtoolkit-0.0.0.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/e2/2a/54c98dc218a8216df56163f4c37c6cf3f1712ee83ce0da5e18ba4d4dcad3/tailbone-0.9.94.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [bioversions]: Downloading https://files.pythonhosted.org/packages/0d/f5/5956eccd9643084cc5f7aba6325ec9de1ed3a2bb3568a8ee7ab88d0eac77/bioversions-0.5.99.tar.gz
+[2024-04-20 02:50:11] INFO root fetch - processPackages [cdk-sns-notify]: Downloading https://files.pythonhosted.org/packages/18/81/3593e022c53913815c1207f0d20763efc2764992a13c81d641f3a01edf7d/cdk-sns-notify-0.0.99.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/89/a6/970ad5cb768936590c7083d4fcdb9ebcac5766108acafa9006dbd2312d66/hash_rename-0.2.0.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20240420/b/bioversions/0.5.98-0.5.99/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20240420/c/cdk-sns-notify/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [speechtoolkit]: Downloading https://files.pythonhosted.org/packages/f7/c7/de71852151b96abc22402d51520dec933ad3d536c7643250c995272201cd/speechtoolkit-0.0.1.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [hash-rename]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [hash-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hash_rename-0.1.0.tar.gz tmp/hash_rename-0.2.0.tar.gz --markdown 20240420/h/hash-rename/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [Tailbone]: Downloading https://files.pythonhosted.org/packages/d3/f5/6281835322a9736c1e981d64eaedbd9719a7822f9b959938a9e431dfae22/tailbone-0.9.95.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-20 02:50:12] INFO root fetch - processPackages [speechtoolkit]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [speechtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechtoolkit-0.0.0.tar.gz tmp/speechtoolkit-0.0.1.tar.gz --markdown 20240420/s/speechtoolkit/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240420/d/dragonfly-energy/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [Tailbone]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [Tailbone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tailbone-0.9.94.tar.gz tmp/tailbone-0.9.95.tar.gz --markdown 20240420/T/Tailbone/0.9.94-0.9.95/README.md --exclude *.pyd
+[2024-04-20 02:50:12] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 02:50:12] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240420/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-04-20 02:50:13] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.98.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - processPackages [cdk-sns-notify]: Remove: archive file [/home/abi/fetcher/tmp/cdk-sns-notify-0.0.99.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2024-04-20 02:50:13] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 02:50:13] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.1.0.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.2.0.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - main [MainThread]: End processing [hash-rename]: success
+[2024-04-20 02:50:13] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.0.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - processPackages [speechtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/speechtoolkit-0.0.1.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - main [MainThread]: End processing [speechtoolkit]: success
+[2024-04-20 02:50:13] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-20 02:50:13] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-20 02:50:14] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.94.tar.gz]
+[2024-04-20 02:50:14] INFO root fetch - processPackages [Tailbone]: Remove: archive file [/home/abi/fetcher/tmp/tailbone-0.9.95.tar.gz]
+[2024-04-20 02:50:14] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
+[2024-04-20 02:50:15] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 02:50:15] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-04-20 02:50:15] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 02:50:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.98.tar.gz]
+[2024-04-20 02:50:31] INFO root fetch - processPackages [bioversions]: Remove: archive file [/home/abi/fetcher/tmp/bioversions-0.5.99.tar.gz]
+[2024-04-20 02:50:31] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2024-04-20 02:50:31] INFO root fetch - main [MainThread]: Store serial: [22850190]
