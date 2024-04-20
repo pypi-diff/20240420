@@ -11615,3 +11615,52 @@
 [2024-04-20 09:45:35] INFO root fetch - processPackages [usdm]: Remove: archive file [/home/abi/fetcher/tmp/usdm-0.49.0.tar.gz]
 [2024-04-20 09:45:35] INFO root fetch - main [MainThread]: End processing [usdm]: success
 [2024-04-20 09:45:35] INFO root fetch - main [MainThread]: Store serial: [22853665]
+[2024-04-20 09:47:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853665]
+[2024-04-20 09:47:43] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitsunekko-tools
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypipr
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flechemano
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alfetcher
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pypipr
+[2024-04-20 09:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ypywidgets-textual
+[2024-04-20 09:47:44] INFO root fetch - processPackages [kitsunekko-tools]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 09:47:44] INFO root fetch - processPackages [flechemano]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 09:47:44] INFO root fetch - processPackages [ypywidgets-textual]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:47:44] WARNING root fetch - processPackages [alfetcher]: Skipping, unable to determine old version
+[2024-04-20 09:47:44] INFO root fetch - main [MainThread]: End processing [alfetcher] error
+[2024-04-20 09:47:44] INFO root fetch - processPackages [ypywidgets-textual]: Downloading https://files.pythonhosted.org/packages/1c/f6/1195075b8a1b09ac6e40ce3c855c2a8b4e6e531243b9f5bbb523a6719a01/ypywidgets_textual-0.3.0.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/e1/5c/172b98ffb657bbb974f5d04b067f5724da1ded490926cfb0cc3017789084/flechemano-0.1.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/be/64/2a2ba829c3d47d083e07628511b6ea81247aedf6bc4a2dfcdbecb4a476c7/kitsunekko_tools-0.0.1.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [ypywidgets-textual]: Downloading https://files.pythonhosted.org/packages/5f/ec/e7c1c277fa219ae94a36530a317ce54eed2604032f316772c47250c821e6/ypywidgets_textual-0.4.0.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [ypywidgets-textual]: executing diffoscope
+[2024-04-20 09:47:44] INFO root fetch - processPackages [ypywidgets-textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypywidgets_textual-0.3.0.tar.gz tmp/ypywidgets_textual-0.4.0.tar.gz --markdown 20240420/y/ypywidgets-textual/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:47:44] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:47:44] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/8f/fb/9c761826a1b262e28c23aaf4de16ae1a3b5e5fb8ba677f632ecaa9187cad/flechemano-0.2.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [kitsunekko-tools]: Downloading https://files.pythonhosted.org/packages/5e/87/215b77c6e6058c3d33c66921806f3a6b2d317370bb0a732bea4e47c09755/kitsunekko_tools-0.0.2.tar.gz
+[2024-04-20 09:47:44] INFO root fetch - processPackages [flechemano]: executing diffoscope
+[2024-04-20 09:47:44] INFO root fetch - processPackages [flechemano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flechemano-0.1.tar.gz tmp/flechemano-0.2.tar.gz --markdown 20240420/f/flechemano/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 09:47:44] INFO root fetch - processPackages [kitsunekko-tools]: executing diffoscope
+[2024-04-20 09:47:44] INFO root fetch - processPackages [kitsunekko-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kitsunekko_tools-0.0.1.tar.gz tmp/kitsunekko_tools-0.0.2.tar.gz --markdown 20240420/k/kitsunekko-tools/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 09:47:45] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.1.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.2.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [flechemano]: success
+[2024-04-20 09:47:45] INFO root fetch - processPackages [ypywidgets-textual]: Remove: archive file [/home/abi/fetcher/tmp/ypywidgets_textual-0.3.0.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - processPackages [ypywidgets-textual]: Remove: archive file [/home/abi/fetcher/tmp/ypywidgets_textual-0.4.0.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [ypywidgets-textual]: success
+[2024-04-20 09:47:45] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:47:45] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-0.0.1.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-0.0.2.tar.gz]
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools]: success
+[2024-04-20 09:47:45] INFO root fetch - main [MainThread]: Store serial: [22853683]
