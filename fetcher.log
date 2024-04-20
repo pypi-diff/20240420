@@ -18417,3 +18417,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:45:10] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b9.tar.gz]
 [2024-04-20 17:45:10] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
 [2024-04-20 17:45:10] INFO root fetch - main [MainThread]: Store serial: [22857057]
+[2024-04-20 17:47:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857057]
+[2024-04-20 17:47:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC111
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: travertine
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: async-VKsher
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vot-trax
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smaht-submitr
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: esanom
+[2024-04-20 17:47:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: async-VKsher
+[2024-04-20 17:47:19] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.0.1b9] Old Version: [0.8.0.1b8]
+[2024-04-20 17:47:19] INFO root fetch - processPackages [travertine]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 17:47:19] WARNING root fetch - processPackages [PythonTestLJC111]: Skipping, unable to determine old version
+[2024-04-20 17:47:19] INFO root fetch - main [MainThread]: End processing [PythonTestLJC111] error
+[2024-04-20 17:47:19] INFO root fetch - processPackages [async-VKsher]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-20 17:47:19] INFO root fetch - processPackages [async-VKsher]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-20 17:47:19] INFO root fetch - processPackages [vot-trax]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-20 17:47:19] INFO root fetch - processPackages [esanom]: New version: [3.0.3.176] Old Version: [3.0.2.128]
+[2024-04-20 17:47:19] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/79/ad/69a49972361f3dd7698be4e52572630203c3c66d2562b3864e2814efd485/smaht_submitr-0.8.0.1b8.tar.gz
+[2024-04-20 17:47:19] INFO root fetch - processPackages [travertine]: Downloading https://files.pythonhosted.org/packages/a4/36/413b425cab8cfe2766d18bb01d441e5bc0d6eb4297d30e9cbe0e4039deb6/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl
+[2024-04-20 17:47:19] INFO root fetch - processPackages [vot-trax]: Downloading https://files.pythonhosted.org/packages/71/bf/c1dbff143fbb2537427bb87798ded81b3bd0c8be4a46882f904dbc0ce4f6/vot-trax-4.0.1.tar.gz
+[2024-04-20 17:47:19] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/da/76/7ec5847962538761bc25c8e1ca649f2c7e51e06dc17a7bd40e0c9f4724f8/async_VKsher-1.7.0.tar.gz
+[2024-04-20 17:47:19] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/da/76/7ec5847962538761bc25c8e1ca649f2c7e51e06dc17a7bd40e0c9f4724f8/async_VKsher-1.7.0.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/a9/b9/54c39138072c920a1d8d5107253bf98513c92a68aae12fec8962cedc0dd9/smaht_submitr-0.8.0.1b9.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/17/40/afed2061d92ef9af1334ba68c6f013b60c41bf7a57aa0d6e51d1a04ea23b/esanom-3.0.2.128.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-20 17:47:20] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.0.1b8.tar.gz tmp/smaht_submitr-0.8.0.1b9.tar.gz --markdown 20240420/s/smaht-submitr/0.8.0.1b8-0.8.0.1b9/README.md --exclude *.pyd
+[2024-04-20 17:47:20] INFO root fetch - processPackages [vot-trax]: Downloading https://files.pythonhosted.org/packages/a8/1e/1b194d0ce22a4fc2709c2a2332155e0da752c08ee6a68eb61309c2b88d9f/vot-trax-4.0.2.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/c7/ff/0cb46a0a1001bcdeff911588edcb1dcf11eb6dada1efd8f84ed8bf94321b/async_VKsher-1.7.1.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: Downloading https://files.pythonhosted.org/packages/c7/ff/0cb46a0a1001bcdeff911588edcb1dcf11eb6dada1efd8f84ed8bf94321b/async_VKsher-1.7.1.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [vot-trax]: executing diffoscope
+[2024-04-20 17:47:20] INFO root fetch - processPackages [vot-trax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vot-trax-4.0.1.tar.gz tmp/vot-trax-4.0.2.tar.gz --markdown 20240420/v/vot-trax/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-04-20 17:47:20] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/5e/90/c1c5074fe759838a3965eefd4e2d0dd7e6699c4a02b9c28688d405f552bd/esanom-3.0.3.176.tar.gz
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: executing diffoscope
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_VKsher-1.7.0.tar.gz tmp/async_VKsher-1.7.1.tar.gz --markdown 20240420/a/async-VKsher/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: executing diffoscope
+[2024-04-20 17:47:20] INFO root fetch - processPackages [async-VKsher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_VKsher-1.7.0.tar.gz tmp/async_VKsher-1.7.1.tar.gz --markdown 20240420/a/async-VKsher/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-04-20 17:47:20] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b8.tar.gz]
+[2024-04-20 17:47:20] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b9.tar.gz]
+[2024-04-20 17:47:20] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-20 17:47:21] INFO root fetch - processPackages [async-VKsher]: Remove: archive file [/home/abi/fetcher/tmp/async_VKsher-1.7.0.tar.gz]
+[2024-04-20 17:47:21] INFO root fetch - processPackages [async-VKsher]: Remove: archive file [/home/abi/fetcher/tmp/async_VKsher-1.7.1.tar.gz]
+[2024-04-20 17:47:21] INFO root fetch - main [MainThread]: End processing [async-VKsher]: success
+[2024-04-20 17:47:21] INFO root fetch - main [MainThread]: End processing [async-VKsher]: success
+[2024-04-20 17:47:21] INFO root fetch - processPackages [esanom]: executing diffoscope
+[2024-04-20 17:47:21] INFO root fetch - processPackages [esanom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esanom-3.0.2.128.tar.gz tmp/esanom-3.0.3.176.tar.gz --markdown 20240420/e/esanom/3.0.2.128-3.0.3.176/README.md --exclude *.pyd
+[2024-04-20 17:47:21] INFO root fetch - processPackages [vot-trax]: Remove: archive file [/home/abi/fetcher/tmp/vot-trax-4.0.1.tar.gz]
+[2024-04-20 17:47:21] INFO root fetch - processPackages [vot-trax]: Remove: archive file [/home/abi/fetcher/tmp/vot-trax-4.0.2.tar.gz]
+[2024-04-20 17:47:21] INFO root fetch - main [MainThread]: End processing [vot-trax]: success
+[2024-04-20 17:47:21] INFO root fetch - processPackages [travertine]: Downloading https://files.pythonhosted.org/packages/ed/c3/f5f757cd6ce8c0a38ca0ff07753e5d1d8798b2efe7c43e19596fbba3c7d7/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl
+[2024-04-20 17:47:22] INFO root fetch - processPackages [travertine]: executing diffoscope
+[2024-04-20 17:47:22] INFO root fetch - processPackages [travertine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl.zip tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip --markdown 20240420/t/travertine/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 17:47:22] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.2.128.tar.gz]
+[2024-04-20 17:47:22] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.3.176.tar.gz]
+[2024-04-20 17:47:22] INFO root fetch - main [MainThread]: End processing [esanom]: success
+[2024-04-20 17:47:22] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.8.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
+[2024-04-20 17:47:22] INFO root fetch - processPackages [travertine]: Remove: archive file [/home/abi/fetcher/tmp/travertine-0.9.0-cp38-cp38-manylinux2010_x86_64.whl.zip]
+[2024-04-20 17:47:22] INFO root fetch - main [MainThread]: End processing [travertine]: success
+[2024-04-20 17:47:22] INFO root fetch - main [MainThread]: Store serial: [22857091]
