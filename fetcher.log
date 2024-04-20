@@ -20003,3 +20003,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:19:13] INFO root fetch - processPackages [maestral-cocoa]: Remove: archive file [/home/abi/fetcher/tmp/maestral_cocoa-1.9.3.dev1.tar.gz]
 [2024-04-20 19:19:13] INFO root fetch - main [MainThread]: End processing [maestral-cocoa]: success
 [2024-04-20 19:19:13] INFO root fetch - main [MainThread]: Store serial: [22857791]
+[2024-04-20 19:21:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857791]
+[2024-04-20 19:21:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: k0s
+[2024-04-20 19:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC145
+[2024-04-20 19:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hdn-research-environment
+[2024-04-20 19:21:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gemini-ng
+[2024-04-20 19:21:22] INFO root fetch - processPackages [gemini-ng]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 19:21:22] INFO root fetch - processPackages [hdn-research-environment]: New version: [3.0.7rc0] Old Version: [3.0.6rc1]
+[2024-04-20 19:21:22] WARNING root fetch - processPackages [k0s]: Skipping, unable to determine old version
+[2024-04-20 19:21:22] INFO root fetch - main [MainThread]: End processing [k0s] error
+[2024-04-20 19:21:22] WARNING root fetch - processPackages [PythonTestLJC145]: Skipping, unable to determine old version
+[2024-04-20 19:21:22] INFO root fetch - main [MainThread]: End processing [PythonTestLJC145] error
+[2024-04-20 19:21:22] INFO root fetch - processPackages [gemini-ng]: Downloading https://files.pythonhosted.org/packages/48/db/e3487c9b1803b333a234a2a679c53422ee313b157984a678f593481f5988/gemini_ng-0.1.3.tar.gz
+[2024-04-20 19:21:22] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/3a/eb/9a03e2dd9cd2062b91f09e385e1eec9d55ce1a790f1cd0d9443cd28c9265/hdn-research-environment-3.0.6rc1.tar.gz
+[2024-04-20 19:21:22] INFO root fetch - processPackages [gemini-ng]: Downloading https://files.pythonhosted.org/packages/a4/8d/45e564576958b26b3a61871c67842cd073c7b7f11e7fa79e03001e21fe2b/gemini_ng-0.1.4.tar.gz
+[2024-04-20 19:21:22] INFO root fetch - processPackages [hdn-research-environment]: Downloading https://files.pythonhosted.org/packages/b0/e8/a2e77f18206f465ec2cf20c049c6a261c27baa8bbdf52c92a58ff7b6248d/hdn-research-environment-3.0.7rc0.tar.gz
+[2024-04-20 19:21:22] INFO root fetch - processPackages [hdn-research-environment]: executing diffoscope
+[2024-04-20 19:21:22] INFO root fetch - processPackages [hdn-research-environment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdn-research-environment-3.0.6rc1.tar.gz tmp/hdn-research-environment-3.0.7rc0.tar.gz --markdown 20240420/h/hdn-research-environment/3.0.6rc1-3.0.7rc0/README.md --exclude *.pyd
+[2024-04-20 19:21:22] INFO root fetch - processPackages [gemini-ng]: executing diffoscope
+[2024-04-20 19:21:22] INFO root fetch - processPackages [gemini-ng]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gemini_ng-0.1.3.tar.gz tmp/gemini_ng-0.1.4.tar.gz --markdown 20240420/g/gemini-ng/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 19:21:23] INFO root fetch - processPackages [gemini-ng]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ng-0.1.3.tar.gz]
+[2024-04-20 19:21:23] INFO root fetch - processPackages [gemini-ng]: Remove: archive file [/home/abi/fetcher/tmp/gemini_ng-0.1.4.tar.gz]
+[2024-04-20 19:21:23] INFO root fetch - main [MainThread]: End processing [gemini-ng]: success
+[2024-04-20 19:21:23] INFO root fetch - processPackages [hdn-research-environment]: Remove: archive file [/home/abi/fetcher/tmp/hdn-research-environment-3.0.6rc1.tar.gz]
+[2024-04-20 19:21:23] INFO root fetch - processPackages [hdn-research-environment]: Remove: archive file [/home/abi/fetcher/tmp/hdn-research-environment-3.0.7rc0.tar.gz]
+[2024-04-20 19:21:23] INFO root fetch - main [MainThread]: End processing [hdn-research-environment]: success
+[2024-04-20 19:21:23] INFO root fetch - main [MainThread]: Store serial: [22857805]
