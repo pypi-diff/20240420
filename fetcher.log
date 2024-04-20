@@ -10178,3 +10178,45 @@
 [2024-04-20 07:51:38] INFO root fetch - processPackages [shared-atomic-enterprise]: Remove: archive file [/home/abi/fetcher/tmp/shared_atomic_enterprise-5!3.3.3-cp37-none-win_amd64.whl.zip]
 [2024-04-20 07:51:38] INFO root fetch - main [MainThread]: End processing [shared-atomic-enterprise]: success
 [2024-04-20 07:51:38] INFO root fetch - main [MainThread]: Store serial: [22852953]
+[2024-04-20 07:53:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852953]
+[2024-04-20 07:53:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metalattice
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-website-sale-product-pack
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-product-pack
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlops-api-gemstack
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ldjcourse
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ldjcourse]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/9e/b7/b244760b388351894b4132ed86a18c28b85ef4f338932720aea70cd105ff/ldjcourse-0.0.2.tar.gz
+[2024-04-20 07:53:48] INFO root fetch - processPackages [odoo-addon-product-pack]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-04-20 07:53:48] WARNING root fetch - processPackages [mlops-api-gemstack]: Skipping, unable to determine old version
+[2024-04-20 07:53:48] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack] error
+[2024-04-20 07:53:48] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2024-04-20 07:53:48] INFO root fetch - processPackages [metalattice]: New version: [0.3.12] Old Version: [0.3.11]
+[2024-04-20 07:53:48] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: Downloading https://files.pythonhosted.org/packages/a3/f5/576b15ead9dce14e6f6d33f5c7e73b7280d67cc5edc1e5f0b4b31a0f59af/odoo_addon_website_sale_product_pack-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 07:53:48] INFO root fetch - processPackages [odoo-addon-product-pack]: Downloading https://files.pythonhosted.org/packages/4c/bf/3d0f4113d5fbd38052cf11beceda5445a075f7d275af1fa9c325f0890022/odoo_addon_product_pack-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 07:53:48] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/3b/07/85a35d2be21b2efff3bd7705bccf786750a2c003f5c78abdb38811842966/metalattice-0.3.11.tar.gz
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ldjcourse]: Downloading https://files.pythonhosted.org/packages/08/29/c7891b2fae2daa415fe34f96f0dddfdc97f31397c9ab870aa67385fc8ccf/ldjcourse-0.0.3.tar.gz
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ldjcourse]: executing diffoscope
+[2024-04-20 07:53:48] INFO root fetch - processPackages [ldjcourse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ldjcourse-0.0.2.tar.gz tmp/ldjcourse-0.0.3.tar.gz --markdown 20240420/l/ldjcourse/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-04-20 07:53:48] INFO root fetch - processPackages [odoo-addon-product-pack]: Downloading https://files.pythonhosted.org/packages/8d/bb/55ce4c802c897a9835c7ac841eee230f89ad0c5bddeb9ce80a8a3476e2d6/odoo_addon_product_pack-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: Downloading https://files.pythonhosted.org/packages/34/07/1b7fbd8cea2411356281e156c75d9bd82a7276148c934423a3abd5109007/odoo_addon_website_sale_product_pack-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-product-pack]: executing diffoscope
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-product-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_pack-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_product_pack-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-product-pack/17.0.1.0.0.2-17.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/e1/6d/905311da1760c169d455aeaac9c058558a8f54459a8ba35e6707aa32e587/metalattice-0.3.12.tar.gz
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: executing diffoscope
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_website_sale_product_pack-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_website_sale_product_pack-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-website-sale-product-pack/16.0.1.0.0.4-16.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: executing diffoscope
+[2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalattice-0.3.11.tar.gz tmp/metalattice-0.3.12.tar.gz --markdown 20240420/m/metalattice/0.3.11-0.3.12/README.md --exclude *.pyd
+[2024-04-20 07:53:49] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.2.tar.gz]
+[2024-04-20 07:53:49] INFO root fetch - processPackages [ldjcourse]: Remove: archive file [/home/abi/fetcher/tmp/ldjcourse-0.0.3.tar.gz]
+[2024-04-20 07:53:49] INFO root fetch - main [MainThread]: End processing [ldjcourse]: success
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_product_pack-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-website-sale-product-pack]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_website_sale_product_pack-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-20 07:53:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-website-sale-product-pack]: success
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-product-pack]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pack-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 07:53:49] INFO root fetch - processPackages [odoo-addon-product-pack]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_pack-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 07:53:49] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-pack]: success
+[2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.11.tar.gz]
+[2024-04-20 07:53:49] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.12.tar.gz]
+[2024-04-20 07:53:49] INFO root fetch - main [MainThread]: End processing [metalattice]: success
+[2024-04-20 07:53:49] INFO root fetch - main [MainThread]: Store serial: [22852972]
