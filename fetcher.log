@@ -8480,3 +8480,18 @@
 [2024-04-20 05:30:10] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
 [2024-04-20 05:30:10] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
 [2024-04-20 05:30:10] INFO root fetch - main [MainThread]: Store serial: [22852104]
+[2024-04-20 05:32:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852104]
+[2024-04-20 05:32:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numerical-pde-solver
+[2024-04-20 05:32:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TheSilent
+[2024-04-20 05:32:20] WARNING root fetch - processPackages [numerical-pde-solver]: Skipping, unable to determine old version
+[2024-04-20 05:32:20] INFO root fetch - main [MainThread]: End processing [numerical-pde-solver] error
+[2024-04-20 05:32:20] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 05:32:20] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 05:32:21] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 05:32:21] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 05:32:21] INFO root fetch - main [MainThread]: Store serial: [22852119]
