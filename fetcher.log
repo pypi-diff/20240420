@@ -2559,3 +2559,45 @@
 [2024-04-20 02:28:13] INFO root fetch - processPackages [pycpio]: Remove: archive file [/home/abi/fetcher/tmp/pycpio-1.0.0.tar.gz]
 [2024-04-20 02:28:13] INFO root fetch - main [MainThread]: End processing [pycpio]: success
 [2024-04-20 02:28:13] INFO root fetch - main [MainThread]: Store serial: [22849941]
+[2024-04-20 02:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849941]
+[2024-04-20 02:30:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 02:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superdupper
+[2024-04-20 02:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superdupper-core
+[2024-04-20 02:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superdupper-db
+[2024-04-20 02:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aeppl-nightly
+[2024-04-20 02:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oakvar
+[2024-04-20 02:30:23] WARNING root fetch - processPackages [superdupper-db]: Skipping, unable to determine old version
+[2024-04-20 02:30:23] INFO root fetch - main [MainThread]: End processing [superdupper-db] error
+[2024-04-20 02:30:23] INFO root fetch - processPackages [superdupper-core]: New version: [0.0.13] Old Version: [0.0.12]
+[2024-04-20 02:30:23] INFO root fetch - processPackages [superdupper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 02:30:23] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240419] Old Version: [0.1.5.dev20240418]
+[2024-04-20 02:30:23] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-04-20 02:30:23] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/2b/23/1d1e615b7840b49e9194dc5ea53dfa94115c6cf77bb568bfd981e7732725/superdupper-0.0.8.tar.gz
+[2024-04-20 02:30:23] INFO root fetch - processPackages [superdupper-core]: Downloading https://files.pythonhosted.org/packages/c8/c7/2af03f44306101687f274ac407038b3d6e64da46a60ba0a76f7a3e95c5a0/superdupper_core-0.0.12.tar.gz
+[2024-04-20 02:30:23] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/de/c9/ea8ff540a9d063fab1fcb58a81bea6f57727da788e6703113697c9addc98/aeppl_nightly-0.1.5.dev20240418.tar.gz
+[2024-04-20 02:30:23] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/9c/60/8439940b99faa4223f183c80fde832222e7dc706c53ef75eed365094301e/superdupper-0.0.9.tar.gz
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper-core]: Downloading https://files.pythonhosted.org/packages/2e/da/7b711d4351836f78468c0b60820512ab0c0b064e47d59e964249fc96dbd5/superdupper_core-0.0.13.tar.gz
+[2024-04-20 02:30:24] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/44/ba/d111c683039fbc63cd90d9f1cda1da21aad686b51716a726df7efd8addf9/aeppl_nightly-0.1.5.dev20240419.tar.gz
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.8.tar.gz tmp/superdupper-0.0.9.tar.gz --markdown 20240420/s/superdupper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper-core]: executing diffoscope
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper_core-0.0.12.tar.gz tmp/superdupper_core-0.0.13.tar.gz --markdown 20240420/s/superdupper-core/0.0.12-0.0.13/README.md --exclude *.pyd
+[2024-04-20 02:30:24] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-20 02:30:24] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240418.tar.gz tmp/aeppl_nightly-0.1.5.dev20240419.tar.gz --markdown 20240420/a/aeppl-nightly/0.1.5.dev20240418-0.1.5.dev20240419/README.md --exclude *.pyd
+[2024-04-20 02:30:24] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper-core]: Remove: archive file [/home/abi/fetcher/tmp/superdupper_core-0.0.12.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper-core]: Remove: archive file [/home/abi/fetcher/tmp/superdupper_core-0.0.13.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - main [MainThread]: End processing [superdupper-core]: success
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.8.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.9.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 02:30:24] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240418.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240419.tar.gz]
+[2024-04-20 02:30:24] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-20 02:30:24] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 02:30:24] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240420/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-04-20 02:30:27] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 02:30:27] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-04-20 02:30:27] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 02:30:27] INFO root fetch - main [MainThread]: Store serial: [22849957]
