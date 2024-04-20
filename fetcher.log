@@ -8294,3 +8294,15 @@
 [2024-04-20 05:09:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-direct-debit]: success
 [2024-04-20 05:09:21] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-banking-sepa-direct-debit]: success
 [2024-04-20 05:09:21] INFO root fetch - main [MainThread]: Store serial: [22852045]
+[2024-04-20 05:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852045]
+[2024-04-20 05:11:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 05:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EclipsingBinaries
+[2024-04-20 05:11:30] INFO root fetch - processPackages [EclipsingBinaries]: New version: [4.1.0] Old Version: [4.0.8]
+[2024-04-20 05:11:30] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/8c/b8/f77cd2114b1dc62ed4b9af83bab97ec58f2928fc5dc83b351a6646725d1d/EclipsingBinaries-4.0.8.tar.gz
+[2024-04-20 05:11:31] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/1f/63/ffedb8eb212503b74d56247f701c27ad1938661ae25da7204ce6c88d9447/eclipsingbinaries-4.1.0.tar.gz
+[2024-04-20 05:11:31] INFO root fetch - processPackages [EclipsingBinaries]: executing diffoscope
+[2024-04-20 05:11:31] INFO root fetch - processPackages [EclipsingBinaries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EclipsingBinaries-4.0.8.tar.gz tmp/eclipsingbinaries-4.1.0.tar.gz --markdown 20240420/E/EclipsingBinaries/4.0.8-4.1.0/README.md --exclude *.pyd
+[2024-04-20 05:11:32] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/EclipsingBinaries-4.0.8.tar.gz]
+[2024-04-20 05:11:32] INFO root fetch - processPackages [EclipsingBinaries]: Remove: archive file [/home/abi/fetcher/tmp/eclipsingbinaries-4.1.0.tar.gz]
+[2024-04-20 05:11:32] INFO root fetch - main [MainThread]: End processing [EclipsingBinaries]: success
+[2024-04-20 05:11:32] INFO root fetch - main [MainThread]: Store serial: [22852048]
