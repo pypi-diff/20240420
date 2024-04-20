@@ -8907,3 +8907,29 @@
 [2024-04-20 05:56:15] INFO root fetch - processPackages [java1]: Remove: archive file [/home/abi/fetcher/tmp/java1-0.3.0.tar.gz]
 [2024-04-20 05:56:15] INFO root fetch - main [MainThread]: End processing [java1]: success
 [2024-04-20 05:56:15] INFO root fetch - main [MainThread]: Store serial: [22852286]
+[2024-04-20 05:58:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852286]
+[2024-04-20 05:58:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 05:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recflows
+[2024-04-20 05:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-master
+[2024-04-20 05:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nautilus_trader
+[2024-04-20 05:58:23] INFO root fetch - processPackages [recflows]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:58:23] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240419.7.51.91355] Old Version: [20240419.6.18.49575]
+[2024-04-20 05:58:23] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/75/5a/4b52d3ff259c3f6b479f06d44538d510a7b56662950706ae95edf64f6df6/recflows-0.0.8.tar.gz
+[2024-04-20 05:58:23] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/ba/4a/4951ee0f5ad69546f4e4cf12d0b3e1fdc5c25b7d84b15906c60b88da743c/certora-cli-alpha-master-20240419.6.18.49575.tar.gz
+[2024-04-20 05:58:23] INFO root fetch - processPackages [nautilus_trader]: New version: [1.191.0] Old Version: [1.190.0]
+[2024-04-20 05:58:23] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14538861>=10485760
+[2024-04-20 05:58:23] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-20 05:58:23] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/b0/3a/5fe25ed6db3f6a0b1324bba20aef50aeeef1b71eceb228be123efb580bbe/recflows-0.0.9.tar.gz
+[2024-04-20 05:58:24] INFO root fetch - processPackages [nautilus_trader]: Downloading https://files.pythonhosted.org/packages/28/16/8eea1730dae7d2d0f2b2cc72960c5cc87a2c912ba1d8ebda8f2fecc771d1/nautilus_trader-1.190.0.tar.gz
+[2024-04-20 05:58:24] INFO root fetch - processPackages [recflows]: executing diffoscope
+[2024-04-20 05:58:24] INFO root fetch - processPackages [recflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recflows-0.0.8.tar.gz tmp/recflows-0.0.9.tar.gz --markdown 20240420/r/recflows/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:58:24] INFO root fetch - processPackages [nautilus_trader]: Downloading https://files.pythonhosted.org/packages/1f/12/5312e6f905790d62ec3d13ddbbeedea961470c09c56a6b38b12613a7859d/nautilus_trader-1.191.0.tar.gz
+[2024-04-20 05:58:24] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.8.tar.gz]
+[2024-04-20 05:58:24] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
+[2024-04-20 05:58:24] INFO root fetch - main [MainThread]: End processing [recflows]: success
+[2024-04-20 05:58:24] INFO root fetch - processPackages [nautilus_trader]: executing diffoscope
+[2024-04-20 05:58:24] INFO root fetch - processPackages [nautilus_trader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nautilus_trader-1.190.0.tar.gz tmp/nautilus_trader-1.191.0.tar.gz --markdown 20240420/n/nautilus_trader/1.190.0-1.191.0/README.md --exclude *.pyd
+[2024-04-20 05:58:33] INFO root fetch - processPackages [nautilus_trader]: Remove: archive file [/home/abi/fetcher/tmp/nautilus_trader-1.190.0.tar.gz]
+[2024-04-20 05:58:33] INFO root fetch - processPackages [nautilus_trader]: Remove: archive file [/home/abi/fetcher/tmp/nautilus_trader-1.191.0.tar.gz]
+[2024-04-20 05:58:33] INFO root fetch - main [MainThread]: End processing [nautilus_trader]: success
+[2024-04-20 05:58:33] INFO root fetch - main [MainThread]: Store serial: [22852296]
