@@ -2756,3 +2756,36 @@
 [2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev1.tar.gz]
 [2024-04-20 02:41:18] INFO root fetch - main [MainThread]: End processing [npiai]: success
 [2024-04-20 02:41:18] INFO root fetch - main [MainThread]: Store serial: [22850013]
+[2024-04-20 02:43:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850013]
+[2024-04-20 02:43:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 02:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-jm
+[2024-04-20 02:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uv
+[2024-04-20 02:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dialog-lib
+[2024-04-20 02:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hash-rename
+[2024-04-20 02:43:28] INFO root fetch - processPackages [sbcli-jm]: New version: [4.0.6] Old Version: [4.0.5]
+[2024-04-20 02:43:28] INFO root fetch - processPackages [uv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 02:43:29] INFO root fetch - processPackages [sbcli-jm]: Downloading https://files.pythonhosted.org/packages/53/d2/54654c78fed011e948c0068be8ee689d48def316d5d587a70a6ba8118fc5/sbcli_jm-4.0.5.zip
+[2024-04-20 02:43:29] WARNING root fetch - processPackages [hash-rename]: Skipping, unable to determine old version
+[2024-04-20 02:43:29] INFO root fetch - main [MainThread]: End processing [hash-rename] error
+[2024-04-20 02:43:29] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2024-04-20 02:43:29] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/a0/e6/3098c0e5986919287a41a4a1134b67f94b93da18b3c007875932e6844d8e/uv-0.1.8.tar.gz
+[2024-04-20 02:43:29] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/e9/13/4188899d6b95c46737dcb91b618d7f043ee4fc94128efb54e8917315026d/dialog_lib-0.0.1.8.tar.gz
+[2024-04-20 02:43:29] INFO root fetch - processPackages [sbcli-jm]: Downloading https://files.pythonhosted.org/packages/ad/bf/5da4b9a1f2696d7052b731e4970f3c5432a4f423955bc3e24069f8395927/sbcli_jm-4.0.6.zip
+[2024-04-20 02:43:29] INFO root fetch - processPackages [uv]: Downloading https://files.pythonhosted.org/packages/d2/e8/e726e0b0cf2dac9c89f3871c8c19bd673273f3cf9711d91e4902ee67a0d0/uv-0.1.9.tar.gz
+[2024-04-20 02:43:29] INFO root fetch - processPackages [sbcli-jm]: executing diffoscope
+[2024-04-20 02:43:29] INFO root fetch - processPackages [sbcli-jm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli_jm-4.0.5.zip tmp/sbcli_jm-4.0.6.zip --markdown 20240420/s/sbcli-jm/4.0.5-4.0.6/README.md --exclude *.pyd
+[2024-04-20 02:43:29] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/a6/99/91b03e62dec54e7fb1c05a8fb35ed00fe60baf6eb48ab34311a56782abd6/dialog_lib-0.0.1.9.tar.gz
+[2024-04-20 02:43:29] INFO root fetch - processPackages [uv]: executing diffoscope
+[2024-04-20 02:43:29] INFO root fetch - processPackages [uv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uv-0.1.8.tar.gz tmp/uv-0.1.9.tar.gz --markdown 20240420/u/uv/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 02:43:29] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-04-20 02:43:29] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.8.tar.gz tmp/dialog_lib-0.0.1.9.tar.gz --markdown 20240420/d/dialog-lib/0.0.1.8-0.0.1.9/README.md --exclude *.pyd
+[2024-04-20 02:43:30] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.8.tar.gz]
+[2024-04-20 02:43:30] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.9.tar.gz]
+[2024-04-20 02:43:30] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-04-20 02:43:30] INFO root fetch - processPackages [sbcli-jm]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_jm-4.0.5.zip]
+[2024-04-20 02:43:30] INFO root fetch - processPackages [sbcli-jm]: Remove: archive file [/home/abi/fetcher/tmp/sbcli_jm-4.0.6.zip]
+[2024-04-20 02:43:30] INFO root fetch - main [MainThread]: End processing [sbcli-jm]: success
+[2024-04-20 02:43:31] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.8.tar.gz]
+[2024-04-20 02:43:31] INFO root fetch - processPackages [uv]: Remove: archive file [/home/abi/fetcher/tmp/uv-0.1.9.tar.gz]
+[2024-04-20 02:43:31] INFO root fetch - main [MainThread]: End processing [uv]: success
+[2024-04-20 02:43:31] INFO root fetch - main [MainThread]: Store serial: [22850043]
