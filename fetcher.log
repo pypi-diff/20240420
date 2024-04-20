@@ -18129,3 +18129,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:24:51] INFO root fetch - processPackages [greyhorse-rmq]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_rmq-0.2.tar.gz]
 [2024-04-20 17:24:51] INFO root fetch - main [MainThread]: End processing [greyhorse-rmq]: success
 [2024-04-20 17:24:51] INFO root fetch - main [MainThread]: Store serial: [22856931]
+[2024-04-20 17:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856931]
+[2024-04-20 17:26:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 17:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ring-attention-pytorch
+[2024-04-20 17:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC104
+[2024-04-20 17:26:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywebio-battery
+[2024-04-20 17:26:59] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-20 17:26:59] WARNING root fetch - processPackages [PythonTestLJC104]: Skipping, unable to determine old version
+[2024-04-20 17:26:59] INFO root fetch - processPackages [pywebio-battery]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-20 17:26:59] INFO root fetch - main [MainThread]: End processing [PythonTestLJC104] error
+[2024-04-20 17:26:59] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/be/cc/661abf9ad2226b0e543df6658ad23709481a7e1caffa2c7ff2a5ccbec9d1/ring-attention-pytorch-0.3.9.tar.gz
+[2024-04-20 17:27:00] INFO root fetch - processPackages [pywebio-battery]: Downloading https://files.pythonhosted.org/packages/9e/13/bfbd72496974f580a0f26f135578a549b60a0b0bbb43fd72fdd30b6e011b/pywebio_battery-0.5.1.tar.gz
+[2024-04-20 17:27:00] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/47/1b/1e87030a3d17d6e62e069da7051e1a55fcaffd6083cf8a2d635cbe6b2ba8/ring_attention_pytorch-0.4.0.tar.gz
+[2024-04-20 17:27:00] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-20 17:27:00] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.3.9.tar.gz tmp/ring_attention_pytorch-0.4.0.tar.gz --markdown 20240420/r/ring-attention-pytorch/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-20 17:27:00] INFO root fetch - processPackages [pywebio-battery]: Downloading https://files.pythonhosted.org/packages/60/e5/5f3511a5e772982be92b26677fc362b6f8b00461b45e10d463077fb7fcfa/pywebio_battery-0.6.0.tar.gz
+[2024-04-20 17:27:00] INFO root fetch - processPackages [pywebio-battery]: executing diffoscope
+[2024-04-20 17:27:00] INFO root fetch - processPackages [pywebio-battery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywebio_battery-0.5.1.tar.gz tmp/pywebio_battery-0.6.0.tar.gz --markdown 20240420/p/pywebio-battery/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-20 17:27:00] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.9.tar.gz]
+[2024-04-20 17:27:00] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring_attention_pytorch-0.4.0.tar.gz]
+[2024-04-20 17:27:00] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-20 17:27:01] INFO root fetch - processPackages [pywebio-battery]: Remove: archive file [/home/abi/fetcher/tmp/pywebio_battery-0.5.1.tar.gz]
+[2024-04-20 17:27:01] INFO root fetch - processPackages [pywebio-battery]: Remove: archive file [/home/abi/fetcher/tmp/pywebio_battery-0.6.0.tar.gz]
+[2024-04-20 17:27:01] INFO root fetch - main [MainThread]: End processing [pywebio-battery]: success
+[2024-04-20 17:27:01] INFO root fetch - main [MainThread]: Store serial: [22856942]
