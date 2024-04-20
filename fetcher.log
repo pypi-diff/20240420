@@ -8114,3 +8114,24 @@
 [2024-04-20 04:54:16] INFO root fetch - processPackages [qh3]: Remove: archive file [/home/abi/fetcher/tmp/qh3-1.0.2-pp37-pypy37_pp73-musllinux_1_1_armv7l.whl.zip]
 [2024-04-20 04:54:16] INFO root fetch - main [MainThread]: End processing [qh3]: success
 [2024-04-20 04:54:16] INFO root fetch - main [MainThread]: Store serial: [22851967]
+[2024-04-20 04:56:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851967]
+[2024-04-20 04:56:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bennycloth
+[2024-04-20 04:56:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-includecontents
+[2024-04-20 04:56:26] INFO root fetch - processPackages [django-includecontents]: New version: [0.6] Old Version: [0.5.1]
+[2024-04-20 04:56:26] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/80/e1/57b77c9fb84b3faefb0e3ca21de5f0882f5cebcb31b6bf684fffa99e30d4/django_includecontents-0.5.1.tar.gz
+[2024-04-20 04:56:26] INFO root fetch - processPackages [bennycloth]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 04:56:26] INFO root fetch - processPackages [bennycloth]: Downloading https://files.pythonhosted.org/packages/e2/cb/7d2b2f709d0213340682278b25a0869d139e5dd85ef08c8f4f5504442926/bennycloth-0.0.6.tar.gz
+[2024-04-20 04:56:27] INFO root fetch - processPackages [django-includecontents]: Downloading https://files.pythonhosted.org/packages/ff/45/27ad7f49ac376c57d4b1a3eae57fc79739db12ab2cf93ff53e45f82c1e8d/django_includecontents-0.6.tar.gz
+[2024-04-20 04:56:27] INFO root fetch - processPackages [django-includecontents]: executing diffoscope
+[2024-04-20 04:56:27] INFO root fetch - processPackages [django-includecontents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_includecontents-0.5.1.tar.gz tmp/django_includecontents-0.6.tar.gz --markdown 20240420/d/django-includecontents/0.5.1-0.6/README.md --exclude *.pyd
+[2024-04-20 04:56:27] INFO root fetch - processPackages [bennycloth]: Downloading https://files.pythonhosted.org/packages/76/10/657d670628dd89119743da257187bed46cf6274b2708bbf8ecd8f378dc68/bennycloth-0.0.7.tar.gz
+[2024-04-20 04:56:27] INFO root fetch - processPackages [bennycloth]: executing diffoscope
+[2024-04-20 04:56:27] INFO root fetch - processPackages [bennycloth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bennycloth-0.0.6.tar.gz tmp/bennycloth-0.0.7.tar.gz --markdown 20240420/b/bennycloth/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 04:56:27] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.5.1.tar.gz]
+[2024-04-20 04:56:27] INFO root fetch - processPackages [django-includecontents]: Remove: archive file [/home/abi/fetcher/tmp/django_includecontents-0.6.tar.gz]
+[2024-04-20 04:56:27] INFO root fetch - main [MainThread]: End processing [django-includecontents]: success
+[2024-04-20 04:56:27] INFO root fetch - processPackages [bennycloth]: Remove: archive file [/home/abi/fetcher/tmp/bennycloth-0.0.6.tar.gz]
+[2024-04-20 04:56:27] INFO root fetch - processPackages [bennycloth]: Remove: archive file [/home/abi/fetcher/tmp/bennycloth-0.0.7.tar.gz]
+[2024-04-20 04:56:27] INFO root fetch - main [MainThread]: End processing [bennycloth]: success
+[2024-04-20 04:56:27] INFO root fetch - main [MainThread]: Store serial: [22852001]
