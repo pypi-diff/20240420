@@ -23252,3 +23252,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:41:31] INFO root fetch - processPackages [FrustrationDynamiX]: Remove: archive file [/home/abi/fetcher/tmp/FrustrationDynamiX-0.2.0.tar.gz]
 [2024-04-20 22:41:31] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX]: success
 [2024-04-20 22:41:31] INFO root fetch - main [MainThread]: Store serial: [22859364]
+[2024-04-20 22:43:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859364]
+[2024-04-20 22:43:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybureaucrat
+[2024-04-20 22:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyregtokenizer
+[2024-04-20 22:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC218
+[2024-04-20 22:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-chip-filter
+[2024-04-20 22:43:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: drf-authentify
+[2024-04-20 22:43:41] INFO root fetch - processPackages [pybureaucrat]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 22:43:41] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:43:41] INFO root fetch - processPackages [drf-authentify]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-20 22:43:41] INFO root fetch - processPackages [drf-authentify]: Downloading https://files.pythonhosted.org/packages/b7/ed/7d458e3cccb4a5e1a718f35a9feae7f6e97ff25a542a8e354193076c2aac/drf_authentify-0.3.2.tar.gz
+[2024-04-20 22:43:41] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/31/c7/b572cdcdc438ac6833bd5fb5591a78856fad62ebcc28b3763dd8770bab00/pybureaucrat-1.0.8.tar.gz
+[2024-04-20 22:43:41] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/dc/55/035e9bb8cde905fbb03067e395fb23aa00bb77fd8bd8525507c49d72a1fd/streamlit-chip-filter-0.0.8.tar.gz
+[2024-04-20 22:43:41] WARNING root fetch - processPackages [PythonTestLJC218]: Skipping, unable to determine old version
+[2024-04-20 22:43:41] INFO root fetch - main [MainThread]: End processing [PythonTestLJC218] error
+[2024-04-20 22:43:41] WARNING root fetch - processPackages [pyregtokenizer]: Skipping, unable to determine old version
+[2024-04-20 22:43:41] INFO root fetch - main [MainThread]: End processing [pyregtokenizer] error
+[2024-04-20 22:43:41] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/00/e3/aa5b14ab9b7a552fd558a38fa5cb1706b162531355658001aedb85e31830/pybureaucrat-1.0.9.tar.gz
+[2024-04-20 22:43:41] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/70/08/2c59c45571039d434ba5bb5190d8867f7084c5a22e0576379b2a84e27364/streamlit-chip-filter-0.0.9.tar.gz
+[2024-04-20 22:43:41] INFO root fetch - processPackages [drf-authentify]: Downloading https://files.pythonhosted.org/packages/c9/41/05a9a36176e08527e93d78e77cad312a938b790ffdf5bd3962f7fd02d5fe/drf_authentify-0.3.3.tar.gz
+[2024-04-20 22:43:41] INFO root fetch - processPackages [pybureaucrat]: executing diffoscope
+[2024-04-20 22:43:41] INFO root fetch - processPackages [pybureaucrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybureaucrat-1.0.8.tar.gz tmp/pybureaucrat-1.0.9.tar.gz --markdown 20240420/p/pybureaucrat/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 22:43:41] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 22:43:41] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.8.tar.gz tmp/streamlit-chip-filter-0.0.9.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:43:41] INFO root fetch - processPackages [drf-authentify]: executing diffoscope
+[2024-04-20 22:43:41] INFO root fetch - processPackages [drf-authentify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_authentify-0.3.2.tar.gz tmp/drf_authentify-0.3.3.tar.gz --markdown 20240420/d/drf-authentify/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-04-20 22:43:42] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.8.tar.gz]
+[2024-04-20 22:43:42] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.9.tar.gz]
+[2024-04-20 22:43:42] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
+[2024-04-20 22:43:42] INFO root fetch - processPackages [drf-authentify]: Remove: archive file [/home/abi/fetcher/tmp/drf_authentify-0.3.2.tar.gz]
+[2024-04-20 22:43:42] INFO root fetch - processPackages [drf-authentify]: Remove: archive file [/home/abi/fetcher/tmp/drf_authentify-0.3.3.tar.gz]
+[2024-04-20 22:43:42] INFO root fetch - main [MainThread]: End processing [drf-authentify]: success
+[2024-04-20 22:43:54] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.8.tar.gz]
+[2024-04-20 22:43:54] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.9.tar.gz]
+[2024-04-20 22:43:54] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 22:43:54] INFO root fetch - main [MainThread]: Store serial: [22859383]
