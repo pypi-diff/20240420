@@ -20249,3 +20249,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:38:50] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
 [2024-04-20 19:38:50] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
 [2024-04-20 19:38:50] INFO root fetch - main [MainThread]: Store serial: [22857908]
+[2024-04-20 19:40:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857908]
+[2024-04-20 19:40:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: orso
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FoxDotEditor
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: renardo-lib
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: renardo
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC152
+[2024-04-20 19:40:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-gcp
+[2024-04-20 19:40:59] INFO root fetch - processPackages [django-gcp]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-20 19:40:59] INFO root fetch - processPackages [renardo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 19:40:59] WARNING root fetch - processPackages [PythonTestLJC152]: Skipping, unable to determine old version
+[2024-04-20 19:40:59] INFO root fetch - main [MainThread]: End processing [PythonTestLJC152] error
+[2024-04-20 19:40:59] INFO root fetch - processPackages [renardo-lib]: New version: [0.9.dev9] Old Version: [0.9.9]
+[2024-04-20 19:40:59] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/fa/1e/7977cdd9436a23d951ec20889acda7f77200169515120aa05a84c7209f1c/django_gcp-0.9.2.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [orso]: New version: [0.0.99] Old Version: [0.0.97]
+[2024-04-20 19:40:59] INFO root fetch - processPackages [FoxDotEditor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 19:40:59] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/fb/49/617bba266be61b48df4660d09ae00679c712d277c60e48046d33be54c138/renardo-0.9.8.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/e4/5a/07a1f6f3ea9c38f61d36fd05bf9b70411c6b40887e5171585a2e941112bc/renardo_lib-0.9.9.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [django-gcp]: Downloading https://files.pythonhosted.org/packages/a3/ea/a0ba2534d8540b5905ac4a62ff379270051f18b10e85af024aafde36b9d2/django_gcp-0.9.3.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/8f/ed/6f4f42bab25dd239482fa57ab5bdf863e679762950ac55b63f832dbc43e9/FoxDotEditor-0.9.8.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/7f/44/c9b678951273a9e9d68f6792efdb0a6d7c20d4d59015b193b974dd2cc5f3/orso-0.0.97.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [django-gcp]: executing diffoscope
+[2024-04-20 19:40:59] INFO root fetch - processPackages [django-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_gcp-0.9.2.tar.gz tmp/django_gcp-0.9.3.tar.gz --markdown 20240420/d/django-gcp/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-04-20 19:40:59] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-20 19:40:59] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/03/62/532b5a6178cc484d36c6b124c65d4de27ba7fd3af10850166b93c9a661cd/orso-0.0.99.tar.gz
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-20 19:41:00] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-20 19:41:00] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FoxDotEditor-0.9.8.tar.gz tmp/foxdoteditor-0.9.9.tar.gz --markdown 20240420/F/FoxDotEditor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 19:41:00] INFO root fetch - processPackages [orso]: executing diffoscope
+[2024-04-20 19:41:00] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.97.tar.gz tmp/orso-0.0.99.tar.gz --markdown 20240420/o/orso/0.0.97-0.0.99/README.md --exclude *.pyd
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.8.tar.gz tmp/renardo-0.9.9.tar.gz --markdown 20240420/r/renardo/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.9.tar.gz tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip --markdown 20240420/r/renardo-lib/0.9.9-0.9.dev9/README.md --exclude *.pyd
+[2024-04-20 19:41:00] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.2.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - processPackages [django-gcp]: Remove: archive file [/home/abi/fetcher/tmp/django_gcp-0.9.3.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [django-gcp]: success
+[2024-04-20 19:41:00] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/FoxDotEditor-0.9.8.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.8.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-20 19:41:00] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.97.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - processPackages [orso]: Remove: archive file [/home/abi/fetcher/tmp/orso-0.0.99.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.9.tar.gz]
+[2024-04-20 19:41:00] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-20 19:41:00] INFO root fetch - main [MainThread]: Store serial: [22857942]
