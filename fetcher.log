@@ -2732,3 +2732,27 @@
 [2024-04-20 02:39:09] INFO root fetch - processPackages [predibase]: Remove: archive file [/home/abi/fetcher/tmp/predibase-2024.4.7.tar.gz]
 [2024-04-20 02:39:09] INFO root fetch - main [MainThread]: End processing [predibase]: success
 [2024-04-20 02:39:09] INFO root fetch - main [MainThread]: Store serial: [22850002]
+[2024-04-20 02:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850002]
+[2024-04-20 02:41:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 02:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: npiai
+[2024-04-20 02:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flatpack
+[2024-04-20 02:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: speechtoolkit
+[2024-04-20 02:41:17] INFO root fetch - processPackages [flatpack]: New version: [3.3.7] Old Version: [3.3.6]
+[2024-04-20 02:41:17] WARNING root fetch - processPackages [speechtoolkit]: Skipping, unable to determine old version
+[2024-04-20 02:41:17] INFO root fetch - main [MainThread]: End processing [speechtoolkit] error
+[2024-04-20 02:41:17] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/99/c7/78cf440195d504fb29626141581421a729a7a5e7743b5e0bc329a2371a4e/flatpack-3.3.6.tar.gz
+[2024-04-20 02:41:17] INFO root fetch - processPackages [npiai]: New version: [0.0.1.dev1] Old Version: [0.0.1.dev0]
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/4a/71/0ae8d16a2f31f87e0400e9e1cbda02c0751c6e5a090c87097f98a8ef9ba9/npiai-0.0.1.dev0.tar.gz
+[2024-04-20 02:41:18] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/89/71/c207efa3740c71b1fb18bab347f88a5f012df6b6fc4318d946d1c7c1fdc9/flatpack-3.3.7.tar.gz
+[2024-04-20 02:41:18] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 02:41:18] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.6.tar.gz tmp/flatpack-3.3.7.tar.gz --markdown 20240420/f/flatpack/3.3.6-3.3.7/README.md --exclude *.pyd
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/9d/74/a384388f2e9c1b9eeba9df44c2d2ff67b943661cbb33c36b652294624e15/npiai-0.0.1.dev1.tar.gz
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: executing diffoscope
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npiai-0.0.1.dev0.tar.gz tmp/npiai-0.0.1.dev1.tar.gz --markdown 20240420/n/npiai/0.0.1.dev0-0.0.1.dev1/README.md --exclude *.pyd
+[2024-04-20 02:41:18] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.6.tar.gz]
+[2024-04-20 02:41:18] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.7.tar.gz]
+[2024-04-20 02:41:18] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev0.tar.gz]
+[2024-04-20 02:41:18] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev1.tar.gz]
+[2024-04-20 02:41:18] INFO root fetch - main [MainThread]: End processing [npiai]: success
+[2024-04-20 02:41:18] INFO root fetch - main [MainThread]: Store serial: [22850013]
