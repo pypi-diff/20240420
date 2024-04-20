@@ -8608,3 +8608,18 @@
 [2024-04-20 05:38:52] INFO root fetch - processPackages [odoo-addon-crm-won-restrict-per-stage]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_crm_won_restrict_per_stage-16.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-04-20 05:38:52] INFO root fetch - main [MainThread]: End processing [odoo-addon-crm-won-restrict-per-stage]: success
 [2024-04-20 05:38:52] INFO root fetch - main [MainThread]: Store serial: [22852163]
+[2024-04-20 05:40:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852163]
+[2024-04-20 05:41:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberfly-client-sdk
+[2024-04-20 05:41:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: filetrack
+[2024-04-20 05:41:01] WARNING root fetch - processPackages [cyberfly-client-sdk]: Skipping, unable to determine old version
+[2024-04-20 05:41:01] INFO root fetch - main [MainThread]: End processing [cyberfly-client-sdk] error
+[2024-04-20 05:41:01] INFO root fetch - processPackages [filetrack]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:41:01] INFO root fetch - processPackages [filetrack]: Downloading https://files.pythonhosted.org/packages/20/b7/a4fe7858ae29f824eac0406a639797d190c3467dd93576c5249b43e435a2/filetrack-0.0.8.tar.gz
+[2024-04-20 05:41:01] INFO root fetch - processPackages [filetrack]: Downloading https://files.pythonhosted.org/packages/9b/37/10ba644f152930547158716a965a88d6c9b293e47afbb46315e45c8b2b7a/filetrack-0.0.9.tar.gz
+[2024-04-20 05:41:02] INFO root fetch - processPackages [filetrack]: executing diffoscope
+[2024-04-20 05:41:02] INFO root fetch - processPackages [filetrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filetrack-0.0.8.tar.gz tmp/filetrack-0.0.9.tar.gz --markdown 20240420/f/filetrack/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:41:02] INFO root fetch - processPackages [filetrack]: Remove: archive file [/home/abi/fetcher/tmp/filetrack-0.0.8.tar.gz]
+[2024-04-20 05:41:02] INFO root fetch - processPackages [filetrack]: Remove: archive file [/home/abi/fetcher/tmp/filetrack-0.0.9.tar.gz]
+[2024-04-20 05:41:02] INFO root fetch - main [MainThread]: End processing [filetrack]: success
+[2024-04-20 05:41:02] INFO root fetch - main [MainThread]: Store serial: [22852170]
