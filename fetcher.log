@@ -2204,3 +2204,60 @@
 [2024-04-20 02:17:17] INFO root fetch - processPackages [imodelsx]: Remove: archive file [/home/abi/fetcher/tmp/imodelsx-1.0.1.tar.gz]
 [2024-04-20 02:17:17] INFO root fetch - main [MainThread]: End processing [imodelsx]: success
 [2024-04-20 02:17:17] INFO root fetch - main [MainThread]: Store serial: [22849793]
+[2024-04-20 02:19:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849793]
+[2024-04-20 02:19:26] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-gitlab-runner
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yoto-api
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchao-nightly
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rent-counter
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ck-apstra-api
+[2024-04-20 02:19:26] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [yoto-api]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [rent-counter]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ck-apstra-api]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-20 02:19:26] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 02:19:26] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-04-20 02:19:26] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/8b/80/a327b3b83da271bc46b9cb887602420e982d03d9280b588c3d7b0bd01ed2/yoto_api-1.2.3.tar.gz
+[2024-04-20 02:19:26] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/3e/e7/a8da4a9ecc56dc86f0c1d85a259865c757a60247da7f5bc30cd7ca61a2c8/rent_counter-0.6.0.tar.gz
+[2024-04-20 02:19:26] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/7c/2a/abef9e7f6bfd8bbe702559b01d7558798b73d2254a4126a13c8afed7c02c/ck_apstra_api-0.2.8.tar.gz
+[2024-04-20 02:19:26] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/5f/75/fa2f35d39cfd048a42fe784f2a57da5743e7983bb669c3e4d8eb5aa83710/torchao-nightly-2024.4.8.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [ck-apstra-api]: Downloading https://files.pythonhosted.org/packages/dc/40/ee507ae501e4a3b7aca59c4548c03f984a891162adc467495e853534a882/ck_apstra_api-0.2.9.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/4b/d5/e0ae6447ebc2fc27b71391c55653c89c441bbe6a6a8a7b37aa28dc13014e/torchao-nightly-2024.4.9.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [rent-counter]: Downloading https://files.pythonhosted.org/packages/37/74/efe79c393c1eaff5ec38d42a6b73dbd01ce0ca83e2b1c605a7a8460597bd/rent_counter-0.7.0.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/a7/75/4dd0a1f49060f7346505f77bee3c157a3ba4d7788d9e11a8fea9f77ab9f9/yoto_api-1.2.4.tar.gz
+[2024-04-20 02:19:27] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240420/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [ck-apstra-api]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [ck-apstra-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ck_apstra_api-0.2.8.tar.gz tmp/ck_apstra_api-0.2.9.tar.gz --markdown 20240420/c/ck-apstra-api/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao-nightly-2024.4.8.tar.gz tmp/torchao-nightly-2024.4.9.tar.gz --markdown 20240420/t/torchao-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [rent-counter]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [rent-counter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rent_counter-0.6.0.tar.gz tmp/rent_counter-0.7.0.tar.gz --markdown 20240420/r/rent-counter/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-04-20 02:19:27] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.2.3.tar.gz tmp/yoto_api-1.2.4.tar.gz --markdown 20240420/y/yoto-api/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-04-20 02:19:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 02:19:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-04-20 02:19:27] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.6.0.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - processPackages [rent-counter]: Remove: archive file [/home/abi/fetcher/tmp/rent_counter-0.7.0.tar.gz]
+[2024-04-20 02:19:27] INFO root fetch - main [MainThread]: End processing [rent-counter]: success
+[2024-04-20 02:19:28] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.2.3.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.2.4.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-04-20 02:19:28] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.8.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - processPackages [ck-apstra-api]: Remove: archive file [/home/abi/fetcher/tmp/ck_apstra_api-0.2.9.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - main [MainThread]: End processing [ck-apstra-api]: success
+[2024-04-20 02:19:28] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.8.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.9.tar.gz]
+[2024-04-20 02:19:28] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-04-20 02:19:28] INFO root fetch - main [MainThread]: Store serial: [22849815]
