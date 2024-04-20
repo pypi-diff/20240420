@@ -11920,3 +11920,33 @@
 [2024-04-20 10:13:47] INFO root fetch - processPackages [jax-fem]: Remove: archive file [/home/abi/fetcher/tmp/jax_fem-0.0.4.tar.gz]
 [2024-04-20 10:13:47] INFO root fetch - main [MainThread]: End processing [jax-fem]: success
 [2024-04-20 10:13:47] INFO root fetch - main [MainThread]: Store serial: [22853856]
+[2024-04-20 10:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853856]
+[2024-04-20 10:15:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 10:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flechemano
+[2024-04-20 10:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omni-api
+[2024-04-20 10:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phono3py
+[2024-04-20 10:15:57] INFO root fetch - processPackages [flechemano]: New version: [0.5] Old Version: [0.4]
+[2024-04-20 10:15:57] INFO root fetch - processPackages [phono3py]: New version: [3.0.0] Old Version: [2.9.2]
+[2024-04-20 10:15:57] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/5a/50/101a836fae58d3f7c05b979397476cde58b3115ffd8f62ce5266729b0e36/flechemano-0.4.tar.gz
+[2024-04-20 10:15:57] INFO root fetch - processPackages [omni-api]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-04-20 10:15:57] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/d9/db/b2fa6c01572b456db16c66a5a76c4f887b764afebfbccfeb79b0781c9660/phono3py-2.9.2.tar.gz
+[2024-04-20 10:15:57] INFO root fetch - processPackages [omni-api]: Downloading https://files.pythonhosted.org/packages/56/26/4825b54b866837528b8b3a1a3a43a05be7d9bd8fbcb7e6c75ad8b81c3e9f/omni-api-0.5.2.tar.gz
+[2024-04-20 10:15:57] INFO root fetch - processPackages [flechemano]: Downloading https://files.pythonhosted.org/packages/f6/2d/e9ac675a947f6ddc7822dd9a061302fd2218a1a993bd2478d62f2559bfae/flechemano-0.5.tar.gz
+[2024-04-20 10:15:57] INFO root fetch - processPackages [flechemano]: executing diffoscope
+[2024-04-20 10:15:57] INFO root fetch - processPackages [flechemano]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flechemano-0.4.tar.gz tmp/flechemano-0.5.tar.gz --markdown 20240420/f/flechemano/0.4-0.5/README.md --exclude *.pyd
+[2024-04-20 10:15:57] INFO root fetch - processPackages [omni-api]: Downloading https://files.pythonhosted.org/packages/58/cb/233e78ed57fd443c0d95a8ad7e138694e10bd5f0b8abd7675209e54e3d11/omni-api-0.5.3.tar.gz
+[2024-04-20 10:15:58] INFO root fetch - processPackages [phono3py]: Downloading https://files.pythonhosted.org/packages/f6/e2/f9e57395424c5afbf6689c1b30c430b7c0731371732f119f1d9963474863/phono3py-3.0.0.tar.gz
+[2024-04-20 10:15:58] INFO root fetch - processPackages [omni-api]: executing diffoscope
+[2024-04-20 10:15:58] INFO root fetch - processPackages [omni-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omni-api-0.5.2.tar.gz tmp/omni-api-0.5.3.tar.gz --markdown 20240420/o/omni-api/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-04-20 10:15:58] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.4.tar.gz]
+[2024-04-20 10:15:58] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.5.tar.gz]
+[2024-04-20 10:15:58] INFO root fetch - main [MainThread]: End processing [flechemano]: success
+[2024-04-20 10:15:58] INFO root fetch - processPackages [phono3py]: executing diffoscope
+[2024-04-20 10:15:58] INFO root fetch - processPackages [phono3py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phono3py-2.9.2.tar.gz tmp/phono3py-3.0.0.tar.gz --markdown 20240420/p/phono3py/2.9.2-3.0.0/README.md --exclude *.pyd
+[2024-04-20 10:15:58] INFO root fetch - processPackages [omni-api]: Remove: archive file [/home/abi/fetcher/tmp/omni-api-0.5.2.tar.gz]
+[2024-04-20 10:15:58] INFO root fetch - processPackages [omni-api]: Remove: archive file [/home/abi/fetcher/tmp/omni-api-0.5.3.tar.gz]
+[2024-04-20 10:15:58] INFO root fetch - main [MainThread]: End processing [omni-api]: success
+[2024-04-20 10:16:00] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-2.9.2.tar.gz]
+[2024-04-20 10:16:00] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.0.tar.gz]
+[2024-04-20 10:16:00] INFO root fetch - main [MainThread]: End processing [phono3py]: success
+[2024-04-20 10:16:00] INFO root fetch - main [MainThread]: Store serial: [22853864]
