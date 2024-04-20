@@ -21791,3 +21791,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:13:28] INFO root fetch - processPackages [textlinebreaker]: Remove: archive file [/home/abi/fetcher/tmp/textlinebreaker-0.2.0.tar.gz]
 [2024-04-20 21:13:28] INFO root fetch - main [MainThread]: End processing [textlinebreaker]: success
 [2024-04-20 21:13:28] INFO root fetch - main [MainThread]: Store serial: [22858664]
+[2024-04-20 21:15:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858664]
+[2024-04-20 21:15:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 21:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-chip-filter
+[2024-04-20 21:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PySwitchy
+[2024-04-20 21:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlops-api-gemstack
+[2024-04-20 21:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: grid2demand
+[2024-04-20 21:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-alto-parser
+[2024-04-20 21:15:36] INFO root fetch - processPackages [simple-alto-parser]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:15:36] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 21:15:36] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 21:15:36] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/9f/7c/06710072453595ed84fed59c49bef97b8ca7562f434e2ddb72e7be2f7d8a/streamlit-chip-filter-0.0.7.tar.gz
+[2024-04-20 21:15:36] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/2d/84/288a775370c3b0a74c9022e38e06d864675ccef260b833fb692b0679afd6/simple-alto-parser-0.0.8.tar.gz
+[2024-04-20 21:15:36] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/7f/49/4fc6183f8d2d37e646ca2aea6c3c2060e95e9025c2bd75863e44f72976dc/mlops_api_gemstack-0.1.tar.gz
+[2024-04-20 21:15:37] INFO root fetch - processPackages [grid2demand]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-20 21:15:37] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/70/7b/6c8fd8630697c59ad5baff63e345baa289f09ac0ba1f3b88d3e3b8f0cb13/mlops_api_gemstack-0.2.tar.gz
+[2024-04-20 21:15:37] WARNING root fetch - processPackages [PySwitchy]: Skipping, unable to determine old version
+[2024-04-20 21:15:37] INFO root fetch - main [MainThread]: End processing [PySwitchy] error
+[2024-04-20 21:15:37] INFO root fetch - processPackages [grid2demand]: Downloading https://files.pythonhosted.org/packages/cd/a2/fb904df32fa160f694887cc11e045b9747fb200c5a1b75f8f90535313eae/grid2demand-0.4.1.tar.gz
+[2024-04-20 21:15:37] INFO root fetch - processPackages [simple-alto-parser]: Downloading https://files.pythonhosted.org/packages/54/a6/e5b5a42bc7f1de8a59b665b6ea950928012570d4b7d82695f5bd835dbd99/simple-alto-parser-0.0.9.tar.gz
+[2024-04-20 21:15:37] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-20 21:15:37] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.1.tar.gz tmp/mlops_api_gemstack-0.2.tar.gz --markdown 20240420/m/mlops-api-gemstack/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 21:15:37] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/dc/55/035e9bb8cde905fbb03067e395fb23aa00bb77fd8bd8525507c49d72a1fd/streamlit-chip-filter-0.0.8.tar.gz
+[2024-04-20 21:15:37] INFO root fetch - processPackages [simple-alto-parser]: executing diffoscope
+[2024-04-20 21:15:37] INFO root fetch - processPackages [simple-alto-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-alto-parser-0.0.8.tar.gz tmp/simple-alto-parser-0.0.9.tar.gz --markdown 20240420/s/simple-alto-parser/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:15:37] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 21:15:37] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.7.tar.gz tmp/streamlit-chip-filter-0.0.8.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 21:15:37] INFO root fetch - processPackages [grid2demand]: Downloading https://files.pythonhosted.org/packages/ae/a7/920dfd965bf9ceabb1bbc4ef343bbf7d7023a0e5577b7a728501fd05e698/grid2demand-0.4.2.tar.gz
+[2024-04-20 21:15:37] INFO root fetch - processPackages [grid2demand]: executing diffoscope
+[2024-04-20 21:15:37] INFO root fetch - processPackages [grid2demand]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grid2demand-0.4.1.tar.gz tmp/grid2demand-0.4.2.tar.gz --markdown 20240420/g/grid2demand/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-20 21:15:37] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.1.tar.gz]
+[2024-04-20 21:15:37] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.2.tar.gz]
+[2024-04-20 21:15:37] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-20 21:15:38] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.8.tar.gz]
+[2024-04-20 21:15:38] INFO root fetch - processPackages [simple-alto-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple-alto-parser-0.0.9.tar.gz]
+[2024-04-20 21:15:38] INFO root fetch - main [MainThread]: End processing [simple-alto-parser]: success
+[2024-04-20 21:15:38] INFO root fetch - processPackages [grid2demand]: Remove: archive file [/home/abi/fetcher/tmp/grid2demand-0.4.1.tar.gz]
+[2024-04-20 21:15:38] INFO root fetch - processPackages [grid2demand]: Remove: archive file [/home/abi/fetcher/tmp/grid2demand-0.4.2.tar.gz]
+[2024-04-20 21:15:38] INFO root fetch - main [MainThread]: End processing [grid2demand]: success
+[2024-04-20 21:15:50] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.7.tar.gz]
+[2024-04-20 21:15:50] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.8.tar.gz]
+[2024-04-20 21:15:50] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 21:15:50] INFO root fetch - main [MainThread]: Store serial: [22858691]
