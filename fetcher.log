@@ -11729,3 +11729,27 @@
 [2024-04-20 09:54:16] WARNING root fetch - processPackages [malfetcher]: Skipping, unable to determine old version
 [2024-04-20 09:54:16] INFO root fetch - main [MainThread]: End processing [malfetcher] error
 [2024-04-20 09:54:16] INFO root fetch - main [MainThread]: Store serial: [22853710]
+[2024-04-20 09:56:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853710]
+[2024-04-20 09:56:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpy-groupies
+[2024-04-20 09:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sample-pip-dependency
+[2024-04-20 09:56:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dycw-utilities
+[2024-04-20 09:56:25] INFO root fetch - processPackages [numpy-groupies]: New version: [0.9.9] Old Version: [0.9.8.4]
+[2024-04-20 09:56:25] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-04-20 09:56:25] INFO root fetch - processPackages [numpy-groupies]: Downloading https://files.pythonhosted.org/packages/5f/88/de5f942035673bd203ea263a0e7527733090d69accdf520bbacff86fd4c7/numpy_groupies-0.9.8.4.tar.gz
+[2024-04-20 09:56:25] WARNING root fetch - processPackages [sample-pip-dependency]: Skipping, unable to determine old version
+[2024-04-20 09:56:25] INFO root fetch - main [MainThread]: End processing [sample-pip-dependency] error
+[2024-04-20 09:56:25] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-04-20 09:56:25] INFO root fetch - processPackages [numpy-groupies]: Downloading https://files.pythonhosted.org/packages/96/7a/2196465530e72084c6bb97cd49bf8ccdc83919cc94755727aa148effbc0f/numpy_groupies-0.9.9.tar.gz
+[2024-04-20 09:56:25] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-04-20 09:56:25] INFO root fetch - processPackages [numpy-groupies]: executing diffoscope
+[2024-04-20 09:56:25] INFO root fetch - processPackages [numpy-groupies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpy_groupies-0.9.8.4.tar.gz tmp/numpy_groupies-0.9.9.tar.gz --markdown 20240420/n/numpy-groupies/0.9.8.4-0.9.9/README.md --exclude *.pyd
+[2024-04-20 09:56:25] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-04-20 09:56:25] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240420/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-04-20 09:56:26] INFO root fetch - processPackages [numpy-groupies]: Remove: archive file [/home/abi/fetcher/tmp/numpy_groupies-0.9.8.4.tar.gz]
+[2024-04-20 09:56:26] INFO root fetch - processPackages [numpy-groupies]: Remove: archive file [/home/abi/fetcher/tmp/numpy_groupies-0.9.9.tar.gz]
+[2024-04-20 09:56:26] INFO root fetch - main [MainThread]: End processing [numpy-groupies]: success
+[2024-04-20 09:56:26] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-04-20 09:56:26] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-04-20 09:56:26] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-04-20 09:56:26] INFO root fetch - main [MainThread]: Store serial: [22853721]
