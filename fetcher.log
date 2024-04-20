@@ -7259,3 +7259,42 @@
 [2024-04-20 03:38:16] WARNING root fetch - processPackages [tf-shell]: Skipping package: exceeds size limit 16006706>=10485760
 [2024-04-20 03:38:16] INFO root fetch - main [MainThread]: End processing [tf-shell] error
 [2024-04-20 03:38:16] INFO root fetch - main [MainThread]: Store serial: [22851645]
+[2024-04-20 03:40:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851645]
+[2024-04-20 03:40:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mitmproxy-macos
+[2024-04-20 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mitmproxy-rs
+[2024-04-20 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mitmproxy-windows
+[2024-04-20 03:40:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mo-streams
+[2024-04-20 03:40:26] INFO root fetch - processPackages [mitmproxy-windows]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-20 03:40:26] INFO root fetch - processPackages [mo-streams]: New version: [1.589.24111] Old Version: [1.586.24095]
+[2024-04-20 03:40:26] INFO root fetch - processPackages [mitmproxy-macos]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-20 03:40:26] INFO root fetch - processPackages [mitmproxy-rs]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-windows]: Downloading https://files.pythonhosted.org/packages/47/14/c9b293f7cd096f44bd2b24d35e1f4a594b302e6af2816763788fa68b448d/mitmproxy_windows-0.5.1-py3-none-any.whl
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/2b/c4/585ffa9b1b862015f5aa38adbe037dcc553310724b1df2a743b2e0e15758/mo-streams-1.586.24095.tar.gz
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-macos]: Downloading https://files.pythonhosted.org/packages/85/79/f11ba4cf6e89408ed52d9317c00d3ae4ad18c51cf710821c9342fc95cd0f/mitmproxy_macos-0.5.1-py3-none-any.whl
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-rs]: Downloading https://files.pythonhosted.org/packages/81/b6/04333272fe1f651c0974012e19da3987d745cf0a925e02a53f536317a2d1/mitmproxy_rs-0.5.1.tar.gz
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mo-streams]: Downloading https://files.pythonhosted.org/packages/a4/c9/7d6fba31b2caa36bff8e56cce6810b22b3f597cab2ea28acf2bb0da4b806/mo_streams-1.589.24111.tar.gz
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-windows]: Downloading https://files.pythonhosted.org/packages/bf/88/dfb5dd7237f4838ff0594fa47c8b64dc7c171758c7e28efa9ae4e25783e8/mitmproxy_windows-0.5.2-py3-none-any.whl
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mo-streams]: executing diffoscope
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mo-streams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-streams-1.586.24095.tar.gz tmp/mo_streams-1.589.24111.tar.gz --markdown 20240420/m/mo-streams/1.586.24095-1.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-rs]: Downloading https://files.pythonhosted.org/packages/52/49/065fd65af708f32cbc6bb513891d39c0b0ff4c8adefbad08dcdc8ef4abe3/mitmproxy_rs-0.5.2.tar.gz
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-windows]: executing diffoscope
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-windows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitmproxy_windows-0.5.1-py3-none-any.whl.zip tmp/mitmproxy_windows-0.5.2-py3-none-any.whl.zip --markdown 20240420/m/mitmproxy-windows/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-macos]: Downloading https://files.pythonhosted.org/packages/c6/4a/ffacafc2de2bc3f4730793416d8e1b1762ca31d158c1cb1b406deea582c4/mitmproxy_macos-0.5.2-py3-none-any.whl
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-rs]: executing diffoscope
+[2024-04-20 03:40:27] INFO root fetch - processPackages [mitmproxy-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitmproxy_rs-0.5.1.tar.gz tmp/mitmproxy_rs-0.5.2.tar.gz --markdown 20240420/m/mitmproxy-rs/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mitmproxy-macos]: executing diffoscope
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mitmproxy-macos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mitmproxy_macos-0.5.1-py3-none-any.whl.zip tmp/mitmproxy_macos-0.5.2-py3-none-any.whl.zip --markdown 20240420/m/mitmproxy-macos/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo-streams-1.586.24095.tar.gz]
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mo-streams]: Remove: archive file [/home/abi/fetcher/tmp/mo_streams-1.589.24111.tar.gz]
+[2024-04-20 03:40:28] INFO root fetch - main [MainThread]: End processing [mo-streams]: success
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mitmproxy-rs]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_rs-0.5.1.tar.gz]
+[2024-04-20 03:40:28] INFO root fetch - processPackages [mitmproxy-rs]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_rs-0.5.2.tar.gz]
+[2024-04-20 03:40:28] INFO root fetch - main [MainThread]: End processing [mitmproxy-rs]: success
+[2024-04-20 03:40:32] INFO root fetch - processPackages [mitmproxy-windows]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_windows-0.5.1-py3-none-any.whl.zip]
+[2024-04-20 03:40:32] INFO root fetch - processPackages [mitmproxy-windows]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_windows-0.5.2-py3-none-any.whl.zip]
+[2024-04-20 03:40:32] INFO root fetch - main [MainThread]: End processing [mitmproxy-windows]: success
+[2024-04-20 03:40:48] INFO root fetch - processPackages [mitmproxy-macos]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_macos-0.5.1-py3-none-any.whl.zip]
+[2024-04-20 03:40:48] INFO root fetch - processPackages [mitmproxy-macos]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_macos-0.5.2-py3-none-any.whl.zip]
+[2024-04-20 03:40:48] INFO root fetch - main [MainThread]: End processing [mitmproxy-macos]: success
+[2024-04-20 03:40:48] INFO root fetch - main [MainThread]: Store serial: [22851658]
