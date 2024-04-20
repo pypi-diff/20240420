@@ -16714,3 +16714,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:46:02] INFO root fetch - processPackages [scri]: Remove: archive file [/home/abi/fetcher/tmp/scri-2022.8.9.tar.gz]
 [2024-04-20 15:46:02] INFO root fetch - main [MainThread]: End processing [scri]: success
 [2024-04-20 15:46:02] INFO root fetch - main [MainThread]: Store serial: [22856255]
+[2024-04-20 15:48:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856255]
+[2024-04-20 15:48:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 15:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC068
+[2024-04-20 15:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bellek
+[2024-04-20 15:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: src2txt
+[2024-04-20 15:48:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GirardProxyScraper
+[2024-04-20 15:48:10] INFO root fetch - processPackages [bellek]: New version: [0.92.4] Old Version: [0.92.3]
+[2024-04-20 15:48:10] WARNING root fetch - processPackages [PythonTestLJC068]: Skipping, unable to determine old version
+[2024-04-20 15:48:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC068] error
+[2024-04-20 15:48:10] WARNING root fetch - processPackages [GirardProxyScraper]: Skipping, unable to determine old version
+[2024-04-20 15:48:10] INFO root fetch - main [MainThread]: End processing [GirardProxyScraper] error
+[2024-04-20 15:48:10] WARNING root fetch - processPackages [src2txt]: Skipping, unable to determine old version
+[2024-04-20 15:48:10] INFO root fetch - main [MainThread]: End processing [src2txt] error
+[2024-04-20 15:48:10] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/34/bc/6680b4eddd3aba48f3d9eceffb9a05ccf3f602ee576c3db4111a65632e8e/bellek-0.92.3.tar.gz
+[2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/10/a0/ea075727feb0a2621b68237deea43c8f0369541a042dc6a54a2634e445c7/bellek-0.92.4.tar.gz
+[2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.92.3.tar.gz tmp/bellek-0.92.4.tar.gz --markdown 20240420/b/bellek/0.92.3-0.92.4/README.md --exclude *.pyd
+[2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.3.tar.gz]
+[2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.4.tar.gz]
+[2024-04-20 15:48:11] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-04-20 15:48:11] INFO root fetch - main [MainThread]: Store serial: [22856274]
