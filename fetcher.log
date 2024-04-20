@@ -19603,3 +19603,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:01:44] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.9.tar.gz]
 [2024-04-20 19:01:44] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
 [2024-04-20 19:01:44] INFO root fetch - main [MainThread]: Store serial: [22857648]
+[2024-04-20 19:03:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857648]
+[2024-04-20 19:03:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 19:03:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notfunny
+[2024-04-20 19:03:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cerbogen
+[2024-04-20 19:03:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: face-authenticator
+[2024-04-20 19:03:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC139
+[2024-04-20 19:03:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: internet-domain-local
+[2024-04-20 19:03:53] INFO root fetch - processPackages [face-authenticator]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-04-20 19:03:53] INFO root fetch - processPackages [notfunny]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-20 19:03:53] INFO root fetch - processPackages [cerbogen]: New version: [0.0.41] Old Version: [0.0.40]
+[2024-04-20 19:03:53] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/8b/da/f1f1a7dd14c521b7ae57c5e5822e9987e15d436c3f9dc98158493bb4da9b/cerbogen-0.0.40.tar.gz
+[2024-04-20 19:03:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/4f/8f/ecd687f0f6ce927880f626ca4323f5c1cdb887435181e488b2ddd8840793/notfunny-0.5.8.tar.gz
+[2024-04-20 19:03:53] INFO root fetch - processPackages [internet-domain-local]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 19:03:53] WARNING root fetch - processPackages [PythonTestLJC139]: Skipping, unable to determine old version
+[2024-04-20 19:03:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC139] error
+[2024-04-20 19:03:53] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/44/98/50fe9731398a7f53a656e33d23ac518ee4162c0ba33872c38a283d5c9ee4/face_authenticator-1.0.0-py3-none-any.whl
+[2024-04-20 19:03:53] INFO root fetch - processPackages [internet-domain-local]: Downloading https://files.pythonhosted.org/packages/36/64/6c5f5be36cbde7f8eab0e8e65084aa0d9279fcae6d3cc567e22f4a57dc6d/internet_domain_local-0.0.7.tar.gz
+[2024-04-20 19:03:53] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/ad/3c/d87ef62d36c61b1172e200f5849918af44af216e763e659ae497bf3f1e14/notfunny-0.5.9.tar.gz
+[2024-04-20 19:03:53] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/04/02/055b66703f6a74d158356f3f4943dfde8ec71df996705f17dd71756ae7cd/cerbogen-0.0.41.tar.gz
+[2024-04-20 19:03:54] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 19:03:54] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.8.tar.gz tmp/notfunny-0.5.9.tar.gz --markdown 20240420/n/notfunny/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-04-20 19:03:54] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 19:03:54] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.40.tar.gz tmp/cerbogen-0.0.41.tar.gz --markdown 20240420/c/cerbogen/0.0.40-0.0.41/README.md --exclude *.pyd
+[2024-04-20 19:03:54] INFO root fetch - processPackages [internet-domain-local]: Downloading https://files.pythonhosted.org/packages/21/08/584c01255d71beb274e14bf23aa4f1cad58ef556a6dc819f0cf869a6d409/internet_domain_local-0.0.8.tar.gz
+[2024-04-20 19:03:54] INFO root fetch - processPackages [internet-domain-local]: executing diffoscope
+[2024-04-20 19:03:54] INFO root fetch - processPackages [internet-domain-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internet_domain_local-0.0.7.tar.gz tmp/internet_domain_local-0.0.8.tar.gz --markdown 20240420/i/internet-domain-local/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 19:03:54] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/dc/19/ef0b83a2f31c37cfbe6483819a2d848c93b74b66704791208ec3ee938a57/face_authenticator-2.0.0-py3-none-any.whl
+[2024-04-20 19:03:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.8.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.9.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 19:03:54] INFO root fetch - processPackages [face-authenticator]: executing diffoscope
+[2024-04-20 19:03:54] INFO root fetch - processPackages [face-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face_authenticator-1.0.0-py3-none-any.whl.zip tmp/face_authenticator-2.0.0-py3-none-any.whl.zip --markdown 20240420/f/face-authenticator/1.0.0-2.0.0/README.md --exclude *.pyd
+[2024-04-20 19:03:54] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.40.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.41.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 19:03:54] INFO root fetch - processPackages [internet-domain-local]: Remove: archive file [/home/abi/fetcher/tmp/internet_domain_local-0.0.7.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - processPackages [internet-domain-local]: Remove: archive file [/home/abi/fetcher/tmp/internet_domain_local-0.0.8.tar.gz]
+[2024-04-20 19:03:54] INFO root fetch - main [MainThread]: End processing [internet-domain-local]: success
+[2024-04-20 19:03:55] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-1.0.0-py3-none-any.whl.zip]
+[2024-04-20 19:03:55] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-2.0.0-py3-none-any.whl.zip]
+[2024-04-20 19:03:55] INFO root fetch - main [MainThread]: End processing [face-authenticator]: success
+[2024-04-20 19:03:55] INFO root fetch - main [MainThread]: Store serial: [22857663]
