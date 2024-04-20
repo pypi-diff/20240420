@@ -23031,3 +23031,39 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:24:05] INFO root fetch - processPackages [limits]: Remove: archive file [/home/abi/fetcher/tmp/limits-3.9.0.tar.gz]
 [2024-04-20 22:24:05] INFO root fetch - main [MainThread]: End processing [limits]: success
 [2024-04-20 22:24:05] INFO root fetch - main [MainThread]: Store serial: [22859250]
+[2024-04-20 22:26:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859250]
+[2024-04-20 22:26:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlops-api-gemstack
+[2024-04-20 22:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynysiis
+[2024-04-20 22:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-115
+[2024-04-20 22:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hahomematic
+[2024-04-20 22:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC212
+[2024-04-20 22:26:14] WARNING root fetch - processPackages [pynysiis]: Skipping, unable to determine old version
+[2024-04-20 22:26:14] INFO root fetch - main [MainThread]: End processing [pynysiis] error
+[2024-04-20 22:26:14] INFO root fetch - processPackages [python-115]: New version: [0.0.6.2] Old Version: [0.0.6.1]
+[2024-04-20 22:26:14] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3.1] Old Version: [0.3]
+[2024-04-20 22:26:14] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/c9/a0/4febacfe7215be80578413b7a72b0b7bd0b9b70a4917e3830e538f694262/mlops_api_gemstack-0.3.tar.gz
+[2024-04-20 22:26:14] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/77/c4/cbe09f4a6e3d6b40d3d81e7abc4c484a899e6192dc710bd8fb0b2ef8dc5a/python_115-0.0.6.1.tar.gz
+[2024-04-20 22:26:14] WARNING root fetch - processPackages [PythonTestLJC212]: Skipping, unable to determine old version
+[2024-04-20 22:26:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC212] error
+[2024-04-20 22:26:14] INFO root fetch - processPackages [hahomematic]: New version: [2024.4.9b2] Old Version: [2024.4.9b1]
+[2024-04-20 22:26:15] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/81/91/9891c6832e1587efb47c6d50c612a5cc7e0eec02825d6413ac1f4b16abf6/hahomematic-2024.4.9b1.tar.gz
+[2024-04-20 22:26:15] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/05/6d/b6313282f841b944bc318bd026249877d989d6d4ecaabb3712ef03b99e73/mlops_api_gemstack-0.3.1.tar.gz
+[2024-04-20 22:26:15] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/4f/61/bd95b201b6bdfacfd3238daa41afa1b5f867c79b38e4c736ba7fdf154819/python_115-0.0.6.2.tar.gz
+[2024-04-20 22:26:15] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-20 22:26:15] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.6.1.tar.gz tmp/python_115-0.0.6.2.tar.gz --markdown 20240420/p/python-115/0.0.6.1-0.0.6.2/README.md --exclude *.pyd
+[2024-04-20 22:26:15] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-20 22:26:15] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.3.tar.gz tmp/mlops_api_gemstack-0.3.1.tar.gz --markdown 20240420/m/mlops-api-gemstack/0.3-0.3.1/README.md --exclude *.pyd
+[2024-04-20 22:26:15] INFO root fetch - processPackages [hahomematic]: Downloading https://files.pythonhosted.org/packages/73/77/08a504d8e21c3618788a1df0dcbcdc32d48ae1fbeb07845b788563829933/hahomematic-2024.4.9b2.tar.gz
+[2024-04-20 22:26:15] INFO root fetch - processPackages [hahomematic]: executing diffoscope
+[2024-04-20 22:26:15] INFO root fetch - processPackages [hahomematic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hahomematic-2024.4.9b1.tar.gz tmp/hahomematic-2024.4.9b2.tar.gz --markdown 20240420/h/hahomematic/2024.4.9b1-2024.4.9b2/README.md --exclude *.pyd
+[2024-04-20 22:26:15] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.tar.gz]
+[2024-04-20 22:26:15] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.1.tar.gz]
+[2024-04-20 22:26:15] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-20 22:26:16] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.1.tar.gz]
+[2024-04-20 22:26:16] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.6.2.tar.gz]
+[2024-04-20 22:26:16] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-20 22:26:16] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b1.tar.gz]
+[2024-04-20 22:26:16] INFO root fetch - processPackages [hahomematic]: Remove: archive file [/home/abi/fetcher/tmp/hahomematic-2024.4.9b2.tar.gz]
+[2024-04-20 22:26:16] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
+[2024-04-20 22:26:16] INFO root fetch - main [MainThread]: Store serial: [22859267]
