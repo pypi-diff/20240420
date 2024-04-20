@@ -14760,3 +14760,24 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:29:37] INFO root fetch - processPackages [pywxdump]: Remove: archive file [/home/abi/fetcher/tmp/pywxdump-3.0.8.tar.gz]
 [2024-04-20 13:29:37] INFO root fetch - main [MainThread]: End processing [pywxdump]: success
 [2024-04-20 13:29:37] INFO root fetch - main [MainThread]: Store serial: [22855165]
+[2024-04-20 13:31:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855165]
+[2024-04-20 13:31:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 13:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: miraie-ac
+[2024-04-20 13:31:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qoi
+[2024-04-20 13:31:46] INFO root fetch - processPackages [miraie-ac]: New version: [1.0.0] Old Version: [0.2.9]
+[2024-04-20 13:31:46] INFO root fetch - processPackages [qoi]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-20 13:31:46] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/e0/b0/8e2ea91eca1196a81c1b770d9de84b6c09c73c1d60fbb62b0c44f8ed044b/miraie-ac-0.2.9.tar.gz
+[2024-04-20 13:31:46] INFO root fetch - processPackages [qoi]: Downloading https://files.pythonhosted.org/packages/65/f4/fc7474eb9e4584650bb0b5fb154264c0119bba68fe220ef62679b132a60c/qoi-0.5.0.tar.gz
+[2024-04-20 13:31:46] INFO root fetch - processPackages [miraie-ac]: Downloading https://files.pythonhosted.org/packages/fb/e8/7725a002d771aba6d3cac4f986e202bd9db089232b86c8e19c40eaac775a/miraie_ac-1.0.0.tar.gz
+[2024-04-20 13:31:46] INFO root fetch - processPackages [miraie-ac]: executing diffoscope
+[2024-04-20 13:31:46] INFO root fetch - processPackages [miraie-ac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/miraie-ac-0.2.9.tar.gz tmp/miraie_ac-1.0.0.tar.gz --markdown 20240420/m/miraie-ac/0.2.9-1.0.0/README.md --exclude *.pyd
+[2024-04-20 13:31:47] INFO root fetch - processPackages [qoi]: Downloading https://files.pythonhosted.org/packages/5e/0f/fcc71b9475a6fb042275d90e73a95f8a1d2f5c3cca430623cf458c402ee6/qoi-0.6.0.tar.gz
+[2024-04-20 13:31:47] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie-ac-0.2.9.tar.gz]
+[2024-04-20 13:31:47] INFO root fetch - processPackages [miraie-ac]: Remove: archive file [/home/abi/fetcher/tmp/miraie_ac-1.0.0.tar.gz]
+[2024-04-20 13:31:47] INFO root fetch - main [MainThread]: End processing [miraie-ac]: success
+[2024-04-20 13:31:47] INFO root fetch - processPackages [qoi]: executing diffoscope
+[2024-04-20 13:31:47] INFO root fetch - processPackages [qoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qoi-0.5.0.tar.gz tmp/qoi-0.6.0.tar.gz --markdown 20240420/q/qoi/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-20 13:31:48] INFO root fetch - processPackages [qoi]: Remove: archive file [/home/abi/fetcher/tmp/qoi-0.5.0.tar.gz]
+[2024-04-20 13:31:48] INFO root fetch - processPackages [qoi]: Remove: archive file [/home/abi/fetcher/tmp/qoi-0.6.0.tar.gz]
+[2024-04-20 13:31:48] INFO root fetch - main [MainThread]: End processing [qoi]: success
+[2024-04-20 13:31:48] INFO root fetch - main [MainThread]: Store serial: [22855174]
