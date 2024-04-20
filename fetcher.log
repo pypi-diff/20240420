@@ -9494,3 +9494,18 @@
 [2024-04-20 06:33:25] INFO root fetch - processPackages [odoo14-addon-l10n-br-repair]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_l10n_br_repair-14.0.1.1.6.dev9-py3-none-any.whl.zip]
 [2024-04-20 06:33:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-repair]: success
 [2024-04-20 06:33:25] INFO root fetch - main [MainThread]: Store serial: [22852543]
+[2024-04-20 06:35:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852543]
+[2024-04-20 06:35:35] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keble-helpers
+[2024-04-20 06:35:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cismat
+[2024-04-20 06:35:35] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 06:35:35] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-20 06:35:35] WARNING root fetch - processPackages [cismat]: Skipping, unable to determine old version
+[2024-04-20 06:35:35] INFO root fetch - main [MainThread]: End processing [cismat] error
+[2024-04-20 06:35:35] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-20 06:35:35] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-20 06:35:35] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240420/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 06:35:36] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-20 06:35:36] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-20 06:35:36] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-20 06:35:36] INFO root fetch - main [MainThread]: Store serial: [22852551]
