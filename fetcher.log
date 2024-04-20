@@ -19178,3 +19178,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:33:16] INFO root fetch - processPackages [galapy-fit]: Remove: archive file [/home/abi/fetcher/tmp/galapy_fit-0.5.3.tar.gz]
 [2024-04-20 18:33:16] INFO root fetch - main [MainThread]: End processing [galapy-fit]: success
 [2024-04-20 18:33:16] INFO root fetch - main [MainThread]: Store serial: [22857457]
+[2024-04-20 18:35:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857457]
+[2024-04-20 18:35:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 18:35:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sampa
+[2024-04-20 18:35:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ondilo
+[2024-04-20 18:35:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BoatBuddy
+[2024-04-20 18:35:25] WARNING root fetch - processPackages [sampa]: Skipping, unable to determine old version
+[2024-04-20 18:35:25] INFO root fetch - main [MainThread]: End processing [sampa] error
+[2024-04-20 18:35:25] INFO root fetch - processPackages [BoatBuddy]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-20 18:35:25] INFO root fetch - processPackages [ondilo]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 18:35:25] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/bf/4d/9e321cfe04d1c06153ff54a1253eda867fdd54ee3739262e5d7cfc51b1c7/boatbuddy-0.9.4.tar.gz
+[2024-04-20 18:35:25] INFO root fetch - processPackages [ondilo]: Downloading https://files.pythonhosted.org/packages/ea/cd/2834e8efd4075c2b1c29a79089cad0cd2409ca88a95a3b875a922277d2e0/ondilo-0.4.0.tar.gz
+[2024-04-20 18:35:26] INFO root fetch - processPackages [ondilo]: Downloading https://files.pythonhosted.org/packages/02/e1/889f515f8833a1113455feee5953b9069a2882fbd53d857a52437f131dcf/ondilo-0.5.0.tar.gz
+[2024-04-20 18:35:26] INFO root fetch - processPackages [ondilo]: executing diffoscope
+[2024-04-20 18:35:26] INFO root fetch - processPackages [ondilo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondilo-0.4.0.tar.gz tmp/ondilo-0.5.0.tar.gz --markdown 20240420/o/ondilo/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 18:35:26] INFO root fetch - processPackages [BoatBuddy]: Downloading https://files.pythonhosted.org/packages/fd/f5/139785198b6a0e3c5ca20dae7046eff9e2b660f9a02f1ecd73546dfff321/boatbuddy-0.9.5.tar.gz
+[2024-04-20 18:35:26] INFO root fetch - processPackages [BoatBuddy]: executing diffoscope
+[2024-04-20 18:35:26] INFO root fetch - processPackages [BoatBuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boatbuddy-0.9.4.tar.gz tmp/boatbuddy-0.9.5.tar.gz --markdown 20240420/B/BoatBuddy/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-20 18:35:26] INFO root fetch - processPackages [ondilo]: Remove: archive file [/home/abi/fetcher/tmp/ondilo-0.4.0.tar.gz]
+[2024-04-20 18:35:26] INFO root fetch - processPackages [ondilo]: Remove: archive file [/home/abi/fetcher/tmp/ondilo-0.5.0.tar.gz]
+[2024-04-20 18:35:26] INFO root fetch - main [MainThread]: End processing [ondilo]: success
+[2024-04-20 18:35:34] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.4.tar.gz]
+[2024-04-20 18:35:34] INFO root fetch - processPackages [BoatBuddy]: Remove: archive file [/home/abi/fetcher/tmp/boatbuddy-0.9.5.tar.gz]
+[2024-04-20 18:35:34] INFO root fetch - main [MainThread]: End processing [BoatBuddy]: success
+[2024-04-20 18:35:34] INFO root fetch - main [MainThread]: Store serial: [22857466]
