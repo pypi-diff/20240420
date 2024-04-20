@@ -18000,3 +18000,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:18:19] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.31.tar.gz]
 [2024-04-20 17:18:19] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
 [2024-04-20 17:18:19] INFO root fetch - main [MainThread]: Store serial: [22856876]
+[2024-04-20 17:20:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856876]
+[2024-04-20 17:20:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dektools
+[2024-04-20 17:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ticts
+[2024-04-20 17:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pomodorable
+[2024-04-20 17:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cerbogen
+[2024-04-20 17:20:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: location-local
+[2024-04-20 17:20:28] INFO root fetch - processPackages [cerbogen]: New version: [0.0.32] Old Version: [0.0.31]
+[2024-04-20 17:20:28] INFO root fetch - processPackages [location-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 17:20:28] INFO root fetch - processPackages [ticts]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 17:20:28] INFO root fetch - processPackages [pomodorable]: New version: [0.1.dev9] Old Version: [0.1.dev8]
+[2024-04-20 17:20:28] INFO root fetch - processPackages [ticts]: Downloading https://files.pythonhosted.org/packages/93/68/e8d115e3b3c43521bce4d99d81ad9363239bd9c148016566a925204eab0a/ticts-0.4.0.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/9c/f2/fcc760989d48c5e33cbe7c435b39b0a9e8eba895ccbf5832a8b83178d5ab/location_local-0.0.98.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/44/df/203356653f6bfe14a81e59a1ff10e747da276d81c4322fddac63ff4fb32c/cerbogen-0.0.31.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.84]
+[2024-04-20 17:20:28] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/d3/ad/517479bdc5c62854d59457c9cf5b4e6c6e9cf861d961bdbafb55857f6a86/pomodorable-0.1.dev8.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/d0/6f/80a3e2a91c997c925b630dbdb5879bc76050832c04e4d24dcd9511f2d511/dektools-0.1.84.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [ticts]: Downloading https://files.pythonhosted.org/packages/55/97/795b7dbab0dd7a31bb00f37d92abc17c7c76084688affe65c0a640fc4197/ticts-0.5.0.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [location-local]: Downloading https://files.pythonhosted.org/packages/2e/1e/2a1e6264292214bc558e1230d4660d51bbe681d2921a250cb4f94052fc9e/location_local-0.0.99.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/17/83/927d73b9af2e500b5175a07fad281b44f5d4cc4741e89d1bbbb2925ec696/cerbogen-0.0.32.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [ticts]: executing diffoscope
+[2024-04-20 17:20:28] INFO root fetch - processPackages [ticts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ticts-0.4.0.tar.gz tmp/ticts-0.5.0.tar.gz --markdown 20240420/t/ticts/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 17:20:28] INFO root fetch - processPackages [location-local]: executing diffoscope
+[2024-04-20 17:20:28] INFO root fetch - processPackages [location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/location_local-0.0.98.tar.gz tmp/location_local-0.0.99.tar.gz --markdown 20240420/l/location-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 17:20:28] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 17:20:28] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.31.tar.gz tmp/cerbogen-0.0.32.tar.gz --markdown 20240420/c/cerbogen/0.0.31-0.0.32/README.md --exclude *.pyd
+[2024-04-20 17:20:28] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/92/5d/b91c67f6c7dae00041e39f7688d01b87851bf8d8d273efb1a25cc434849e/pomodorable-0.1.dev9.tar.gz
+[2024-04-20 17:20:28] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-20 17:20:28] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-20 17:20:28] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.84.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240420/d/dektools/0.1.84-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:20:28] INFO root fetch - processPackages [pomodorable]: executing diffoscope
+[2024-04-20 17:20:28] INFO root fetch - processPackages [pomodorable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pomodorable-0.1.dev8.tar.gz tmp/pomodorable-0.1.dev9.tar.gz --markdown 20240420/p/pomodorable/0.1.dev8-0.1.dev9/README.md --exclude *.pyd
+[2024-04-20 17:20:29] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.31.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.32.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 17:20:29] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.98.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - processPackages [location-local]: Remove: archive file [/home/abi/fetcher/tmp/location_local-0.0.99.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [location-local]: success
+[2024-04-20 17:20:29] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.84.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-20 17:20:29] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev8.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev9.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [pomodorable]: success
+[2024-04-20 17:20:29] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.4.0.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.5.0.tar.gz]
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: End processing [ticts]: success
+[2024-04-20 17:20:29] INFO root fetch - main [MainThread]: Store serial: [22856891]
