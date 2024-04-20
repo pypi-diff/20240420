@@ -10313,3 +10313,15 @@
 [2024-04-20 08:02:34] INFO root fetch - processPackages [pyfilebrowser]: Remove: archive file [/home/abi/fetcher/tmp/pyfilebrowser-0.0.9b0-py3-none-any.whl.zip]
 [2024-04-20 08:02:34] INFO root fetch - main [MainThread]: End processing [pyfilebrowser]: success
 [2024-04-20 08:02:34] INFO root fetch - main [MainThread]: Store serial: [22853052]
+[2024-04-20 08:04:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853052]
+[2024-04-20 08:04:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 08:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metalattice
+[2024-04-20 08:04:43] INFO root fetch - processPackages [metalattice]: New version: [0.3.12] Old Version: [0.3.11]
+[2024-04-20 08:04:43] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/3b/07/85a35d2be21b2efff3bd7705bccf786750a2c003f5c78abdb38811842966/metalattice-0.3.11.tar.gz
+[2024-04-20 08:04:43] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/e1/6d/905311da1760c169d455aeaac9c058558a8f54459a8ba35e6707aa32e587/metalattice-0.3.12.tar.gz
+[2024-04-20 08:04:43] INFO root fetch - processPackages [metalattice]: executing diffoscope
+[2024-04-20 08:04:43] INFO root fetch - processPackages [metalattice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalattice-0.3.11.tar.gz tmp/metalattice-0.3.12.tar.gz --markdown 20240420/m/metalattice/0.3.11-0.3.12/README.md --exclude *.pyd
+[2024-04-20 08:04:44] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.11.tar.gz]
+[2024-04-20 08:04:44] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.12.tar.gz]
+[2024-04-20 08:04:44] INFO root fetch - main [MainThread]: End processing [metalattice]: success
+[2024-04-20 08:04:44] INFO root fetch - main [MainThread]: Store serial: [22853055]
