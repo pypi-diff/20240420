@@ -20057,3 +20057,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:23:33] INFO root fetch - processPackages [indexify]: Remove: archive file [/home/abi/fetcher/tmp/indexify-0.0.9.tar.gz]
 [2024-04-20 19:23:33] INFO root fetch - main [MainThread]: End processing [indexify]: success
 [2024-04-20 19:23:33] INFO root fetch - main [MainThread]: Store serial: [22857821]
+[2024-04-20 19:25:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857821]
+[2024-04-20 19:25:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastlifeweb
+[2024-04-20 19:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quacc
+[2024-04-20 19:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC147
+[2024-04-20 19:25:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autonomous-app
+[2024-04-20 19:25:42] INFO root fetch - processPackages [fastlifeweb]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-20 19:25:42] INFO root fetch - processPackages [autonomous-app]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-20 19:25:42] INFO root fetch - processPackages [fastlifeweb]: Downloading https://files.pythonhosted.org/packages/33/24/9d59322cc0c9caefbb5359de0b547adeedf462ed00d68b9943e3cdfdb088/fastlifeweb-0.3.1.tar.gz
+[2024-04-20 19:25:42] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/8f/f2/9e912063f61ab22d255436a161129cd7130833b1349bb1d01b50df61d594/autonomous_app-0.2.4.tar.gz
+[2024-04-20 19:25:42] INFO root fetch - processPackages [quacc]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-04-20 19:25:42] WARNING root fetch - processPackages [PythonTestLJC147]: Skipping, unable to determine old version
+[2024-04-20 19:25:42] INFO root fetch - main [MainThread]: End processing [PythonTestLJC147] error
+[2024-04-20 19:25:42] INFO root fetch - processPackages [fastlifeweb]: Downloading https://files.pythonhosted.org/packages/69/e8/19b27f02955748bf3f4fbb975c8d8ff4d49d7f7bb68ec88d2d0975e10b46/fastlifeweb-0.4.0.tar.gz
+[2024-04-20 19:25:42] INFO root fetch - processPackages [quacc]: Downloading https://files.pythonhosted.org/packages/42/70/78a431ae93ab9d332a82a85e9611c240fddd2a4b014b9b1ef53f643cbc0e/quacc-0.7.5.tar.gz
+[2024-04-20 19:25:42] INFO root fetch - processPackages [fastlifeweb]: executing diffoscope
+[2024-04-20 19:25:42] INFO root fetch - processPackages [fastlifeweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlifeweb-0.3.1.tar.gz tmp/fastlifeweb-0.4.0.tar.gz --markdown 20240420/f/fastlifeweb/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 19:25:42] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/21/a6/c05f78f922153fb922d822f9385a53cf4f519772658ccf24ff34a988d3f6/autonomous_app-0.2.5.tar.gz
+[2024-04-20 19:25:42] INFO root fetch - processPackages [autonomous-app]: executing diffoscope
+[2024-04-20 19:25:42] INFO root fetch - processPackages [autonomous-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomous_app-0.2.4.tar.gz tmp/autonomous_app-0.2.5.tar.gz --markdown 20240420/a/autonomous-app/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-20 19:25:43] INFO root fetch - processPackages [quacc]: Downloading https://files.pythonhosted.org/packages/e5/35/cd7762831428545fb26895be8e86a0f211827688f17658bd5ec4b8ff616c/quacc-0.7.6.tar.gz
+[2024-04-20 19:25:43] INFO root fetch - processPackages [quacc]: executing diffoscope
+[2024-04-20 19:25:43] INFO root fetch - processPackages [quacc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quacc-0.7.5.tar.gz tmp/quacc-0.7.6.tar.gz --markdown 20240420/q/quacc/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-04-20 19:25:43] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.4.tar.gz]
+[2024-04-20 19:25:43] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.5.tar.gz]
+[2024-04-20 19:25:43] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
+[2024-04-20 19:25:43] INFO root fetch - processPackages [fastlifeweb]: Remove: archive file [/home/abi/fetcher/tmp/fastlifeweb-0.3.1.tar.gz]
+[2024-04-20 19:25:43] INFO root fetch - processPackages [fastlifeweb]: Remove: archive file [/home/abi/fetcher/tmp/fastlifeweb-0.4.0.tar.gz]
+[2024-04-20 19:25:43] INFO root fetch - main [MainThread]: End processing [fastlifeweb]: success
+[2024-04-20 19:25:44] INFO root fetch - processPackages [quacc]: Remove: archive file [/home/abi/fetcher/tmp/quacc-0.7.5.tar.gz]
+[2024-04-20 19:25:44] INFO root fetch - processPackages [quacc]: Remove: archive file [/home/abi/fetcher/tmp/quacc-0.7.6.tar.gz]
+[2024-04-20 19:25:44] INFO root fetch - main [MainThread]: End processing [quacc]: success
+[2024-04-20 19:25:44] INFO root fetch - main [MainThread]: Store serial: [22857831]
