@@ -20552,3 +20552,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:54:30] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
 [2024-04-20 19:54:30] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
 [2024-04-20 19:54:30] INFO root fetch - main [MainThread]: Store serial: [22858045]
+[2024-04-20 19:56:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858045]
+[2024-04-20 19:56:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 19:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: croniter
+[2024-04-20 19:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs
+[2024-04-20 19:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC158
+[2024-04-20 19:56:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dolibarrpy
+[2024-04-20 19:56:39] INFO root fetch - processPackages [mkdocs]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-04-20 19:56:39] INFO root fetch - processPackages [croniter]: New version: [2.0.4] Old Version: [2.0.3]
+[2024-04-20 19:56:39] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 19:56:39] WARNING root fetch - processPackages [PythonTestLJC158]: Skipping, unable to determine old version
+[2024-04-20 19:56:39] INFO root fetch - main [MainThread]: End processing [PythonTestLJC158] error
+[2024-04-20 19:56:39] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/7f/ef/ee405df01052969bc7b243b9ffdcebb7adf32e10d6181db4add197948c7a/croniter-2.0.3.tar.gz
+[2024-04-20 19:56:39] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/6a/1d/9e03d9830c15781c49dd5da13d716bb5f68c877f326ce1f7b38c35813604/dolibarrpy-0.2.5.tar.gz
+[2024-04-20 19:56:39] INFO root fetch - processPackages [mkdocs]: Downloading https://files.pythonhosted.org/packages/35/6a/63612e19d9c903a608caf91fd2c1f07ccbb9610de4ddb6f187aec1cce197/mkdocs-1.5.2.tar.gz
+[2024-04-20 19:56:39] INFO root fetch - processPackages [croniter]: Downloading https://files.pythonhosted.org/packages/f4/cd/ef1fce52cfc9f3e756187ec625ab930f577d2abe9463a72773844ca614c5/croniter-2.0.4.tar.gz
+[2024-04-20 19:56:39] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/72/f2/c8636dffed8364a0d8136e2ff9913846015caabe97175e662084553415ac/dolibarrpy-0.2.6.tar.gz
+[2024-04-20 19:56:39] INFO root fetch - processPackages [croniter]: executing diffoscope
+[2024-04-20 19:56:39] INFO root fetch - processPackages [croniter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/croniter-2.0.3.tar.gz tmp/croniter-2.0.4.tar.gz --markdown 20240420/c/croniter/2.0.3-2.0.4/README.md --exclude *.pyd
+[2024-04-20 19:56:39] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 19:56:39] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.5.tar.gz tmp/dolibarrpy-0.2.6.tar.gz --markdown 20240420/d/dolibarrpy/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 19:56:39] INFO root fetch - processPackages [mkdocs]: Downloading https://files.pythonhosted.org/packages/ed/bb/24a22f8154cf79b07b45da070633613837d6e59c7d870076f693b7b1c556/mkdocs-1.5.3.tar.gz
+[2024-04-20 19:56:40] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.5.tar.gz]
+[2024-04-20 19:56:40] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.6.tar.gz]
+[2024-04-20 19:56:40] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 19:56:40] INFO root fetch - processPackages [mkdocs]: executing diffoscope
+[2024-04-20 19:56:40] INFO root fetch - processPackages [mkdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-1.5.2.tar.gz tmp/mkdocs-1.5.3.tar.gz --markdown 20240420/m/mkdocs/1.5.2-1.5.3/README.md --exclude *.pyd
+[2024-04-20 19:56:40] INFO root fetch - processPackages [croniter]: Remove: archive file [/home/abi/fetcher/tmp/croniter-2.0.3.tar.gz]
+[2024-04-20 19:56:40] INFO root fetch - processPackages [croniter]: Remove: archive file [/home/abi/fetcher/tmp/croniter-2.0.4.tar.gz]
+[2024-04-20 19:56:40] INFO root fetch - main [MainThread]: End processing [croniter]: success
+[2024-04-20 19:56:42] INFO root fetch - processPackages [mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-1.5.2.tar.gz]
+[2024-04-20 19:56:42] INFO root fetch - processPackages [mkdocs]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-1.5.3.tar.gz]
+[2024-04-20 19:56:42] INFO root fetch - main [MainThread]: End processing [mkdocs]: success
+[2024-04-20 19:56:42] INFO root fetch - main [MainThread]: Store serial: [22858058]
