@@ -11950,3 +11950,15 @@
 [2024-04-20 10:16:00] INFO root fetch - processPackages [phono3py]: Remove: archive file [/home/abi/fetcher/tmp/phono3py-3.0.0.tar.gz]
 [2024-04-20 10:16:00] INFO root fetch - main [MainThread]: End processing [phono3py]: success
 [2024-04-20 10:16:00] INFO root fetch - main [MainThread]: Store serial: [22853864]
+[2024-04-20 10:18:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853864]
+[2024-04-20 10:18:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 10:18:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyscript-ltk
+[2024-04-20 10:18:09] INFO root fetch - processPackages [pyscript-ltk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 10:18:10] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/28/6e/96be52ee89b9a24fc42d6a4a18618ca41a2b1437aed89200641a3ad7cc13/pyscript-ltk-0.1.8.tar.gz
+[2024-04-20 10:18:10] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/a3/ee/ecb05ed84434f45a5ad24d6b5fdb04a89d83f6efe69dd691866b7eaee6e9/pyscript-ltk-0.1.9.tar.gz
+[2024-04-20 10:18:10] INFO root fetch - processPackages [pyscript-ltk]: executing diffoscope
+[2024-04-20 10:18:10] INFO root fetch - processPackages [pyscript-ltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscript-ltk-0.1.8.tar.gz tmp/pyscript-ltk-0.1.9.tar.gz --markdown 20240420/p/pyscript-ltk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 10:18:11] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.8.tar.gz]
+[2024-04-20 10:18:11] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
+[2024-04-20 10:18:11] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
+[2024-04-20 10:18:11] INFO root fetch - main [MainThread]: Store serial: [22853867]
