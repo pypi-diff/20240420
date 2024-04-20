@@ -11420,3 +11420,36 @@
 [2024-04-20 09:30:22] INFO root fetch - processPackages [pyzjr]: Remove: archive file [/home/abi/fetcher/tmp/pyzjr-1.3.5.tar.gz]
 [2024-04-20 09:30:22] INFO root fetch - main [MainThread]: End processing [pyzjr]: success
 [2024-04-20 09:30:22] INFO root fetch - main [MainThread]: Store serial: [22853587]
+[2024-04-20 09:32:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853587]
+[2024-04-20 09:32:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 09:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyiptables
+[2024-04-20 09:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sticker-convert
+[2024-04-20 09:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Python-DRL
+[2024-04-20 09:32:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: py-dbchat
+[2024-04-20 09:32:31] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc69.post1] Old Version: [0.0.2rc68.post1]
+[2024-04-20 09:32:31] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/81/3d/82a1db0829f543940113483eaad85a6ec8870628825273a108284ca35dab/py_dbchat-0.0.2rc68.post1.tar.gz
+[2024-04-20 09:32:31] WARNING root fetch - processPackages [Python-DRL]: Skipping, unable to determine old version
+[2024-04-20 09:32:31] INFO root fetch - main [MainThread]: End processing [Python-DRL] error
+[2024-04-20 09:32:31] INFO root fetch - processPackages [pyiptables]: New version: [2.0.7] Old Version: [2.0.6]
+[2024-04-20 09:32:31] INFO root fetch - processPackages [sticker-convert]: New version: [2.8.7] Old Version: [2.8.6]
+[2024-04-20 09:32:31] INFO root fetch - processPackages [pyiptables]: Downloading https://files.pythonhosted.org/packages/a1/65/d4fdf0fa24922c8e1a8de0c6468e42d6018ae41f0d1f9425a401a2a402c0/pyiptables-2.0.6.tar.gz
+[2024-04-20 09:32:31] INFO root fetch - processPackages [sticker-convert]: Downloading https://files.pythonhosted.org/packages/f9/7b/9def025aa3e6fbcbcc476c3da29b5572e8bb0e4c50fac1d60a022293a80d/sticker_convert-2.8.6.tar.gz
+[2024-04-20 09:32:31] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/8a/8c/8ba6f67809be318f854f8f73a84b0580da38050238169ad87420694c7036/py_dbchat-0.0.2rc69.post1.tar.gz
+[2024-04-20 09:32:32] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:32:32] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc68.post1.tar.gz tmp/py_dbchat-0.0.2rc69.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc68.post1-0.0.2rc69.post1/README.md --exclude *.pyd
+[2024-04-20 09:32:32] INFO root fetch - processPackages [pyiptables]: Downloading https://files.pythonhosted.org/packages/77/8f/44f6f01a111d2e863ea437c3855836e85cd6eb5568a93f96173449e15ea0/pyiptables-2.0.7.tar.gz
+[2024-04-20 09:32:32] INFO root fetch - processPackages [pyiptables]: executing diffoscope
+[2024-04-20 09:32:32] INFO root fetch - processPackages [pyiptables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiptables-2.0.6.tar.gz tmp/pyiptables-2.0.7.tar.gz --markdown 20240420/p/pyiptables/2.0.6-2.0.7/README.md --exclude *.pyd
+[2024-04-20 09:32:32] INFO root fetch - processPackages [sticker-convert]: Downloading https://files.pythonhosted.org/packages/91/fe/748a2ba486401653e14fe67b91838b3e9c4bd779338a854619f0e5580a54/sticker_convert-2.8.7.tar.gz
+[2024-04-20 09:32:32] INFO root fetch - processPackages [pyiptables]: Remove: archive file [/home/abi/fetcher/tmp/pyiptables-2.0.6.tar.gz]
+[2024-04-20 09:32:32] INFO root fetch - processPackages [pyiptables]: Remove: archive file [/home/abi/fetcher/tmp/pyiptables-2.0.7.tar.gz]
+[2024-04-20 09:32:32] INFO root fetch - main [MainThread]: End processing [pyiptables]: success
+[2024-04-20 09:32:32] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc68.post1.tar.gz]
+[2024-04-20 09:32:32] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc69.post1.tar.gz]
+[2024-04-20 09:32:32] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:32:33] INFO root fetch - processPackages [sticker-convert]: executing diffoscope
+[2024-04-20 09:32:33] INFO root fetch - processPackages [sticker-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sticker_convert-2.8.6.tar.gz tmp/sticker_convert-2.8.7.tar.gz --markdown 20240420/s/sticker-convert/2.8.6-2.8.7/README.md --exclude *.pyd
+[2024-04-20 09:32:34] INFO root fetch - processPackages [sticker-convert]: Remove: archive file [/home/abi/fetcher/tmp/sticker_convert-2.8.6.tar.gz]
+[2024-04-20 09:32:34] INFO root fetch - processPackages [sticker-convert]: Remove: archive file [/home/abi/fetcher/tmp/sticker_convert-2.8.7.tar.gz]
+[2024-04-20 09:32:34] INFO root fetch - main [MainThread]: End processing [sticker-convert]: success
+[2024-04-20 09:32:34] INFO root fetch - main [MainThread]: Store serial: [22853598]
