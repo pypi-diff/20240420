@@ -18663,3 +18663,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:58:17] INFO root fetch - processPackages [akhdefo-functions]: Remove: archive file [/home/abi/fetcher/tmp/akhdefo_functions-2.5.3.tar.gz]
 [2024-04-20 17:58:17] INFO root fetch - main [MainThread]: End processing [akhdefo-functions]: success
 [2024-04-20 17:58:17] INFO root fetch - main [MainThread]: Store serial: [22857207]
+[2024-04-20 18:00:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857207]
+[2024-04-20 18:00:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rttm-manager
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rttm-manager
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC116
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grabberlib
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypipr
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-email-package
+[2024-04-20 18:00:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pubmed2pdf
+[2024-04-20 18:00:27] INFO root fetch - processPackages [grabberlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 18:00:27] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 18:00:27] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 18:00:27] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 18:00:27] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 18:00:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 18:00:27] INFO root fetch - processPackages [grabberlib]: Downloading https://files.pythonhosted.org/packages/67/76/d4922a17097f207a3c2887789c11f65900374dc8f82a24e92b61ba56df9a/grabberlib-0.0.8.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/92/1e/a8c5ef4967e0a0199ce145867d92f9cb1617d7bf294213f9477b0791913b/CI-CD-SergiCastillo-0.2.1.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pubmed2pdf]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 18:00:27] WARNING root fetch - processPackages [PythonTestLJC116]: Skipping, unable to determine old version
+[2024-04-20 18:00:27] INFO root fetch - processPackages [django-email-package]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 18:00:27] INFO root fetch - main [MainThread]: End processing [PythonTestLJC116] error
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pubmed2pdf]: Downloading https://files.pythonhosted.org/packages/76/bb/b4313041a1130f00285b652b898ea7342a7f7c8c8ba41f6894da5816f0bf/pubmed2pdf-0.0.3.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [django-email-package]: Downloading https://files.pythonhosted.org/packages/10/69/22f2a1b55a48e571a51b554f8b14f1a7b9a81053dc8709f17ece5feecda3/django_email_package-0.0.1.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [grabberlib]: Downloading https://files.pythonhosted.org/packages/16/2a/37356de22e8dfa55366cd49f00c4c0d9df29687d91c3293bc66481362dda/grabberlib-0.0.9.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/09/32/1e00d167477f930d97bdd27ac23534a338e805ab470f752611fe9225d080/CI-CD-SergiCastillo-0.2.2.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [grabberlib]: executing diffoscope
+[2024-04-20 18:00:27] INFO root fetch - processPackages [grabberlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grabberlib-0.0.8.tar.gz tmp/grabberlib-0.0.9.tar.gz --markdown 20240420/g/grabberlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 18:00:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 18:00:27] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.2.1.tar.gz tmp/CI-CD-SergiCastillo-0.2.2.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 18:00:27] INFO root fetch - processPackages [pubmed2pdf]: Downloading https://files.pythonhosted.org/packages/d2/95/bbc783c705034ba1ffa8076c74ab318027105187f5b6f5037fd4886a6737/pubmed2pdf-0.0.4.tar.gz
+[2024-04-20 18:00:27] INFO root fetch - processPackages [django-email-package]: Downloading https://files.pythonhosted.org/packages/c7/cd/f9094cc2b8ec720cab6565c62d6c0927388ba48651b98a8ed738b458f0e7/django_email_package-0.0.2.tar.gz
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pubmed2pdf]: executing diffoscope
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pubmed2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pubmed2pdf-0.0.3.tar.gz tmp/pubmed2pdf-0.0.4.tar.gz --markdown 20240420/p/pubmed2pdf/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 18:00:28] INFO root fetch - processPackages [django-email-package]: executing diffoscope
+[2024-04-20 18:00:28] INFO root fetch - processPackages [django-email-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_email_package-0.0.1.tar.gz tmp/django_email_package-0.0.2.tar.gz --markdown 20240420/d/django-email-package/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 18:00:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.1.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.2.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 18:00:28] INFO root fetch - processPackages [grabberlib]: Remove: archive file [/home/abi/fetcher/tmp/grabberlib-0.0.8.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - processPackages [grabberlib]: Remove: archive file [/home/abi/fetcher/tmp/grabberlib-0.0.9.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [grabberlib]: success
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pubmed2pdf]: Remove: archive file [/home/abi/fetcher/tmp/pubmed2pdf-0.0.3.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - processPackages [pubmed2pdf]: Remove: archive file [/home/abi/fetcher/tmp/pubmed2pdf-0.0.4.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [pubmed2pdf]: success
+[2024-04-20 18:00:28] INFO root fetch - processPackages [django-email-package]: Remove: archive file [/home/abi/fetcher/tmp/django_email_package-0.0.1.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - processPackages [django-email-package]: Remove: archive file [/home/abi/fetcher/tmp/django_email_package-0.0.2.tar.gz]
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [django-email-package]: success
+[2024-04-20 18:00:28] INFO root fetch - main [MainThread]: Store serial: [22857230]
