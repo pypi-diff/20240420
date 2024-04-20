@@ -23288,3 +23288,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:43:54] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.9.tar.gz]
 [2024-04-20 22:43:54] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
 [2024-04-20 22:43:54] INFO root fetch - main [MainThread]: Store serial: [22859383]
+[2024-04-20 22:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859383]
+[2024-04-20 22:46:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-04-20 22:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC219
+[2024-04-20 22:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2024-04-20 22:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ultimapy
+[2024-04-20 22:46:04] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-20 22:46:04] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-04-20 22:46:04] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-20 22:46:04] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-04-20 22:46:04] INFO root fetch - processPackages [ultimapy]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:46:04] WARNING root fetch - processPackages [PythonTestLJC219]: Skipping, unable to determine old version
+[2024-04-20 22:46:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC219] error
+[2024-04-20 22:46:05] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-20 22:46:05] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-04-20 22:46:05] INFO root fetch - processPackages [ultimapy]: Downloading https://files.pythonhosted.org/packages/e1/a4/351a1f1310da2b3b9e869225227e076239edadff1fe64e05de6f51c494b8/ultimapy-0.0.8.tar.gz
+[2024-04-20 22:46:05] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-20 22:46:05] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240420/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-20 22:46:05] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-04-20 22:46:05] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240420/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-04-20 22:46:05] INFO root fetch - processPackages [ultimapy]: Downloading https://files.pythonhosted.org/packages/f4/84/717fbac6818a1c1ed2c58eb6c3550c3ddb74b08325f8895d294d240bae67/ultimapy-0.0.9.tar.gz
+[2024-04-20 22:46:05] INFO root fetch - processPackages [ultimapy]: executing diffoscope
+[2024-04-20 22:46:05] INFO root fetch - processPackages [ultimapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultimapy-0.0.8.tar.gz tmp/ultimapy-0.0.9.tar.gz --markdown 20240420/u/ultimapy/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:46:05] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-20 22:46:05] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-20 22:46:05] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-20 22:46:06] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-04-20 22:46:06] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-04-20 22:46:06] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-04-20 22:46:06] INFO root fetch - processPackages [ultimapy]: Remove: archive file [/home/abi/fetcher/tmp/ultimapy-0.0.8.tar.gz]
+[2024-04-20 22:46:06] INFO root fetch - processPackages [ultimapy]: Remove: archive file [/home/abi/fetcher/tmp/ultimapy-0.0.9.tar.gz]
+[2024-04-20 22:46:06] INFO root fetch - main [MainThread]: End processing [ultimapy]: success
+[2024-04-20 22:46:06] INFO root fetch - main [MainThread]: Store serial: [22859397]
