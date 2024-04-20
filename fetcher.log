@@ -17916,3 +17916,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:11:48] INFO root fetch - processPackages [ticts]: Remove: archive file [/home/abi/fetcher/tmp/ticts-0.5.0.tar.gz]
 [2024-04-20 17:11:48] INFO root fetch - main [MainThread]: End processing [ticts]: success
 [2024-04-20 17:11:48] INFO root fetch - main [MainThread]: Store serial: [22856849]
+[2024-04-20 17:13:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856849]
+[2024-04-20 17:13:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 17:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3d
+[2024-04-20 17:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nure
+[2024-04-20 17:13:57] INFO root fetch - processPackages [nure]: New version: [2024.4.20] Old Version: [2024.4.15]
+[2024-04-20 17:13:57] INFO root fetch - processPackages [py3d]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 17:13:58] INFO root fetch - processPackages [nure]: Downloading https://files.pythonhosted.org/packages/2d/f8/04a24b64b4365bb550ed7a20f342fd2809206550f68f2cbe65a84abafc0e/nure-2024.4.15.tar.gz
+[2024-04-20 17:13:58] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/ed/a9/a05c44c1c9aa694e130c9d19cdc9859cfe777d1cd54002e7af34b37a840d/py3d-0.1.8.tar.gz
+[2024-04-20 17:13:58] INFO root fetch - processPackages [py3d]: Downloading https://files.pythonhosted.org/packages/6f/e8/f37aed7244bfb8dde96399a57b78193b3257dc10559f13dfea723db768d4/py3d-0.1.9.tar.gz
+[2024-04-20 17:13:58] INFO root fetch - processPackages [nure]: Downloading https://files.pythonhosted.org/packages/66/b0/d9d81796a1cebe8e5a3a7caa6ab94b6992f4fdea6f32cefba525f223311d/nure-2024.4.20.tar.gz
+[2024-04-20 17:13:58] INFO root fetch - processPackages [py3d]: executing diffoscope
+[2024-04-20 17:13:58] INFO root fetch - processPackages [py3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py3d-0.1.8.tar.gz tmp/py3d-0.1.9.tar.gz --markdown 20240420/p/py3d/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:13:58] INFO root fetch - processPackages [nure]: executing diffoscope
+[2024-04-20 17:13:58] INFO root fetch - processPackages [nure]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nure-2024.4.15.tar.gz tmp/nure-2024.4.20.tar.gz --markdown 20240420/n/nure/2024.4.15-2024.4.20/README.md --exclude *.pyd
+[2024-04-20 17:13:59] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.8.tar.gz]
+[2024-04-20 17:13:59] INFO root fetch - processPackages [py3d]: Remove: archive file [/home/abi/fetcher/tmp/py3d-0.1.9.tar.gz]
+[2024-04-20 17:13:59] INFO root fetch - main [MainThread]: End processing [py3d]: success
+[2024-04-20 17:13:59] INFO root fetch - processPackages [nure]: Remove: archive file [/home/abi/fetcher/tmp/nure-2024.4.15.tar.gz]
+[2024-04-20 17:13:59] INFO root fetch - processPackages [nure]: Remove: archive file [/home/abi/fetcher/tmp/nure-2024.4.20.tar.gz]
+[2024-04-20 17:13:59] INFO root fetch - main [MainThread]: End processing [nure]: success
+[2024-04-20 17:13:59] INFO root fetch - main [MainThread]: Store serial: [22856855]
