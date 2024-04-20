@@ -16400,3 +16400,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:28:30] INFO root fetch - processPackages [xagpy]: Remove: archive file [/home/abi/fetcher/tmp/xagpy-0.2.tar.gz]
 [2024-04-20 15:28:30] INFO root fetch - main [MainThread]: End processing [xagpy]: success
 [2024-04-20 15:28:30] INFO root fetch - main [MainThread]: Store serial: [22856019]
+[2024-04-20 15:30:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856019]
+[2024-04-20 15:30:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 15:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-chip-filter
+[2024-04-20 15:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: regis
+[2024-04-20 15:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-maimaidx
+[2024-04-20 15:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dolibarrpy
+[2024-04-20 15:30:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mo-testing
+[2024-04-20 15:30:39] WARNING root fetch - processPackages [dolibarrpy]: Skipping, unable to determine old version
+[2024-04-20 15:30:39] INFO root fetch - main [MainThread]: End processing [dolibarrpy] error
+[2024-04-20 15:30:39] INFO root fetch - processPackages [mo-testing]: New version: [8.589.24111] Old Version: [7.587.24110]
+[2024-04-20 15:30:39] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 15:30:39] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/d8/e8/3f9300b1f4dee93bb17808024b370c0e0b1ecab047b078a6090210a7029b/mo_testing-7.587.24110.tar.gz
+[2024-04-20 15:30:39] WARNING root fetch - processPackages [streamlit-chip-filter]: Skipping, unable to determine old version
+[2024-04-20 15:30:39] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter] error
+[2024-04-20 15:30:39] INFO root fetch - processPackages [regis]: New version: [0.1.9] Old Version: [0.1.85]
+[2024-04-20 15:30:39] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: Downloading https://files.pythonhosted.org/packages/86/85/e83d1c5bcb1d2759034e4b7ae7dc7a8a1fa19467690ad54a63de050d7756/nonebot-plugin-maimaidx-0.0.8.tar.gz
+[2024-04-20 15:30:39] INFO root fetch - processPackages [regis]: Downloading https://files.pythonhosted.org/packages/8e/5c/17a647f52a75885a4428f8075e650d86ead00b65879e41e25029e066837b/regis-0.1.85.tar.gz
+[2024-04-20 15:30:39] INFO root fetch - processPackages [mo-testing]: Downloading https://files.pythonhosted.org/packages/71/03/88c3735747a54857443d0a9d39c7bf57fedca41e61a11299a1b326e4ba5c/mo_testing-8.589.24111.tar.gz
+[2024-04-20 15:30:39] INFO root fetch - processPackages [mo-testing]: executing diffoscope
+[2024-04-20 15:30:39] INFO root fetch - processPackages [mo-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo_testing-7.587.24110.tar.gz tmp/mo_testing-8.589.24111.tar.gz --markdown 20240420/m/mo-testing/7.587.24110-8.589.24111/README.md --exclude *.pyd
+[2024-04-20 15:30:39] INFO root fetch - processPackages [regis]: Downloading https://files.pythonhosted.org/packages/e0/25/74667bbd99d0acf4eb4064ce4d615ab4919fd700d07b132eea95030ea6ae/regis-0.1.9.tar.gz
+[2024-04-20 15:30:39] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: Downloading https://files.pythonhosted.org/packages/98/4d/c8b8eb3571eedbb6b46f538cb4e981e7f8c6dff6cb97237fed8772445433/nonebot-plugin-maimaidx-0.0.9.tar.gz
+[2024-04-20 15:30:39] INFO root fetch - processPackages [regis]: executing diffoscope
+[2024-04-20 15:30:39] INFO root fetch - processPackages [regis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regis-0.1.85.tar.gz tmp/regis-0.1.9.tar.gz --markdown 20240420/r/regis/0.1.85-0.1.9/README.md --exclude *.pyd
+[2024-04-20 15:30:40] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: executing diffoscope
+[2024-04-20 15:30:40] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-maimaidx-0.0.8.tar.gz tmp/nonebot-plugin-maimaidx-0.0.9.tar.gz --markdown 20240420/n/nonebot-plugin-maimaidx/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 15:30:40] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-7.587.24110.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - processPackages [mo-testing]: Remove: archive file [/home/abi/fetcher/tmp/mo_testing-8.589.24111.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - main [MainThread]: End processing [mo-testing]: success
+[2024-04-20 15:30:40] INFO root fetch - processPackages [regis]: Remove: archive file [/home/abi/fetcher/tmp/regis-0.1.85.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - processPackages [regis]: Remove: archive file [/home/abi/fetcher/tmp/regis-0.1.9.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - main [MainThread]: End processing [regis]: success
+[2024-04-20 15:30:40] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-maimaidx-0.0.8.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - processPackages [nonebot-plugin-maimaidx]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-maimaidx-0.0.9.tar.gz]
+[2024-04-20 15:30:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-maimaidx]: success
+[2024-04-20 15:30:40] INFO root fetch - main [MainThread]: Store serial: [22856035]
