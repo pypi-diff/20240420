@@ -16891,3 +16891,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:59:13] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/physiokit2-2.0.0.tar.gz]
 [2024-04-20 15:59:13] INFO root fetch - main [MainThread]: End processing [PhysioKit2]: success
 [2024-04-20 15:59:13] INFO root fetch - main [MainThread]: Store serial: [22856399]
+[2024-04-20 16:01:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856399]
+[2024-04-20 16:01:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 16:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-commons-playground
+[2024-04-20 16:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC073
+[2024-04-20 16:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: virgo-modules
+[2024-04-20 16:01:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-router
+[2024-04-20 16:01:21] INFO root fetch - processPackages [django-router]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-20 16:01:21] INFO root fetch - processPackages [virgo-modules]: New version: [0.0.82] Old Version: [0.0.81]
+[2024-04-20 16:01:21] WARNING root fetch - processPackages [PythonTestLJC073]: Skipping, unable to determine old version
+[2024-04-20 16:01:21] INFO root fetch - main [MainThread]: End processing [PythonTestLJC073] error
+[2024-04-20 16:01:21] WARNING root fetch - processPackages [django-commons-playground]: Skipping, unable to determine old version
+[2024-04-20 16:01:21] INFO root fetch - main [MainThread]: End processing [django-commons-playground] error
+[2024-04-20 16:01:21] INFO root fetch - processPackages [virgo-modules]: Downloading https://files.pythonhosted.org/packages/3f/60/7bba3a1d66ab901c60ea5b9b8ac98eb79ae6d0dffbba12b2c731184c0b72/virgo_modules-0.0.81.tar.gz
+[2024-04-20 16:01:21] INFO root fetch - processPackages [django-router]: Downloading https://files.pythonhosted.org/packages/3e/3d/396c92041f35d90a96ee1247a908de17849d8d8faa04befc33f9ce85eba4/django_router-1.0.7.tar.gz
+[2024-04-20 16:01:22] INFO root fetch - processPackages [virgo-modules]: Downloading https://files.pythonhosted.org/packages/67/4c/e677acfb8bbc9d54cf322f5662eb50c93c289493ab748db9046835c6bad6/virgo_modules-0.0.82.tar.gz
+[2024-04-20 16:01:22] INFO root fetch - processPackages [django-router]: Downloading https://files.pythonhosted.org/packages/52/36/84583092f29c5df50418a4587698ee81687b06c1dee5e5f1118785199771/django_router-1.0.8.tar.gz
+[2024-04-20 16:01:22] INFO root fetch - processPackages [virgo-modules]: executing diffoscope
+[2024-04-20 16:01:22] INFO root fetch - processPackages [virgo-modules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/virgo_modules-0.0.81.tar.gz tmp/virgo_modules-0.0.82.tar.gz --markdown 20240420/v/virgo-modules/0.0.81-0.0.82/README.md --exclude *.pyd
+[2024-04-20 16:01:22] INFO root fetch - processPackages [django-router]: executing diffoscope
+[2024-04-20 16:01:22] INFO root fetch - processPackages [django-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_router-1.0.7.tar.gz tmp/django_router-1.0.8.tar.gz --markdown 20240420/d/django-router/1.0.7-1.0.8/README.md --exclude *.pyd
+[2024-04-20 16:01:22] INFO root fetch - processPackages [virgo-modules]: Remove: archive file [/home/abi/fetcher/tmp/virgo_modules-0.0.81.tar.gz]
+[2024-04-20 16:01:22] INFO root fetch - processPackages [virgo-modules]: Remove: archive file [/home/abi/fetcher/tmp/virgo_modules-0.0.82.tar.gz]
+[2024-04-20 16:01:22] INFO root fetch - main [MainThread]: End processing [virgo-modules]: success
+[2024-04-20 16:01:23] INFO root fetch - processPackages [django-router]: Remove: archive file [/home/abi/fetcher/tmp/django_router-1.0.7.tar.gz]
+[2024-04-20 16:01:23] INFO root fetch - processPackages [django-router]: Remove: archive file [/home/abi/fetcher/tmp/django_router-1.0.8.tar.gz]
+[2024-04-20 16:01:23] INFO root fetch - main [MainThread]: End processing [django-router]: success
+[2024-04-20 16:01:23] INFO root fetch - main [MainThread]: Store serial: [22856416]
