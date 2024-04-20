@@ -7848,3 +7848,33 @@
 [2024-04-20 04:33:30] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
 [2024-04-20 04:33:30] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
 [2024-04-20 04:33:30] INFO root fetch - main [MainThread]: Store serial: [22851857]
+[2024-04-20 04:35:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851857]
+[2024-04-20 04:35:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 04:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trm-woodburn
+[2024-04-20 04:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypipr
+[2024-04-20 04:35:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NNSOM
+[2024-04-20 04:35:40] INFO root fetch - processPackages [trm-woodburn]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-20 04:35:40] INFO root fetch - processPackages [NNSOM]: New version: [1.7.1] Old Version: [1.6.9]
+[2024-04-20 04:35:40] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 04:35:40] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/d4/a0/39e4b99f56c64f8d16a4d01780139eefca36383f6ed451aa09a978846cd1/nnsom-1.6.9.tar.gz
+[2024-04-20 04:35:40] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 04:35:40] INFO root fetch - processPackages [trm-woodburn]: Downloading https://files.pythonhosted.org/packages/9c/52/1dbf0c3743671e8c68ee46e23a9262ac2ffe2769c7d0322d44ea4c05deff/trm_woodburn-0.0.9.tar.gz
+[2024-04-20 04:35:41] INFO root fetch - processPackages [trm-woodburn]: Downloading https://files.pythonhosted.org/packages/ba/2c/6af1b06f5d1b118a44e8efe3d1ead292d960b93f8bca5c6291ca2fa32d2a/trm_woodburn-0.1.0.tar.gz
+[2024-04-20 04:35:41] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/6c/45/9264d84ee70b81303a4338e6abe4721278dd2a97206b2e74d2145f5e2017/nnsom-1.7.1.tar.gz
+[2024-04-20 04:35:41] INFO root fetch - processPackages [trm-woodburn]: executing diffoscope
+[2024-04-20 04:35:41] INFO root fetch - processPackages [trm-woodburn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trm_woodburn-0.0.9.tar.gz tmp/trm_woodburn-0.1.0.tar.gz --markdown 20240420/t/trm-woodburn/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-04-20 04:35:41] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 04:35:41] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.6.9.tar.gz tmp/nnsom-1.7.1.tar.gz --markdown 20240420/N/NNSOM/1.6.9-1.7.1/README.md --exclude *.pyd
+[2024-04-20 04:35:41] INFO root fetch - processPackages [trm-woodburn]: Remove: archive file [/home/abi/fetcher/tmp/trm_woodburn-0.0.9.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - processPackages [trm-woodburn]: Remove: archive file [/home/abi/fetcher/tmp/trm_woodburn-0.1.0.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - main [MainThread]: End processing [trm-woodburn]: success
+[2024-04-20 04:35:41] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.6.9.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.1.tar.gz]
+[2024-04-20 04:35:41] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-20 04:35:41] INFO root fetch - main [MainThread]: Store serial: [22851866]
