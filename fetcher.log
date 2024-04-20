@@ -12290,3 +12290,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:44:13] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kawaii_status-0.1.4.tar.gz]
 [2024-04-20 10:44:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kawaii-status]: success
 [2024-04-20 10:44:13] INFO root fetch - main [MainThread]: Store serial: [22853997]
+[2024-04-20 10:46:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853997]
+[2024-04-20 10:46:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 10:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2024-04-20 10:46:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: newdao-hello-tea
+[2024-04-20 10:46:23] WARNING root fetch - processPackages [newdao-hello-tea]: Skipping, unable to determine old version
+[2024-04-20 10:46:23] INFO root fetch - main [MainThread]: End processing [newdao-hello-tea] error
+[2024-04-20 10:46:23] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-04-20 10:46:23] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-04-20 10:46:23] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-04-20 10:46:24] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-04-20 10:46:24] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240420/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-04-20 10:46:27] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-04-20 10:46:27] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-04-20 10:46:27] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-04-20 10:46:27] INFO root fetch - main [MainThread]: Store serial: [22854002]
