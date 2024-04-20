@@ -8623,3 +8623,24 @@
 [2024-04-20 05:41:02] INFO root fetch - processPackages [filetrack]: Remove: archive file [/home/abi/fetcher/tmp/filetrack-0.0.9.tar.gz]
 [2024-04-20 05:41:02] INFO root fetch - main [MainThread]: End processing [filetrack]: success
 [2024-04-20 05:41:02] INFO root fetch - main [MainThread]: Store serial: [22852170]
+[2024-04-20 05:43:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852170]
+[2024-04-20 05:43:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recflows
+[2024-04-20 05:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tendril-iotedge
+[2024-04-20 05:43:11] INFO root fetch - processPackages [tendril-iotedge]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-20 05:43:11] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/72/16/04f35b4ae85262c78d664e11254737c11d7b22c13f613bd09b332d168556/tendril_iotedge-0.3.3.tar.gz
+[2024-04-20 05:43:11] INFO root fetch - processPackages [recflows]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:43:11] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/75/5a/4b52d3ff259c3f6b479f06d44538d510a7b56662950706ae95edf64f6df6/recflows-0.0.8.tar.gz
+[2024-04-20 05:43:11] INFO root fetch - processPackages [tendril-iotedge]: Downloading https://files.pythonhosted.org/packages/eb/32/9f082fbb0ddd1a25e66c4d4735c7d2d37e2d5e22ac00f450c27558a15bc5/tendril_iotedge-0.3.4.tar.gz
+[2024-04-20 05:43:11] INFO root fetch - processPackages [tendril-iotedge]: executing diffoscope
+[2024-04-20 05:43:11] INFO root fetch - processPackages [tendril-iotedge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_iotedge-0.3.3.tar.gz tmp/tendril_iotedge-0.3.4.tar.gz --markdown 20240420/t/tendril-iotedge/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-04-20 05:43:11] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/b0/3a/5fe25ed6db3f6a0b1324bba20aef50aeeef1b71eceb228be123efb580bbe/recflows-0.0.9.tar.gz
+[2024-04-20 05:43:12] INFO root fetch - processPackages [recflows]: executing diffoscope
+[2024-04-20 05:43:12] INFO root fetch - processPackages [recflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recflows-0.0.8.tar.gz tmp/recflows-0.0.9.tar.gz --markdown 20240420/r/recflows/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:43:12] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.3.tar.gz]
+[2024-04-20 05:43:12] INFO root fetch - processPackages [tendril-iotedge]: Remove: archive file [/home/abi/fetcher/tmp/tendril_iotedge-0.3.4.tar.gz]
+[2024-04-20 05:43:12] INFO root fetch - main [MainThread]: End processing [tendril-iotedge]: success
+[2024-04-20 05:43:12] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.8.tar.gz]
+[2024-04-20 05:43:12] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
+[2024-04-20 05:43:12] INFO root fetch - main [MainThread]: End processing [recflows]: success
+[2024-04-20 05:43:12] INFO root fetch - main [MainThread]: Store serial: [22852175]
