@@ -9017,3 +9017,15 @@
 [2024-04-20 06:09:32] INFO root fetch - processPackages [pyphonic]: Remove: archive file [/home/abi/fetcher/tmp/pyphonic-1.0.1.tar.gz]
 [2024-04-20 06:09:32] INFO root fetch - main [MainThread]: End processing [pyphonic]: success
 [2024-04-20 06:09:32] INFO root fetch - main [MainThread]: Store serial: [22852389]
+[2024-04-20 06:11:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852389]
+[2024-04-20 06:11:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 06:11:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycityproto
+[2024-04-20 06:11:40] INFO root fetch - processPackages [pycityproto]: New version: [1.13.0] Old Version: [1.12.0]
+[2024-04-20 06:11:41] INFO root fetch - processPackages [pycityproto]: Downloading https://files.pythonhosted.org/packages/1d/33/a01ed0b5424d6c53be1d41f71756939400fe344fd891f0f60aaa157d635b/pycityproto-1.12.0.tar.gz
+[2024-04-20 06:11:41] INFO root fetch - processPackages [pycityproto]: Downloading https://files.pythonhosted.org/packages/7e/46/e6624e3508c3dec30202c3f85e04c3634b7e4a2e2332d456011eef76bb5c/pycityproto-1.13.0.tar.gz
+[2024-04-20 06:11:41] INFO root fetch - processPackages [pycityproto]: executing diffoscope
+[2024-04-20 06:11:41] INFO root fetch - processPackages [pycityproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycityproto-1.12.0.tar.gz tmp/pycityproto-1.13.0.tar.gz --markdown 20240420/p/pycityproto/1.12.0-1.13.0/README.md --exclude *.pyd
+[2024-04-20 06:11:42] INFO root fetch - processPackages [pycityproto]: Remove: archive file [/home/abi/fetcher/tmp/pycityproto-1.12.0.tar.gz]
+[2024-04-20 06:11:42] INFO root fetch - processPackages [pycityproto]: Remove: archive file [/home/abi/fetcher/tmp/pycityproto-1.13.0.tar.gz]
+[2024-04-20 06:11:42] INFO root fetch - main [MainThread]: End processing [pycityproto]: success
+[2024-04-20 06:11:42] INFO root fetch - main [MainThread]: Store serial: [22852396]
