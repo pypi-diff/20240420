@@ -18882,3 +18882,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:13:29] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
 [2024-04-20 18:13:29] INFO root fetch - main [MainThread]: End processing [pypipr]: success
 [2024-04-20 18:13:29] INFO root fetch - main [MainThread]: Store serial: [22857289]
+[2024-04-20 18:15:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857289]
+[2024-04-20 18:15:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 18:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpl-markers
+[2024-04-20 18:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioomics
+[2024-04-20 18:15:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cs2-battle-bot-api-client
+[2024-04-20 18:15:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 18:15:39] INFO root fetch - processPackages [bioomics]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-20 18:15:39] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/d0/69/1fb807ab0556c3290d7e4559989eae122f02d55012c500b024683c793888/bioomics-0.1.9.tar.gz
+[2024-04-20 18:15:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/03/df/b7441418a2c92e54f467823096a59228bd44b86e3d3cabbf00bf422e840b/cs2_battle_bot_api_client-0.0.8.tar.gz
+[2024-04-20 18:15:39] INFO root fetch - processPackages [mpl-markers]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 18:15:39] INFO root fetch - processPackages [mpl-markers]: Downloading https://files.pythonhosted.org/packages/46/59/cda3d8db3983bfdfc0fdd8f833435b00e222fcf8acb593c0a7b21e1675b6/mpl-markers-0.0.6.tar.gz
+[2024-04-20 18:15:39] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/d1/ce/12927787c97c6859f347f02ea180c95957337567222071ed799d460d8be6/bioomics-0.2.0.tar.gz
+[2024-04-20 18:15:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Downloading https://files.pythonhosted.org/packages/77/08/3e7b110a5c7ca73d5a2f0ae6b0262f4ffff4556c60ed50870a60f5aad63e/cs2_battle_bot_api_client-0.0.9.tar.gz
+[2024-04-20 18:15:39] INFO root fetch - processPackages [bioomics]: executing diffoscope
+[2024-04-20 18:15:39] INFO root fetch - processPackages [bioomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioomics-0.1.9.tar.gz tmp/bioomics-0.2.0.tar.gz --markdown 20240420/b/bioomics/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-20 18:15:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: executing diffoscope
+[2024-04-20 18:15:39] INFO root fetch - processPackages [cs2-battle-bot-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cs2_battle_bot_api_client-0.0.8.tar.gz tmp/cs2_battle_bot_api_client-0.0.9.tar.gz --markdown 20240420/c/cs2-battle-bot-api-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 18:15:40] INFO root fetch - processPackages [mpl-markers]: Downloading https://files.pythonhosted.org/packages/cc/29/74a167c5daded05d81cbc6bea54bf74934afa33258158ab67a41428689dc/mpl_markers-0.0.7.tar.gz
+[2024-04-20 18:15:40] INFO root fetch - processPackages [mpl-markers]: executing diffoscope
+[2024-04-20 18:15:40] INFO root fetch - processPackages [mpl-markers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpl-markers-0.0.6.tar.gz tmp/mpl_markers-0.0.7.tar.gz --markdown 20240420/m/mpl-markers/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 18:15:40] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.1.9.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.2.0.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - main [MainThread]: End processing [bioomics]: success
+[2024-04-20 18:15:40] INFO root fetch - processPackages [mpl-markers]: Remove: archive file [/home/abi/fetcher/tmp/mpl-markers-0.0.6.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - processPackages [mpl-markers]: Remove: archive file [/home/abi/fetcher/tmp/mpl_markers-0.0.7.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - main [MainThread]: End processing [mpl-markers]: success
+[2024-04-20 18:15:40] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.8.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - processPackages [cs2-battle-bot-api-client]: Remove: archive file [/home/abi/fetcher/tmp/cs2_battle_bot_api_client-0.0.9.tar.gz]
+[2024-04-20 18:15:40] INFO root fetch - main [MainThread]: End processing [cs2-battle-bot-api-client]: success
+[2024-04-20 18:15:40] INFO root fetch - main [MainThread]: Store serial: [22857298]
