@@ -18538,3 +18538,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
 [2024-04-20 17:51:44] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
 [2024-04-20 17:51:44] INFO root fetch - main [MainThread]: Store serial: [22857137]
+[2024-04-20 17:53:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857137]
+[2024-04-20 17:53:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deshima-rawdata
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-sqlmodel-starter
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pokerengine
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ansi-string
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: movoid-package
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lm-checkpoints
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonTestLJC114
+[2024-04-20 17:53:53] INFO root fetch - processPackages [pokerengine]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-20 17:53:53] INFO root fetch - processPackages [lm-checkpoints]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ansi-string]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 17:53:53] INFO root fetch - processPackages [movoid-package]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-20 17:53:53] INFO root fetch - processPackages [deshima-rawdata]: New version: [2024.4.0] Old Version: [2023.11.5]
+[2024-04-20 17:53:53] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/ea/bc/47bd5c77abc4dec5c6d13038e9c0e26dc13d2a18d0dfa13c9b4f51c583b9/pokerengine-1.1.1.tar.gz
+[2024-04-20 17:53:53] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: New version: [1.0.1] Old Version: [1.0.0b1]
+[2024-04-20 17:53:53] WARNING root fetch - processPackages [PythonTestLJC114]: Skipping, unable to determine old version
+[2024-04-20 17:53:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC114] error
+[2024-04-20 17:53:53] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/26/97/80218c1fbceca60f595836de094c7b46274f56f97966508bb3e87cfbd27d/ansi-string-0.1.1.tar.gz
+[2024-04-20 17:53:53] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/a2/d0/e5ac6d31d17da9d9b2652133d2afef3448d9cc9cabcbfdae813f76f19094/lm_checkpoints-0.1.8.tar.gz
+[2024-04-20 17:53:53] INFO root fetch - processPackages [movoid-package]: Downloading https://files.pythonhosted.org/packages/1e/cd/e7367b91a2ae56a30a4d37ac2129b7e44f94c37c6aefcc1e8e7f21b7d4ae/movoid_package-1.2.0.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Downloading https://files.pythonhosted.org/packages/15/87/851758b00386cca5e181ba890fdb0eb7fd106b7b08c9e45921bbb7f59984/fastapi_sqlmodel_starter-1.0.0b1.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [deshima-rawdata]: Downloading https://files.pythonhosted.org/packages/8d/a6/c20f5eaf51189015905cb178882064b08bdb003057cd18a97622a963d830/deshima_rawdata-2023.11.5.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/d7/4a/3505b4fc6f4e5fc7bbf2b729a0da81fc04ef677ecb158dd9ed75547b3281/lm_checkpoints-0.1.9.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/d0/83/a856a2bdda5af4564aa8c237b8eadc3f4d0ca2ab378a66f7c47142f8f79d/pokerengine-1.1.2.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/d7/59/77184842052c935c0a1312e3686e905d4e6f8d47c5a0e7e08118004b0f07/ansi-string-0.1.2.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [lm-checkpoints]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [lm-checkpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_checkpoints-0.1.8.tar.gz tmp/lm_checkpoints-0.1.9.tar.gz --markdown 20240420/l/lm-checkpoints/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [pokerengine]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [pokerengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerengine-1.1.1.tar.gz tmp/pokerengine-1.1.2.tar.gz --markdown 20240420/p/pokerengine/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [movoid-package]: Downloading https://files.pythonhosted.org/packages/5e/55/d0b3a2212bfbfc4e1dbbd646561fa6a8ff330d97b5f9c3bba6569dc2a3d3/movoid_package-1.2.1.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [ansi-string]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [ansi-string]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansi-string-0.1.1.tar.gz tmp/ansi-string-0.1.2.tar.gz --markdown 20240420/a/ansi-string/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [deshima-rawdata]: Downloading https://files.pythonhosted.org/packages/c4/c5/7a3a3e09845c071703723eda08e6d55914ea4e583ceb8952cf55f038cfde/deshima_rawdata-2024.4.0.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Downloading https://files.pythonhosted.org/packages/73/9f/3dd3deec77c878645fb237f6627db0b1cf0a1176409ca0a89258a86992d8/fastapi_sqlmodel_starter-1.0.1.tar.gz
+[2024-04-20 17:53:54] INFO root fetch - processPackages [movoid-package]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [movoid-package]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_package-1.2.0.tar.gz tmp/movoid_package-1.2.1.tar.gz --markdown 20240420/m/movoid-package/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [deshima-rawdata]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [deshima-rawdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deshima_rawdata-2023.11.5.tar.gz tmp/deshima_rawdata-2024.4.0.tar.gz --markdown 20240420/d/deshima-rawdata/2023.11.5-2024.4.0/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: executing diffoscope
+[2024-04-20 17:53:54] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_sqlmodel_starter-1.0.0b1.tar.gz tmp/fastapi_sqlmodel_starter-1.0.1.tar.gz --markdown 20240420/f/fastapi-sqlmodel-starter/1.0.0b1-1.0.1/README.md --exclude *.pyd
+[2024-04-20 17:53:54] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.8.tar.gz]
+[2024-04-20 17:53:54] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.9.tar.gz]
+[2024-04-20 17:53:54] INFO root fetch - main [MainThread]: End processing [lm-checkpoints]: success
+[2024-04-20 17:53:55] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.1.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.2.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
+[2024-04-20 17:53:55] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-0.1.1.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-0.1.2.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [ansi-string]: success
+[2024-04-20 17:53:55] INFO root fetch - processPackages [movoid-package]: Remove: archive file [/home/abi/fetcher/tmp/movoid_package-1.2.0.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - processPackages [movoid-package]: Remove: archive file [/home/abi/fetcher/tmp/movoid_package-1.2.1.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [movoid-package]: success
+[2024-04-20 17:53:55] INFO root fetch - processPackages [deshima-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/deshima_rawdata-2023.11.5.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - processPackages [deshima-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/deshima_rawdata-2024.4.0.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [deshima-rawdata]: success
+[2024-04-20 17:53:55] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.0b1.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - processPackages [fastapi-sqlmodel-starter]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_sqlmodel_starter-1.0.1.tar.gz]
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: End processing [fastapi-sqlmodel-starter]: success
+[2024-04-20 17:53:55] INFO root fetch - main [MainThread]: Store serial: [22857176]
