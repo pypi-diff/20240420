@@ -12735,3 +12735,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:14:42] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.21.tar.gz]
 [2024-04-20 11:14:42] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
 [2024-04-20 11:14:42] INFO root fetch - main [MainThread]: Store serial: [22854236]
+[2024-04-20 11:16:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854236]
+[2024-04-20 11:16:52] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: x23186607-lib
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: automotifs
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: djangorestframework-ext
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: star-alchemy
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: roleft
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wrangle
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spherical-harmonics-basis
+[2024-04-20 11:16:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: napari-findaureus
+[2024-04-20 11:16:52] WARNING root fetch - processPackages [napari-findaureus]: Skipping, unable to determine old version
+[2024-04-20 11:16:52] INFO root fetch - main [MainThread]: End processing [napari-findaureus] error
+[2024-04-20 11:16:52] INFO root fetch - processPackages [roleft]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 11:16:52] INFO root fetch - processPackages [wrangle]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-20 11:16:52] WARNING root fetch - processPackages [x23186607-lib]: Skipping, unable to determine old version
+[2024-04-20 11:16:52] INFO root fetch - main [MainThread]: End processing [x23186607-lib] error
+[2024-04-20 11:16:52] WARNING root fetch - processPackages [spherical-harmonics-basis]: Skipping, unable to determine old version
+[2024-04-20 11:16:52] INFO root fetch - main [MainThread]: End processing [spherical-harmonics-basis] error
+[2024-04-20 11:16:52] INFO root fetch - processPackages [star-alchemy]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 11:16:52] INFO root fetch - processPackages [automotifs]: New version: [1.3] Old Version: [1.2]
+[2024-04-20 11:16:52] INFO root fetch - processPackages [djangorestframework-ext]: New version: [0.9] Old Version: [0.8]
+[2024-04-20 11:16:52] INFO root fetch - processPackages [roleft]: Downloading https://files.pythonhosted.org/packages/eb/53/0931108312263b7c48dcf45581e810742b145e098a3ba370a5ded0b1cadd/roleft-1.0.8.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [automotifs]: Downloading https://files.pythonhosted.org/packages/3e/07/24876a21871b51010c533cb0433578bae25f461c1d6d7637bd8210590dcd/automotifs-1.2.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [djangorestframework-ext]: Downloading https://files.pythonhosted.org/packages/d6/be/76ec8844c998542b4bdda0eaf61bc3babcd7c9909cfabfb92ad236e7d7fe/djangorestframework-ext-0.8.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/bb/c8/4fc63314d41b5a5f2608da9d49d9fc50230ddf324e0f9ef0158e9728fda9/wrangle-0.7.2.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/4a/31/cce1bf4d8fd6c83576c8731162f849abab8e43fe3472d38a215d1f9db081/star-alchemy-0.4.0.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [djangorestframework-ext]: Downloading https://files.pythonhosted.org/packages/68/7f/a0089289d4ec8908e1a1eb790688de9d770b056bc9785f48187b30f6178b/djangorestframework-ext-0.9.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [roleft]: Downloading https://files.pythonhosted.org/packages/27/30/cfbc1bdcc9e0e1c50a955986d320b2f8c068f60c110cd6f988fd06490add/roleft-1.0.9.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [automotifs]: Downloading https://files.pythonhosted.org/packages/5b/2d/154068f2f8bdfc541f93ebaafd675e36b63bda63914143a39ae43d141a3f/automotifs-1.3.tar.gz
+[2024-04-20 11:16:52] INFO root fetch - processPackages [djangorestframework-ext]: executing diffoscope
+[2024-04-20 11:16:52] INFO root fetch - processPackages [djangorestframework-ext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/djangorestframework-ext-0.8.tar.gz tmp/djangorestframework-ext-0.9.tar.gz --markdown 20240420/d/djangorestframework-ext/0.8-0.9/README.md --exclude *.pyd
+[2024-04-20 11:16:52] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/92/21/05f3b64d16514871271b82cf54a7b4dd99ea91f0db243c8c65b45233e8fa/star_alchemy-0.5.0.tar.gz
+[2024-04-20 11:16:53] INFO root fetch - processPackages [automotifs]: executing diffoscope
+[2024-04-20 11:16:53] INFO root fetch - processPackages [automotifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automotifs-1.2.tar.gz tmp/automotifs-1.3.tar.gz --markdown 20240420/a/automotifs/1.2-1.3/README.md --exclude *.pyd
+[2024-04-20 11:16:53] INFO root fetch - processPackages [roleft]: executing diffoscope
+[2024-04-20 11:16:53] INFO root fetch - processPackages [roleft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roleft-1.0.8.tar.gz tmp/roleft-1.0.9.tar.gz --markdown 20240420/r/roleft/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 11:16:53] INFO root fetch - processPackages [star-alchemy]: executing diffoscope
+[2024-04-20 11:16:53] INFO root fetch - processPackages [star-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/star-alchemy-0.4.0.tar.gz tmp/star_alchemy-0.5.0.tar.gz --markdown 20240420/s/star-alchemy/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 11:16:53] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/e4/a1/d66c68479281c136d5b5bfa9ea36ae4c6409892e55cce8939f8de286a2a7/wrangle-0.7.3.tar.gz
+[2024-04-20 11:16:53] INFO root fetch - processPackages [wrangle]: executing diffoscope
+[2024-04-20 11:16:53] INFO root fetch - processPackages [wrangle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrangle-0.7.2.tar.gz tmp/wrangle-0.7.3.tar.gz --markdown 20240420/w/wrangle/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-04-20 11:16:53] INFO root fetch - processPackages [automotifs]: Remove: archive file [/home/abi/fetcher/tmp/automotifs-1.2.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - processPackages [automotifs]: Remove: archive file [/home/abi/fetcher/tmp/automotifs-1.3.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: End processing [automotifs]: success
+[2024-04-20 11:16:53] INFO root fetch - processPackages [roleft]: Remove: archive file [/home/abi/fetcher/tmp/roleft-1.0.8.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - processPackages [roleft]: Remove: archive file [/home/abi/fetcher/tmp/roleft-1.0.9.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: End processing [roleft]: success
+[2024-04-20 11:16:53] INFO root fetch - processPackages [djangorestframework-ext]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework-ext-0.8.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - processPackages [djangorestframework-ext]: Remove: archive file [/home/abi/fetcher/tmp/djangorestframework-ext-0.9.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: End processing [djangorestframework-ext]: success
+[2024-04-20 11:16:53] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star-alchemy-0.4.0.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star_alchemy-0.5.0.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: End processing [star-alchemy]: success
+[2024-04-20 11:16:53] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.2.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.3.tar.gz]
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: End processing [wrangle]: success
+[2024-04-20 11:16:53] INFO root fetch - main [MainThread]: Store serial: [22854268]
