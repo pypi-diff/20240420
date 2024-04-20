@@ -13263,3 +13263,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:43:57] INFO root fetch - processPackages [nakametpy]: Remove: archive file [/home/abi/fetcher/tmp/nakametpy-2024.4.0.tar.gz]
 [2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [nakametpy]: success
 [2024-04-20 11:43:57] INFO root fetch - main [MainThread]: Store serial: [22854518]
+[2024-04-20 11:46:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854518]
+[2024-04-20 11:46:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mytot
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mobio-admin-sdk-test
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wrangle
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: php-ast
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quokka-sharp
+[2024-04-20 11:46:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: combine-pvalues-discrete
+[2024-04-20 11:46:06] INFO root fetch - processPackages [mytot]: New version: [2024.4.20.173918] Old Version: [2024.4.20.144003]
+[2024-04-20 11:46:06] INFO root fetch - processPackages [php-ast]: New version: [1.2] Old Version: [1.1]
+[2024-04-20 11:46:06] INFO root fetch - processPackages [wrangle]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-04-20 11:46:06] INFO root fetch - processPackages [quokka-sharp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 11:46:06] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/81/a885e08103ab4f871094b84134fcfb583786cdb712420a77580218f380e4/mytot-2024.4.20.144003-py3-none-any.whl
+[2024-04-20 11:46:06] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/bb/c8/4fc63314d41b5a5f2608da9d49d9fc50230ddf324e0f9ef0158e9728fda9/wrangle-0.7.2.tar.gz
+[2024-04-20 11:46:06] INFO root fetch - processPackages [quokka-sharp]: Downloading https://files.pythonhosted.org/packages/d3/07/99c373d3d0bf1de151b6296ddaa957e5ba07d0aaea5698ce3272a8684db4/quokka_sharp-0.0.8.tar.gz
+[2024-04-20 11:46:06] INFO root fetch - processPackages [combine-pvalues-discrete]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-20 11:46:06] INFO root fetch - processPackages [mobio-admin-sdk-test]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 11:46:07] INFO root fetch - processPackages [php-ast]: Downloading https://files.pythonhosted.org/packages/2b/30/89dd5c7eb99bb7957d9ace972c754a508f2ab2d719b1feb4349c41caf609/php_ast-1.1.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/2c/4356c2fbc3a32e41f92fb14927a903dae34eb5c309fdd00d88ddd6b4e699/mytot-2024.4.20.173918-py3-none-any.whl
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mobio-admin-sdk-test]: Downloading https://files.pythonhosted.org/packages/4a/af/66d5c1ad16ae3c0f6f49fc358f93be1a8709de9f4be6cad1b95d0be51f3a/mobio-admin-sdk-test-1.0.8.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [quokka-sharp]: Downloading https://files.pythonhosted.org/packages/ff/a8/80c6aaff1c7ea5821c3b215be8f0703c47d168712ebaa62bef5ce15012cf/quokka_sharp-0.0.9.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [combine-pvalues-discrete]: Downloading https://files.pythonhosted.org/packages/e7/b3/d054f698752bfed727b69dd013a1de9c31ee9e4b20424c8d3bba84204f80/combine_pvalues_discrete-1.2.2.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [wrangle]: Downloading https://files.pythonhosted.org/packages/e4/a1/d66c68479281c136d5b5bfa9ea36ae4c6409892e55cce8939f8de286a2a7/wrangle-0.7.3.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mytot]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mytot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip --markdown 20240420/m/mytot/2024.4.20.144003-2024.4.20.173918/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [quokka-sharp]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [quokka-sharp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quokka_sharp-0.0.8.tar.gz tmp/quokka_sharp-0.0.9.tar.gz --markdown 20240420/q/quokka-sharp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [wrangle]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [wrangle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wrangle-0.7.2.tar.gz tmp/wrangle-0.7.3.tar.gz --markdown 20240420/w/wrangle/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mobio-admin-sdk-test]: Downloading https://files.pythonhosted.org/packages/cd/85/b29cc567d91d8185c68d7aa5b10e350376ea92ce33443fd1b570f9badee3/mobio-admin-sdk-test-1.0.9.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [combine-pvalues-discrete]: Downloading https://files.pythonhosted.org/packages/f2/78/20cdf07245ec1d96a75c09b1cf3f2ec59c03addef4e031551fb6c6a8a95d/combine_pvalues_discrete-1.2.3.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [php-ast]: Downloading https://files.pythonhosted.org/packages/a2/09/0948697a65abb3ce3256c031c6a46d29fa4e85f6ff6cd8a82446ad4f4320/php_ast-1.2.tar.gz
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mobio-admin-sdk-test]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [mobio-admin-sdk-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mobio-admin-sdk-test-1.0.8.tar.gz tmp/mobio-admin-sdk-test-1.0.9.tar.gz --markdown 20240420/m/mobio-admin-sdk-test/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [combine-pvalues-discrete]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [combine-pvalues-discrete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/combine_pvalues_discrete-1.2.2.tar.gz tmp/combine_pvalues_discrete-1.2.3.tar.gz --markdown 20240420/c/combine-pvalues-discrete/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [php-ast]: executing diffoscope
+[2024-04-20 11:46:07] INFO root fetch - processPackages [php-ast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/php_ast-1.1.tar.gz tmp/php_ast-1.2.tar.gz --markdown 20240420/p/php-ast/1.1-1.2/README.md --exclude *.pyd
+[2024-04-20 11:46:07] INFO root fetch - processPackages [quokka-sharp]: Remove: archive file [/home/abi/fetcher/tmp/quokka_sharp-0.0.8.tar.gz]
+[2024-04-20 11:46:07] INFO root fetch - processPackages [quokka-sharp]: Remove: archive file [/home/abi/fetcher/tmp/quokka_sharp-0.0.9.tar.gz]
+[2024-04-20 11:46:07] INFO root fetch - main [MainThread]: End processing [quokka-sharp]: success
+[2024-04-20 11:46:08] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip]
+[2024-04-20 11:46:08] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip]
+[2024-04-20 11:46:08] INFO root fetch - main [MainThread]: End processing [mytot]: success
+[2024-04-20 11:46:08] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.2.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - processPackages [wrangle]: Remove: archive file [/home/abi/fetcher/tmp/wrangle-0.7.3.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - main [MainThread]: End processing [wrangle]: success
+[2024-04-20 11:46:08] INFO root fetch - processPackages [mobio-admin-sdk-test]: Remove: archive file [/home/abi/fetcher/tmp/mobio-admin-sdk-test-1.0.8.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - processPackages [mobio-admin-sdk-test]: Remove: archive file [/home/abi/fetcher/tmp/mobio-admin-sdk-test-1.0.9.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - main [MainThread]: End processing [mobio-admin-sdk-test]: success
+[2024-04-20 11:46:08] INFO root fetch - processPackages [combine-pvalues-discrete]: Remove: archive file [/home/abi/fetcher/tmp/combine_pvalues_discrete-1.2.2.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - processPackages [combine-pvalues-discrete]: Remove: archive file [/home/abi/fetcher/tmp/combine_pvalues_discrete-1.2.3.tar.gz]
+[2024-04-20 11:46:08] INFO root fetch - main [MainThread]: End processing [combine-pvalues-discrete]: success
+[2024-04-20 11:46:09] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.1.tar.gz]
+[2024-04-20 11:46:09] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.2.tar.gz]
+[2024-04-20 11:46:09] INFO root fetch - main [MainThread]: End processing [php-ast]: success
+[2024-04-20 11:46:09] INFO root fetch - main [MainThread]: Store serial: [22854532]
