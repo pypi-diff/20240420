@@ -21334,3 +21334,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:38:21] INFO root fetch - processPackages [dataspecs]: Remove: archive file [/home/abi/fetcher/tmp/dataspecs-0.4.0.tar.gz]
 [2024-04-20 20:38:21] INFO root fetch - main [MainThread]: End processing [dataspecs]: success
 [2024-04-20 20:38:21] INFO root fetch - main [MainThread]: Store serial: [22858451]
+[2024-04-20 20:40:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858451]
+[2024-04-20 20:40:29] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fiblat
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-chip-filter
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imy
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: KOJ
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dolibarrpy
+[2024-04-20 20:40:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC174
+[2024-04-20 20:40:29] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-20 20:40:29] INFO root fetch - processPackages [imy]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-20 20:40:29] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 20:40:30] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/27/39/550409b4bbb4963cfafe73560f1cb5865673f551701eeccaa85475d8bb72/streamlit-chip-filter-0.0.4.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/3c/43/b9460cb626e80f1176a7898c02137fa3b16380a93aab3f6c517f41d47376/imy-0.2.4.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/72/f2/c8636dffed8364a0d8136e2ff9913846015caabe97175e662084553415ac/dolibarrpy-0.2.6.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [fiblat]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 20:40:30] WARNING root fetch - processPackages [KOJ]: Skipping, unable to determine old version
+[2024-04-20 20:40:30] INFO root fetch - main [MainThread]: End processing [KOJ] error
+[2024-04-20 20:40:30] WARNING root fetch - processPackages [PythonTestLJC174]: Skipping, unable to determine old version
+[2024-04-20 20:40:30] INFO root fetch - main [MainThread]: End processing [PythonTestLJC174] error
+[2024-04-20 20:40:30] INFO root fetch - processPackages [fiblat]: Downloading https://files.pythonhosted.org/packages/84/82/3943e5d5dba0ba68406dbc067ddd6453a3ef77bd4518093fad2a2d63120f/fiblat-0.4.0.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [imy]: Downloading https://files.pythonhosted.org/packages/8e/9a/cd3c0453a40d940972927a1988089e71543a69a88fcb28d1c1739290fd92/imy-0.2.5.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/27/81/8ca9c1bc8b863f440c84866aa193a3bddf8dd277e50f4fd7cf75f79dd4dd/dolibarrpy-0.2.7.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/98/42/e2dc7f0c671976cd476a05c8831f3b2f50227776ed5eff764f5e6f75c0d6/streamlit-chip-filter-0.0.5.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [imy]: executing diffoscope
+[2024-04-20 20:40:30] INFO root fetch - processPackages [imy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imy-0.2.4.tar.gz tmp/imy-0.2.5.tar.gz --markdown 20240420/i/imy/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-20 20:40:30] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 20:40:30] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.6.tar.gz tmp/dolibarrpy-0.2.7.tar.gz --markdown 20240420/d/dolibarrpy/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 20:40:30] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 20:40:30] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.4.tar.gz tmp/streamlit-chip-filter-0.0.5.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-20 20:40:30] INFO root fetch - processPackages [fiblat]: Downloading https://files.pythonhosted.org/packages/01/83/4e1a3e5acbbf659dea9591eb5be32d6503c8249a9578bdf0e1aec931daf5/fiblat-0.5.0.tar.gz
+[2024-04-20 20:40:30] INFO root fetch - processPackages [fiblat]: executing diffoscope
+[2024-04-20 20:40:30] INFO root fetch - processPackages [fiblat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fiblat-0.4.0.tar.gz tmp/fiblat-0.5.0.tar.gz --markdown 20240420/f/fiblat/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 20:40:31] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.6.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.7.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 20:40:31] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.2.4.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - processPackages [imy]: Remove: archive file [/home/abi/fetcher/tmp/imy-0.2.5.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - main [MainThread]: End processing [imy]: success
+[2024-04-20 20:40:31] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.4.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.5.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 20:40:31] INFO root fetch - processPackages [fiblat]: Remove: archive file [/home/abi/fetcher/tmp/fiblat-0.4.0.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - processPackages [fiblat]: Remove: archive file [/home/abi/fetcher/tmp/fiblat-0.5.0.tar.gz]
+[2024-04-20 20:40:31] INFO root fetch - main [MainThread]: End processing [fiblat]: success
+[2024-04-20 20:40:31] INFO root fetch - main [MainThread]: Store serial: [22858467]
