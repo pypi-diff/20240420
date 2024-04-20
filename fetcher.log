@@ -10441,3 +10441,33 @@
 [2024-04-20 08:17:56] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.97.tar.gz]
 [2024-04-20 08:17:56] INFO root fetch - main [MainThread]: End processing [ccdt]: success
 [2024-04-20 08:17:56] INFO root fetch - main [MainThread]: Store serial: [22853095]
+[2024-04-20 08:19:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853095]
+[2024-04-20 08:20:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 08:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-04-20 08:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: docsig
+[2024-04-20 08:20:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: layeutils
+[2024-04-20 08:20:04] INFO root fetch - processPackages [docsig]: New version: [0.9.0] Old Version: [0.7.0]
+[2024-04-20 08:20:04] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 08:20:04] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/b7/aa/3a58eed65c9cd6b8bd5a25e3fb75d0dab2ecdda4b36d07b1e482c485f72b/docsig-0.7.0.tar.gz
+[2024-04-20 08:20:04] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 08:20:05] INFO root fetch - processPackages [layeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 08:20:05] INFO root fetch - processPackages [docsig]: Downloading https://files.pythonhosted.org/packages/a5/8b/f9b2d72f71a3977e2edb7a543e8805b8f859ed021086b9eb63b07f9aa86d/docsig-0.9.0.tar.gz
+[2024-04-20 08:20:05] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 08:20:05] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 08:20:05] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 08:20:05] INFO root fetch - processPackages [docsig]: executing diffoscope
+[2024-04-20 08:20:05] INFO root fetch - processPackages [docsig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docsig-0.7.0.tar.gz tmp/docsig-0.9.0.tar.gz --markdown 20240420/d/docsig/0.7.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 08:20:05] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/df/8a/5750fd27fb4c3487b4dbdfad44f376e0526542c6ee8cc4234e63d034eff8/layeutils-0.2.8.tar.gz
+[2024-04-20 08:20:05] INFO root fetch - processPackages [layeutils]: Downloading https://files.pythonhosted.org/packages/49/3d/c713aa3374b8d3b84cd8820b2906eff00ed129c458180bc7ae7c4568a911/layeutils-0.2.9.tar.gz
+[2024-04-20 08:20:05] INFO root fetch - processPackages [layeutils]: executing diffoscope
+[2024-04-20 08:20:05] INFO root fetch - processPackages [layeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layeutils-0.2.8.tar.gz tmp/layeutils-0.2.9.tar.gz --markdown 20240420/l/layeutils/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 08:20:05] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.7.0.tar.gz]
+[2024-04-20 08:20:05] INFO root fetch - processPackages [docsig]: Remove: archive file [/home/abi/fetcher/tmp/docsig-0.9.0.tar.gz]
+[2024-04-20 08:20:05] INFO root fetch - main [MainThread]: End processing [docsig]: success
+[2024-04-20 08:20:06] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 08:20:06] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 08:20:06] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 08:20:06] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.8.tar.gz]
+[2024-04-20 08:20:06] INFO root fetch - processPackages [layeutils]: Remove: archive file [/home/abi/fetcher/tmp/layeutils-0.2.9.tar.gz]
+[2024-04-20 08:20:06] INFO root fetch - main [MainThread]: End processing [layeutils]: success
+[2024-04-20 08:20:06] INFO root fetch - main [MainThread]: Store serial: [22853105]
