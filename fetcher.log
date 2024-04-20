@@ -16263,3 +16263,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:15:27] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
 [2024-04-20 15:15:27] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
 [2024-04-20 15:15:27] INFO root fetch - main [MainThread]: Store serial: [22855938]
+[2024-04-20 15:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855938]
+[2024-04-20 15:17:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC057
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: musicntwrk
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lgtmeow
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ArrowTextClassifier
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fhempy
+[2024-04-20 15:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Few-Shot-Learning-NLP
+[2024-04-20 15:17:37] WARNING root fetch - processPackages [Few-Shot-Learning-NLP]: Skipping, unable to determine old version
+[2024-04-20 15:17:37] INFO root fetch - main [MainThread]: End processing [Few-Shot-Learning-NLP] error
+[2024-04-20 15:17:37] WARNING root fetch - processPackages [ArrowTextClassifier]: Skipping, unable to determine old version
+[2024-04-20 15:17:37] INFO root fetch - main [MainThread]: End processing [ArrowTextClassifier] error
+[2024-04-20 15:17:37] INFO root fetch - processPackages [lgtmeow]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-20 15:17:37] WARNING root fetch - processPackages [PythonTestLJC057]: Skipping, unable to determine old version
+[2024-04-20 15:17:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC057] error
+[2024-04-20 15:17:37] INFO root fetch - processPackages [musicntwrk]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-04-20 15:17:37] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 15:17:37] INFO root fetch - processPackages [lgtmeow]: Downloading https://files.pythonhosted.org/packages/ef/a4/5da2b5dfc9c354d26fade80a89d20fe507de695dfd05f27c2de5b52a92e4/lgtmeow-0.4.0.tar.gz
+[2024-04-20 15:17:37] INFO root fetch - processPackages [musicntwrk]: Downloading https://files.pythonhosted.org/packages/eb/54/cfcd0ec154a945cf9ea03456f0b5db99228d517531e7f6568ba971ed433e/musicntwrk-2.2.9.tar.gz
+[2024-04-20 15:17:37] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-20 15:17:37] INFO root fetch - processPackages [lgtmeow]: Downloading https://files.pythonhosted.org/packages/da/b8/1f24d72d1a4b9d311bc5768a81caf29ab7e51855c9eed5f60336a2b4316e/lgtmeow-0.5.0.tar.gz
+[2024-04-20 15:17:37] INFO root fetch - processPackages [musicntwrk]: Downloading https://files.pythonhosted.org/packages/f0/4d/45f93b6d5a3a4b6e828ddb4b1ee463030f5a33184ecf269588fd912be6f7/musicntwrk-2.3.0.tar.gz
+[2024-04-20 15:17:37] INFO root fetch - processPackages [lgtmeow]: executing diffoscope
+[2024-04-20 15:17:37] INFO root fetch - processPackages [lgtmeow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lgtmeow-0.4.0.tar.gz tmp/lgtmeow-0.5.0.tar.gz --markdown 20240420/l/lgtmeow/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-04-20 15:17:37] INFO root fetch - processPackages [musicntwrk]: executing diffoscope
+[2024-04-20 15:17:37] INFO root fetch - processPackages [musicntwrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicntwrk-2.2.9.tar.gz tmp/musicntwrk-2.3.0.tar.gz --markdown 20240420/m/musicntwrk/2.2.9-2.3.0/README.md --exclude *.pyd
+[2024-04-20 15:17:38] INFO root fetch - processPackages [lgtmeow]: Remove: archive file [/home/abi/fetcher/tmp/lgtmeow-0.4.0.tar.gz]
+[2024-04-20 15:17:38] INFO root fetch - processPackages [lgtmeow]: Remove: archive file [/home/abi/fetcher/tmp/lgtmeow-0.5.0.tar.gz]
+[2024-04-20 15:17:38] INFO root fetch - main [MainThread]: End processing [lgtmeow]: success
+[2024-04-20 15:17:38] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-20 15:17:39] INFO root fetch - processPackages [musicntwrk]: Remove: archive file [/home/abi/fetcher/tmp/musicntwrk-2.2.9.tar.gz]
+[2024-04-20 15:17:39] INFO root fetch - processPackages [musicntwrk]: Remove: archive file [/home/abi/fetcher/tmp/musicntwrk-2.3.0.tar.gz]
+[2024-04-20 15:17:39] INFO root fetch - main [MainThread]: End processing [musicntwrk]: success
+[2024-04-20 15:17:39] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-20 15:17:39] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240420/f/fhempy/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 15:17:41] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-20 15:17:41] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-20 15:17:41] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-20 15:17:41] INFO root fetch - main [MainThread]: Store serial: [22855973]
