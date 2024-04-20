@@ -15525,3 +15525,105 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:24:17] INFO root fetch - main [MainThread]: End processing [dolibarrpy] error
 [2024-04-20 14:24:17] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
 [2024-04-20 14:24:17] INFO root fetch - main [MainThread]: Store serial: [22855602]
+[2024-04-20 14:26:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855602]
+[2024-04-20 14:26:25] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrasp
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyuptech
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monzo-utils
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esanom
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: profiles-local
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: python-dupan
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: weedata
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: labelme2coco
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: haupt
+[2024-04-20 14:26:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: polyaxon
+[2024-04-20 14:26:26] INFO root fetch - processPackages [profiles-local]: New version: [0.0.67] Old Version: [0.0.66]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [weedata]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/42/72/e8b3d0c6e80cbfe04c3871f5d99366f151da30eac9d3f95d776b3dae10a3/profiles_local-0.0.66.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [python-dupan]: New version: [0.0.1.3.6] Old Version: [0.0.1.3.5]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/8e/d5/e77993cf4d46334c5f088a145e040eecbc7e63585003ab5cb8c5556b349f/pyuptech-0.1.2.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyrasp]: New version: [0.6.1rc2] Old Version: [0.6.1rc1]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [weedata]: Downloading https://files.pythonhosted.org/packages/1f/aa/d95ab0323157e7fb98a377b4bd23a47e542703c463ffd6bea173b7d715bb/weedata-0.2.3.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [labelme2coco]: New version: [0.2.6] Old Version: [0.2.4]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [esanom]: New version: [3.0.2.13384] Old Version: [3.0.1.44]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [monzo-utils]: New version: [0.0.9] Old Version: [0.0.89]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [haupt]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [polyaxon]: New version: [2.1.8] Old Version: [2.1.7.post1]
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/68/6f/1a8038f4725da771156ffa5c814d79bcdeb300357222e58eb455a707d5ca/pyuptech-0.1.3.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/f7/be/3c2cba17f4d5b2bb9b94f4af139100c8a83e895891ca30089ba0151b0ae5/esanom-3.0.1.44.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [python-dupan]: Downloading https://files.pythonhosted.org/packages/86/f9/4cf966c592d4b10eedaff26b89695e90c99e845b82299b8b0c8687cbcf1f/python_dupan-0.0.1.3.5.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [labelme2coco]: Downloading https://files.pythonhosted.org/packages/ad/ee/d2b7186eeb04007794edf49f3105ce3e128add0cb9cbf0ebeb42638fd614/labelme2coco-0.2.4.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/5c/47/c82d7334a416ba6164a89128d06391ca85ddeb2bda02687a1f33f46d4629/monzo_utils-0.0.89-py3-none-any.whl
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/5f/3d/dbc39f6abf6e7e7edbb4f24b6860903e0e9de1bea8900eac355b78407fe6/pyrasp-0.6.1rc1.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [profiles-local]: Downloading https://files.pythonhosted.org/packages/ef/fd/79010d9be2ecadb2667f548f273be09d04f9604202b5504af62b37f8e6ce/profiles_local-0.0.67.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [weedata]: Downloading https://files.pythonhosted.org/packages/a3/db/33ee4082bccd97f551d891742e8090a7d4df2cc631789d8787807ed30a62/weedata-0.2.4.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/cb/21/ade4dbbf06d6135a296e82d1a75b354446b7f28e908ffe01fe96d525b739/haupt-2.1.7.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/ec/81/709fd7dcc7705fb03c03c4b256111581aadac7ccdb28ab842d9482264a7c/polyaxon-2.1.7.post1.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 14:26:26] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.2.tar.gz tmp/pyuptech-0.1.3.tar.gz --markdown 20240420/p/pyuptech/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-04-20 14:26:26] INFO root fetch - processPackages [profiles-local]: executing diffoscope
+[2024-04-20 14:26:26] INFO root fetch - processPackages [profiles-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/profiles_local-0.0.66.tar.gz tmp/profiles_local-0.0.67.tar.gz --markdown 20240420/p/profiles-local/0.0.66-0.0.67/README.md --exclude *.pyd
+[2024-04-20 14:26:26] INFO root fetch - processPackages [weedata]: executing diffoscope
+[2024-04-20 14:26:26] INFO root fetch - processPackages [weedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weedata-0.2.3.tar.gz tmp/weedata-0.2.4.tar.gz --markdown 20240420/w/weedata/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-04-20 14:26:26] INFO root fetch - processPackages [monzo-utils]: Downloading https://files.pythonhosted.org/packages/85/9d/fc80e41a25817f5286aaa03c27e708a0f90ac540eced25dba10630955768/monzo_utils-0.0.9-py3-none-any.whl
+[2024-04-20 14:26:26] INFO root fetch - processPackages [python-dupan]: Downloading https://files.pythonhosted.org/packages/0a/64/e796d884d858ba8531d21db2ad76c645500559fd3a9b3fef891258183bdb/python_dupan-0.0.1.3.6.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [labelme2coco]: Downloading https://files.pythonhosted.org/packages/9f/1d/75147adf0981f4be135c6f4c2ffa5cea41b78362a5f38f7ebbd092b05183/labelme2coco-0.2.6.tar.gz
+[2024-04-20 14:26:26] INFO root fetch - processPackages [polyaxon]: Downloading https://files.pythonhosted.org/packages/5c/e0/dccead0a351cf0be95de56c89d4256fdc837fc559b4ac6f6d4e9613ad7d3/polyaxon-2.1.8-py3-none-any.whl
+[2024-04-20 14:26:26] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/40/c8/38587e3488b22890d9c2a653cd9c793cabc11e222661cfc41fc7c13dcaa2/esanom-3.0.2.13384.tar.gz
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/be/a7/01eaf79b80d993a63528dfe46350d509f2f22659e5b129d4f91c2a3f2d56/pyrasp-0.6.1rc2.tar.gz
+[2024-04-20 14:26:27] INFO root fetch - processPackages [monzo-utils]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [monzo-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monzo_utils-0.0.89-py3-none-any.whl.zip tmp/monzo_utils-0.0.9-py3-none-any.whl.zip --markdown 20240420/m/monzo-utils/0.0.89-0.0.9/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [python-dupan]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [python-dupan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_dupan-0.0.1.3.5.tar.gz tmp/python_dupan-0.0.1.3.6.tar.gz --markdown 20240420/p/python-dupan/0.0.1.3.5-0.0.1.3.6/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [labelme2coco]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [labelme2coco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labelme2coco-0.2.4.tar.gz tmp/labelme2coco-0.2.6.tar.gz --markdown 20240420/l/labelme2coco/0.2.4-0.2.6/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [haupt]: Downloading https://files.pythonhosted.org/packages/3a/fd/03561d57f6d6d2aa8e979605b7eede63292b306367adaa4b7003ea5b66fc/haupt-2.1.8.tar.gz
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.1rc1.tar.gz tmp/pyrasp-0.6.1rc2.tar.gz --markdown 20240420/p/pyrasp/0.6.1rc1-0.6.1rc2/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [esanom]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [esanom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esanom-3.0.1.44.tar.gz tmp/esanom-3.0.2.13384.tar.gz --markdown 20240420/e/esanom/3.0.1.44-3.0.2.13384/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [polyaxon]: executing diffoscope
+[2024-04-20 14:26:27] INFO root fetch - processPackages [polyaxon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-2.1.7.post1.tar.gz tmp/polyaxon-2.1.8-py3-none-any.whl.zip --markdown 20240420/p/polyaxon/2.1.7.post1-2.1.8/README.md --exclude *.pyd
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.2.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [pyuptech]: Start processing: polyaxon-sdk
+[2024-04-20 14:26:27] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 14:26:27] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.66.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [profiles-local]: Remove: archive file [/home/abi/fetcher/tmp/profiles_local-0.0.67.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - main [MainThread]: End processing [profiles-local]: success
+[2024-04-20 14:26:27] INFO root fetch - processPackages [weedata]: Remove: archive file [/home/abi/fetcher/tmp/weedata-0.2.3.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [weedata]: Remove: archive file [/home/abi/fetcher/tmp/weedata-0.2.4.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - main [MainThread]: End processing [weedata]: success
+[2024-04-20 14:26:27] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [python-dupan]: Remove: archive file [/home/abi/fetcher/tmp/python_dupan-0.0.1.3.5.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [python-dupan]: Remove: archive file [/home/abi/fetcher/tmp/python_dupan-0.0.1.3.6.tar.gz]
+[2024-04-20 14:26:27] INFO root fetch - main [MainThread]: End processing [python-dupan]: success
+[2024-04-20 14:26:27] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.89-py3-none-any.whl.zip]
+[2024-04-20 14:26:27] INFO root fetch - processPackages [monzo-utils]: Remove: archive file [/home/abi/fetcher/tmp/monzo_utils-0.0.9-py3-none-any.whl.zip]
+[2024-04-20 14:26:27] INFO root fetch - main [MainThread]: End processing [monzo-utils]: success
+[2024-04-20 14:26:27] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/d3/62/7a8318f151d5ccb956de8005eadfa6c853dbb27e234467571608217d407e/polyaxon-sdk-2.1.7.tar.gz
+[2024-04-20 14:26:28] INFO root fetch - processPackages [labelme2coco]: Remove: archive file [/home/abi/fetcher/tmp/labelme2coco-0.2.4.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - processPackages [labelme2coco]: Remove: archive file [/home/abi/fetcher/tmp/labelme2coco-0.2.6.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - main [MainThread]: End processing [labelme2coco]: success
+[2024-04-20 14:26:28] INFO root fetch - processPackages [haupt]: executing diffoscope
+[2024-04-20 14:26:28] INFO root fetch - processPackages [haupt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/haupt-2.1.7.tar.gz tmp/haupt-2.1.8.tar.gz --markdown 20240420/h/haupt/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-04-20 14:26:28] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.1rc1.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.1rc2.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-04-20 14:26:28] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.1.7.post1.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - processPackages [polyaxon]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-2.1.8-py3-none-any.whl.zip]
+[2024-04-20 14:26:28] INFO root fetch - main [MainThread]: End processing [polyaxon]: success
+[2024-04-20 14:26:28] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/0b/1b/ce7aba8afd4aefd66b9b2d4b76715b4fd563b67c7c47b9c0c73b5d2b4bb7/polyaxon_sdk-2.1.8-py2.py3-none-any.whl
+[2024-04-20 14:26:28] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2024-04-20 14:26:28] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.1.7.tar.gz tmp/polyaxon_sdk-2.1.8-py2.py3-none-any.whl.zip --markdown 20240420/p/polyaxon-sdk/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-04-20 14:26:28] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.1.44.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.2.13384.tar.gz]
+[2024-04-20 14:26:28] INFO root fetch - main [MainThread]: End processing [esanom]: success
+[2024-04-20 14:26:29] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.1.7.tar.gz]
+[2024-04-20 14:26:29] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon_sdk-2.1.8-py2.py3-none-any.whl.zip]
+[2024-04-20 14:26:29] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2024-04-20 14:26:46] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.7.tar.gz]
+[2024-04-20 14:26:46] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.8.tar.gz]
+[2024-04-20 14:26:46] INFO root fetch - main [MainThread]: End processing [haupt]: success
+[2024-04-20 14:26:46] INFO root fetch - main [MainThread]: Store serial: [22855630]
