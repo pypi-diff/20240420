@@ -14584,3 +14584,11 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 
 [2024-04-20 13:16:17] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21] error
 [2024-04-20 13:16:17] INFO root fetch - main [MainThread]: Store serial: [22855065]
+[2024-04-20 13:18:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855065]
+[2024-04-20 13:18:26] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 13:18:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: music-assistant
+[2024-04-20 13:18:26] INFO root fetch - processPackages [music-assistant]: New version: [2.0.0b139] Old Version: [2.0.0b138]
+[2024-04-20 13:18:26] INFO root fetch - processPackages [music-assistant]: Downloading https://files.pythonhosted.org/packages/01/2f/5bed70f2926ce860506aa908dcda3749965692184d5421e693c07f1753f6/music_assistant-2.0.0b138.tar.gz
+[2024-04-20 13:18:26] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 16933462>=10485760
+[2024-04-20 13:18:26] INFO root fetch - main [MainThread]: End processing [music-assistant] error
+[2024-04-20 13:18:26] INFO root fetch - main [MainThread]: Store serial: [22855068]
