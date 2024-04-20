@@ -23085,3 +23085,44 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:30:36] WARNING root fetch - processPackages [PythonTestLJC213]: Skipping, unable to determine old version
 [2024-04-20 22:30:36] INFO root fetch - main [MainThread]: End processing [PythonTestLJC213] error
 [2024-04-20 22:30:36] INFO root fetch - main [MainThread]: Store serial: [22859275]
+[2024-04-20 22:32:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859275]
+[2024-04-20 22:32:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ciscoconfparse2
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FrustrationDynamiX
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: climkern
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC214
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metrics_layer
+[2024-04-20 22:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rooms-shared-services
+[2024-04-20 22:32:46] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-20 22:32:46] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-20 22:32:46] WARNING root fetch - processPackages [PythonTestLJC214]: Skipping, unable to determine old version
+[2024-04-20 22:32:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC214] error
+[2024-04-20 22:32:46] INFO root fetch - processPackages [climkern]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-20 22:32:46] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-20 22:32:46] INFO root fetch - processPackages [metrics_layer]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 22:32:46] WARNING root fetch - processPackages [FrustrationDynamiX]: Skipping, unable to determine old version
+[2024-04-20 22:32:46] INFO root fetch - main [MainThread]: End processing [FrustrationDynamiX] error
+[2024-04-20 22:32:46] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-20 22:32:46] INFO root fetch - processPackages [climkern]: Downloading https://files.pythonhosted.org/packages/20/8a/959775b9a9c377e4267ffabdaca3418044276544395ecc16b55ad0020702/climkern-1.1.0.tar.gz
+[2024-04-20 22:32:46] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-04-20 22:32:46] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-20 22:32:46] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240420/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-20 22:32:46] INFO root fetch - processPackages [metrics_layer]: Downloading https://files.pythonhosted.org/packages/9c/13/00ea34acde8fa007f10b327cfe09c1558d08ccd7ebdaac72e463c72710b2/metrics_layer-0.9.8.tar.gz
+[2024-04-20 22:32:46] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-04-20 22:32:46] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-04-20 22:32:46] INFO root fetch - processPackages [climkern]: Downloading https://files.pythonhosted.org/packages/d4/e8/51b087bc4b20d5b15c384e8940bfe65e6a10b494ef81148a81df9eef292e/climkern-1.1.1.tar.gz
+[2024-04-20 22:32:46] INFO root fetch - processPackages [metrics_layer]: Downloading https://files.pythonhosted.org/packages/98/41/f98ac2ac2a5f241cfd8c7c920a4b7dcb17f9e906635e0c1130ca5ca3a416/metrics_layer-0.9.9.tar.gz
+[2024-04-20 22:32:47] INFO root fetch - processPackages [climkern]: executing diffoscope
+[2024-04-20 22:32:47] INFO root fetch - processPackages [climkern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/climkern-1.1.0.tar.gz tmp/climkern-1.1.1.tar.gz --markdown 20240420/c/climkern/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-20 22:32:47] INFO root fetch - processPackages [metrics_layer]: executing diffoscope
+[2024-04-20 22:32:47] INFO root fetch - processPackages [metrics_layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metrics_layer-0.9.8.tar.gz tmp/metrics_layer-0.9.9.tar.gz --markdown 20240420/m/metrics_layer/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 22:32:47] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-20 22:32:47] INFO root fetch - processPackages [climkern]: Remove: archive file [/home/abi/fetcher/tmp/climkern-1.1.0.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - processPackages [climkern]: Remove: archive file [/home/abi/fetcher/tmp/climkern-1.1.1.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - main [MainThread]: End processing [climkern]: success
+[2024-04-20 22:32:47] INFO root fetch - processPackages [metrics_layer]: Remove: archive file [/home/abi/fetcher/tmp/metrics_layer-0.9.8.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - processPackages [metrics_layer]: Remove: archive file [/home/abi/fetcher/tmp/metrics_layer-0.9.9.tar.gz]
+[2024-04-20 22:32:47] INFO root fetch - main [MainThread]: End processing [metrics_layer]: success
+[2024-04-20 22:32:47] INFO root fetch - main [MainThread]: Store serial: [22859297]
