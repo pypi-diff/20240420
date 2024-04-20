@@ -16108,3 +16108,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:01:37] INFO root fetch - processPackages [KUtil-jakubaugustyn]: Remove: archive file [/home/abi/fetcher/tmp/kutil_jakubaugustyn-0.0.6.tar.gz]
 [2024-04-20 15:01:37] INFO root fetch - main [MainThread]: End processing [KUtil-jakubaugustyn]: success
 [2024-04-20 15:01:37] INFO root fetch - main [MainThread]: Store serial: [22855855]
+[2024-04-20 15:03:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855855]
+[2024-04-20 15:03:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 15:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC052
+[2024-04-20 15:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: itakello-logging
+[2024-04-20 15:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CustomChat
+[2024-04-20 15:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mediapipe-nightly
+[2024-04-20 15:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: logger-local
+[2024-04-20 15:03:47] INFO root fetch - processPackages [CustomChat]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-20 15:03:47] INFO root fetch - processPackages [CustomChat]: Downloading https://files.pythonhosted.org/packages/fc/12/7bd6100a6df88e394143da7078479c3392196d84447f3592a0d855647f75/CustomChat-1.0.6.tar.gz
+[2024-04-20 15:03:47] WARNING root fetch - processPackages [PythonTestLJC052]: Skipping, unable to determine old version
+[2024-04-20 15:03:47] INFO root fetch - main [MainThread]: End processing [PythonTestLJC052] error
+[2024-04-20 15:03:47] INFO root fetch - processPackages [itakello-logging]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 15:03:47] INFO root fetch - processPackages [mediapipe-nightly]: New version: [0.10.13.post20240420] Old Version: [0.10.13.post20240419]
+[2024-04-20 15:03:47] INFO root fetch - processPackages [logger-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 15:03:47] INFO root fetch - processPackages [itakello-logging]: Downloading https://files.pythonhosted.org/packages/d9/0e/1d45004d08519825d9db51a7884760e1a6982bab091b743d675df1ea47dc/itakello_logging-0.2.0.tar.gz
+[2024-04-20 15:03:47] INFO root fetch - processPackages [CustomChat]: Downloading https://files.pythonhosted.org/packages/31/fc/7a1216efe443380e54d2c9cc0dc00984c8d8c3e8fe02dd844902d7741a24/CustomChat-1.0.7.tar.gz
+[2024-04-20 15:03:47] INFO root fetch - processPackages [mediapipe-nightly]: Downloading https://files.pythonhosted.org/packages/77/37/2564f3c935ecd9099bc2e0c15f905a49e70d15dde10b7ca242fd9d94bed0/mediapipe_nightly-0.10.13.post20240419-cp39-cp39-macosx_11_0_x86_64.whl
+[2024-04-20 15:03:47] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/95/83/cbbeaca04ecc0f2c8811769437b1979bde80cd488f848e324e92d8440499/logger-local-0.0.98.tar.gz
+[2024-04-20 15:03:47] WARNING root fetch - processPackages [mediapipe-nightly]: Skipping package: exceeds size limit 49978865>=10485760
+[2024-04-20 15:03:47] INFO root fetch - main [MainThread]: End processing [mediapipe-nightly] error
+[2024-04-20 15:03:47] INFO root fetch - processPackages [CustomChat]: executing diffoscope
+[2024-04-20 15:03:47] INFO root fetch - processPackages [CustomChat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CustomChat-1.0.6.tar.gz tmp/CustomChat-1.0.7.tar.gz --markdown 20240420/C/CustomChat/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-04-20 15:03:47] INFO root fetch - processPackages [itakello-logging]: Downloading https://files.pythonhosted.org/packages/8a/08/899253a9432b196762948c73eb8d4e398a54aaacfa80aac9622592665550/itakello_logging-0.2.1.tar.gz
+[2024-04-20 15:03:47] INFO root fetch - processPackages [itakello-logging]: executing diffoscope
+[2024-04-20 15:03:47] INFO root fetch - processPackages [itakello-logging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itakello_logging-0.2.0.tar.gz tmp/itakello_logging-0.2.1.tar.gz --markdown 20240420/i/itakello-logging/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 15:03:47] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/32/72/d6d6521aa3b74d3c30af8cdee32bb3e7a6008c5629d957853e9e7a3c01b4/logger-local-0.0.99.tar.gz
+[2024-04-20 15:03:48] INFO root fetch - processPackages [logger-local]: executing diffoscope
+[2024-04-20 15:03:48] INFO root fetch - processPackages [logger-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger-local-0.0.98.tar.gz tmp/logger-local-0.0.99.tar.gz --markdown 20240420/l/logger-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 15:03:48] INFO root fetch - processPackages [CustomChat]: Remove: archive file [/home/abi/fetcher/tmp/CustomChat-1.0.6.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - processPackages [CustomChat]: Remove: archive file [/home/abi/fetcher/tmp/CustomChat-1.0.7.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - main [MainThread]: End processing [CustomChat]: success
+[2024-04-20 15:03:48] INFO root fetch - processPackages [itakello-logging]: Remove: archive file [/home/abi/fetcher/tmp/itakello_logging-0.2.0.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - processPackages [itakello-logging]: Remove: archive file [/home/abi/fetcher/tmp/itakello_logging-0.2.1.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - main [MainThread]: End processing [itakello-logging]: success
+[2024-04-20 15:03:48] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.98.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
+[2024-04-20 15:03:48] INFO root fetch - main [MainThread]: End processing [logger-local]: success
+[2024-04-20 15:03:48] INFO root fetch - main [MainThread]: Store serial: [22855871]
