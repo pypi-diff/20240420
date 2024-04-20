@@ -16302,3 +16302,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:17:41] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
 [2024-04-20 15:17:41] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2024-04-20 15:17:41] INFO root fetch - main [MainThread]: Store serial: [22855973]
+[2024-04-20 15:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855973]
+[2024-04-20 15:19:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC058
+[2024-04-20 15:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-20 15:19:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cace
+[2024-04-20 15:19:50] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc76.post1] Old Version: [0.0.2rc75.post1]
+[2024-04-20 15:19:50] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/0f/9a/cf9a23acbbccc5533e854c3a7ea37e4a842d6d13659c84c5bc1bff209483/py_dbchat-0.0.2rc75.post1.tar.gz
+[2024-04-20 15:19:50] WARNING root fetch - processPackages [PythonTestLJC058]: Skipping, unable to determine old version
+[2024-04-20 15:19:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC058] error
+[2024-04-20 15:19:50] INFO root fetch - processPackages [cace]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-20 15:19:50] INFO root fetch - processPackages [cace]: Downloading https://files.pythonhosted.org/packages/10/34/1fe6eeb15812ae173689ce1f24a211e7f3aa7105c2a95ad8bb62b7938542/cace-2.2.0.tar.gz
+[2024-04-20 15:19:50] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/1d/47/aceeb9e0f34a78a147c4225e0bc310630d125bc045df73fea3dfc46fca74/py_dbchat-0.0.2rc76.post1.tar.gz
+[2024-04-20 15:19:50] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 15:19:50] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc75.post1.tar.gz tmp/py_dbchat-0.0.2rc76.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc75.post1-0.0.2rc76.post1/README.md --exclude *.pyd
+[2024-04-20 15:19:50] INFO root fetch - processPackages [cace]: Downloading https://files.pythonhosted.org/packages/41/9f/dfb905af944fc9050661eae6a66f4f75c37d1d84f608d3607eecd97f203d/cace-2.2.1.tar.gz
+[2024-04-20 15:19:50] INFO root fetch - processPackages [cace]: executing diffoscope
+[2024-04-20 15:19:50] INFO root fetch - processPackages [cace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cace-2.2.0.tar.gz tmp/cace-2.2.1.tar.gz --markdown 20240420/c/cace/2.2.0-2.2.1/README.md --exclude *.pyd
+[2024-04-20 15:19:51] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc75.post1.tar.gz]
+[2024-04-20 15:19:51] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc76.post1.tar.gz]
+[2024-04-20 15:19:51] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 15:19:51] INFO root fetch - processPackages [cace]: Remove: archive file [/home/abi/fetcher/tmp/cace-2.2.0.tar.gz]
+[2024-04-20 15:19:51] INFO root fetch - processPackages [cace]: Remove: archive file [/home/abi/fetcher/tmp/cace-2.2.1.tar.gz]
+[2024-04-20 15:19:51] INFO root fetch - main [MainThread]: End processing [cace]: success
+[2024-04-20 15:19:51] INFO root fetch - main [MainThread]: Store serial: [22855986]
