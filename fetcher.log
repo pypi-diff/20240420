@@ -12482,3 +12482,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:01:37] INFO root fetch - processPackages [seatable-api]: Remove: archive file [/home/abi/fetcher/tmp/seatable-api-2.7.1.tar.gz]
 [2024-04-20 11:01:37] INFO root fetch - main [MainThread]: End processing [seatable-api]: success
 [2024-04-20 11:01:37] INFO root fetch - main [MainThread]: Store serial: [22854104]
+[2024-04-20 11:03:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854104]
+[2024-04-20 11:03:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 11:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: balladeer
+[2024-04-20 11:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hjnwtx
+[2024-04-20 11:03:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.common
+[2024-04-20 11:03:47] INFO root fetch - processPackages [hjnwtx]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 11:03:47] INFO root fetch - processPackages [autogluon.common]: New version: [1.1.1b20240419] Old Version: [1.1.1b20240418]
+[2024-04-20 11:03:47] INFO root fetch - processPackages [hjnwtx]: Downloading https://files.pythonhosted.org/packages/ef/6b/bf6a60984981aa4845eef0044052e0ceadebaf3f067ef5f7abe67469c3ab/hjnwtx-0.1.4.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [balladeer]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 11:03:47] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/fe/9c/e91406805963d202c7d1204ef81465f76771275324804af1dc21f46fed92/autogluon.common-1.1.1b20240418.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [balladeer]: Downloading https://files.pythonhosted.org/packages/1f/43/53529d10bdca06dda5752947f24bf67b88cab69c060a37b9f5478ed74e8f/balladeer-0.8.0.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [hjnwtx]: Downloading https://files.pythonhosted.org/packages/00/2e/de676c9199d22406debc26f4d4ad377c9623ab88c990dc538c3d41ce236c/hjnwtx-0.1.5.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/66/bd/ad7bcaf403a8335f0c215b96d776e6cb273e9a5d3e27a11711cb7d2684f7/autogluon.common-1.1.1b20240419.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [hjnwtx]: executing diffoscope
+[2024-04-20 11:03:47] INFO root fetch - processPackages [hjnwtx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hjnwtx-0.1.4.tar.gz tmp/hjnwtx-0.1.5.tar.gz --markdown 20240420/h/hjnwtx/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 11:03:47] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-04-20 11:03:47] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.1.1b20240418.tar.gz tmp/autogluon.common-1.1.1b20240419.tar.gz --markdown 20240420/a/autogluon.common/1.1.1b20240418-1.1.1b20240419/README.md --exclude *.pyd
+[2024-04-20 11:03:47] INFO root fetch - processPackages [balladeer]: Downloading https://files.pythonhosted.org/packages/0f/28/d422c06bc986a4f14c0e70b958a10c6d2d3617f2290ce9d0390ea5b7de2f/balladeer-0.9.0.tar.gz
+[2024-04-20 11:03:47] INFO root fetch - processPackages [balladeer]: executing diffoscope
+[2024-04-20 11:03:47] INFO root fetch - processPackages [balladeer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balladeer-0.8.0.tar.gz tmp/balladeer-0.9.0.tar.gz --markdown 20240420/b/balladeer/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 11:03:48] INFO root fetch - processPackages [hjnwtx]: Remove: archive file [/home/abi/fetcher/tmp/hjnwtx-0.1.4.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - processPackages [hjnwtx]: Remove: archive file [/home/abi/fetcher/tmp/hjnwtx-0.1.5.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - main [MainThread]: End processing [hjnwtx]: success
+[2024-04-20 11:03:48] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240418.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.1.1b20240419.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-04-20 11:03:48] INFO root fetch - processPackages [balladeer]: Remove: archive file [/home/abi/fetcher/tmp/balladeer-0.8.0.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - processPackages [balladeer]: Remove: archive file [/home/abi/fetcher/tmp/balladeer-0.9.0.tar.gz]
+[2024-04-20 11:03:48] INFO root fetch - main [MainThread]: End processing [balladeer]: success
+[2024-04-20 11:03:48] INFO root fetch - main [MainThread]: Store serial: [22854124]
