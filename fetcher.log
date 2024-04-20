@@ -23814,3 +23814,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:28:08] INFO root fetch - processPackages [pg-podcast-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pg_podcast_toolkit-0.0.6.tar.gz]
 [2024-04-20 23:28:08] INFO root fetch - main [MainThread]: End processing [pg-podcast-toolkit]: success
 [2024-04-20 23:28:08] INFO root fetch - main [MainThread]: Store serial: [22859604]
+[2024-04-20 23:30:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859604]
+[2024-04-20 23:30:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC232
+[2024-04-20 23:30:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tweepy-self
+[2024-04-20 23:30:17] INFO root fetch - processPackages [tweepy-self]: New version: [1.9.0] Old Version: [1.6.3]
+[2024-04-20 23:30:17] INFO root fetch - processPackages [tweepy-self]: Downloading https://files.pythonhosted.org/packages/65/a0/4c5236d73aa60d3efaa85e702ace6db27efee02c9014c2b09cddd0485730/tweepy_self-1.6.3.tar.gz
+[2024-04-20 23:30:17] WARNING root fetch - processPackages [PythonTestLJC232]: Skipping, unable to determine old version
+[2024-04-20 23:30:17] INFO root fetch - main [MainThread]: End processing [PythonTestLJC232] error
+[2024-04-20 23:30:17] INFO root fetch - processPackages [tweepy-self]: Downloading https://files.pythonhosted.org/packages/fc/62/3a9b5d90f18a45e6605d7943d8cf673c0ee2e8a0d80b219f9b6bac0c7d99/tweepy_self-1.9.0.tar.gz
+[2024-04-20 23:30:18] INFO root fetch - processPackages [tweepy-self]: executing diffoscope
+[2024-04-20 23:30:18] INFO root fetch - processPackages [tweepy-self]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tweepy_self-1.6.3.tar.gz tmp/tweepy_self-1.9.0.tar.gz --markdown 20240420/t/tweepy-self/1.6.3-1.9.0/README.md --exclude *.pyd
+[2024-04-20 23:30:18] INFO root fetch - processPackages [tweepy-self]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_self-1.6.3.tar.gz]
+[2024-04-20 23:30:18] INFO root fetch - processPackages [tweepy-self]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_self-1.9.0.tar.gz]
+[2024-04-20 23:30:18] INFO root fetch - main [MainThread]: End processing [tweepy-self]: success
+[2024-04-20 23:30:18] INFO root fetch - main [MainThread]: Store serial: [22859612]
