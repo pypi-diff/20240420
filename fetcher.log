@@ -18282,3 +18282,15 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:33:33] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
 [2024-04-20 17:33:33] INFO root fetch - main [MainThread]: End processing [crewai]: success
 [2024-04-20 17:33:33] INFO root fetch - main [MainThread]: Store serial: [22856999]
+[2024-04-20 17:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856999]
+[2024-04-20 17:35:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 17:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-20 17:35:42] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc77.post1] Old Version: [0.0.2rc76.post1]
+[2024-04-20 17:35:42] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/1d/47/aceeb9e0f34a78a147c4225e0bc310630d125bc045df73fea3dfc46fca74/py_dbchat-0.0.2rc76.post1.tar.gz
+[2024-04-20 17:35:42] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/a8/1c/11d7b7ff6c984751426d86ac44ec4c813fe96c488529b845d36b255b498c/py_dbchat-0.0.2rc77.post1.tar.gz
+[2024-04-20 17:35:42] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 17:35:42] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc76.post1.tar.gz tmp/py_dbchat-0.0.2rc77.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc76.post1-0.0.2rc77.post1/README.md --exclude *.pyd
+[2024-04-20 17:35:43] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc76.post1.tar.gz]
+[2024-04-20 17:35:43] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc77.post1.tar.gz]
+[2024-04-20 17:35:43] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 17:35:43] INFO root fetch - main [MainThread]: Store serial: [22857003]
