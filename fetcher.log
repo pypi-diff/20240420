@@ -14940,3 +14940,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
 [2024-04-20 13:44:54] INFO root fetch - main [MainThread]: End processing [tui-dsg]: success
 [2024-04-20 13:44:54] INFO root fetch - main [MainThread]: Store serial: [22855279]
+[2024-04-20 13:46:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855279]
+[2024-04-20 13:47:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 13:47:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oakvar
+[2024-04-20 13:47:03] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-04-20 13:47:03] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 13:47:03] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-04-20 13:47:06] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 13:47:06] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240420/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-04-20 13:47:08] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 13:47:08] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-04-20 13:47:08] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 13:47:08] INFO root fetch - main [MainThread]: Store serial: [22855282]
