@@ -20755,3 +20755,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:05:21] INFO root fetch - processPackages [stela-publishing]: Remove: archive file [/home/abi/fetcher/tmp/stela_publishing-0.2.26.tar.gz]
 [2024-04-20 20:05:21] INFO root fetch - main [MainThread]: End processing [stela-publishing]: success
 [2024-04-20 20:05:21] INFO root fetch - main [MainThread]: Store serial: [22858133]
+[2024-04-20 20:07:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858133]
+[2024-04-20 20:07:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 20:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vectorshift
+[2024-04-20 20:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jutge-toolkit
+[2024-04-20 20:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC162
+[2024-04-20 20:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ryutils
+[2024-04-20 20:07:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trackhub
+[2024-04-20 20:07:31] INFO root fetch - processPackages [jutge-toolkit]: New version: [2.9.3] Old Version: [2.9.0]
+[2024-04-20 20:07:32] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/ff/4f/d0a52919eda665c3817f2176fd5ab97b063cbcafc538ab2c40dfcc2f75ed/jutge-toolkit-2.9.0.tar.gz
+[2024-04-20 20:07:32] WARNING root fetch - processPackages [PythonTestLJC162]: Skipping, unable to determine old version
+[2024-04-20 20:07:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC162] error
+[2024-04-20 20:07:32] INFO root fetch - processPackages [vectorshift]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:07:32] INFO root fetch - processPackages [trackhub]: New version: [1.0] Old Version: [0.2.4]
+[2024-04-20 20:07:32] INFO root fetch - processPackages [ryutils]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-04-20 20:07:32] INFO root fetch - processPackages [trackhub]: Downloading https://files.pythonhosted.org/packages/25/db/cf42623bcb91f209469d7d28d9647b814af2b51e1bbf1dce0a2df006ca34/trackhub-0.2.4.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/27/f3/1baec26be577a216da28f533574026b5ff107216d06c3794a9f2a9cdc593/ryutils-4.0.0.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [jutge-toolkit]: Downloading https://files.pythonhosted.org/packages/b3/81/24be98023b2914c7e91f3c6b61cd7020fee7c60083c0171be99196d552df/jutge-toolkit-2.9.3.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [vectorshift]: Downloading https://files.pythonhosted.org/packages/c9/8f/f3dfa446c0a69a88b8afeb8d895b5f4a1f9eb45544103dba9bf9d7d0def2/vectorshift-0.0.8.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [jutge-toolkit]: executing diffoscope
+[2024-04-20 20:07:32] INFO root fetch - processPackages [jutge-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutge-toolkit-2.9.0.tar.gz tmp/jutge-toolkit-2.9.3.tar.gz --markdown 20240420/j/jutge-toolkit/2.9.0-2.9.3/README.md --exclude *.pyd
+[2024-04-20 20:07:32] INFO root fetch - processPackages [trackhub]: Downloading https://files.pythonhosted.org/packages/f1/76/42a10f8849a56de359fde3e34f495e60709fbb75a8048afac4fb239fb424/trackhub-1.0.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/c6/8f/f92053d323afb8c9e33aa0f59b8004a1553934f734149999a591eb0f1f36/ryutils-4.0.1.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [vectorshift]: Downloading https://files.pythonhosted.org/packages/22/49/d9b196a4c957dc9d7e0fbd696a923b98e05debc749ebc6b4e0218171f751/vectorshift-0.0.9.tar.gz
+[2024-04-20 20:07:32] INFO root fetch - processPackages [vectorshift]: executing diffoscope
+[2024-04-20 20:07:32] INFO root fetch - processPackages [vectorshift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectorshift-0.0.8.tar.gz tmp/vectorshift-0.0.9.tar.gz --markdown 20240420/v/vectorshift/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:07:32] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-20 20:07:32] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.0.tar.gz tmp/ryutils-4.0.1.tar.gz --markdown 20240420/r/ryutils/4.0.0-4.0.1/README.md --exclude *.pyd
+[2024-04-20 20:07:32] INFO root fetch - processPackages [trackhub]: executing diffoscope
+[2024-04-20 20:07:32] INFO root fetch - processPackages [trackhub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trackhub-0.2.4.tar.gz tmp/trackhub-1.0.tar.gz --markdown 20240420/t/trackhub/0.2.4-1.0/README.md --exclude *.pyd
+[2024-04-20 20:07:33] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.0.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.3.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - main [MainThread]: End processing [jutge-toolkit]: success
+[2024-04-20 20:07:33] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.0.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.1.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-20 20:07:33] INFO root fetch - processPackages [vectorshift]: Remove: archive file [/home/abi/fetcher/tmp/vectorshift-0.0.8.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - processPackages [vectorshift]: Remove: archive file [/home/abi/fetcher/tmp/vectorshift-0.0.9.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - main [MainThread]: End processing [vectorshift]: success
+[2024-04-20 20:07:33] INFO root fetch - processPackages [trackhub]: Remove: archive file [/home/abi/fetcher/tmp/trackhub-0.2.4.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - processPackages [trackhub]: Remove: archive file [/home/abi/fetcher/tmp/trackhub-1.0.tar.gz]
+[2024-04-20 20:07:33] INFO root fetch - main [MainThread]: End processing [trackhub]: success
+[2024-04-20 20:07:33] INFO root fetch - main [MainThread]: Store serial: [22858161]
