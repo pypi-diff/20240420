@@ -13572,3 +13572,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:03:38] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.1.tar.gz]
 [2024-04-20 12:03:38] INFO root fetch - main [MainThread]: End processing [hfutils]: success
 [2024-04-20 12:03:38] INFO root fetch - main [MainThread]: Store serial: [22854629]
+[2024-04-20 12:05:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854629]
+[2024-04-20 12:05:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 12:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-ml-tools
+[2024-04-20 12:05:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xrpld-netgen
+[2024-04-20 12:05:46] INFO root fetch - processPackages [so-ml-tools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-20 12:05:47] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/fc/30/cfb5b7cf1b6c3d4b7759e52aaf120234d88b23cda57cfa671f342c8928d9/so-ml-tools-0.1.98.tar.gz
+[2024-04-20 12:05:47] INFO root fetch - processPackages [xrpld-netgen]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-20 12:05:47] INFO root fetch - processPackages [xrpld-netgen]: Downloading https://files.pythonhosted.org/packages/09/50/d6a001646ac586b3d8bfd43f9e5aecb69ee7717cadadb9dabbb5e15ab0dc/xrpld_netgen-1.8.0.tar.gz
+[2024-04-20 12:05:47] INFO root fetch - processPackages [so-ml-tools]: Downloading https://files.pythonhosted.org/packages/81/44/0ba41cd45b341c34829d9698a1a7295a871d04bec34718944a8d469046a7/so-ml-tools-0.1.99.tar.gz
+[2024-04-20 12:05:47] INFO root fetch - processPackages [so-ml-tools]: executing diffoscope
+[2024-04-20 12:05:47] INFO root fetch - processPackages [so-ml-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so-ml-tools-0.1.98.tar.gz tmp/so-ml-tools-0.1.99.tar.gz --markdown 20240420/s/so-ml-tools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-04-20 12:05:47] INFO root fetch - processPackages [xrpld-netgen]: Downloading https://files.pythonhosted.org/packages/c0/c8/e94661f027d5aa127f13ec42bdaac82ed44929fd7306cf429b42cb3ab14a/xrpld_netgen-1.9.0.tar.gz
+[2024-04-20 12:05:47] INFO root fetch - processPackages [xrpld-netgen]: executing diffoscope
+[2024-04-20 12:05:47] INFO root fetch - processPackages [xrpld-netgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xrpld_netgen-1.8.0.tar.gz tmp/xrpld_netgen-1.9.0.tar.gz --markdown 20240420/x/xrpld-netgen/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-04-20 12:05:48] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.98.tar.gz]
+[2024-04-20 12:05:48] INFO root fetch - processPackages [so-ml-tools]: Remove: archive file [/home/abi/fetcher/tmp/so-ml-tools-0.1.99.tar.gz]
+[2024-04-20 12:05:48] INFO root fetch - main [MainThread]: End processing [so-ml-tools]: success
+[2024-04-20 12:05:48] INFO root fetch - processPackages [xrpld-netgen]: Remove: archive file [/home/abi/fetcher/tmp/xrpld_netgen-1.8.0.tar.gz]
+[2024-04-20 12:05:48] INFO root fetch - processPackages [xrpld-netgen]: Remove: archive file [/home/abi/fetcher/tmp/xrpld_netgen-1.9.0.tar.gz]
+[2024-04-20 12:05:48] INFO root fetch - main [MainThread]: End processing [xrpld-netgen]: success
+[2024-04-20 12:05:48] INFO root fetch - main [MainThread]: Store serial: [22854636]
