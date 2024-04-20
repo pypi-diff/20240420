@@ -10495,3 +10495,18 @@
 [2024-04-20 08:22:17] INFO root fetch - processPackages [PyAlgoEngine]: Remove: archive file [/home/abi/fetcher/tmp/PyAlgoEngine-0.3.9.post4.tar.gz]
 [2024-04-20 08:22:17] INFO root fetch - main [MainThread]: End processing [PyAlgoEngine]: success
 [2024-04-20 08:22:17] INFO root fetch - main [MainThread]: Store serial: [22853124]
+[2024-04-20 08:24:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853124]
+[2024-04-20 08:24:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feature-space
+[2024-04-20 08:24:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdf_tool
+[2024-04-20 08:24:25] WARNING root fetch - processPackages [feature-space]: Skipping, unable to determine old version
+[2024-04-20 08:24:25] INFO root fetch - main [MainThread]: End processing [feature-space] error
+[2024-04-20 08:24:25] INFO root fetch - processPackages [tdf_tool]: New version: [2.4.9] Old Version: [2.4.8]
+[2024-04-20 08:24:25] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/e2/20/7bd3981f89deedf6ba8fdd42fc8e01b5fa47635732ea90010af530c1cbc2/tdf_tool-2.4.8.tar.gz
+[2024-04-20 08:24:26] INFO root fetch - processPackages [tdf_tool]: Downloading https://files.pythonhosted.org/packages/0d/fb/edc0ac41f192341d2e9a5ca096da99a3e6e2fcbb2a105e9f80ca47732071/tdf_tool-2.4.9.tar.gz
+[2024-04-20 08:24:26] INFO root fetch - processPackages [tdf_tool]: executing diffoscope
+[2024-04-20 08:24:26] INFO root fetch - processPackages [tdf_tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdf_tool-2.4.8.tar.gz tmp/tdf_tool-2.4.9.tar.gz --markdown 20240420/t/tdf_tool/2.4.8-2.4.9/README.md --exclude *.pyd
+[2024-04-20 08:24:27] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.8.tar.gz]
+[2024-04-20 08:24:27] INFO root fetch - processPackages [tdf_tool]: Remove: archive file [/home/abi/fetcher/tmp/tdf_tool-2.4.9.tar.gz]
+[2024-04-20 08:24:27] INFO root fetch - main [MainThread]: End processing [tdf_tool]: success
+[2024-04-20 08:24:27] INFO root fetch - main [MainThread]: Store serial: [22853129]
