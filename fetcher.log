@@ -15826,3 +15826,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:39:52] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240420-py3-none-win_amd64.whl.zip]
 [2024-04-20 14:39:52] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-04-20 14:39:52] INFO root fetch - main [MainThread]: Store serial: [22855741]
+[2024-04-20 14:41:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855741]
+[2024-04-20 14:42:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 14:42:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytun-pmd3
+[2024-04-20 14:42:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC027
+[2024-04-20 14:42:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PaifuLogger
+[2024-04-20 14:42:03] WARNING root fetch - processPackages [PythonTestLJC027]: Skipping, unable to determine old version
+[2024-04-20 14:42:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC027] error
+[2024-04-20 14:42:03] INFO root fetch - processPackages [PaifuLogger]: New version: [0.4.0.2] Old Version: [0.4.0.1]
+[2024-04-20 14:42:03] INFO root fetch - processPackages [pytun-pmd3]: New version: [2.0.6] Old Version: [2.0.5]
+[2024-04-20 14:42:03] INFO root fetch - processPackages [PaifuLogger]: Downloading https://files.pythonhosted.org/packages/fd/b6/f85692bee8a8fc7e6e6f0e7850d522ffad5d8e774f67d81ae18adf0a495e/PaifuLogger-0.4.0.1.tar.gz
+[2024-04-20 14:42:03] INFO root fetch - processPackages [pytun-pmd3]: Downloading https://files.pythonhosted.org/packages/fb/8c/5379536212bb471f6e2cac0e7c3ad6117ade6592118b0954ce64b777131c/pytun-pmd3-2.0.5.tar.gz
+[2024-04-20 14:42:03] INFO root fetch - processPackages [PaifuLogger]: Downloading https://files.pythonhosted.org/packages/46/33/f20fce3da8cae57ab1102fb85dfe5ab328d5a8bcd7774fa4a65d9f9f9437/paifulogger-0.4.0.2.tar.gz
+[2024-04-20 14:42:03] INFO root fetch - processPackages [PaifuLogger]: executing diffoscope
+[2024-04-20 14:42:03] INFO root fetch - processPackages [PaifuLogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PaifuLogger-0.4.0.1.tar.gz tmp/paifulogger-0.4.0.2.tar.gz --markdown 20240420/P/PaifuLogger/0.4.0.1-0.4.0.2/README.md --exclude *.pyd
+[2024-04-20 14:42:03] INFO root fetch - processPackages [pytun-pmd3]: Downloading https://files.pythonhosted.org/packages/cc/3f/c726f5e77a06fece533ca775e6672ae1d5e6c44b418f466a28f185439858/pytun_pmd3-2.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 14:42:03] INFO root fetch - processPackages [pytun-pmd3]: executing diffoscope
+[2024-04-20 14:42:03] INFO root fetch - processPackages [pytun-pmd3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytun-pmd3-2.0.5.tar.gz tmp/pytun_pmd3-2.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240420/p/pytun-pmd3/2.0.5-2.0.6/README.md --exclude *.pyd
+[2024-04-20 14:42:04] INFO root fetch - processPackages [PaifuLogger]: Remove: archive file [/home/abi/fetcher/tmp/PaifuLogger-0.4.0.1.tar.gz]
+[2024-04-20 14:42:04] INFO root fetch - processPackages [PaifuLogger]: Remove: archive file [/home/abi/fetcher/tmp/paifulogger-0.4.0.2.tar.gz]
+[2024-04-20 14:42:04] INFO root fetch - main [MainThread]: End processing [PaifuLogger]: success
+[2024-04-20 14:42:04] INFO root fetch - processPackages [pytun-pmd3]: Remove: archive file [/home/abi/fetcher/tmp/pytun-pmd3-2.0.5.tar.gz]
+[2024-04-20 14:42:04] INFO root fetch - processPackages [pytun-pmd3]: Remove: archive file [/home/abi/fetcher/tmp/pytun_pmd3-2.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-20 14:42:04] INFO root fetch - main [MainThread]: End processing [pytun-pmd3]: success
+[2024-04-20 14:42:04] INFO root fetch - main [MainThread]: Store serial: [22855755]
