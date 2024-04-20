@@ -16759,3 +16759,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:50:31] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.0.tar.gz]
 [2024-04-20 15:50:31] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-20 15:50:31] INFO root fetch - main [MainThread]: Store serial: [22856294]
+[2024-04-20 15:52:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856294]
+[2024-04-20 15:52:40] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 15:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaraco.xonsh
+[2024-04-20 15:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NecessaryConditionAnalysis
+[2024-04-20 15:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC070
+[2024-04-20 15:52:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-fishing
+[2024-04-20 15:52:40] WARNING root fetch - processPackages [PythonTestLJC070]: Skipping, unable to determine old version
+[2024-04-20 15:52:40] INFO root fetch - processPackages [nonebot-plugin-fishing]: New version: [0.2.3a3] Old Version: [0.2.3a2]
+[2024-04-20 15:52:40] INFO root fetch - main [MainThread]: End processing [PythonTestLJC070] error
+[2024-04-20 15:52:40] INFO root fetch - processPackages [NecessaryConditionAnalysis]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 15:52:40] INFO root fetch - processPackages [jaraco.xonsh]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-20 15:52:40] INFO root fetch - processPackages [NecessaryConditionAnalysis]: Downloading https://files.pythonhosted.org/packages/fa/8c/912b8f82778f96eebb280de3191267ec96260a879d9c707533658d95662d/necessaryconditionanalysis-0.1.0.tar.gz
+[2024-04-20 15:52:40] INFO root fetch - processPackages [jaraco.xonsh]: Downloading https://files.pythonhosted.org/packages/ff/5a/ea5bb27ca9d4a33bb5cc40004b0e1031d1b41b6ce1a4b8da309b5d1b3ea9/jaraco.xonsh-0.5.0.tar.gz
+[2024-04-20 15:52:40] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/77/5b/b4309c119105a6b34387eb7b6454322c5bebc454ad241b55dd9d701843b4/nonebot-plugin-fishing-0.2.3a2.tar.gz
+[2024-04-20 15:52:41] INFO root fetch - processPackages [NecessaryConditionAnalysis]: Downloading https://files.pythonhosted.org/packages/83/d2/3ed2df92279d2ed9086e81a97728a142e55b5b2d8ea52a2946bc56c35a26/necessaryconditionanalysis-0.1.1.tar.gz
+[2024-04-20 15:52:41] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/1b/f2/8df35ee009918d13d208927cb368f226a931b30f24707ffc9bf24e80bd5f/nonebot_plugin_fishing-0.2.3a3.tar.gz
+[2024-04-20 15:52:41] INFO root fetch - processPackages [jaraco.xonsh]: Downloading https://files.pythonhosted.org/packages/86/ee/f80ac4d6937a3ec30b0350991f6d5b327eb43b9978daf6e1c151b68633ee/jaraco_xonsh-0.5.1.tar.gz
+[2024-04-20 15:52:41] INFO root fetch - processPackages [NecessaryConditionAnalysis]: executing diffoscope
+[2024-04-20 15:52:41] INFO root fetch - processPackages [nonebot-plugin-fishing]: executing diffoscope
+[2024-04-20 15:52:41] INFO root fetch - processPackages [NecessaryConditionAnalysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/necessaryconditionanalysis-0.1.0.tar.gz tmp/necessaryconditionanalysis-0.1.1.tar.gz --markdown 20240420/N/NecessaryConditionAnalysis/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 15:52:41] INFO root fetch - processPackages [nonebot-plugin-fishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz tmp/nonebot_plugin_fishing-0.2.3a3.tar.gz --markdown 20240420/n/nonebot-plugin-fishing/0.2.3a2-0.2.3a3/README.md --exclude *.pyd
+[2024-04-20 15:52:41] INFO root fetch - processPackages [jaraco.xonsh]: executing diffoscope
+[2024-04-20 15:52:41] INFO root fetch - processPackages [jaraco.xonsh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaraco.xonsh-0.5.0.tar.gz tmp/jaraco_xonsh-0.5.1.tar.gz --markdown 20240420/j/jaraco.xonsh/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-04-20 15:52:42] INFO root fetch - processPackages [jaraco.xonsh]: Remove: archive file [/home/abi/fetcher/tmp/jaraco.xonsh-0.5.0.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - processPackages [jaraco.xonsh]: Remove: archive file [/home/abi/fetcher/tmp/jaraco_xonsh-0.5.1.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - main [MainThread]: End processing [jaraco.xonsh]: success
+[2024-04-20 15:52:42] INFO root fetch - processPackages [NecessaryConditionAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/necessaryconditionanalysis-0.1.0.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - processPackages [NecessaryConditionAnalysis]: Remove: archive file [/home/abi/fetcher/tmp/necessaryconditionanalysis-0.1.1.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - main [MainThread]: End processing [NecessaryConditionAnalysis]: success
+[2024-04-20 15:52:42] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.3a2.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_fishing-0.2.3a3.tar.gz]
+[2024-04-20 15:52:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fishing]: success
+[2024-04-20 15:52:42] INFO root fetch - main [MainThread]: Store serial: [22856340]
