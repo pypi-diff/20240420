@@ -16792,3 +16792,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:52:42] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_fishing-0.2.3a3.tar.gz]
 [2024-04-20 15:52:42] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fishing]: success
 [2024-04-20 15:52:42] INFO root fetch - main [MainThread]: Store serial: [22856340]
+[2024-04-20 15:54:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856340]
+[2024-04-20 15:54:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logki
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bodysnatcher
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greyhorse-elasticsearch
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensordict-nightly
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vrconcept-arhdron
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mteb
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: greyhorse-clickhouse
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: waifuvault
+[2024-04-20 15:54:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC071
+[2024-04-20 15:54:50] WARNING root fetch - processPackages [logki]: Skipping, unable to determine old version
+[2024-04-20 15:54:50] INFO root fetch - main [MainThread]: End processing [logki] error
+[2024-04-20 15:54:50] INFO root fetch - processPackages [mteb]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-04-20 15:54:50] INFO root fetch - processPackages [waifuvault]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-20 15:54:50] INFO root fetch - processPackages [greyhorse-clickhouse]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 15:54:50] WARNING root fetch - processPackages [bodysnatcher]: Skipping, unable to determine old version
+[2024-04-20 15:54:50] INFO root fetch - main [MainThread]: End processing [bodysnatcher] error
+[2024-04-20 15:54:50] INFO root fetch - processPackages [vrconcept-arhdron]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 15:54:50] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/44/9d/c6807aa37d1ee256f9e8b6801ccddb4faccfb4b1eced793e6e256f898d3d/mteb-1.6.8.tar.gz
+[2024-04-20 15:54:50] WARNING root fetch - processPackages [greyhorse-elasticsearch]: Skipping, unable to determine old version
+[2024-04-20 15:54:50] INFO root fetch - main [MainThread]: End processing [greyhorse-elasticsearch] error
+[2024-04-20 15:54:50] WARNING root fetch - processPackages [PythonTestLJC071]: Skipping, unable to determine old version
+[2024-04-20 15:54:50] INFO root fetch - main [MainThread]: End processing [PythonTestLJC071] error
+[2024-04-20 15:54:50] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.9] Old Version: [2024.4.8]
+[2024-04-20 15:54:50] INFO root fetch - processPackages [greyhorse-clickhouse]: Downloading https://files.pythonhosted.org/packages/69/5d/cf44620e0c9b9e08dee054e1537c23c725d6a040456291fe90ec873b1f2a/greyhorse_clickhouse-0.1.tar.gz
+[2024-04-20 15:54:50] INFO root fetch - processPackages [waifuvault]: Downloading https://files.pythonhosted.org/packages/c7/8d/32a0017ee274d36b485a784cb2777ce19a14d8bd24765f36a9df2f7bbc68/waifuvault-1.3.8.tar.gz
+[2024-04-20 15:54:50] INFO root fetch - processPackages [vrconcept-arhdron]: Downloading https://files.pythonhosted.org/packages/8a/df/71b03c529a9e73cbf6563ca15cc58d6d9e9d76014cc5c99c62d539bee147/vrconcept_arhdron-0.1.tar.gz
+[2024-04-20 15:54:51] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/cd/1c/8579b410faa082f73f4c5e15b9f2df9564f5500baeca12f401c71c95762b/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl
+[2024-04-20 15:54:51] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/39/e6/fa07e5c98f057d7eb0090af3864941061ad7740ba54db99ebe917a9659a5/mteb-1.6.9.tar.gz
+[2024-04-20 15:54:51] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-20 15:54:51] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.6.8.tar.gz tmp/mteb-1.6.9.tar.gz --markdown 20240420/m/mteb/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-04-20 15:54:51] INFO root fetch - processPackages [vrconcept-arhdron]: Downloading https://files.pythonhosted.org/packages/a7/fa/d5f402bf70d1c7af15d629e52dfdc6659d70fc904a387c6034cec1d3b09b/vrconcept_arhdron-0.2.tar.gz
+[2024-04-20 15:54:51] INFO root fetch - processPackages [waifuvault]: Downloading https://files.pythonhosted.org/packages/12/9d/7564471e67dfa2665b0639895a4833224141c2b3be7346bcd9595fd82e42/waifuvault-1.3.9.tar.gz
+[2024-04-20 15:54:51] INFO root fetch - processPackages [greyhorse-clickhouse]: Downloading https://files.pythonhosted.org/packages/a5/01/31ec412784f9f2285b65fb46e54ce8b6cc3dec48dac62f873ba7e3dd7d4c/greyhorse_clickhouse-0.2.tar.gz
+[2024-04-20 15:54:51] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/07/82/e5cb687b1d6b19f6d3c57c14285a0e891743c0fd72b7d62c9298fc937736/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl
+[2024-04-20 15:54:51] INFO root fetch - processPackages [vrconcept-arhdron]: executing diffoscope
+[2024-04-20 15:54:51] INFO root fetch - processPackages [vrconcept-arhdron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vrconcept_arhdron-0.1.tar.gz tmp/vrconcept_arhdron-0.2.tar.gz --markdown 20240420/v/vrconcept-arhdron/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 15:54:51] INFO root fetch - processPackages [greyhorse-clickhouse]: executing diffoscope
+[2024-04-20 15:54:51] INFO root fetch - processPackages [greyhorse-clickhouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greyhorse_clickhouse-0.1.tar.gz tmp/greyhorse_clickhouse-0.2.tar.gz --markdown 20240420/g/greyhorse-clickhouse/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 15:54:51] INFO root fetch - processPackages [waifuvault]: executing diffoscope
+[2024-04-20 15:54:51] INFO root fetch - processPackages [waifuvault]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waifuvault-1.3.8.tar.gz tmp/waifuvault-1.3.9.tar.gz --markdown 20240420/w/waifuvault/1.3.8-1.3.9/README.md --exclude *.pyd
+[2024-04-20 15:54:51] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-20 15:54:51] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip --markdown 20240420/t/tensordict-nightly/2024.4.8-2024.4.9/README.md --exclude *.pyd
+[2024-04-20 15:54:51] INFO root fetch - processPackages [vrconcept-arhdron]: Remove: archive file [/home/abi/fetcher/tmp/vrconcept_arhdron-0.1.tar.gz]
+[2024-04-20 15:54:51] INFO root fetch - processPackages [vrconcept-arhdron]: Remove: archive file [/home/abi/fetcher/tmp/vrconcept_arhdron-0.2.tar.gz]
+[2024-04-20 15:54:51] INFO root fetch - main [MainThread]: End processing [vrconcept-arhdron]: success
+[2024-04-20 15:54:52] INFO root fetch - processPackages [waifuvault]: Remove: archive file [/home/abi/fetcher/tmp/waifuvault-1.3.8.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - processPackages [waifuvault]: Remove: archive file [/home/abi/fetcher/tmp/waifuvault-1.3.9.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - main [MainThread]: End processing [waifuvault]: success
+[2024-04-20 15:54:52] INFO root fetch - processPackages [greyhorse-clickhouse]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_clickhouse-0.1.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - processPackages [greyhorse-clickhouse]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse_clickhouse-0.2.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - main [MainThread]: End processing [greyhorse-clickhouse]: success
+[2024-04-20 15:54:52] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.8-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 15:54:52] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.9-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 15:54:52] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-20 15:54:52] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.6.8.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.6.9.tar.gz]
+[2024-04-20 15:54:52] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-20 15:54:52] INFO root fetch - main [MainThread]: Store serial: [22856375]
