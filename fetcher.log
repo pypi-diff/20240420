@@ -20827,3 +20827,65 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:09:44] INFO root fetch - processPackages [heatmap_cli]: Remove: archive file [/home/abi/fetcher/tmp/heatmap_cli-0.9.3.tar.gz]
 [2024-04-20 20:09:44] INFO root fetch - main [MainThread]: End processing [heatmap_cli]: success
 [2024-04-20 20:09:44] INFO root fetch - main [MainThread]: Store serial: [22858177]
+[2024-04-20 20:11:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858177]
+[2024-04-20 20:11:53] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly-tpu
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phidata
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beepy-web
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-neural-works
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tire-code-parser
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ryutils
+[2024-04-20 20:11:53] INFO root fetch - processPackages [phidata]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ryutils]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [beepy-web]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/c6/8f/f92053d323afb8c9e33aa0f59b8004a1553934f734149999a591eb0f1f36/ryutils-4.0.1.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [simple-neural-works]: New version: [1.0.0] Old Version: [0.5.5]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [mteb]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/9a/24/afb3e8585b820976634b1dd732e5ec1f3562093b71b05a47e3bd6a870b75/phidata-2.3.8.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/0b/01/2b0fad8489342b797712f6eef219b5b3867d961ef4017dbf133411d8aabd/beepy_web-0.9.7.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [tire-code-parser]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240420] Old Version: [2.17.0.dev20240419]
+[2024-04-20 20:11:53] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/44/9d/c6807aa37d1ee256f9e8b6801ccddb4faccfb4b1eced793e6e256f898d3d/mteb-1.6.8.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [simple-neural-works]: Downloading https://files.pythonhosted.org/packages/04/89/23a7dbd8f60f7b03c25a21f8486fc69f6e249bcb23d4e9aa0e83135d1b9b/simple_neural_works-0.5.5.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/a9/56/7d240881578a59058c5085ad71c965ecae800bfd9f8462ee0dedb104305f/tf_nightly_tpu-2.17.0.dev20240419-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 20:11:53] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/ef/15/b4833c532933e87c69e1faaf6fa70b206aa5fce4bd9f23b0fdf3ac852b48/tire-code-parser-0.8.0.tar.gz
+[2024-04-20 20:11:53] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219992378>=10485760
+[2024-04-20 20:11:53] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-20 20:11:53] INFO root fetch - processPackages [phidata]: Downloading https://files.pythonhosted.org/packages/51/63/c5ed33bf592cd65cdcb90c64ded88ab6bc7786db2184c64f6484d61e92d0/phidata-2.3.9.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/d7/3f/b7d3e31509c0ecfb60a9aefd8a4e605a3da71962ea5a0eee9eb4c2ed3fc3/beepy_web-0.9.8.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/39/e6/fa07e5c98f057d7eb0090af3864941061ad7740ba54db99ebe917a9659a5/mteb-1.6.9.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [phidata]: executing diffoscope
+[2024-04-20 20:11:53] INFO root fetch - processPackages [phidata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phidata-2.3.8.tar.gz tmp/phidata-2.3.9.tar.gz --markdown 20240420/p/phidata/2.3.8-2.3.9/README.md --exclude *.pyd
+[2024-04-20 20:11:53] INFO root fetch - processPackages [simple-neural-works]: Downloading https://files.pythonhosted.org/packages/16/ef/7e337c4a3d83e45f83aed8f2ffe8ee1f1487faa40fe0211e08a418893bdb/simple_neural_works-1.0.0.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [beepy-web]: executing diffoscope
+[2024-04-20 20:11:53] INFO root fetch - processPackages [beepy-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beepy_web-0.9.7.tar.gz tmp/beepy_web-0.9.8.tar.gz --markdown 20240420/b/beepy-web/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-20 20:11:53] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-04-20 20:11:53] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.6.8.tar.gz tmp/mteb-1.6.9.tar.gz --markdown 20240420/m/mteb/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-04-20 20:11:53] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/19/cc/e511a29284a322a991b8e327e8dab1c76e1c6140309bd1c5abf5e839d3c5/tire-code-parser-0.9.0.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/35/0b/cf29a5b256302fd6b672388007414f6b936823aab06d13a234be24b66f4a/ryutils-4.0.2.tar.gz
+[2024-04-20 20:11:53] INFO root fetch - processPackages [simple-neural-works]: executing diffoscope
+[2024-04-20 20:11:53] INFO root fetch - processPackages [simple-neural-works]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_neural_works-0.5.5.tar.gz tmp/simple_neural_works-1.0.0.tar.gz --markdown 20240420/s/simple-neural-works/0.5.5-1.0.0/README.md --exclude *.pyd
+[2024-04-20 20:11:54] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-20 20:11:54] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.1.tar.gz tmp/ryutils-4.0.2.tar.gz --markdown 20240420/r/ryutils/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-04-20 20:11:54] INFO root fetch - processPackages [tire-code-parser]: executing diffoscope
+[2024-04-20 20:11:54] INFO root fetch - processPackages [tire-code-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tire-code-parser-0.8.0.tar.gz tmp/tire-code-parser-0.9.0.tar.gz --markdown 20240420/t/tire-code-parser/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 20:11:54] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.8.0.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.9.0.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - main [MainThread]: End processing [tire-code-parser]: success
+[2024-04-20 20:11:54] INFO root fetch - processPackages [simple-neural-works]: Remove: archive file [/home/abi/fetcher/tmp/simple_neural_works-0.5.5.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - processPackages [simple-neural-works]: Remove: archive file [/home/abi/fetcher/tmp/simple_neural_works-1.0.0.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - main [MainThread]: End processing [simple-neural-works]: success
+[2024-04-20 20:11:54] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.1.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.2.tar.gz]
+[2024-04-20 20:11:54] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-20 20:11:55] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.7.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.8.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
+[2024-04-20 20:11:55] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.6.8.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.6.9.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-04-20 20:11:55] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.8.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - processPackages [phidata]: Remove: archive file [/home/abi/fetcher/tmp/phidata-2.3.9.tar.gz]
+[2024-04-20 20:11:55] INFO root fetch - main [MainThread]: End processing [phidata]: success
+[2024-04-20 20:11:55] INFO root fetch - main [MainThread]: Store serial: [22858203]
