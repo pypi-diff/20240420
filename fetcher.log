@@ -21602,3 +21602,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:58:13] INFO root fetch - processPackages [pyaedt]: Remove: archive file [/home/abi/fetcher/tmp/pyaedt-0.8.9.tar.gz]
 [2024-04-20 20:58:13] INFO root fetch - main [MainThread]: End processing [pyaedt]: success
 [2024-04-20 20:58:13] INFO root fetch - main [MainThread]: Store serial: [22858578]
+[2024-04-20 21:00:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858578]
+[2024-04-20 21:00:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-chip-filter
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jarvis-orm
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xpyme
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smaht-submitr
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC181
+[2024-04-20 21:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: monisha
+[2024-04-20 21:00:24] WARNING root fetch - processPackages [xpyme]: Skipping, unable to determine old version
+[2024-04-20 21:00:24] INFO root fetch - main [MainThread]: End processing [xpyme] error
+[2024-04-20 21:00:24] INFO root fetch - processPackages [streamlit-chip-filter]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 21:00:24] INFO root fetch - processPackages [smaht-submitr]: New version: [0.8.0.1b9] Old Version: [0.8.0.1b8]
+[2024-04-20 21:00:24] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/0a/53/eeb946d152da64d375b9bf98330d7e4ffb8f15579165288dda7d2a5e17bd/streamlit-chip-filter-0.0.6.tar.gz
+[2024-04-20 21:00:24] WARNING root fetch - processPackages [jarvis-orm]: Skipping, unable to determine old version
+[2024-04-20 21:00:24] INFO root fetch - main [MainThread]: End processing [jarvis-orm] error
+[2024-04-20 21:00:24] WARNING root fetch - processPackages [PythonTestLJC181]: Skipping, unable to determine old version
+[2024-04-20 21:00:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC181] error
+[2024-04-20 21:00:24] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/79/ad/69a49972361f3dd7698be4e52572630203c3c66d2562b3864e2814efd485/smaht_submitr-0.8.0.1b8.tar.gz
+[2024-04-20 21:00:24] INFO root fetch - processPackages [monisha]: New version: [0.0.54] Old Version: [0.0.53]
+[2024-04-20 21:00:24] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/58/e1/27280ff00ae5d5fd14ebefda4fa251c72b32d8458b102ff8f6ab7ea8a129/monisha-0.0.53.tar.gz
+[2024-04-20 21:00:24] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/a9/b9/54c39138072c920a1d8d5107253bf98513c92a68aae12fec8962cedc0dd9/smaht_submitr-0.8.0.1b9.tar.gz
+[2024-04-20 21:00:24] INFO root fetch - processPackages [streamlit-chip-filter]: Downloading https://files.pythonhosted.org/packages/9f/7c/06710072453595ed84fed59c49bef97b8ca7562f434e2ddb72e7be2f7d8a/streamlit-chip-filter-0.0.7.tar.gz
+[2024-04-20 21:00:24] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-20 21:00:24] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.8.0.1b8.tar.gz tmp/smaht_submitr-0.8.0.1b9.tar.gz --markdown 20240420/s/smaht-submitr/0.8.0.1b8-0.8.0.1b9/README.md --exclude *.pyd
+[2024-04-20 21:00:24] INFO root fetch - processPackages [streamlit-chip-filter]: executing diffoscope
+[2024-04-20 21:00:24] INFO root fetch - processPackages [streamlit-chip-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-chip-filter-0.0.6.tar.gz tmp/streamlit-chip-filter-0.0.7.tar.gz --markdown 20240420/s/streamlit-chip-filter/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 21:00:24] INFO root fetch - processPackages [monisha]: Downloading https://files.pythonhosted.org/packages/1f/29/bf90a652e8bfacf34018bcabf6bfdca6271bbc619fdb1a13aaaa71c1ead4/monisha-0.0.54.tar.gz
+[2024-04-20 21:00:24] INFO root fetch - processPackages [monisha]: executing diffoscope
+[2024-04-20 21:00:24] INFO root fetch - processPackages [monisha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monisha-0.0.53.tar.gz tmp/monisha-0.0.54.tar.gz --markdown 20240420/m/monisha/0.0.53-0.0.54/README.md --exclude *.pyd
+[2024-04-20 21:00:25] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b8.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.8.0.1b9.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-20 21:00:25] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.6.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.7.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
+[2024-04-20 21:00:25] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.53.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.54.tar.gz]
+[2024-04-20 21:00:25] INFO root fetch - main [MainThread]: End processing [monisha]: success
+[2024-04-20 21:00:25] INFO root fetch - main [MainThread]: Store serial: [22858601]
