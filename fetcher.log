@@ -10361,3 +10361,38 @@
 [2024-04-20 08:09:03] WARNING root fetch - processPackages [ClammingPy]: Skipping, unable to determine old version
 [2024-04-20 08:09:03] INFO root fetch - main [MainThread]: End processing [ClammingPy] error
 [2024-04-20 08:09:03] INFO root fetch - main [MainThread]: Store serial: [22853067]
+[2024-04-20 08:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853067]
+[2024-04-20 08:11:11] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 08:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853067]
+[2024-04-20 08:13:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: whoisit
+[2024-04-20 08:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyg-nightly
+[2024-04-20 08:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lylfake
+[2024-04-20 08:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: metalattice
+[2024-04-20 08:13:16] INFO root fetch - processPackages [metalattice]: New version: [0.3.14] Old Version: [0.3.13]
+[2024-04-20 08:13:16] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240419] Old Version: [2.6.0.dev20240412]
+[2024-04-20 08:13:16] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/de/71/da0351392dc285a1a96ccad6bad8de0e0a2785ad6ae6b8564432ce4ec0e9/metalattice-0.3.13.tar.gz
+[2024-04-20 08:13:16] WARNING root fetch - processPackages [lylfake]: Skipping, unable to determine old version
+[2024-04-20 08:13:16] INFO root fetch - processPackages [whoisit]: New version: [2.7.4] Old Version: [2.7.3]
+[2024-04-20 08:13:16] INFO root fetch - main [MainThread]: End processing [lylfake] error
+[2024-04-20 08:13:16] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/ab/ed/424f316ed410a7a9678251d219f9cfffe0a666dc6deb2d8c9528afe571ce/pyg_nightly-2.6.0.dev20240412.tar.gz
+[2024-04-20 08:13:17] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/2c/98/87e02761e166773451def05ceeed589ef0308ca6e284b4b92a479f4338be/whoisit-2.7.3.tar.gz
+[2024-04-20 08:13:17] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/4f/94/6d1200c86a92256bc9a801bf8cc5b8514ab0f6c092e1535afded4dfee7eb/pyg_nightly-2.6.0.dev20240419.tar.gz
+[2024-04-20 08:13:17] INFO root fetch - processPackages [metalattice]: Downloading https://files.pythonhosted.org/packages/2d/8b/0fca343477940866a65b2718c77ffcb2ed2a29f73748b03c4861a4a4d65e/metalattice-0.3.14.tar.gz
+[2024-04-20 08:13:17] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-20 08:13:17] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240412.tar.gz tmp/pyg_nightly-2.6.0.dev20240419.tar.gz --markdown 20240420/p/pyg-nightly/2.6.0.dev20240412-2.6.0.dev20240419/README.md --exclude *.pyd
+[2024-04-20 08:13:17] INFO root fetch - processPackages [whoisit]: Downloading https://files.pythonhosted.org/packages/44/7f/342537af3f1816145e86ca2d1ec17845e702ba6940468a3a489e9c0016ab/whoisit-2.7.4.tar.gz
+[2024-04-20 08:13:17] INFO root fetch - processPackages [metalattice]: executing diffoscope
+[2024-04-20 08:13:17] INFO root fetch - processPackages [metalattice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalattice-0.3.13.tar.gz tmp/metalattice-0.3.14.tar.gz --markdown 20240420/m/metalattice/0.3.13-0.3.14/README.md --exclude *.pyd
+[2024-04-20 08:13:17] INFO root fetch - processPackages [whoisit]: executing diffoscope
+[2024-04-20 08:13:17] INFO root fetch - processPackages [whoisit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whoisit-2.7.3.tar.gz tmp/whoisit-2.7.4.tar.gz --markdown 20240420/w/whoisit/2.7.3-2.7.4/README.md --exclude *.pyd
+[2024-04-20 08:13:18] INFO root fetch - processPackages [whoisit]: Remove: archive file [/home/abi/fetcher/tmp/whoisit-2.7.3.tar.gz]
+[2024-04-20 08:13:18] INFO root fetch - processPackages [whoisit]: Remove: archive file [/home/abi/fetcher/tmp/whoisit-2.7.4.tar.gz]
+[2024-04-20 08:13:18] INFO root fetch - main [MainThread]: End processing [whoisit]: success
+[2024-04-20 08:13:18] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.13.tar.gz]
+[2024-04-20 08:13:18] INFO root fetch - processPackages [metalattice]: Remove: archive file [/home/abi/fetcher/tmp/metalattice-0.3.14.tar.gz]
+[2024-04-20 08:13:18] INFO root fetch - main [MainThread]: End processing [metalattice]: success
+[2024-04-20 08:13:19] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240412.tar.gz]
+[2024-04-20 08:13:19] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240419.tar.gz]
+[2024-04-20 08:13:19] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-20 08:13:19] INFO root fetch - main [MainThread]: Store serial: [22853080]
