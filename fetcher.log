@@ -18625,3 +18625,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:56:05] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a2.tar.gz]
 [2024-04-20 17:56:05] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
 [2024-04-20 17:56:05] INFO root fetch - main [MainThread]: Store serial: [22857188]
+[2024-04-20 17:58:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857188]
+[2024-04-20 17:58:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuptech
+[2024-04-20 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC115
+[2024-04-20 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lm-checkpoints
+[2024-04-20 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fcs-core-model-engine
+[2024-04-20 17:58:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: akhdefo-functions
+[2024-04-20 17:58:15] INFO root fetch - processPackages [lm-checkpoints]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 17:58:15] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3a3] Old Version: [0.1.3a2]
+[2024-04-20 17:58:15] INFO root fetch - processPackages [fcs-core-model-engine]: New version: [0.8.0] Old Version: [0.7.1]
+[2024-04-20 17:58:15] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/a2/d0/e5ac6d31d17da9d9b2652133d2afef3448d9cc9cabcbfdae813f76f19094/lm_checkpoints-0.1.8.tar.gz
+[2024-04-20 17:58:15] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/45/bb/b5f3a687da0780cfb12b41f1e9e8d756a6893178b09f4c443941913505ee/pyuptech-0.1.3a2.tar.gz
+[2024-04-20 17:58:15] WARNING root fetch - processPackages [PythonTestLJC115]: Skipping, unable to determine old version
+[2024-04-20 17:58:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC115] error
+[2024-04-20 17:58:15] INFO root fetch - processPackages [akhdefo-functions]: New version: [2.5.3] Old Version: [2.5.1]
+[2024-04-20 17:58:16] INFO root fetch - processPackages [fcs-core-model-engine]: Downloading https://files.pythonhosted.org/packages/9e/0d/b4b63827a20b22aa0368696d5b44de8d9de1e179bd1ea67948609b9260df/fcs_core_model_engine-0.7.1-py3-none-win_amd64.whl
+[2024-04-20 17:58:16] INFO root fetch - processPackages [akhdefo-functions]: Downloading https://files.pythonhosted.org/packages/fa/67/c25d50e13c78a9274305dbbc8036e3544abf3ef40896093d0ccf91ab5bdd/akhdefo_functions-2.5.1.tar.gz
+[2024-04-20 17:58:16] INFO root fetch - processPackages [lm-checkpoints]: Downloading https://files.pythonhosted.org/packages/d7/4a/3505b4fc6f4e5fc7bbf2b729a0da81fc04ef677ecb158dd9ed75547b3281/lm_checkpoints-0.1.9.tar.gz
+[2024-04-20 17:58:16] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/5b/7b/4c5c179f8285d282fbf187bcefe9e15416d40a68c43a9e9c74c7bd367a84/pyuptech-0.1.3a3.tar.gz
+[2024-04-20 17:58:16] INFO root fetch - processPackages [lm-checkpoints]: executing diffoscope
+[2024-04-20 17:58:16] INFO root fetch - processPackages [lm-checkpoints]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lm_checkpoints-0.1.8.tar.gz tmp/lm_checkpoints-0.1.9.tar.gz --markdown 20240420/l/lm-checkpoints/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:58:16] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 17:58:16] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.3a2.tar.gz tmp/pyuptech-0.1.3a3.tar.gz --markdown 20240420/p/pyuptech/0.1.3a2-0.1.3a3/README.md --exclude *.pyd
+[2024-04-20 17:58:16] INFO root fetch - processPackages [akhdefo-functions]: Downloading https://files.pythonhosted.org/packages/ac/48/9d4fcf720dce84eefad46dc47994f01a73ee279c6a4b815af59658e96d3b/akhdefo_functions-2.5.3.tar.gz
+[2024-04-20 17:58:16] WARNING root fetch - processPackages [fcs-core-model-engine]: Skipping package: exceeds size limit 25239522>=10485760
+[2024-04-20 17:58:16] INFO root fetch - main [MainThread]: End processing [fcs-core-model-engine] error
+[2024-04-20 17:58:16] INFO root fetch - processPackages [akhdefo-functions]: executing diffoscope
+[2024-04-20 17:58:16] INFO root fetch - processPackages [akhdefo-functions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akhdefo_functions-2.5.1.tar.gz tmp/akhdefo_functions-2.5.3.tar.gz --markdown 20240420/a/akhdefo-functions/2.5.1-2.5.3/README.md --exclude *.pyd
+[2024-04-20 17:58:16] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.8.tar.gz]
+[2024-04-20 17:58:16] INFO root fetch - processPackages [lm-checkpoints]: Remove: archive file [/home/abi/fetcher/tmp/lm_checkpoints-0.1.9.tar.gz]
+[2024-04-20 17:58:16] INFO root fetch - main [MainThread]: End processing [lm-checkpoints]: success
+[2024-04-20 17:58:17] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a2.tar.gz]
+[2024-04-20 17:58:17] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a3.tar.gz]
+[2024-04-20 17:58:17] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 17:58:17] INFO root fetch - processPackages [akhdefo-functions]: Remove: archive file [/home/abi/fetcher/tmp/akhdefo_functions-2.5.1.tar.gz]
+[2024-04-20 17:58:17] INFO root fetch - processPackages [akhdefo-functions]: Remove: archive file [/home/abi/fetcher/tmp/akhdefo_functions-2.5.3.tar.gz]
+[2024-04-20 17:58:17] INFO root fetch - main [MainThread]: End processing [akhdefo-functions]: success
+[2024-04-20 17:58:17] INFO root fetch - main [MainThread]: Store serial: [22857207]
