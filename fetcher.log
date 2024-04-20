@@ -9122,3 +9122,28 @@
 [2024-04-20 06:16:04] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-connector-python-nightly-2024.4.9.tar.gz]
 [2024-04-20 06:16:04] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
 [2024-04-20 06:16:04] INFO root fetch - main [MainThread]: Store serial: [22852451]
+[2024-04-20 06:18:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852451]
+[2024-04-20 06:18:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 06:20:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852452]
+[2024-04-20 06:20:20] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 06:22:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852452]
+[2024-04-20 06:22:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:22:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FreeBack
+[2024-04-20 06:22:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: twikit
+[2024-04-20 06:22:25] INFO root fetch - processPackages [FreeBack]: New version: [4.1.0a0] Old Version: [3.0.1a0]
+[2024-04-20 06:22:25] INFO root fetch - processPackages [twikit]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-04-20 06:22:25] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/11/4c/7143894d97a05122d51509a130f732cf8362777e68234c76b7630158cbeb/FreeBack-3.0.1a0.tar.gz
+[2024-04-20 06:22:25] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/7b/d7/c122d4e44e3117b2a03d85c04a020cb6a8460189baaa676d50f07dbbe2d2/twikit-1.5.3.tar.gz
+[2024-04-20 06:22:26] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/0f/7f/6925cb8526283d13b31ccf36e92171940131ff9056c8485c1bb8e5b23276/FreeBack-4.1.0a0.tar.gz
+[2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: Downloading https://files.pythonhosted.org/packages/c3/1e/cd9656934f7a48cfecb31b97a972ad77db33d7c840b685c53bd2201c5cf6/twikit-1.5.4.tar.gz
+[2024-04-20 06:22:26] INFO root fetch - processPackages [FreeBack]: executing diffoscope
+[2024-04-20 06:22:26] INFO root fetch - processPackages [FreeBack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeBack-3.0.1a0.tar.gz tmp/FreeBack-4.1.0a0.tar.gz --markdown 20240420/F/FreeBack/3.0.1a0-4.1.0a0/README.md --exclude *.pyd
+[2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: executing diffoscope
+[2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twikit-1.5.3.tar.gz tmp/twikit-1.5.4.tar.gz --markdown 20240420/t/twikit/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-04-20 06:22:26] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-3.0.1a0.tar.gz]
+[2024-04-20 06:22:26] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.1.0a0.tar.gz]
+[2024-04-20 06:22:26] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
+[2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.3.tar.gz]
+[2024-04-20 06:22:26] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.5.4.tar.gz]
+[2024-04-20 06:22:26] INFO root fetch - main [MainThread]: End processing [twikit]: success
+[2024-04-20 06:22:26] INFO root fetch - main [MainThread]: Store serial: [22852458]
