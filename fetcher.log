@@ -8745,3 +8745,51 @@
 [2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
 [2024-04-20 05:47:32] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
 [2024-04-20 05:47:32] INFO root fetch - main [MainThread]: Store serial: [22852214]
+[2024-04-20 05:49:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852214]
+[2024-04-20 05:49:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recflows
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: java1
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agentops
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: filetrack
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ansi-string
+[2024-04-20 05:49:41] INFO root fetch - processPackages [recflows]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:49:41] INFO root fetch - processPackages [filetrack]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ansi-string]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 05:49:41] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/75/5a/4b52d3ff259c3f6b479f06d44538d510a7b56662950706ae95edf64f6df6/recflows-0.0.8.tar.gz
+[2024-04-20 05:49:41] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/bf/44/5aa7f4ba48954d40b55e0d2449f70c510a8ce661ffa152f847182468ef1f/ansi-string-0.1.0.tar.gz
+[2024-04-20 05:49:41] INFO root fetch - processPackages [agentops]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-20 05:49:41] INFO root fetch - processPackages [java1]: New version: [0.3.0] Old Version: [0.1.1]
+[2024-04-20 05:49:41] INFO root fetch - processPackages [filetrack]: Downloading https://files.pythonhosted.org/packages/20/b7/a4fe7858ae29f824eac0406a639797d190c3467dd93576c5249b43e435a2/filetrack-0.0.8.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/b0/3a/5fe25ed6db3f6a0b1324bba20aef50aeeef1b71eceb228be123efb580bbe/recflows-0.0.9.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [java1]: Downloading https://files.pythonhosted.org/packages/51/90/c140750dc09ecd9494c80c199ee7383dc73d7522dd70f2191bf1ed5ea453/java1-0.1.1.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [filetrack]: Downloading https://files.pythonhosted.org/packages/9b/37/10ba644f152930547158716a965a88d6c9b293e47afbb46315e45c8b2b7a/filetrack-0.0.9.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [agentops]: Downloading https://files.pythonhosted.org/packages/62/be/abcb235daf34d4740961c4ad295b8dfb8a053ac6a1e341394e36f722ea89/agentops-0.1.5.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [recflows]: executing diffoscope
+[2024-04-20 05:49:42] INFO root fetch - processPackages [recflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recflows-0.0.8.tar.gz tmp/recflows-0.0.9.tar.gz --markdown 20240420/r/recflows/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:49:42] INFO root fetch - processPackages [filetrack]: executing diffoscope
+[2024-04-20 05:49:42] INFO root fetch - processPackages [filetrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filetrack-0.0.8.tar.gz tmp/filetrack-0.0.9.tar.gz --markdown 20240420/f/filetrack/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:49:42] INFO root fetch - processPackages [ansi-string]: Downloading https://files.pythonhosted.org/packages/26/97/80218c1fbceca60f595836de094c7b46274f56f97966508bb3e87cfbd27d/ansi-string-0.1.1.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [ansi-string]: executing diffoscope
+[2024-04-20 05:49:42] INFO root fetch - processPackages [ansi-string]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansi-string-0.1.0.tar.gz tmp/ansi-string-0.1.1.tar.gz --markdown 20240420/a/ansi-string/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 05:49:42] INFO root fetch - processPackages [java1]: Downloading https://files.pythonhosted.org/packages/c2/fc/5ccb83b2ff74773c86f76340af96a6de1bfb0918f2df506b07c5e09dfdf2/java1-0.3.0.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [agentops]: Downloading https://files.pythonhosted.org/packages/a6/c2/b437246ce28bad9c2bbad9a9371f7008f76a979fb19699588212f653daf9/agentops-0.1.6.tar.gz
+[2024-04-20 05:49:42] INFO root fetch - processPackages [java1]: executing diffoscope
+[2024-04-20 05:49:42] INFO root fetch - processPackages [java1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/java1-0.1.1.tar.gz tmp/java1-0.3.0.tar.gz --markdown 20240420/j/java1/0.1.1-0.3.0/README.md --exclude *.pyd
+[2024-04-20 05:49:42] INFO root fetch - processPackages [agentops]: executing diffoscope
+[2024-04-20 05:49:42] INFO root fetch - processPackages [agentops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentops-0.1.5.tar.gz tmp/agentops-0.1.6.tar.gz --markdown 20240420/a/agentops/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-04-20 05:49:42] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.8.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - main [MainThread]: End processing [recflows]: success
+[2024-04-20 05:49:42] INFO root fetch - processPackages [filetrack]: Remove: archive file [/home/abi/fetcher/tmp/filetrack-0.0.8.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - processPackages [filetrack]: Remove: archive file [/home/abi/fetcher/tmp/filetrack-0.0.9.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - main [MainThread]: End processing [filetrack]: success
+[2024-04-20 05:49:42] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-0.1.0.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - processPackages [ansi-string]: Remove: archive file [/home/abi/fetcher/tmp/ansi-string-0.1.1.tar.gz]
+[2024-04-20 05:49:42] INFO root fetch - main [MainThread]: End processing [ansi-string]: success
+[2024-04-20 05:49:43] INFO root fetch - processPackages [agentops]: Remove: archive file [/home/abi/fetcher/tmp/agentops-0.1.5.tar.gz]
+[2024-04-20 05:49:43] INFO root fetch - processPackages [agentops]: Remove: archive file [/home/abi/fetcher/tmp/agentops-0.1.6.tar.gz]
+[2024-04-20 05:49:43] INFO root fetch - main [MainThread]: End processing [agentops]: success
+[2024-04-20 05:49:43] INFO root fetch - processPackages [java1]: Remove: archive file [/home/abi/fetcher/tmp/java1-0.1.1.tar.gz]
+[2024-04-20 05:49:43] INFO root fetch - processPackages [java1]: Remove: archive file [/home/abi/fetcher/tmp/java1-0.3.0.tar.gz]
+[2024-04-20 05:49:43] INFO root fetch - main [MainThread]: End processing [java1]: success
+[2024-04-20 05:49:43] INFO root fetch - main [MainThread]: Store serial: [22852229]
