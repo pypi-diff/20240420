@@ -17032,3 +17032,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: Remove: archive file [/home/abi/fetcher/tmp/emmi-0.6.2.tar.gz]
 [2024-04-20 16:07:54] INFO root fetch - main [MainThread]: End processing [emmi]: success
 [2024-04-20 16:07:54] INFO root fetch - main [MainThread]: Store serial: [22856459]
+[2024-04-20 16:09:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856459]
+[2024-04-20 16:10:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC076
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ring-attention-pytorch
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mns-scheduler
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: genericsuite
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datacontract-cli
+[2024-04-20 16:10:03] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.7] Old Version: [0.0.5]
+[2024-04-20 16:10:03] INFO root fetch - processPackages [datacontract-cli]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 16:10:03] WARNING root fetch - processPackages [PythonTestLJC076]: Skipping, unable to determine old version
+[2024-04-20 16:10:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC076] error
+[2024-04-20 16:10:03] INFO root fetch - processPackages [genericsuite]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 16:10:03] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/3d/7aef151f0568bd34b3ce4db5ca4600ab24c8eac7fdd3e4be5b7f80cdca90/few_shot_learning_nlp-0.0.5.tar.gz
+[2024-04-20 16:10:03] INFO root fetch - processPackages [mns-scheduler]: New version: [1.0.3.0] Old Version: [1.0.2.9]
+[2024-04-20 16:10:03] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.4.0] Old Version: [0.3.9]
+[2024-04-20 16:10:03] INFO root fetch - processPackages [genericsuite]: Downloading https://files.pythonhosted.org/packages/53/f7/8859b21cdf470875a220e6f5474d5b7bfc60e55540a77778b029cef748b3/genericsuite-0.1.3.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/be/cc/661abf9ad2226b0e543df6658ad23709481a7e1caffa2c7ff2a5ccbec9d1/ring-attention-pytorch-0.3.9.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/93/9d/b662d8c4e63a3b3002dcb11a672bc9f47da39e9514f2eb7bb37a3cd69b09/mns-scheduler-1.0.2.9.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [datacontract-cli]: Downloading https://files.pythonhosted.org/packages/ab/f5/43447d660c794b33f3272f06c646a80b61a35f5c371f573f0960b18b3dc3/datacontract-cli-0.9.8.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/93/f1/e5da5e9c2a082c3a99d7f2220d60e5864c062a587a436bd30386228a5243/few_shot_learning_nlp-0.0.7.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:10:04] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.5.tar.gz tmp/few_shot_learning_nlp-0.0.7.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.5-0.0.7/README.md --exclude *.pyd
+[2024-04-20 16:10:04] INFO root fetch - processPackages [genericsuite]: Downloading https://files.pythonhosted.org/packages/66/34/2ff6c408935370b82a7c50437d34141f2aa18e9ecb5547c78d2cc59923bf/genericsuite-0.1.4.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/47/1b/1e87030a3d17d6e62e069da7051e1a55fcaffd6083cf8a2d635cbe6b2ba8/ring_attention_pytorch-0.4.0.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [genericsuite]: executing diffoscope
+[2024-04-20 16:10:04] INFO root fetch - processPackages [genericsuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genericsuite-0.1.3.tar.gz tmp/genericsuite-0.1.4.tar.gz --markdown 20240420/g/genericsuite/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 16:10:04] INFO root fetch - processPackages [datacontract-cli]: Downloading https://files.pythonhosted.org/packages/43/c7/55b0ed1dc5bdf4323cff429130d8fc45d0234b45ac011c170ea716245961/datacontract_cli-0.9.9.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-20 16:10:04] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.3.9.tar.gz tmp/ring_attention_pytorch-0.4.0.tar.gz --markdown 20240420/r/ring-attention-pytorch/0.3.9-0.4.0/README.md --exclude *.pyd
+[2024-04-20 16:10:04] INFO root fetch - processPackages [mns-scheduler]: Downloading https://files.pythonhosted.org/packages/e7/e0/0795367a5cf624228bf6f8781b3b79cfb3805460eb2ec57e404148446c14/mns-scheduler-1.0.3.0.tar.gz
+[2024-04-20 16:10:04] INFO root fetch - processPackages [datacontract-cli]: executing diffoscope
+[2024-04-20 16:10:04] INFO root fetch - processPackages [datacontract-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datacontract-cli-0.9.8.tar.gz tmp/datacontract_cli-0.9.9.tar.gz --markdown 20240420/d/datacontract-cli/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 16:10:04] INFO root fetch - processPackages [mns-scheduler]: executing diffoscope
+[2024-04-20 16:10:04] INFO root fetch - processPackages [mns-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mns-scheduler-1.0.2.9.tar.gz tmp/mns-scheduler-1.0.3.0.tar.gz --markdown 20240420/m/mns-scheduler/1.0.2.9-1.0.3.0/README.md --exclude *.pyd
+[2024-04-20 16:10:04] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.5.tar.gz]
+[2024-04-20 16:10:04] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.7.tar.gz]
+[2024-04-20 16:10:04] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:10:05] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.9.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring_attention_pytorch-0.4.0.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-20 16:10:05] INFO root fetch - processPackages [genericsuite]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite-0.1.3.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - processPackages [genericsuite]: Remove: archive file [/home/abi/fetcher/tmp/genericsuite-0.1.4.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - main [MainThread]: End processing [genericsuite]: success
+[2024-04-20 16:10:05] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.2.9.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - processPackages [mns-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/mns-scheduler-1.0.3.0.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - main [MainThread]: End processing [mns-scheduler]: success
+[2024-04-20 16:10:05] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract-cli-0.9.8.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - processPackages [datacontract-cli]: Remove: archive file [/home/abi/fetcher/tmp/datacontract_cli-0.9.9.tar.gz]
+[2024-04-20 16:10:05] INFO root fetch - main [MainThread]: End processing [datacontract-cli]: success
+[2024-04-20 16:10:05] INFO root fetch - main [MainThread]: Store serial: [22856480]
