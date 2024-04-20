@@ -11567,3 +11567,51 @@
 [2024-04-20 09:43:25] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.8.tar.gz]
 [2024-04-20 09:43:25] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
 [2024-04-20 09:43:25] INFO root fetch - main [MainThread]: Store serial: [22853651]
+[2024-04-20 09:45:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853651]
+[2024-04-20 09:45:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 09:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usdm
+[2024-04-20 09:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bilibili-dl
+[2024-04-20 09:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keble-helpers
+[2024-04-20 09:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastlifeweb
+[2024-04-20 09:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-dbchat
+[2024-04-20 09:45:33] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc72.post1] Old Version: [0.0.2rc71.post1]
+[2024-04-20 09:45:33] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 09:45:33] INFO root fetch - processPackages [usdm]: New version: [0.49.0] Old Version: [0.48.0]
+[2024-04-20 09:45:33] INFO root fetch - processPackages [fastlifeweb]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-20 09:45:33] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/f0/5e/b4c406ed52ea59484b4b9ec8aeefc7ae275071b1d0224349665f9b9280bb/py_dbchat-0.0.2rc71.post1.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [bilibili-dl]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-04-20 09:45:33] INFO root fetch - processPackages [usdm]: Downloading https://files.pythonhosted.org/packages/8b/7b/4f5d8874d987e63d3adfab707dcd0329d435ce77779574fc5c6bc9afccfc/usdm-0.48.0.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [fastlifeweb]: Downloading https://files.pythonhosted.org/packages/33/24/9d59322cc0c9caefbb5359de0b547adeedf462ed00d68b9943e3cdfdb088/fastlifeweb-0.3.1.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [bilibili-dl]: Downloading https://files.pythonhosted.org/packages/38/83/f078934f15b83cecd389adcd2d14385e10659082388a9143ba77e5b5617b/bilibili_dl-3.0.0.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-20 09:45:33] INFO root fetch - processPackages [usdm]: Downloading https://files.pythonhosted.org/packages/71/88/b61500ad5e00f823c7624d4e5671ec6692973b1344d90e001a2b38b47b1b/usdm-0.49.0.tar.gz
+[2024-04-20 09:45:34] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/29/93/861c6c9479aab87c14d8b0d84ca43d358b878d04a314309109b706abade9/py_dbchat-0.0.2rc72.post1.tar.gz
+[2024-04-20 09:45:34] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-20 09:45:34] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240420/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 09:45:34] INFO root fetch - processPackages [usdm]: executing diffoscope
+[2024-04-20 09:45:34] INFO root fetch - processPackages [usdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usdm-0.48.0.tar.gz tmp/usdm-0.49.0.tar.gz --markdown 20240420/u/usdm/0.48.0-0.49.0/README.md --exclude *.pyd
+[2024-04-20 09:45:34] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:45:34] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc71.post1.tar.gz tmp/py_dbchat-0.0.2rc72.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc71.post1-0.0.2rc72.post1/README.md --exclude *.pyd
+[2024-04-20 09:45:34] INFO root fetch - processPackages [fastlifeweb]: Downloading https://files.pythonhosted.org/packages/69/e8/19b27f02955748bf3f4fbb975c8d8ff4d49d7f7bb68ec88d2d0975e10b46/fastlifeweb-0.4.0.tar.gz
+[2024-04-20 09:45:34] INFO root fetch - processPackages [bilibili-dl]: Downloading https://files.pythonhosted.org/packages/00/cd/9c7efdf60fd8d3ac74ae06784aede4f8f26c4d9a50189ba49866bb2f9a64/bilibili-dl-3.1.0.tar.gz
+[2024-04-20 09:45:34] INFO root fetch - processPackages [fastlifeweb]: executing diffoscope
+[2024-04-20 09:45:34] INFO root fetch - processPackages [fastlifeweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastlifeweb-0.3.1.tar.gz tmp/fastlifeweb-0.4.0.tar.gz --markdown 20240420/f/fastlifeweb/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 09:45:34] INFO root fetch - processPackages [bilibili-dl]: executing diffoscope
+[2024-04-20 09:45:34] INFO root fetch - processPackages [bilibili-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilibili_dl-3.0.0.tar.gz tmp/bilibili-dl-3.1.0.tar.gz --markdown 20240420/b/bilibili-dl/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-04-20 09:45:34] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-20 09:45:34] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-20 09:45:34] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-20 09:45:34] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc71.post1.tar.gz]
+[2024-04-20 09:45:34] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc72.post1.tar.gz]
+[2024-04-20 09:45:34] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:45:35] INFO root fetch - processPackages [bilibili-dl]: Remove: archive file [/home/abi/fetcher/tmp/bilibili_dl-3.0.0.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - processPackages [bilibili-dl]: Remove: archive file [/home/abi/fetcher/tmp/bilibili-dl-3.1.0.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - main [MainThread]: End processing [bilibili-dl]: success
+[2024-04-20 09:45:35] INFO root fetch - processPackages [fastlifeweb]: Remove: archive file [/home/abi/fetcher/tmp/fastlifeweb-0.3.1.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - processPackages [fastlifeweb]: Remove: archive file [/home/abi/fetcher/tmp/fastlifeweb-0.4.0.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - main [MainThread]: End processing [fastlifeweb]: success
+[2024-04-20 09:45:35] INFO root fetch - processPackages [usdm]: Remove: archive file [/home/abi/fetcher/tmp/usdm-0.48.0.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - processPackages [usdm]: Remove: archive file [/home/abi/fetcher/tmp/usdm-0.49.0.tar.gz]
+[2024-04-20 09:45:35] INFO root fetch - main [MainThread]: End processing [usdm]: success
+[2024-04-20 09:45:35] INFO root fetch - main [MainThread]: Store serial: [22853665]
