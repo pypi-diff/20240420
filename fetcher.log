@@ -21051,3 +21051,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:22:51] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-2.0.0b1.tar.gz]
 [2024-04-20 20:22:51] INFO root fetch - main [MainThread]: End processing [bosing]: success
 [2024-04-20 20:22:51] INFO root fetch - main [MainThread]: Store serial: [22858299]
+[2024-04-20 20:24:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858299]
+[2024-04-20 20:25:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tire-code-parser
+[2024-04-20 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC168
+[2024-04-20 20:25:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autonomous-app
+[2024-04-20 20:25:00] INFO root fetch - processPackages [tire-code-parser]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 20:25:00] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/19/cc/e511a29284a322a991b8e327e8dab1c76e1c6140309bd1c5abf5e839d3c5/tire-code-parser-0.9.0.tar.gz
+[2024-04-20 20:25:00] WARNING root fetch - processPackages [PythonTestLJC168]: Skipping, unable to determine old version
+[2024-04-20 20:25:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC168] error
+[2024-04-20 20:25:00] INFO root fetch - processPackages [autonomous-app]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 20:25:00] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/35/63/363bec77f0fe715339c8ab465853263edd9309944acd0fa2701a08feaeb5/autonomous_app-0.2.6.tar.gz
+[2024-04-20 20:25:00] INFO root fetch - processPackages [tire-code-parser]: Downloading https://files.pythonhosted.org/packages/ba/a9/6093c4fbed09f3ed01b02d0f773a69cc1c9e7dde6d6b90410df69c89d71a/tire-code-parser-0.9.1.tar.gz
+[2024-04-20 20:25:00] INFO root fetch - processPackages [tire-code-parser]: executing diffoscope
+[2024-04-20 20:25:00] INFO root fetch - processPackages [tire-code-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tire-code-parser-0.9.0.tar.gz tmp/tire-code-parser-0.9.1.tar.gz --markdown 20240420/t/tire-code-parser/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 20:25:00] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/93/cf/44e8f162ec5ce93bffb54a5ca2781ca0baf3395d40c94458937efa9f2664/autonomous_app-0.2.7.tar.gz
+[2024-04-20 20:25:00] INFO root fetch - processPackages [autonomous-app]: executing diffoscope
+[2024-04-20 20:25:00] INFO root fetch - processPackages [autonomous-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomous_app-0.2.6.tar.gz tmp/autonomous_app-0.2.7.tar.gz --markdown 20240420/a/autonomous-app/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 20:25:01] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.9.0.tar.gz]
+[2024-04-20 20:25:01] INFO root fetch - processPackages [tire-code-parser]: Remove: archive file [/home/abi/fetcher/tmp/tire-code-parser-0.9.1.tar.gz]
+[2024-04-20 20:25:01] INFO root fetch - main [MainThread]: End processing [tire-code-parser]: success
+[2024-04-20 20:25:01] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.6.tar.gz]
+[2024-04-20 20:25:01] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.7.tar.gz]
+[2024-04-20 20:25:01] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
+[2024-04-20 20:25:01] INFO root fetch - main [MainThread]: Store serial: [22858315]
