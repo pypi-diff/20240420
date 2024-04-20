@@ -15850,3 +15850,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:42:04] INFO root fetch - processPackages [pytun-pmd3]: Remove: archive file [/home/abi/fetcher/tmp/pytun_pmd3-2.0.6-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-20 14:42:04] INFO root fetch - main [MainThread]: End processing [pytun-pmd3]: success
 [2024-04-20 14:42:04] INFO root fetch - main [MainThread]: Store serial: [22855755]
+[2024-04-20 14:44:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855755]
+[2024-04-20 14:44:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 14:44:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuptech
+[2024-04-20 14:44:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asgebsmanager
+[2024-04-20 14:44:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mdpertool
+[2024-04-20 14:44:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auth-middleware
+[2024-04-20 14:44:13] INFO root fetch - processPackages [asgebsmanager]: New version: [1.4] Old Version: [1.3]
+[2024-04-20 14:44:13] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/90/e4/01268fb4ae8877e3d2cdeb52c6958d07ffa3d61802abe1a770dfa6952c35/asgebsmanager-1.3.tar.gz
+[2024-04-20 14:44:13] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3a1] Old Version: [0.1.3a0]
+[2024-04-20 14:44:13] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 14:44:13] WARNING root fetch - processPackages [mdpertool]: Skipping, unable to determine old version
+[2024-04-20 14:44:13] INFO root fetch - main [MainThread]: End processing [mdpertool] error
+[2024-04-20 14:44:13] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/9f/d0/987d8b8c6137acb8bab16fd97dbdae18c91b749f878ce64db1b97536a0dc/pyuptech-0.1.3a0.tar.gz
+[2024-04-20 14:44:13] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-04-20 14:44:14] INFO root fetch - processPackages [asgebsmanager]: Downloading https://files.pythonhosted.org/packages/14/42/b26473fa647019784f2f9476e3513f67c5c2097e3eb90c77601cedaed32b/asgebsmanager-1.4.tar.gz
+[2024-04-20 14:44:14] INFO root fetch - processPackages [asgebsmanager]: executing diffoscope
+[2024-04-20 14:44:14] INFO root fetch - processPackages [asgebsmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asgebsmanager-1.3.tar.gz tmp/asgebsmanager-1.4.tar.gz --markdown 20240420/a/asgebsmanager/1.3-1.4/README.md --exclude *.pyd
+[2024-04-20 14:44:14] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/f4/9e/4892556821b9ff008cd3371994f36c4bd706291f41334b88ee4b4ad33e35/pyuptech-0.1.3a1.tar.gz
+[2024-04-20 14:44:14] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/82/09/803273cd28dac3a0477244fbe67e635462cb4604351a1141f5d544d12f50/auth_middleware-0.1.9.tar.gz
+[2024-04-20 14:44:14] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 14:44:14] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.3a0.tar.gz tmp/pyuptech-0.1.3a1.tar.gz --markdown 20240420/p/pyuptech/0.1.3a0-0.1.3a1/README.md --exclude *.pyd
+[2024-04-20 14:44:14] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-20 14:44:14] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.8.tar.gz tmp/auth_middleware-0.1.9.tar.gz --markdown 20240420/a/auth-middleware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 14:44:14] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.3.tar.gz]
+[2024-04-20 14:44:14] INFO root fetch - processPackages [asgebsmanager]: Remove: archive file [/home/abi/fetcher/tmp/asgebsmanager-1.4.tar.gz]
+[2024-04-20 14:44:14] INFO root fetch - main [MainThread]: End processing [asgebsmanager]: success
+[2024-04-20 14:44:14] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a0.tar.gz]
+[2024-04-20 14:44:14] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a1.tar.gz]
+[2024-04-20 14:44:14] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 14:44:15] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-04-20 14:44:15] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
+[2024-04-20 14:44:15] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-20 14:44:15] INFO root fetch - main [MainThread]: Store serial: [22855769]
