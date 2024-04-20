@@ -9107,3 +9107,18 @@
 [2024-04-20 06:13:54] INFO root fetch - processPackages [llama-cpp-python]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_python-0.2.9.tar.gz]
 [2024-04-20 06:13:54] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2024-04-20 06:13:54] INFO root fetch - main [MainThread]: Store serial: [22852422]
+[2024-04-20 06:15:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852422]
+[2024-04-20 06:16:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 06:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snowflake-connector-python-nightly
+[2024-04-20 06:16:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiba-hello-world
+[2024-04-20 06:16:03] WARNING root fetch - processPackages [aiba-hello-world]: Skipping, unable to determine old version
+[2024-04-20 06:16:03] INFO root fetch - main [MainThread]: End processing [aiba-hello-world] error
+[2024-04-20 06:16:03] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2024.4.9] Old Version: [2024.4.4]
+[2024-04-20 06:16:03] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/12/c3/4f218d7aee744ff4a81b162500c54788da9c3b3370b16f12d83c186af581/snowflake-connector-python-nightly-2024.4.4.tar.gz
+[2024-04-20 06:16:03] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/2b/1f/ba851f8a5f400cf41366dc7216d298165e7c4fe21d731943caebce0a7907/snowflake-connector-python-nightly-2024.4.9.tar.gz
+[2024-04-20 06:16:03] INFO root fetch - processPackages [snowflake-connector-python-nightly]: executing diffoscope
+[2024-04-20 06:16:03] INFO root fetch - processPackages [snowflake-connector-python-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-connector-python-nightly-2024.4.4.tar.gz tmp/snowflake-connector-python-nightly-2024.4.9.tar.gz --markdown 20240420/s/snowflake-connector-python-nightly/2024.4.4-2024.4.9/README.md --exclude *.pyd
+[2024-04-20 06:16:04] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-connector-python-nightly-2024.4.4.tar.gz]
+[2024-04-20 06:16:04] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Remove: archive file [/home/abi/fetcher/tmp/snowflake-connector-python-nightly-2024.4.9.tar.gz]
+[2024-04-20 06:16:04] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
+[2024-04-20 06:16:04] INFO root fetch - main [MainThread]: Store serial: [22852451]
