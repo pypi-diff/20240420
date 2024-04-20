@@ -8546,3 +8546,41 @@
 [2024-04-20 05:34:32] INFO root fetch - processPackages [fisspy]: Remove: archive file [/home/abi/fetcher/tmp/fisspy-1.0.0.tar.gz]
 [2024-04-20 05:34:32] INFO root fetch - main [MainThread]: End processing [fisspy]: success
 [2024-04-20 05:34:32] INFO root fetch - main [MainThread]: Store serial: [22852133]
+[2024-04-20 05:36:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852133]
+[2024-04-20 05:36:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 05:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-contents
+[2024-04-20 05:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlx
+[2024-04-20 05:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-account-payment-return-financial-risk
+[2024-04-20 05:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-stock-financial-risk
+[2024-04-20 05:36:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-account-invoice-overdue-warn
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: New version: [16.0.1.0.1.2] Old Version: [16.0.1.0.1.1]
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: New version: [16.0.1.0.0.5] Old Version: [16.0.1.0.0.4]
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: New version: [16.0.1.0.0.8] Old Version: [16.0.1.0.0.7]
+[2024-04-20 05:36:40] WARNING root fetch - processPackages [jupyter-contents]: Skipping, unable to determine old version
+[2024-04-20 05:36:40] INFO root fetch - main [MainThread]: End processing [jupyter-contents] error
+[2024-04-20 05:36:40] INFO root fetch - processPackages [mlx]: New version: [0.9.1.dev20240407] Old Version: [0.9.1]
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: Downloading https://files.pythonhosted.org/packages/28/f9/81b687c88a6ab9b7ad73c777c6525a6b28e6053f83d2b2bcd5b108730e41/odoo_addon_stock_financial_risk-16.0.1.0.0.7-py3-none-any.whl
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: Downloading https://files.pythonhosted.org/packages/2a/52/3b817fc07876e1dab3f53879e8b33215b2eb044007b12e3085f75aeba64d/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.1-py3-none-any.whl
+[2024-04-20 05:36:40] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: Downloading https://files.pythonhosted.org/packages/09/b7/87eb5943b0c9bb0d6a4ed983282d5de9f28e4996f1d1c41cf4589e53175c/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 05:36:40] INFO root fetch - processPackages [mlx]: Downloading https://files.pythonhosted.org/packages/1a/4d/db965d36f516eb50b63bc732589057aa7cb2fc14c6c30f6504688a2b307c/mlx-0.9.1-cp39-cp39-macosx_14_0_arm64.whl
+[2024-04-20 05:36:40] WARNING root fetch - processPackages [mlx]: Skipping package: exceeds size limit 31967351>=10485760
+[2024-04-20 05:36:40] INFO root fetch - main [MainThread]: End processing [mlx] error
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: Downloading https://files.pythonhosted.org/packages/95/22/cb668aec8f3ba1fdf926d43c64cd37977f623a20309578856ce9fd82dd5b/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.2-py3-none-any.whl
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: Downloading https://files.pythonhosted.org/packages/6c/32/633c4c3a530d8b4115ddc799037f0abb98beb8be35db984754dbd31c900f/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.5-py3-none-any.whl
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: Downloading https://files.pythonhosted.org/packages/25/ef/8356343f18f13435928beef0b604f67a24de135c2341e544fc2ad5370eae/odoo_addon_stock_financial_risk-16.0.1.0.0.8-py3-none-any.whl
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: executing diffoscope
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.1-py3-none-any.whl.zip tmp/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.2-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-account-payment-return-financial-risk/16.0.1.0.1.1-16.0.1.0.1.2/README.md --exclude *.pyd
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: executing diffoscope
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_financial_risk-16.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_stock_financial_risk-16.0.1.0.0.8-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-stock-financial-risk/16.0.1.0.0.7-16.0.1.0.0.8/README.md --exclude *.pyd
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: executing diffoscope
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.5-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-account-invoice-overdue-warn/16.0.1.0.0.4-16.0.1.0.0.5/README.md --exclude *.pyd
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_financial_risk-16.0.1.0.0.7-py3-none-any.whl.zip]
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-stock-financial-risk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_financial_risk-16.0.1.0.0.8-py3-none-any.whl.zip]
+[2024-04-20 05:36:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-financial-risk]: success
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 05:36:41] INFO root fetch - processPackages [odoo-addon-account-invoice-overdue-warn]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_overdue_warn-16.0.1.0.0.5-py3-none-any.whl.zip]
+[2024-04-20 05:36:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-overdue-warn]: success
+[2024-04-20 05:36:42] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-20 05:36:42] INFO root fetch - processPackages [odoo-addon-account-payment-return-financial-risk]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_payment_return_financial_risk-16.0.1.0.1.2-py3-none-any.whl.zip]
+[2024-04-20 05:36:42] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-payment-return-financial-risk]: success
+[2024-04-20 05:36:42] INFO root fetch - main [MainThread]: Store serial: [22852155]
