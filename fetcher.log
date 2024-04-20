@@ -9906,3 +9906,27 @@
 [2024-04-20 07:14:41] INFO root fetch - processPackages [validate-pyproject-schema-store]: Remove: archive file [/home/abi/fetcher/tmp/validate_pyproject_schema_store-2024.4.8.tar.gz]
 [2024-04-20 07:14:41] INFO root fetch - main [MainThread]: End processing [validate-pyproject-schema-store]: success
 [2024-04-20 07:14:41] INFO root fetch - main [MainThread]: Store serial: [22852737]
+[2024-04-20 07:16:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852737]
+[2024-04-20 07:16:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optimum-habana
+[2024-04-20 07:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hg-oap
+[2024-04-20 07:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: git-browse
+[2024-04-20 07:16:50] ERROR root fetch - processPackages [hg-oap]: Unable to get metadata: No such project 'hg-oap'
+[2024-04-20 07:16:50] INFO root fetch - main [MainThread]: End processing [hg-oap] error
+[2024-04-20 07:16:50] INFO root fetch - processPackages [optimum-habana]: New version: [1.9.0] Old Version: [1.8.2]
+[2024-04-20 07:16:50] INFO root fetch - processPackages [git-browse]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-20 07:16:50] INFO root fetch - processPackages [optimum-habana]: Downloading https://files.pythonhosted.org/packages/95/b1/13f3241af597220377258889e6be9f256a2d021f337835dc2d86a45e69ae/optimum-habana-1.8.2.tar.gz
+[2024-04-20 07:16:50] INFO root fetch - processPackages [git-browse]: Downloading https://files.pythonhosted.org/packages/4a/cf/b1f35b92e4fac844afab656dd9ccd6fe45f7a9770881c9c6778e2dd248ec/git-browse-2.9.1.tar.gz
+[2024-04-20 07:16:51] INFO root fetch - processPackages [optimum-habana]: Downloading https://files.pythonhosted.org/packages/ab/bf/bc4d843a4563546395e33c52961673e6fde06268186fcc81318ba6bf009e/optimum-habana-1.9.0.tar.gz
+[2024-04-20 07:16:51] INFO root fetch - processPackages [git-browse]: Downloading https://files.pythonhosted.org/packages/46/29/6091d61d7e48169112df3d73fea84755489167bf628520280604c6b1975b/git-browse-2.9.2.tar.gz
+[2024-04-20 07:16:51] INFO root fetch - processPackages [optimum-habana]: executing diffoscope
+[2024-04-20 07:16:51] INFO root fetch - processPackages [optimum-habana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optimum-habana-1.8.2.tar.gz tmp/optimum-habana-1.9.0.tar.gz --markdown 20240420/o/optimum-habana/1.8.2-1.9.0/README.md --exclude *.pyd
+[2024-04-20 07:16:51] INFO root fetch - processPackages [git-browse]: executing diffoscope
+[2024-04-20 07:16:51] INFO root fetch - processPackages [git-browse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-browse-2.9.1.tar.gz tmp/git-browse-2.9.2.tar.gz --markdown 20240420/g/git-browse/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-04-20 07:16:52] INFO root fetch - processPackages [git-browse]: Remove: archive file [/home/abi/fetcher/tmp/git-browse-2.9.1.tar.gz]
+[2024-04-20 07:16:52] INFO root fetch - processPackages [git-browse]: Remove: archive file [/home/abi/fetcher/tmp/git-browse-2.9.2.tar.gz]
+[2024-04-20 07:16:52] INFO root fetch - main [MainThread]: End processing [git-browse]: success
+[2024-04-20 07:16:52] INFO root fetch - processPackages [optimum-habana]: Remove: archive file [/home/abi/fetcher/tmp/optimum-habana-1.8.2.tar.gz]
+[2024-04-20 07:16:52] INFO root fetch - processPackages [optimum-habana]: Remove: archive file [/home/abi/fetcher/tmp/optimum-habana-1.9.0.tar.gz]
+[2024-04-20 07:16:52] INFO root fetch - main [MainThread]: End processing [optimum-habana]: success
+[2024-04-20 07:16:52] INFO root fetch - main [MainThread]: Store serial: [22852748]
