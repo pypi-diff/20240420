@@ -7113,3 +7113,33 @@
 [2024-04-20 03:27:21] INFO root fetch - processPackages [funtoo-ramdisk]: Remove: archive file [/home/abi/fetcher/tmp/funtoo_ramdisk-1.1.9.tar.gz]
 [2024-04-20 03:27:21] INFO root fetch - main [MainThread]: End processing [funtoo-ramdisk]: success
 [2024-04-20 03:27:21] INFO root fetch - main [MainThread]: Store serial: [22851407]
+[2024-04-20 03:29:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851407]
+[2024-04-20 03:29:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 03:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpyneuron
+[2024-04-20 03:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mo-json
+[2024-04-20 03:29:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: resemble-monotonic-align
+[2024-04-20 03:29:30] INFO root fetch - processPackages [numpyneuron]: New version: [0.4] Old Version: [0.3]
+[2024-04-20 03:29:30] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/ea/f2/05e5a76d05e78a528de007b0dd2ad4fb8305530d8271f13995b49c130b34/numpyneuron-0.3.tar.gz
+[2024-04-20 03:29:30] INFO root fetch - processPackages [resemble-monotonic-align]: New version: [1.2.1] Old Version: [1.2]
+[2024-04-20 03:29:30] INFO root fetch - processPackages [mo-json]: New version: [6.589.24111] Old Version: [6.584.24095]
+[2024-04-20 03:29:31] INFO root fetch - processPackages [numpyneuron]: Downloading https://files.pythonhosted.org/packages/18/f6/a3a2a31ed600ae4afaf67996506aa45c9875ef6bc4a8cc2f21c2f398b51c/numpyneuron-0.4.tar.gz
+[2024-04-20 03:29:31] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/fe/ca/4ff86a184e64a1937e671b5c3f0a6ac9406c18a49b05a815c88f1b275887/mo-json-6.584.24095.tar.gz
+[2024-04-20 03:29:31] INFO root fetch - processPackages [resemble-monotonic-align]: Downloading https://files.pythonhosted.org/packages/2a/b1/96f04644d706e6e4163781c9ff115d3b9cd9faede813a0b1ddba67958062/resemble_monotonic_align-1.2.tar.gz
+[2024-04-20 03:29:31] INFO root fetch - processPackages [numpyneuron]: executing diffoscope
+[2024-04-20 03:29:31] INFO root fetch - processPackages [numpyneuron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpyneuron-0.3.tar.gz tmp/numpyneuron-0.4.tar.gz --markdown 20240420/n/numpyneuron/0.3-0.4/README.md --exclude *.pyd
+[2024-04-20 03:29:31] INFO root fetch - processPackages [mo-json]: Downloading https://files.pythonhosted.org/packages/b0/cc/7b27be38771d89ef00e887bff9602002d93559a11612a904f68cdf68044a/mo_json-6.589.24111.tar.gz
+[2024-04-20 03:29:31] INFO root fetch - processPackages [resemble-monotonic-align]: Downloading https://files.pythonhosted.org/packages/98/55/f246ce9db56321414da7dc5ebc822ab0c36a3b640a6d405b897e0bb20f57/resemble_monotonic_align-1.2.1.tar.gz
+[2024-04-20 03:29:31] INFO root fetch - processPackages [mo-json]: executing diffoscope
+[2024-04-20 03:29:31] INFO root fetch - processPackages [mo-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mo-json-6.584.24095.tar.gz tmp/mo_json-6.589.24111.tar.gz --markdown 20240420/m/mo-json/6.584.24095-6.589.24111/README.md --exclude *.pyd
+[2024-04-20 03:29:31] INFO root fetch - processPackages [resemble-monotonic-align]: executing diffoscope
+[2024-04-20 03:29:31] INFO root fetch - processPackages [resemble-monotonic-align]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resemble_monotonic_align-1.2.tar.gz tmp/resemble_monotonic_align-1.2.1.tar.gz --markdown 20240420/r/resemble-monotonic-align/1.2-1.2.1/README.md --exclude *.pyd
+[2024-04-20 03:29:31] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.3.tar.gz]
+[2024-04-20 03:29:31] INFO root fetch - processPackages [numpyneuron]: Remove: archive file [/home/abi/fetcher/tmp/numpyneuron-0.4.tar.gz]
+[2024-04-20 03:29:31] INFO root fetch - main [MainThread]: End processing [numpyneuron]: success
+[2024-04-20 03:29:32] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo-json-6.584.24095.tar.gz]
+[2024-04-20 03:29:32] INFO root fetch - processPackages [mo-json]: Remove: archive file [/home/abi/fetcher/tmp/mo_json-6.589.24111.tar.gz]
+[2024-04-20 03:29:32] INFO root fetch - main [MainThread]: End processing [mo-json]: success
+[2024-04-20 03:29:33] INFO root fetch - processPackages [resemble-monotonic-align]: Remove: archive file [/home/abi/fetcher/tmp/resemble_monotonic_align-1.2.tar.gz]
+[2024-04-20 03:29:33] INFO root fetch - processPackages [resemble-monotonic-align]: Remove: archive file [/home/abi/fetcher/tmp/resemble_monotonic_align-1.2.1.tar.gz]
+[2024-04-20 03:29:33] INFO root fetch - main [MainThread]: End processing [resemble-monotonic-align]: success
+[2024-04-20 03:29:33] INFO root fetch - main [MainThread]: Store serial: [22851471]
