@@ -9930,3 +9930,15 @@
 [2024-04-20 07:16:52] INFO root fetch - processPackages [optimum-habana]: Remove: archive file [/home/abi/fetcher/tmp/optimum-habana-1.9.0.tar.gz]
 [2024-04-20 07:16:52] INFO root fetch - main [MainThread]: End processing [optimum-habana]: success
 [2024-04-20 07:16:52] INFO root fetch - main [MainThread]: Store serial: [22852748]
+[2024-04-20 07:18:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852748]
+[2024-04-20 07:19:02] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 07:19:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapidpe-rift-pipe
+[2024-04-20 07:19:02] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-04-20 07:19:02] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-04-20 07:19:02] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-04-20 07:19:03] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-04-20 07:19:03] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240420/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-04-20 07:19:03] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-04-20 07:19:03] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-04-20 07:19:03] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-04-20 07:19:03] INFO root fetch - main [MainThread]: Store serial: [22852751]
