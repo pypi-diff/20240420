@@ -16867,3 +16867,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:57:02] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.3.tar.gz]
 [2024-04-20 15:57:02] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
 [2024-04-20 15:57:02] INFO root fetch - main [MainThread]: Store serial: [22856383]
+[2024-04-20 15:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856383]
+[2024-04-20 15:59:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC072
+[2024-04-20 15:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cesped
+[2024-04-20 15:59:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PhysioKit2
+[2024-04-20 15:59:11] WARNING root fetch - processPackages [PythonTestLJC072]: Skipping, unable to determine old version
+[2024-04-20 15:59:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC072] error
+[2024-04-20 15:59:11] INFO root fetch - processPackages [cesped]: New version: [24.4.3] Old Version: [24.4.2]
+[2024-04-20 15:59:11] INFO root fetch - processPackages [PhysioKit2]: New version: [2.0.0] Old Version: [1.8.9]
+[2024-04-20 15:59:11] INFO root fetch - processPackages [cesped]: Downloading https://files.pythonhosted.org/packages/12/20/d97f648b6d60fc77f68c2973927b2aec4d1cfa85cfc1b30d935869296750/cesped-24.4.2.tar.gz
+[2024-04-20 15:59:11] INFO root fetch - processPackages [PhysioKit2]: Downloading https://files.pythonhosted.org/packages/ac/f2/d3b1cb5402d6d1cd18593491bb10731bdccff89b4dadcc8b99910d227799/PhysioKit2-1.8.9.tar.gz
+[2024-04-20 15:59:11] INFO root fetch - processPackages [cesped]: Downloading https://files.pythonhosted.org/packages/57/45/6a669b28f9731d43456d16b4238ff53d6d10a849cc813228773fd328be55/cesped-24.4.3.tar.gz
+[2024-04-20 15:59:11] INFO root fetch - processPackages [PhysioKit2]: Downloading https://files.pythonhosted.org/packages/06/a1/58c4d6400956843a00b19c9d969cfad674ff901f8ba0db4e6b138387aeb5/physiokit2-2.0.0.tar.gz
+[2024-04-20 15:59:11] INFO root fetch - processPackages [cesped]: executing diffoscope
+[2024-04-20 15:59:11] INFO root fetch - processPackages [cesped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cesped-24.4.2.tar.gz tmp/cesped-24.4.3.tar.gz --markdown 20240420/c/cesped/24.4.2-24.4.3/README.md --exclude *.pyd
+[2024-04-20 15:59:12] INFO root fetch - processPackages [PhysioKit2]: executing diffoscope
+[2024-04-20 15:59:12] INFO root fetch - processPackages [PhysioKit2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PhysioKit2-1.8.9.tar.gz tmp/physiokit2-2.0.0.tar.gz --markdown 20240420/P/PhysioKit2/1.8.9-2.0.0/README.md --exclude *.pyd
+[2024-04-20 15:59:12] INFO root fetch - processPackages [cesped]: Remove: archive file [/home/abi/fetcher/tmp/cesped-24.4.2.tar.gz]
+[2024-04-20 15:59:12] INFO root fetch - processPackages [cesped]: Remove: archive file [/home/abi/fetcher/tmp/cesped-24.4.3.tar.gz]
+[2024-04-20 15:59:12] INFO root fetch - main [MainThread]: End processing [cesped]: success
+[2024-04-20 15:59:13] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/PhysioKit2-1.8.9.tar.gz]
+[2024-04-20 15:59:13] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/physiokit2-2.0.0.tar.gz]
+[2024-04-20 15:59:13] INFO root fetch - main [MainThread]: End processing [PhysioKit2]: success
+[2024-04-20 15:59:13] INFO root fetch - main [MainThread]: Store serial: [22856399]
