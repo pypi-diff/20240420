@@ -22512,3 +22512,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:51:01] INFO root fetch - processPackages [jarvis-orm]: Remove: archive file [/home/abi/fetcher/tmp/jarvis_orm-0.0.2.tar.gz]
 [2024-04-20 21:51:01] INFO root fetch - main [MainThread]: End processing [jarvis-orm]: success
 [2024-04-20 21:51:01] INFO root fetch - main [MainThread]: Store serial: [22858982]
+[2024-04-20 21:53:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858982]
+[2024-04-20 21:53:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 21:53:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rooms-shared-services
+[2024-04-20 21:53:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: notfunny
+[2024-04-20 21:53:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neuro-scribe
+[2024-04-20 21:53:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC200
+[2024-04-20 21:53:10] INFO root fetch - processPackages [notfunny]: New version: [0.6.8] Old Version: [0.6.6]
+[2024-04-20 21:53:10] INFO root fetch - processPackages [rooms-shared-services]: New version: [0.1.99] Old Version: [0.1.97]
+[2024-04-20 21:53:10] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/42/ba/a8e5305128295bd72afad59fca9a15e0c9c664d0b166049354c2348ed749/notfunny-0.6.6.tar.gz
+[2024-04-20 21:53:10] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/16/6e/7a35dabe25e96c04274cbd9f69a6e68b4f36dc149e22451fb099f79d153e/rooms_shared_services-0.1.97.tar.gz
+[2024-04-20 21:53:10] WARNING root fetch - processPackages [neuro-scribe]: Skipping, unable to determine old version
+[2024-04-20 21:53:10] INFO root fetch - main [MainThread]: End processing [neuro-scribe] error
+[2024-04-20 21:53:10] WARNING root fetch - processPackages [PythonTestLJC200]: Skipping, unable to determine old version
+[2024-04-20 21:53:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC200] error
+[2024-04-20 21:53:10] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/8b/cc/66eca7e3b8d00484f417ca9ff757e83dd28de6a13b0b385cc28d6231a599/notfunny-0.6.8.tar.gz
+[2024-04-20 21:53:10] INFO root fetch - processPackages [rooms-shared-services]: Downloading https://files.pythonhosted.org/packages/69/d1/238526d33d58183ec73b9cb900a4aea16c13e7618af0394e6c55838d4395/rooms_shared_services-0.1.99.tar.gz
+[2024-04-20 21:53:10] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 21:53:10] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.6.6.tar.gz tmp/notfunny-0.6.8.tar.gz --markdown 20240420/n/notfunny/0.6.6-0.6.8/README.md --exclude *.pyd
+[2024-04-20 21:53:10] INFO root fetch - processPackages [rooms-shared-services]: executing diffoscope
+[2024-04-20 21:53:10] INFO root fetch - processPackages [rooms-shared-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rooms_shared_services-0.1.97.tar.gz tmp/rooms_shared_services-0.1.99.tar.gz --markdown 20240420/r/rooms-shared-services/0.1.97-0.1.99/README.md --exclude *.pyd
+[2024-04-20 21:53:11] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.97.tar.gz]
+[2024-04-20 21:53:11] INFO root fetch - processPackages [rooms-shared-services]: Remove: archive file [/home/abi/fetcher/tmp/rooms_shared_services-0.1.99.tar.gz]
+[2024-04-20 21:53:11] INFO root fetch - main [MainThread]: End processing [rooms-shared-services]: success
+[2024-04-20 21:53:11] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.6.tar.gz]
+[2024-04-20 21:53:11] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.8.tar.gz]
+[2024-04-20 21:53:11] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 21:53:11] INFO root fetch - main [MainThread]: Store serial: [22858996]
