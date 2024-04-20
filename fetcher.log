@@ -9882,3 +9882,15 @@
 [2024-04-20 07:10:20] INFO root fetch - processPackages [slicer-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/slicer_package_manager-0.9.0.tar.gz]
 [2024-04-20 07:10:20] INFO root fetch - main [MainThread]: End processing [slicer-package-manager]: success
 [2024-04-20 07:10:20] INFO root fetch - main [MainThread]: Store serial: [22852731]
+[2024-04-20 07:12:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852731]
+[2024-04-20 07:12:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 07:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monopoly-sg
+[2024-04-20 07:12:29] INFO root fetch - processPackages [monopoly-sg]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-20 07:12:29] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/79/8a/94ce30c37b21e6a30de3dc5ae2072aa0996f09d3bc9bebb37960736c4145/monopoly_sg-0.7.3.tar.gz
+[2024-04-20 07:12:29] INFO root fetch - processPackages [monopoly-sg]: Downloading https://files.pythonhosted.org/packages/a4/18/fce67fcaaf3225c544d5d2803016945c285be32b43e5593defff61447096/monopoly_sg-0.7.4.tar.gz
+[2024-04-20 07:12:29] INFO root fetch - processPackages [monopoly-sg]: executing diffoscope
+[2024-04-20 07:12:29] INFO root fetch - processPackages [monopoly-sg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopoly_sg-0.7.3.tar.gz tmp/monopoly_sg-0.7.4.tar.gz --markdown 20240420/m/monopoly-sg/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-04-20 07:12:30] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.3.tar.gz]
+[2024-04-20 07:12:30] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.4.tar.gz]
+[2024-04-20 07:12:30] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
+[2024-04-20 07:12:30] INFO root fetch - main [MainThread]: Store serial: [22852734]
