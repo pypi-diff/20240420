@@ -2337,3 +2337,93 @@
 [2024-04-20 02:21:38] INFO root fetch - processPackages [honeybee-core]: Remove: archive file [/home/abi/fetcher/tmp/honeybee-core-1.9.0.tar.gz]
 [2024-04-20 02:21:38] INFO root fetch - main [MainThread]: End processing [honeybee-core]: success
 [2024-04-20 02:21:38] INFO root fetch - main [MainThread]: Store serial: [22849849]
+[2024-04-20 02:23:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849849]
+[2024-04-20 02:23:47] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: superdupper
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superdupper-core
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: superdupper-db
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oakvar
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyprland
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: regex-rust
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uo-puddles
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prometheus-exporter
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ladybug-comfort
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-certbot-dns-route53
+[2024-04-20 02:23:47] INFO root fetch - processPackages [oakvar]: New version: [2.9.98] Old Version: [2.9.97]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [superdupper]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [pyprland]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-04-20 02:23:47] WARNING root fetch - processPackages [superdupper-db]: Skipping, unable to determine old version
+[2024-04-20 02:23:47] INFO root fetch - processPackages [superdupper-db]: Start processing: spotlight-sdk
+[2024-04-20 02:23:47] INFO root fetch - main [MainThread]: End processing [superdupper-db] error
+[2024-04-20 02:23:47] INFO root fetch - processPackages [prometheus-exporter]: New version: [1.0.0] Old Version: [0.7.1]
+[2024-04-20 02:23:47] WARNING root fetch - processPackages [regex-rust]: Skipping, unable to determine old version
+[2024-04-20 02:23:47] INFO root fetch - processPackages [superdupper-core]: New version: [0.0.13] Old Version: [0.0.12]
+[2024-04-20 02:23:47] INFO root fetch - main [MainThread]: End processing [regex-rust] error
+[2024-04-20 02:23:47] INFO root fetch - processPackages [spotlight-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [uo-puddles]: New version: [4.6] Old Version: [4.5]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [ladybug-comfort]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 02:23:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-04-20 02:23:47] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/6d/e4/7bb16a37159afab481f8b8e30157f426e432eeab3e1294f9a1ff614a17cd/oakvar-2.9.97.tar.gz
+[2024-04-20 02:23:47] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/50/9c/37941f87694596c8b3fb82481dbf8e340bfbd2ff72524d70105ecc40a267/pyprland-2.2.8.tar.gz
+[2024-04-20 02:23:47] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/2b/23/1d1e615b7840b49e9194dc5ea53dfa94115c6cf77bb568bfd981e7732725/superdupper-0.0.8.tar.gz
+[2024-04-20 02:23:47] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/d2/df/64f237173cbbb85bab1727e9b447a1764287a6a0b46e80a48a81d9f20ac5/spotlight-sdk-0.0.8.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper-core]: Downloading https://files.pythonhosted.org/packages/c8/c7/2af03f44306101687f274ac407038b3d6e64da46a60ba0a76f7a3e95c5a0/superdupper_core-0.0.12.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/f1/8f/98c3860013f2e66ec9ed490362d1b73569f62cf80f5c68930509e71f442b/prometheus_exporter-0.7.1.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/7f/71/34fbd750fedfa6b7a0ce0f40f06357992137e9341733c5df756ed2a2924b/uo_puddles-4.5.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/6a/bf/8102b0e33435882b5600b8c0d7b5ebb92e379d665f3767b706dce6bdd2d3/ladybug-comfort-0.9.8.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/95/54/b41c74cea0d530094950d0f33daa1e4b290d0fafa217c2a9c6605192e37e/pyprland-2.2.9.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [spotlight-sdk]: Downloading https://files.pythonhosted.org/packages/e7/77/097156d6cb8a69f69aff3c7e65046379c3fd67d52e2a86936ef50e85eb68/spotlight-sdk-0.0.9.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper]: Downloading https://files.pythonhosted.org/packages/9c/60/8439940b99faa4223f183c80fde832222e7dc706c53ef75eed365094301e/superdupper-0.0.9.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.8.tar.gz tmp/pyprland-2.2.9.tar.gz --markdown 20240420/p/pyprland/2.2.8-2.2.9/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240420/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper-core]: Downloading https://files.pythonhosted.org/packages/2e/da/7b711d4351836f78468c0b60820512ab0c0b064e47d59e964249fc96dbd5/superdupper_core-0.0.13.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [prometheus-exporter]: Downloading https://files.pythonhosted.org/packages/2d/7c/359edd4f99faebeebac2ff5d85d3bc3077ed0d86548f9c3a4fbcb93be299/prometheus_exporter-1.0.0.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [spotlight-sdk]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [spotlight-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotlight-sdk-0.0.8.tar.gz tmp/spotlight-sdk-0.0.9.tar.gz --markdown 20240420/s/spotlight-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper-0.0.8.tar.gz tmp/superdupper-0.0.9.tar.gz --markdown 20240420/s/superdupper/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper-core]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [superdupper-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superdupper_core-0.0.12.tar.gz tmp/superdupper_core-0.0.13.tar.gz --markdown 20240420/s/superdupper-core/0.0.12-0.0.13/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [prometheus-exporter]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [prometheus-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prometheus_exporter-0.7.1.tar.gz tmp/prometheus_exporter-1.0.0.tar.gz --markdown 20240420/p/prometheus-exporter/0.7.1-1.0.0/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [ladybug-comfort]: Downloading https://files.pythonhosted.org/packages/01/02/b871500d4bb81f18c253d98ce272a040dfa679de4682eb2f66a1f039c17a/ladybug-comfort-0.9.9.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/51/df/001effb5a65b10c2da0c2d6beec5e2edec11518efc57a4ceaed3426b9055/uo_puddles-4.6.tar.gz
+[2024-04-20 02:23:48] INFO root fetch - processPackages [ladybug-comfort]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [ladybug-comfort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-comfort-0.9.8.tar.gz tmp/ladybug-comfort-0.9.9.tar.gz --markdown 20240420/l/ladybug-comfort/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 02:23:48] INFO root fetch - processPackages [uo-puddles]: executing diffoscope
+[2024-04-20 02:23:48] INFO root fetch - processPackages [uo-puddles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uo_puddles-4.5.tar.gz tmp/uo_puddles-4.6.tar.gz --markdown 20240420/u/uo-puddles/4.5-4.6/README.md --exclude *.pyd
+[2024-04-20 02:23:49] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 02:23:49] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.97.tar.gz tmp/oakvar-2.9.98.tar.gz --markdown 20240420/o/oakvar/2.9.97-2.9.98/README.md --exclude *.pyd
+[2024-04-20 02:23:49] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.8.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.9.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.8.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [spotlight-sdk]: Remove: archive file [/home/abi/fetcher/tmp/spotlight-sdk-0.0.9.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [spotlight-sdk]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [prometheus-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_exporter-0.7.1.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [prometheus-exporter]: Remove: archive file [/home/abi/fetcher/tmp/prometheus_exporter-1.0.0.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [prometheus-exporter]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [superdupper-core]: Remove: archive file [/home/abi/fetcher/tmp/superdupper_core-0.0.12.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [superdupper-core]: Remove: archive file [/home/abi/fetcher/tmp/superdupper_core-0.0.13.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [superdupper-core]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.8.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [superdupper]: Remove: archive file [/home/abi/fetcher/tmp/superdupper-0.0.9.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [superdupper]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [uo-puddles]: Remove: archive file [/home/abi/fetcher/tmp/uo_puddles-4.5.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [uo-puddles]: Remove: archive file [/home/abi/fetcher/tmp/uo_puddles-4.6.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [uo-puddles]: success
+[2024-04-20 02:23:49] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.8.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - processPackages [ladybug-comfort]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-comfort-0.9.9.tar.gz]
+[2024-04-20 02:23:49] INFO root fetch - main [MainThread]: End processing [ladybug-comfort]: success
+[2024-04-20 02:23:52] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.97.tar.gz]
+[2024-04-20 02:23:52] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 02:23:52] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 02:23:52] INFO root fetch - main [MainThread]: Store serial: [22849889]
