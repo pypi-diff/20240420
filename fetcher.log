@@ -8700,3 +8700,48 @@
 [2024-04-20 05:45:22] INFO root fetch - processPackages [odoo-addon-ddmrp-report-part-flow-index]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_ddmrp_report_part_flow_index-16.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-04-20 05:45:22] INFO root fetch - main [MainThread]: End processing [odoo-addon-ddmrp-report-part-flow-index]: success
 [2024-04-20 05:45:22] INFO root fetch - main [MainThread]: Store serial: [22852196]
+[2024-04-20 05:47:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852196]
+[2024-04-20 05:47:31] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thepipe-api
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jeffutils
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autodft
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-control
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keble-helpers
+[2024-04-20 05:47:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: edstem-assignment-tracker
+[2024-04-20 05:47:31] INFO root fetch - processPackages [thepipe-api]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 05:47:31] WARNING root fetch - processPackages [autodft]: Skipping, unable to determine old version
+[2024-04-20 05:47:31] INFO root fetch - main [MainThread]: End processing [autodft] error
+[2024-04-20 05:47:31] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 05:47:31] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/36/47/f92357b8761d87cf5cd6cb272112f2054d9b6ec7160ebc8b84f9295e8cfe/thepipe_api-0.2.6.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:47:31] WARNING root fetch - processPackages [discord-control]: Skipping, unable to determine old version
+[2024-04-20 05:47:31] INFO root fetch - main [MainThread]: End processing [discord-control] error
+[2024-04-20 05:47:31] INFO root fetch - processPackages [jeffutils]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-20 05:47:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [jeffutils]: Downloading https://files.pythonhosted.org/packages/e1/93/967787466850a13eee85085f3571c211af72c099171ef39d546c2b538afa/jeffutils-0.4.8.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/a9/50/c09fcf03affd03b80f6f031a0bc187f5560fd546e1fe6388ed04d0a6ab38/thepipe_api-0.2.7.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-20 05:47:31] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.2.6.tar.gz tmp/thepipe_api-0.2.7.tar.gz --markdown 20240420/t/thepipe-api/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 05:47:31] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 05:47:31] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 05:47:31] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 05:47:31] INFO root fetch - processPackages [jeffutils]: Downloading https://files.pythonhosted.org/packages/aa/4b/3f51f644f47c1129813c8133a4191bd67fcde7361e6f3738913fc7360840/jeffutils-0.4.9.tar.gz
+[2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240420/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:47:32] INFO root fetch - processPackages [jeffutils]: executing diffoscope
+[2024-04-20 05:47:32] INFO root fetch - processPackages [jeffutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeffutils-0.4.8.tar.gz tmp/jeffutils-0.4.9.tar.gz --markdown 20240420/j/jeffutils/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-04-20 05:47:32] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.6.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.7.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-20 05:47:32] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 05:47:32] INFO root fetch - processPackages [jeffutils]: Remove: archive file [/home/abi/fetcher/tmp/jeffutils-0.4.8.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - processPackages [jeffutils]: Remove: archive file [/home/abi/fetcher/tmp/jeffutils-0.4.9.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - main [MainThread]: End processing [jeffutils]: success
+[2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-20 05:47:32] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-20 05:47:32] INFO root fetch - main [MainThread]: Store serial: [22852214]
