@@ -12449,3 +12449,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:59:26] INFO root fetch - processPackages [mxbt]: Remove: archive file [/home/abi/fetcher/tmp/mxbt-0.3.4.tar.gz]
 [2024-04-20 10:59:26] INFO root fetch - main [MainThread]: End processing [mxbt]: success
 [2024-04-20 10:59:26] INFO root fetch - main [MainThread]: Store serial: [22854061]
+[2024-04-20 11:01:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854061]
+[2024-04-20 11:01:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seatable-api
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccdt
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctui
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: toolspec
+[2024-04-20 11:01:35] WARNING root fetch - processPackages [toolspec]: Skipping, unable to determine old version
+[2024-04-20 11:01:35] INFO root fetch - main [MainThread]: End processing [toolspec] error
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ctui]: New version: [0.7.8] Old Version: [0.7.7]
+[2024-04-20 11:01:35] INFO root fetch - processPackages [ccdt]: New version: [2.1.98] Old Version: [2.1.97]
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/a7/e1/56739c3713770eb5cbc24b4a28f20fb076cc37306afad886d09ba2b67c38/ctui-0.7.7.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [seatable-api]: New version: [2.7.1] Old Version: [2.7.0]
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5d/c8/9c6983d0cd97ddb2e34349b6e8cab69480840d521540f472751fe862eeba/ccdt-2.1.97.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [seatable-api]: Downloading https://files.pythonhosted.org/packages/99/1c/2aea4429930f8e157ba86616f6babecc75e2f30bd9b78915566bc1ba52dc/seatable-api-2.7.0.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ctui]: Downloading https://files.pythonhosted.org/packages/fc/f5/9522155509145b22a9fcf1ad6b0970c4d39f65ff2c5190e6dd3a55290d49/ctui-0.7.8.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5e/9c/468b97d81f651afdc79c90181caf3e96586e1faf49f1f0272cd9d59234cc/ccdt-2.1.98.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ctui]: executing diffoscope
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ctui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctui-0.7.7.tar.gz tmp/ctui-0.7.8.tar.gz --markdown 20240420/c/ctui/0.7.7-0.7.8/README.md --exclude *.pyd
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2024-04-20 11:01:36] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.1.97.tar.gz tmp/ccdt-2.1.98.tar.gz --markdown 20240420/c/ccdt/2.1.97-2.1.98/README.md --exclude *.pyd
+[2024-04-20 11:01:36] INFO root fetch - processPackages [seatable-api]: Downloading https://files.pythonhosted.org/packages/f2/ed/11ade174d82ba7de1a25809d023e078d1b0d57bbf77282fa2ce260d67fd5/seatable-api-2.7.1.tar.gz
+[2024-04-20 11:01:36] INFO root fetch - processPackages [seatable-api]: executing diffoscope
+[2024-04-20 11:01:36] INFO root fetch - processPackages [seatable-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seatable-api-2.7.0.tar.gz tmp/seatable-api-2.7.1.tar.gz --markdown 20240420/s/seatable-api/2.7.0-2.7.1/README.md --exclude *.pyd
+[2024-04-20 11:01:37] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.7.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - processPackages [ctui]: Remove: archive file [/home/abi/fetcher/tmp/ctui-0.7.8.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - main [MainThread]: End processing [ctui]: success
+[2024-04-20 11:01:37] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.97.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.98.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2024-04-20 11:01:37] INFO root fetch - processPackages [seatable-api]: Remove: archive file [/home/abi/fetcher/tmp/seatable-api-2.7.0.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - processPackages [seatable-api]: Remove: archive file [/home/abi/fetcher/tmp/seatable-api-2.7.1.tar.gz]
+[2024-04-20 11:01:37] INFO root fetch - main [MainThread]: End processing [seatable-api]: success
+[2024-04-20 11:01:37] INFO root fetch - main [MainThread]: Store serial: [22854104]
