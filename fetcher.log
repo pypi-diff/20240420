@@ -24042,3 +24042,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:49:49] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
 [2024-04-20 23:49:49] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
 [2024-04-20 23:49:49] INFO root fetch - main [MainThread]: Store serial: [22859744]
+[2024-04-20 23:51:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859744]
+[2024-04-20 23:51:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 23:51:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrealsense2
+[2024-04-20 23:51:58] INFO root fetch - processPackages [pyrealsense2]: New version: [2.9.1] Old Version: [2.56.0.6483]
+[2024-04-20 23:51:58] INFO root fetch - processPackages [pyrealsense2]: Downloading https://files.pythonhosted.org/packages/7a/a5/112db085bfd2259b82e83735e7bf659339c2869cb17a17fbad7b362ae4fd/pyrealsense2-2.56.0.6483-cp39-cp39-win_amd64.whl
+[2024-04-20 23:51:59] INFO root fetch - processPackages [pyrealsense2]: Downloading https://files.pythonhosted.org/packages/2b/17/f3edbed050b512363a84cce9f7c560ef01099eecf5efeed5e088efaa66db/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl
+[2024-04-20 23:51:59] INFO root fetch - processPackages [pyrealsense2]: executing diffoscope
+[2024-04-20 23:51:59] INFO root fetch - processPackages [pyrealsense2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrealsense2-2.56.0.6483-cp39-cp39-win_amd64.whl.zip tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip --markdown 20240420/p/pyrealsense2/2.56.0.6483-2.9.1/README.md --exclude *.pyd
+[2024-04-20 23:52:00] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.56.0.6483-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 23:52:00] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip]
+[2024-04-20 23:52:00] INFO root fetch - main [MainThread]: End processing [pyrealsense2]: success
+[2024-04-20 23:52:00] INFO root fetch - main [MainThread]: Store serial: [22859759]
