@@ -22770,3 +22770,35 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:06:23] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
 [2024-04-20 22:06:23] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
 [2024-04-20 22:06:23] INFO root fetch - main [MainThread]: Store serial: [22859109]
+[2024-04-20 22:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859109]
+[2024-04-20 22:08:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC205
+[2024-04-20 22:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aim-ui
+[2024-04-20 22:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gyver
+[2024-04-20 22:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aim
+[2024-04-20 22:08:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kojcalc
+[2024-04-20 22:08:31] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-20 22:08:32] WARNING root fetch - processPackages [PythonTestLJC205]: Skipping, unable to determine old version
+[2024-04-20 22:08:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC205] error
+[2024-04-20 22:08:32] WARNING root fetch - processPackages [kojcalc]: Skipping, unable to determine old version
+[2024-04-20 22:08:32] INFO root fetch - main [MainThread]: End processing [kojcalc] error
+[2024-04-20 22:08:32] INFO root fetch - processPackages [gyver]: New version: [4.1.5] Old Version: [4.1.4]
+[2024-04-20 22:08:32] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-20 22:08:32] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-20 22:08:32] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-20 22:08:32] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-20 22:08:32] INFO root fetch - processPackages [gyver]: Downloading https://files.pythonhosted.org/packages/a5/e6/19e8482803df9d6ac2745ce7f18085cd4bbf1fe04b1e141a2226d951618f/gyver-4.1.4.tar.gz
+[2024-04-20 22:08:32] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-20 22:08:32] INFO root fetch - processPackages [gyver]: Downloading https://files.pythonhosted.org/packages/95/57/334679c47b7101b167098f6380ba1c136ebb4dc370b93bae9d3d92814a74/gyver-4.1.5.tar.gz
+[2024-04-20 22:08:33] INFO root fetch - processPackages [gyver]: executing diffoscope
+[2024-04-20 22:08:33] INFO root fetch - processPackages [gyver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gyver-4.1.4.tar.gz tmp/gyver-4.1.5.tar.gz --markdown 20240420/g/gyver/4.1.4-4.1.5/README.md --exclude *.pyd
+[2024-04-20 22:08:33] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-20 22:08:33] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-20 22:08:33] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240420/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-20 22:08:33] INFO root fetch - processPackages [gyver]: Remove: archive file [/home/abi/fetcher/tmp/gyver-4.1.4.tar.gz]
+[2024-04-20 22:08:33] INFO root fetch - processPackages [gyver]: Remove: archive file [/home/abi/fetcher/tmp/gyver-4.1.5.tar.gz]
+[2024-04-20 22:08:33] INFO root fetch - main [MainThread]: End processing [gyver]: success
+[2024-04-20 22:08:38] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-20 22:08:38] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-20 22:08:38] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-20 22:08:38] INFO root fetch - main [MainThread]: Store serial: [22859125]
