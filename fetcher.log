@@ -21488,3 +21488,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:49:26] INFO root fetch - processPackages [streamlit-chip-filter]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-chip-filter-0.0.6.tar.gz]
 [2024-04-20 20:49:26] INFO root fetch - main [MainThread]: End processing [streamlit-chip-filter]: success
 [2024-04-20 20:49:26] INFO root fetch - main [MainThread]: Store serial: [22858523]
+[2024-04-20 20:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858523]
+[2024-04-20 20:51:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 20:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysettrie
+[2024-04-20 20:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-user-email
+[2024-04-20 20:51:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC178
+[2024-04-20 20:51:35] INFO root fetch - processPackages [pysettrie]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 20:51:35] INFO root fetch - processPackages [django-user-email]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-04-20 20:51:35] WARNING root fetch - processPackages [PythonTestLJC178]: Skipping, unable to determine old version
+[2024-04-20 20:51:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC178] error
+[2024-04-20 20:51:35] INFO root fetch - processPackages [pysettrie]: Downloading https://files.pythonhosted.org/packages/ab/7f/18e0bcdd6a7ecd04dcbe12252aad2c871825fbc145a5088084310e0dae81/pysettrie-1.0.0.tar.gz
+[2024-04-20 20:51:35] INFO root fetch - processPackages [django-user-email]: Downloading https://files.pythonhosted.org/packages/ee/f6/3d7a9dce98250e039d4c50d64823a2bae2a0c1eebbcd93e1374eb2b2150d/django_user_email-1.1.0.tar.gz
+[2024-04-20 20:51:35] INFO root fetch - processPackages [pysettrie]: Downloading https://files.pythonhosted.org/packages/0c/dd/25579f3567f1302b5a0e9b11a7934e946a1b5cb44efa6e800a220bc22659/pysettrie-1.0.1.tar.gz
+[2024-04-20 20:51:35] INFO root fetch - processPackages [pysettrie]: executing diffoscope
+[2024-04-20 20:51:35] INFO root fetch - processPackages [pysettrie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysettrie-1.0.0.tar.gz tmp/pysettrie-1.0.1.tar.gz --markdown 20240420/p/pysettrie/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 20:51:35] INFO root fetch - processPackages [django-user-email]: Downloading https://files.pythonhosted.org/packages/76/01/c0e4b6dd90462e8860849bcaa36c25adc1afd4618f8b580dddec76bb4ab3/django_user_email-1.1.1.tar.gz
+[2024-04-20 20:51:36] INFO root fetch - processPackages [django-user-email]: executing diffoscope
+[2024-04-20 20:51:36] INFO root fetch - processPackages [django-user-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_user_email-1.1.0.tar.gz tmp/django_user_email-1.1.1.tar.gz --markdown 20240420/d/django-user-email/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-04-20 20:51:36] INFO root fetch - processPackages [pysettrie]: Remove: archive file [/home/abi/fetcher/tmp/pysettrie-1.0.0.tar.gz]
+[2024-04-20 20:51:36] INFO root fetch - processPackages [pysettrie]: Remove: archive file [/home/abi/fetcher/tmp/pysettrie-1.0.1.tar.gz]
+[2024-04-20 20:51:36] INFO root fetch - main [MainThread]: End processing [pysettrie]: success
+[2024-04-20 20:51:36] INFO root fetch - processPackages [django-user-email]: Remove: archive file [/home/abi/fetcher/tmp/django_user_email-1.1.0.tar.gz]
+[2024-04-20 20:51:36] INFO root fetch - processPackages [django-user-email]: Remove: archive file [/home/abi/fetcher/tmp/django_user_email-1.1.1.tar.gz]
+[2024-04-20 20:51:36] INFO root fetch - main [MainThread]: End processing [django-user-email]: success
+[2024-04-20 20:51:36] INFO root fetch - main [MainThread]: Store serial: [22858528]
