@@ -11453,3 +11453,31 @@
 [2024-04-20 09:32:34] INFO root fetch - processPackages [sticker-convert]: Remove: archive file [/home/abi/fetcher/tmp/sticker_convert-2.8.7.tar.gz]
 [2024-04-20 09:32:34] INFO root fetch - main [MainThread]: End processing [sticker-convert]: success
 [2024-04-20 09:32:34] INFO root fetch - main [MainThread]: Store serial: [22853598]
+[2024-04-20 09:34:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853598]
+[2024-04-20 09:34:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-20 09:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudpy-org
+[2024-04-20 09:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-dbchat
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc70.post1] Old Version: [0.0.2rc69.post1]
+[2024-04-20 09:34:43] INFO root fetch - processPackages [cloudpy-org]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc70.post1] Old Version: [0.0.2rc69.post1]
+[2024-04-20 09:34:43] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/09/ca/d609567efc28de7bf426ac26343c67ae96394f558aca357f404dfc5123c6/cloudpy_org-1.4.6.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/8a/8c/8ba6f67809be318f854f8f73a84b0580da38050238169ad87420694c7036/py_dbchat-0.0.2rc69.post1.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/8a/8c/8ba6f67809be318f854f8f73a84b0580da38050238169ad87420694c7036/py_dbchat-0.0.2rc69.post1.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/79/3a/d4686a9bf5af6414612361989974b74a92f45ed5cc773137afd1ae415e0e/cloudpy_org-1.4.7.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/fb/ea/dd8c8774603e8d6f6f06bf48cabf56b6aaef76fde91dce71cf2e6272d6ef/py_dbchat-0.0.2rc70.post1.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/fb/ea/dd8c8774603e8d6f6f06bf48cabf56b6aaef76fde91dce71cf2e6272d6ef/py_dbchat-0.0.2rc70.post1.tar.gz
+[2024-04-20 09:34:43] INFO root fetch - processPackages [cloudpy-org]: executing diffoscope
+[2024-04-20 09:34:43] INFO root fetch - processPackages [cloudpy-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpy_org-1.4.6.tar.gz tmp/cloudpy_org-1.4.7.tar.gz --markdown 20240420/c/cloudpy-org/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc69.post1.tar.gz tmp/py_dbchat-0.0.2rc70.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc69.post1-0.0.2rc70.post1/README.md --exclude *.pyd
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:34:43] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc69.post1.tar.gz tmp/py_dbchat-0.0.2rc70.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc69.post1-0.0.2rc70.post1/README.md --exclude *.pyd
+[2024-04-20 09:34:44] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.6.tar.gz]
+[2024-04-20 09:34:44] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.7.tar.gz]
+[2024-04-20 09:34:44] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
+[2024-04-20 09:34:44] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc69.post1.tar.gz]
+[2024-04-20 09:34:44] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc70.post1.tar.gz]
+[2024-04-20 09:34:44] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:34:44] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:34:44] INFO root fetch - main [MainThread]: Store serial: [22853607]
