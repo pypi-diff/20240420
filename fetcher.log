@@ -13206,3 +13206,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:41:47] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc75.post1.tar.gz]
 [2024-04-20 11:41:47] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
 [2024-04-20 11:41:47] INFO root fetch - main [MainThread]: Store serial: [22854501]
+[2024-04-20 11:43:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854501]
+[2024-04-20 11:43:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quokka-sharp
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ml-indie-tools
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsk-monster
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nakametpy
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TheSilent
+[2024-04-20 11:43:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-feed-reader
+[2024-04-20 11:43:56] INFO root fetch - processPackages [tsk-monster]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [quokka-sharp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/37/1d/909d8d90bce691193ba9c7cbab6edfe8ef434db7e5b38dd2520121d4e483/tsk_monster-0.0.8.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [django-feed-reader]: New version: [2.0.1b1] Old Version: [2.0.0b1]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [nakametpy]: New version: [2024.4.0] Old Version: [2024.3.0]
+[2024-04-20 11:43:56] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [quokka-sharp]: Downloading https://files.pythonhosted.org/packages/d3/07/99c373d3d0bf1de151b6296ddaa957e5ba07d0aaea5698ce3272a8684db4/quokka_sharp-0.0.8.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [nakametpy]: Downloading https://files.pythonhosted.org/packages/16/fa/d508a7eb577a50ebdf9816dba1823628ada7454493e6f2b545bd7bc550fa/nakametpy-2024.3.0.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [tsk-monster]: Downloading https://files.pythonhosted.org/packages/bd/0d/76bc9f0c428722f67988b8db745d256aefb82e1f9e36269eee144c2705f1/tsk_monster-0.0.9.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [django-feed-reader]: Downloading https://files.pythonhosted.org/packages/0f/5d/db76b043173689a855fc11e236667777958c89f3f0847a129b2eac8815c9/django-feed-reader-2.0.0b1.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [tsk-monster]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [tsk-monster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsk_monster-0.0.8.tar.gz tmp/tsk_monster-0.0.9.tar.gz --markdown 20240420/t/tsk-monster/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 11:43:56] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 11:43:56] INFO root fetch - processPackages [quokka-sharp]: Downloading https://files.pythonhosted.org/packages/ff/a8/80c6aaff1c7ea5821c3b215be8f0703c47d168712ebaa62bef5ce15012cf/quokka_sharp-0.0.9.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [nakametpy]: Downloading https://files.pythonhosted.org/packages/e0/aa/f84b6256d5c7883aa2b0f192fe511becdec178ec54e47b39a94f0e79b388/nakametpy-2024.4.0.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [django-feed-reader]: Downloading https://files.pythonhosted.org/packages/21/ec/5d4ea46e2fc4b6ca6a4b5b25fc874bc8524d70d89ee3d11d0493a087e7e4/django_feed_reader-2.0.1b1.tar.gz
+[2024-04-20 11:43:56] INFO root fetch - processPackages [quokka-sharp]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [quokka-sharp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quokka_sharp-0.0.8.tar.gz tmp/quokka_sharp-0.0.9.tar.gz --markdown 20240420/q/quokka-sharp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 11:43:56] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240420/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 11:43:56] INFO root fetch - processPackages [nakametpy]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [nakametpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nakametpy-2024.3.0.tar.gz tmp/nakametpy-2024.4.0.tar.gz --markdown 20240420/n/nakametpy/2024.3.0-2024.4.0/README.md --exclude *.pyd
+[2024-04-20 11:43:56] INFO root fetch - processPackages [django-feed-reader]: executing diffoscope
+[2024-04-20 11:43:56] INFO root fetch - processPackages [django-feed-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-feed-reader-2.0.0b1.tar.gz tmp/django_feed_reader-2.0.1b1.tar.gz --markdown 20240420/d/django-feed-reader/2.0.0b1-2.0.1b1/README.md --exclude *.pyd
+[2024-04-20 11:43:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.8.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [tsk-monster]: Remove: archive file [/home/abi/fetcher/tmp/tsk_monster-0.0.9.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [tsk-monster]: success
+[2024-04-20 11:43:57] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 11:43:57] INFO root fetch - processPackages [quokka-sharp]: Remove: archive file [/home/abi/fetcher/tmp/quokka_sharp-0.0.8.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [quokka-sharp]: Remove: archive file [/home/abi/fetcher/tmp/quokka_sharp-0.0.9.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [quokka-sharp]: success
+[2024-04-20 11:43:57] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-20 11:43:57] INFO root fetch - processPackages [django-feed-reader]: Remove: archive file [/home/abi/fetcher/tmp/django-feed-reader-2.0.0b1.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [django-feed-reader]: Remove: archive file [/home/abi/fetcher/tmp/django_feed_reader-2.0.1b1.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [django-feed-reader]: success
+[2024-04-20 11:43:57] INFO root fetch - processPackages [nakametpy]: Remove: archive file [/home/abi/fetcher/tmp/nakametpy-2024.3.0.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - processPackages [nakametpy]: Remove: archive file [/home/abi/fetcher/tmp/nakametpy-2024.4.0.tar.gz]
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: End processing [nakametpy]: success
+[2024-04-20 11:43:57] INFO root fetch - main [MainThread]: Store serial: [22854518]
