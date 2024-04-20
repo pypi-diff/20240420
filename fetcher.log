@@ -10811,3 +10811,20 @@
 [2024-04-20 08:52:47] INFO root fetch - processPackages [odoo-addon-stock-location-orderpoint]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_location_orderpoint-16.0.2.0.0.2-py3-none-any.whl.zip]
 [2024-04-20 08:52:47] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-location-orderpoint]: success
 [2024-04-20 08:52:47] INFO root fetch - main [MainThread]: Store serial: [22853269]
+[2024-04-20 08:54:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853269]
+[2024-04-20 08:54:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-20 08:54:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mingzi
+[2024-04-20 08:54:56] INFO root fetch - processPackages [mingzi]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-04-20 08:54:56] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 08:54:56] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/e7/1e/070c184fc9502511a04662d4485f931d8246ba00d9a97e8a8d3f97fda169/mingzi-1.1.2.tar.gz
+[2024-04-20 08:54:56] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 08:54:56] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 08:54:56] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 08:54:56] INFO root fetch - processPackages [mingzi]: Downloading https://files.pythonhosted.org/packages/9e/40/f692b3192e9eb56a04f4b64e714b7a759c4fea55efb238e6513ff700ebf8/mingzi-1.2.0.tar.gz
+[2024-04-20 08:54:56] INFO root fetch - processPackages [mingzi]: executing diffoscope
+[2024-04-20 08:54:56] INFO root fetch - processPackages [mingzi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mingzi-1.1.2.tar.gz tmp/mingzi-1.2.0.tar.gz --markdown 20240420/m/mingzi/1.1.2-1.2.0/README.md --exclude *.pyd
+[2024-04-20 08:54:57] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.1.2.tar.gz]
+[2024-04-20 08:54:57] INFO root fetch - processPackages [mingzi]: Remove: archive file [/home/abi/fetcher/tmp/mingzi-1.2.0.tar.gz]
+[2024-04-20 08:54:57] INFO root fetch - main [MainThread]: End processing [mingzi]: success
+[2024-04-20 08:54:57] INFO root fetch - main [MainThread]: Store serial: [22853274]
