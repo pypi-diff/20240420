@@ -11331,3 +11331,24 @@
 [2024-04-20 09:19:28] INFO root fetch - processPackages [odoo-addon-web-refresher]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_web_refresher-17.0.1.0.1-py3-none-any.whl.zip]
 [2024-04-20 09:19:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-web-refresher]: success
 [2024-04-20 09:19:28] INFO root fetch - main [MainThread]: Store serial: [22853542]
+[2024-04-20 09:21:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853542]
+[2024-04-20 09:21:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:21:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2024-04-20 09:21:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyguiadapter
+[2024-04-20 09:21:37] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:21:37] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:21:37] INFO root fetch - processPackages [pyguiadapter]: New version: [0.3.2] Old Version: [0.3.0]
+[2024-04-20 09:21:37] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/d7/5a/9c99d61a1ca30aff7013c5df032726b67325d240d69751ce1bec3bacd872/pyguiadapter-0.3.0.tar.gz
+[2024-04-20 09:21:37] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/c9/28/2a19d797a0cf78d8527a470eb74a4cdac778bbba649aaec99078d4a45002/pyguiadapter-0.3.2.tar.gz
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pyguiadapter]: executing diffoscope
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pyguiadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyguiadapter-0.3.0.tar.gz tmp/pyguiadapter-0.3.2.tar.gz --markdown 20240420/p/pyguiadapter/0.3.0-0.3.2/README.md --exclude *.pyd
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 09:21:38] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 09:21:38] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:21:39] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.0.tar.gz]
+[2024-04-20 09:21:39] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.3.2.tar.gz]
+[2024-04-20 09:21:39] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
+[2024-04-20 09:21:39] INFO root fetch - main [MainThread]: Store serial: [22853550]
