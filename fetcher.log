@@ -7827,3 +7827,24 @@
 [2024-04-20 04:31:05] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
 [2024-04-20 04:31:05] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-20 04:31:05] INFO root fetch - main [MainThread]: Store serial: [22851850]
+[2024-04-20 04:33:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851850]
+[2024-04-20 04:33:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aws
+[2024-04-20 04:33:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gtsystem
+[2024-04-20 04:33:13] INFO root fetch - processPackages [gtsystem]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 04:33:13] INFO root fetch - processPackages [pulumi-aws]: New version: [6.9.0a1700084435] Old Version: [6.9.0a1699991594]
+[2024-04-20 04:33:13] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/fe/ac/c05a5ffdeab9fd8841f0aa47acfcbcf86a716e594aedaf1977fd33435db0/gtsystem-0.1.3.tar.gz
+[2024-04-20 04:33:13] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/e1/df/14b748e40340692e18bd19ad3631916881c3bfc6ab8cc9db1f79ca1fb86a/pulumi_aws-6.9.0a1699991594.tar.gz
+[2024-04-20 04:33:14] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/eb/ce/2fd2f57db3c738bcddc383726e0dcf231b8bb51838743ea04d44fb08018e/gtsystem-0.1.4.tar.gz
+[2024-04-20 04:33:14] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-20 04:33:14] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.1.3.tar.gz tmp/gtsystem-0.1.4.tar.gz --markdown 20240420/g/gtsystem/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 04:33:14] INFO root fetch - processPackages [pulumi-aws]: Downloading https://files.pythonhosted.org/packages/f3/70/32e3669ea3bb0042d4f4aac12c2584c3217ddc25b9e1646f05b9a9e1a24f/pulumi_aws-6.9.0a1700084435.tar.gz
+[2024-04-20 04:33:14] INFO root fetch - processPackages [pulumi-aws]: executing diffoscope
+[2024-04-20 04:33:14] INFO root fetch - processPackages [pulumi-aws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aws-6.9.0a1699991594.tar.gz tmp/pulumi_aws-6.9.0a1700084435.tar.gz --markdown 20240420/p/pulumi-aws/6.9.0a1699991594-6.9.0a1700084435/README.md --exclude *.pyd
+[2024-04-20 04:33:14] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.3.tar.gz]
+[2024-04-20 04:33:14] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.4.tar.gz]
+[2024-04-20 04:33:14] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-20 04:33:30] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1699991594.tar.gz]
+[2024-04-20 04:33:30] INFO root fetch - processPackages [pulumi-aws]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aws-6.9.0a1700084435.tar.gz]
+[2024-04-20 04:33:30] INFO root fetch - main [MainThread]: End processing [pulumi-aws]: success
+[2024-04-20 04:33:30] INFO root fetch - main [MainThread]: Store serial: [22851857]
