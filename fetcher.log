@@ -15627,3 +15627,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:26:46] INFO root fetch - processPackages [haupt]: Remove: archive file [/home/abi/fetcher/tmp/haupt-2.1.8.tar.gz]
 [2024-04-20 14:26:46] INFO root fetch - main [MainThread]: End processing [haupt]: success
 [2024-04-20 14:26:46] INFO root fetch - main [MainThread]: Store serial: [22855630]
+[2024-04-20 14:28:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855630]
+[2024-04-20 14:28:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 14:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polyaxon-sdk
+[2024-04-20 14:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dclab
+[2024-04-20 14:28:56] INFO root fetch - processPackages [polyaxon-sdk]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-04-20 14:28:56] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/d3/62/7a8318f151d5ccb956de8005eadfa6c853dbb27e234467571608217d407e/polyaxon-sdk-2.1.7.tar.gz
+[2024-04-20 14:28:56] INFO root fetch - processPackages [dclab]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 14:28:56] INFO root fetch - processPackages [polyaxon-sdk]: Downloading https://files.pythonhosted.org/packages/0b/1b/ce7aba8afd4aefd66b9b2d4b76715b4fd563b67c7c47b9c0c73b5d2b4bb7/polyaxon_sdk-2.1.8-py2.py3-none-any.whl
+[2024-04-20 14:28:56] INFO root fetch - processPackages [dclab]: Downloading https://files.pythonhosted.org/packages/7c/85/1e39b909a273589478001e4ea5a3df8fd5923e2dbc48bc5ded42f984a58f/dclab-0.9.0.tar.gz
+[2024-04-20 14:28:56] INFO root fetch - processPackages [polyaxon-sdk]: executing diffoscope
+[2024-04-20 14:28:56] INFO root fetch - processPackages [polyaxon-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyaxon-sdk-2.1.7.tar.gz tmp/polyaxon_sdk-2.1.8-py2.py3-none-any.whl.zip --markdown 20240420/p/polyaxon-sdk/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-04-20 14:28:57] INFO root fetch - processPackages [dclab]: Downloading https://files.pythonhosted.org/packages/b7/8f/20dd68d6e832776bab24a9ec17e74b4480bdf3b960f989ada95f9a4387cc/dclab-0.9.1.tar.gz
+[2024-04-20 14:28:57] INFO root fetch - processPackages [dclab]: executing diffoscope
+[2024-04-20 14:28:57] INFO root fetch - processPackages [dclab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dclab-0.9.0.tar.gz tmp/dclab-0.9.1.tar.gz --markdown 20240420/d/dclab/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 14:28:57] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon-sdk-2.1.7.tar.gz]
+[2024-04-20 14:28:57] INFO root fetch - processPackages [polyaxon-sdk]: Remove: archive file [/home/abi/fetcher/tmp/polyaxon_sdk-2.1.8-py2.py3-none-any.whl.zip]
+[2024-04-20 14:28:57] INFO root fetch - main [MainThread]: End processing [polyaxon-sdk]: success
+[2024-04-20 14:28:58] INFO root fetch - processPackages [dclab]: Remove: archive file [/home/abi/fetcher/tmp/dclab-0.9.0.tar.gz]
+[2024-04-20 14:28:58] INFO root fetch - processPackages [dclab]: Remove: archive file [/home/abi/fetcher/tmp/dclab-0.9.1.tar.gz]
+[2024-04-20 14:28:58] INFO root fetch - main [MainThread]: End processing [dclab]: success
+[2024-04-20 14:28:58] INFO root fetch - main [MainThread]: Store serial: [22855638]
