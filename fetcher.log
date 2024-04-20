@@ -11496,3 +11496,29 @@
 [2024-04-20 09:36:54] INFO root fetch - processPackages [pyyaml-include]: Remove: archive file [/home/abi/fetcher/tmp/pyyaml-include-2.0b2.tar.gz]
 [2024-04-20 09:36:54] INFO root fetch - main [MainThread]: End processing [pyyaml-include]: success
 [2024-04-20 09:36:54] INFO root fetch - main [MainThread]: Store serial: [22853613]
+[2024-04-20 09:38:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853613]
+[2024-04-20 09:39:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-ezglossary-plugin
+[2024-04-20 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2024-04-20 09:39:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keble-helpers
+[2024-04-20 09:39:03] INFO root fetch - processPackages [keble-helpers]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 09:39:03] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/de/6b/568d59c986d9d97369cc1b9c8e11afaff79cd8e39b8f140a8b86b3dd09ac/keble_helpers-0.0.8.tar.gz
+[2024-04-20 09:39:03] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: New version: [1.6.1] Old Version: [1.6.0]
+[2024-04-20 09:39:03] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-04-20 09:39:03] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: Downloading https://files.pythonhosted.org/packages/6e/86/cd1ab1ac090ea9c796ba716b0ddd010139cf82727f89647df786f20ada81/mkdocs_ezglossary_plugin-1.6.0.tar.gz
+[2024-04-20 09:39:03] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-20 09:39:03] INFO root fetch - processPackages [keble-helpers]: Downloading https://files.pythonhosted.org/packages/4d/91/c66434faf6806657edb568c043b530bf781144225fd27b657022fa958558/keble_helpers-0.0.9.tar.gz
+[2024-04-20 09:39:04] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-04-20 09:39:04] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-04-20 09:39:04] INFO root fetch - processPackages [keble-helpers]: executing diffoscope
+[2024-04-20 09:39:04] INFO root fetch - processPackages [keble-helpers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keble_helpers-0.0.8.tar.gz tmp/keble_helpers-0.0.9.tar.gz --markdown 20240420/k/keble-helpers/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: Downloading https://files.pythonhosted.org/packages/e0/c1/f3e978df692e1aaee9a8cad448c72791059f64205a7066df8b44e4190e08/mkdocs_ezglossary_plugin-1.6.1.tar.gz
+[2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: executing diffoscope
+[2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs_ezglossary_plugin-1.6.0.tar.gz tmp/mkdocs_ezglossary_plugin-1.6.1.tar.gz --markdown 20240420/m/mkdocs-ezglossary-plugin/1.6.0-1.6.1/README.md --exclude *.pyd
+[2024-04-20 09:39:04] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.8.tar.gz]
+[2024-04-20 09:39:04] INFO root fetch - processPackages [keble-helpers]: Remove: archive file [/home/abi/fetcher/tmp/keble_helpers-0.0.9.tar.gz]
+[2024-04-20 09:39:04] INFO root fetch - main [MainThread]: End processing [keble-helpers]: success
+[2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_ezglossary_plugin-1.6.0.tar.gz]
+[2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_ezglossary_plugin-1.6.1.tar.gz]
+[2024-04-20 09:39:04] INFO root fetch - main [MainThread]: End processing [mkdocs-ezglossary-plugin]: success
+[2024-04-20 09:39:04] INFO root fetch - main [MainThread]: Store serial: [22853629]
