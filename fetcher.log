@@ -15982,3 +15982,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:55:05] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star_alchemy-0.5.0.tar.gz]
 [2024-04-20 14:55:05] INFO root fetch - main [MainThread]: End processing [star-alchemy]: success
 [2024-04-20 14:55:05] INFO root fetch - main [MainThread]: Store serial: [22855807]
+[2024-04-20 14:57:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855807]
+[2024-04-20 14:57:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: star-alchemy
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-common
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: whole
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: druida
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC050
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pokerengine
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: DistributionalPrincipalAutoencoder
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ziptimezone
+[2024-04-20 14:57:15] INFO root fetch - processPackages [pokerengine]: New version: [1.1.1] Old Version: [1.1]
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.4] Old Version: [0.10.3]
+[2024-04-20 14:57:15] INFO root fetch - processPackages [star-alchemy]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-20 14:57:15] INFO root fetch - processPackages [druida]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 14:57:15] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 14:57:15] WARNING root fetch - processPackages [DistributionalPrincipalAutoencoder]: Skipping, unable to determine old version
+[2024-04-20 14:57:15] INFO root fetch - main [MainThread]: End processing [DistributionalPrincipalAutoencoder] error
+[2024-04-20 14:57:15] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/54/4a/598451ade8bde7f369deba69feb62cde24693585acb81aed1eb62547c114/druida-0.0.8.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/9a/6c/52f1455108229465ffb36246387b216d433046f6a3b4c526c30e6c734ada/pokerengine-1.1.tar.gz
+[2024-04-20 14:57:15] WARNING root fetch - processPackages [PythonTestLJC050]: Skipping, unable to determine old version
+[2024-04-20 14:57:15] INFO root fetch - main [MainThread]: End processing [PythonTestLJC050] error
+[2024-04-20 14:57:15] INFO root fetch - processPackages [whole]: New version: [1.0.0.0.0.6] Old Version: [1.0.0.0.0.4]
+[2024-04-20 14:57:15] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/92/21/05f3b64d16514871271b82cf54a7b4dd99ea91f0db243c8c65b45233e8fa/star_alchemy-0.5.0.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/ff/4d/832a819236f2db17ea07f12d5e30e8df490bb1d4ccd70842a0f0cbc6757c/ziptimezone-0.10.3.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [whole]: Downloading https://files.pythonhosted.org/packages/04/97/c6f3e1ae563a653cfad3c23b15c3cefe5ea38b45aaf8c44972271e9263c0/whole-1.0.0.0.0.4.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [druida]: Downloading https://files.pythonhosted.org/packages/c2/fc/04f7092cb544ce2c35e3be2dd5ff20bee19fcc5ba5378898e0f03e15b8a9/druida-0.0.9.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [pokerengine]: Downloading https://files.pythonhosted.org/packages/ea/bc/47bd5c77abc4dec5c6d13038e9c0e26dc13d2a18d0dfa13c9b4f51c583b9/pokerengine-1.1.1.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [star-alchemy]: Downloading https://files.pythonhosted.org/packages/b0/fa/bd1da2547941a343de62c17d0bdeffdf8daf5c437f6586c58d67cc33078b/star_alchemy-0.6.0.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [druida]: executing diffoscope
+[2024-04-20 14:57:15] INFO root fetch - processPackages [druida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/druida-0.0.8.tar.gz tmp/druida-0.0.9.tar.gz --markdown 20240420/d/druida/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/77/a2/a0a6756ebe5b53288e9e7c1c6bdfbe26754c7baae3a9da2d0b0de72a0a07/ziptimezone-0.10.4.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [pokerengine]: executing diffoscope
+[2024-04-20 14:57:15] INFO root fetch - processPackages [pokerengine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pokerengine-1.1.tar.gz tmp/pokerengine-1.1.1.tar.gz --markdown 20240420/p/pokerengine/1.1-1.1.1/README.md --exclude *.pyd
+[2024-04-20 14:57:15] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-20 14:57:15] INFO root fetch - processPackages [star-alchemy]: executing diffoscope
+[2024-04-20 14:57:15] INFO root fetch - processPackages [star-alchemy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/star_alchemy-0.5.0.tar.gz tmp/star_alchemy-0.6.0.tar.gz --markdown 20240420/s/star-alchemy/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 14:57:15] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.3.tar.gz tmp/ziptimezone-0.10.4.tar.gz --markdown 20240420/z/ziptimezone/0.10.3-0.10.4/README.md --exclude *.pyd
+[2024-04-20 14:57:16] INFO root fetch - processPackages [whole]: Downloading https://files.pythonhosted.org/packages/0d/d0/0e3243ddc6fac31690ac1de9938732484fb2ea89651f04e7cbccd6f0d7f6/whole-1.0.0.0.0.6.tar.gz
+[2024-04-20 14:57:16] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-20 14:57:16] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240420/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 14:57:16] INFO root fetch - processPackages [whole]: executing diffoscope
+[2024-04-20 14:57:16] INFO root fetch - processPackages [whole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whole-1.0.0.0.0.4.tar.gz tmp/whole-1.0.0.0.0.6.tar.gz --markdown 20240420/w/whole/1.0.0.0.0.4-1.0.0.0.0.6/README.md --exclude *.pyd
+[2024-04-20 14:57:16] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.8.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [druida]: Remove: archive file [/home/abi/fetcher/tmp/druida-0.0.9.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [druida]: success
+[2024-04-20 14:57:16] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.3.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.4.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 14:57:16] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star_alchemy-0.5.0.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [star-alchemy]: Remove: archive file [/home/abi/fetcher/tmp/star_alchemy-0.6.0.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [star-alchemy]: success
+[2024-04-20 14:57:16] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [pokerengine]: Remove: archive file [/home/abi/fetcher/tmp/pokerengine-1.1.1.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [pokerengine]: success
+[2024-04-20 14:57:16] INFO root fetch - processPackages [whole]: Remove: archive file [/home/abi/fetcher/tmp/whole-1.0.0.0.0.4.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [whole]: Remove: archive file [/home/abi/fetcher/tmp/whole-1.0.0.0.0.6.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [whole]: success
+[2024-04-20 14:57:16] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-20 14:57:16] INFO root fetch - main [MainThread]: Store serial: [22855831]
