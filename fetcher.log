@@ -9005,3 +9005,15 @@
 [2024-04-20 06:07:21] INFO root fetch - processPackages [biotech]: Remove: archive file [/home/abi/fetcher/tmp/biotech-1.1.4.tar.gz]
 [2024-04-20 06:07:21] INFO root fetch - main [MainThread]: End processing [biotech]: success
 [2024-04-20 06:07:21] INFO root fetch - main [MainThread]: Store serial: [22852386]
+[2024-04-20 06:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852386]
+[2024-04-20 06:09:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 06:09:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyphonic
+[2024-04-20 06:09:31] INFO root fetch - processPackages [pyphonic]: New version: [1.0.1] Old Version: [0.9.1]
+[2024-04-20 06:09:31] INFO root fetch - processPackages [pyphonic]: Downloading https://files.pythonhosted.org/packages/35/b2/c758b6c2533d41975610ed8b6a8421194bf881b997b9e778513feca9938a/Pyphonic-0.9.1.tar.gz
+[2024-04-20 06:09:31] INFO root fetch - processPackages [pyphonic]: Downloading https://files.pythonhosted.org/packages/8f/59/adae8de84503cf787b1bbc18d688fd24302df7d7dc5687a4876fa6afcd70/pyphonic-1.0.1.tar.gz
+[2024-04-20 06:09:31] INFO root fetch - processPackages [pyphonic]: executing diffoscope
+[2024-04-20 06:09:31] INFO root fetch - processPackages [pyphonic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pyphonic-0.9.1.tar.gz tmp/pyphonic-1.0.1.tar.gz --markdown 20240420/p/pyphonic/0.9.1-1.0.1/README.md --exclude *.pyd
+[2024-04-20 06:09:32] INFO root fetch - processPackages [pyphonic]: Remove: archive file [/home/abi/fetcher/tmp/Pyphonic-0.9.1.tar.gz]
+[2024-04-20 06:09:32] INFO root fetch - processPackages [pyphonic]: Remove: archive file [/home/abi/fetcher/tmp/pyphonic-1.0.1.tar.gz]
+[2024-04-20 06:09:32] INFO root fetch - main [MainThread]: End processing [pyphonic]: success
+[2024-04-20 06:09:32] INFO root fetch - main [MainThread]: Store serial: [22852389]
