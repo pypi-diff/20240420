@@ -15471,3 +15471,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:19:57] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
 [2024-04-20 14:19:57] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 14:19:57] INFO root fetch - main [MainThread]: Store serial: [22855572]
+[2024-04-20 14:22:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855572]
+[2024-04-20 14:22:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: math-ops-py
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sybil-engine
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snailshell
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lazy-type-hint
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ziptimezone
+[2024-04-20 14:22:05] INFO root fetch - processPackages [sybil-engine]: New version: [7.0.0] Old Version: [6.9.4]
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.2] Old Version: [0.10.1]
+[2024-04-20 14:22:05] INFO root fetch - processPackages [snailshell]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 14:22:05] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/c6/29/5a2d76913840b15393414e96c47add12dfc9990446e9cda3ea78e7b4c4ff/sybil_engine-6.9.4.tar.gz
+[2024-04-20 14:22:05] WARNING root fetch - processPackages [math-ops-py]: Skipping, unable to determine old version
+[2024-04-20 14:22:05] INFO root fetch - main [MainThread]: End processing [math-ops-py] error
+[2024-04-20 14:22:05] INFO root fetch - processPackages [lazy-type-hint]: New version: [2.1.0] Old Version: [2.0.9]
+[2024-04-20 14:22:05] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/31/fa/c6d4aacd7093c4ed8c274d159aa45ab04e7b7b5c2082e0d61b69115e9d6b/ziptimezone-0.10.1.tar.gz
+[2024-04-20 14:22:05] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/28/70/cae4b29d322efc44d70ca0ed64cb9279f19cd1f9e328c4662b19c5196c4d/snailshell-0.2.8.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/b4/04/8994c9b0ceb02fa9c71b994cc76fee5bff29585186ab16ac6fc5ed4bd9be/lazy_type_hint-2.0.9.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/8f/15/a1391ef6afcdd517a77960d4cf338f8e24c170f1d2d4cc7780cb5f32b9ff/sybil_engine-7.0.0.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/4d/41/8b4e624076175de5d67418f19b510db3368222da0271a7773049455b4d1d/ziptimezone-0.10.2.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-20 14:22:06] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-6.9.4.tar.gz tmp/sybil_engine-7.0.0.tar.gz --markdown 20240420/s/sybil-engine/6.9.4-7.0.0/README.md --exclude *.pyd
+[2024-04-20 14:22:06] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 14:22:06] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.1.tar.gz tmp/ziptimezone-0.10.2.tar.gz --markdown 20240420/z/ziptimezone/0.10.1-0.10.2/README.md --exclude *.pyd
+[2024-04-20 14:22:06] INFO root fetch - processPackages [lazy-type-hint]: Downloading https://files.pythonhosted.org/packages/63/c7/19fa76c70466be9f0210306046f1bc338d502468e026f1b21f2e945ab838/lazy_type_hint-2.1.0.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/71/9f/b99191b0a59da68e371d48cedcea65ef2bbe17b981e11133e2eeb1d69f46/snailshell-0.2.9.tar.gz
+[2024-04-20 14:22:06] INFO root fetch - processPackages [lazy-type-hint]: executing diffoscope
+[2024-04-20 14:22:06] INFO root fetch - processPackages [lazy-type-hint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazy_type_hint-2.0.9.tar.gz tmp/lazy_type_hint-2.1.0.tar.gz --markdown 20240420/l/lazy-type-hint/2.0.9-2.1.0/README.md --exclude *.pyd
+[2024-04-20 14:22:06] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 14:22:06] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.8.tar.gz tmp/snailshell-0.2.9.tar.gz --markdown 20240420/s/snailshell/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 14:22:07] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.1.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.2.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 14:22:07] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.9.4.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-7.0.0.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-20 14:22:07] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-2.0.9.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - processPackages [lazy-type-hint]: Remove: archive file [/home/abi/fetcher/tmp/lazy_type_hint-2.1.0.tar.gz]
+[2024-04-20 14:22:07] INFO root fetch - main [MainThread]: End processing [lazy-type-hint]: success
+[2024-04-20 14:22:08] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.8.tar.gz]
+[2024-04-20 14:22:08] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.9.tar.gz]
+[2024-04-20 14:22:08] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 14:22:08] INFO root fetch - main [MainThread]: Store serial: [22855589]
