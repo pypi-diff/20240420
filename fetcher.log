@@ -10280,3 +10280,15 @@
 [2024-04-20 07:58:12] INFO root fetch - processPackages [khoj-assistant]: Remove: archive file [/home/abi/fetcher/tmp/khoj_assistant-1.9.1.dev8.tar.gz]
 [2024-04-20 07:58:12] INFO root fetch - main [MainThread]: End processing [khoj-assistant]: success
 [2024-04-20 07:58:12] INFO root fetch - main [MainThread]: Store serial: [22853044]
+[2024-04-20 08:00:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853044]
+[2024-04-20 08:00:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 08:00:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solaredge2mqtt
+[2024-04-20 08:00:23] INFO root fetch - processPackages [solaredge2mqtt]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 08:00:23] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/6c/b6/0b9f57b107df49ec80c3be96fffd8b3daad3fc04af359ea2c268d2b525b0/solaredge2mqtt-1.0.8.tar.gz
+[2024-04-20 08:00:23] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/ca/c5/a64aea7e2c53a6394780bba16ed730d8ac2ea082c079e0a277582653596a/solaredge2mqtt-1.0.9.tar.gz
+[2024-04-20 08:00:23] INFO root fetch - processPackages [solaredge2mqtt]: executing diffoscope
+[2024-04-20 08:00:23] INFO root fetch - processPackages [solaredge2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge2mqtt-1.0.8.tar.gz tmp/solaredge2mqtt-1.0.9.tar.gz --markdown 20240420/s/solaredge2mqtt/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 08:00:24] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.8.tar.gz]
+[2024-04-20 08:00:24] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
+[2024-04-20 08:00:24] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
+[2024-04-20 08:00:24] INFO root fetch - main [MainThread]: Store serial: [22853047]
