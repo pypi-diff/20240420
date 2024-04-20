@@ -15188,3 +15188,36 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
 [2024-04-20 14:02:29] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
 [2024-04-20 14:02:29] INFO root fetch - main [MainThread]: Store serial: [22855413]
+[2024-04-20 14:04:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855413]
+[2024-04-20 14:04:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 14:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airflow-provider-sapiq
+[2024-04-20 14:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kivymd-utils
+[2024-04-20 14:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC036
+[2024-04-20 14:04:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pan-ztp-patcher
+[2024-04-20 14:04:38] INFO root fetch - processPackages [pan-ztp-patcher]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-20 14:04:38] INFO root fetch - processPackages [kivymd-utils]: New version: [0.16.0] Old Version: [0.15.4]
+[2024-04-20 14:04:38] INFO root fetch - processPackages [airflow-provider-sapiq]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-20 14:04:38] WARNING root fetch - processPackages [PythonTestLJC036]: Skipping, unable to determine old version
+[2024-04-20 14:04:38] INFO root fetch - main [MainThread]: End processing [PythonTestLJC036] error
+[2024-04-20 14:04:38] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/f3/d4/edf1124c86e331e5cb6c85c82fe6ef69782d0e80c300c2fa45423b227f4b/pan_ztp_patcher-0.2.7.tar.gz
+[2024-04-20 14:04:38] INFO root fetch - processPackages [kivymd-utils]: Downloading https://files.pythonhosted.org/packages/b8/b2/b673a9df04fce85193f33c979b8f15d1cad2c286f1ef7cdf628445d2aa33/kivymd_utils-0.15.4.tar.gz
+[2024-04-20 14:04:38] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/9f/0a/d273ea5459cf9193f56890e358bbeeb859ae232f2699bc11781ec704d843/airflow_provider_sapiq-0.1.7.tar.gz
+[2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: Downloading https://files.pythonhosted.org/packages/67/11/13fcb0319b91b0f2a20d57b2966a657e42b30eaa6bf62ef204a3644015ba/kivymd_utils-0.16.0.tar.gz
+[2024-04-20 14:04:39] INFO root fetch - processPackages [airflow-provider-sapiq]: Downloading https://files.pythonhosted.org/packages/a9/9c/f1c691471b77087ed32e29d7c40df8952bdbf0b2c842f422ed2a1559b5bc/airflow_provider_sapiq-0.2.0.tar.gz
+[2024-04-20 14:04:39] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/41/1b/709776eda2b5ed0ea54776ca6a64a16ce05cbd7d6a3c24c83e6cd31a46a9/pan_ztp_patcher-0.2.8.tar.gz
+[2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: executing diffoscope
+[2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kivymd_utils-0.15.4.tar.gz tmp/kivymd_utils-0.16.0.tar.gz --markdown 20240420/k/kivymd-utils/0.15.4-0.16.0/README.md --exclude *.pyd
+[2024-04-20 14:04:39] INFO root fetch - processPackages [airflow-provider-sapiq]: executing diffoscope
+[2024-04-20 14:04:39] INFO root fetch - processPackages [airflow-provider-sapiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airflow_provider_sapiq-0.1.7.tar.gz tmp/airflow_provider_sapiq-0.2.0.tar.gz --markdown 20240420/a/airflow-provider-sapiq/0.1.7-0.2.0/README.md --exclude *.pyd
+[2024-04-20 14:04:39] INFO root fetch - processPackages [pan-ztp-patcher]: executing diffoscope
+[2024-04-20 14:04:39] INFO root fetch - processPackages [pan-ztp-patcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pan_ztp_patcher-0.2.7.tar.gz tmp/pan_ztp_patcher-0.2.8.tar.gz --markdown 20240420/p/pan-ztp-patcher/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-20 14:04:39] INFO root fetch - processPackages [airflow-provider-sapiq]: Remove: archive file [/home/abi/fetcher/tmp/airflow_provider_sapiq-0.1.7.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - processPackages [airflow-provider-sapiq]: Remove: archive file [/home/abi/fetcher/tmp/airflow_provider_sapiq-0.2.0.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - main [MainThread]: End processing [airflow-provider-sapiq]: success
+[2024-04-20 14:04:39] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.7.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.8.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher]: success
+[2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: Remove: archive file [/home/abi/fetcher/tmp/kivymd_utils-0.15.4.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - processPackages [kivymd-utils]: Remove: archive file [/home/abi/fetcher/tmp/kivymd_utils-0.16.0.tar.gz]
+[2024-04-20 14:04:39] INFO root fetch - main [MainThread]: End processing [kivymd-utils]: success
+[2024-04-20 14:04:39] INFO root fetch - main [MainThread]: Store serial: [22855435]
