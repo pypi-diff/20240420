@@ -17622,3 +17622,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:49:22] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.4.0.tar.gz]
 [2024-04-20 16:49:22] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
 [2024-04-20 16:49:22] INFO root fetch - main [MainThread]: Store serial: [22856734]
+[2024-04-20 16:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856734]
+[2024-04-20 16:51:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ml-indie-tools
+[2024-04-20 16:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcpi2
+[2024-04-20 16:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:51:31] WARNING root fetch - processPackages [mcpi2]: Skipping, unable to determine old version
+[2024-04-20 16:51:31] INFO root fetch - main [MainThread]: End processing [mcpi2] error
+[2024-04-20 16:51:31] INFO root fetch - processPackages [ml-indie-tools]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 16:51:31] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/69/1d/c6da639234bf4fc987bcf4c70d7f07f77fa76a44aefc0606a4a01d5a7df1/ml-indie-tools-0.9.8.tar.gz
+[2024-04-20 16:51:31] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 16:51:32] INFO root fetch - processPackages [ml-indie-tools]: Downloading https://files.pythonhosted.org/packages/dc/de/d925fee74bb8d13f43b041409d0894d88ac152c18da6ca97c4d9820355c9/ml-indie-tools-0.9.9.tar.gz
+[2024-04-20 16:51:32] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/68/20b5f6e54c9032707d00d7e9117263972272e7874f5a170ced6a5ffcb47b/few_shot_learning_nlp-0.0.8.tar.gz
+[2024-04-20 16:51:32] INFO root fetch - processPackages [ml-indie-tools]: executing diffoscope
+[2024-04-20 16:51:32] INFO root fetch - processPackages [ml-indie-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-indie-tools-0.9.8.tar.gz tmp/ml-indie-tools-0.9.9.tar.gz --markdown 20240420/m/ml-indie-tools/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 16:51:32] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/f7/b7/ce90227ee222736843a343454580f6f8c4d566e3314c078ed8a7a3c4e444/few_shot_learning_nlp-0.0.9.tar.gz
+[2024-04-20 16:51:32] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:51:32] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.8.tar.gz tmp/few_shot_learning_nlp-0.0.9.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 16:51:32] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.8.tar.gz]
+[2024-04-20 16:51:32] INFO root fetch - processPackages [ml-indie-tools]: Remove: archive file [/home/abi/fetcher/tmp/ml-indie-tools-0.9.9.tar.gz]
+[2024-04-20 16:51:32] INFO root fetch - main [MainThread]: End processing [ml-indie-tools]: success
+[2024-04-20 16:51:33] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.8.tar.gz]
+[2024-04-20 16:51:33] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.9.tar.gz]
+[2024-04-20 16:51:33] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:51:33] INFO root fetch - main [MainThread]: Store serial: [22856742]
