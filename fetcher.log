@@ -17787,3 +17787,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:02:37] INFO root fetch - processPackages [cmo]: Remove: archive file [/home/abi/fetcher/tmp/cmo-0.1.3.tar.gz]
 [2024-04-20 17:02:37] INFO root fetch - main [MainThread]: End processing [cmo]: success
 [2024-04-20 17:02:37] INFO root fetch - main [MainThread]: Store serial: [22856802]
+[2024-04-20 17:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856802]
+[2024-04-20 17:04:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ziptimezone
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rocco
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC096
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dhkimpypack01
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ziptimezone]: New version: [0.10.6] Old Version: [0.10.5]
+[2024-04-20 17:04:46] INFO root fetch - processPackages [dhkimpypack01]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/89/25/bbbe63c8f2bd4f96d2e3ab3cca9472b4afa0633d474bf080462a67bc3bbc/ziptimezone-0.10.5.tar.gz
+[2024-04-20 17:04:46] WARNING root fetch - processPackages [PythonTestLJC096]: Skipping, unable to determine old version
+[2024-04-20 17:04:46] INFO root fetch - main [MainThread]: End processing [PythonTestLJC096] error
+[2024-04-20 17:04:46] INFO root fetch - processPackages [rocco]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-20 17:04:46] INFO root fetch - processPackages [dhkimpypack01]: Downloading https://files.pythonhosted.org/packages/d6/f3/42e7f3f7fad43817226635fcccb155cf735a8c05972a6daf95328c7e8aa5/dhkimpypack01-0.0.0-py3-none-any.whl
+[2024-04-20 17:04:46] INFO root fetch - processPackages [rocco]: Downloading https://files.pythonhosted.org/packages/12/ef/26074866440aaac88be722a6b157a61e36608820927177d4eee208a5cd85/rocco-0.9.4.tar.gz
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ziptimezone]: Downloading https://files.pythonhosted.org/packages/6f/82/c0b82329b1c79ba48ec600445144ed579b291eb675ebce61bca40d013c65/ziptimezone-0.10.6.tar.gz
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ziptimezone]: executing diffoscope
+[2024-04-20 17:04:46] INFO root fetch - processPackages [ziptimezone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ziptimezone-0.10.5.tar.gz tmp/ziptimezone-0.10.6.tar.gz --markdown 20240420/z/ziptimezone/0.10.5-0.10.6/README.md --exclude *.pyd
+[2024-04-20 17:04:46] INFO root fetch - processPackages [dhkimpypack01]: Downloading https://files.pythonhosted.org/packages/23/1d/0f881aab39c179b81e1230812deceb6c52039a327b10b2a855857cb05687/dhkimpypack01-0.0.1-py3-none-any.whl
+[2024-04-20 17:04:47] INFO root fetch - processPackages [rocco]: Downloading https://files.pythonhosted.org/packages/00/9c/aded4e8cecd3c2248c666a5da3d227359dca9c18deb02270c35cc16df8a6/rocco-0.9.5.tar.gz
+[2024-04-20 17:04:47] INFO root fetch - processPackages [dhkimpypack01]: executing diffoscope
+[2024-04-20 17:04:47] INFO root fetch - processPackages [dhkimpypack01]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dhkimpypack01-0.0.0-py3-none-any.whl.zip tmp/dhkimpypack01-0.0.1-py3-none-any.whl.zip --markdown 20240420/d/dhkimpypack01/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-20 17:04:47] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.5.tar.gz]
+[2024-04-20 17:04:47] INFO root fetch - processPackages [ziptimezone]: Remove: archive file [/home/abi/fetcher/tmp/ziptimezone-0.10.6.tar.gz]
+[2024-04-20 17:04:47] INFO root fetch - main [MainThread]: End processing [ziptimezone]: success
+[2024-04-20 17:04:47] INFO root fetch - processPackages [rocco]: executing diffoscope
+[2024-04-20 17:04:47] INFO root fetch - processPackages [rocco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocco-0.9.4.tar.gz tmp/rocco-0.9.5.tar.gz --markdown 20240420/r/rocco/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-20 17:04:47] INFO root fetch - processPackages [dhkimpypack01]: Remove: archive file [/home/abi/fetcher/tmp/dhkimpypack01-0.0.0-py3-none-any.whl.zip]
+[2024-04-20 17:04:47] INFO root fetch - processPackages [dhkimpypack01]: Remove: archive file [/home/abi/fetcher/tmp/dhkimpypack01-0.0.1-py3-none-any.whl.zip]
+[2024-04-20 17:04:47] INFO root fetch - main [MainThread]: End processing [dhkimpypack01]: success
+[2024-04-20 17:04:48] INFO root fetch - processPackages [rocco]: Remove: archive file [/home/abi/fetcher/tmp/rocco-0.9.4.tar.gz]
+[2024-04-20 17:04:48] INFO root fetch - processPackages [rocco]: Remove: archive file [/home/abi/fetcher/tmp/rocco-0.9.5.tar.gz]
+[2024-04-20 17:04:48] INFO root fetch - main [MainThread]: End processing [rocco]: success
+[2024-04-20 17:04:48] INFO root fetch - main [MainThread]: Store serial: [22856815]
