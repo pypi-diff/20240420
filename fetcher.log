@@ -14819,3 +14819,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:33:58] INFO root fetch - processPackages [ortfodb]: Remove: archive file [/home/abi/fetcher/tmp/ortfodb-1.5.0.tar.gz]
 [2024-04-20 13:33:58] INFO root fetch - main [MainThread]: End processing [ortfodb]: success
 [2024-04-20 13:33:58] INFO root fetch - main [MainThread]: Store serial: [22855189]
+[2024-04-20 13:36:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855189]
+[2024-04-20 13:36:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 13:36:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 13:36:07] INFO root fetch - processPackages [snailshell]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 13:36:07] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/75/99/2fb9113aed0599879161b35d6a2152a1ce56cb1af1f6c6765714fdfee6c2/snailshell-0.2.6.tar.gz
+[2024-04-20 13:36:09] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/f4/2e/70272107c10ad674276dc68fcaecd0124b24ab4d06b1b132d2a3baadae12/snailshell-0.2.7.tar.gz
+[2024-04-20 13:36:10] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 13:36:10] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.6.tar.gz tmp/snailshell-0.2.7.tar.gz --markdown 20240420/s/snailshell/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 13:36:11] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.6.tar.gz]
+[2024-04-20 13:36:11] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.7.tar.gz]
+[2024-04-20 13:36:11] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 13:36:11] INFO root fetch - main [MainThread]: Store serial: [22855192]
