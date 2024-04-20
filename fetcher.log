@@ -13026,3 +13026,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:33:02] INFO root fetch - processPackages [acctf]: Remove: archive file [/home/abi/fetcher/tmp/acctf-0.4.0.tar.gz]
 [2024-04-20 11:33:02] INFO root fetch - main [MainThread]: End processing [acctf]: success
 [2024-04-20 11:33:02] INFO root fetch - main [MainThread]: Store serial: [22854374]
+[2024-04-20 11:35:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854374]
+[2024-04-20 11:35:12] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC003
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC004
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC005
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC006
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: panpdf
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hooks-toolkit
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PythonTestLJC007
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: humemai
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC008
+[2024-04-20 11:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: BJSCP
+[2024-04-20 11:35:13] INFO root fetch - processPackages [panpdf]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC005]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC005] error
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC006]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC006] error
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC007]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC007] error
+[2024-04-20 11:35:13] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/6a/e0/7a24a3dd6d88e232c8f645eb609a102c258a35969dc9c2ad2240fc4e6148/panpdf-0.2.0.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [humemai]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC008]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC008] error
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [BJSCP]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [BJSCP] error
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC003]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - processPackages [hooks-toolkit]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-20 11:35:13] WARNING root fetch - processPackages [PythonTestLJC004]: Skipping, unable to determine old version
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC003] error
+[2024-04-20 11:35:13] INFO root fetch - main [MainThread]: End processing [PythonTestLJC004] error
+[2024-04-20 11:35:13] INFO root fetch - processPackages [hooks-toolkit]: Downloading https://files.pythonhosted.org/packages/1d/b1/2ad6334bb810ce85c1028d0a082ac5960f913dca8c733fcfb87571d79c3b/hooks_toolkit-1.0.3.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [humemai]: Downloading https://files.pythonhosted.org/packages/3c/22/2b4bedaaee2f42feabeac56ee2405348b1390812461c4e2e0b23e2b8ee05/humemai-1.0.0.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [panpdf]: Downloading https://files.pythonhosted.org/packages/2c/b7/7a9139b93a08a8eea3b82116a6e8b28acc4810b45c2c84fd1845b5ab176a/panpdf-0.2.1.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [panpdf]: executing diffoscope
+[2024-04-20 11:35:13] INFO root fetch - processPackages [panpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/panpdf-0.2.0.tar.gz tmp/panpdf-0.2.1.tar.gz --markdown 20240420/p/panpdf/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 11:35:13] INFO root fetch - processPackages [humemai]: Downloading https://files.pythonhosted.org/packages/cc/15/4a3c6a59bdfdea3f7588a3828a824c408d266fa44e1a86fec2fb9dc996c2/humemai-1.0.1.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [hooks-toolkit]: Downloading https://files.pythonhosted.org/packages/9c/c9/8a2e50dc46824020b67ab80a2e5a3e550b03e5cc4f9f95b57cba4f407c34/hooks_toolkit-1.0.4.tar.gz
+[2024-04-20 11:35:13] INFO root fetch - processPackages [hooks-toolkit]: executing diffoscope
+[2024-04-20 11:35:13] INFO root fetch - processPackages [hooks-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hooks_toolkit-1.0.3.tar.gz tmp/hooks_toolkit-1.0.4.tar.gz --markdown 20240420/h/hooks-toolkit/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-04-20 11:35:13] INFO root fetch - processPackages [humemai]: executing diffoscope
+[2024-04-20 11:35:13] INFO root fetch - processPackages [humemai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/humemai-1.0.0.tar.gz tmp/humemai-1.0.1.tar.gz --markdown 20240420/h/humemai/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 11:35:14] INFO root fetch - processPackages [hooks-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/hooks_toolkit-1.0.3.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - processPackages [hooks-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/hooks_toolkit-1.0.4.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - main [MainThread]: End processing [hooks-toolkit]: success
+[2024-04-20 11:35:14] INFO root fetch - processPackages [humemai]: Remove: archive file [/home/abi/fetcher/tmp/humemai-1.0.0.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - processPackages [humemai]: Remove: archive file [/home/abi/fetcher/tmp/humemai-1.0.1.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - main [MainThread]: End processing [humemai]: success
+[2024-04-20 11:35:14] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.0.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.1.tar.gz]
+[2024-04-20 11:35:14] INFO root fetch - main [MainThread]: End processing [panpdf]: success
+[2024-04-20 11:35:14] INFO root fetch - main [MainThread]: Store serial: [22854417]
