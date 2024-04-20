@@ -24054,3 +24054,18 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:52:00] INFO root fetch - processPackages [pyrealsense2]: Remove: archive file [/home/abi/fetcher/tmp/pyrealsense2-2.9.1-cp36-cp36m-win_amd64.whl.zip]
 [2024-04-20 23:52:00] INFO root fetch - main [MainThread]: End processing [pyrealsense2]: success
 [2024-04-20 23:52:00] INFO root fetch - main [MainThread]: Store serial: [22859759]
+[2024-04-20 23:54:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859759]
+[2024-04-20 23:54:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 23:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC243
+[2024-04-20 23:54:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2024-04-20 23:54:09] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-04-20 23:54:09] WARNING root fetch - processPackages [PythonTestLJC243]: Skipping, unable to determine old version
+[2024-04-20 23:54:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC243] error
+[2024-04-20 23:54:09] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-04-20 23:54:10] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-04-20 23:54:10] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-04-20 23:54:10] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240420/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-04-20 23:54:11] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-04-20 23:54:11] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-04-20 23:54:11] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-04-20 23:54:11] INFO root fetch - main [MainThread]: Store serial: [22859767]
