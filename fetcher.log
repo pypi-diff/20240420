@@ -16918,3 +16918,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:01:23] INFO root fetch - processPackages [django-router]: Remove: archive file [/home/abi/fetcher/tmp/django_router-1.0.8.tar.gz]
 [2024-04-20 16:01:23] INFO root fetch - main [MainThread]: End processing [django-router]: success
 [2024-04-20 16:01:23] INFO root fetch - main [MainThread]: Store serial: [22856416]
+[2024-04-20 16:03:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856416]
+[2024-04-20 16:03:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 16:03:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdocs-drawio-exporter
+[2024-04-20 16:03:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srai
+[2024-04-20 16:03:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC074
+[2024-04-20 16:03:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:03:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-yinying-chat
+[2024-04-20 16:03:31] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 16:03:32] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/0c/de/776105a59e82bfba7a0db2878bfb3ca79049f12f94212f6771560f06e7e8/few_shot_learning_nlp-0.0.3.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: New version: [1.1] Old Version: [1.0]
+[2024-04-20 16:03:32] WARNING root fetch - processPackages [PythonTestLJC074]: Skipping, unable to determine old version
+[2024-04-20 16:03:32] INFO root fetch - main [MainThread]: End processing [PythonTestLJC074] error
+[2024-04-20 16:03:32] INFO root fetch - processPackages [srai]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-20 16:03:32] INFO root fetch - processPackages [mkdocs-drawio-exporter]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-20 16:03:32] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: Downloading https://files.pythonhosted.org/packages/37/de/068267141d12afffb6ff98290383ac7dab22524a42b321be5b8b6bb62372/nonebot-plugin-yinying-chat-1.0.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [srai]: Downloading https://files.pythonhosted.org/packages/b9/05/29cb75cc389b7ddee627c1e735772c92a21aaa9ede6c290880b8058d79a6/srai-0.7.1.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [mkdocs-drawio-exporter]: Downloading https://files.pythonhosted.org/packages/17/4c/d5bea00fe919c24257af50e475abe3b30decc039ea22d13ea1de532a8756/mkdocs-drawio-exporter-0.8.0.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/2c/37/884bfb265445396d8d6e8ed1e31592f8e475cdba55f807d853821555a29b/few_shot_learning_nlp-0.0.4.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:03:32] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.3.tar.gz tmp/few_shot_learning_nlp-0.0.4.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 16:03:32] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: Downloading https://files.pythonhosted.org/packages/2e/ce/8be19fa0f81819c942d5c3882aa9c3e5694b1bf90b076574cad2f6125617/nonebot-plugin-yinying-chat-1.1.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [mkdocs-drawio-exporter]: Downloading https://files.pythonhosted.org/packages/6b/2c/462185d8136b00e31f208295af4ac92942a5520f537a95bf1247b9b54ab3/mkdocs_drawio_exporter-0.9.0.tar.gz
+[2024-04-20 16:03:32] INFO root fetch - processPackages [mkdocs-drawio-exporter]: executing diffoscope
+[2024-04-20 16:03:32] INFO root fetch - processPackages [mkdocs-drawio-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-drawio-exporter-0.8.0.tar.gz tmp/mkdocs_drawio_exporter-0.9.0.tar.gz --markdown 20240420/m/mkdocs-drawio-exporter/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-04-20 16:03:32] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: executing diffoscope
+[2024-04-20 16:03:32] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-yinying-chat-1.0.tar.gz tmp/nonebot-plugin-yinying-chat-1.1.tar.gz --markdown 20240420/n/nonebot-plugin-yinying-chat/1.0-1.1/README.md --exclude *.pyd
+[2024-04-20 16:03:32] INFO root fetch - processPackages [srai]: Downloading https://files.pythonhosted.org/packages/d5/84/954706db49e948cc3e4dfa01aa79163f5109d0f10d160071769346de6e38/srai-0.7.2.tar.gz
+[2024-04-20 16:03:33] INFO root fetch - processPackages [srai]: executing diffoscope
+[2024-04-20 16:03:33] INFO root fetch - processPackages [srai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srai-0.7.1.tar.gz tmp/srai-0.7.2.tar.gz --markdown 20240420/s/srai/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-20 16:03:33] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.3.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.4.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:03:33] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-yinying-chat-1.0.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - processPackages [nonebot-plugin-yinying-chat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-yinying-chat-1.1.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-yinying-chat]: success
+[2024-04-20 16:03:33] INFO root fetch - processPackages [mkdocs-drawio-exporter]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-drawio-exporter-0.8.0.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - processPackages [mkdocs-drawio-exporter]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_drawio_exporter-0.9.0.tar.gz]
+[2024-04-20 16:03:33] INFO root fetch - main [MainThread]: End processing [mkdocs-drawio-exporter]: success
+[2024-04-20 16:03:34] INFO root fetch - processPackages [srai]: Remove: archive file [/home/abi/fetcher/tmp/srai-0.7.1.tar.gz]
+[2024-04-20 16:03:34] INFO root fetch - processPackages [srai]: Remove: archive file [/home/abi/fetcher/tmp/srai-0.7.2.tar.gz]
+[2024-04-20 16:03:34] INFO root fetch - main [MainThread]: End processing [srai]: success
+[2024-04-20 16:03:34] INFO root fetch - main [MainThread]: Store serial: [22856433]
