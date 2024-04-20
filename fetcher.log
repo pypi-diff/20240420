@@ -15012,3 +15012,68 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:53:42] INFO root fetch - processPackages [telegram-notifier-client]: Remove: archive file [/home/abi/fetcher/tmp/telegram_notifier_client-1.0.9.tar.gz]
 [2024-04-20 13:53:42] INFO root fetch - main [MainThread]: End processing [telegram-notifier-client]: success
 [2024-04-20 13:53:42] INFO root fetch - main [MainThread]: Store serial: [22855323]
+[2024-04-20 13:55:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855323]
+[2024-04-20 13:55:50] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC033
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: parsee-core
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ccdt
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kivymd-utils
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: japanese-address-parser-py
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kayalab
+[2024-04-20 13:55:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: domb
+[2024-04-20 13:55:51] INFO root fetch - processPackages [ccdt]: New version: [2.1.99] Old Version: [2.1.98]
+[2024-04-20 13:55:51] WARNING root fetch - processPackages [PythonTestLJC033]: Skipping, unable to determine old version
+[2024-04-20 13:55:51] INFO root fetch - main [MainThread]: End processing [PythonTestLJC033] error
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kivymd-utils]: New version: [0.16.0] Old Version: [0.15.4]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [japanese-address-parser-py]: New version: [0.1.0b14] Old Version: [0.1.0b13]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [cerbogen]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [parsee-core]: New version: [0.1.4.9] Old Version: [0.1.4.8]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5e/9c/468b97d81f651afdc79c90181caf3e96586e1faf49f1f0272cd9d59234cc/ccdt-2.1.98.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kayalab]: New version: [0.7.9] Old Version: [0.7.7]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [domb]: New version: [2023.11.post1] Old Version: [2023.11.3]
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kivymd-utils]: Downloading https://files.pythonhosted.org/packages/b8/b2/b673a9df04fce85193f33c979b8f15d1cad2c286f1ef7cdf628445d2aa33/kivymd_utils-0.15.4.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/82/a9/f326ee8d2774e928dd1568e252d317fbcd0908f37194239a7e8d19cbbf52/cerbogen-0.0.18.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/7a/50/254187550fba83da8e34776ce7e4c5844d1785b705b16a1ee835f8b7f74e/parsee_core-0.1.4.8.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/c8/d9/2c0ae43101ce8eafdb9a2794253ebd9beb982fc76832f715871f027e928c/japanese_address_parser_py-0.1.0b13.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [domb]: Downloading https://files.pythonhosted.org/packages/0f/f8/4907d954e9dfdb3be58a9e106d319775706a0fc07af1ea65fb9b9034316b/domb-2023.11.3.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kayalab]: Downloading https://files.pythonhosted.org/packages/68/63/0a29e7525b1f3462acb2531260d984867651bdccb876b75329d58bfa520d/kayalab-0.7.7.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/bf/88/0a8bde31365394e095dda74c8f4ec442ff47265c632929a84196b5192056/ccdt-2.1.99.tar.gz
+[2024-04-20 13:55:51] WARNING root fetch - processPackages [cerbogen]: Skipping package: exceeds size limit 26130831>=10485760
+[2024-04-20 13:55:51] INFO root fetch - main [MainThread]: End processing [cerbogen] error
+[2024-04-20 13:55:51] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2024-04-20 13:55:51] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.1.98.tar.gz tmp/ccdt-2.1.99.tar.gz --markdown 20240420/c/ccdt/2.1.98-2.1.99/README.md --exclude *.pyd
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kivymd-utils]: Downloading https://files.pythonhosted.org/packages/67/11/13fcb0319b91b0f2a20d57b2966a657e42b30eaa6bf62ef204a3644015ba/kivymd_utils-0.16.0.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [parsee-core]: Downloading https://files.pythonhosted.org/packages/87/4f/31752247b806b1f52883033ecb4efbcec34d8a58a18a3a051c733dd38686/parsee_core-0.1.4.9.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kivymd-utils]: executing diffoscope
+[2024-04-20 13:55:51] INFO root fetch - processPackages [kivymd-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kivymd_utils-0.15.4.tar.gz tmp/kivymd_utils-0.16.0.tar.gz --markdown 20240420/k/kivymd-utils/0.15.4-0.16.0/README.md --exclude *.pyd
+[2024-04-20 13:55:51] INFO root fetch - processPackages [japanese-address-parser-py]: Downloading https://files.pythonhosted.org/packages/9f/9d/e21195c38e2ce47c14eacc29f4cd3013b71bf8e5402c9da31ba436ec3f0c/japanese_address_parser_py-0.1.0b14.tar.gz
+[2024-04-20 13:55:51] INFO root fetch - processPackages [parsee-core]: executing diffoscope
+[2024-04-20 13:55:51] INFO root fetch - processPackages [parsee-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/parsee_core-0.1.4.8.tar.gz tmp/parsee_core-0.1.4.9.tar.gz --markdown 20240420/p/parsee-core/0.1.4.8-0.1.4.9/README.md --exclude *.pyd
+[2024-04-20 13:55:51] INFO root fetch - processPackages [japanese-address-parser-py]: executing diffoscope
+[2024-04-20 13:55:51] INFO root fetch - processPackages [japanese-address-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/japanese_address_parser_py-0.1.0b13.tar.gz tmp/japanese_address_parser_py-0.1.0b14.tar.gz --markdown 20240420/j/japanese-address-parser-py/0.1.0b13-0.1.0b14/README.md --exclude *.pyd
+[2024-04-20 13:55:51] INFO root fetch - processPackages [domb]: Downloading https://files.pythonhosted.org/packages/dd/57/911c33253407d6d45de9503bacacea1caee1f3c2e5d6287713c1e799e606/domb-2023.11.post1.tar.gz
+[2024-04-20 13:55:52] INFO root fetch - processPackages [domb]: executing diffoscope
+[2024-04-20 13:55:52] INFO root fetch - processPackages [domb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domb-2023.11.3.tar.gz tmp/domb-2023.11.post1.tar.gz --markdown 20240420/d/domb/2023.11.3-2023.11.post1/README.md --exclude *.pyd
+[2024-04-20 13:55:52] INFO root fetch - processPackages [kivymd-utils]: Remove: archive file [/home/abi/fetcher/tmp/kivymd_utils-0.15.4.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - processPackages [kivymd-utils]: Remove: archive file [/home/abi/fetcher/tmp/kivymd_utils-0.16.0.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - main [MainThread]: End processing [kivymd-utils]: success
+[2024-04-20 13:55:52] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.98.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.99.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2024-04-20 13:55:52] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b13.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - processPackages [japanese-address-parser-py]: Remove: archive file [/home/abi/fetcher/tmp/japanese_address_parser_py-0.1.0b14.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - main [MainThread]: End processing [japanese-address-parser-py]: success
+[2024-04-20 13:55:52] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.8.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - processPackages [parsee-core]: Remove: archive file [/home/abi/fetcher/tmp/parsee_core-0.1.4.9.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - main [MainThread]: End processing [parsee-core]: success
+[2024-04-20 13:55:52] INFO root fetch - processPackages [domb]: Remove: archive file [/home/abi/fetcher/tmp/domb-2023.11.3.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - processPackages [domb]: Remove: archive file [/home/abi/fetcher/tmp/domb-2023.11.post1.tar.gz]
+[2024-04-20 13:55:52] INFO root fetch - main [MainThread]: End processing [domb]: success
+[2024-04-20 13:55:53] INFO root fetch - processPackages [kayalab]: Downloading https://files.pythonhosted.org/packages/48/39/39e758163c554700194cf72c42f0290287f1336d791be5766d519f7b266c/kayalab-0.7.9.tar.gz
+[2024-04-20 13:55:54] INFO root fetch - processPackages [kayalab]: executing diffoscope
+[2024-04-20 13:55:54] INFO root fetch - processPackages [kayalab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayalab-0.7.7.tar.gz tmp/kayalab-0.7.9.tar.gz --markdown 20240420/k/kayalab/0.7.7-0.7.9/README.md --exclude *.pyd
+[2024-04-20 13:55:57] INFO root fetch - processPackages [kayalab]: Remove: archive file [/home/abi/fetcher/tmp/kayalab-0.7.7.tar.gz]
+[2024-04-20 13:55:57] INFO root fetch - processPackages [kayalab]: Remove: archive file [/home/abi/fetcher/tmp/kayalab-0.7.9.tar.gz]
+[2024-04-20 13:55:57] INFO root fetch - main [MainThread]: End processing [kayalab]: success
+[2024-04-20 13:55:57] INFO root fetch - main [MainThread]: Store serial: [22855367]
