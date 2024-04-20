@@ -7754,3 +7754,26 @@
 [2024-04-20 04:20:20] INFO root fetch - processPackages [pypi-cleanup]: Remove: archive file [/home/abi/fetcher/tmp/pypi_cleanup-0.1.6.dev20240420021837.tar.gz]
 [2024-04-20 04:20:20] INFO root fetch - main [MainThread]: End processing [pypi-cleanup]: success
 [2024-04-20 04:20:20] INFO root fetch - main [MainThread]: Store serial: [22851819]
+[2024-04-20 04:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851819]
+[2024-04-20 04:22:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skyramp
+[2024-04-20 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shipper-shippy
+[2024-04-20 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bd-vslot
+[2024-04-20 04:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eenhoorntje-llm-lib
+[2024-04-20 04:22:29] INFO root fetch - processPackages [skyramp]: New version: [0.4.80] Old Version: [0.4.79]
+[2024-04-20 04:22:29] WARNING root fetch - processPackages [eenhoorntje-llm-lib]: Skipping, unable to determine old version
+[2024-04-20 04:22:29] INFO root fetch - main [MainThread]: End processing [eenhoorntje-llm-lib] error
+[2024-04-20 04:22:29] WARNING root fetch - processPackages [bd-vslot]: Skipping, unable to determine old version
+[2024-04-20 04:22:29] INFO root fetch - main [MainThread]: End processing [bd-vslot] error
+[2024-04-20 04:22:29] INFO root fetch - processPackages [shipper-shippy]: New version: [2.35.0] Old Version: [2.34.0]
+[2024-04-20 04:22:29] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/30/48/07c95807690453b874e8ab6ec3207e18628686fd69e0d5453e294208c186/shipper_shippy-2.34.tar.gz
+[2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/e5/18/5e9bc514e9705589d04aa3a81766744597bfc98e5eed71d962571c5805d2/shipper_shippy-2.35.0.tar.gz
+[2024-04-20 04:22:30] INFO root fetch - processPackages [skyramp]: Downloading https://files.pythonhosted.org/packages/fa/41/de69f4e284004fb4841daa7b7242a6f57610b0cdcd09330eda810fff3e8a/skyramp-0.4.79.tar.gz
+[2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: executing diffoscope
+[2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipper_shippy-2.34.tar.gz tmp/shipper_shippy-2.35.0.tar.gz --markdown 20240420/s/shipper-shippy/2.34.0-2.35.0/README.md --exclude *.pyd
+[2024-04-20 04:22:30] WARNING root fetch - processPackages [skyramp]: Skipping package: exceeds size limit 162091328>=10485760
+[2024-04-20 04:22:30] INFO root fetch - main [MainThread]: End processing [skyramp] error
+[2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.34.tar.gz]
+[2024-04-20 04:22:30] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.35.0.tar.gz]
+[2024-04-20 04:22:30] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
+[2024-04-20 04:22:30] INFO root fetch - main [MainThread]: Store serial: [22851835]
