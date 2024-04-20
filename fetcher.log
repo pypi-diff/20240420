@@ -21557,3 +21557,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:55:59] INFO root fetch - processPackages [waii-sdk-py]: Remove: archive file [/home/abi/fetcher/tmp/waii-sdk-py-1.9.1.tar.gz]
 [2024-04-20 20:55:59] INFO root fetch - main [MainThread]: End processing [waii-sdk-py]: success
 [2024-04-20 20:55:59] INFO root fetch - main [MainThread]: Store serial: [22858557]
+[2024-04-20 20:58:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858557]
+[2024-04-20 20:58:09] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dcicutils
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC180
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stanza
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyaedt
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: utubes
+[2024-04-20 20:58:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mycalc-koj
+[2024-04-20 20:58:09] INFO root fetch - processPackages [dcicutils]: New version: [8.8.3.1b9] Old Version: [8.8.3.1b8]
+[2024-04-20 20:58:09] INFO root fetch - processPackages [utubes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 20:58:09] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/55/29/62f5a247f04b2bf0f9da53bf75c80ebc4731638e110560a1b0c2b690b9e1/dcicutils-8.8.3.1b8.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/d2/e5/91bc5e73a5bce4b80f48a5e9e9b1bd239404484593fa343462a49eb01099/utubes-0.0.8.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [stanza]: New version: [1.8.2] Old Version: [1.8.1]
+[2024-04-20 20:58:09] WARNING root fetch - processPackages [PythonTestLJC180]: Skipping, unable to determine old version
+[2024-04-20 20:58:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC180] error
+[2024-04-20 20:58:09] INFO root fetch - processPackages [pyaedt]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-20 20:58:09] WARNING root fetch - processPackages [mycalc-koj]: Skipping, unable to determine old version
+[2024-04-20 20:58:09] INFO root fetch - main [MainThread]: End processing [mycalc-koj] error
+[2024-04-20 20:58:09] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/aa/9e/f4f060addff3038b06e174480b907bd2e35e83a1950b27a245be95c891d8/utubes-0.0.9.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [dcicutils]: Downloading https://files.pythonhosted.org/packages/b0/95/6db1d9193aaea7ab397457bf7e746f08cfefd565b4982b943b44ba844a74/dcicutils-8.8.3.1b9.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [stanza]: Downloading https://files.pythonhosted.org/packages/c8/f9/a21b27bfe418c3707a50a0116fbb5f3f25e0cebf8f5f93ba2df56733dcd6/stanza-1.8.1.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [pyaedt]: Downloading https://files.pythonhosted.org/packages/75/3f/15a50e190310b2db829889f2b91e01659d1ea9c5500f25de8fae490da0d9/pyaedt-0.8.8.tar.gz
+[2024-04-20 20:58:09] INFO root fetch - processPackages [utubes]: executing diffoscope
+[2024-04-20 20:58:09] INFO root fetch - processPackages [utubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utubes-0.0.8.tar.gz tmp/utubes-0.0.9.tar.gz --markdown 20240420/u/utubes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 20:58:09] INFO root fetch - processPackages [dcicutils]: executing diffoscope
+[2024-04-20 20:58:09] INFO root fetch - processPackages [dcicutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcicutils-8.8.3.1b8.tar.gz tmp/dcicutils-8.8.3.1b9.tar.gz --markdown 20240420/d/dcicutils/8.8.3.1b8-8.8.3.1b9/README.md --exclude *.pyd
+[2024-04-20 20:58:10] INFO root fetch - processPackages [stanza]: Downloading https://files.pythonhosted.org/packages/7d/92/3d3e6642b19955eb03581b9d751fda45c9f0668357925905293f13a88b55/stanza-1.8.2.tar.gz
+[2024-04-20 20:58:10] INFO root fetch - processPackages [pyaedt]: Downloading https://files.pythonhosted.org/packages/c7/b5/f76e679d20dfe9c4add80f46740605b48e363c7691f0b901158659a606c7/pyaedt-0.8.9.tar.gz
+[2024-04-20 20:58:10] INFO root fetch - processPackages [stanza]: executing diffoscope
+[2024-04-20 20:58:10] INFO root fetch - processPackages [stanza]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stanza-1.8.1.tar.gz tmp/stanza-1.8.2.tar.gz --markdown 20240420/s/stanza/1.8.1-1.8.2/README.md --exclude *.pyd
+[2024-04-20 20:58:10] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.8.tar.gz]
+[2024-04-20 20:58:10] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
+[2024-04-20 20:58:10] INFO root fetch - main [MainThread]: End processing [utubes]: success
+[2024-04-20 20:58:10] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b8.tar.gz]
+[2024-04-20 20:58:10] INFO root fetch - processPackages [dcicutils]: Remove: archive file [/home/abi/fetcher/tmp/dcicutils-8.8.3.1b9.tar.gz]
+[2024-04-20 20:58:10] INFO root fetch - main [MainThread]: End processing [dcicutils]: success
+[2024-04-20 20:58:10] INFO root fetch - processPackages [pyaedt]: executing diffoscope
+[2024-04-20 20:58:10] INFO root fetch - processPackages [pyaedt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaedt-0.8.8.tar.gz tmp/pyaedt-0.8.9.tar.gz --markdown 20240420/p/pyaedt/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-04-20 20:58:12] INFO root fetch - processPackages [stanza]: Remove: archive file [/home/abi/fetcher/tmp/stanza-1.8.1.tar.gz]
+[2024-04-20 20:58:12] INFO root fetch - processPackages [stanza]: Remove: archive file [/home/abi/fetcher/tmp/stanza-1.8.2.tar.gz]
+[2024-04-20 20:58:12] INFO root fetch - main [MainThread]: End processing [stanza]: success
+[2024-04-20 20:58:13] INFO root fetch - processPackages [pyaedt]: Remove: archive file [/home/abi/fetcher/tmp/pyaedt-0.8.8.tar.gz]
+[2024-04-20 20:58:13] INFO root fetch - processPackages [pyaedt]: Remove: archive file [/home/abi/fetcher/tmp/pyaedt-0.8.9.tar.gz]
+[2024-04-20 20:58:13] INFO root fetch - main [MainThread]: End processing [pyaedt]: success
+[2024-04-20 20:58:13] INFO root fetch - main [MainThread]: Store serial: [22858578]
