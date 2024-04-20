@@ -22438,3 +22438,36 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:46:39] WARNING root fetch - processPackages [midiscripter]: Skipping, unable to determine old version
 [2024-04-20 21:46:39] INFO root fetch - main [MainThread]: End processing [midiscripter] error
 [2024-04-20 21:46:39] INFO root fetch - main [MainThread]: Store serial: [22858949]
+[2024-04-20 21:48:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858949]
+[2024-04-20 21:48:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 21:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC198
+[2024-04-20 21:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edstem-assignment-tracker
+[2024-04-20 21:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: venty
+[2024-04-20 21:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphlit-client
+[2024-04-20 21:48:49] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 21:48:49] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420001] Old Version: [1.0.20240417002]
+[2024-04-20 21:48:49] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/b3/23/224de015ff9d95ae0ae2ec14c437dd10cd88212628735c577cb3849d7e5d/graphlit_client-1.0.20240417002.tar.gz
+[2024-04-20 21:48:49] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 21:48:49] WARNING root fetch - processPackages [PythonTestLJC198]: Skipping, unable to determine old version
+[2024-04-20 21:48:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC198] error
+[2024-04-20 21:48:49] INFO root fetch - processPackages [venty]: New version: [8.0.1] Old Version: [8.0.0]
+[2024-04-20 21:48:49] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 21:48:49] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/90/d8/1a0b19f38fa93f01f7c1b26ea1c1024bd1a91b6c4ee0413c48fd13a2708c/graphlit_client-1.0.20240420001.tar.gz
+[2024-04-20 21:48:50] INFO root fetch - processPackages [venty]: Downloading https://files.pythonhosted.org/packages/c6/99/02eaf21b69c0af7c330e53d5045ded10dd32827daddbe7152fc85e8baa3f/venty-8.0.0.tar.gz
+[2024-04-20 21:48:50] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 21:48:50] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 21:48:50] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-20 21:48:50] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240417002.tar.gz tmp/graphlit_client-1.0.20240420001.tar.gz --markdown 20240420/g/graphlit-client/1.0.20240417002-1.0.20240420001/README.md --exclude *.pyd
+[2024-04-20 21:48:50] INFO root fetch - processPackages [venty]: Downloading https://files.pythonhosted.org/packages/83/7c/de4be19293fbb01bc68f05013257f2d0f82004358c678682f002baff282b/venty-8.0.1.tar.gz
+[2024-04-20 21:48:50] INFO root fetch - processPackages [venty]: executing diffoscope
+[2024-04-20 21:48:50] INFO root fetch - processPackages [venty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/venty-8.0.0.tar.gz tmp/venty-8.0.1.tar.gz --markdown 20240420/v/venty/8.0.0-8.0.1/README.md --exclude *.pyd
+[2024-04-20 21:48:50] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 21:48:50] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 21:48:50] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 21:48:50] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240417002.tar.gz]
+[2024-04-20 21:48:50] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420001.tar.gz]
+[2024-04-20 21:48:50] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-20 21:48:51] INFO root fetch - processPackages [venty]: Remove: archive file [/home/abi/fetcher/tmp/venty-8.0.0.tar.gz]
+[2024-04-20 21:48:51] INFO root fetch - processPackages [venty]: Remove: archive file [/home/abi/fetcher/tmp/venty-8.0.1.tar.gz]
+[2024-04-20 21:48:51] INFO root fetch - main [MainThread]: End processing [venty]: success
+[2024-04-20 21:48:51] INFO root fetch - main [MainThread]: Store serial: [22858961]
