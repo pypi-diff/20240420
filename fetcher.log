@@ -7978,3 +7978,40 @@
 [2024-04-20 04:40:04] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev4-py3-none-any.whl.zip]
 [2024-04-20 04:40:04] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-financial-report]: success
 [2024-04-20 04:40:04] INFO root fetch - main [MainThread]: Store serial: [22851894]
+[2024-04-20 04:42:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851894]
+[2024-04-20 04:42:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-financial-report
+[2024-04-20 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-financial-report
+[2024-04-20 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fgo-api-types
+[2024-04-20 04:42:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retk
+[2024-04-20 04:42:14] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [17.0.1.0.0.12] Old Version: [17.0.1.0.0.11]
+[2024-04-20 04:42:14] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [17.0.1.0.0.12] Old Version: [17.0.1.0.0.11]
+[2024-04-20 04:42:14] INFO root fetch - processPackages [fgo-api-types]: New version: [2024.4.6.2.22.3] Old Version: [2024.4.20.2.41.4]
+[2024-04-20 04:42:14] INFO root fetch - processPackages [retk]: New version: [0.2.6] Old Version: [0.2.4]
+[2024-04-20 04:42:15] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/23/01/54cc9e5382e0e96ed3658f0365b06152c5b229238266957d89b87e9256d7/fgo_api_types-2024.4.20.2.41.4.tar.gz
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/97/a2/4f894a338f62e2d8bb891a25aa6fe6d351643311ed83fac6d7e6235a52fe/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/97/a2/4f894a338f62e2d8bb891a25aa6fe6d351643311ed83fac6d7e6235a52fe/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl
+[2024-04-20 04:42:15] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/4a/56/b09f3dee162ec5f532260aeb43a3eb2a42d50e65b248d0b3ae5db4203de0/retk-0.2.4.tar.gz
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/7f/10/cb32fb883a2d6e6371882fd5b4415ab865e3088e23f14335ee8822b8de70/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/7f/10/cb32fb883a2d6e6371882fd5b4415ab865e3088e23f14335ee8822b8de70/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl
+[2024-04-20 04:42:15] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/b9/41/3dbb26f0f980c564a1e8ae75299afc724991934ffaf1a8a59ab70aafb784/fgo_api_types-2024.4.6.2.22.3.tar.gz
+[2024-04-20 04:42:15] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2024-04-20 04:42:15] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2024.4.20.2.41.4.tar.gz tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz --markdown 20240420/f/fgo-api-types/2024.4.20.2.41.4-2024.4.6.2.22.3/README.md --exclude *.pyd
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-account-financial-report/17.0.1.0.0.11-17.0.1.0.0.12/README.md --exclude *.pyd
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2024-04-20 04:42:15] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-account-financial-report/17.0.1.0.0.11-17.0.1.0.0.12/README.md --exclude *.pyd
+[2024-04-20 04:42:15] INFO root fetch - processPackages [retk]: Downloading https://files.pythonhosted.org/packages/f4/79/a003384484b3965d9ecbf34c187664e1e23dd78dd20dd57e580455de86a9/retk-0.2.6.tar.gz
+[2024-04-20 04:42:16] INFO root fetch - processPackages [retk]: executing diffoscope
+[2024-04-20 04:42:16] INFO root fetch - processPackages [retk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retk-0.2.4.tar.gz tmp/retk-0.2.6.tar.gz --markdown 20240420/r/retk/0.2.4-0.2.6/README.md --exclude *.pyd
+[2024-04-20 04:42:16] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.20.2.41.4.tar.gz]
+[2024-04-20 04:42:16] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz]
+[2024-04-20 04:42:16] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2024-04-20 04:42:16] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-17.0.1.0.0.11-py3-none-any.whl.zip]
+[2024-04-20 04:42:16] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-17.0.1.0.0.12-py3-none-any.whl.zip]
+[2024-04-20 04:42:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2024-04-20 04:42:16] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2024-04-20 04:43:21] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.4.tar.gz]
+[2024-04-20 04:43:21] INFO root fetch - processPackages [retk]: Remove: archive file [/home/abi/fetcher/tmp/retk-0.2.6.tar.gz]
+[2024-04-20 04:43:21] INFO root fetch - main [MainThread]: End processing [retk]: success
+[2024-04-20 04:43:21] INFO root fetch - main [MainThread]: Store serial: [22851904]
