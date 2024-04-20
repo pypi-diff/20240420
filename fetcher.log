@@ -23321,3 +23321,37 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:46:06] INFO root fetch - processPackages [ultimapy]: Remove: archive file [/home/abi/fetcher/tmp/ultimapy-0.0.9.tar.gz]
 [2024-04-20 22:46:06] INFO root fetch - main [MainThread]: End processing [ultimapy]: success
 [2024-04-20 22:46:06] INFO root fetch - main [MainThread]: Store serial: [22859397]
+[2024-04-20 22:48:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859397]
+[2024-04-20 22:48:14] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llm-offset
+[2024-04-20 22:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: karellen-llvm-clang
+[2024-04-20 22:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: karellen-llvm-core
+[2024-04-20 22:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: karellen-llvm-toolchain-tools
+[2024-04-20 22:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC220
+[2024-04-20 22:48:14] INFO root fetch - processPackages [llm-offset]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-20 22:48:14] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/03/99/c2fd772acf1f405f50623830febe65930c05d6849144e5c1f3d1a285b106/llm_offset-0.6.0.tar.gz
+[2024-04-20 22:48:14] INFO root fetch - processPackages [karellen-llvm-core]: New version: [18.1.4.0] Old Version: [18.1.1.0.post44]
+[2024-04-20 22:48:14] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: New version: [18.1.4.0] Old Version: [18.1.1.0.post44]
+[2024-04-20 22:48:14] INFO root fetch - processPackages [karellen-llvm-clang]: New version: [18.1.4.0] Old Version: [18.1.1.0.post44]
+[2024-04-20 22:48:14] WARNING root fetch - processPackages [PythonTestLJC220]: Skipping, unable to determine old version
+[2024-04-20 22:48:14] INFO root fetch - main [MainThread]: End processing [PythonTestLJC220] error
+[2024-04-20 22:48:15] INFO root fetch - processPackages [karellen-llvm-core]: Downloading https://files.pythonhosted.org/packages/07/4a/9623eb306449b2a09bf6d648f04d647a53474aa96fbf30c42e630cdd2d72/karellen_llvm_core-18.1.1.0.post44-py3-none-manylinux2014_x86_64.whl
+[2024-04-20 22:48:15] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/57/6c/6a1a26d31979d9b2b9f73c42377a9fccf2d7b469d07ad889741051cca42c/karellen_llvm_toolchain_tools-18.1.1.0.post44-py3-none-manylinux2014_x86_64.whl
+[2024-04-20 22:48:15] INFO root fetch - processPackages [karellen-llvm-clang]: Downloading https://files.pythonhosted.org/packages/0f/77/4e5db0d5665afc5cd08b392108353a445cb73a28f83d1f0442d34f38ea87/karellen_llvm_clang-18.1.1.0.post44-py3-none-manylinux2014_x86_64.whl
+[2024-04-20 22:48:15] INFO root fetch - processPackages [llm-offset]: Downloading https://files.pythonhosted.org/packages/94/c2/b9674739862fc824355a0a3d61adcee4633006a24cc524bb901bd1bb47f5/llm_offset-0.7.0.tar.gz
+[2024-04-20 22:48:15] INFO root fetch - processPackages [llm-offset]: executing diffoscope
+[2024-04-20 22:48:15] INFO root fetch - processPackages [llm-offset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm_offset-0.6.0.tar.gz tmp/llm_offset-0.7.0.tar.gz --markdown 20240420/l/llm-offset/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-04-20 22:48:15] WARNING root fetch - processPackages [karellen-llvm-core]: Skipping package: exceeds size limit 28599907>=10485760
+[2024-04-20 22:48:15] INFO root fetch - main [MainThread]: End processing [karellen-llvm-core] error
+[2024-04-20 22:48:15] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.6.0.tar.gz]
+[2024-04-20 22:48:15] INFO root fetch - processPackages [llm-offset]: Remove: archive file [/home/abi/fetcher/tmp/llm_offset-0.7.0.tar.gz]
+[2024-04-20 22:48:15] INFO root fetch - main [MainThread]: End processing [llm-offset]: success
+[2024-04-20 22:48:16] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Downloading https://files.pythonhosted.org/packages/62/87/701556243fc433c6a67e495a5a244ac81790e3c1a124619db26279387ef3/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl
+[2024-04-20 22:48:16] WARNING root fetch - processPackages [karellen-llvm-clang]: Skipping package: exceeds size limit 78665509>=10485760
+[2024-04-20 22:48:16] INFO root fetch - main [MainThread]: End processing [karellen-llvm-clang] error
+[2024-04-20 22:48:16] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: executing diffoscope
+[2024-04-20 22:48:16] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karellen_llvm_toolchain_tools-18.1.1.0.post44-py3-none-manylinux2014_x86_64.whl.zip tmp/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl.zip --markdown 20240420/k/karellen-llvm-toolchain-tools/18.1.1.0.post44-18.1.4.0/README.md --exclude *.pyd
+[2024-04-20 22:48:41] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.1.0.post44-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-04-20 22:48:41] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl.zip]
+[2024-04-20 22:48:41] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
+[2024-04-20 22:48:41] INFO root fetch - main [MainThread]: Store serial: [22859406]
