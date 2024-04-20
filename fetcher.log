@@ -17844,3 +17844,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:06:58] INFO root fetch - processPackages [barkshark-lib]: Remove: archive file [/home/abi/fetcher/tmp/barkshark_lib-0.1.2.tar.gz]
 [2024-04-20 17:06:58] INFO root fetch - main [MainThread]: End processing [barkshark-lib]: success
 [2024-04-20 17:06:58] INFO root fetch - main [MainThread]: Store serial: [22856825]
+[2024-04-20 17:09:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856825]
+[2024-04-20 17:09:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 17:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: radioactivedecay
+[2024-04-20 17:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-microcore
+[2024-04-20 17:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cerbogen
+[2024-04-20 17:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: movoid-robotframework
+[2024-04-20 17:09:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipex-llm
+[2024-04-20 17:09:07] WARNING root fetch - processPackages [cerbogen]: Skipping, unable to determine old version
+[2024-04-20 17:09:07] INFO root fetch - main [MainThread]: End processing [cerbogen] error
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240419] Old Version: [2.1.0b20240418]
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ai-microcore]: New version: [3.4.0] Old Version: [3.3.1]
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/30/7c/67d34987468a6cac6fd0e42b987710dcae39cb8ee6b6b41cc4f74bf4b111/ipex_llm-2.1.0b20240418-py3-none-win_amd64.whl
+[2024-04-20 17:09:07] INFO root fetch - processPackages [movoid-robotframework]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/9f/7b/74e866176c281f2f6b483698c0806163735cb10ddc300761aff30fb5ea68/ai_microcore-3.3.1.tar.gz
+[2024-04-20 17:09:07] INFO root fetch - processPackages [radioactivedecay]: New version: [0.5.0] Old Version: [0.4.9]
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ai-microcore]: Downloading https://files.pythonhosted.org/packages/87/ac/611ea3e9b44d228da65ecc2427be847a5af30d62748dd3222cbf15f2ac38/ai_microcore-3.4.0.tar.gz
+[2024-04-20 17:09:07] INFO root fetch - processPackages [movoid-robotframework]: Downloading https://files.pythonhosted.org/packages/c8/50/ec08e9c269abfa370ee03ef93d0f76dc6d61c5aa6e3075c9c6d230a5c5ae/movoid_robotframework-1.3.1.tar.gz
+[2024-04-20 17:09:07] INFO root fetch - processPackages [radioactivedecay]: Downloading https://files.pythonhosted.org/packages/7b/3a/644897947ba48b39bcb4f2aa5a380e50d024c18d181599c1043a32ac55c7/radioactivedecay-0.4.9.tar.gz
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ai-microcore]: executing diffoscope
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ai-microcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_microcore-3.3.1.tar.gz tmp/ai_microcore-3.4.0.tar.gz --markdown 20240420/a/ai-microcore/3.3.1-3.4.0/README.md --exclude *.pyd
+[2024-04-20 17:09:07] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/c6/de/ebd173cacb644bbf4d0de30ea85c70acd1629a6616135797332ed9a7b1b2/ipex_llm-2.1.0b20240419-py3-none-win_amd64.whl
+[2024-04-20 17:09:07] INFO root fetch - processPackages [movoid-robotframework]: Downloading https://files.pythonhosted.org/packages/f7/d3/e69fa435fe0f418492a981f21a312f4e313022f9695f302f8c46a3f354d2/movoid_robotframework-1.3.2.tar.gz
+[2024-04-20 17:09:07] INFO root fetch - processPackages [movoid-robotframework]: executing diffoscope
+[2024-04-20 17:09:07] INFO root fetch - processPackages [movoid-robotframework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movoid_robotframework-1.3.1.tar.gz tmp/movoid_robotframework-1.3.2.tar.gz --markdown 20240420/m/movoid-robotframework/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-04-20 17:09:07] INFO root fetch - processPackages [radioactivedecay]: Downloading https://files.pythonhosted.org/packages/f3/01/3152af73a0e7f7d35d436b3f6c750f31cd7ddc09c51b039b29ae2907730b/radioactivedecay-0.5.0.tar.gz
+[2024-04-20 17:09:08] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-04-20 17:09:08] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240418-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240419-py3-none-win_amd64.whl.zip --markdown 20240420/i/ipex-llm/2.1.0b20240418-2.1.0b20240419/README.md --exclude *.pyd
+[2024-04-20 17:09:08] INFO root fetch - processPackages [radioactivedecay]: executing diffoscope
+[2024-04-20 17:09:08] INFO root fetch - processPackages [radioactivedecay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radioactivedecay-0.4.9.tar.gz tmp/radioactivedecay-0.5.0.tar.gz --markdown 20240420/r/radioactivedecay/0.4.9-0.5.0/README.md --exclude *.pyd
+[2024-04-20 17:09:08] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.3.1.tar.gz]
+[2024-04-20 17:09:08] INFO root fetch - processPackages [ai-microcore]: Remove: archive file [/home/abi/fetcher/tmp/ai_microcore-3.4.0.tar.gz]
+[2024-04-20 17:09:08] INFO root fetch - main [MainThread]: End processing [ai-microcore]: success
+[2024-04-20 17:09:08] INFO root fetch - processPackages [movoid-robotframework]: Remove: archive file [/home/abi/fetcher/tmp/movoid_robotframework-1.3.1.tar.gz]
+[2024-04-20 17:09:08] INFO root fetch - processPackages [movoid-robotframework]: Remove: archive file [/home/abi/fetcher/tmp/movoid_robotframework-1.3.2.tar.gz]
+[2024-04-20 17:09:08] INFO root fetch - main [MainThread]: End processing [movoid-robotframework]: success
+[2024-04-20 17:09:09] INFO root fetch - processPackages [radioactivedecay]: Remove: archive file [/home/abi/fetcher/tmp/radioactivedecay-0.4.9.tar.gz]
+[2024-04-20 17:09:09] INFO root fetch - processPackages [radioactivedecay]: Remove: archive file [/home/abi/fetcher/tmp/radioactivedecay-0.5.0.tar.gz]
+[2024-04-20 17:09:09] INFO root fetch - main [MainThread]: End processing [radioactivedecay]: success
+[2024-04-20 17:09:35] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240418-py3-none-win_amd64.whl.zip]
+[2024-04-20 17:09:35] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240419-py3-none-win_amd64.whl.zip]
+[2024-04-20 17:09:35] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-04-20 17:09:35] INFO root fetch - main [MainThread]: Store serial: [22856839]
