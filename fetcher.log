@@ -7315,3 +7315,31 @@
 [2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
 [2024-04-20 03:45:06] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
 [2024-04-20 03:45:06] INFO root fetch - main [MainThread]: Store serial: [22851666]
+[2024-04-20 03:47:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851666]
+[2024-04-20 03:47:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 03:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uo-puddles
+[2024-04-20 03:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uo-puddles
+[2024-04-20 03:47:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hash-rename
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: New version: [4.6] Old Version: [4.5]
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: New version: [4.6] Old Version: [4.5]
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/7f/71/34fbd750fedfa6b7a0ce0f40f06357992137e9341733c5df756ed2a2924b/uo_puddles-4.5.tar.gz
+[2024-04-20 03:47:15] INFO root fetch - processPackages [hash-rename]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/7f/71/34fbd750fedfa6b7a0ce0f40f06357992137e9341733c5df756ed2a2924b/uo_puddles-4.5.tar.gz
+[2024-04-20 03:47:15] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/a2/b6/90d97e4cdea3df8d0798e04210d4bd313e7c80f68f09645434ba491373ec/hash_rename-0.3.0.tar.gz
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/51/df/001effb5a65b10c2da0c2d6beec5e2edec11518efc57a4ceaed3426b9055/uo_puddles-4.6.tar.gz
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: Downloading https://files.pythonhosted.org/packages/51/df/001effb5a65b10c2da0c2d6beec5e2edec11518efc57a4ceaed3426b9055/uo_puddles-4.6.tar.gz
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: executing diffoscope
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uo_puddles-4.5.tar.gz tmp/uo_puddles-4.6.tar.gz --markdown 20240420/u/uo-puddles/4.5-4.6/README.md --exclude *.pyd
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: executing diffoscope
+[2024-04-20 03:47:15] INFO root fetch - processPackages [uo-puddles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uo_puddles-4.5.tar.gz tmp/uo_puddles-4.6.tar.gz --markdown 20240420/u/uo-puddles/4.5-4.6/README.md --exclude *.pyd
+[2024-04-20 03:47:15] INFO root fetch - processPackages [hash-rename]: Downloading https://files.pythonhosted.org/packages/51/58/e8d64fc945541c7962ef5ba4ba9dfe9cf577b984697724c79227d524887d/hash_rename-0.3.1.tar.gz
+[2024-04-20 03:47:16] INFO root fetch - processPackages [hash-rename]: executing diffoscope
+[2024-04-20 03:47:16] INFO root fetch - processPackages [hash-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hash_rename-0.3.0.tar.gz tmp/hash_rename-0.3.1.tar.gz --markdown 20240420/h/hash-rename/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-04-20 03:47:16] INFO root fetch - processPackages [uo-puddles]: Remove: archive file [/home/abi/fetcher/tmp/uo_puddles-4.5.tar.gz]
+[2024-04-20 03:47:16] INFO root fetch - processPackages [uo-puddles]: Remove: archive file [/home/abi/fetcher/tmp/uo_puddles-4.6.tar.gz]
+[2024-04-20 03:47:16] INFO root fetch - main [MainThread]: End processing [uo-puddles]: success
+[2024-04-20 03:47:16] INFO root fetch - main [MainThread]: End processing [uo-puddles]: success
+[2024-04-20 03:47:16] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.3.0.tar.gz]
+[2024-04-20 03:47:16] INFO root fetch - processPackages [hash-rename]: Remove: archive file [/home/abi/fetcher/tmp/hash_rename-0.3.1.tar.gz]
+[2024-04-20 03:47:16] INFO root fetch - main [MainThread]: End processing [hash-rename]: success
+[2024-04-20 03:47:16] INFO root fetch - main [MainThread]: Store serial: [22851673]
