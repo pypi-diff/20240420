@@ -16483,3 +16483,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:32:54] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4rc1.tar.gz]
 [2024-04-20 15:32:54] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
 [2024-04-20 15:32:54] INFO root fetch - main [MainThread]: Store serial: [22856053]
+[2024-04-20 15:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856053]
+[2024-04-20 15:35:03] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HiveWebCrawler
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gtsystem
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baca2-package-manager
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: esanom
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tianmoucv
+[2024-04-20 15:35:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC064
+[2024-04-20 15:35:03] INFO root fetch - processPackages [esanom]: New version: [3.0.2.13384] Old Version: [3.0.1.44]
+[2024-04-20 15:35:03] INFO root fetch - processPackages [gtsystem]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 15:35:03] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/f7/be/3c2cba17f4d5b2bb9b94f4af139100c8a83e895891ca30089ba0151b0ae5/esanom-3.0.1.44.tar.gz
+[2024-04-20 15:35:03] INFO root fetch - processPackages [tianmoucv]: New version: [0.3.0] Old Version: [0.2.2.2]
+[2024-04-20 15:35:03] INFO root fetch - processPackages [HiveWebCrawler]: New version: [0.1.4] Old Version: [0.0.4]
+[2024-04-20 15:35:03] WARNING root fetch - processPackages [PythonTestLJC064]: Skipping, unable to determine old version
+[2024-04-20 15:35:03] INFO root fetch - main [MainThread]: End processing [PythonTestLJC064] error
+[2024-04-20 15:35:03] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/eb/ce/2fd2f57db3c738bcddc383726e0dcf231b8bb51838743ea04d44fb08018e/gtsystem-0.1.4.tar.gz
+[2024-04-20 15:35:03] INFO root fetch - processPackages [baca2-package-manager]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-20 15:35:04] INFO root fetch - processPackages [HiveWebCrawler]: Downloading https://files.pythonhosted.org/packages/8d/1e/9fc41b598cf0cd5bb07fa91024f514f20e053f9f85e0a13cd31645e5e4bd/hivewebcrawler-0.0.4.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [baca2-package-manager]: Downloading https://files.pythonhosted.org/packages/71/c1/05b20029b8fe325c968f58834e755519f0a899141fed1466e9598b18d01e/baca2-package-manager-0.3.8.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [tianmoucv]: Downloading https://files.pythonhosted.org/packages/cf/ab/59d40120a75cdd6726347309bbb950d8de0920cd3df5ac16d605f188abb1/tianmoucv-0.2.2.2-py3-none-any.whl
+[2024-04-20 15:35:04] INFO root fetch - processPackages [gtsystem]: Downloading https://files.pythonhosted.org/packages/0f/06/d5a19f6a2ea969f4b273f16d8997530c935b14ae5438f98cf7d0903e3e9e/gtsystem-0.1.5.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [esanom]: Downloading https://files.pythonhosted.org/packages/40/c8/38587e3488b22890d9c2a653cd9c793cabc11e222661cfc41fc7c13dcaa2/esanom-3.0.2.13384.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [gtsystem]: executing diffoscope
+[2024-04-20 15:35:04] INFO root fetch - processPackages [gtsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gtsystem-0.1.4.tar.gz tmp/gtsystem-0.1.5.tar.gz --markdown 20240420/g/gtsystem/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 15:35:04] INFO root fetch - processPackages [HiveWebCrawler]: Downloading https://files.pythonhosted.org/packages/71/77/4a0805815c14475911bf930ea9aaabf8198d0b121e78314b932048a90086/hivewebcrawler-0.1.4.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [baca2-package-manager]: Downloading https://files.pythonhosted.org/packages/56/ba/99f22c04acdcb3a57f64c5ef5974daed5475698652604949d6fbd231cfa6/baca2-package-manager-0.3.9.tar.gz
+[2024-04-20 15:35:04] INFO root fetch - processPackages [esanom]: executing diffoscope
+[2024-04-20 15:35:04] INFO root fetch - processPackages [esanom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/esanom-3.0.1.44.tar.gz tmp/esanom-3.0.2.13384.tar.gz --markdown 20240420/e/esanom/3.0.1.44-3.0.2.13384/README.md --exclude *.pyd
+[2024-04-20 15:35:04] INFO root fetch - processPackages [HiveWebCrawler]: executing diffoscope
+[2024-04-20 15:35:04] INFO root fetch - processPackages [HiveWebCrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hivewebcrawler-0.0.4.tar.gz tmp/hivewebcrawler-0.1.4.tar.gz --markdown 20240420/H/HiveWebCrawler/0.0.4-0.1.4/README.md --exclude *.pyd
+[2024-04-20 15:35:04] INFO root fetch - processPackages [baca2-package-manager]: executing diffoscope
+[2024-04-20 15:35:04] INFO root fetch - processPackages [baca2-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baca2-package-manager-0.3.8.tar.gz tmp/baca2-package-manager-0.3.9.tar.gz --markdown 20240420/b/baca2-package-manager/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-20 15:35:04] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.4.tar.gz]
+[2024-04-20 15:35:04] INFO root fetch - processPackages [gtsystem]: Remove: archive file [/home/abi/fetcher/tmp/gtsystem-0.1.5.tar.gz]
+[2024-04-20 15:35:04] INFO root fetch - main [MainThread]: End processing [gtsystem]: success
+[2024-04-20 15:35:05] INFO root fetch - processPackages [HiveWebCrawler]: Remove: archive file [/home/abi/fetcher/tmp/hivewebcrawler-0.0.4.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - processPackages [HiveWebCrawler]: Remove: archive file [/home/abi/fetcher/tmp/hivewebcrawler-0.1.4.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - main [MainThread]: End processing [HiveWebCrawler]: success
+[2024-04-20 15:35:05] INFO root fetch - processPackages [baca2-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/baca2-package-manager-0.3.8.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - processPackages [baca2-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/baca2-package-manager-0.3.9.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - main [MainThread]: End processing [baca2-package-manager]: success
+[2024-04-20 15:35:05] INFO root fetch - processPackages [tianmoucv]: Downloading https://files.pythonhosted.org/packages/48/58/be752ea8599acc1c4f466346f1f9100f1c5d980020dffd155f71ac0c3d13/tianmoucv-0.3.0-py3-none-any.whl
+[2024-04-20 15:35:05] INFO root fetch - processPackages [tianmoucv]: executing diffoscope
+[2024-04-20 15:35:05] INFO root fetch - processPackages [tianmoucv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tianmoucv-0.2.2.2-py3-none-any.whl.zip tmp/tianmoucv-0.3.0-py3-none-any.whl.zip --markdown 20240420/t/tianmoucv/0.2.2.2-0.3.0/README.md --exclude *.pyd
+[2024-04-20 15:35:05] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.1.44.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - processPackages [esanom]: Remove: archive file [/home/abi/fetcher/tmp/esanom-3.0.2.13384.tar.gz]
+[2024-04-20 15:35:05] INFO root fetch - main [MainThread]: End processing [esanom]: success
+[2024-04-20 15:35:06] INFO root fetch - processPackages [tianmoucv]: Remove: archive file [/home/abi/fetcher/tmp/tianmoucv-0.2.2.2-py3-none-any.whl.zip]
+[2024-04-20 15:35:06] INFO root fetch - processPackages [tianmoucv]: Remove: archive file [/home/abi/fetcher/tmp/tianmoucv-0.3.0-py3-none-any.whl.zip]
+[2024-04-20 15:35:06] INFO root fetch - main [MainThread]: End processing [tianmoucv]: success
+[2024-04-20 15:35:06] INFO root fetch - main [MainThread]: Store serial: [22856072]
