@@ -23502,3 +23502,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:57:38] INFO root fetch - processPackages [ezregex]: Remove: archive file [/home/abi/fetcher/tmp/ezregex-2.0.0.tar.gz]
 [2024-04-20 22:57:38] INFO root fetch - main [MainThread]: End processing [ezregex]: success
 [2024-04-20 22:57:38] INFO root fetch - main [MainThread]: Store serial: [22859477]
+[2024-04-20 22:59:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859477]
+[2024-04-20 22:59:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphlit-client
+[2024-04-20 22:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: class-singledispatch
+[2024-04-20 22:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DataHoarder
+[2024-04-20 22:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC224
+[2024-04-20 22:59:48] INFO root fetch - processPackages [graphlit-client]: New version: [1.0.20240420004] Old Version: [1.0.20240420003]
+[2024-04-20 22:59:48] WARNING root fetch - processPackages [DataHoarder]: Skipping, unable to determine old version
+[2024-04-20 22:59:48] INFO root fetch - main [MainThread]: End processing [DataHoarder] error
+[2024-04-20 22:59:48] INFO root fetch - processPackages [class-singledispatch]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-04-20 22:59:48] WARNING root fetch - processPackages [PythonTestLJC224]: Skipping, unable to determine old version
+[2024-04-20 22:59:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC224] error
+[2024-04-20 22:59:48] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/80/f6/e32d6d8acf8422c7a351bc78b68a4d9ff476ad382137257288e3524dac82/graphlit_client-1.0.20240420003.tar.gz
+[2024-04-20 22:59:48] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/e3/5c/8e08f47fd96b7ecf9353adb4e1f281e28dbe626a7f2b18c32d8ca7870915/class_singledispatch-1.1.1.tar.gz
+[2024-04-20 22:59:49] INFO root fetch - processPackages [graphlit-client]: Downloading https://files.pythonhosted.org/packages/fb/f5/7cb109521c4a4d758b95aefd80902a57399bea157031de532412e968d37a/graphlit_client-1.0.20240420004.tar.gz
+[2024-04-20 22:59:49] INFO root fetch - processPackages [graphlit-client]: executing diffoscope
+[2024-04-20 22:59:49] INFO root fetch - processPackages [graphlit-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphlit_client-1.0.20240420003.tar.gz tmp/graphlit_client-1.0.20240420004.tar.gz --markdown 20240420/g/graphlit-client/1.0.20240420003-1.0.20240420004/README.md --exclude *.pyd
+[2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: Downloading https://files.pythonhosted.org/packages/e1/5e/c51902a6e8f00e2544cb7ef3b23a76af4ff645d340a7baf5bde48da8d847/class_singledispatch-1.2.0.tar.gz
+[2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: executing diffoscope
+[2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/class_singledispatch-1.1.1.tar.gz tmp/class_singledispatch-1.2.0.tar.gz --markdown 20240420/c/class-singledispatch/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-04-20 22:59:49] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420003.tar.gz]
+[2024-04-20 22:59:49] INFO root fetch - processPackages [graphlit-client]: Remove: archive file [/home/abi/fetcher/tmp/graphlit_client-1.0.20240420004.tar.gz]
+[2024-04-20 22:59:49] INFO root fetch - main [MainThread]: End processing [graphlit-client]: success
+[2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.1.1.tar.gz]
+[2024-04-20 22:59:49] INFO root fetch - processPackages [class-singledispatch]: Remove: archive file [/home/abi/fetcher/tmp/class_singledispatch-1.2.0.tar.gz]
+[2024-04-20 22:59:49] INFO root fetch - main [MainThread]: End processing [class-singledispatch]: success
+[2024-04-20 22:59:49] INFO root fetch - main [MainThread]: Store serial: [22859491]
