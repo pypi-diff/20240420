@@ -16735,3 +16735,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:48:11] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.4.tar.gz]
 [2024-04-20 15:48:11] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-04-20 15:48:11] INFO root fetch - main [MainThread]: Store serial: [22856274]
+[2024-04-20 15:50:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856274]
+[2024-04-20 15:50:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyclonedx-bom
+[2024-04-20 15:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC069
+[2024-04-20 15:50:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bencode2
+[2024-04-20 15:50:20] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 15:50:20] INFO root fetch - processPackages [cyclonedx-bom]: New version: [4.3.0] Old Version: [4.2.0]
+[2024-04-20 15:50:20] WARNING root fetch - processPackages [PythonTestLJC069]: Skipping, unable to determine old version
+[2024-04-20 15:50:20] INFO root fetch - main [MainThread]: End processing [PythonTestLJC069] error
+[2024-04-20 15:50:20] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-04-20 15:50:20] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/e1/61/97f5edaf44c78504ac8add87fc1640b0bd9e96fc873130956907a61b1a74/cyclonedx_bom-4.2.0.tar.gz
+[2024-04-20 15:50:21] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-04-20 15:50:21] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-20 15:50:21] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240420/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 15:50:21] INFO root fetch - processPackages [cyclonedx-bom]: Downloading https://files.pythonhosted.org/packages/11/91/381b3c5c56eb47e38223c4be83ca1bdf670d638ad4e818670784b48d2f24/cyclonedx_bom-4.3.0.tar.gz
+[2024-04-20 15:50:21] INFO root fetch - processPackages [cyclonedx-bom]: executing diffoscope
+[2024-04-20 15:50:21] INFO root fetch - processPackages [cyclonedx-bom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyclonedx_bom-4.2.0.tar.gz tmp/cyclonedx_bom-4.3.0.tar.gz --markdown 20240420/c/cyclonedx-bom/4.2.0-4.3.0/README.md --exclude *.pyd
+[2024-04-20 15:50:21] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-04-20 15:50:21] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-04-20 15:50:21] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-20 15:50:31] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.2.0.tar.gz]
+[2024-04-20 15:50:31] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.0.tar.gz]
+[2024-04-20 15:50:31] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
+[2024-04-20 15:50:31] INFO root fetch - main [MainThread]: Store serial: [22856294]
