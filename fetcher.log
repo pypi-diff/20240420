@@ -22974,3 +22974,24 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:19:44] INFO root fetch - processPackages [glang]: Remove: archive file [/home/abi/fetcher/tmp/glang-0.4.0.tar.gz]
 [2024-04-20 22:19:44] INFO root fetch - main [MainThread]: End processing [glang]: success
 [2024-04-20 22:19:44] INFO root fetch - main [MainThread]: Store serial: [22859213]
+[2024-04-20 22:21:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859213]
+[2024-04-20 22:21:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pynysiis
+[2024-04-20 22:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlops-api-gemstack
+[2024-04-20 22:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC210
+[2024-04-20 22:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: earthquake-agent
+[2024-04-20 22:21:54] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.3] Old Version: [0.2.1]
+[2024-04-20 22:21:54] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/07/c7/85bab0aaaae5df079f79c62f239805ad2cfa25af36baf1af4baf46045b4f/mlops_api_gemstack-0.2.1.tar.gz
+[2024-04-20 22:21:54] WARNING root fetch - processPackages [pynysiis]: Skipping, unable to determine old version
+[2024-04-20 22:21:54] INFO root fetch - main [MainThread]: End processing [pynysiis] error
+[2024-04-20 22:21:54] WARNING root fetch - processPackages [PythonTestLJC210]: Skipping, unable to determine old version
+[2024-04-20 22:21:54] INFO root fetch - main [MainThread]: End processing [PythonTestLJC210] error
+[2024-04-20 22:21:54] WARNING root fetch - processPackages [earthquake-agent]: Skipping, unable to determine old version
+[2024-04-20 22:21:54] INFO root fetch - main [MainThread]: End processing [earthquake-agent] error
+[2024-04-20 22:21:54] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/c9/a0/4febacfe7215be80578413b7a72b0b7bd0b9b70a4917e3830e538f694262/mlops_api_gemstack-0.3.tar.gz
+[2024-04-20 22:21:54] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-20 22:21:54] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.2.1.tar.gz tmp/mlops_api_gemstack-0.3.tar.gz --markdown 20240420/m/mlops-api-gemstack/0.2.1-0.3/README.md --exclude *.pyd
+[2024-04-20 22:21:55] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.2.1.tar.gz]
+[2024-04-20 22:21:55] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.3.tar.gz]
+[2024-04-20 22:21:55] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-20 22:21:55] INFO root fetch - main [MainThread]: Store serial: [22859231]
