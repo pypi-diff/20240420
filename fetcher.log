@@ -14670,3 +14670,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:22:47] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.1.tar.gz]
 [2024-04-20 13:22:47] INFO root fetch - main [MainThread]: End processing [fleece-network]: success
 [2024-04-20 13:22:47] INFO root fetch - main [MainThread]: Store serial: [22855116]
+[2024-04-20 13:24:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855116]
+[2024-04-20 13:24:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 13:24:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: packitos
+[2024-04-20 13:24:57] INFO root fetch - processPackages [packitos]: New version: [0.95.0] Old Version: [0.94.2]
+[2024-04-20 13:24:57] INFO root fetch - processPackages [packitos]: Downloading https://files.pythonhosted.org/packages/8e/30/8e4100295b950cc96ae762cca331ed4616851510ea3a70d5b1bf912767bf/packitos-0.94.2.tar.gz
+[2024-04-20 13:24:58] INFO root fetch - processPackages [packitos]: Downloading https://files.pythonhosted.org/packages/9f/3a/16fa237c3b43eba1deed7ddd6ec9e31c8629cb99004a6c86bc0f23cea916/packitos-0.95.0.tar.gz
+[2024-04-20 13:24:58] INFO root fetch - processPackages [packitos]: executing diffoscope
+[2024-04-20 13:24:58] INFO root fetch - processPackages [packitos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packitos-0.94.2.tar.gz tmp/packitos-0.95.0.tar.gz --markdown 20240420/p/packitos/0.94.2-0.95.0/README.md --exclude *.pyd
+[2024-04-20 13:25:00] INFO root fetch - processPackages [packitos]: Remove: archive file [/home/abi/fetcher/tmp/packitos-0.94.2.tar.gz]
+[2024-04-20 13:25:00] INFO root fetch - processPackages [packitos]: Remove: archive file [/home/abi/fetcher/tmp/packitos-0.95.0.tar.gz]
+[2024-04-20 13:25:00] INFO root fetch - main [MainThread]: End processing [packitos]: success
+[2024-04-20 13:25:00] INFO root fetch - main [MainThread]: Store serial: [22855121]
