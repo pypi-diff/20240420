@@ -18511,3 +18511,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:49:33] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-04-20 17:49:33] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-04-20 17:49:33] INFO root fetch - main [MainThread]: Store serial: [22857122]
+[2024-04-20 17:51:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857122]
+[2024-04-20 17:51:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 17:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuptech
+[2024-04-20 17:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql-django
+[2024-04-20 17:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rttm-manager
+[2024-04-20 17:51:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC113
+[2024-04-20 17:51:43] INFO root fetch - processPackages [pyuptech]: New version: [0.1.3a1] Old Version: [0.1.3a0]
+[2024-04-20 17:51:43] WARNING root fetch - processPackages [rttm-manager]: Skipping, unable to determine old version
+[2024-04-20 17:51:43] INFO root fetch - main [MainThread]: End processing [rttm-manager] error
+[2024-04-20 17:51:43] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/9f/d0/987d8b8c6137acb8bab16fd97dbdae18c91b749f878ce64db1b97536a0dc/pyuptech-0.1.3a0.tar.gz
+[2024-04-20 17:51:43] WARNING root fetch - processPackages [PythonTestLJC113]: Skipping, unable to determine old version
+[2024-04-20 17:51:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC113] error
+[2024-04-20 17:51:43] INFO root fetch - processPackages [strawberry-graphql-django]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-20 17:51:43] INFO root fetch - processPackages [pyuptech]: Downloading https://files.pythonhosted.org/packages/f4/9e/4892556821b9ff008cd3371994f36c4bd706291f41334b88ee4b4ad33e35/pyuptech-0.1.3a1.tar.gz
+[2024-04-20 17:51:43] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/84/8d/02584438b57b9d8c0141a779dd091b2f10126fe1f369ea1852d45afa3eec/strawberry_graphql_django-0.9.4.tar.gz
+[2024-04-20 17:51:43] INFO root fetch - processPackages [pyuptech]: executing diffoscope
+[2024-04-20 17:51:43] INFO root fetch - processPackages [pyuptech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuptech-0.1.3a0.tar.gz tmp/pyuptech-0.1.3a1.tar.gz --markdown 20240420/p/pyuptech/0.1.3a0-0.1.3a1/README.md --exclude *.pyd
+[2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/34/c7/6761d3816f5a7cf02928b5d035b4ed20b4e6d2a12ec6a4cf9400ce4d7cbb/strawberry_graphql_django-0.9.5.tar.gz
+[2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: executing diffoscope
+[2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_graphql_django-0.9.4.tar.gz tmp/strawberry_graphql_django-0.9.5.tar.gz --markdown 20240420/s/strawberry-graphql-django/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-04-20 17:51:44] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a0.tar.gz]
+[2024-04-20 17:51:44] INFO root fetch - processPackages [pyuptech]: Remove: archive file [/home/abi/fetcher/tmp/pyuptech-0.1.3a1.tar.gz]
+[2024-04-20 17:51:44] INFO root fetch - main [MainThread]: End processing [pyuptech]: success
+[2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.4.tar.gz]
+[2024-04-20 17:51:44] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
+[2024-04-20 17:51:44] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
+[2024-04-20 17:51:44] INFO root fetch - main [MainThread]: Store serial: [22857137]
