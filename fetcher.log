@@ -20624,3 +20624,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:58:52] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
 [2024-04-20 19:58:52] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
 [2024-04-20 19:58:52] INFO root fetch - main [MainThread]: Store serial: [22858083]
+[2024-04-20 20:00:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858083]
+[2024-04-20 20:01:01] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 20:03:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858084]
+[2024-04-20 20:03:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flake8-json
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC160
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: opentelemetry-instrumentation-faststream
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hfutils
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: copasul
+[2024-04-20 20:03:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: identify
+[2024-04-20 20:03:07] INFO root fetch - processPackages [identify]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-04-20 20:03:07] INFO root fetch - processPackages [hfutils]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-20 20:03:07] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/32/f8/e0b582f130044093f3b24ce491919a6cceb8323907ec222a8af12d558636/hfutils-0.1.1.tar.gz
+[2024-04-20 20:03:07] WARNING root fetch - processPackages [PythonTestLJC160]: Skipping, unable to determine old version
+[2024-04-20 20:03:07] INFO root fetch - main [MainThread]: End processing [PythonTestLJC160] error
+[2024-04-20 20:03:07] INFO root fetch - processPackages [flake8-json]: New version: [24.4.0] Old Version: [23.7.0]
+[2024-04-20 20:03:07] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 20:03:07] INFO root fetch - processPackages [copasul]: New version: [1.5.3] Old Version: [1.4.0]
+[2024-04-20 20:03:07] INFO root fetch - processPackages [identify]: Downloading https://files.pythonhosted.org/packages/67/e1/869d7b8df41a3ac2a3c74a2a4ba401df468044dccc489b8937aad40d148e/identify-2.5.8.tar.gz
+[2024-04-20 20:03:07] INFO root fetch - processPackages [flake8-json]: Downloading https://files.pythonhosted.org/packages/2a/5c/a74547fffd4deaeca90ddf49bd7589866d9ef8f20e2b2cee122322caa7df/flake8_json-23.7.0.tar.gz
+[2024-04-20 20:03:07] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Downloading https://files.pythonhosted.org/packages/0d/b6/cd08f02d96dd6529c862390c71e43136de97bad978a00ef634968b72d8d5/opentelemetry_instrumentation_faststream-0.1.0.tar.gz
+[2024-04-20 20:03:07] INFO root fetch - processPackages [copasul]: Downloading https://files.pythonhosted.org/packages/a6/33/2795603ed4adf02932bfe8681cb229b407c219b3bb2d9233aad4e5585ab2/copasul-1.4.0.tar.gz
+[2024-04-20 20:03:07] INFO root fetch - processPackages [hfutils]: Downloading https://files.pythonhosted.org/packages/11/32/0f09f314e0020ea783dccefeaa40015a87a3adc2124c3f3c36bd838dbf76/hfutils-0.1.2.tar.gz
+[2024-04-20 20:03:07] INFO root fetch - processPackages [hfutils]: executing diffoscope
+[2024-04-20 20:03:07] INFO root fetch - processPackages [hfutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hfutils-0.1.1.tar.gz tmp/hfutils-0.1.2.tar.gz --markdown 20240420/h/hfutils/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-04-20 20:03:08] INFO root fetch - processPackages [identify]: Downloading https://files.pythonhosted.org/packages/32/c2/c7b3d6e93055f31fee10867c56e5001bd3e0aad149bc13b60c98a588115a/identify-2.5.9.tar.gz
+[2024-04-20 20:03:08] INFO root fetch - processPackages [flake8-json]: Downloading https://files.pythonhosted.org/packages/29/31/13e0ad99887a2c53c05535d53a37f738ba94c538e9db24b06e494dc4a7b6/flake8_json-24.4.0.tar.gz
+[2024-04-20 20:03:08] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Downloading https://files.pythonhosted.org/packages/d4/95/f2ad32449ec3b49675dd4877720ff4c288f8df7a5b78391feabc89afde8e/opentelemetry_instrumentation_faststream-0.1.1.tar.gz
+[2024-04-20 20:03:08] INFO root fetch - processPackages [copasul]: Downloading https://files.pythonhosted.org/packages/62/b2/f4b518c99d609c76f2fa927ee530c6510ab5cdd13a8721b9320f149501ca/copasul-1.5.3.tar.gz
+[2024-04-20 20:03:08] INFO root fetch - processPackages [flake8-json]: executing diffoscope
+[2024-04-20 20:03:08] INFO root fetch - processPackages [flake8-json]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flake8_json-23.7.0.tar.gz tmp/flake8_json-24.4.0.tar.gz --markdown 20240420/f/flake8-json/23.7.0-24.4.0/README.md --exclude *.pyd
+[2024-04-20 20:03:08] INFO root fetch - processPackages [identify]: executing diffoscope
+[2024-04-20 20:03:08] INFO root fetch - processPackages [identify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/identify-2.5.8.tar.gz tmp/identify-2.5.9.tar.gz --markdown 20240420/i/identify/2.5.8-2.5.9/README.md --exclude *.pyd
+[2024-04-20 20:03:08] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: executing diffoscope
+[2024-04-20 20:03:08] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opentelemetry_instrumentation_faststream-0.1.0.tar.gz tmp/opentelemetry_instrumentation_faststream-0.1.1.tar.gz --markdown 20240420/o/opentelemetry-instrumentation-faststream/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 20:03:08] INFO root fetch - processPackages [copasul]: executing diffoscope
+[2024-04-20 20:03:08] INFO root fetch - processPackages [copasul]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copasul-1.4.0.tar.gz tmp/copasul-1.5.3.tar.gz --markdown 20240420/c/copasul/1.4.0-1.5.3/README.md --exclude *.pyd
+[2024-04-20 20:03:08] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.1.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - processPackages [hfutils]: Remove: archive file [/home/abi/fetcher/tmp/hfutils-0.1.2.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - main [MainThread]: End processing [hfutils]: success
+[2024-04-20 20:03:08] INFO root fetch - processPackages [flake8-json]: Remove: archive file [/home/abi/fetcher/tmp/flake8_json-23.7.0.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - processPackages [flake8-json]: Remove: archive file [/home/abi/fetcher/tmp/flake8_json-24.4.0.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - main [MainThread]: End processing [flake8-json]: success
+[2024-04-20 20:03:08] INFO root fetch - processPackages [identify]: Remove: archive file [/home/abi/fetcher/tmp/identify-2.5.8.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - processPackages [identify]: Remove: archive file [/home/abi/fetcher/tmp/identify-2.5.9.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - main [MainThread]: End processing [identify]: success
+[2024-04-20 20:03:08] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Remove: archive file [/home/abi/fetcher/tmp/opentelemetry_instrumentation_faststream-0.1.0.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - processPackages [opentelemetry-instrumentation-faststream]: Remove: archive file [/home/abi/fetcher/tmp/opentelemetry_instrumentation_faststream-0.1.1.tar.gz]
+[2024-04-20 20:03:08] INFO root fetch - main [MainThread]: End processing [opentelemetry-instrumentation-faststream]: success
+[2024-04-20 20:03:09] INFO root fetch - processPackages [copasul]: Remove: archive file [/home/abi/fetcher/tmp/copasul-1.4.0.tar.gz]
+[2024-04-20 20:03:09] INFO root fetch - processPackages [copasul]: Remove: archive file [/home/abi/fetcher/tmp/copasul-1.5.3.tar.gz]
+[2024-04-20 20:03:09] INFO root fetch - main [MainThread]: End processing [copasul]: success
+[2024-04-20 20:03:09] INFO root fetch - main [MainThread]: Store serial: [22858104]
