@@ -8835,3 +8835,45 @@
 [2024-04-20 05:51:54] INFO root fetch - processPackages [pssr]: Remove: archive file [/home/abi/fetcher/tmp/pssr-1.0.2.tar.gz]
 [2024-04-20 05:51:54] INFO root fetch - main [MainThread]: End processing [pssr]: success
 [2024-04-20 05:51:54] INFO root fetch - main [MainThread]: Store serial: [22852258]
+[2024-04-20 05:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852258]
+[2024-04-20 05:54:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thepipe-api
+[2024-04-20 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FastSnake
+[2024-04-20 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: recflows
+[2024-04-20 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-controler
+[2024-04-20 05:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: muko
+[2024-04-20 05:54:03] INFO root fetch - processPackages [muko]: New version: [2.25] Old Version: [2.24]
+[2024-04-20 05:54:03] INFO root fetch - processPackages [FastSnake]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-04-20 05:54:03] INFO root fetch - processPackages [recflows]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 05:54:03] INFO root fetch - processPackages [thepipe-api]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-20 05:54:03] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/75/5a/4b52d3ff259c3f6b479f06d44538d510a7b56662950706ae95edf64f6df6/recflows-0.0.8.tar.gz
+[2024-04-20 05:54:03] WARNING root fetch - processPackages [discord-controler]: Skipping, unable to determine old version
+[2024-04-20 05:54:03] INFO root fetch - main [MainThread]: End processing [discord-controler] error
+[2024-04-20 05:54:03] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/64/78/1a4c3d3ce95c18fccdeb08ce6e72ca42bba6452a48055a9c44480a544c76/fastsnake-1.4.6.tar.gz
+[2024-04-20 05:54:03] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/79/40/c2022c5ddbf9a52efa851c8ef8681900f6cdc599705684fcf988c4eddeb3/muko-2.24-py3-none-any.whl
+[2024-04-20 05:54:03] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/a9/50/c09fcf03affd03b80f6f031a0bc187f5560fd546e1fe6388ed04d0a6ab38/thepipe_api-0.2.7.tar.gz
+[2024-04-20 05:54:04] INFO root fetch - processPackages [recflows]: Downloading https://files.pythonhosted.org/packages/b0/3a/5fe25ed6db3f6a0b1324bba20aef50aeeef1b71eceb228be123efb580bbe/recflows-0.0.9.tar.gz
+[2024-04-20 05:54:04] INFO root fetch - processPackages [FastSnake]: Downloading https://files.pythonhosted.org/packages/15/82/98fbb2ff78eb668f02ba538197f1716dc2e113e552e29d7225412311d346/fastsnake-1.4.7.tar.gz
+[2024-04-20 05:54:04] INFO root fetch - processPackages [recflows]: executing diffoscope
+[2024-04-20 05:54:04] INFO root fetch - processPackages [recflows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recflows-0.0.8.tar.gz tmp/recflows-0.0.9.tar.gz --markdown 20240420/r/recflows/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 05:54:04] INFO root fetch - processPackages [FastSnake]: executing diffoscope
+[2024-04-20 05:54:04] INFO root fetch - processPackages [FastSnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastsnake-1.4.6.tar.gz tmp/fastsnake-1.4.7.tar.gz --markdown 20240420/F/FastSnake/1.4.6-1.4.7/README.md --exclude *.pyd
+[2024-04-20 05:54:04] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/21/c4/4651bb631e1a01a74ee7f90b7e3b0814deee641823a1af4a74b6e9e4f363/muko-2.25-py3-none-any.whl
+[2024-04-20 05:54:04] INFO root fetch - processPackages [thepipe-api]: Downloading https://files.pythonhosted.org/packages/db/8f/b4d78d034ed2d9bcf81cabff2a74e49d4247d5f70bba8dbbd8acc3329e65/thepipe_api-0.2.8.tar.gz
+[2024-04-20 05:54:04] INFO root fetch - processPackages [thepipe-api]: executing diffoscope
+[2024-04-20 05:54:04] INFO root fetch - processPackages [thepipe-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thepipe_api-0.2.7.tar.gz tmp/thepipe_api-0.2.8.tar.gz --markdown 20240420/t/thepipe-api/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-04-20 05:54:04] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-04-20 05:54:04] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.24-py3-none-any.whl.zip tmp/muko-2.25-py3-none-any.whl.zip --markdown 20240420/m/muko/2.24-2.25/README.md --exclude *.pyd
+[2024-04-20 05:54:04] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.8.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - processPackages [recflows]: Remove: archive file [/home/abi/fetcher/tmp/recflows-0.0.9.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - main [MainThread]: End processing [recflows]: success
+[2024-04-20 05:54:04] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.6.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - processPackages [FastSnake]: Remove: archive file [/home/abi/fetcher/tmp/fastsnake-1.4.7.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - main [MainThread]: End processing [FastSnake]: success
+[2024-04-20 05:54:04] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.7.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - processPackages [thepipe-api]: Remove: archive file [/home/abi/fetcher/tmp/thepipe_api-0.2.8.tar.gz]
+[2024-04-20 05:54:04] INFO root fetch - main [MainThread]: End processing [thepipe-api]: success
+[2024-04-20 05:54:05] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.24-py3-none-any.whl.zip]
+[2024-04-20 05:54:05] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.25-py3-none-any.whl.zip]
+[2024-04-20 05:54:05] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-04-20 05:54:05] INFO root fetch - main [MainThread]: Store serial: [22852276]
