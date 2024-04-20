@@ -2427,3 +2427,84 @@
 [2024-04-20 02:23:52] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
 [2024-04-20 02:23:52] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2024-04-20 02:23:52] INFO root fetch - main [MainThread]: Store serial: [22849889]
+[2024-04-20 02:25:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22849889]
+[2024-04-20 02:26:01] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-serverless-clamscan
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: md2weasypdf
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-connectivity-viewer
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: json-exporter
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: counts
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aghplctools
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk-ecs-service-extensions
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tendril-auth
+[2024-04-20 02:26:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: dbt-materialize
+[2024-04-20 02:26:01] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a99] Old Version: [2.0.1a98]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/b3/03/a5048c11bd44185f044a152a90d4d24c4951449ada07047db37b6a916a11/dash_connectivity_viewer-2.2.1.tar.gz
+[2024-04-20 02:26:01] WARNING root fetch - processPackages [counts]: Skipping, unable to determine old version
+[2024-04-20 02:26:01] INFO root fetch - main [MainThread]: End processing [counts] error
+[2024-04-20 02:26:01] WARNING root fetch - processPackages [md2weasypdf]: Skipping, unable to determine old version
+[2024-04-20 02:26:01] INFO root fetch - main [MainThread]: End processing [md2weasypdf] error
+[2024-04-20 02:26:01] INFO root fetch - processPackages [json-exporter]: New version: [1.0.0] Old Version: [0.5.0]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [aghplctools]: New version: [4.8.8] Old Version: [4.8.6]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [tendril-auth]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [dbt-materialize]: New version: [1.7.7] Old Version: [1.7.6]
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/c9/ad/d7965da0f34d52de670def31464963b3971de03ac20cddf5eac577722b31/cdk-ecs-service-extensions-2.0.1a98.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [json-exporter]: Downloading https://files.pythonhosted.org/packages/c0/7b/91e4214d4b4050cf96050b706f5efa6702b98c76e7a6d17ae02296dca784/json_exporter-0.5.0.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [aghplctools]: Downloading https://files.pythonhosted.org/packages/90/46/84a307ecf4f2e331c78b509c3e1535e7016edf74d907f5179f20f5452ba2/aghplctools-4.8.6.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [dbt-materialize]: Downloading https://files.pythonhosted.org/packages/37/d8/82e5bbe8a8191940540314e34daf75e375f746ee3d2801d8f40020a17838/dbt-materialize-1.7.6.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [tendril-auth]: Downloading https://files.pythonhosted.org/packages/3d/57/cb4c28e5138b5ba8bca61864935e1c6f22a613dc7274b54ff4309bc7e95f/tendril_auth-0.4.1.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/9c/f7/1a593c4ae0d3c80332cec251caad8f13a27842299475718ad186eea220ba/cdk-ecs-service-extensions-2.0.1a99.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/a0/1c/3086e02f63e1fc591c40cadd2c4f8ee1abd28f71c1e38d3c333da7327816/dash_connectivity_viewer-2.2.2.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240420/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2024-04-20 02:26:01] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz --markdown 20240420/c/cdk-ecs-service-extensions/2.0.1a98-2.0.1a99/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_connectivity_viewer-2.2.1.tar.gz tmp/dash_connectivity_viewer-2.2.2.tar.gz --markdown 20240420/d/dash-connectivity-viewer/2.2.1-2.2.2/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240420/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [aghplctools]: Downloading https://files.pythonhosted.org/packages/03/e0/4833668b108d6421503a4f1171b66b54b36abd47d03a848aa9522575c61a/aghplctools-4.8.8.tar.gz
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dbt-materialize]: Downloading https://files.pythonhosted.org/packages/a7/27/94d976727d2afdf99e5186c3d5dfcfa4ca5d8380086d9f53dba64f4c5dbf/dbt-materialize-1.7.7.tar.gz
+[2024-04-20 02:26:02] INFO root fetch - processPackages [tendril-auth]: Downloading https://files.pythonhosted.org/packages/dc/c0/7aea7f7858ebf9ef5d05eeb569198d94e0a7e98c631673d79293c3a3beb3/tendril_auth-0.4.2.tar.gz
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dbt-materialize]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dbt-materialize]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt-materialize-1.7.6.tar.gz tmp/dbt-materialize-1.7.7.tar.gz --markdown 20240420/d/dbt-materialize/1.7.6-1.7.7/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [tendril-auth]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [tendril-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tendril_auth-0.4.1.tar.gz tmp/tendril_auth-0.4.2.tar.gz --markdown 20240420/t/tendril-auth/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [aghplctools]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [aghplctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aghplctools-4.8.6.tar.gz tmp/aghplctools-4.8.8.tar.gz --markdown 20240420/a/aghplctools/4.8.6-4.8.8/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [json-exporter]: Downloading https://files.pythonhosted.org/packages/4f/20/bdb62f8d4c5cf468c12e95991b7bd64ac08e0665a7cf82522933c0c7ec8d/json_exporter-1.0.0.tar.gz
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-04-20 02:26:02] INFO root fetch - processPackages [json-exporter]: executing diffoscope
+[2024-04-20 02:26:02] INFO root fetch - processPackages [json-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json_exporter-0.5.0.tar.gz tmp/json_exporter-1.0.0.tar.gz --markdown 20240420/j/json-exporter/0.5.0-1.0.0/README.md --exclude *.pyd
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.1.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - processPackages [dash-connectivity-viewer]: Remove: archive file [/home/abi/fetcher/tmp/dash_connectivity_viewer-2.2.2.tar.gz]
+[2024-04-20 02:26:02] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2024-04-20 02:26:03] INFO root fetch - processPackages [tendril-auth]: Remove: archive file [/home/abi/fetcher/tmp/tendril_auth-0.4.1.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - processPackages [tendril-auth]: Remove: archive file [/home/abi/fetcher/tmp/tendril_auth-0.4.2.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - main [MainThread]: End processing [tendril-auth]: success
+[2024-04-20 02:26:03] INFO root fetch - processPackages [dbt-materialize]: Remove: archive file [/home/abi/fetcher/tmp/dbt-materialize-1.7.6.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - processPackages [dbt-materialize]: Remove: archive file [/home/abi/fetcher/tmp/dbt-materialize-1.7.7.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - main [MainThread]: End processing [dbt-materialize]: success
+[2024-04-20 02:26:03] INFO root fetch - processPackages [aghplctools]: Remove: archive file [/home/abi/fetcher/tmp/aghplctools-4.8.6.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - processPackages [aghplctools]: Remove: archive file [/home/abi/fetcher/tmp/aghplctools-4.8.8.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - main [MainThread]: End processing [aghplctools]: success
+[2024-04-20 02:26:03] INFO root fetch - processPackages [json-exporter]: Remove: archive file [/home/abi/fetcher/tmp/json_exporter-0.5.0.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - processPackages [json-exporter]: Remove: archive file [/home/abi/fetcher/tmp/json_exporter-1.0.0.tar.gz]
+[2024-04-20 02:26:03] INFO root fetch - main [MainThread]: End processing [json-exporter]: success
+[2024-04-20 02:26:03] INFO root fetch - main [MainThread]: Store serial: [22849920]
