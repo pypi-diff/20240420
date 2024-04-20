@@ -14831,3 +14831,33 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:36:11] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.7.tar.gz]
 [2024-04-20 13:36:11] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 13:36:11] INFO root fetch - main [MainThread]: Store serial: [22855192]
+[2024-04-20 13:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855192]
+[2024-04-20 13:38:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beepy-web
+[2024-04-20 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bencode2
+[2024-04-20 13:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: TheSilent
+[2024-04-20 13:38:21] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 13:38:21] INFO root fetch - processPackages [beepy-web]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-04-20 13:38:21] INFO root fetch - processPackages [bencode2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 13:38:21] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 13:38:21] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/ed/29/bca280054e4ddd8da072f5aac651ea2d37a17613afdd13b0429a0745fdff/beepy_web-0.9.6.tar.gz
+[2024-04-20 13:38:21] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 13:38:21] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/23/f4/a28e8c52b18fc023e1b81784bbf2d9b9a8238d10dbf675853b69f64f6f8d/bencode2-0.0.8.tar.gz
+[2024-04-20 13:38:21] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 13:38:21] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 13:38:21] INFO root fetch - processPackages [beepy-web]: Downloading https://files.pythonhosted.org/packages/0b/01/2b0fad8489342b797712f6eef219b5b3867d961ef4017dbf133411d8aabd/beepy_web-0.9.7.tar.gz
+[2024-04-20 13:38:21] INFO root fetch - processPackages [beepy-web]: executing diffoscope
+[2024-04-20 13:38:21] INFO root fetch - processPackages [beepy-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beepy_web-0.9.6.tar.gz tmp/beepy_web-0.9.7.tar.gz --markdown 20240420/b/beepy-web/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-04-20 13:38:21] INFO root fetch - processPackages [bencode2]: Downloading https://files.pythonhosted.org/packages/0f/06/7fedfc22787eec56cd4d7da016a9d7a7aa43a4ab7e1a41b7443bdc8bf981/bencode2-0.0.9.tar.gz
+[2024-04-20 13:38:22] INFO root fetch - processPackages [bencode2]: executing diffoscope
+[2024-04-20 13:38:22] INFO root fetch - processPackages [bencode2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bencode2-0.0.8.tar.gz tmp/bencode2-0.0.9.tar.gz --markdown 20240420/b/bencode2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 13:38:22] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 13:38:22] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.6.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - processPackages [beepy-web]: Remove: archive file [/home/abi/fetcher/tmp/beepy_web-0.9.7.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - main [MainThread]: End processing [beepy-web]: success
+[2024-04-20 13:38:22] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.8.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - processPackages [bencode2]: Remove: archive file [/home/abi/fetcher/tmp/bencode2-0.0.9.tar.gz]
+[2024-04-20 13:38:22] INFO root fetch - main [MainThread]: End processing [bencode2]: success
+[2024-04-20 13:38:22] INFO root fetch - main [MainThread]: Store serial: [22855235]
