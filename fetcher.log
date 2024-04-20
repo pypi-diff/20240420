@@ -20090,3 +20090,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:25:44] INFO root fetch - processPackages [quacc]: Remove: archive file [/home/abi/fetcher/tmp/quacc-0.7.6.tar.gz]
 [2024-04-20 19:25:44] INFO root fetch - main [MainThread]: End processing [quacc]: success
 [2024-04-20 19:25:44] INFO root fetch - main [MainThread]: Store serial: [22857831]
+[2024-04-20 19:27:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857831]
+[2024-04-20 19:27:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 19:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autonomous-app
+[2024-04-20 19:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytme
+[2024-04-20 19:27:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graymatter_swissknife
+[2024-04-20 19:27:52] INFO root fetch - processPackages [graymatter_swissknife]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-04-20 19:27:52] INFO root fetch - processPackages [autonomous-app]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-20 19:27:53] INFO root fetch - processPackages [pytme]: New version: [0.2.0b0] Old Version: [0.1.9]
+[2024-04-20 19:27:53] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/21/a6/c05f78f922153fb922d822f9385a53cf4f519772658ccf24ff34a988d3f6/autonomous_app-0.2.5.tar.gz
+[2024-04-20 19:27:53] INFO root fetch - processPackages [graymatter_swissknife]: Downloading https://files.pythonhosted.org/packages/38/ed/3b1bd406207fb963f485364e378c0341340e02885b926b59daf99cd53fdf/graymatter_swissknife-1.2.2.tar.gz
+[2024-04-20 19:27:53] INFO root fetch - processPackages [pytme]: Downloading https://files.pythonhosted.org/packages/e4/ae/0faa75059e37b29bc780c0a27c619a9c792741b00b3dd84aab1e32d24b42/pytme-0.1.9.tar.gz
+[2024-04-20 19:27:53] INFO root fetch - processPackages [autonomous-app]: Downloading https://files.pythonhosted.org/packages/35/63/363bec77f0fe715339c8ab465853263edd9309944acd0fa2701a08feaeb5/autonomous_app-0.2.6.tar.gz
+[2024-04-20 19:27:53] INFO root fetch - processPackages [autonomous-app]: executing diffoscope
+[2024-04-20 19:27:53] INFO root fetch - processPackages [autonomous-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autonomous_app-0.2.5.tar.gz tmp/autonomous_app-0.2.6.tar.gz --markdown 20240420/a/autonomous-app/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-04-20 19:27:53] INFO root fetch - processPackages [graymatter_swissknife]: Downloading https://files.pythonhosted.org/packages/c7/be/06792e965c1366c42e4ceb722e3425e22aca005866e40d4f11e126c4cd2b/graymatter_swissknife-1.2.3.tar.gz
+[2024-04-20 19:27:53] INFO root fetch - processPackages [graymatter_swissknife]: executing diffoscope
+[2024-04-20 19:27:53] INFO root fetch - processPackages [graymatter_swissknife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graymatter_swissknife-1.2.2.tar.gz tmp/graymatter_swissknife-1.2.3.tar.gz --markdown 20240420/g/graymatter_swissknife/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-04-20 19:27:53] INFO root fetch - processPackages [pytme]: Downloading https://files.pythonhosted.org/packages/b0/ec/6fd2d361eae8f50c5d91f0f73f6ddce88eba83bd3dc236edd0a211aee590/pytme-0.2.0b0.tar.gz
+[2024-04-20 19:27:54] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.5.tar.gz]
+[2024-04-20 19:27:54] INFO root fetch - processPackages [autonomous-app]: Remove: archive file [/home/abi/fetcher/tmp/autonomous_app-0.2.6.tar.gz]
+[2024-04-20 19:27:54] INFO root fetch - main [MainThread]: End processing [autonomous-app]: success
+[2024-04-20 19:27:54] INFO root fetch - processPackages [graymatter_swissknife]: Remove: archive file [/home/abi/fetcher/tmp/graymatter_swissknife-1.2.2.tar.gz]
+[2024-04-20 19:27:54] INFO root fetch - processPackages [graymatter_swissknife]: Remove: archive file [/home/abi/fetcher/tmp/graymatter_swissknife-1.2.3.tar.gz]
+[2024-04-20 19:27:54] INFO root fetch - main [MainThread]: End processing [graymatter_swissknife]: success
+[2024-04-20 19:27:54] INFO root fetch - processPackages [pytme]: executing diffoscope
+[2024-04-20 19:27:54] INFO root fetch - processPackages [pytme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytme-0.1.9.tar.gz tmp/pytme-0.2.0b0.tar.gz --markdown 20240420/p/pytme/0.1.9-0.2.0b0/README.md --exclude *.pyd
+[2024-04-20 19:27:57] INFO root fetch - processPackages [pytme]: Remove: archive file [/home/abi/fetcher/tmp/pytme-0.1.9.tar.gz]
+[2024-04-20 19:27:57] INFO root fetch - processPackages [pytme]: Remove: archive file [/home/abi/fetcher/tmp/pytme-0.2.0b0.tar.gz]
+[2024-04-20 19:27:57] INFO root fetch - main [MainThread]: End processing [pytme]: success
+[2024-04-20 19:27:57] INFO root fetch - main [MainThread]: Store serial: [22857840]
