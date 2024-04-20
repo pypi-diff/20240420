@@ -24018,3 +24018,27 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:47:39] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
 [2024-04-20 23:47:39] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
 [2024-04-20 23:47:39] INFO root fetch - main [MainThread]: Store serial: [22859731]
+[2024-04-20 23:49:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859731]
+[2024-04-20 23:49:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 23:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octomy-batch
+[2024-04-20 23:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC242
+[2024-04-20 23:49:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2024-04-20 23:49:48] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-20 23:49:48] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 23:49:48] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-20 23:49:48] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-20 23:49:48] WARNING root fetch - processPackages [PythonTestLJC242]: Skipping, unable to determine old version
+[2024-04-20 23:49:48] INFO root fetch - main [MainThread]: End processing [PythonTestLJC242] error
+[2024-04-20 23:49:48] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-20 23:49:48] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-20 23:49:48] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-20 23:49:48] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240420/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 23:49:48] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-20 23:49:48] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240420/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-20 23:49:49] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-20 23:49:49] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-20 23:49:49] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-20 23:49:49] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-20 23:49:49] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-20 23:49:49] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-20 23:49:49] INFO root fetch - main [MainThread]: Store serial: [22859744]
