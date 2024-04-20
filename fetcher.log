@@ -13119,3 +13119,51 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:37:26] INFO root fetch - processPackages [TUIFIManager]: Remove: archive file [/home/abi/fetcher/tmp/TUIFIManager-4.0.0.tar.gz]
 [2024-04-20 11:37:26] INFO root fetch - main [MainThread]: End processing [TUIFIManager]: success
 [2024-04-20 11:37:26] INFO root fetch - main [MainThread]: Store serial: [22854455]
+[2024-04-20 11:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854455]
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC015
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC016
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC017
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC018
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC019
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: audian
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mytot
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC020
+[2024-04-20 11:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sponge
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC017]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC017] error
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC015]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC015] error
+[2024-04-20 11:39:35] INFO root fetch - processPackages [audian]: New version: [1.6] Old Version: [1.5]
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC019]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC019] error
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC018]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC018] error
+[2024-04-20 11:39:35] INFO root fetch - processPackages [mytot]: New version: [2024.4.20.173918] Old Version: [2024.4.20.144003]
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC016]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC016] error
+[2024-04-20 11:39:35] INFO root fetch - processPackages [sponge]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 11:39:35] WARNING root fetch - processPackages [PythonTestLJC020]: Skipping, unable to determine old version
+[2024-04-20 11:39:35] INFO root fetch - main [MainThread]: End processing [PythonTestLJC020] error
+[2024-04-20 11:39:35] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/81/a885e08103ab4f871094b84134fcfb583786cdb712420a77580218f380e4/mytot-2024.4.20.144003-py3-none-any.whl
+[2024-04-20 11:39:36] INFO root fetch - processPackages [audian]: Downloading https://files.pythonhosted.org/packages/5b/63/d7ec0307184089d9b6034b2a4ef734e142f0a49766db4332e6ca01c745e5/audian-1.5.tar.gz
+[2024-04-20 11:39:36] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/34/9c/30215818bd1347a9f2b90f1fa2c26683584af231ad96fc91b7ec282ce750/sponge-0.0.6.tar.gz
+[2024-04-20 11:39:36] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/2c/4356c2fbc3a32e41f92fb14927a903dae34eb5c309fdd00d88ddd6b4e699/mytot-2024.4.20.173918-py3-none-any.whl
+[2024-04-20 11:39:36] INFO root fetch - processPackages [sponge]: Downloading https://files.pythonhosted.org/packages/5a/18/fe892b79e49d8dd7faba9ad1064b59af31ddad98988146a906eae468b936/sponge-0.0.7.tar.gz
+[2024-04-20 11:39:36] INFO root fetch - processPackages [mytot]: executing diffoscope
+[2024-04-20 11:39:36] INFO root fetch - processPackages [mytot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip --markdown 20240420/m/mytot/2024.4.20.144003-2024.4.20.173918/README.md --exclude *.pyd
+[2024-04-20 11:39:36] INFO root fetch - processPackages [audian]: Downloading https://files.pythonhosted.org/packages/5c/29/d2734ded1fccb1c3f3a41002c93ba96eaeee40c170397f60d7acd6141fe1/audian-1.6.tar.gz
+[2024-04-20 11:39:36] INFO root fetch - processPackages [sponge]: executing diffoscope
+[2024-04-20 11:39:36] INFO root fetch - processPackages [sponge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sponge-0.0.6.tar.gz tmp/sponge-0.0.7.tar.gz --markdown 20240420/s/sponge/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 11:39:36] INFO root fetch - processPackages [audian]: executing diffoscope
+[2024-04-20 11:39:36] INFO root fetch - processPackages [audian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audian-1.5.tar.gz tmp/audian-1.6.tar.gz --markdown 20240420/a/audian/1.5-1.6/README.md --exclude *.pyd
+[2024-04-20 11:39:36] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.144003-py3-none-any.whl.zip]
+[2024-04-20 11:39:36] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip]
+[2024-04-20 11:39:36] INFO root fetch - main [MainThread]: End processing [mytot]: success
+[2024-04-20 11:39:37] INFO root fetch - processPackages [audian]: Remove: archive file [/home/abi/fetcher/tmp/audian-1.5.tar.gz]
+[2024-04-20 11:39:37] INFO root fetch - processPackages [audian]: Remove: archive file [/home/abi/fetcher/tmp/audian-1.6.tar.gz]
+[2024-04-20 11:39:37] INFO root fetch - main [MainThread]: End processing [audian]: success
+[2024-04-20 11:39:37] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.6.tar.gz]
+[2024-04-20 11:39:37] INFO root fetch - processPackages [sponge]: Remove: archive file [/home/abi/fetcher/tmp/sponge-0.0.7.tar.gz]
+[2024-04-20 11:39:37] INFO root fetch - main [MainThread]: End processing [sponge]: success
+[2024-04-20 11:39:37] INFO root fetch - main [MainThread]: Store serial: [22854490]
