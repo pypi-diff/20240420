@@ -12275,3 +12275,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:42:02] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-20 10:42:02] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-20 10:42:02] INFO root fetch - main [MainThread]: Store serial: [22853989]
+[2024-04-20 10:44:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853989]
+[2024-04-20 10:44:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 10:44:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BookDB
+[2024-04-20 10:44:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-kawaii-status
+[2024-04-20 10:44:11] WARNING root fetch - processPackages [BookDB]: Skipping, unable to determine old version
+[2024-04-20 10:44:11] INFO root fetch - main [MainThread]: End processing [BookDB] error
+[2024-04-20 10:44:11] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-20 10:44:11] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: Downloading https://files.pythonhosted.org/packages/b8/7d/7c6d9453e1edb447e86f70f418f155dc81903f4293a588ed10ba533f688a/nonebot_plugin_kawaii_status-0.1.3.tar.gz
+[2024-04-20 10:44:11] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: Downloading https://files.pythonhosted.org/packages/34/51/c1c4e39165cc943e2bb464a1ecb114f9b756c30b6b6afd54dab6988e39ce/nonebot_plugin_kawaii_status-0.1.4.tar.gz
+[2024-04-20 10:44:12] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: executing diffoscope
+[2024-04-20 10:44:12] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_kawaii_status-0.1.3.tar.gz tmp/nonebot_plugin_kawaii_status-0.1.4.tar.gz --markdown 20240420/n/nonebot-plugin-kawaii-status/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-04-20 10:44:13] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kawaii_status-0.1.3.tar.gz]
+[2024-04-20 10:44:13] INFO root fetch - processPackages [nonebot-plugin-kawaii-status]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kawaii_status-0.1.4.tar.gz]
+[2024-04-20 10:44:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kawaii-status]: success
+[2024-04-20 10:44:13] INFO root fetch - main [MainThread]: Store serial: [22853997]
