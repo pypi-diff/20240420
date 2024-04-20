@@ -11753,3 +11753,41 @@
 [2024-04-20 09:56:26] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
 [2024-04-20 09:56:26] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
 [2024-04-20 09:56:26] INFO root fetch - main [MainThread]: Store serial: [22853721]
+[2024-04-20 09:58:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853721]
+[2024-04-20 09:58:36] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 10:00:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853734]
+[2024-04-20 10:00:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 10:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rk-extractor
+[2024-04-20 10:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oktay1024
+[2024-04-20 10:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-nightly
+[2024-04-20 10:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sample-pip-dependency
+[2024-04-20 10:00:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrotgfork
+[2024-04-20 10:00:42] INFO root fetch - processPackages [pyrotgfork]: New version: [2.1.20] Old Version: [2.1.19]
+[2024-04-20 10:00:42] WARNING root fetch - processPackages [sample-pip-dependency]: Skipping, unable to determine old version
+[2024-04-20 10:00:42] INFO root fetch - main [MainThread]: End processing [sample-pip-dependency] error
+[2024-04-20 10:00:42] INFO root fetch - processPackages [rk-extractor]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-20 10:00:42] WARNING root fetch - processPackages [oktay1024]: Skipping, unable to determine old version
+[2024-04-20 10:00:42] INFO root fetch - main [MainThread]: End processing [oktay1024] error
+[2024-04-20 10:00:42] INFO root fetch - processPackages [rk-extractor]: Downloading https://files.pythonhosted.org/packages/f9/9d/4a2aea0978a601355655a2830cf0a83e896046072f211015b210149ed869/rk_extractor-0.9.7.tar.gz
+[2024-04-20 10:00:42] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/44/db/135f99a98f086d77852769128d8397c321c7bed4e4d8899be52cae5a5d3c/pyrotgfork-2.1.19.tar.gz
+[2024-04-20 10:00:42] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240420] Old Version: [2.17.0.dev20240419]
+[2024-04-20 10:00:42] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/ab/36/124b10a35014254aac3323c067cd3e05352767d4702a9d4c2b5aaafe413a/tf_nightly-2.17.0.dev20240419-cp39-cp39-win_amd64.whl
+[2024-04-20 10:00:42] INFO root fetch - processPackages [pyrotgfork]: Downloading https://files.pythonhosted.org/packages/88/c6/330c8288dff62c3214933e9f47ed073a569906b6d7d291e7f65a13d5bccb/pyrotgfork-2.1.20.tar.gz
+[2024-04-20 10:00:42] INFO root fetch - processPackages [rk-extractor]: Downloading https://files.pythonhosted.org/packages/a8/9d/84352d7c0e946f761d7e1a250c2730d4a9231766a7ed5d704879af090146/rk_extractor-0.9.8.tar.gz
+[2024-04-20 10:00:42] INFO root fetch - processPackages [pyrotgfork]: executing diffoscope
+[2024-04-20 10:00:42] INFO root fetch - processPackages [pyrotgfork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotgfork-2.1.19.tar.gz tmp/pyrotgfork-2.1.20.tar.gz --markdown 20240420/p/pyrotgfork/2.1.19-2.1.20/README.md --exclude *.pyd
+[2024-04-20 10:00:42] INFO root fetch - processPackages [rk-extractor]: executing diffoscope
+[2024-04-20 10:00:42] INFO root fetch - processPackages [rk-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rk_extractor-0.9.7.tar.gz tmp/rk_extractor-0.9.8.tar.gz --markdown 20240420/r/rk-extractor/0.9.7-0.9.8/README.md --exclude *.pyd
+[2024-04-20 10:00:42] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/fd/3a/be633a584115e58dbcb5fcb68bfeed5ffb44afdcd0ba6966f16358b1f791/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl
+[2024-04-20 10:00:43] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-20 10:00:43] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240419-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip --markdown 20240420/t/tf-nightly/2.17.0.dev20240419-2.17.0.dev20240420/README.md --exclude *.pyd
+[2024-04-20 10:00:43] INFO root fetch - processPackages [rk-extractor]: Remove: archive file [/home/abi/fetcher/tmp/rk_extractor-0.9.7.tar.gz]
+[2024-04-20 10:00:43] INFO root fetch - processPackages [rk-extractor]: Remove: archive file [/home/abi/fetcher/tmp/rk_extractor-0.9.8.tar.gz]
+[2024-04-20 10:00:43] INFO root fetch - main [MainThread]: End processing [rk-extractor]: success
+[2024-04-20 10:00:43] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240419-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 10:00:43] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip]
+[2024-04-20 10:00:43] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-20 10:00:44] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.19.tar.gz]
+[2024-04-20 10:00:44] INFO root fetch - processPackages [pyrotgfork]: Remove: archive file [/home/abi/fetcher/tmp/pyrotgfork-2.1.20.tar.gz]
+[2024-04-20 10:00:44] INFO root fetch - main [MainThread]: End processing [pyrotgfork]: success
+[2024-04-20 10:00:44] INFO root fetch - main [MainThread]: Store serial: [22853772]
