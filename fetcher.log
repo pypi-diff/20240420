@@ -20922,3 +20922,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:14:07] INFO root fetch - processPackages [cltk]: Remove: archive file [/home/abi/fetcher/tmp/cltk-1.2.5.tar.gz]
 [2024-04-20 20:14:07] INFO root fetch - main [MainThread]: End processing [cltk]: success
 [2024-04-20 20:14:07] INFO root fetch - main [MainThread]: Store serial: [22858218]
+[2024-04-20 20:16:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858218]
+[2024-04-20 20:16:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 20:16:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fotolab
+[2024-04-20 20:16:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: g4f
+[2024-04-20 20:16:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ContactMechanics
+[2024-04-20 20:16:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC165
+[2024-04-20 20:16:16] WARNING root fetch - processPackages [PythonTestLJC165]: Skipping, unable to determine old version
+[2024-04-20 20:16:16] INFO root fetch - main [MainThread]: End processing [PythonTestLJC165] error
+[2024-04-20 20:16:16] INFO root fetch - processPackages [fotolab]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-20 20:16:16] INFO root fetch - processPackages [ContactMechanics]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-04-20 20:16:16] INFO root fetch - processPackages [g4f]: New version: [0.3.0.2] Old Version: [0.3.0.1]
+[2024-04-20 20:16:17] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/a2/ab/c10acca0ef62a7fc9ee21e1a91f04225aa100f106ea8efe4bafd9b0ec125/fotolab-0.9.0.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [ContactMechanics]: Downloading https://files.pythonhosted.org/packages/2b/89/81114cdc2ea4faebb05c47e2fe8148235616dfb62d57aeb90697018dc43f/contactmechanics-1.2.0.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/11/d1/33d458422b316529ab38f0bd12e21540c6035bf7d80896f2e5ae1cf09498/g4f-0.3.0.1.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [fotolab]: Downloading https://files.pythonhosted.org/packages/f8/7b/ec556508973366d646773454865fe94705524c44efe6ab092e8b0b223dba/fotolab-0.9.1.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [g4f]: Downloading https://files.pythonhosted.org/packages/ac/ae/b9d265db2194bce0b8bf21cf2ca308472629a764dca77615e0135ac8b678/g4f-0.3.0.2.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [g4f]: executing diffoscope
+[2024-04-20 20:16:17] INFO root fetch - processPackages [g4f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g4f-0.3.0.1.tar.gz tmp/g4f-0.3.0.2.tar.gz --markdown 20240420/g/g4f/0.3.0.1-0.3.0.2/README.md --exclude *.pyd
+[2024-04-20 20:16:17] INFO root fetch - processPackages [fotolab]: executing diffoscope
+[2024-04-20 20:16:17] INFO root fetch - processPackages [fotolab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fotolab-0.9.0.tar.gz tmp/fotolab-0.9.1.tar.gz --markdown 20240420/f/fotolab/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-04-20 20:16:17] INFO root fetch - processPackages [ContactMechanics]: Downloading https://files.pythonhosted.org/packages/f3/cd/5673bc3d05975f3cf3b81d28eb5241de8ef99ca77bc90c24e11c27cc9c9e/contactmechanics-1.3.0.tar.gz
+[2024-04-20 20:16:17] INFO root fetch - processPackages [ContactMechanics]: executing diffoscope
+[2024-04-20 20:16:17] INFO root fetch - processPackages [ContactMechanics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contactmechanics-1.2.0.tar.gz tmp/contactmechanics-1.3.0.tar.gz --markdown 20240420/C/ContactMechanics/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-04-20 20:16:18] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.0.tar.gz]
+[2024-04-20 20:16:18] INFO root fetch - processPackages [fotolab]: Remove: archive file [/home/abi/fetcher/tmp/fotolab-0.9.1.tar.gz]
+[2024-04-20 20:16:18] INFO root fetch - main [MainThread]: End processing [fotolab]: success
+[2024-04-20 20:16:19] INFO root fetch - processPackages [ContactMechanics]: Remove: archive file [/home/abi/fetcher/tmp/contactmechanics-1.2.0.tar.gz]
+[2024-04-20 20:16:19] INFO root fetch - processPackages [ContactMechanics]: Remove: archive file [/home/abi/fetcher/tmp/contactmechanics-1.3.0.tar.gz]
+[2024-04-20 20:16:19] INFO root fetch - main [MainThread]: End processing [ContactMechanics]: success
+[2024-04-20 20:16:19] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.1.tar.gz]
+[2024-04-20 20:16:19] INFO root fetch - processPackages [g4f]: Remove: archive file [/home/abi/fetcher/tmp/g4f-0.3.0.2.tar.gz]
+[2024-04-20 20:16:19] INFO root fetch - main [MainThread]: End processing [g4f]: success
+[2024-04-20 20:16:19] INFO root fetch - main [MainThread]: Store serial: [22858232]
