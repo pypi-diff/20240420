@@ -22898,3 +22898,40 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:13:01] INFO root fetch - processPackages [py_template_creator]: Remove: archive file [/home/abi/fetcher/tmp/py_template_creator-1.3.0.tar.gz]
 [2024-04-20 22:13:01] INFO root fetch - main [MainThread]: End processing [py_template_creator]: success
 [2024-04-20 22:13:01] INFO root fetch - main [MainThread]: Store serial: [22859171]
+[2024-04-20 22:15:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859171]
+[2024-04-20 22:15:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 22:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moto
+[2024-04-20 22:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git-machete
+[2024-04-20 22:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-20 22:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-04-20 22:15:09] INFO root fetch - processPackages [git-machete]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-04-20 22:15:09] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/00/41/ea9df2709ca5d1f69fef14e74d8c77f7c8575eeb2ba426a3d3ff4691095c/git-machete-3.9.0.tar.gz
+[2024-04-20 22:15:10] INFO root fetch - processPackages [moto]: New version: [5.0.6.dev9] Old Version: [5.0.6.dev8]
+[2024-04-20 22:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-20 22:15:10] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-20 22:15:10] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/c7/58/a2beb1e31a481442ac88f436b83c2277a5a58484492ca445e76b0c229e1f/git-machete-3.9.1.tar.gz
+[2024-04-20 22:15:10] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/cc/b5/00faf7a32b2d43303224e4c85e6ca1586aa38ed6bd7c49336b7ac8cebea7/moto-5.0.6.dev8.tar.gz
+[2024-04-20 22:15:10] INFO root fetch - processPackages [git-machete]: executing diffoscope
+[2024-04-20 22:15:10] INFO root fetch - processPackages [git-machete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-machete-3.9.0.tar.gz tmp/git-machete-3.9.1.tar.gz --markdown 20240420/g/git-machete/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-04-20 22:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-20 22:15:10] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-20 22:15:11] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/67/63/03d8401d8574b4b96cd00404b9b4b0f0791e6dc794bc44ad3730b7dd8e46/moto-5.0.6.dev9.tar.gz
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240420/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240420/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-04-20 22:15:11] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.0.tar.gz]
+[2024-04-20 22:15:11] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.1.tar.gz]
+[2024-04-20 22:15:11] INFO root fetch - main [MainThread]: End processing [git-machete]: success
+[2024-04-20 22:15:11] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-20 22:15:11] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.6.dev8.tar.gz tmp/moto-5.0.6.dev9.tar.gz --markdown 20240420/m/moto/5.0.6.dev8-5.0.6.dev9/README.md --exclude *.pyd
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-20 22:15:11] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-20 22:15:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-20 22:15:11] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-20 22:15:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev8.tar.gz]
+[2024-04-20 22:15:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.6.dev9.tar.gz]
+[2024-04-20 22:15:22] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-20 22:15:22] INFO root fetch - main [MainThread]: Store serial: [22859183]
