@@ -11806,3 +11806,15 @@
 [2024-04-20 10:02:56] INFO root fetch - processPackages [flechemano]: Remove: archive file [/home/abi/fetcher/tmp/flechemano-0.4.tar.gz]
 [2024-04-20 10:02:56] INFO root fetch - main [MainThread]: End processing [flechemano]: success
 [2024-04-20 10:02:56] INFO root fetch - main [MainThread]: Store serial: [22853801]
+[2024-04-20 10:04:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853801]
+[2024-04-20 10:05:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 10:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langfun
+[2024-04-20 10:05:04] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240419] Old Version: [0.0.2.dev20240418]
+[2024-04-20 10:05:04] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/64/18/bdabfe8c86d0a238c306a338cfe1501b5622afd88337ca503398830ceff5/langfun-0.0.2.dev20240418.tar.gz
+[2024-04-20 10:05:05] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/18/46/639f13285068dae3269202b3d366f73d3ec280c8a72628050ae6839e228f/langfun-0.0.2.dev20240419.tar.gz
+[2024-04-20 10:05:05] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-20 10:05:05] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240418.tar.gz tmp/langfun-0.0.2.dev20240419.tar.gz --markdown 20240420/l/langfun/0.0.2.dev20240418-0.0.2.dev20240419/README.md --exclude *.pyd
+[2024-04-20 10:05:06] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240418.tar.gz]
+[2024-04-20 10:05:06] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240419.tar.gz]
+[2024-04-20 10:05:06] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-20 10:05:06] INFO root fetch - main [MainThread]: Store serial: [22853817]
