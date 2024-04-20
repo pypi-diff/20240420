@@ -22758,3 +22758,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:04:12] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
 [2024-04-20 22:04:12] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
 [2024-04-20 22:04:12] INFO root fetch - main [MainThread]: Store serial: [22859105]
+[2024-04-20 22:06:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859105]
+[2024-04-20 22:06:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 22:06:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: contact-notes-local
+[2024-04-20 22:06:22] INFO root fetch - processPackages [contact-notes-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:06:22] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/94/02/401f72b4bc3a22137e39e519a300db91b6d7f6f995ff3fdd5266dd81540c/contact-notes-local-0.0.8.tar.gz
+[2024-04-20 22:06:22] INFO root fetch - processPackages [contact-notes-local]: Downloading https://files.pythonhosted.org/packages/7d/da/15635ad28159f22874e3fbe243ec786d3658da7812c3243f5feb8d5f8385/contact-notes-local-0.0.9.tar.gz
+[2024-04-20 22:06:22] INFO root fetch - processPackages [contact-notes-local]: executing diffoscope
+[2024-04-20 22:06:22] INFO root fetch - processPackages [contact-notes-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-notes-local-0.0.8.tar.gz tmp/contact-notes-local-0.0.9.tar.gz --markdown 20240420/c/contact-notes-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:06:23] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.8.tar.gz]
+[2024-04-20 22:06:23] INFO root fetch - processPackages [contact-notes-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-notes-local-0.0.9.tar.gz]
+[2024-04-20 22:06:23] INFO root fetch - main [MainThread]: End processing [contact-notes-local]: success
+[2024-04-20 22:06:23] INFO root fetch - main [MainThread]: Store serial: [22859109]
