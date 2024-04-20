@@ -9894,3 +9894,15 @@
 [2024-04-20 07:12:30] INFO root fetch - processPackages [monopoly-sg]: Remove: archive file [/home/abi/fetcher/tmp/monopoly_sg-0.7.4.tar.gz]
 [2024-04-20 07:12:30] INFO root fetch - main [MainThread]: End processing [monopoly-sg]: success
 [2024-04-20 07:12:30] INFO root fetch - main [MainThread]: Store serial: [22852734]
+[2024-04-20 07:14:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852734]
+[2024-04-20 07:14:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 07:14:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: validate-pyproject-schema-store
+[2024-04-20 07:14:39] INFO root fetch - processPackages [validate-pyproject-schema-store]: New version: [2024.4.8] Old Version: [2024.4.20]
+[2024-04-20 07:14:39] INFO root fetch - processPackages [validate-pyproject-schema-store]: Downloading https://files.pythonhosted.org/packages/7b/1c/d1d056d95f0b7bc9c5bf3cc2c5292f38c0fd20e7aa43d3c8a36a02702e99/validate_pyproject_schema_store-2024.4.20.tar.gz
+[2024-04-20 07:14:39] INFO root fetch - processPackages [validate-pyproject-schema-store]: Downloading https://files.pythonhosted.org/packages/1d/3d/56a8fcf4e8160e5558eef2973036c81a32d2d1cd64e1a1f8bbedd7181884/validate_pyproject_schema_store-2024.4.8.tar.gz
+[2024-04-20 07:14:39] INFO root fetch - processPackages [validate-pyproject-schema-store]: executing diffoscope
+[2024-04-20 07:14:39] INFO root fetch - processPackages [validate-pyproject-schema-store]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validate_pyproject_schema_store-2024.4.20.tar.gz tmp/validate_pyproject_schema_store-2024.4.8.tar.gz --markdown 20240420/v/validate-pyproject-schema-store/2024.4.20-2024.4.8/README.md --exclude *.pyd
+[2024-04-20 07:14:41] INFO root fetch - processPackages [validate-pyproject-schema-store]: Remove: archive file [/home/abi/fetcher/tmp/validate_pyproject_schema_store-2024.4.20.tar.gz]
+[2024-04-20 07:14:41] INFO root fetch - processPackages [validate-pyproject-schema-store]: Remove: archive file [/home/abi/fetcher/tmp/validate_pyproject_schema_store-2024.4.8.tar.gz]
+[2024-04-20 07:14:41] INFO root fetch - main [MainThread]: End processing [validate-pyproject-schema-store]: success
+[2024-04-20 07:14:41] INFO root fetch - main [MainThread]: Store serial: [22852737]
