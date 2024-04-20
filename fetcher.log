@@ -12666,3 +12666,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:10:21] INFO root fetch - processPackages [qualang-tools]: Remove: archive file [/home/abi/fetcher/tmp/qualang-tools-0.9.0.tar.gz]
 [2024-04-20 11:10:21] INFO root fetch - main [MainThread]: End processing [qualang-tools]: success
 [2024-04-20 11:10:21] INFO root fetch - main [MainThread]: Store serial: [22854204]
+[2024-04-20 11:12:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854204]
+[2024-04-20 11:12:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outpostcli
+[2024-04-20 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxproject
+[2024-04-20 11:12:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myelectricaldatapy
+[2024-04-20 11:12:30] INFO root fetch - processPackages [outpostcli]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 11:12:30] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/7e/e2/114a39eac567286d0418645c0ea24089c48fcbe4cccec6c79191a5cefccf/outpostcli-0.0.8.tar.gz
+[2024-04-20 11:12:30] WARNING root fetch - processPackages [pyxproject]: Skipping, unable to determine old version
+[2024-04-20 11:12:30] INFO root fetch - main [MainThread]: End processing [pyxproject] error
+[2024-04-20 11:12:30] INFO root fetch - processPackages [myelectricaldatapy]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-04-20 11:12:30] INFO root fetch - processPackages [outpostcli]: Downloading https://files.pythonhosted.org/packages/df/ab/82b6853cec170d33c2aff19e3a298b0bf56f7ba1b885f6f7d42a10ae43dc/outpostcli-0.0.9.tar.gz
+[2024-04-20 11:12:30] INFO root fetch - processPackages [myelectricaldatapy]: Downloading https://files.pythonhosted.org/packages/08/dc/858e85fc2c3f7e70fea1ad40511da1c5b5f77003e2cbd5709984b1cd2fc5/myelectricaldatapy-2.1.4.tar.gz
+[2024-04-20 11:12:30] INFO root fetch - processPackages [outpostcli]: executing diffoscope
+[2024-04-20 11:12:30] INFO root fetch - processPackages [outpostcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outpostcli-0.0.8.tar.gz tmp/outpostcli-0.0.9.tar.gz --markdown 20240420/o/outpostcli/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 11:12:30] INFO root fetch - processPackages [myelectricaldatapy]: Downloading https://files.pythonhosted.org/packages/3d/72/c9afcc3b8a2c7979a2e47013a503849259801b340a0e1c54b50ec67e2936/myelectricaldatapy-2.1.5.tar.gz
+[2024-04-20 11:12:30] INFO root fetch - processPackages [myelectricaldatapy]: executing diffoscope
+[2024-04-20 11:12:30] INFO root fetch - processPackages [myelectricaldatapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myelectricaldatapy-2.1.4.tar.gz tmp/myelectricaldatapy-2.1.5.tar.gz --markdown 20240420/m/myelectricaldatapy/2.1.4-2.1.5/README.md --exclude *.pyd
+[2024-04-20 11:12:31] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.8.tar.gz]
+[2024-04-20 11:12:31] INFO root fetch - processPackages [outpostcli]: Remove: archive file [/home/abi/fetcher/tmp/outpostcli-0.0.9.tar.gz]
+[2024-04-20 11:12:31] INFO root fetch - main [MainThread]: End processing [outpostcli]: success
+[2024-04-20 11:12:31] INFO root fetch - processPackages [myelectricaldatapy]: Remove: archive file [/home/abi/fetcher/tmp/myelectricaldatapy-2.1.4.tar.gz]
+[2024-04-20 11:12:31] INFO root fetch - processPackages [myelectricaldatapy]: Remove: archive file [/home/abi/fetcher/tmp/myelectricaldatapy-2.1.5.tar.gz]
+[2024-04-20 11:12:31] INFO root fetch - main [MainThread]: End processing [myelectricaldatapy]: success
+[2024-04-20 11:12:31] INFO root fetch - main [MainThread]: Store serial: [22854217]
