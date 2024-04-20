@@ -16960,3 +16960,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:03:34] INFO root fetch - processPackages [srai]: Remove: archive file [/home/abi/fetcher/tmp/srai-0.7.2.tar.gz]
 [2024-04-20 16:03:34] INFO root fetch - main [MainThread]: End processing [srai]: success
 [2024-04-20 16:03:34] INFO root fetch - main [MainThread]: Store serial: [22856433]
+[2024-04-20 16:05:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856433]
+[2024-04-20 16:05:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 16:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bst-plugins-experimental
+[2024-04-20 16:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pan-ztp-patcher
+[2024-04-20 16:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-bit-enum-list-field
+[2024-04-20 16:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PythonTestLJC075
+[2024-04-20 16:05:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ArrowTextClassifier
+[2024-04-20 16:05:43] INFO root fetch - processPackages [pan-ztp-patcher]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-20 16:05:43] INFO root fetch - processPackages [bst-plugins-experimental]: New version: [1.99.2] Old Version: [1.99.1]
+[2024-04-20 16:05:43] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/41/1b/709776eda2b5ed0ea54776ca6a64a16ce05cbd7d6a3c24c83e6cd31a46a9/pan_ztp_patcher-0.2.8.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [bst-plugins-experimental]: Downloading https://files.pythonhosted.org/packages/05/10/e9f563bb9d626389da1dba1a230a21a1986ec9ebad1c789347d933177e20/bst_plugins_experimental-1.99.1.tar.gz
+[2024-04-20 16:05:43] WARNING root fetch - processPackages [PythonTestLJC075]: Skipping, unable to determine old version
+[2024-04-20 16:05:43] INFO root fetch - processPackages [ArrowTextClassifier]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 16:05:43] INFO root fetch - processPackages [django-bit-enum-list-field]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 16:05:43] INFO root fetch - main [MainThread]: End processing [PythonTestLJC075] error
+[2024-04-20 16:05:43] INFO root fetch - processPackages [ArrowTextClassifier]: Downloading https://files.pythonhosted.org/packages/48/46/4776942ce973dadd7cf6509044f7a4bcce9e1da3a0255cb15c465cf97abf/ArrowTextClassifier-1.0.1.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [django-bit-enum-list-field]: Downloading https://files.pythonhosted.org/packages/08/61/1213468d060b750f2b136b2e9fcdf08bc2df626ff087b9482aa0ed295b45/django_bit_enum_list_field-0.1.0.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [pan-ztp-patcher]: Downloading https://files.pythonhosted.org/packages/94/6f/68793ee0572d80853f9d35bfbae872b5173cb1558d2fe1c7db0b26c49efe/pan_ztp_patcher-0.2.9.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [bst-plugins-experimental]: Downloading https://files.pythonhosted.org/packages/55/7e/8e85cc085a5f265d3dda1d9f93585867ace078183a5ab12882944b3aa636/bst_plugins_experimental-1.99.2.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [pan-ztp-patcher]: executing diffoscope
+[2024-04-20 16:05:43] INFO root fetch - processPackages [pan-ztp-patcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pan_ztp_patcher-0.2.8.tar.gz tmp/pan_ztp_patcher-0.2.9.tar.gz --markdown 20240420/p/pan-ztp-patcher/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-04-20 16:05:43] INFO root fetch - processPackages [ArrowTextClassifier]: Downloading https://files.pythonhosted.org/packages/cc/87/b95eee2b0bde078db6799b1c8eb305dea1689798a308b56fdc233f393dd3/ArrowTextClassifier-1.0.2.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [bst-plugins-experimental]: executing diffoscope
+[2024-04-20 16:05:43] INFO root fetch - processPackages [bst-plugins-experimental]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bst_plugins_experimental-1.99.1.tar.gz tmp/bst_plugins_experimental-1.99.2.tar.gz --markdown 20240420/b/bst-plugins-experimental/1.99.1-1.99.2/README.md --exclude *.pyd
+[2024-04-20 16:05:43] INFO root fetch - processPackages [django-bit-enum-list-field]: Downloading https://files.pythonhosted.org/packages/ae/fc/0b790dd41cfc2929ff630104b2ade9e01b28c78a557fd0d25d8e2e306317/django_bit_enum_list_field-0.1.1.tar.gz
+[2024-04-20 16:05:43] INFO root fetch - processPackages [ArrowTextClassifier]: executing diffoscope
+[2024-04-20 16:05:43] INFO root fetch - processPackages [ArrowTextClassifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ArrowTextClassifier-1.0.1.tar.gz tmp/ArrowTextClassifier-1.0.2.tar.gz --markdown 20240420/A/ArrowTextClassifier/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 16:05:43] INFO root fetch - processPackages [django-bit-enum-list-field]: executing diffoscope
+[2024-04-20 16:05:43] INFO root fetch - processPackages [django-bit-enum-list-field]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_bit_enum_list_field-0.1.0.tar.gz tmp/django_bit_enum_list_field-0.1.1.tar.gz --markdown 20240420/d/django-bit-enum-list-field/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 16:05:44] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.8.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - processPackages [pan-ztp-patcher]: Remove: archive file [/home/abi/fetcher/tmp/pan_ztp_patcher-0.2.9.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - main [MainThread]: End processing [pan-ztp-patcher]: success
+[2024-04-20 16:05:44] INFO root fetch - processPackages [bst-plugins-experimental]: Remove: archive file [/home/abi/fetcher/tmp/bst_plugins_experimental-1.99.1.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - processPackages [bst-plugins-experimental]: Remove: archive file [/home/abi/fetcher/tmp/bst_plugins_experimental-1.99.2.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - main [MainThread]: End processing [bst-plugins-experimental]: success
+[2024-04-20 16:05:44] INFO root fetch - processPackages [django-bit-enum-list-field]: Remove: archive file [/home/abi/fetcher/tmp/django_bit_enum_list_field-0.1.0.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - processPackages [django-bit-enum-list-field]: Remove: archive file [/home/abi/fetcher/tmp/django_bit_enum_list_field-0.1.1.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - main [MainThread]: End processing [django-bit-enum-list-field]: success
+[2024-04-20 16:05:44] INFO root fetch - processPackages [ArrowTextClassifier]: Remove: archive file [/home/abi/fetcher/tmp/ArrowTextClassifier-1.0.1.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - processPackages [ArrowTextClassifier]: Remove: archive file [/home/abi/fetcher/tmp/ArrowTextClassifier-1.0.2.tar.gz]
+[2024-04-20 16:05:44] INFO root fetch - main [MainThread]: End processing [ArrowTextClassifier]: success
+[2024-04-20 16:05:44] INFO root fetch - main [MainThread]: Store serial: [22856450]
