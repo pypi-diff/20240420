@@ -20510,3 +20510,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:52:20] INFO root fetch - processPackages [babi-grammars]: Remove: archive file [/home/abi/fetcher/tmp/babi_grammars-0.0.9.tar.gz]
 [2024-04-20 19:52:20] INFO root fetch - main [MainThread]: End processing [babi-grammars]: success
 [2024-04-20 19:52:20] INFO root fetch - main [MainThread]: Store serial: [22858028]
+[2024-04-20 19:54:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858028]
+[2024-04-20 19:54:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 19:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FoxDotEditor
+[2024-04-20 19:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: renardo
+[2024-04-20 19:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: renardo-lib
+[2024-04-20 19:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: theoddevegame
+[2024-04-20 19:54:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC157
+[2024-04-20 19:54:28] INFO root fetch - processPackages [theoddevegame]: New version: [1.1] Old Version: [1.0.1]
+[2024-04-20 19:54:28] INFO root fetch - processPackages [renardo]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 19:54:28] INFO root fetch - processPackages [renardo-lib]: New version: [0.9.dev9] Old Version: [0.9.9]
+[2024-04-20 19:54:28] INFO root fetch - processPackages [FoxDotEditor]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-20 19:54:29] INFO root fetch - processPackages [theoddevegame]: Downloading https://files.pythonhosted.org/packages/7a/8e/fc13dd5ae69b843108b151e85993e5bb5808971afac012e690cb7e9dad4d/theoddevegame-1.0.1.tar.gz
+[2024-04-20 19:54:29] WARNING root fetch - processPackages [PythonTestLJC157]: Skipping, unable to determine old version
+[2024-04-20 19:54:29] INFO root fetch - main [MainThread]: End processing [PythonTestLJC157] error
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/e4/5a/07a1f6f3ea9c38f61d36fd05bf9b70411c6b40887e5171585a2e941112bc/renardo_lib-0.9.9.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/8f/ed/6f4f42bab25dd239482fa57ab5bdf863e679762950ac55b63f832dbc43e9/FoxDotEditor-0.9.8.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/fb/49/617bba266be61b48df4660d09ae00679c712d277c60e48046d33be54c138/renardo-0.9.8.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo-lib]: Downloading https://files.pythonhosted.org/packages/42/00/cba222dd9842c27830e13a20da725c06ea1bee921842df90071bc03c0db3/renardo_lib-0.9.dev9-py3-none-any.whl
+[2024-04-20 19:54:29] INFO root fetch - processPackages [theoddevegame]: Downloading https://files.pythonhosted.org/packages/c8/11/2475ddf9ad797787a973cc8944cda94035ba010db1e7b1730b5ae504d069/theoddevegame-1.1.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo]: Downloading https://files.pythonhosted.org/packages/53/b4/efa20a355dec171deb6d0a41fc822a27258e825455e273244ae6749a96d8/renardo-0.9.9.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [FoxDotEditor]: Downloading https://files.pythonhosted.org/packages/52/dc/f51fb1b9bb7c79b900cdde520c6ac005bff244d436c0f7b0dee8c1221ff5/foxdoteditor-0.9.9.tar.gz
+[2024-04-20 19:54:29] INFO root fetch - processPackages [theoddevegame]: executing diffoscope
+[2024-04-20 19:54:29] INFO root fetch - processPackages [theoddevegame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/theoddevegame-1.0.1.tar.gz tmp/theoddevegame-1.1.tar.gz --markdown 20240420/t/theoddevegame/1.0.1-1.1/README.md --exclude *.pyd
+[2024-04-20 19:54:29] INFO root fetch - processPackages [FoxDotEditor]: executing diffoscope
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo-lib]: executing diffoscope
+[2024-04-20 19:54:29] INFO root fetch - processPackages [FoxDotEditor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FoxDotEditor-0.9.8.tar.gz tmp/foxdoteditor-0.9.9.tar.gz --markdown 20240420/F/FoxDotEditor/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo_lib-0.9.9.tar.gz tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip --markdown 20240420/r/renardo-lib/0.9.9-0.9.dev9/README.md --exclude *.pyd
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo]: executing diffoscope
+[2024-04-20 19:54:29] INFO root fetch - processPackages [renardo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renardo-0.9.8.tar.gz tmp/renardo-0.9.9.tar.gz --markdown 20240420/r/renardo/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-04-20 19:54:30] INFO root fetch - processPackages [theoddevegame]: Remove: archive file [/home/abi/fetcher/tmp/theoddevegame-1.0.1.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - processPackages [theoddevegame]: Remove: archive file [/home/abi/fetcher/tmp/theoddevegame-1.1.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - main [MainThread]: End processing [theoddevegame]: success
+[2024-04-20 19:54:30] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.8.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - processPackages [renardo]: Remove: archive file [/home/abi/fetcher/tmp/renardo-0.9.9.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - main [MainThread]: End processing [renardo]: success
+[2024-04-20 19:54:30] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/FoxDotEditor-0.9.8.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - processPackages [FoxDotEditor]: Remove: archive file [/home/abi/fetcher/tmp/foxdoteditor-0.9.9.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - main [MainThread]: End processing [FoxDotEditor]: success
+[2024-04-20 19:54:30] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.9.tar.gz]
+[2024-04-20 19:54:30] INFO root fetch - processPackages [renardo-lib]: Remove: archive file [/home/abi/fetcher/tmp/renardo_lib-0.9.dev9-py3-none-any.whl.zip]
+[2024-04-20 19:54:30] INFO root fetch - main [MainThread]: End processing [renardo-lib]: success
+[2024-04-20 19:54:30] INFO root fetch - main [MainThread]: Store serial: [22858045]
