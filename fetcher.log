@@ -15077,3 +15077,27 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:55:57] INFO root fetch - processPackages [kayalab]: Remove: archive file [/home/abi/fetcher/tmp/kayalab-0.7.9.tar.gz]
 [2024-04-20 13:55:57] INFO root fetch - main [MainThread]: End processing [kayalab]: success
 [2024-04-20 13:55:57] INFO root fetch - main [MainThread]: Store serial: [22855367]
+[2024-04-20 13:58:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855367]
+[2024-04-20 13:58:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 13:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: domb
+[2024-04-20 13:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC034
+[2024-04-20 13:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyQt-builder
+[2024-04-20 13:58:06] INFO root fetch - processPackages [domb]: New version: [2023.11.post1] Old Version: [2023.11.3]
+[2024-04-20 13:58:06] INFO root fetch - processPackages [domb]: Downloading https://files.pythonhosted.org/packages/0f/f8/4907d954e9dfdb3be58a9e106d319775706a0fc07af1ea65fb9b9034316b/domb-2023.11.3.tar.gz
+[2024-04-20 13:58:06] WARNING root fetch - processPackages [PythonTestLJC034]: Skipping, unable to determine old version
+[2024-04-20 13:58:06] INFO root fetch - main [MainThread]: End processing [PythonTestLJC034] error
+[2024-04-20 13:58:06] INFO root fetch - processPackages [PyQt-builder]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-20 13:58:06] INFO root fetch - processPackages [domb]: Downloading https://files.pythonhosted.org/packages/dd/57/911c33253407d6d45de9503bacacea1caee1f3c2e5d6287713c1e799e606/domb-2023.11.post1.tar.gz
+[2024-04-20 13:58:06] INFO root fetch - processPackages [PyQt-builder]: Downloading https://files.pythonhosted.org/packages/22/61/ddb67823c67ba12597908221413d817602a511e0c60fe926b58d49222332/PyQt-builder-1.9.0.tar.gz
+[2024-04-20 13:58:06] INFO root fetch - processPackages [domb]: executing diffoscope
+[2024-04-20 13:58:06] INFO root fetch - processPackages [domb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domb-2023.11.3.tar.gz tmp/domb-2023.11.post1.tar.gz --markdown 20240420/d/domb/2023.11.3-2023.11.post1/README.md --exclude *.pyd
+[2024-04-20 13:58:06] INFO root fetch - processPackages [PyQt-builder]: Downloading https://files.pythonhosted.org/packages/22/c9/862c300cc29ab43664f539451c69aaf0d45766818a3a7671d6ec01635430/PyQt-builder-1.9.1.tar.gz
+[2024-04-20 13:58:07] INFO root fetch - processPackages [domb]: Remove: archive file [/home/abi/fetcher/tmp/domb-2023.11.3.tar.gz]
+[2024-04-20 13:58:07] INFO root fetch - processPackages [domb]: Remove: archive file [/home/abi/fetcher/tmp/domb-2023.11.post1.tar.gz]
+[2024-04-20 13:58:07] INFO root fetch - main [MainThread]: End processing [domb]: success
+[2024-04-20 13:58:07] INFO root fetch - processPackages [PyQt-builder]: executing diffoscope
+[2024-04-20 13:58:07] INFO root fetch - processPackages [PyQt-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQt-builder-1.9.0.tar.gz tmp/PyQt-builder-1.9.1.tar.gz --markdown 20240420/P/PyQt-builder/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-20 13:58:08] INFO root fetch - processPackages [PyQt-builder]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-builder-1.9.0.tar.gz]
+[2024-04-20 13:58:08] INFO root fetch - processPackages [PyQt-builder]: Remove: archive file [/home/abi/fetcher/tmp/PyQt-builder-1.9.1.tar.gz]
+[2024-04-20 13:58:08] INFO root fetch - main [MainThread]: End processing [PyQt-builder]: success
+[2024-04-20 13:58:08] INFO root fetch - main [MainThread]: Store serial: [22855381]
