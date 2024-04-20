@@ -11543,3 +11543,27 @@
 [2024-04-20 09:41:15] INFO root fetch - processPackages [phitter]: Remove: archive file [/home/abi/fetcher/tmp/phitter-0.0.5.tar.gz]
 [2024-04-20 09:41:15] INFO root fetch - main [MainThread]: End processing [phitter]: success
 [2024-04-20 09:41:15] INFO root fetch - main [MainThread]: Store serial: [22853642]
+[2024-04-20 09:43:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853642]
+[2024-04-20 09:43:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-dbchat
+[2024-04-20 09:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flechemano
+[2024-04-20 09:43:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudpy-org
+[2024-04-20 09:43:23] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc71.post1] Old Version: [0.0.2rc70.post1]
+[2024-04-20 09:43:23] INFO root fetch - processPackages [cloudpy-org]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-20 09:43:23] WARNING root fetch - processPackages [flechemano]: Skipping, unable to determine old version
+[2024-04-20 09:43:23] INFO root fetch - main [MainThread]: End processing [flechemano] error
+[2024-04-20 09:43:23] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/fb/ea/dd8c8774603e8d6f6f06bf48cabf56b6aaef76fde91dce71cf2e6272d6ef/py_dbchat-0.0.2rc70.post1.tar.gz
+[2024-04-20 09:43:23] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/79/3a/d4686a9bf5af6414612361989974b74a92f45ed5cc773137afd1ae415e0e/cloudpy_org-1.4.7.tar.gz
+[2024-04-20 09:43:24] INFO root fetch - processPackages [cloudpy-org]: Downloading https://files.pythonhosted.org/packages/e0/43/f8d823a115899fefce777108228270b07f89e50f5485e20bf3ce69e81ab4/cloudpy_org-1.4.8.tar.gz
+[2024-04-20 09:43:24] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/f0/5e/b4c406ed52ea59484b4b9ec8aeefc7ae275071b1d0224349665f9b9280bb/py_dbchat-0.0.2rc71.post1.tar.gz
+[2024-04-20 09:43:24] INFO root fetch - processPackages [cloudpy-org]: executing diffoscope
+[2024-04-20 09:43:24] INFO root fetch - processPackages [cloudpy-org]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpy_org-1.4.7.tar.gz tmp/cloudpy_org-1.4.8.tar.gz --markdown 20240420/c/cloudpy-org/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-04-20 09:43:24] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:43:24] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc70.post1.tar.gz tmp/py_dbchat-0.0.2rc71.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc70.post1-0.0.2rc71.post1/README.md --exclude *.pyd
+[2024-04-20 09:43:25] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc70.post1.tar.gz]
+[2024-04-20 09:43:25] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc71.post1.tar.gz]
+[2024-04-20 09:43:25] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:43:25] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.7.tar.gz]
+[2024-04-20 09:43:25] INFO root fetch - processPackages [cloudpy-org]: Remove: archive file [/home/abi/fetcher/tmp/cloudpy_org-1.4.8.tar.gz]
+[2024-04-20 09:43:25] INFO root fetch - main [MainThread]: End processing [cloudpy-org]: success
+[2024-04-20 09:43:25] INFO root fetch - main [MainThread]: Store serial: [22853651]
