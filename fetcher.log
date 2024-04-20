@@ -14634,3 +14634,39 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:20:36] INFO root fetch - processPackages [langchain_zhipu]: Remove: archive file [/home/abi/fetcher/tmp/langchain_zhipu-4.1.2.tar.gz]
 [2024-04-20 13:20:36] INFO root fetch - main [MainThread]: End processing [langchain_zhipu]: success
 [2024-04-20 13:20:36] INFO root fetch - main [MainThread]: Store serial: [22855086]
+[2024-04-20 13:22:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855086]
+[2024-04-20 13:22:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 13:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-core-xe
+[2024-04-20 13:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: motsmeles
+[2024-04-20 13:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fleece-network
+[2024-04-20 13:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygamepal
+[2024-04-20 13:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-core-xe-21
+[2024-04-20 13:22:46] INFO root fetch - processPackages [motsmeles]: New version: [3.0.0] Old Version: [2.2.1]
+[2024-04-20 13:22:46] INFO root fetch - processPackages [fleece-network]: New version: [0.2.1] Old Version: [0.2.0rc3]
+[2024-04-20 13:22:46] INFO root fetch - processPackages [motsmeles]: Downloading https://files.pythonhosted.org/packages/13/65/035e0fdcff3370bfc48e0ff25837bb0f34d00c5b1fbbfb60d6681538c845/motsmeles-2.2.1.tar.gz
+[2024-04-20 13:22:46] INFO root fetch - processPackages [pygamepal]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-04-20 13:22:46] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240420] Old Version: [2.5.0b20240419]
+[2024-04-20 13:22:46] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/6f/17/26b4182c9d01490b01a6588d4d3092d4776a2c305b62810a0f291d0d2636/fleece_network-0.2.0rc3.tar.gz
+[2024-04-20 13:22:46] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240420] Old Version: [2.5.0b20240419]
+[2024-04-20 13:22:46] INFO root fetch - processPackages [pygamepal]: Downloading https://files.pythonhosted.org/packages/37/a5/8a84ebfc61f8ddebf101bae6eab834a0f1ba482dc02aa25ace96943b3aa6/pygamepal-0.3.4.tar.gz
+[2024-04-20 13:22:46] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/25/f6/d6d3baeda64dfe770f07ef4f1855cd8452beebbc488552554c55c751241b/bigdl_core_xe-2.5.0b20240419-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-20 13:22:46] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/c5/5c/acce2341aa13e2d17d7c97eec636c15802b838f7b340ec04e43f4d665da3/bigdl_core_xe_21-2.5.0b20240419-cp39-cp39-win_amd64.whl
+[2024-04-20 13:22:46] INFO root fetch - processPackages [motsmeles]: Downloading https://files.pythonhosted.org/packages/20/a3/ecd29ca716ccb6c559f3447eebbac4779cc75e24083895020ab76a81f871/motsmeles-3.0.0.tar.gz
+[2024-04-20 13:22:46] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/8e/80/61e502b0e2a379ff49cad71bffd01b737cb240d18868746b8492cf3976bd/fleece_network-0.2.1.tar.gz
+[2024-04-20 13:22:46] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 105392066>=10485760
+[2024-04-20 13:22:46] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-20 13:22:46] WARNING root fetch - processPackages [pygamepal]: Skipping package: exceeds size limit 18526027>=10485760
+[2024-04-20 13:22:46] INFO root fetch - main [MainThread]: End processing [pygamepal] error
+[2024-04-20 13:22:46] INFO root fetch - processPackages [motsmeles]: executing diffoscope
+[2024-04-20 13:22:46] INFO root fetch - processPackages [motsmeles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motsmeles-2.2.1.tar.gz tmp/motsmeles-3.0.0.tar.gz --markdown 20240420/m/motsmeles/2.2.1-3.0.0/README.md --exclude *.pyd
+[2024-04-20 13:22:46] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 28724934>=10485760
+[2024-04-20 13:22:46] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-20 13:22:46] INFO root fetch - processPackages [fleece-network]: executing diffoscope
+[2024-04-20 13:22:46] INFO root fetch - processPackages [fleece-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleece_network-0.2.0rc3.tar.gz tmp/fleece_network-0.2.1.tar.gz --markdown 20240420/f/fleece-network/0.2.0rc3-0.2.1/README.md --exclude *.pyd
+[2024-04-20 13:22:47] INFO root fetch - processPackages [motsmeles]: Remove: archive file [/home/abi/fetcher/tmp/motsmeles-2.2.1.tar.gz]
+[2024-04-20 13:22:47] INFO root fetch - processPackages [motsmeles]: Remove: archive file [/home/abi/fetcher/tmp/motsmeles-3.0.0.tar.gz]
+[2024-04-20 13:22:47] INFO root fetch - main [MainThread]: End processing [motsmeles]: success
+[2024-04-20 13:22:47] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc3.tar.gz]
+[2024-04-20 13:22:47] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.1.tar.gz]
+[2024-04-20 13:22:47] INFO root fetch - main [MainThread]: End processing [fleece-network]: success
+[2024-04-20 13:22:47] INFO root fetch - main [MainThread]: Store serial: [22855116]
