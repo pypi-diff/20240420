@@ -21015,3 +21015,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:20:40] INFO root fetch - processPackages [victron]: Remove: archive file [/home/abi/fetcher/tmp/victron-0.0.2.tar.gz]
 [2024-04-20 20:20:40] INFO root fetch - main [MainThread]: End processing [victron]: success
 [2024-04-20 20:20:40] INFO root fetch - main [MainThread]: Store serial: [22858260]
+[2024-04-20 20:22:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858260]
+[2024-04-20 20:22:49] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC167
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git-machete
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transcribe-me
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bosing
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ryutils
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ryutils]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-20 20:22:49] WARNING root fetch - processPackages [transcribe-me]: Skipping, unable to determine old version
+[2024-04-20 20:22:49] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/35/0b/cf29a5b256302fd6b672388007414f6b936823aab06d13a234be24b66f4a/ryutils-4.0.2.tar.gz
+[2024-04-20 20:22:49] INFO root fetch - main [MainThread]: End processing [transcribe-me] error
+[2024-04-20 20:22:49] WARNING root fetch - processPackages [PythonTestLJC167]: Skipping, unable to determine old version
+[2024-04-20 20:22:49] INFO root fetch - main [MainThread]: End processing [PythonTestLJC167] error
+[2024-04-20 20:22:49] INFO root fetch - processPackages [git-machete]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-04-20 20:22:49] INFO root fetch - processPackages [bosing]: New version: [2.0.0b1] Old Version: [1.0.1]
+[2024-04-20 20:22:49] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/00/41/ea9df2709ca5d1f69fef14e74d8c77f7c8575eeb2ba426a3d3ff4691095c/git-machete-3.9.0.tar.gz
+[2024-04-20 20:22:49] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/f3/73/102bd75df009bf8ac15f338bd28692389874205779301675647bca0b1c35/bosing-1.0.1.tar.gz
+[2024-04-20 20:22:50] INFO root fetch - processPackages [ryutils]: Downloading https://files.pythonhosted.org/packages/01/91/023cde5b41414346b22ba7ad4cf85a8de2830c873d060b816bd4bbd6c23b/ryutils-4.0.3.tar.gz
+[2024-04-20 20:22:50] INFO root fetch - processPackages [ryutils]: executing diffoscope
+[2024-04-20 20:22:50] INFO root fetch - processPackages [ryutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryutils-4.0.2.tar.gz tmp/ryutils-4.0.3.tar.gz --markdown 20240420/r/ryutils/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-04-20 20:22:50] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/c7/58/a2beb1e31a481442ac88f436b83c2277a5a58484492ca445e76b0c229e1f/git-machete-3.9.1.tar.gz
+[2024-04-20 20:22:50] INFO root fetch - processPackages [bosing]: Downloading https://files.pythonhosted.org/packages/e1/17/18fbb2c1872775ec1456074a84de97cf3bcd251edac4d43f164d14bf2de7/bosing-2.0.0b1.tar.gz
+[2024-04-20 20:22:50] INFO root fetch - processPackages [git-machete]: executing diffoscope
+[2024-04-20 20:22:50] INFO root fetch - processPackages [git-machete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-machete-3.9.0.tar.gz tmp/git-machete-3.9.1.tar.gz --markdown 20240420/g/git-machete/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-04-20 20:22:50] INFO root fetch - processPackages [bosing]: executing diffoscope
+[2024-04-20 20:22:50] INFO root fetch - processPackages [bosing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bosing-1.0.1.tar.gz tmp/bosing-2.0.0b1.tar.gz --markdown 20240420/b/bosing/1.0.1-2.0.0b1/README.md --exclude *.pyd
+[2024-04-20 20:22:50] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.2.tar.gz]
+[2024-04-20 20:22:50] INFO root fetch - processPackages [ryutils]: Remove: archive file [/home/abi/fetcher/tmp/ryutils-4.0.3.tar.gz]
+[2024-04-20 20:22:50] INFO root fetch - main [MainThread]: End processing [ryutils]: success
+[2024-04-20 20:22:51] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.0.tar.gz]
+[2024-04-20 20:22:51] INFO root fetch - processPackages [git-machete]: Remove: archive file [/home/abi/fetcher/tmp/git-machete-3.9.1.tar.gz]
+[2024-04-20 20:22:51] INFO root fetch - main [MainThread]: End processing [git-machete]: success
+[2024-04-20 20:22:51] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-1.0.1.tar.gz]
+[2024-04-20 20:22:51] INFO root fetch - processPackages [bosing]: Remove: archive file [/home/abi/fetcher/tmp/bosing-2.0.0b1.tar.gz]
+[2024-04-20 20:22:51] INFO root fetch - main [MainThread]: End processing [bosing]: success
+[2024-04-20 20:22:51] INFO root fetch - main [MainThread]: Store serial: [22858299]
