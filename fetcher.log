@@ -7298,3 +7298,20 @@
 [2024-04-20 03:40:48] INFO root fetch - processPackages [mitmproxy-macos]: Remove: archive file [/home/abi/fetcher/tmp/mitmproxy_macos-0.5.2-py3-none-any.whl.zip]
 [2024-04-20 03:40:48] INFO root fetch - main [MainThread]: End processing [mitmproxy-macos]: success
 [2024-04-20 03:40:48] INFO root fetch - main [MainThread]: Store serial: [22851658]
+[2024-04-20 03:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851658]
+[2024-04-20 03:43:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 03:45:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851658]
+[2024-04-20 03:45:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 03:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyPDFForm
+[2024-04-20 03:45:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysettrie
+[2024-04-20 03:45:05] INFO root fetch - processPackages [PyPDFForm]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-04-20 03:45:05] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/69/9f/2ae6600de9a7bcb149411374a44be0c0f9f2c9ce362f6374e578ec5a4e26/PyPDFForm-1.4.8.tar.gz
+[2024-04-20 03:45:05] WARNING root fetch - processPackages [pysettrie]: Skipping, unable to determine old version
+[2024-04-20 03:45:05] INFO root fetch - main [MainThread]: End processing [pysettrie] error
+[2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: Downloading https://files.pythonhosted.org/packages/f0/86/8219b0802370fbdcae59e87d8b203196b52045c8375f1c043b5db3eb54ff/PyPDFForm-1.4.9.tar.gz
+[2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: executing diffoscope
+[2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyPDFForm-1.4.8.tar.gz tmp/PyPDFForm-1.4.9.tar.gz --markdown 20240420/P/PyPDFForm/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.8.tar.gz]
+[2024-04-20 03:45:06] INFO root fetch - processPackages [PyPDFForm]: Remove: archive file [/home/abi/fetcher/tmp/PyPDFForm-1.4.9.tar.gz]
+[2024-04-20 03:45:06] INFO root fetch - main [MainThread]: End processing [PyPDFForm]: success
+[2024-04-20 03:45:06] INFO root fetch - main [MainThread]: Store serial: [22851666]
