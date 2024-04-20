@@ -17937,3 +17937,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:13:59] INFO root fetch - processPackages [nure]: Remove: archive file [/home/abi/fetcher/tmp/nure-2024.4.20.tar.gz]
 [2024-04-20 17:13:59] INFO root fetch - main [MainThread]: End processing [nure]: success
 [2024-04-20 17:13:59] INFO root fetch - main [MainThread]: Store serial: [22856855]
+[2024-04-20 17:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856855]
+[2024-04-20 17:16:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 17:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic2-resolve
+[2024-04-20 17:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CI-CD-SergiCastillo
+[2024-04-20 17:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nodriver
+[2024-04-20 17:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dolibarrpy
+[2024-04-20 17:16:07] INFO root fetch - processPackages [dolibarrpy]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-20 17:16:07] INFO root fetch - processPackages [CI-CD-SergiCastillo]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-20 17:16:07] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/53/4e/20892c86f8ce30b3509f861155a47dd1fa806475dde4ac925bec53109d7a/CI-CD-SergiCastillo-0.1.8.tar.gz
+[2024-04-20 17:16:07] INFO root fetch - processPackages [nodriver]: New version: [0.28rc1] Old Version: [0.27rc3]
+[2024-04-20 17:16:07] INFO root fetch - processPackages [pydantic2-resolve]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-20 17:16:07] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/07/91/43d8570b2edcadccc46de5330b19b4f317d54b5cb597689086dac7986be9/dolibarrpy-0.2.2.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [nodriver]: Downloading https://files.pythonhosted.org/packages/b7/c6/641b008bb9e5039ca9655b7bfbe0c9fd7ecbeaca0c7eb6e7500d01611626/nodriver-0.27rc3.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: Downloading https://files.pythonhosted.org/packages/db/cc/0fad75b80fc391ec66589ed57770d24f8f7d7c94617122ae6552f83468c1/pydantic2_resolve-2.1.0.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Downloading https://files.pythonhosted.org/packages/9f/6e/8d5819f4defa8da6b5657615b1775ef712ea493ba2ea40237a12343e6009/CI-CD-SergiCastillo-0.1.9.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [CI-CD-SergiCastillo]: executing diffoscope
+[2024-04-20 17:16:08] INFO root fetch - processPackages [CI-CD-SergiCastillo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CI-CD-SergiCastillo-0.1.8.tar.gz tmp/CI-CD-SergiCastillo-0.1.9.tar.gz --markdown 20240420/C/CI-CD-SergiCastillo/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-04-20 17:16:08] INFO root fetch - processPackages [dolibarrpy]: Downloading https://files.pythonhosted.org/packages/32/cf/1d4d6116589c9542db3962cfa13808db76581ba3236819606d32fb74e133/dolibarrpy-0.2.3.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: Downloading https://files.pythonhosted.org/packages/d1/64/c6cf91e3fe8d221f51622e2dcf843767dd387d99708f01bcf265465c8f0f/pydantic2_resolve-2.1.1.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [nodriver]: Downloading https://files.pythonhosted.org/packages/c5/5e/ea0e25d8205d150afdc3838970185eb3ec9f0ec4448f19904456f67c69d8/nodriver-0.28rc1.tar.gz
+[2024-04-20 17:16:08] INFO root fetch - processPackages [dolibarrpy]: executing diffoscope
+[2024-04-20 17:16:08] INFO root fetch - processPackages [dolibarrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dolibarrpy-0.2.2.tar.gz tmp/dolibarrpy-0.2.3.tar.gz --markdown 20240420/d/dolibarrpy/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: executing diffoscope
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic2_resolve-2.1.0.tar.gz tmp/pydantic2_resolve-2.1.1.tar.gz --markdown 20240420/p/pydantic2-resolve/2.1.0-2.1.1/README.md --exclude *.pyd
+[2024-04-20 17:16:08] INFO root fetch - processPackages [nodriver]: executing diffoscope
+[2024-04-20 17:16:08] INFO root fetch - processPackages [nodriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodriver-0.27rc3.tar.gz tmp/nodriver-0.28rc1.tar.gz --markdown 20240420/n/nodriver/0.27rc3-0.28rc1/README.md --exclude *.pyd
+[2024-04-20 17:16:08] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.8.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.1.9.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
+[2024-04-20 17:16:08] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.2.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - processPackages [dolibarrpy]: Remove: archive file [/home/abi/fetcher/tmp/dolibarrpy-0.2.3.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - main [MainThread]: End processing [dolibarrpy]: success
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: Remove: archive file [/home/abi/fetcher/tmp/pydantic2_resolve-2.1.0.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - processPackages [pydantic2-resolve]: Remove: archive file [/home/abi/fetcher/tmp/pydantic2_resolve-2.1.1.tar.gz]
+[2024-04-20 17:16:08] INFO root fetch - main [MainThread]: End processing [pydantic2-resolve]: success
+[2024-04-20 17:16:09] INFO root fetch - processPackages [nodriver]: Remove: archive file [/home/abi/fetcher/tmp/nodriver-0.27rc3.tar.gz]
+[2024-04-20 17:16:09] INFO root fetch - processPackages [nodriver]: Remove: archive file [/home/abi/fetcher/tmp/nodriver-0.28rc1.tar.gz]
+[2024-04-20 17:16:09] INFO root fetch - main [MainThread]: End processing [nodriver]: success
+[2024-04-20 17:16:09] INFO root fetch - main [MainThread]: Store serial: [22856865]
