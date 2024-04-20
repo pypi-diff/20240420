@@ -17002,3 +17002,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:05:44] INFO root fetch - processPackages [ArrowTextClassifier]: Remove: archive file [/home/abi/fetcher/tmp/ArrowTextClassifier-1.0.2.tar.gz]
 [2024-04-20 16:05:44] INFO root fetch - main [MainThread]: End processing [ArrowTextClassifier]: success
 [2024-04-20 16:05:44] INFO root fetch - main [MainThread]: Store serial: [22856450]
+[2024-04-20 16:07:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856450]
+[2024-04-20 16:07:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: few-shot-learning-nlp
+[2024-04-20 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emmi
+[2024-04-20 16:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Tooldelta
+[2024-04-20 16:07:53] INFO root fetch - processPackages [Tooldelta]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-04-20 16:07:53] INFO root fetch - processPackages [few-shot-learning-nlp]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-20 16:07:53] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/fd/9f/aa47b3449fec7538e065e8f53f827c683579a2d4f74b1fac1a4bee60a7a8/tooldelta-0.5.7.tar.gz
+[2024-04-20 16:07:53] INFO root fetch - processPackages [emmi]: New version: [0.6.2] Old Version: [0.6.0]
+[2024-04-20 16:07:53] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/2c/37/884bfb265445396d8d6e8ed1e31592f8e475cdba55f807d853821555a29b/few_shot_learning_nlp-0.0.4.tar.gz
+[2024-04-20 16:07:53] INFO root fetch - processPackages [emmi]: Downloading https://files.pythonhosted.org/packages/9a/f2/2c3dc107a0d6690d9e0b2dc565c25b0af87b32846978a030f700672f5427/emmi-0.6.0.tar.gz
+[2024-04-20 16:07:53] INFO root fetch - processPackages [few-shot-learning-nlp]: Downloading https://files.pythonhosted.org/packages/ce/3d/7aef151f0568bd34b3ce4db5ca4600ab24c8eac7fdd3e4be5b7f80cdca90/few_shot_learning_nlp-0.0.5.tar.gz
+[2024-04-20 16:07:53] INFO root fetch - processPackages [Tooldelta]: Downloading https://files.pythonhosted.org/packages/cc/aa/c3229b3ff6858204e84f37e963adbe3d344fa0ee1ae9cd78312a928f962e/tooldelta-0.5.8.tar.gz
+[2024-04-20 16:07:53] INFO root fetch - processPackages [few-shot-learning-nlp]: executing diffoscope
+[2024-04-20 16:07:53] INFO root fetch - processPackages [few-shot-learning-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_learning_nlp-0.0.4.tar.gz tmp/few_shot_learning_nlp-0.0.5.tar.gz --markdown 20240420/f/few-shot-learning-nlp/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: Downloading https://files.pythonhosted.org/packages/ab/12/714242b02a6663b0502c42ea52295f1de8347e469d4898309636285ceadd/emmi-0.6.2.tar.gz
+[2024-04-20 16:07:54] INFO root fetch - processPackages [Tooldelta]: executing diffoscope
+[2024-04-20 16:07:54] INFO root fetch - processPackages [Tooldelta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tooldelta-0.5.7.tar.gz tmp/tooldelta-0.5.8.tar.gz --markdown 20240420/T/Tooldelta/0.5.7-0.5.8/README.md --exclude *.pyd
+[2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: executing diffoscope
+[2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emmi-0.6.0.tar.gz tmp/emmi-0.6.2.tar.gz --markdown 20240420/e/emmi/0.6.0-0.6.2/README.md --exclude *.pyd
+[2024-04-20 16:07:54] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.4.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - processPackages [few-shot-learning-nlp]: Remove: archive file [/home/abi/fetcher/tmp/few_shot_learning_nlp-0.0.5.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - main [MainThread]: End processing [few-shot-learning-nlp]: success
+[2024-04-20 16:07:54] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.7.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - processPackages [Tooldelta]: Remove: archive file [/home/abi/fetcher/tmp/tooldelta-0.5.8.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - main [MainThread]: End processing [Tooldelta]: success
+[2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: Remove: archive file [/home/abi/fetcher/tmp/emmi-0.6.0.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - processPackages [emmi]: Remove: archive file [/home/abi/fetcher/tmp/emmi-0.6.2.tar.gz]
+[2024-04-20 16:07:54] INFO root fetch - main [MainThread]: End processing [emmi]: success
+[2024-04-20 16:07:54] INFO root fetch - main [MainThread]: Store serial: [22856459]
