@@ -23555,3 +23555,30 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:02:01] INFO root fetch - processPackages [spotpython]: Remove: archive file [/home/abi/fetcher/tmp/spotPython-0.9.9.tar.gz]
 [2024-04-20 23:02:01] INFO root fetch - main [MainThread]: End processing [spotpython]: success
 [2024-04-20 23:02:01] INFO root fetch - main [MainThread]: Store serial: [22859501]
+[2024-04-20 23:04:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859501]
+[2024-04-20 23:04:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC225
+[2024-04-20 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: absbox
+[2024-04-20 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reflex-chat
+[2024-04-20 23:04:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yaoimagesrenamer
+[2024-04-20 23:04:10] WARNING root fetch - processPackages [yaoimagesrenamer]: Skipping, unable to determine old version
+[2024-04-20 23:04:10] INFO root fetch - main [MainThread]: End processing [yaoimagesrenamer] error
+[2024-04-20 23:04:10] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2024-04-20 23:04:10] INFO root fetch - processPackages [reflex-chat]: New version: [0.0.1a7] Old Version: [0.0.1a6]
+[2024-04-20 23:04:10] WARNING root fetch - processPackages [PythonTestLJC225]: Skipping, unable to determine old version
+[2024-04-20 23:04:10] INFO root fetch - main [MainThread]: End processing [PythonTestLJC225] error
+[2024-04-20 23:04:11] INFO root fetch - processPackages [reflex-chat]: Downloading https://files.pythonhosted.org/packages/ce/e8/05c6de857eab259157bf612d17d783d7887d62e0e74800b6c558f58fa48d/reflex-chat-0.0.1a6.tar.gz
+[2024-04-20 23:04:11] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2024-04-20 23:04:11] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2024-04-20 23:04:11] INFO root fetch - processPackages [reflex-chat]: Downloading https://files.pythonhosted.org/packages/5e/58/5d6d0efb71fc693ea54a631441dbcdf011c016ed5cf8bb6da91c8ba70ae5/reflex_chat-0.0.1a7.tar.gz
+[2024-04-20 23:04:11] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2024-04-20 23:04:11] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20240420/a/absbox/0.8.9-0.9.3/README.md --exclude *.pyd
+[2024-04-20 23:04:11] INFO root fetch - processPackages [reflex-chat]: executing diffoscope
+[2024-04-20 23:04:11] INFO root fetch - processPackages [reflex-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex-chat-0.0.1a6.tar.gz tmp/reflex_chat-0.0.1a7.tar.gz --markdown 20240420/r/reflex-chat/0.0.1a6-0.0.1a7/README.md --exclude *.pyd
+[2024-04-20 23:04:12] INFO root fetch - processPackages [reflex-chat]: Remove: archive file [/home/abi/fetcher/tmp/reflex-chat-0.0.1a6.tar.gz]
+[2024-04-20 23:04:12] INFO root fetch - processPackages [reflex-chat]: Remove: archive file [/home/abi/fetcher/tmp/reflex_chat-0.0.1a7.tar.gz]
+[2024-04-20 23:04:12] INFO root fetch - main [MainThread]: End processing [reflex-chat]: success
+[2024-04-20 23:04:12] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.8.9.tar.gz]
+[2024-04-20 23:04:12] INFO root fetch - processPackages [absbox]: Remove: archive file [/home/abi/fetcher/tmp/AbsBox-0.9.3.tar.gz]
+[2024-04-20 23:04:12] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2024-04-20 23:04:12] INFO root fetch - main [MainThread]: Store serial: [22859518]
