@@ -10429,3 +10429,15 @@
 [2024-04-20 08:15:36] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240419.tar.gz]
 [2024-04-20 08:15:36] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-04-20 08:15:36] INFO root fetch - main [MainThread]: Store serial: [22853092]
+[2024-04-20 08:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853092]
+[2024-04-20 08:17:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 08:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccdt
+[2024-04-20 08:17:54] INFO root fetch - processPackages [ccdt]: New version: [2.1.97] Old Version: [2.1.96]
+[2024-04-20 08:17:54] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/61/c1/61b27c9d40e356cfc75af8eba728e17ae5cbd877806762d2883bdf10bcfd/ccdt-2.1.96.tar.gz
+[2024-04-20 08:17:55] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5d/c8/9c6983d0cd97ddb2e34349b6e8cab69480840d521540f472751fe862eeba/ccdt-2.1.97.tar.gz
+[2024-04-20 08:17:55] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2024-04-20 08:17:55] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.1.96.tar.gz tmp/ccdt-2.1.97.tar.gz --markdown 20240420/c/ccdt/2.1.96-2.1.97/README.md --exclude *.pyd
+[2024-04-20 08:17:56] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.96.tar.gz]
+[2024-04-20 08:17:56] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.97.tar.gz]
+[2024-04-20 08:17:56] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2024-04-20 08:17:56] INFO root fetch - main [MainThread]: Store serial: [22853095]
