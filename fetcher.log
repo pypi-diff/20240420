@@ -13320,3 +13320,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:46:09] INFO root fetch - processPackages [php-ast]: Remove: archive file [/home/abi/fetcher/tmp/php_ast-1.2.tar.gz]
 [2024-04-20 11:46:09] INFO root fetch - main [MainThread]: End processing [php-ast]: success
 [2024-04-20 11:46:09] INFO root fetch - main [MainThread]: Store serial: [22854532]
+[2024-04-20 11:48:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854532]
+[2024-04-20 11:48:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 11:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scyllapy
+[2024-04-20 11:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snailshell
+[2024-04-20 11:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mytot
+[2024-04-20 11:48:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timeit-compare
+[2024-04-20 11:48:18] INFO root fetch - processPackages [mytot]: New version: [2024.4.20.174410] Old Version: [2024.4.20.173918]
+[2024-04-20 11:48:18] INFO root fetch - processPackages [snailshell]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 11:48:18] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/3a/2c/4356c2fbc3a32e41f92fb14927a903dae34eb5c309fdd00d88ddd6b4e699/mytot-2024.4.20.173918-py3-none-any.whl
+[2024-04-20 11:48:18] INFO root fetch - processPackages [scyllapy]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-20 11:48:18] INFO root fetch - processPackages [timeit-compare]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-20 11:48:18] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/27/22/ade224815ad5c78584f26f19d041337ba2b5abf250190b08ec8a52e7bfe9/snailshell-0.1.0.tar.gz
+[2024-04-20 11:48:18] INFO root fetch - processPackages [scyllapy]: Downloading https://files.pythonhosted.org/packages/6d/f9/4a563a1ccbb0d7af067f065495dcc2493754237640565c2b7863e88963f6/scyllapy-1.3.0.tar.gz
+[2024-04-20 11:48:18] INFO root fetch - processPackages [timeit-compare]: Downloading https://files.pythonhosted.org/packages/f4/d7/f871a0c9be0d3d556a481380261ee9836c1fe63812aff01995a5dc00a6de/timeit_compare-1.0.0.tar.gz
+[2024-04-20 11:48:18] INFO root fetch - processPackages [mytot]: Downloading https://files.pythonhosted.org/packages/a9/03/31134e1bc037bb35eeaafcf954769d0028c61cedeec4aae2dc22dee863e3/mytot-2024.4.20.174410-py3-none-any.whl
+[2024-04-20 11:48:18] INFO root fetch - processPackages [mytot]: executing diffoscope
+[2024-04-20 11:48:18] INFO root fetch - processPackages [mytot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip tmp/mytot-2024.4.20.174410-py3-none-any.whl.zip --markdown 20240420/m/mytot/2024.4.20.173918-2024.4.20.174410/README.md --exclude *.pyd
+[2024-04-20 11:48:18] INFO root fetch - processPackages [timeit-compare]: Downloading https://files.pythonhosted.org/packages/3a/f8/9946859b86806a951f6eaa766fa5cdfae3d06d86887a82b2749cc2562cc9/timeit_compare-1.1.0.tar.gz
+[2024-04-20 11:48:18] INFO root fetch - processPackages [scyllapy]: Downloading https://files.pythonhosted.org/packages/b8/2c/f45fe7eb1255590ec00c8b99b73b612aabec42d9adb609e1ad4f00b718ff/scyllapy-1.3.1.tar.gz
+[2024-04-20 11:48:19] INFO root fetch - processPackages [timeit-compare]: executing diffoscope
+[2024-04-20 11:48:19] INFO root fetch - processPackages [timeit-compare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timeit_compare-1.0.0.tar.gz tmp/timeit_compare-1.1.0.tar.gz --markdown 20240420/t/timeit-compare/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-04-20 11:48:19] INFO root fetch - processPackages [scyllapy]: executing diffoscope
+[2024-04-20 11:48:19] INFO root fetch - processPackages [scyllapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scyllapy-1.3.0.tar.gz tmp/scyllapy-1.3.1.tar.gz --markdown 20240420/s/scyllapy/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-04-20 11:48:19] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.173918-py3-none-any.whl.zip]
+[2024-04-20 11:48:19] INFO root fetch - processPackages [mytot]: Remove: archive file [/home/abi/fetcher/tmp/mytot-2024.4.20.174410-py3-none-any.whl.zip]
+[2024-04-20 11:48:19] INFO root fetch - main [MainThread]: End processing [mytot]: success
+[2024-04-20 11:48:19] INFO root fetch - processPackages [timeit-compare]: Remove: archive file [/home/abi/fetcher/tmp/timeit_compare-1.0.0.tar.gz]
+[2024-04-20 11:48:19] INFO root fetch - processPackages [timeit-compare]: Remove: archive file [/home/abi/fetcher/tmp/timeit_compare-1.1.0.tar.gz]
+[2024-04-20 11:48:19] INFO root fetch - main [MainThread]: End processing [timeit-compare]: success
+[2024-04-20 11:48:19] INFO root fetch - processPackages [scyllapy]: Remove: archive file [/home/abi/fetcher/tmp/scyllapy-1.3.0.tar.gz]
+[2024-04-20 11:48:19] INFO root fetch - processPackages [scyllapy]: Remove: archive file [/home/abi/fetcher/tmp/scyllapy-1.3.1.tar.gz]
+[2024-04-20 11:48:19] INFO root fetch - main [MainThread]: End processing [scyllapy]: success
+[2024-04-20 11:48:20] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/1f/c1/d5ce3199a9e61dad400b301f53c3bb5cc4b43acb5bca2dac9b2503c1f4ff/snailshell-0.2.0.tar.gz
+[2024-04-20 11:48:21] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 11:48:21] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.1.0.tar.gz tmp/snailshell-0.2.0.tar.gz --markdown 20240420/s/snailshell/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 11:48:22] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.1.0.tar.gz]
+[2024-04-20 11:48:22] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.0.tar.gz]
+[2024-04-20 11:48:22] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 11:48:22] INFO root fetch - main [MainThread]: Store serial: [22854552]
