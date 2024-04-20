@@ -20486,3 +20486,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:50:09] INFO root fetch - processPackages [botasaurus2]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus2-1.4.6.tar.gz]
 [2024-04-20 19:50:09] INFO root fetch - main [MainThread]: End processing [botasaurus2]: success
 [2024-04-20 19:50:09] INFO root fetch - main [MainThread]: Store serial: [22858016]
+[2024-04-20 19:52:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858016]
+[2024-04-20 19:52:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 19:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: meshtastic
+[2024-04-20 19:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC156
+[2024-04-20 19:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: babi-grammars
+[2024-04-20 19:52:18] WARNING root fetch - processPackages [PythonTestLJC156]: Skipping, unable to determine old version
+[2024-04-20 19:52:18] INFO root fetch - main [MainThread]: End processing [PythonTestLJC156] error
+[2024-04-20 19:52:18] INFO root fetch - processPackages [babi-grammars]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 19:52:18] INFO root fetch - processPackages [meshtastic]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-04-20 19:52:18] INFO root fetch - processPackages [babi-grammars]: Downloading https://files.pythonhosted.org/packages/68/49/8f3995514260e189d97ee9b41c3cc5aa712670de410324dee06e333ff50f/babi_grammars-0.0.8.tar.gz
+[2024-04-20 19:52:18] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/89/10/53f9d03107dad1af867ce3e23235bdcbe12938de5c4571e8912f8b49b499/meshtastic-2.3.5.tar.gz
+[2024-04-20 19:52:18] INFO root fetch - processPackages [meshtastic]: Downloading https://files.pythonhosted.org/packages/27/51/008910124477209c197dcbe2aac52dfb84f0817b14de6865a550f773ef82/meshtastic-2.3.6.tar.gz
+[2024-04-20 19:52:18] INFO root fetch - processPackages [babi-grammars]: Downloading https://files.pythonhosted.org/packages/9d/57/6b3e2a8b3fc21f081859dee728281b067c69f451548f1af70ea402160c4b/babi_grammars-0.0.9.tar.gz
+[2024-04-20 19:52:18] INFO root fetch - processPackages [meshtastic]: executing diffoscope
+[2024-04-20 19:52:18] INFO root fetch - processPackages [meshtastic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshtastic-2.3.5.tar.gz tmp/meshtastic-2.3.6.tar.gz --markdown 20240420/m/meshtastic/2.3.5-2.3.6/README.md --exclude *.pyd
+[2024-04-20 19:52:19] INFO root fetch - processPackages [babi-grammars]: executing diffoscope
+[2024-04-20 19:52:19] INFO root fetch - processPackages [babi-grammars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/babi_grammars-0.0.8.tar.gz tmp/babi_grammars-0.0.9.tar.gz --markdown 20240420/b/babi-grammars/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 19:52:19] INFO root fetch - processPackages [meshtastic]: Remove: archive file [/home/abi/fetcher/tmp/meshtastic-2.3.5.tar.gz]
+[2024-04-20 19:52:19] INFO root fetch - processPackages [meshtastic]: Remove: archive file [/home/abi/fetcher/tmp/meshtastic-2.3.6.tar.gz]
+[2024-04-20 19:52:19] INFO root fetch - main [MainThread]: End processing [meshtastic]: success
+[2024-04-20 19:52:20] INFO root fetch - processPackages [babi-grammars]: Remove: archive file [/home/abi/fetcher/tmp/babi_grammars-0.0.8.tar.gz]
+[2024-04-20 19:52:20] INFO root fetch - processPackages [babi-grammars]: Remove: archive file [/home/abi/fetcher/tmp/babi_grammars-0.0.9.tar.gz]
+[2024-04-20 19:52:20] INFO root fetch - main [MainThread]: End processing [babi-grammars]: success
+[2024-04-20 19:52:20] INFO root fetch - main [MainThread]: Store serial: [22858028]
