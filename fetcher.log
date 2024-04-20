@@ -23802,3 +23802,15 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 23:25:58] INFO root fetch - processPackages [cyclonedx-bom]: Remove: archive file [/home/abi/fetcher/tmp/cyclonedx_bom-4.3.0.tar.gz]
 [2024-04-20 23:25:58] INFO root fetch - main [MainThread]: End processing [cyclonedx-bom]: success
 [2024-04-20 23:25:58] INFO root fetch - main [MainThread]: Store serial: [22859601]
+[2024-04-20 23:28:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859601]
+[2024-04-20 23:28:07] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 23:28:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-podcast-toolkit
+[2024-04-20 23:28:07] INFO root fetch - processPackages [pg-podcast-toolkit]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-20 23:28:07] INFO root fetch - processPackages [pg-podcast-toolkit]: Downloading https://files.pythonhosted.org/packages/58/19/f5f741acb7af7e7d53d5eb690d214d1126e0e212962f08ce4c6d1c872eba/pg_podcast_toolkit-0.0.5.tar.gz
+[2024-04-20 23:28:07] INFO root fetch - processPackages [pg-podcast-toolkit]: Downloading https://files.pythonhosted.org/packages/41/70/96d35a2bda5a07a15468ee666151b68b1e7be0c1f212919c95ea24b86d65/pg_podcast_toolkit-0.0.6.tar.gz
+[2024-04-20 23:28:07] INFO root fetch - processPackages [pg-podcast-toolkit]: executing diffoscope
+[2024-04-20 23:28:07] INFO root fetch - processPackages [pg-podcast-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_podcast_toolkit-0.0.5.tar.gz tmp/pg_podcast_toolkit-0.0.6.tar.gz --markdown 20240420/p/pg-podcast-toolkit/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-04-20 23:28:08] INFO root fetch - processPackages [pg-podcast-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pg_podcast_toolkit-0.0.5.tar.gz]
+[2024-04-20 23:28:08] INFO root fetch - processPackages [pg-podcast-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/pg_podcast_toolkit-0.0.6.tar.gz]
+[2024-04-20 23:28:08] INFO root fetch - main [MainThread]: End processing [pg-podcast-toolkit]: success
+[2024-04-20 23:28:08] INFO root fetch - main [MainThread]: Store serial: [22859604]
