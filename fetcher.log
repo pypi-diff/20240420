@@ -13359,3 +13359,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:48:22] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.0.tar.gz]
 [2024-04-20 11:48:22] INFO root fetch - main [MainThread]: End processing [snailshell]: success
 [2024-04-20 11:48:22] INFO root fetch - main [MainThread]: Store serial: [22854552]
+[2024-04-20 11:50:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854552]
+[2024-04-20 11:50:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 11:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atlassian-doc-builder
+[2024-04-20 11:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyblu
+[2024-04-20 11:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cli-support
+[2024-04-20 11:50:32] INFO root fetch - processPackages [cli-support]: New version: [2.0rc1] Old Version: [2.0.1]
+[2024-04-20 11:50:32] INFO root fetch - processPackages [pyblu]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 11:50:32] INFO root fetch - processPackages [atlassian-doc-builder]: New version: [0.5] Old Version: [0.4]
+[2024-04-20 11:50:33] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/28/b0/886ea56c585284cce546c9d4240fffd25f4c89c640ba70c58daf912e65bf/pyblu-0.1.0.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [atlassian-doc-builder]: Downloading https://files.pythonhosted.org/packages/5c/8e/746cf985b8d1faecc598290c9dc54650f255d11b09fc22e5f47b802a3099/atlassian-doc-builder-0.4.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [cli-support]: Downloading https://files.pythonhosted.org/packages/31/dc/42eae328c77b2bb8526907527ea1a68d24389801ef7d30adfecf24f66743/cli_support-2.0.1.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [atlassian-doc-builder]: Downloading https://files.pythonhosted.org/packages/91/d3/103c94366f5f021d912f8dd9925f54bb0124688a7fe029b78dba006dbc02/atlassian_doc_builder-0.5.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [pyblu]: Downloading https://files.pythonhosted.org/packages/d6/10/ba4c8b77087e34c4c62668dd74e2cbd7ae6cd7d4a89150c249faee998324/pyblu-0.2.0.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [atlassian-doc-builder]: executing diffoscope
+[2024-04-20 11:50:33] INFO root fetch - processPackages [atlassian-doc-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atlassian-doc-builder-0.4.tar.gz tmp/atlassian_doc_builder-0.5.tar.gz --markdown 20240420/a/atlassian-doc-builder/0.4-0.5/README.md --exclude *.pyd
+[2024-04-20 11:50:33] INFO root fetch - processPackages [cli-support]: Downloading https://files.pythonhosted.org/packages/e5/b3/ed772b16ec71c2e91a3bd661ef7c7cb5c96bc464d962a3eb6ac132d5cb5a/cli_support-2.0rc1.tar.gz
+[2024-04-20 11:50:33] INFO root fetch - processPackages [pyblu]: executing diffoscope
+[2024-04-20 11:50:33] INFO root fetch - processPackages [pyblu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyblu-0.1.0.tar.gz tmp/pyblu-0.2.0.tar.gz --markdown 20240420/p/pyblu/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 11:50:33] INFO root fetch - processPackages [cli-support]: executing diffoscope
+[2024-04-20 11:50:33] INFO root fetch - processPackages [cli-support]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_support-2.0.1.tar.gz tmp/cli_support-2.0rc1.tar.gz --markdown 20240420/c/cli-support/2.0.1-2.0rc1/README.md --exclude *.pyd
+[2024-04-20 11:50:34] INFO root fetch - processPackages [atlassian-doc-builder]: Remove: archive file [/home/abi/fetcher/tmp/atlassian-doc-builder-0.4.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - processPackages [atlassian-doc-builder]: Remove: archive file [/home/abi/fetcher/tmp/atlassian_doc_builder-0.5.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - main [MainThread]: End processing [atlassian-doc-builder]: success
+[2024-04-20 11:50:34] INFO root fetch - processPackages [cli-support]: Remove: archive file [/home/abi/fetcher/tmp/cli_support-2.0.1.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - processPackages [cli-support]: Remove: archive file [/home/abi/fetcher/tmp/cli_support-2.0rc1.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - main [MainThread]: End processing [cli-support]: success
+[2024-04-20 11:50:34] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.1.0.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - processPackages [pyblu]: Remove: archive file [/home/abi/fetcher/tmp/pyblu-0.2.0.tar.gz]
+[2024-04-20 11:50:34] INFO root fetch - main [MainThread]: End processing [pyblu]: success
+[2024-04-20 11:50:34] INFO root fetch - main [MainThread]: Store serial: [22854561]
