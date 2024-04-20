@@ -21419,3 +21419,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 20:44:51] INFO root fetch - processPackages [rg3py]: Remove: archive file [/home/abi/fetcher/tmp/rg3py-0.0.9-py3-none-win_amd64.whl.zip]
 [2024-04-20 20:44:51] INFO root fetch - main [MainThread]: End processing [rg3py]: success
 [2024-04-20 20:44:51] INFO root fetch - main [MainThread]: Store serial: [22858492]
+[2024-04-20 20:46:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858492]
+[2024-04-20 20:47:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 20:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdp-patches
+[2024-04-20 20:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC176
+[2024-04-20 20:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datapools
+[2024-04-20 20:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: usefulFunctionPlan11
+[2024-04-20 20:47:02] INFO root fetch - processPackages [cdp-patches]: New version: [1.0.1] Old Version: [1.0]
+[2024-04-20 20:47:02] WARNING root fetch - processPackages [usefulFunctionPlan11]: Skipping, unable to determine old version
+[2024-04-20 20:47:02] INFO root fetch - main [MainThread]: End processing [usefulFunctionPlan11] error
+[2024-04-20 20:47:02] INFO root fetch - processPackages [datapools]: New version: [1.0.44] Old Version: [1.0.43]
+[2024-04-20 20:47:02] WARNING root fetch - processPackages [PythonTestLJC176]: Skipping, unable to determine old version
+[2024-04-20 20:47:02] INFO root fetch - main [MainThread]: End processing [PythonTestLJC176] error
+[2024-04-20 20:47:02] INFO root fetch - processPackages [cdp-patches]: Downloading https://files.pythonhosted.org/packages/9d/63/53d395fdcad49337fc567cc5395ab66098a051a970eccec5ddf158a55e8f/cdp_patches-1.0.tar.gz
+[2024-04-20 20:47:02] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/04/2c/844669a4ca2cb900c78596e5eef86684d06d12e88935b495ae89a8dfaafe/datapools-1.0.43.tar.gz
+[2024-04-20 20:47:02] INFO root fetch - processPackages [cdp-patches]: Downloading https://files.pythonhosted.org/packages/b4/e4/96be8469c0ebf9ce06fa9563961012e0d32efe8c7445b63927d548940d5a/cdp_patches-1.0.1.tar.gz
+[2024-04-20 20:47:02] INFO root fetch - processPackages [datapools]: Downloading https://files.pythonhosted.org/packages/3a/b8/846940c7650ad6c749f7bb4d883716b9807b321623bb58c69e82cc7d02b2/datapools-1.0.44.tar.gz
+[2024-04-20 20:47:02] INFO root fetch - processPackages [cdp-patches]: executing diffoscope
+[2024-04-20 20:47:02] INFO root fetch - processPackages [cdp-patches]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdp_patches-1.0.tar.gz tmp/cdp_patches-1.0.1.tar.gz --markdown 20240420/c/cdp-patches/1.0-1.0.1/README.md --exclude *.pyd
+[2024-04-20 20:47:02] INFO root fetch - processPackages [datapools]: executing diffoscope
+[2024-04-20 20:47:02] INFO root fetch - processPackages [datapools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datapools-1.0.43.tar.gz tmp/datapools-1.0.44.tar.gz --markdown 20240420/d/datapools/1.0.43-1.0.44/README.md --exclude *.pyd
+[2024-04-20 20:47:03] INFO root fetch - processPackages [cdp-patches]: Remove: archive file [/home/abi/fetcher/tmp/cdp_patches-1.0.tar.gz]
+[2024-04-20 20:47:03] INFO root fetch - processPackages [cdp-patches]: Remove: archive file [/home/abi/fetcher/tmp/cdp_patches-1.0.1.tar.gz]
+[2024-04-20 20:47:03] INFO root fetch - main [MainThread]: End processing [cdp-patches]: success
+[2024-04-20 20:47:03] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.43.tar.gz]
+[2024-04-20 20:47:03] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.44.tar.gz]
+[2024-04-20 20:47:03] INFO root fetch - main [MainThread]: End processing [datapools]: success
+[2024-04-20 20:47:03] INFO root fetch - main [MainThread]: Store serial: [22858507]
