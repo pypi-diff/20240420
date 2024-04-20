@@ -11664,3 +11664,29 @@
 [2024-04-20 09:47:45] INFO root fetch - processPackages [kitsunekko-tools]: Remove: archive file [/home/abi/fetcher/tmp/kitsunekko_tools-0.0.2.tar.gz]
 [2024-04-20 09:47:45] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools]: success
 [2024-04-20 09:47:45] INFO root fetch - main [MainThread]: Store serial: [22853683]
+[2024-04-20 09:49:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853683]
+[2024-04-20 09:49:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 09:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-20 09:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-dbchat
+[2024-04-20 09:49:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypipr
+[2024-04-20 09:49:54] INFO root fetch - processPackages [py-dbchat]: New version: [0.0.2rc73.post1] Old Version: [0.0.2rc72.post1]
+[2024-04-20 09:49:54] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 09:49:54] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 09:49:54] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/29/93/861c6c9479aab87c14d8b0d84ca43d358b878d04a314309109b706abade9/py_dbchat-0.0.2rc72.post1.tar.gz
+[2024-04-20 09:49:54] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 09:49:54] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 09:49:54] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 09:49:54] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 09:49:54] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 09:49:54] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 09:49:54] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 09:49:54] INFO root fetch - processPackages [py-dbchat]: Downloading https://files.pythonhosted.org/packages/d5/47/0320bd8a540d21890af3d1e83753f02aff73c7bd88c90e87e4f8ed55c7dc/py_dbchat-0.0.2rc73.post1.tar.gz
+[2024-04-20 09:49:54] INFO root fetch - processPackages [py-dbchat]: executing diffoscope
+[2024-04-20 09:49:54] INFO root fetch - processPackages [py-dbchat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_dbchat-0.0.2rc72.post1.tar.gz tmp/py_dbchat-0.0.2rc73.post1.tar.gz --markdown 20240420/p/py-dbchat/0.0.2rc72.post1-0.0.2rc73.post1/README.md --exclude *.pyd
+[2024-04-20 09:49:55] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 09:49:55] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 09:49:55] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 09:49:55] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc72.post1.tar.gz]
+[2024-04-20 09:49:55] INFO root fetch - processPackages [py-dbchat]: Remove: archive file [/home/abi/fetcher/tmp/py_dbchat-0.0.2rc73.post1.tar.gz]
+[2024-04-20 09:49:55] INFO root fetch - main [MainThread]: End processing [py-dbchat]: success
+[2024-04-20 09:49:55] INFO root fetch - main [MainThread]: Store serial: [22853691]
