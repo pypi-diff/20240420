@@ -13922,3 +13922,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:29:46] INFO root fetch - processPackages [silicon-analyser]: Remove: archive file [/home/abi/fetcher/tmp/silicon_analyser-1.0.9.tar.gz]
 [2024-04-20 12:29:46] INFO root fetch - main [MainThread]: End processing [silicon-analyser]: success
 [2024-04-20 12:29:46] INFO root fetch - main [MainThread]: Store serial: [22854810]
+[2024-04-20 12:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854810]
+[2024-04-20 12:31:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 12:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 12:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-common
+[2024-04-20 12:31:55] INFO root fetch - processPackages [snailshell]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-20 12:31:55] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 12:31:55] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/05/09/ad2dde8dd4239d888adcee4947a0c7553ec9d602636e6810bdb1a9a01bf8/snailshell-0.2.4.tar.gz
+[2024-04-20 12:31:55] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-20 12:31:55] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-20 12:31:55] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-20 12:31:55] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240420/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 12:31:56] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/a7/81/988c6bcf55f20a0912cd9ed8f4a21d88e37febf4ff1739b7805d755ad0ec/snailshell-0.2.5.tar.gz
+[2024-04-20 12:31:56] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-20 12:31:56] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-20 12:31:56] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-20 12:31:57] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 12:31:57] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.4.tar.gz tmp/snailshell-0.2.5.tar.gz --markdown 20240420/s/snailshell/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-04-20 12:31:58] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.4.tar.gz]
+[2024-04-20 12:31:58] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.5.tar.gz]
+[2024-04-20 12:31:58] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 12:31:58] INFO root fetch - main [MainThread]: Store serial: [22854815]
