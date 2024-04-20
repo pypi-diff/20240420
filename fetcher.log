@@ -22090,3 +22090,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:31:08] INFO root fetch - processPackages [biorefineries]: Remove: archive file [/home/abi/fetcher/tmp/biorefineries-2.9.4.tar.gz]
 [2024-04-20 21:31:08] INFO root fetch - main [MainThread]: End processing [biorefineries]: success
 [2024-04-20 21:31:08] INFO root fetch - main [MainThread]: Store serial: [22858836]
+[2024-04-20 21:33:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858836]
+[2024-04-20 21:33:16] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gimera
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not-again-ai
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: notfunny
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llmt
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: local-attention
+[2024-04-20 21:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC193
+[2024-04-20 21:33:17] INFO root fetch - processPackages [notfunny]: New version: [0.6.0] Old Version: [0.5.9]
+[2024-04-20 21:33:17] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/ad/3c/d87ef62d36c61b1172e200f5849918af44af216e763e659ae497bf3f1e14/notfunny-0.5.9.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [gimera]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-20 21:33:17] INFO root fetch - processPackages [llmt]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-20 21:33:17] INFO root fetch - processPackages [not-again-ai]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-20 21:33:17] INFO root fetch - processPackages [local-attention]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-20 21:33:17] WARNING root fetch - processPackages [PythonTestLJC193]: Skipping, unable to determine old version
+[2024-04-20 21:33:17] INFO root fetch - main [MainThread]: End processing [PythonTestLJC193] error
+[2024-04-20 21:33:17] INFO root fetch - processPackages [gimera]: Downloading https://files.pythonhosted.org/packages/2e/3e/38d88141bd3707f8ae8e6b3e159b24edc9461c0f4a93e883a527e9762ea2/gimera-0.7.8.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/57/d8/55d6699055a81b4200867f10823af9f6f878e16a782f5f0d7a3ed8c0e6f0/not_again_ai-0.5.1.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/47/0c/12de66dc069507561030f0ca58185e09c1cea12f512656d00e39a41acdd5/llmt-0.0.4.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [local-attention]: Downloading https://files.pythonhosted.org/packages/93/46/159a5046090459fadd66c8fc268012854e03ad6d563b91948de366ceba09/local-attention-1.9.0.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/7b/df/85ced1c9c3e4ef68b8db3b850223033f5f698e1be0ce6591c06ee3c55e38/notfunny-0.6.0.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [gimera]: Downloading https://files.pythonhosted.org/packages/b1/dc/c80f85a8b614af02ff8abe5853e4f4f5d0076d026ec6a58b86c4694563bd/gimera-0.7.9.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/4c/36/b9bd55176a6abd80fa43ed27b9d5c8b0692589662daa50d2035e529b7a93/not_again_ai-0.6.0.tar.gz
+[2024-04-20 21:33:17] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 21:33:17] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.5.9.tar.gz tmp/notfunny-0.6.0.tar.gz --markdown 20240420/n/notfunny/0.5.9-0.6.0/README.md --exclude *.pyd
+[2024-04-20 21:33:17] INFO root fetch - processPackages [gimera]: executing diffoscope
+[2024-04-20 21:33:17] INFO root fetch - processPackages [gimera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gimera-0.7.8.tar.gz tmp/gimera-0.7.9.tar.gz --markdown 20240420/g/gimera/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-04-20 21:33:18] INFO root fetch - processPackages [local-attention]: Downloading https://files.pythonhosted.org/packages/e9/fe/1ca49be258714a70b4ae7a33d8343cc07ae810ca9d817e4f9c87ebb714c8/local_attention-1.9.1.tar.gz
+[2024-04-20 21:33:18] INFO root fetch - processPackages [not-again-ai]: executing diffoscope
+[2024-04-20 21:33:18] INFO root fetch - processPackages [not-again-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not_again_ai-0.5.1.tar.gz tmp/not_again_ai-0.6.0.tar.gz --markdown 20240420/n/not-again-ai/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-20 21:33:18] INFO root fetch - processPackages [llmt]: Downloading https://files.pythonhosted.org/packages/71/30/cd97f5be7979f29dd8fe7ecccbd990d6c5c608f714825794135ef1e8349b/llmt-0.0.5.tar.gz
+[2024-04-20 21:33:18] INFO root fetch - processPackages [local-attention]: executing diffoscope
+[2024-04-20 21:33:18] INFO root fetch - processPackages [local-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-attention-1.9.0.tar.gz tmp/local_attention-1.9.1.tar.gz --markdown 20240420/l/local-attention/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-04-20 21:33:18] INFO root fetch - processPackages [llmt]: executing diffoscope
+[2024-04-20 21:33:18] INFO root fetch - processPackages [llmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llmt-0.0.4.tar.gz tmp/llmt-0.0.5.tar.gz --markdown 20240420/l/llmt/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-20 21:33:18] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.5.9.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - processPackages [gimera]: Remove: archive file [/home/abi/fetcher/tmp/gimera-0.7.8.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - processPackages [gimera]: Remove: archive file [/home/abi/fetcher/tmp/gimera-0.7.9.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.6.0.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - main [MainThread]: End processing [gimera]: success
+[2024-04-20 21:33:18] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 21:33:18] INFO root fetch - processPackages [local-attention]: Remove: archive file [/home/abi/fetcher/tmp/local-attention-1.9.0.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - processPackages [local-attention]: Remove: archive file [/home/abi/fetcher/tmp/local_attention-1.9.1.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - main [MainThread]: End processing [local-attention]: success
+[2024-04-20 21:33:18] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.5.1.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.6.0.tar.gz]
+[2024-04-20 21:33:18] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
+[2024-04-20 21:33:19] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.4.tar.gz]
+[2024-04-20 21:33:19] INFO root fetch - processPackages [llmt]: Remove: archive file [/home/abi/fetcher/tmp/llmt-0.0.5.tar.gz]
+[2024-04-20 21:33:19] INFO root fetch - main [MainThread]: End processing [llmt]: success
+[2024-04-20 21:33:19] INFO root fetch - main [MainThread]: Store serial: [22858855]
