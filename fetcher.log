@@ -11890,3 +11890,33 @@
 [2024-04-20 10:11:37] INFO root fetch - processPackages [adaptix]: Remove: archive file [/home/abi/fetcher/tmp/adaptix-3.0.0b5.tar.gz]
 [2024-04-20 10:11:37] INFO root fetch - main [MainThread]: End processing [adaptix]: success
 [2024-04-20 10:11:37] INFO root fetch - main [MainThread]: Store serial: [22853847]
+[2024-04-20 10:13:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853847]
+[2024-04-20 10:13:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 10:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jax-fem
+[2024-04-20 10:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: motorcalc
+[2024-04-20 10:13:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ColabGeek
+[2024-04-20 10:13:45] INFO root fetch - processPackages [motorcalc]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-04-20 10:13:45] INFO root fetch - processPackages [jax-fem]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-20 10:13:45] INFO root fetch - processPackages [ColabGeek]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-20 10:13:46] INFO root fetch - processPackages [motorcalc]: Downloading https://files.pythonhosted.org/packages/ec/f9/3bd21e19df8c78b37de41ef3c3a6b2141fddbc24ada1e4e4260f68b8171c/motorcalc-0.1.2.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [jax-fem]: Downloading https://files.pythonhosted.org/packages/9e/e1/f456c4d87c4180b829d384a73d4a0c789ad15b936eeb4f34a309757f57cf/jax-fem-0.0.3.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [ColabGeek]: Downloading https://files.pythonhosted.org/packages/83/ca/164a6ff65bf26c72a450a635874967f9b9ce9be39611bf4e7c54a77b9266/ColabGeek-1.3.4.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [ColabGeek]: Downloading https://files.pythonhosted.org/packages/16/74/603bb9b6f86b89b23926a9f98c7d613823987ef2f01a37ed2523cbaf2349/colabgeek-1.3.5.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [motorcalc]: Downloading https://files.pythonhosted.org/packages/9e/69/a0aa37a2359de2464f615032779bad424581fce63b5ceb73a10ec524973a/motorcalc-0.2.0.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [ColabGeek]: executing diffoscope
+[2024-04-20 10:13:46] INFO root fetch - processPackages [ColabGeek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ColabGeek-1.3.4.tar.gz tmp/colabgeek-1.3.5.tar.gz --markdown 20240420/C/ColabGeek/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-04-20 10:13:46] INFO root fetch - processPackages [jax-fem]: Downloading https://files.pythonhosted.org/packages/d0/af/0345128bb180c974b7a1f107f0bf22b9f39c2565122b5d210811ebe59fdd/jax_fem-0.0.4.tar.gz
+[2024-04-20 10:13:46] INFO root fetch - processPackages [motorcalc]: executing diffoscope
+[2024-04-20 10:13:46] INFO root fetch - processPackages [motorcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motorcalc-0.1.2.tar.gz tmp/motorcalc-0.2.0.tar.gz --markdown 20240420/m/motorcalc/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-04-20 10:13:46] INFO root fetch - processPackages [jax-fem]: executing diffoscope
+[2024-04-20 10:13:46] INFO root fetch - processPackages [jax-fem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax-fem-0.0.3.tar.gz tmp/jax_fem-0.0.4.tar.gz --markdown 20240420/j/jax-fem/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-04-20 10:13:47] INFO root fetch - processPackages [ColabGeek]: Remove: archive file [/home/abi/fetcher/tmp/ColabGeek-1.3.4.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - processPackages [ColabGeek]: Remove: archive file [/home/abi/fetcher/tmp/colabgeek-1.3.5.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - main [MainThread]: End processing [ColabGeek]: success
+[2024-04-20 10:13:47] INFO root fetch - processPackages [motorcalc]: Remove: archive file [/home/abi/fetcher/tmp/motorcalc-0.1.2.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - processPackages [motorcalc]: Remove: archive file [/home/abi/fetcher/tmp/motorcalc-0.2.0.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - main [MainThread]: End processing [motorcalc]: success
+[2024-04-20 10:13:47] INFO root fetch - processPackages [jax-fem]: Remove: archive file [/home/abi/fetcher/tmp/jax-fem-0.0.3.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - processPackages [jax-fem]: Remove: archive file [/home/abi/fetcher/tmp/jax_fem-0.0.4.tar.gz]
+[2024-04-20 10:13:47] INFO root fetch - main [MainThread]: End processing [jax-fem]: success
+[2024-04-20 10:13:47] INFO root fetch - main [MainThread]: Store serial: [22853856]
