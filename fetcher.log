@@ -7620,3 +7620,21 @@
 [2024-04-20 04:09:25] INFO root fetch - processPackages [gdpx]: Remove: archive file [/home/abi/fetcher/tmp/gdpx-0.0.7.tar.gz]
 [2024-04-20 04:09:25] INFO root fetch - main [MainThread]: End processing [gdpx]: success
 [2024-04-20 04:09:25] INFO root fetch - main [MainThread]: Store serial: [22851761]
+[2024-04-20 04:11:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851761]
+[2024-04-20 04:11:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 04:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webllama
+[2024-04-20 04:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PerplexiPy
+[2024-04-20 04:11:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mfs-styletts2
+[2024-04-20 04:11:34] WARNING root fetch - processPackages [mfs-styletts2]: Skipping, unable to determine old version
+[2024-04-20 04:11:34] INFO root fetch - main [MainThread]: End processing [mfs-styletts2] error
+[2024-04-20 04:11:34] WARNING root fetch - processPackages [webllama]: Skipping, unable to determine old version
+[2024-04-20 04:11:34] INFO root fetch - processPackages [PerplexiPy]: New version: [1.0.1] Old Version: [0.4.1]
+[2024-04-20 04:11:34] INFO root fetch - main [MainThread]: End processing [webllama] error
+[2024-04-20 04:11:34] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/73/db/b2e22febd314cf9665492a62fdfe4bd4947f47567ec03880a15d4597ec0e/PerplexiPy-0.4.1-py3-none-any.whl
+[2024-04-20 04:11:34] INFO root fetch - processPackages [PerplexiPy]: Downloading https://files.pythonhosted.org/packages/ec/3f/e3f909f8320005c37a54eeafd49c97e3103f5dcd331c3df629bcc751debe/PerplexiPy-1.0.1-py3-none-any.whl
+[2024-04-20 04:11:35] INFO root fetch - processPackages [PerplexiPy]: executing diffoscope
+[2024-04-20 04:11:35] INFO root fetch - processPackages [PerplexiPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PerplexiPy-0.4.1-py3-none-any.whl.zip tmp/PerplexiPy-1.0.1-py3-none-any.whl.zip --markdown 20240420/P/PerplexiPy/0.4.1-1.0.1/README.md --exclude *.pyd
+[2024-04-20 04:11:35] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-0.4.1-py3-none-any.whl.zip]
+[2024-04-20 04:11:35] INFO root fetch - processPackages [PerplexiPy]: Remove: archive file [/home/abi/fetcher/tmp/PerplexiPy-1.0.1-py3-none-any.whl.zip]
+[2024-04-20 04:11:35] INFO root fetch - main [MainThread]: End processing [PerplexiPy]: success
+[2024-04-20 04:11:35] INFO root fetch - main [MainThread]: Store serial: [22851776]
