@@ -7471,3 +7471,14 @@
 [2024-04-20 03:57:07] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-20 03:57:07] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-20 03:57:07] INFO root fetch - main [MainThread]: Store serial: [22851710]
+[2024-04-20 03:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851710]
+[2024-04-20 03:59:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 03:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2024-04-20 03:59:16] INFO root fetch - processPackages [netron]: New version: [7.6.1] Old Version: [7.6.0]
+[2024-04-20 03:59:16] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/02/20/243bb24074117b7bc2eeda694e3a3bd62951cd23b60852c018afe316e7b0/netron-7.6.0-py3-none-any.whl
+[2024-04-20 03:59:17] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/b0/04/a0422c06e1c912a1b911ba413700807eeadc290305db7d3d23df54522a5e/netron-7.6.1-py3-none-any.whl
+[2024-04-20 03:59:17] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-04-20 03:59:17] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.0-py3-none-any.whl.zip tmp/netron-7.6.1-py3-none-any.whl.zip --markdown 20240420/n/netron/7.6.0-7.6.1/README.md --exclude *.pyd
+[2024-04-20 04:02:17] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-04-20 04:02:17] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-04-20 04:02:17] INFO root fetch - main [MainThread]: Store serial: [22851712]
