@@ -11522,3 +11522,24 @@
 [2024-04-20 09:39:04] INFO root fetch - processPackages [mkdocs-ezglossary-plugin]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs_ezglossary_plugin-1.6.1.tar.gz]
 [2024-04-20 09:39:04] INFO root fetch - main [MainThread]: End processing [mkdocs-ezglossary-plugin]: success
 [2024-04-20 09:39:04] INFO root fetch - main [MainThread]: Store serial: [22853629]
+[2024-04-20 09:41:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853629]
+[2024-04-20 09:41:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: phitter
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccdt
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ccdt]: New version: [2.1.97] Old Version: [2.1.96]
+[2024-04-20 09:41:13] INFO root fetch - processPackages [phitter]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/61/c1/61b27c9d40e356cfc75af8eba728e17ae5cbd877806762d2883bdf10bcfd/ccdt-2.1.96.tar.gz
+[2024-04-20 09:41:13] INFO root fetch - processPackages [phitter]: Downloading https://files.pythonhosted.org/packages/58/3f/76eff1cb713499e3090b16fc5e8098503c885ac2ed73021efdb2d532a91a/phitter-0.0.4.tar.gz
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5d/c8/9c6983d0cd97ddb2e34349b6e8cab69480840d521540f472751fe862eeba/ccdt-2.1.97.tar.gz
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2024-04-20 09:41:13] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.1.96.tar.gz tmp/ccdt-2.1.97.tar.gz --markdown 20240420/c/ccdt/2.1.96-2.1.97/README.md --exclude *.pyd
+[2024-04-20 09:41:13] INFO root fetch - processPackages [phitter]: Downloading https://files.pythonhosted.org/packages/d4/07/87f24f3441b2c2db20689c2cebdd208a0788bf48cbb259778d4051fc6f12/phitter-0.0.5.tar.gz
+[2024-04-20 09:41:13] INFO root fetch - processPackages [phitter]: executing diffoscope
+[2024-04-20 09:41:13] INFO root fetch - processPackages [phitter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phitter-0.0.4.tar.gz tmp/phitter-0.0.5.tar.gz --markdown 20240420/p/phitter/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-04-20 09:41:14] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.96.tar.gz]
+[2024-04-20 09:41:14] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.97.tar.gz]
+[2024-04-20 09:41:14] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2024-04-20 09:41:15] INFO root fetch - processPackages [phitter]: Remove: archive file [/home/abi/fetcher/tmp/phitter-0.0.4.tar.gz]
+[2024-04-20 09:41:15] INFO root fetch - processPackages [phitter]: Remove: archive file [/home/abi/fetcher/tmp/phitter-0.0.5.tar.gz]
+[2024-04-20 09:41:15] INFO root fetch - main [MainThread]: End processing [phitter]: success
+[2024-04-20 09:41:15] INFO root fetch - main [MainThread]: Store serial: [22853642]
