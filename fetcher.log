@@ -17700,3 +17700,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:55:53] INFO root fetch - processPackages [htagui]: Remove: archive file [/home/abi/fetcher/tmp/htagui-0.5.0.tar.gz]
 [2024-04-20 16:55:53] INFO root fetch - main [MainThread]: End processing [htagui]: success
 [2024-04-20 16:55:53] INFO root fetch - main [MainThread]: Store serial: [22856759]
+[2024-04-20 16:57:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856759]
+[2024-04-20 16:58:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 16:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ccxt
+[2024-04-20 16:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioomics
+[2024-04-20 16:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dhkimpypack01
+[2024-04-20 16:58:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mlrun-pipelines-kfp-v2-experiment
+[2024-04-20 16:58:02] WARNING root fetch - processPackages [dhkimpypack01]: Skipping, unable to determine old version
+[2024-04-20 16:58:02] INFO root fetch - main [MainThread]: End processing [dhkimpypack01] error
+[2024-04-20 16:58:02] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-20 16:58:02] INFO root fetch - processPackages [bioomics]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-20 16:58:02] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Downloading https://files.pythonhosted.org/packages/70/a2/f72d08948e13a27974c87ef4c1d8d740d5502e9d8702f171ac49fdd5bbef/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl
+[2024-04-20 16:58:02] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/d0/69/1fb807ab0556c3290d7e4559989eae122f02d55012c500b024683c793888/bioomics-0.1.9.tar.gz
+[2024-04-20 16:58:02] INFO root fetch - processPackages [ccxt]: New version: [4.3.3] Old Version: [4.3.2]
+[2024-04-20 16:58:02] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Downloading https://files.pythonhosted.org/packages/72/f3/89f1a63af56f30d8e6c993786e523fa6bc6b1cf764bbb4d35919d2ac69ef/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl
+[2024-04-20 16:58:02] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: executing diffoscope
+[2024-04-20 16:58:02] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl.zip tmp/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl.zip --markdown 20240420/m/mlrun-pipelines-kfp-v2-experiment/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-04-20 16:58:03] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/4d/e1/18afc31b1a8159ddb8da153fc4e6e05be13b72f1e390081aaf6a88e83331/ccxt-4.3.2.tar.gz
+[2024-04-20 16:58:03] INFO root fetch - processPackages [bioomics]: Downloading https://files.pythonhosted.org/packages/d1/ce/12927787c97c6859f347f02ea180c95957337567222071ed799d460d8be6/bioomics-0.2.0.tar.gz
+[2024-04-20 16:58:03] INFO root fetch - processPackages [bioomics]: executing diffoscope
+[2024-04-20 16:58:03] INFO root fetch - processPackages [bioomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioomics-0.1.9.tar.gz tmp/bioomics-0.2.0.tar.gz --markdown 20240420/b/bioomics/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-04-20 16:58:03] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2_experiment-0.1.0-py3-none-any.whl.zip]
+[2024-04-20 16:58:03] INFO root fetch - processPackages [mlrun-pipelines-kfp-v2-experiment]: Remove: archive file [/home/abi/fetcher/tmp/mlrun_pipelines_kfp_v2_experiment-0.1.1-py3-none-any.whl.zip]
+[2024-04-20 16:58:03] INFO root fetch - main [MainThread]: End processing [mlrun-pipelines-kfp-v2-experiment]: success
+[2024-04-20 16:58:03] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/cc/eb/0a8c1d1e33b7891935640c5af22a6f151b01cab7e90c74a12338748a4ca0/ccxt-4.3.3.tar.gz
+[2024-04-20 16:58:03] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.1.9.tar.gz]
+[2024-04-20 16:58:03] INFO root fetch - processPackages [bioomics]: Remove: archive file [/home/abi/fetcher/tmp/bioomics-0.2.0.tar.gz]
+[2024-04-20 16:58:03] INFO root fetch - main [MainThread]: End processing [bioomics]: success
+[2024-04-20 16:58:03] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-04-20 16:58:03] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.2.tar.gz tmp/ccxt-4.3.3.tar.gz --markdown 20240420/c/ccxt/4.3.2-4.3.3/README.md --exclude *.pyd
+[2024-04-20 16:58:09] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.2.tar.gz]
+[2024-04-20 16:58:09] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.3.tar.gz]
+[2024-04-20 16:58:09] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-04-20 16:58:09] INFO root fetch - main [MainThread]: Store serial: [22856770]
