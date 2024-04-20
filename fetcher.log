@@ -12193,3 +12193,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:29:03] INFO root fetch - processPackages [refractio]: Remove: archive file [/home/abi/fetcher/tmp/refractio-2.1.5.5.tar.gz]
 [2024-04-20 10:29:03] INFO root fetch - main [MainThread]: End processing [refractio]: success
 [2024-04-20 10:29:03] INFO root fetch - main [MainThread]: Store serial: [22853923]
+[2024-04-20 10:31:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853923]
+[2024-04-20 10:31:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 10:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytask-r
+[2024-04-20 10:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: malfetcher
+[2024-04-20 10:31:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alfetcher
+[2024-04-20 10:31:12] INFO root fetch - processPackages [pytask-r]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-20 10:31:12] INFO root fetch - processPackages [alfetcher]: New version: [1.0.0a0] Old Version: [1.0.0]
+[2024-04-20 10:31:12] INFO root fetch - processPackages [malfetcher]: New version: [1.0.0a0] Old Version: [1.0.0]
+[2024-04-20 10:31:12] INFO root fetch - processPackages [malfetcher]: Downloading https://files.pythonhosted.org/packages/d6/ab/ab6e6ebe4f5ead7055cb693850748d261ae9a601f6fc1712a5e563880cd7/malfetcher-1.0.0.tar.gz
+[2024-04-20 10:31:12] INFO root fetch - processPackages [pytask-r]: Downloading https://files.pythonhosted.org/packages/17/8c/d625a9e688b0bea31fc4a2f7494ceeedb4a07cb8d64fdc14558ef34a57ff/pytask_r-0.4.0.tar.gz
+[2024-04-20 10:31:12] INFO root fetch - processPackages [alfetcher]: Downloading https://files.pythonhosted.org/packages/e4/44/406b60578497d544b5e252fa796a7e97f9437e34322cf35b05b0cf2c323b/alfetcher-1.0.0.tar.gz
+[2024-04-20 10:31:13] INFO root fetch - processPackages [malfetcher]: Downloading https://files.pythonhosted.org/packages/e3/91/2870edad00e11e1dd936374181207334bdb1c5798969373e67becc97dcfc/malfetcher-1.0.0a0.tar.gz
+[2024-04-20 10:31:13] INFO root fetch - processPackages [pytask-r]: Downloading https://files.pythonhosted.org/packages/1b/72/15c46313d5637b8444c617ff0ab2794367881ecd37d3741816002e480b1d/pytask_r-0.4.1.tar.gz
+[2024-04-20 10:31:13] INFO root fetch - processPackages [malfetcher]: executing diffoscope
+[2024-04-20 10:31:13] INFO root fetch - processPackages [malfetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/malfetcher-1.0.0.tar.gz tmp/malfetcher-1.0.0a0.tar.gz --markdown 20240420/m/malfetcher/1.0.0-1.0.0a0/README.md --exclude *.pyd
+[2024-04-20 10:31:13] INFO root fetch - processPackages [pytask-r]: executing diffoscope
+[2024-04-20 10:31:13] INFO root fetch - processPackages [pytask-r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytask_r-0.4.0.tar.gz tmp/pytask_r-0.4.1.tar.gz --markdown 20240420/p/pytask-r/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-04-20 10:31:13] INFO root fetch - processPackages [alfetcher]: Downloading https://files.pythonhosted.org/packages/09/f5/ae425425d6818dfc8c35bd3496667a74b8eb02ab893a41bbb0b00a4e3605/alfetcher-1.0.0a0.tar.gz
+[2024-04-20 10:31:13] INFO root fetch - processPackages [alfetcher]: executing diffoscope
+[2024-04-20 10:31:13] INFO root fetch - processPackages [alfetcher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfetcher-1.0.0.tar.gz tmp/alfetcher-1.0.0a0.tar.gz --markdown 20240420/a/alfetcher/1.0.0-1.0.0a0/README.md --exclude *.pyd
+[2024-04-20 10:31:13] INFO root fetch - processPackages [malfetcher]: Remove: archive file [/home/abi/fetcher/tmp/malfetcher-1.0.0.tar.gz]
+[2024-04-20 10:31:13] INFO root fetch - processPackages [malfetcher]: Remove: archive file [/home/abi/fetcher/tmp/malfetcher-1.0.0a0.tar.gz]
+[2024-04-20 10:31:13] INFO root fetch - main [MainThread]: End processing [malfetcher]: success
+[2024-04-20 10:31:13] INFO root fetch - processPackages [pytask-r]: Remove: archive file [/home/abi/fetcher/tmp/pytask_r-0.4.0.tar.gz]
+[2024-04-20 10:31:13] INFO root fetch - processPackages [pytask-r]: Remove: archive file [/home/abi/fetcher/tmp/pytask_r-0.4.1.tar.gz]
+[2024-04-20 10:31:13] INFO root fetch - main [MainThread]: End processing [pytask-r]: success
+[2024-04-20 10:31:14] INFO root fetch - processPackages [alfetcher]: Remove: archive file [/home/abi/fetcher/tmp/alfetcher-1.0.0.tar.gz]
+[2024-04-20 10:31:14] INFO root fetch - processPackages [alfetcher]: Remove: archive file [/home/abi/fetcher/tmp/alfetcher-1.0.0a0.tar.gz]
+[2024-04-20 10:31:14] INFO root fetch - main [MainThread]: End processing [alfetcher]: success
+[2024-04-20 10:31:14] INFO root fetch - main [MainThread]: Store serial: [22853932]
