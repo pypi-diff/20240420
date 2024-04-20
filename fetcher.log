@@ -22668,3 +22668,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 21:59:51] INFO root fetch - processPackages [NEMO-rs2-access]: Remove: archive file [/home/abi/fetcher/tmp/NEMO_rs2_access-1.5.4-py3-none-any.whl.zip]
 [2024-04-20 21:59:51] INFO root fetch - main [MainThread]: End processing [NEMO-rs2-access]: success
 [2024-04-20 21:59:51] INFO root fetch - main [MainThread]: Store serial: [22859063]
+[2024-04-20 22:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859063]
+[2024-04-20 22:02:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytonapi
+[2024-04-20 22:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC203
+[2024-04-20 22:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-location-local
+[2024-04-20 22:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: params-proto
+[2024-04-20 22:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: badkeys
+[2024-04-20 22:02:00] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 22:02:00] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-04-20 22:02:00] INFO root fetch - processPackages [badkeys]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-20 22:02:00] INFO root fetch - processPackages [pytonapi]: New version: [0.2.4b1] Old Version: [0.2.4]
+[2024-04-20 22:02:00] INFO root fetch - processPackages [params-proto]: New version: [2.9.7] Old Version: [2.9.6]
+[2024-04-20 22:02:00] WARNING root fetch - processPackages [PythonTestLJC203]: Skipping, unable to determine old version
+[2024-04-20 22:02:00] INFO root fetch - main [MainThread]: End processing [PythonTestLJC203] error
+[2024-04-20 22:02:00] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-04-20 22:02:00] INFO root fetch - processPackages [pytonapi]: Downloading https://files.pythonhosted.org/packages/b0/cd/0e59b13d377c8d353ffa6ba03dd2ce2e57811963bf21adfd87ef53f78448/pytonapi-0.2.4.tar.gz
+[2024-04-20 22:02:00] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-04-20 22:02:00] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240420/c/contact-location-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 22:02:00] INFO root fetch - processPackages [badkeys]: Downloading https://files.pythonhosted.org/packages/f2/29/3e87b8c7fc9779bf216349ffcaed9a748928a015b77d71ab2e0dd1b4e073/badkeys-0.0.6.tar.gz
+[2024-04-20 22:02:00] INFO root fetch - processPackages [params-proto]: Downloading https://files.pythonhosted.org/packages/0a/20/7ffbcebdd86abce1864462ec4fcf39151f39d0f8e059210862e1f42b0ee3/params_proto-2.9.6-py3-none-any.whl
+[2024-04-20 22:02:00] INFO root fetch - processPackages [pytonapi]: Downloading https://files.pythonhosted.org/packages/c7/e0/e3363759dac87a894d5faa181bc8c6725d8657e212f34e049d0433b80d20/pytonapi-0.2.4b1.tar.gz
+[2024-04-20 22:02:00] INFO root fetch - processPackages [badkeys]: Downloading https://files.pythonhosted.org/packages/53/1a/ceb8fc80c36f7741470d1e9e03b7d39d0cfba6a3bb38d237c40a1a7641ff/badkeys-0.0.7-py3-none-any.whl
+[2024-04-20 22:02:01] INFO root fetch - processPackages [params-proto]: Downloading https://files.pythonhosted.org/packages/d8/3c/4d8cc65883f3aae60d9d73972b9e344a55ce4c97d4130dd3848b106578ae/params_proto-2.9.7-py3-none-any.whl
+[2024-04-20 22:02:01] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-04-20 22:02:01] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-04-20 22:02:01] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-04-20 22:02:01] INFO root fetch - processPackages [pytonapi]: executing diffoscope
+[2024-04-20 22:02:01] INFO root fetch - processPackages [pytonapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytonapi-0.2.4.tar.gz tmp/pytonapi-0.2.4b1.tar.gz --markdown 20240420/p/pytonapi/0.2.4-0.2.4b1/README.md --exclude *.pyd
+[2024-04-20 22:02:01] INFO root fetch - processPackages [params-proto]: executing diffoscope
+[2024-04-20 22:02:01] INFO root fetch - processPackages [params-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/params_proto-2.9.6-py3-none-any.whl.zip tmp/params_proto-2.9.7-py3-none-any.whl.zip --markdown 20240420/p/params-proto/2.9.6-2.9.7/README.md --exclude *.pyd
+[2024-04-20 22:02:01] INFO root fetch - processPackages [badkeys]: executing diffoscope
+[2024-04-20 22:02:01] INFO root fetch - processPackages [badkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badkeys-0.0.6.tar.gz tmp/badkeys-0.0.7-py3-none-any.whl.zip --markdown 20240420/b/badkeys/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-04-20 22:02:01] INFO root fetch - processPackages [badkeys]: Remove: archive file [/home/abi/fetcher/tmp/badkeys-0.0.6.tar.gz]
+[2024-04-20 22:02:01] INFO root fetch - processPackages [badkeys]: Remove: archive file [/home/abi/fetcher/tmp/badkeys-0.0.7-py3-none-any.whl.zip]
+[2024-04-20 22:02:01] INFO root fetch - main [MainThread]: End processing [badkeys]: success
+[2024-04-20 22:02:01] INFO root fetch - processPackages [params-proto]: Remove: archive file [/home/abi/fetcher/tmp/params_proto-2.9.6-py3-none-any.whl.zip]
+[2024-04-20 22:02:01] INFO root fetch - processPackages [params-proto]: Remove: archive file [/home/abi/fetcher/tmp/params_proto-2.9.7-py3-none-any.whl.zip]
+[2024-04-20 22:02:01] INFO root fetch - main [MainThread]: End processing [params-proto]: success
+[2024-04-20 22:02:01] INFO root fetch - processPackages [pytonapi]: Remove: archive file [/home/abi/fetcher/tmp/pytonapi-0.2.4.tar.gz]
+[2024-04-20 22:02:01] INFO root fetch - processPackages [pytonapi]: Remove: archive file [/home/abi/fetcher/tmp/pytonapi-0.2.4b1.tar.gz]
+[2024-04-20 22:02:01] INFO root fetch - main [MainThread]: End processing [pytonapi]: success
+[2024-04-20 22:02:01] INFO root fetch - main [MainThread]: Store serial: [22859078]
