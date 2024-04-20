@@ -7878,3 +7878,55 @@
 [2024-04-20 04:35:41] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.7.1.tar.gz]
 [2024-04-20 04:35:41] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
 [2024-04-20 04:35:41] INFO root fetch - main [MainThread]: Store serial: [22851866]
+[2024-04-20 04:37:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851866]
+[2024-04-20 04:37:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oakvar
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rp
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octoai
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypipr
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sitepy
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sprit
+[2024-04-20 04:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo14-addon-ssi-product-usage-account-type
+[2024-04-20 04:37:50] INFO root fetch - processPackages [pypipr]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [oakvar]: New version: [2.9.99] Old Version: [2.9.98]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/15/04/d795bcb0193e0a7ac41cf9929d8e4bfb8a89b791c68addd485f4d09b2a89/pypipr-1.0.8.tar.gz
+[2024-04-20 04:37:50] INFO root fetch - processPackages [sitepy]: New version: [0.4.0] Old Version: [0.3.0rc1]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/a3/ce/6968cab51f4cb7b955287af8ac7062bbc3d7ecfca4110e778aca096983b8/oakvar-2.9.98.tar.gz
+[2024-04-20 04:37:50] WARNING root fetch - processPackages [octoai]: Skipping, unable to determine old version
+[2024-04-20 04:37:50] INFO root fetch - main [MainThread]: End processing [octoai] error
+[2024-04-20 04:37:50] INFO root fetch - processPackages [sprit]: New version: [0.1.9] Old Version: [0.1.72.dev0]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: New version: [14.0.1.4.0] Old Version: [14.0.1.3.0]
+[2024-04-20 04:37:50] INFO root fetch - processPackages [sprit]: Downloading https://files.pythonhosted.org/packages/5c/5f/a71c7f66ef9e6c1cee1b84dafdb532ac9cf3c9efa3957791149f265a1f81/sprit-0.1.72.dev0.tar.gz
+[2024-04-20 04:37:50] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/ff/65/a16f97fbf510d470052b1eba562ffa3a9db7b5285ecfeb05be446934e02d/pypipr-1.0.9.tar.gz
+[2024-04-20 04:37:50] INFO root fetch - processPackages [sitepy]: Downloading https://files.pythonhosted.org/packages/86/9a/31ae0f70168d53d8610f2667c58418faa920557d5ee69502441a457a231d/sitepy-0.3.0rc1.tar.gz
+[2024-04-20 04:37:51] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: Downloading https://files.pythonhosted.org/packages/12/24/58e912238c285b11c310bf8dc537a59cb5628182adc326de1c5358537b87/odoo14_addon_ssi_product_usage_account_type-14.0.1.3.0-py3-none-any.whl
+[2024-04-20 04:37:51] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 04:37:51] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2024-04-20 04:37:51] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-1.0.8.tar.gz tmp/pypipr-1.0.9.tar.gz --markdown 20240420/p/pypipr/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 04:37:51] WARNING root fetch - processPackages [sprit]: Skipping package: exceeds size limit 13887441>=10485760
+[2024-04-20 04:37:51] INFO root fetch - main [MainThread]: End processing [sprit] error
+[2024-04-20 04:37:51] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 04:37:51] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 04:37:51] INFO root fetch - processPackages [sitepy]: Downloading https://files.pythonhosted.org/packages/fb/5f/4146125ea080e1c053c573dd6fd2f6b86e7ab36e4a624aa0c2a6f2da9425/sitepy-0.4.0.tar.gz
+[2024-04-20 04:37:51] INFO root fetch - processPackages [oakvar]: Downloading https://files.pythonhosted.org/packages/cf/2a/de8e0ae3bf287725294b151b3a458f4350c6be98fc7b2c5896e98a2a82a5/oakvar-2.9.99.tar.gz
+[2024-04-20 04:37:51] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: Downloading https://files.pythonhosted.org/packages/95/85/eb55181261250a9f9706a0f73ae9c6e21a38ff7c55444a594a913e899976/odoo14_addon_ssi_product_usage_account_type-14.0.1.4.0-py3-none-any.whl
+[2024-04-20 04:37:51] INFO root fetch - processPackages [sitepy]: executing diffoscope
+[2024-04-20 04:37:51] INFO root fetch - processPackages [sitepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sitepy-0.3.0rc1.tar.gz tmp/sitepy-0.4.0.tar.gz --markdown 20240420/s/sitepy/0.3.0rc1-0.4.0/README.md --exclude *.pyd
+[2024-04-20 04:37:51] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.8.tar.gz]
+[2024-04-20 04:37:51] INFO root fetch - processPackages [pypipr]: Remove: archive file [/home/abi/fetcher/tmp/pypipr-1.0.9.tar.gz]
+[2024-04-20 04:37:51] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2024-04-20 04:37:51] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2024-04-20 04:37:51] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.98.tar.gz tmp/oakvar-2.9.99.tar.gz --markdown 20240420/o/oakvar/2.9.98-2.9.99/README.md --exclude *.pyd
+[2024-04-20 04:37:51] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: executing diffoscope
+[2024-04-20 04:37:51] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_product_usage_account_type-14.0.1.3.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_product_usage_account_type-14.0.1.4.0-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-ssi-product-usage-account-type/14.0.1.3.0-14.0.1.4.0/README.md --exclude *.pyd
+[2024-04-20 04:37:52] INFO root fetch - processPackages [sitepy]: Remove: archive file [/home/abi/fetcher/tmp/sitepy-0.3.0rc1.tar.gz]
+[2024-04-20 04:37:52] INFO root fetch - processPackages [sitepy]: Remove: archive file [/home/abi/fetcher/tmp/sitepy-0.4.0.tar.gz]
+[2024-04-20 04:37:52] INFO root fetch - main [MainThread]: End processing [sitepy]: success
+[2024-04-20 04:37:52] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_product_usage_account_type-14.0.1.3.0-py3-none-any.whl.zip]
+[2024-04-20 04:37:52] INFO root fetch - processPackages [odoo14-addon-ssi-product-usage-account-type]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_product_usage_account_type-14.0.1.4.0-py3-none-any.whl.zip]
+[2024-04-20 04:37:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-product-usage-account-type]: success
+[2024-04-20 04:37:54] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.98.tar.gz]
+[2024-04-20 04:37:54] INFO root fetch - processPackages [oakvar]: Remove: archive file [/home/abi/fetcher/tmp/oakvar-2.9.99.tar.gz]
+[2024-04-20 04:37:54] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2024-04-20 04:37:54] INFO root fetch - main [MainThread]: Store serial: [22851883]
