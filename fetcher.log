@@ -10663,3 +10663,33 @@
 [2024-04-20 08:44:02] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
 [2024-04-20 08:44:02] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-04-20 08:44:02] INFO root fetch - main [MainThread]: Store serial: [22853172]
+[2024-04-20 08:46:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853172]
+[2024-04-20 08:46:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 08:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-announcement-dialog-size
+[2024-04-20 08:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moviechat
+[2024-04-20 08:46:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vka
+[2024-04-20 08:46:11] INFO root fetch - processPackages [moviechat]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-20 08:46:11] INFO root fetch - processPackages [moviechat]: Downloading https://files.pythonhosted.org/packages/5c/6a/d62b2e4a40c7d7a25c64745aef3a892e6daaf0a46b6983a48a0e6a404650/moviechat-0.6.1.tar.gz
+[2024-04-20 08:46:11] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: New version: [16.0.1.0.0.4] Old Version: [16.0.1.0.0.2]
+[2024-04-20 08:46:11] INFO root fetch - processPackages [vka]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-04-20 08:46:11] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: Downloading https://files.pythonhosted.org/packages/68/20/7efea2a296bcd2ca03d12959bf4dba7526ee610b93b3c15f7caf9da29839/odoo_addon_announcement_dialog_size-16.0.1.0.0.2-py3-none-any.whl
+[2024-04-20 08:46:11] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/b0/bb/9e2424da6ba6efb491947a984af904fdd3e896435bb6417a8e3666e0d748/vka-1.2.8.tar.gz
+[2024-04-20 08:46:11] INFO root fetch - processPackages [moviechat]: Downloading https://files.pythonhosted.org/packages/01/ea/f6f2784cce865a94d222a895a1c96c3468db9044813745dd1734713b9227/moviechat-0.6.2.tar.gz
+[2024-04-20 08:46:12] INFO root fetch - processPackages [moviechat]: executing diffoscope
+[2024-04-20 08:46:12] INFO root fetch - processPackages [moviechat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moviechat-0.6.1.tar.gz tmp/moviechat-0.6.2.tar.gz --markdown 20240420/m/moviechat/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-04-20 08:46:12] INFO root fetch - processPackages [vka]: Downloading https://files.pythonhosted.org/packages/8e/46/ab7a7c188e32f0b2c63ff472431c60a38a52687c4b854aa6783e469c1595/vka-1.2.9.tar.gz
+[2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: Downloading https://files.pythonhosted.org/packages/fd/ac/dfd81953dfd23f1d229ebef1cb7aca0e3061e7df48c68c8557294c09f40f/odoo_addon_announcement_dialog_size-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-20 08:46:12] INFO root fetch - processPackages [vka]: executing diffoscope
+[2024-04-20 08:46:12] INFO root fetch - processPackages [vka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vka-1.2.8.tar.gz tmp/vka-1.2.9.tar.gz --markdown 20240420/v/vka/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: executing diffoscope
+[2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_announcement_dialog_size-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_announcement_dialog_size-16.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240420/o/odoo-addon-announcement-dialog-size/16.0.1.0.0.2-16.0.1.0.0.4/README.md --exclude *.pyd
+[2024-04-20 08:46:12] INFO root fetch - processPackages [moviechat]: Remove: archive file [/home/abi/fetcher/tmp/moviechat-0.6.1.tar.gz]
+[2024-04-20 08:46:12] INFO root fetch - processPackages [moviechat]: Remove: archive file [/home/abi/fetcher/tmp/moviechat-0.6.2.tar.gz]
+[2024-04-20 08:46:12] INFO root fetch - main [MainThread]: End processing [moviechat]: success
+[2024-04-20 08:46:12] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.8.tar.gz]
+[2024-04-20 08:46:12] INFO root fetch - processPackages [vka]: Remove: archive file [/home/abi/fetcher/tmp/vka-1.2.9.tar.gz]
+[2024-04-20 08:46:12] INFO root fetch - main [MainThread]: End processing [vka]: success
+[2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_announcement_dialog_size-16.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_announcement_dialog_size-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-20 08:46:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-announcement-dialog-size]: success
+[2024-04-20 08:46:12] INFO root fetch - main [MainThread]: Store serial: [22853179]
