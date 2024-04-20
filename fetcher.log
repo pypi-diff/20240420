@@ -21851,3 +21851,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:18:01] INFO root fetch - processPackages [pyCryptomusAPI]: Remove: archive file [/home/abi/fetcher/tmp/pyCryptomusAPI-0.1.0.tar.gz]
 [2024-04-20 21:18:01] INFO root fetch - main [MainThread]: End processing [pyCryptomusAPI]: success
 [2024-04-20 21:18:01] INFO root fetch - main [MainThread]: Store serial: [22858717]
+[2024-04-20 21:20:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858717]
+[2024-04-20 21:20:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-pghistory
+[2024-04-20 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edstem-assignment-tracker
+[2024-04-20 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC188
+[2024-04-20 21:20:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jarvis-orm
+[2024-04-20 21:20:11] WARNING root fetch - processPackages [jarvis-orm]: Skipping, unable to determine old version
+[2024-04-20 21:20:11] INFO root fetch - main [MainThread]: End processing [jarvis-orm] error
+[2024-04-20 21:20:11] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 21:20:11] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 21:20:11] INFO root fetch - processPackages [django-pghistory]: New version: [3.2.0] Old Version: [3.1.1]
+[2024-04-20 21:20:11] WARNING root fetch - processPackages [PythonTestLJC188]: Skipping, unable to determine old version
+[2024-04-20 21:20:11] INFO root fetch - main [MainThread]: End processing [PythonTestLJC188] error
+[2024-04-20 21:20:11] INFO root fetch - processPackages [django-pghistory]: Downloading https://files.pythonhosted.org/packages/b3/66/56697caeff68da0ae7283c35b1dd34c231dd0bb69cab9aded05fd28f7b18/django_pghistory-3.1.1.tar.gz
+[2024-04-20 21:20:11] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 21:20:11] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 21:20:11] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 21:20:11] INFO root fetch - processPackages [django-pghistory]: Downloading https://files.pythonhosted.org/packages/84/31/76d71a8d8ee9bacedea6355764d81bd0e7d6c264b26771dcd2dab88c10a7/django_pghistory-3.2.0.tar.gz
+[2024-04-20 21:20:11] INFO root fetch - processPackages [django-pghistory]: executing diffoscope
+[2024-04-20 21:20:11] INFO root fetch - processPackages [django-pghistory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pghistory-3.1.1.tar.gz tmp/django_pghistory-3.2.0.tar.gz --markdown 20240420/d/django-pghistory/3.1.1-3.2.0/README.md --exclude *.pyd
+[2024-04-20 21:20:12] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 21:20:12] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 21:20:12] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 21:20:12] INFO root fetch - processPackages [django-pghistory]: Remove: archive file [/home/abi/fetcher/tmp/django_pghistory-3.1.1.tar.gz]
+[2024-04-20 21:20:12] INFO root fetch - processPackages [django-pghistory]: Remove: archive file [/home/abi/fetcher/tmp/django_pghistory-3.2.0.tar.gz]
+[2024-04-20 21:20:12] INFO root fetch - main [MainThread]: End processing [django-pghistory]: success
+[2024-04-20 21:20:12] INFO root fetch - main [MainThread]: Store serial: [22858730]
