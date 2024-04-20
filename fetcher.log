@@ -15374,3 +15374,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 14:13:22] INFO root fetch - processPackages [cuxrft]: Remove: archive file [/home/abi/fetcher/tmp/cuxrft-0.0.9.tar.gz]
 [2024-04-20 14:13:22] INFO root fetch - main [MainThread]: End processing [cuxrft]: success
 [2024-04-20 14:13:22] INFO root fetch - main [MainThread]: Store serial: [22855521]
+[2024-04-20 14:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855521]
+[2024-04-20 14:15:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snailshell
+[2024-04-20 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC044
+[2024-04-20 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kimdan0211
+[2024-04-20 14:15:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: easy-sqla-lib
+[2024-04-20 14:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC045
+[2024-04-20 14:15:31] INFO root fetch - processPackages [snailshell]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-20 14:15:31] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/75/99/2fb9113aed0599879161b35d6a2152a1ce56cb1af1f6c6765714fdfee6c2/snailshell-0.2.6.tar.gz
+[2024-04-20 14:15:31] INFO root fetch - processPackages [kimdan0211]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-04-20 14:15:31] INFO root fetch - processPackages [easy-sqla-lib]: New version: [2.0.0] Old Version: [1.1.0]
+[2024-04-20 14:15:31] WARNING root fetch - processPackages [PythonTestLJC045]: Skipping, unable to determine old version
+[2024-04-20 14:15:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC045] error
+[2024-04-20 14:15:31] WARNING root fetch - processPackages [PythonTestLJC044]: Skipping, unable to determine old version
+[2024-04-20 14:15:31] INFO root fetch - main [MainThread]: End processing [PythonTestLJC044] error
+[2024-04-20 14:15:31] INFO root fetch - processPackages [kimdan0211]: Downloading https://files.pythonhosted.org/packages/2e/1b/254b53b62387448e9a1b834ed83b9f000a33fcef108ca4d60ebe1a8b8db3/kimdan0211-0.0.0-py3-none-any.whl
+[2024-04-20 14:15:31] INFO root fetch - processPackages [easy-sqla-lib]: Downloading https://files.pythonhosted.org/packages/23/b5/bc3c2bb198e765a1a10df86e63f5d8f9a994b05d91bb8e4a41987fd35dd2/easy_sqla_lib-1.1.0.tar.gz
+[2024-04-20 14:15:31] INFO root fetch - processPackages [easy-sqla-lib]: Downloading https://files.pythonhosted.org/packages/b9/1a/5a30c0f03ad431ea56615b6f4753bb8f81ce2d029de920248652847b7778/easy_sqla_lib-2.0.0.tar.gz
+[2024-04-20 14:15:31] INFO root fetch - processPackages [kimdan0211]: Downloading https://files.pythonhosted.org/packages/f9/00/d02ce4b6dac364e0e138788c78324802e57391e83fd254d51134d76c3d37/kimdan0211-0.0.1-py3-none-any.whl
+[2024-04-20 14:15:31] INFO root fetch - processPackages [snailshell]: Downloading https://files.pythonhosted.org/packages/f4/2e/70272107c10ad674276dc68fcaecd0124b24ab4d06b1b132d2a3baadae12/snailshell-0.2.7.tar.gz
+[2024-04-20 14:15:31] INFO root fetch - processPackages [kimdan0211]: executing diffoscope
+[2024-04-20 14:15:31] INFO root fetch - processPackages [kimdan0211]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kimdan0211-0.0.0-py3-none-any.whl.zip tmp/kimdan0211-0.0.1-py3-none-any.whl.zip --markdown 20240420/k/kimdan0211/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-04-20 14:15:31] INFO root fetch - processPackages [easy-sqla-lib]: executing diffoscope
+[2024-04-20 14:15:31] INFO root fetch - processPackages [easy-sqla-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_sqla_lib-1.1.0.tar.gz tmp/easy_sqla_lib-2.0.0.tar.gz --markdown 20240420/e/easy-sqla-lib/1.1.0-2.0.0/README.md --exclude *.pyd
+[2024-04-20 14:15:32] INFO root fetch - processPackages [snailshell]: executing diffoscope
+[2024-04-20 14:15:32] INFO root fetch - processPackages [snailshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snailshell-0.2.6.tar.gz tmp/snailshell-0.2.7.tar.gz --markdown 20240420/s/snailshell/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-04-20 14:15:32] INFO root fetch - processPackages [kimdan0211]: Remove: archive file [/home/abi/fetcher/tmp/kimdan0211-0.0.0-py3-none-any.whl.zip]
+[2024-04-20 14:15:32] INFO root fetch - processPackages [kimdan0211]: Remove: archive file [/home/abi/fetcher/tmp/kimdan0211-0.0.1-py3-none-any.whl.zip]
+[2024-04-20 14:15:32] INFO root fetch - main [MainThread]: End processing [kimdan0211]: success
+[2024-04-20 14:15:32] INFO root fetch - processPackages [easy-sqla-lib]: Remove: archive file [/home/abi/fetcher/tmp/easy_sqla_lib-1.1.0.tar.gz]
+[2024-04-20 14:15:32] INFO root fetch - processPackages [easy-sqla-lib]: Remove: archive file [/home/abi/fetcher/tmp/easy_sqla_lib-2.0.0.tar.gz]
+[2024-04-20 14:15:32] INFO root fetch - main [MainThread]: End processing [easy-sqla-lib]: success
+[2024-04-20 14:15:33] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.6.tar.gz]
+[2024-04-20 14:15:33] INFO root fetch - processPackages [snailshell]: Remove: archive file [/home/abi/fetcher/tmp/snailshell-0.2.7.tar.gz]
+[2024-04-20 14:15:33] INFO root fetch - main [MainThread]: End processing [snailshell]: success
+[2024-04-20 14:15:33] INFO root fetch - main [MainThread]: Store serial: [22855539]
