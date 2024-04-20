@@ -22036,3 +22036,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:28:55] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.2.tar.gz]
 [2024-04-20 21:28:55] INFO root fetch - main [MainThread]: End processing [py4web]: success
 [2024-04-20 21:28:55] INFO root fetch - main [MainThread]: Store serial: [22858812]
+[2024-04-20 21:30:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858812]
+[2024-04-20 21:31:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: romt
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sliceitoff
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biorefineries
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appointment-x23241535
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC192
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: showroom
+[2024-04-20 21:31:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: biosteam
+[2024-04-20 21:31:04] INFO root fetch - processPackages [showroom]: New version: [0.3] Old Version: [0.2]
+[2024-04-20 21:31:04] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/d2/92/2e3412dc1f1d110ecc07e290e309b5515b9aa76329c2b369715201f13a96/showroom-0.2.tar.gz
+[2024-04-20 21:31:04] INFO root fetch - processPackages [sliceitoff]: New version: [0.3b4] Old Version: [0.3b3]
+[2024-04-20 21:31:04] WARNING root fetch - processPackages [appointment-x23241535]: Skipping, unable to determine old version
+[2024-04-20 21:31:04] INFO root fetch - main [MainThread]: End processing [appointment-x23241535] error
+[2024-04-20 21:31:04] WARNING root fetch - processPackages [PythonTestLJC192]: Skipping, unable to determine old version
+[2024-04-20 21:31:04] INFO root fetch - main [MainThread]: End processing [PythonTestLJC192] error
+[2024-04-20 21:31:04] INFO root fetch - processPackages [romt]: New version: [0.6.0] Old Version: [0.5.1]
+[2024-04-20 21:31:04] INFO root fetch - processPackages [biorefineries]: New version: [2.9.4] Old Version: [2.9.3]
+[2024-04-20 21:31:04] INFO root fetch - processPackages [biosteam]: New version: [2.9.9] Old Version: [2.9.8]
+[2024-04-20 21:31:04] INFO root fetch - processPackages [sliceitoff]: Downloading https://files.pythonhosted.org/packages/f0/55/617ceb2887591e3faec1e8650c724c463f1ecce30296dfd445007c9111ea/sliceitoff-0.3b3.tar.gz
+[2024-04-20 21:31:04] INFO root fetch - processPackages [biorefineries]: Downloading https://files.pythonhosted.org/packages/3e/d9/8d9d1fd176a8d3985f895fee346a389f6c40a8d2849893955385aa3062e5/biorefineries-2.9.3.tar.gz
+[2024-04-20 21:31:04] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/4c/19/1389aacbb93d9e93f3af859c95b8734489075b50098561a60180c8c2517b/showroom-0.3.tar.gz
+[2024-04-20 21:31:04] INFO root fetch - processPackages [romt]: Downloading https://files.pythonhosted.org/packages/c3/40/e203c8b95c39b8be6b6225ab1a2d86608ba35eeaa9ddbaf1cb3d2d2bd515/romt-0.5.1.tar.gz
+[2024-04-20 21:31:04] INFO root fetch - processPackages [biosteam]: Downloading https://files.pythonhosted.org/packages/9c/00/313204e69841aef03bab6e9e10a271b265d5baee12b666cb0f7eee0e9ab2/biosteam-2.9.8.tar.gz
+[2024-04-20 21:31:05] INFO root fetch - processPackages [showroom]: executing diffoscope
+[2024-04-20 21:31:05] INFO root fetch - processPackages [showroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/showroom-0.2.tar.gz tmp/showroom-0.3.tar.gz --markdown 20240420/s/showroom/0.2-0.3/README.md --exclude *.pyd
+[2024-04-20 21:31:05] INFO root fetch - processPackages [sliceitoff]: Downloading https://files.pythonhosted.org/packages/ad/fe/52076c88909479988feb4f02bd77f6016801fc75c68fca9e5fbb502b231e/sliceitoff-0.3b4.tar.gz
+[2024-04-20 21:31:05] INFO root fetch - processPackages [romt]: Downloading https://files.pythonhosted.org/packages/6c/d0/7ad1ce47b087e53db00b9c09dee7b518340151ad642b4e332445b84423e2/romt-0.6.0.tar.gz
+[2024-04-20 21:31:05] INFO root fetch - processPackages [sliceitoff]: executing diffoscope
+[2024-04-20 21:31:05] INFO root fetch - processPackages [sliceitoff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sliceitoff-0.3b3.tar.gz tmp/sliceitoff-0.3b4.tar.gz --markdown 20240420/s/sliceitoff/0.3b3-0.3b4/README.md --exclude *.pyd
+[2024-04-20 21:31:05] INFO root fetch - processPackages [romt]: executing diffoscope
+[2024-04-20 21:31:05] INFO root fetch - processPackages [romt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romt-0.5.1.tar.gz tmp/romt-0.6.0.tar.gz --markdown 20240420/r/romt/0.5.1-0.6.0/README.md --exclude *.pyd
+[2024-04-20 21:31:05] INFO root fetch - processPackages [biosteam]: Downloading https://files.pythonhosted.org/packages/e8/20/f344b75b639fc3d827c69ecf18e63ab753349283dab6a010e8e2b8860aaa/biosteam-2.9.9.tar.gz
+[2024-04-20 21:31:05] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.2.tar.gz]
+[2024-04-20 21:31:05] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.3.tar.gz]
+[2024-04-20 21:31:05] INFO root fetch - main [MainThread]: End processing [showroom]: success
+[2024-04-20 21:31:05] INFO root fetch - processPackages [biosteam]: executing diffoscope
+[2024-04-20 21:31:05] INFO root fetch - processPackages [biosteam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biosteam-2.9.8.tar.gz tmp/biosteam-2.9.9.tar.gz --markdown 20240420/b/biosteam/2.9.8-2.9.9/README.md --exclude *.pyd
+[2024-04-20 21:31:06] INFO root fetch - processPackages [romt]: Remove: archive file [/home/abi/fetcher/tmp/romt-0.5.1.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - processPackages [romt]: Remove: archive file [/home/abi/fetcher/tmp/romt-0.6.0.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - main [MainThread]: End processing [romt]: success
+[2024-04-20 21:31:06] INFO root fetch - processPackages [sliceitoff]: Remove: archive file [/home/abi/fetcher/tmp/sliceitoff-0.3b3.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - processPackages [sliceitoff]: Remove: archive file [/home/abi/fetcher/tmp/sliceitoff-0.3b4.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - main [MainThread]: End processing [sliceitoff]: success
+[2024-04-20 21:31:06] INFO root fetch - processPackages [biosteam]: Remove: archive file [/home/abi/fetcher/tmp/biosteam-2.9.8.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - processPackages [biosteam]: Remove: archive file [/home/abi/fetcher/tmp/biosteam-2.9.9.tar.gz]
+[2024-04-20 21:31:06] INFO root fetch - main [MainThread]: End processing [biosteam]: success
+[2024-04-20 21:31:06] INFO root fetch - processPackages [biorefineries]: Downloading https://files.pythonhosted.org/packages/9d/9f/89fdd7cfd12cc7ca26cd2c8d386ef9e22821072a402384cbc6b0ede30a8b/biorefineries-2.9.4.tar.gz
+[2024-04-20 21:31:07] INFO root fetch - processPackages [biorefineries]: executing diffoscope
+[2024-04-20 21:31:07] INFO root fetch - processPackages [biorefineries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biorefineries-2.9.3.tar.gz tmp/biorefineries-2.9.4.tar.gz --markdown 20240420/b/biorefineries/2.9.3-2.9.4/README.md --exclude *.pyd
+[2024-04-20 21:31:08] INFO root fetch - processPackages [biorefineries]: Remove: archive file [/home/abi/fetcher/tmp/biorefineries-2.9.3.tar.gz]
+[2024-04-20 21:31:08] INFO root fetch - processPackages [biorefineries]: Remove: archive file [/home/abi/fetcher/tmp/biorefineries-2.9.4.tar.gz]
+[2024-04-20 21:31:08] INFO root fetch - main [MainThread]: End processing [biorefineries]: success
+[2024-04-20 21:31:08] INFO root fetch - main [MainThread]: Store serial: [22858836]
