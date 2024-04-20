@@ -15241,3 +15241,97 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 14:06:51] INFO root fetch - processPackages [openremote-cli]: Remove: archive file [/home/abi/fetcher/tmp/openremote-cli-0.6.9.tar.gz]
 [2024-04-20 14:06:51] INFO root fetch - main [MainThread]: End processing [openremote-cli]: success
 [2024-04-20 14:06:51] INFO root fetch - main [MainThread]: Store serial: [22855449]
+[2024-04-20 14:08:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855449]
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: text-block-local
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC038
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: greyhorse
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: math-ops-131
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-icons
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PythonTestLJC039
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: krio
+[2024-04-20 14:08:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cupshelperstest
+[2024-04-20 14:08:59] INFO root fetch - processPackages [greyhorse]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-20 14:08:59] INFO root fetch - processPackages [django-icons]: New version: [4.0.0] Old Version: [3.0.0]
+[2024-04-20 14:08:59] WARNING root fetch - processPackages [PythonTestLJC039]: Skipping, unable to determine old version
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: End processing [PythonTestLJC039] error
+[2024-04-20 14:08:59] INFO root fetch - processPackages [text-block-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 14:08:59] WARNING root fetch - processPackages [PythonTestLJC038]: Skipping, unable to determine old version
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: End processing [PythonTestLJC038] error
+[2024-04-20 14:08:59] WARNING root fetch - processPackages [math-ops-131]: Skipping, unable to determine old version
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: End processing [math-ops-131] error
+[2024-04-20 14:08:59] WARNING root fetch - processPackages [krio]: Skipping, unable to determine old version
+[2024-04-20 14:08:59] WARNING root fetch - processPackages [cupshelperstest]: Skipping, unable to determine old version
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: End processing [krio] error
+[2024-04-20 14:08:59] INFO root fetch - main [MainThread]: End processing [cupshelperstest] error
+[2024-04-20 14:09:00] INFO root fetch - processPackages [greyhorse]: Downloading https://files.pythonhosted.org/packages/bb/1d/bf6bbf593cf29d45f3a750c7bb7131cdd21b0b1f23c0f21cb0944b2a5a33/greyhorse-0.4.1.tar.gz
+[2024-04-20 14:09:00] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/70/2c/1e2d2d092952d9578a3bd66ea8d19829b2cdcb307254112a3b482d4403bd/text-block-local-0.0.8.tar.gz
+[2024-04-20 14:09:00] INFO root fetch - processPackages [django-icons]: executing diffoscope
+[2024-04-20 14:09:00] INFO root fetch - processPackages [django-icons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-icons-3.0.0.tar.gz tmp/django-icons-4.0.0.tar.gz --markdown 20240420/d/django-icons/3.0.0-4.0.0/README.md --exclude *.pyd
+[2024-04-20 14:09:00] INFO root fetch - processPackages [greyhorse]: Downloading https://files.pythonhosted.org/packages/64/91/b3ae7d42347f371c1ee34fe78a154e4971b2fb08c01edae2d07969f101f1/greyhorse-0.4.2.tar.gz
+[2024-04-20 14:09:00] INFO root fetch - processPackages [text-block-local]: Downloading https://files.pythonhosted.org/packages/71/bc/24522c5007f2452a7e32a445163d898233d9b0cc266aed587c5f36dc2bc9/text-block-local-0.0.9.tar.gz
+[2024-04-20 14:09:00] INFO root fetch - processPackages [text-block-local]: executing diffoscope
+[2024-04-20 14:09:00] INFO root fetch - processPackages [text-block-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text-block-local-0.0.8.tar.gz tmp/text-block-local-0.0.9.tar.gz --markdown 20240420/t/text-block-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 14:09:00] INFO root fetch - processPackages [greyhorse]: executing diffoscope
+[2024-04-20 14:09:00] INFO root fetch - processPackages [greyhorse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/greyhorse-0.4.1.tar.gz tmp/greyhorse-0.4.2.tar.gz --markdown 20240420/g/greyhorse/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-04-20 14:09:01] ERROR root fetch - processPackages [django-icons]: Diffoscope failed: time="2024-04-20T14:09:00+02:00" level=error msg="User-selected graph driver \"vfs\" overwritten by graph driver \"overlay\" from database - delete libpod local files to resolve.  May prevent use of images created by other tools"
+Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 467, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 532, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 433, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2024-04-20 14:09:01] INFO root fetch - main [MainThread]: End processing [django-icons] error
+[2024-04-20 14:09:01] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.8.tar.gz]
+[2024-04-20 14:09:01] INFO root fetch - processPackages [text-block-local]: Remove: archive file [/home/abi/fetcher/tmp/text-block-local-0.0.9.tar.gz]
+[2024-04-20 14:09:01] INFO root fetch - main [MainThread]: End processing [text-block-local]: success
+[2024-04-20 14:09:01] INFO root fetch - processPackages [greyhorse]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse-0.4.1.tar.gz]
+[2024-04-20 14:09:01] INFO root fetch - processPackages [greyhorse]: Remove: archive file [/home/abi/fetcher/tmp/greyhorse-0.4.2.tar.gz]
+[2024-04-20 14:09:01] INFO root fetch - main [MainThread]: End processing [greyhorse]: success
+[2024-04-20 14:09:01] INFO root fetch - main [MainThread]: Store serial: [22855487]
