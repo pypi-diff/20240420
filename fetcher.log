@@ -18720,3 +18720,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:00:28] INFO root fetch - processPackages [django-email-package]: Remove: archive file [/home/abi/fetcher/tmp/django_email_package-0.0.2.tar.gz]
 [2024-04-20 18:00:28] INFO root fetch - main [MainThread]: End processing [django-email-package]: success
 [2024-04-20 18:00:28] INFO root fetch - main [MainThread]: Store serial: [22857230]
+[2024-04-20 18:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857230]
+[2024-04-20 18:02:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vokab
+[2024-04-20 18:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC117
+[2024-04-20 18:02:37] WARNING root fetch - processPackages [PythonTestLJC117]: Skipping, unable to determine old version
+[2024-04-20 18:02:37] INFO root fetch - processPackages [vokab]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-20 18:02:37] INFO root fetch - main [MainThread]: End processing [PythonTestLJC117] error
+[2024-04-20 18:02:37] INFO root fetch - processPackages [vokab]: Downloading https://files.pythonhosted.org/packages/fa/bd/9e95e61bc1ab5ed7a6b3cc5b9da05d486f80275c8950bd3ea588b3af7038/vokab-0.0.1.tar.gz
+[2024-04-20 18:02:37] INFO root fetch - processPackages [vokab]: Downloading https://files.pythonhosted.org/packages/68/ff/f4c5c06d27da60b4eb09f43ad673c6712e3fe5e507203087d6bc5be56e79/vokab-0.0.2.tar.gz
+[2024-04-20 18:02:37] INFO root fetch - processPackages [vokab]: executing diffoscope
+[2024-04-20 18:02:37] INFO root fetch - processPackages [vokab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vokab-0.0.1.tar.gz tmp/vokab-0.0.2.tar.gz --markdown 20240420/v/vokab/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-04-20 18:02:38] INFO root fetch - processPackages [vokab]: Remove: archive file [/home/abi/fetcher/tmp/vokab-0.0.1.tar.gz]
+[2024-04-20 18:02:38] INFO root fetch - processPackages [vokab]: Remove: archive file [/home/abi/fetcher/tmp/vokab-0.0.2.tar.gz]
+[2024-04-20 18:02:38] INFO root fetch - main [MainThread]: End processing [vokab]: success
+[2024-04-20 18:02:38] INFO root fetch - main [MainThread]: Store serial: [22857238]
