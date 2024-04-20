@@ -18360,3 +18360,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 17:40:49] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.92.5.tar.gz]
 [2024-04-20 17:40:49] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-04-20 17:40:49] INFO root fetch - main [MainThread]: Store serial: [22857031]
+[2024-04-20 17:42:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857031]
+[2024-04-20 17:42:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grabberlib
+[2024-04-20 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sfmanager
+[2024-04-20 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC107
+[2024-04-20 17:42:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: doot
+[2024-04-20 17:42:58] INFO root fetch - processPackages [grabberlib]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-20 17:42:58] INFO root fetch - processPackages [sfmanager]: New version: [0.1.2] Old Version: [0.1.1b6]
+[2024-04-20 17:42:58] WARNING root fetch - processPackages [PythonTestLJC107]: Skipping, unable to determine old version
+[2024-04-20 17:42:58] INFO root fetch - main [MainThread]: End processing [PythonTestLJC107] error
+[2024-04-20 17:42:58] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/4b/95/65b6dc978501c0aff233b95c2c5af8b104e86ee4fba9566b2e1889cb1ead/sfmanager-0.1.1b6.tar.gz
+[2024-04-20 17:42:58] INFO root fetch - processPackages [grabberlib]: Downloading https://files.pythonhosted.org/packages/10/33/95e1752b05e62e526ee07ba0cbae7dbb80a5003a670e5096745afc37d4d5/grabberlib-0.0.7.tar.gz
+[2024-04-20 17:42:58] INFO root fetch - processPackages [doot]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-20 17:42:58] INFO root fetch - processPackages [doot]: Downloading https://files.pythonhosted.org/packages/ac/b6/ec6393037a412c3b0011830af70133088aeb7e142e3e4a3e8a80695af803/doot-0.7.1.tar.gz
+[2024-04-20 17:42:58] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/15/70/3fb3d6e4a2214e7238fb68eff2585a50eed490aadb81071fe6a06c192cb9/sfmanager-0.1.2.tar.gz
+[2024-04-20 17:42:58] INFO root fetch - processPackages [grabberlib]: Downloading https://files.pythonhosted.org/packages/67/76/d4922a17097f207a3c2887789c11f65900374dc8f82a24e92b61ba56df9a/grabberlib-0.0.8.tar.gz
+[2024-04-20 17:42:58] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 17:42:58] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b6.tar.gz tmp/sfmanager-0.1.2.tar.gz --markdown 20240420/s/sfmanager/0.1.1b6-0.1.2/README.md --exclude *.pyd
+[2024-04-20 17:42:58] INFO root fetch - processPackages [grabberlib]: executing diffoscope
+[2024-04-20 17:42:58] INFO root fetch - processPackages [grabberlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grabberlib-0.0.7.tar.gz tmp/grabberlib-0.0.8.tar.gz --markdown 20240420/g/grabberlib/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-04-20 17:42:59] INFO root fetch - processPackages [doot]: Downloading https://files.pythonhosted.org/packages/fb/c2/72669f371528f41b8d96f1ff114cf868e35b7a82da5c3791fd2de6a32308/doot-0.7.2.tar.gz
+[2024-04-20 17:42:59] INFO root fetch - processPackages [doot]: executing diffoscope
+[2024-04-20 17:42:59] INFO root fetch - processPackages [doot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/doot-0.7.1.tar.gz tmp/doot-0.7.2.tar.gz --markdown 20240420/d/doot/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-04-20 17:42:59] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b6.tar.gz]
+[2024-04-20 17:42:59] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.2.tar.gz]
+[2024-04-20 17:42:59] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 17:42:59] INFO root fetch - processPackages [grabberlib]: Remove: archive file [/home/abi/fetcher/tmp/grabberlib-0.0.7.tar.gz]
+[2024-04-20 17:42:59] INFO root fetch - processPackages [grabberlib]: Remove: archive file [/home/abi/fetcher/tmp/grabberlib-0.0.8.tar.gz]
+[2024-04-20 17:42:59] INFO root fetch - main [MainThread]: End processing [grabberlib]: success
+[2024-04-20 17:43:00] INFO root fetch - processPackages [doot]: Remove: archive file [/home/abi/fetcher/tmp/doot-0.7.1.tar.gz]
+[2024-04-20 17:43:00] INFO root fetch - processPackages [doot]: Remove: archive file [/home/abi/fetcher/tmp/doot-0.7.2.tar.gz]
+[2024-04-20 17:43:00] INFO root fetch - main [MainThread]: End processing [doot]: success
+[2024-04-20 17:43:00] INFO root fetch - main [MainThread]: Store serial: [22857045]
