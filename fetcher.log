@@ -21641,3 +21641,24 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:00:25] INFO root fetch - processPackages [monisha]: Remove: archive file [/home/abi/fetcher/tmp/monisha-0.0.54.tar.gz]
 [2024-04-20 21:00:25] INFO root fetch - main [MainThread]: End processing [monisha]: success
 [2024-04-20 21:00:25] INFO root fetch - main [MainThread]: Store serial: [22858601]
+[2024-04-20 21:02:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858601]
+[2024-04-20 21:02:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 21:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioautomower
+[2024-04-20 21:02:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlops-api-gemstack
+[2024-04-20 21:02:34] INFO root fetch - processPackages [aioautomower]: New version: [2024.4.1b2] Old Version: [2024.4.1b0]
+[2024-04-20 21:02:34] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/37/d9/1deadd8235b37a1c81bf042d9ae275809de4923f515b75755da83cd1fbcd/aioautomower-2024.4.1b0.tar.gz
+[2024-04-20 21:02:34] INFO root fetch - processPackages [mlops-api-gemstack]: New version: [0.2] Old Version: [0.1]
+[2024-04-20 21:02:34] INFO root fetch - processPackages [aioautomower]: Downloading https://files.pythonhosted.org/packages/59/0e/4eebd76f196bf8bd4c8fd91cb7166b098d2e70cc8f9e3f29201baade1748/aioautomower-2024.4.1b2.tar.gz
+[2024-04-20 21:02:34] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/7f/49/4fc6183f8d2d37e646ca2aea6c3c2060e95e9025c2bd75863e44f72976dc/mlops_api_gemstack-0.1.tar.gz
+[2024-04-20 21:02:34] INFO root fetch - processPackages [aioautomower]: executing diffoscope
+[2024-04-20 21:02:34] INFO root fetch - processPackages [aioautomower]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioautomower-2024.4.1b0.tar.gz tmp/aioautomower-2024.4.1b2.tar.gz --markdown 20240420/a/aioautomower/2024.4.1b0-2024.4.1b2/README.md --exclude *.pyd
+[2024-04-20 21:02:34] INFO root fetch - processPackages [mlops-api-gemstack]: Downloading https://files.pythonhosted.org/packages/70/7b/6c8fd8630697c59ad5baff63e345baa289f09ac0ba1f3b88d3e3b8f0cb13/mlops_api_gemstack-0.2.tar.gz
+[2024-04-20 21:02:35] INFO root fetch - processPackages [mlops-api-gemstack]: executing diffoscope
+[2024-04-20 21:02:35] INFO root fetch - processPackages [mlops-api-gemstack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlops_api_gemstack-0.1.tar.gz tmp/mlops_api_gemstack-0.2.tar.gz --markdown 20240420/m/mlops-api-gemstack/0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 21:02:35] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b0.tar.gz]
+[2024-04-20 21:02:35] INFO root fetch - processPackages [aioautomower]: Remove: archive file [/home/abi/fetcher/tmp/aioautomower-2024.4.1b2.tar.gz]
+[2024-04-20 21:02:35] INFO root fetch - main [MainThread]: End processing [aioautomower]: success
+[2024-04-20 21:02:35] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.1.tar.gz]
+[2024-04-20 21:02:35] INFO root fetch - processPackages [mlops-api-gemstack]: Remove: archive file [/home/abi/fetcher/tmp/mlops_api_gemstack-0.2.tar.gz]
+[2024-04-20 21:02:35] INFO root fetch - main [MainThread]: End processing [mlops-api-gemstack]: success
+[2024-04-20 21:02:35] INFO root fetch - main [MainThread]: Store serial: [22858608]
