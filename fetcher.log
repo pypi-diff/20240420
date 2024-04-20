@@ -23355,3 +23355,45 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 72: invalid
 [2024-04-20 22:48:41] INFO root fetch - processPackages [karellen-llvm-toolchain-tools]: Remove: archive file [/home/abi/fetcher/tmp/karellen_llvm_toolchain_tools-18.1.4.0-py3-none-manylinux2014_x86_64.whl.zip]
 [2024-04-20 22:48:41] INFO root fetch - main [MainThread]: End processing [karellen-llvm-toolchain-tools]: success
 [2024-04-20 22:48:41] INFO root fetch - main [MainThread]: Store serial: [22859406]
+[2024-04-20 22:50:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22859406]
+[2024-04-20 22:50:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 22:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC220
+[2024-04-20 22:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynysiis
+[2024-04-20 22:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: turkish-profile-generator
+[2024-04-20 22:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: octomy-batch
+[2024-04-20 22:50:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: clearml-session
+[2024-04-20 22:50:53] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 22:50:53] INFO root fetch - processPackages [pynysiis]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-20 22:50:53] WARNING root fetch - processPackages [PythonTestLJC220]: Skipping, unable to determine old version
+[2024-04-20 22:50:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC220] error
+[2024-04-20 22:50:53] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [pynysiis]: Downloading https://files.pythonhosted.org/packages/70/50/9f4d697f7cfeb2199cf470745716167bc1d8878f35e4ebe608fbe575db08/pynysiis-1.0.1.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [turkish-profile-generator]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-20 22:50:53] INFO root fetch - processPackages [clearml-session]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2024-04-20 22:50:53] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [turkish-profile-generator]: Downloading https://files.pythonhosted.org/packages/63/1f/4b8478ace75525deb753509f6f4e820547b07ed6dcf68f53373b5bec1715/turkish_profile_generator-0.2.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-20 22:50:53] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240420/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 22:50:53] INFO root fetch - processPackages [clearml-session]: Downloading https://files.pythonhosted.org/packages/02/23/c0ade12602bbc341c6b2f72f1e276d470295e2f0ca002a600e489cae0617/clearml_session-0.9.0-py3-none-any.whl
+[2024-04-20 22:50:53] INFO root fetch - processPackages [pynysiis]: Downloading https://files.pythonhosted.org/packages/96/75/5d46e8000606f2897f38e9fe6f957043202347831dcd65c74351eecf84e8/pynysiis-1.0.2.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [pynysiis]: executing diffoscope
+[2024-04-20 22:50:53] INFO root fetch - processPackages [pynysiis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynysiis-1.0.1.tar.gz tmp/pynysiis-1.0.2.tar.gz --markdown 20240420/p/pynysiis/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-04-20 22:50:53] INFO root fetch - processPackages [turkish-profile-generator]: Downloading https://files.pythonhosted.org/packages/c7/72/d71726cf5e356bc224e906c2a5fe102fb6be3fae31858388444360c1b3d7/turkish_profile_generator-0.2.1.tar.gz
+[2024-04-20 22:50:53] INFO root fetch - processPackages [clearml-session]: Downloading https://files.pythonhosted.org/packages/f2/79/bf632982c2fd90fa812dc590b334ce05ec3b7bc392c6e15c2f2121cef7ee/clearml_session-0.9.0rc0-py3-none-any.whl
+[2024-04-20 22:50:54] INFO root fetch - processPackages [turkish-profile-generator]: executing diffoscope
+[2024-04-20 22:50:54] INFO root fetch - processPackages [turkish-profile-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/turkish_profile_generator-0.2.tar.gz tmp/turkish_profile_generator-0.2.1.tar.gz --markdown 20240420/t/turkish-profile-generator/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-04-20 22:50:54] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-20 22:50:54] INFO root fetch - processPackages [clearml-session]: executing diffoscope
+[2024-04-20 22:50:54] INFO root fetch - processPackages [clearml-session]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clearml_session-0.9.0-py3-none-any.whl.zip tmp/clearml_session-0.9.0rc0-py3-none-any.whl.zip --markdown 20240420/c/clearml-session/0.9.0-0.9.0rc0/README.md --exclude *.pyd
+[2024-04-20 22:50:54] INFO root fetch - processPackages [pynysiis]: Remove: archive file [/home/abi/fetcher/tmp/pynysiis-1.0.1.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - processPackages [pynysiis]: Remove: archive file [/home/abi/fetcher/tmp/pynysiis-1.0.2.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - main [MainThread]: End processing [pynysiis]: success
+[2024-04-20 22:50:54] INFO root fetch - processPackages [turkish-profile-generator]: Remove: archive file [/home/abi/fetcher/tmp/turkish_profile_generator-0.2.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - processPackages [turkish-profile-generator]: Remove: archive file [/home/abi/fetcher/tmp/turkish_profile_generator-0.2.1.tar.gz]
+[2024-04-20 22:50:54] INFO root fetch - main [MainThread]: End processing [turkish-profile-generator]: success
+[2024-04-20 22:50:54] INFO root fetch - processPackages [clearml-session]: Remove: archive file [/home/abi/fetcher/tmp/clearml_session-0.9.0-py3-none-any.whl.zip]
+[2024-04-20 22:50:54] INFO root fetch - processPackages [clearml-session]: Remove: archive file [/home/abi/fetcher/tmp/clearml_session-0.9.0rc0-py3-none-any.whl.zip]
+[2024-04-20 22:50:54] INFO root fetch - main [MainThread]: End processing [clearml-session]: success
+[2024-04-20 22:50:54] INFO root fetch - main [MainThread]: Store serial: [22859421]
