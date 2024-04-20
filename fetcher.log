@@ -12317,3 +12317,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 10:48:37] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240420-cp39-cp39-win_amd64.whl.zip]
 [2024-04-20 10:48:37] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
 [2024-04-20 10:48:37] INFO root fetch - main [MainThread]: Store serial: [22854008]
+[2024-04-20 10:50:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854008]
+[2024-04-20 10:50:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 10:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: psyaitools
+[2024-04-20 10:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dirigera
+[2024-04-20 10:50:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sfmanager
+[2024-04-20 10:50:45] INFO root fetch - processPackages [sfmanager]: New version: [0.1.1b2] Old Version: [0.1.1b1]
+[2024-04-20 10:50:46] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/e1/06/4aec798481dc910cc526e294f8e1ef480d91faff139cc0d6cec6a38d956a/sfmanager-0.1.1b1.tar.gz
+[2024-04-20 10:50:46] WARNING root fetch - processPackages [psyaitools]: Skipping, unable to determine old version
+[2024-04-20 10:50:46] INFO root fetch - main [MainThread]: End processing [psyaitools] error
+[2024-04-20 10:50:46] INFO root fetch - processPackages [dirigera]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-20 10:50:46] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/32/b9/024cc8655bb9f59e26ec125b97c1b776fcdc75347476a4e0ade7ef5fdf46/dirigera-1.1.4.tar.gz
+[2024-04-20 10:50:46] INFO root fetch - processPackages [sfmanager]: Downloading https://files.pythonhosted.org/packages/9b/d6/560fb00ee8714c82dea9a3c46d016e0f78d3d43f6b1602f5d440f73cbfd6/sfmanager-0.1.1b2.tar.gz
+[2024-04-20 10:50:46] INFO root fetch - processPackages [dirigera]: Downloading https://files.pythonhosted.org/packages/ac/c4/63292b951822294dd69affff18ab52b65c49a3491092736488715385d31d/dirigera-1.1.5.tar.gz
+[2024-04-20 10:50:46] INFO root fetch - processPackages [sfmanager]: executing diffoscope
+[2024-04-20 10:50:46] INFO root fetch - processPackages [sfmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sfmanager-0.1.1b1.tar.gz tmp/sfmanager-0.1.1b2.tar.gz --markdown 20240420/s/sfmanager/0.1.1b1-0.1.1b2/README.md --exclude *.pyd
+[2024-04-20 10:50:46] INFO root fetch - processPackages [dirigera]: executing diffoscope
+[2024-04-20 10:50:46] INFO root fetch - processPackages [dirigera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dirigera-1.1.4.tar.gz tmp/dirigera-1.1.5.tar.gz --markdown 20240420/d/dirigera/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-04-20 10:50:47] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b1.tar.gz]
+[2024-04-20 10:50:47] INFO root fetch - processPackages [sfmanager]: Remove: archive file [/home/abi/fetcher/tmp/sfmanager-0.1.1b2.tar.gz]
+[2024-04-20 10:50:47] INFO root fetch - main [MainThread]: End processing [sfmanager]: success
+[2024-04-20 10:50:47] INFO root fetch - processPackages [dirigera]: Remove: archive file [/home/abi/fetcher/tmp/dirigera-1.1.4.tar.gz]
+[2024-04-20 10:50:47] INFO root fetch - processPackages [dirigera]: Remove: archive file [/home/abi/fetcher/tmp/dirigera-1.1.5.tar.gz]
+[2024-04-20 10:50:47] INFO root fetch - main [MainThread]: End processing [dirigera]: success
+[2024-04-20 10:50:47] INFO root fetch - main [MainThread]: Store serial: [22854021]
