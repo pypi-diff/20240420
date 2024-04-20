@@ -16179,3 +16179,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 15:06:00] INFO root fetch - processPackages [eval-type-backport]: Remove: archive file [/home/abi/fetcher/tmp/eval_type_backport-0.2.0.tar.gz]
 [2024-04-20 15:06:00] INFO root fetch - main [MainThread]: End processing [eval-type-backport]: success
 [2024-04-20 15:06:00] INFO root fetch - main [MainThread]: Store serial: [22855885]
+[2024-04-20 15:08:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855885]
+[2024-04-20 15:08:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 15:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic-marshals
+[2024-04-20 15:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC054
+[2024-04-20 15:08:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sdeper
+[2024-04-20 15:08:08] WARNING root fetch - processPackages [PythonTestLJC054]: Skipping, unable to determine old version
+[2024-04-20 15:08:08] INFO root fetch - main [MainThread]: End processing [PythonTestLJC054] error
+[2024-04-20 15:08:08] INFO root fetch - processPackages [pydantic-marshals]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-20 15:08:08] INFO root fetch - processPackages [sdeper]: New version: [1.1.0] Old Version: [1.0.3]
+[2024-04-20 15:08:09] INFO root fetch - processPackages [pydantic-marshals]: Downloading https://files.pythonhosted.org/packages/c4/2a/3b8390af737d78f60055fb590e4e188b11ce181ccabe48e7f0054d950e75/pydantic_marshals-0.3.8.tar.gz
+[2024-04-20 15:08:09] INFO root fetch - processPackages [sdeper]: Downloading https://files.pythonhosted.org/packages/4f/8a/68be80c5049034bc4c35343339b9ceadd920ebdbadcbdd8e91178c22d262/sdeper-1.0.3.tar.gz
+[2024-04-20 15:08:09] INFO root fetch - processPackages [pydantic-marshals]: Downloading https://files.pythonhosted.org/packages/da/9f/222a4212e14727d44e36805b5dba2d5a75d57e6f7c2f59866ca0f61e4a92/pydantic_marshals-0.3.9.tar.gz
+[2024-04-20 15:08:09] INFO root fetch - processPackages [sdeper]: Downloading https://files.pythonhosted.org/packages/a5/a2/4d92612197c7550a6cf7d2ae5089c1a94d84a61623a2ad8d6c685bb0a49a/sdeper-1.1.0.tar.gz
+[2024-04-20 15:08:09] INFO root fetch - processPackages [pydantic-marshals]: executing diffoscope
+[2024-04-20 15:08:09] INFO root fetch - processPackages [pydantic-marshals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_marshals-0.3.8.tar.gz tmp/pydantic_marshals-0.3.9.tar.gz --markdown 20240420/p/pydantic-marshals/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-04-20 15:08:09] INFO root fetch - processPackages [sdeper]: executing diffoscope
+[2024-04-20 15:08:09] INFO root fetch - processPackages [sdeper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdeper-1.0.3.tar.gz tmp/sdeper-1.1.0.tar.gz --markdown 20240420/s/sdeper/1.0.3-1.1.0/README.md --exclude *.pyd
+[2024-04-20 15:08:10] INFO root fetch - processPackages [pydantic-marshals]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_marshals-0.3.8.tar.gz]
+[2024-04-20 15:08:10] INFO root fetch - processPackages [pydantic-marshals]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_marshals-0.3.9.tar.gz]
+[2024-04-20 15:08:10] INFO root fetch - main [MainThread]: End processing [pydantic-marshals]: success
+[2024-04-20 15:08:10] INFO root fetch - processPackages [sdeper]: Remove: archive file [/home/abi/fetcher/tmp/sdeper-1.0.3.tar.gz]
+[2024-04-20 15:08:10] INFO root fetch - processPackages [sdeper]: Remove: archive file [/home/abi/fetcher/tmp/sdeper-1.1.0.tar.gz]
+[2024-04-20 15:08:10] INFO root fetch - main [MainThread]: End processing [sdeper]: success
+[2024-04-20 15:08:10] INFO root fetch - main [MainThread]: Store serial: [22855901]
