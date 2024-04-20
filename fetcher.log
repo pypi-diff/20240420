@@ -7806,3 +7806,24 @@
 [2024-04-20 04:28:55] INFO root fetch - processPackages [scratchattach]: Remove: archive file [/home/abi/fetcher/tmp/scratchattach-1.7.1.tar.gz]
 [2024-04-20 04:28:55] INFO root fetch - main [MainThread]: End processing [scratchattach]: success
 [2024-04-20 04:28:55] INFO root fetch - main [MainThread]: Store serial: [22851846]
+[2024-04-20 04:30:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22851846]
+[2024-04-20 04:31:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 04:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: octomy-common
+[2024-04-20 04:31:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-batch
+[2024-04-20 04:31:03] INFO root fetch - processPackages [octomy-common]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 04:31:03] INFO root fetch - processPackages [octomy-batch]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/43/6b/e9c10d9675795bd9369c855c1cd27f7a5d572d053a65dd630aa1cae37743/octomy-common-2.0.8.tar.gz
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/36/b2/7e792daa443fd3910c6269389deea34a35b7531569ba31d4947f96bdc075/octomy-batch-2.0.8.tar.gz
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: Downloading https://files.pythonhosted.org/packages/72/43/0c513f0e16a432d7ef227098cb6152ecde69f2fb43ab178074c96cf996db/octomy-batch-2.0.9.tar.gz
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/b1/f2/5a18ffa91b4f8c3fcbc3475b77eaa03236eb75d56934a24393864781ee7d/octomy-common-2.0.9.tar.gz
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: executing diffoscope
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-batch-2.0.8.tar.gz tmp/octomy-batch-2.0.9.tar.gz --markdown 20240420/o/octomy-batch/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.8.tar.gz tmp/octomy-common-2.0.9.tar.gz --markdown 20240420/o/octomy-common/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.8.tar.gz]
+[2024-04-20 04:31:04] INFO root fetch - processPackages [octomy-batch]: Remove: archive file [/home/abi/fetcher/tmp/octomy-batch-2.0.9.tar.gz]
+[2024-04-20 04:31:04] INFO root fetch - main [MainThread]: End processing [octomy-batch]: success
+[2024-04-20 04:31:05] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.8.tar.gz]
+[2024-04-20 04:31:05] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.9.tar.gz]
+[2024-04-20 04:31:05] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-20 04:31:05] INFO root fetch - main [MainThread]: Store serial: [22851850]
