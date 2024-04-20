@@ -9804,3 +9804,42 @@
 [2024-04-20 07:05:57] INFO root fetch - processPackages [odoo-addon-l10n-es-aeat-mod349]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_es_aeat_mod349-16.0.1.3.0-py3-none-any.whl.zip]
 [2024-04-20 07:05:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-es-aeat-mod349]: success
 [2024-04-20 07:05:57] INFO root fetch - main [MainThread]: Store serial: [22852708]
+[2024-04-20 07:08:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852708]
+[2024-04-20 07:08:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 07:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edstem-assignment-tracker
+[2024-04-20 07:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iamlistening
+[2024-04-20 07:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cefi
+[2024-04-20 07:08:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MyLLM
+[2024-04-20 07:08:07] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 07:08:07] INFO root fetch - processPackages [cefi]: New version: [4.6.5] Old Version: [4.6.4]
+[2024-04-20 07:08:07] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/82/4a/c0db65271fef922a73519d9792bd50bf8e4156d37cfc0f4ff9fae84c519a/cefi-4.6.4.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [iamlistening]: New version: [5.1.9] Old Version: [5.1.8]
+[2024-04-20 07:08:07] INFO root fetch - processPackages [MyLLM]: New version: [4.8.9] Old Version: [4.8.8]
+[2024-04-20 07:08:07] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/07/a4/ba0689d7ba373ab01bee30148890982c66aebce125bf4cb4463c1279f1c8/iamlistening-5.1.8.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/17/a3/c8c72d3fe2409e7c53f4f1b62d22d58eda0f109b746f00cee99c542888b9/myllm-4.8.8.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/ac/6b/f6e131829579419413bfc515671057191fcba0e7846009de7ef503426aef/cefi-4.6.5.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 07:08:07] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 07:08:07] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-20 07:08:07] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.6.4.tar.gz tmp/cefi-4.6.5.tar.gz --markdown 20240420/c/cefi/4.6.4-4.6.5/README.md --exclude *.pyd
+[2024-04-20 07:08:07] INFO root fetch - processPackages [iamlistening]: Downloading https://files.pythonhosted.org/packages/1e/81/79876c2de874a7124601107f9019de809d107376866a30720062e102ab24/iamlistening-5.1.9.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/57/3a/bfe2f2c55e10a6dee7a033bc1731f5ed17fe7c958a210478832a958f6d80/myllm-4.8.9.tar.gz
+[2024-04-20 07:08:07] INFO root fetch - processPackages [iamlistening]: executing diffoscope
+[2024-04-20 07:08:07] INFO root fetch - processPackages [iamlistening]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iamlistening-5.1.8.tar.gz tmp/iamlistening-5.1.9.tar.gz --markdown 20240420/i/iamlistening/5.1.8-5.1.9/README.md --exclude *.pyd
+[2024-04-20 07:08:07] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-04-20 07:08:07] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.8.8.tar.gz tmp/myllm-4.8.9.tar.gz --markdown 20240420/M/MyLLM/4.8.8-4.8.9/README.md --exclude *.pyd
+[2024-04-20 07:08:08] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 07:08:08] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.6.4.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.6.5.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-20 07:08:08] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.8.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - processPackages [iamlistening]: Remove: archive file [/home/abi/fetcher/tmp/iamlistening-5.1.9.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - main [MainThread]: End processing [iamlistening]: success
+[2024-04-20 07:08:08] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.8.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.9.tar.gz]
+[2024-04-20 07:08:08] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-04-20 07:08:08] INFO root fetch - main [MainThread]: Store serial: [22852719]
