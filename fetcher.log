@@ -18999,3 +18999,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 18:24:32] INFO root fetch - processPackages [CI-CD-SergiCastillo]: Remove: archive file [/home/abi/fetcher/tmp/CI-CD-SergiCastillo-0.2.3.tar.gz]
 [2024-04-20 18:24:32] INFO root fetch - main [MainThread]: End processing [CI-CD-SergiCastillo]: success
 [2024-04-20 18:24:32] INFO root fetch - main [MainThread]: Store serial: [22857378]
+[2024-04-20 18:26:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857378]
+[2024-04-20 18:26:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 18:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cerbogen
+[2024-04-20 18:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deshima-rawdata
+[2024-04-20 18:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LOLZTEAM
+[2024-04-20 18:26:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notfunny
+[2024-04-20 18:26:42] INFO root fetch - processPackages [cerbogen]: New version: [0.0.35] Old Version: [0.0.34]
+[2024-04-20 18:26:42] INFO root fetch - processPackages [deshima-rawdata]: New version: [2024.4.1] Old Version: [2024.4.0]
+[2024-04-20 18:26:42] INFO root fetch - processPackages [notfunny]: New version: [0.3] Old Version: [0.2]
+[2024-04-20 18:26:42] INFO root fetch - processPackages [LOLZTEAM]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-20 18:26:42] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/cd/c0/1f57d64b44fac70d5a7195b92aeaf32291e48b651e0b7a851006367c59b6/cerbogen-0.0.34.tar.gz
+[2024-04-20 18:26:42] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/dc/dc/82739b28d7fe321e6bea0eb8716b8517a89c596286dc6497692da10dca13/notfunny-0.2.tar.gz
+[2024-04-20 18:26:42] INFO root fetch - processPackages [deshima-rawdata]: Downloading https://files.pythonhosted.org/packages/c4/c5/7a3a3e09845c071703723eda08e6d55914ea4e583ceb8952cf55f038cfde/deshima_rawdata-2024.4.0.tar.gz
+[2024-04-20 18:26:42] INFO root fetch - processPackages [LOLZTEAM]: Downloading https://files.pythonhosted.org/packages/0e/b5/6ea3111ed82f32cb4c509b589bdf62f3787f7b23ddb2e9b4b865e300b1f9/LOLZTEAM-1.3.2.tar.gz
+[2024-04-20 18:26:43] INFO root fetch - processPackages [deshima-rawdata]: Downloading https://files.pythonhosted.org/packages/f4/15/fccbd8847f6d9688c801f5021c52fda1690382e61b712e011fe78760b6be/deshima_rawdata-2024.4.1.tar.gz
+[2024-04-20 18:26:43] INFO root fetch - processPackages [cerbogen]: Downloading https://files.pythonhosted.org/packages/6a/5a/e2c4a3da4f4b0f20f6d08380755cd9b4e89d4a49d58a8623eac5cd8014fe/cerbogen-0.0.35.tar.gz
+[2024-04-20 18:26:43] INFO root fetch - processPackages [notfunny]: Downloading https://files.pythonhosted.org/packages/7d/8b/f6408b8ecf6040ebd6b4a779de955b6d8d6d0c09375a2cb648121ae5125e/notfunny-0.3.tar.gz
+[2024-04-20 18:26:43] INFO root fetch - processPackages [deshima-rawdata]: executing diffoscope
+[2024-04-20 18:26:43] INFO root fetch - processPackages [deshima-rawdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deshima_rawdata-2024.4.0.tar.gz tmp/deshima_rawdata-2024.4.1.tar.gz --markdown 20240420/d/deshima-rawdata/2024.4.0-2024.4.1/README.md --exclude *.pyd
+[2024-04-20 18:26:43] INFO root fetch - processPackages [LOLZTEAM]: Downloading https://files.pythonhosted.org/packages/c6/24/03bbbff57d08f49e272a34e6b5f84e9a5893f543cfb194135694a0c4aee9/LOLZTEAM-1.3.3.tar.gz
+[2024-04-20 18:26:43] INFO root fetch - processPackages [notfunny]: executing diffoscope
+[2024-04-20 18:26:43] INFO root fetch - processPackages [notfunny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notfunny-0.2.tar.gz tmp/notfunny-0.3.tar.gz --markdown 20240420/n/notfunny/0.2-0.3/README.md --exclude *.pyd
+[2024-04-20 18:26:43] INFO root fetch - processPackages [cerbogen]: executing diffoscope
+[2024-04-20 18:26:43] INFO root fetch - processPackages [cerbogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cerbogen-0.0.34.tar.gz tmp/cerbogen-0.0.35.tar.gz --markdown 20240420/c/cerbogen/0.0.34-0.0.35/README.md --exclude *.pyd
+[2024-04-20 18:26:43] INFO root fetch - processPackages [LOLZTEAM]: executing diffoscope
+[2024-04-20 18:26:43] INFO root fetch - processPackages [LOLZTEAM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LOLZTEAM-1.3.2.tar.gz tmp/LOLZTEAM-1.3.3.tar.gz --markdown 20240420/L/LOLZTEAM/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-04-20 18:26:43] INFO root fetch - processPackages [deshima-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/deshima_rawdata-2024.4.0.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - processPackages [deshima-rawdata]: Remove: archive file [/home/abi/fetcher/tmp/deshima_rawdata-2024.4.1.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - main [MainThread]: End processing [deshima-rawdata]: success
+[2024-04-20 18:26:43] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.2.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - processPackages [notfunny]: Remove: archive file [/home/abi/fetcher/tmp/notfunny-0.3.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - main [MainThread]: End processing [notfunny]: success
+[2024-04-20 18:26:43] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.34.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - processPackages [cerbogen]: Remove: archive file [/home/abi/fetcher/tmp/cerbogen-0.0.35.tar.gz]
+[2024-04-20 18:26:43] INFO root fetch - main [MainThread]: End processing [cerbogen]: success
+[2024-04-20 18:26:44] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.3.2.tar.gz]
+[2024-04-20 18:26:44] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.3.3.tar.gz]
+[2024-04-20 18:26:44] INFO root fetch - main [MainThread]: End processing [LOLZTEAM]: success
+[2024-04-20 18:26:44] INFO root fetch - main [MainThread]: Store serial: [22857388]
