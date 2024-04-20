@@ -14382,3 +14382,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 13:09:45] WARNING root fetch - processPackages [graph-transformer]: Skipping, unable to determine old version
 [2024-04-20 13:09:45] INFO root fetch - main [MainThread]: End processing [graph-transformer] error
 [2024-04-20 13:09:45] INFO root fetch - main [MainThread]: Store serial: [22854986]
+[2024-04-20 13:11:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854986]
+[2024-04-20 13:11:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 13:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rv-helpers
+[2024-04-20 13:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: math-ops-lol
+[2024-04-20 13:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: motsmeles
+[2024-04-20 13:11:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: astabc
+[2024-04-20 13:11:54] WARNING root fetch - processPackages [rv-helpers]: Skipping, unable to determine old version
+[2024-04-20 13:11:54] INFO root fetch - main [MainThread]: End processing [rv-helpers] error
+[2024-04-20 13:11:54] WARNING root fetch - processPackages [math-ops-lol]: Skipping, unable to determine old version
+[2024-04-20 13:11:54] INFO root fetch - main [MainThread]: End processing [math-ops-lol] error
+[2024-04-20 13:11:54] INFO root fetch - processPackages [motsmeles]: New version: [3.0.0] Old Version: [2.2.1]
+[2024-04-20 13:11:54] INFO root fetch - processPackages [astabc]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-20 13:11:54] INFO root fetch - processPackages [motsmeles]: Downloading https://files.pythonhosted.org/packages/13/65/035e0fdcff3370bfc48e0ff25837bb0f34d00c5b1fbbfb60d6681538c845/motsmeles-2.2.1.tar.gz
+[2024-04-20 13:11:54] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/d8/92/568ed5e804d80935f81bee690cfb1225b6c7a438f08a41287fd3caed9767/astabc-0.1.4.tar.gz
+[2024-04-20 13:11:54] INFO root fetch - processPackages [motsmeles]: Downloading https://files.pythonhosted.org/packages/20/a3/ecd29ca716ccb6c559f3447eebbac4779cc75e24083895020ab76a81f871/motsmeles-3.0.0.tar.gz
+[2024-04-20 13:11:54] INFO root fetch - processPackages [astabc]: Downloading https://files.pythonhosted.org/packages/2c/8b/db3e1493a74b2a48faa9c8465c595e07d6a4ffeb48a1417be1d654a2b029/astabc-0.1.5.tar.gz
+[2024-04-20 13:11:54] INFO root fetch - processPackages [motsmeles]: executing diffoscope
+[2024-04-20 13:11:54] INFO root fetch - processPackages [motsmeles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/motsmeles-2.2.1.tar.gz tmp/motsmeles-3.0.0.tar.gz --markdown 20240420/m/motsmeles/2.2.1-3.0.0/README.md --exclude *.pyd
+[2024-04-20 13:11:54] INFO root fetch - processPackages [astabc]: executing diffoscope
+[2024-04-20 13:11:54] INFO root fetch - processPackages [astabc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astabc-0.1.4.tar.gz tmp/astabc-0.1.5.tar.gz --markdown 20240420/a/astabc/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-04-20 13:11:55] INFO root fetch - processPackages [motsmeles]: Remove: archive file [/home/abi/fetcher/tmp/motsmeles-2.2.1.tar.gz]
+[2024-04-20 13:11:55] INFO root fetch - processPackages [motsmeles]: Remove: archive file [/home/abi/fetcher/tmp/motsmeles-3.0.0.tar.gz]
+[2024-04-20 13:11:55] INFO root fetch - main [MainThread]: End processing [motsmeles]: success
+[2024-04-20 13:11:55] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.4.tar.gz]
+[2024-04-20 13:11:55] INFO root fetch - processPackages [astabc]: Remove: archive file [/home/abi/fetcher/tmp/astabc-0.1.5.tar.gz]
+[2024-04-20 13:11:55] INFO root fetch - main [MainThread]: End processing [astabc]: success
+[2024-04-20 13:11:55] INFO root fetch - main [MainThread]: Store serial: [22855034]
