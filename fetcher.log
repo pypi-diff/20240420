@@ -10098,3 +10098,21 @@
 [2024-04-20 07:42:50] INFO root fetch - processPackages [odoo-addon-partner-second-lastname]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_partner_second_lastname-17.0.1.0.0.2-py3-none-any.whl.zip]
 [2024-04-20 07:42:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-partner-second-lastname]: success
 [2024-04-20 07:42:50] INFO root fetch - main [MainThread]: Store serial: [22852929]
+[2024-04-20 07:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852929]
+[2024-04-20 07:44:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 07:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crwl
+[2024-04-20 07:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: math-ops-calc
+[2024-04-20 07:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solaredge2mqtt
+[2024-04-20 07:44:59] WARNING root fetch - processPackages [crwl]: Skipping, unable to determine old version
+[2024-04-20 07:44:59] INFO root fetch - main [MainThread]: End processing [crwl] error
+[2024-04-20 07:44:59] INFO root fetch - processPackages [solaredge2mqtt]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 07:44:59] WARNING root fetch - processPackages [math-ops-calc]: Skipping, unable to determine old version
+[2024-04-20 07:44:59] INFO root fetch - main [MainThread]: End processing [math-ops-calc] error
+[2024-04-20 07:44:59] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/6c/b6/0b9f57b107df49ec80c3be96fffd8b3daad3fc04af359ea2c268d2b525b0/solaredge2mqtt-1.0.8.tar.gz
+[2024-04-20 07:44:59] INFO root fetch - processPackages [solaredge2mqtt]: Downloading https://files.pythonhosted.org/packages/ca/c5/a64aea7e2c53a6394780bba16ed730d8ac2ea082c079e0a277582653596a/solaredge2mqtt-1.0.9.tar.gz
+[2024-04-20 07:44:59] INFO root fetch - processPackages [solaredge2mqtt]: executing diffoscope
+[2024-04-20 07:44:59] INFO root fetch - processPackages [solaredge2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge2mqtt-1.0.8.tar.gz tmp/solaredge2mqtt-1.0.9.tar.gz --markdown 20240420/s/solaredge2mqtt/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 07:45:00] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.8.tar.gz]
+[2024-04-20 07:45:00] INFO root fetch - processPackages [solaredge2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/solaredge2mqtt-1.0.9.tar.gz]
+[2024-04-20 07:45:00] INFO root fetch - main [MainThread]: End processing [solaredge2mqtt]: success
+[2024-04-20 07:45:00] INFO root fetch - main [MainThread]: Store serial: [22852939]
