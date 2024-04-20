@@ -22012,3 +22012,27 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:26:43] INFO root fetch - processPackages [ini2toml]: Remove: archive file [/home/abi/fetcher/tmp/ini2toml-0.9.tar.gz]
 [2024-04-20 21:26:43] INFO root fetch - main [MainThread]: End processing [ini2toml]: success
 [2024-04-20 21:26:43] INFO root fetch - main [MainThread]: Store serial: [22858801]
+[2024-04-20 21:28:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858801]
+[2024-04-20 21:28:52] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py4web
+[2024-04-20 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: showroom
+[2024-04-20 21:28:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC191
+[2024-04-20 21:28:53] INFO root fetch - processPackages [py4web]: New version: [1.20240420.2] Old Version: [1.20240420.1]
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: New version: [0.2] Old Version: [0.0.1]
+[2024-04-20 21:28:53] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/33/d0/7a3bbb270e7f4735889de7fc666c36ba1a7e1dca65df3071a0556687d475/py4web-1.20240420.1.tar.gz
+[2024-04-20 21:28:53] WARNING root fetch - processPackages [PythonTestLJC191]: Skipping, unable to determine old version
+[2024-04-20 21:28:53] INFO root fetch - main [MainThread]: End processing [PythonTestLJC191] error
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/8c/87/97f8834e99817f53da2a68335897e956c33a498393f821dee73b87a365dc/showroom-0.0.1.tar.gz
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: Downloading https://files.pythonhosted.org/packages/d2/92/2e3412dc1f1d110ecc07e290e309b5515b9aa76329c2b369715201f13a96/showroom-0.2.tar.gz
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: executing diffoscope
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/showroom-0.0.1.tar.gz tmp/showroom-0.2.tar.gz --markdown 20240420/s/showroom/0.0.1-0.2/README.md --exclude *.pyd
+[2024-04-20 21:28:53] INFO root fetch - processPackages [py4web]: Downloading https://files.pythonhosted.org/packages/fb/21/426976ca099546d05cfab0486d597728ad979a068b0198166cd9eac08b81/py4web-1.20240420.2.tar.gz
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.0.1.tar.gz]
+[2024-04-20 21:28:53] INFO root fetch - processPackages [showroom]: Remove: archive file [/home/abi/fetcher/tmp/showroom-0.2.tar.gz]
+[2024-04-20 21:28:53] INFO root fetch - main [MainThread]: End processing [showroom]: success
+[2024-04-20 21:28:54] INFO root fetch - processPackages [py4web]: executing diffoscope
+[2024-04-20 21:28:54] INFO root fetch - processPackages [py4web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py4web-1.20240420.1.tar.gz tmp/py4web-1.20240420.2.tar.gz --markdown 20240420/p/py4web/1.20240420.1-1.20240420.2/README.md --exclude *.pyd
+[2024-04-20 21:28:55] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.1.tar.gz]
+[2024-04-20 21:28:55] INFO root fetch - processPackages [py4web]: Remove: archive file [/home/abi/fetcher/tmp/py4web-1.20240420.2.tar.gz]
+[2024-04-20 21:28:55] INFO root fetch - main [MainThread]: End processing [py4web]: success
+[2024-04-20 21:28:55] INFO root fetch - main [MainThread]: Store serial: [22858812]
