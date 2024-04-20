@@ -11373,3 +11373,9 @@
 [2024-04-20 09:23:51] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.1.0a0.tar.gz]
 [2024-04-20 09:23:51] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
 [2024-04-20 09:23:51] INFO root fetch - main [MainThread]: Store serial: [22853564]
+[2024-04-20 09:25:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853564]
+[2024-04-20 09:25:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 09:25:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kitsunekko-tools
+[2024-04-20 09:25:59] WARNING root fetch - processPackages [kitsunekko-tools]: Skipping, unable to determine old version
+[2024-04-20 09:25:59] INFO root fetch - main [MainThread]: End processing [kitsunekko-tools] error
+[2024-04-20 09:25:59] INFO root fetch - main [MainThread]: Store serial: [22853572]
