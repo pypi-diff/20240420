@@ -13077,3 +13077,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 11:35:14] INFO root fetch - processPackages [panpdf]: Remove: archive file [/home/abi/fetcher/tmp/panpdf-0.2.1.tar.gz]
 [2024-04-20 11:35:14] INFO root fetch - main [MainThread]: End processing [panpdf]: success
 [2024-04-20 11:35:14] INFO root fetch - main [MainThread]: Store serial: [22854417]
+[2024-04-20 11:37:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854417]
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PythonTestLJC009
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PythonTestLJC010
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC011
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TheSilent
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PythonTestLJC012
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: TUIFIManager
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: php-ast
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PythonTestLJC013
+[2024-04-20 11:37:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: PythonTestLJC014
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [php-ast]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [php-ast] error
+[2024-04-20 11:37:24] INFO root fetch - processPackages [TheSilent]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC009]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC009] error
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC011]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC011] error
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC010]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC010] error
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC012]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC012] error
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC013]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC013] error
+[2024-04-20 11:37:24] WARNING root fetch - processPackages [PythonTestLJC014]: Skipping, unable to determine old version
+[2024-04-20 11:37:24] INFO root fetch - main [MainThread]: End processing [PythonTestLJC014] error
+[2024-04-20 11:37:24] INFO root fetch - processPackages [TUIFIManager]: New version: [4.0.0] Old Version: [3.3.5]
+[2024-04-20 11:37:24] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/ad/09/2a1f42483bf3fbc17417489cf4f3d6ec17c5c763e219aa02ad1827f29dc1/TheSilent-0.0.98.tar.gz
+[2024-04-20 11:37:24] INFO root fetch - processPackages [TUIFIManager]: Downloading https://files.pythonhosted.org/packages/be/e5/d60992d27d3023f7c41011cf92c714efec0a90bd30b6a6ad5d3e7c6a6b6b/TUIFIManager-3.3.5.tar.gz
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TheSilent]: Downloading https://files.pythonhosted.org/packages/38/21/9b42cfa55edd85cfd4fefba7fb94aab0891af2b6c90ef59e687a42228a0b/TheSilent-0.0.99.tar.gz
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TheSilent]: executing diffoscope
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TheSilent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TheSilent-0.0.98.tar.gz tmp/TheSilent-0.0.99.tar.gz --markdown 20240420/T/TheSilent/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TUIFIManager]: Downloading https://files.pythonhosted.org/packages/35/0c/c5e6271c8e5a9c8a9cabf081d8dbb3a1c568f95a96b518c72bd00d6a6735/TUIFIManager-4.0.0.tar.gz
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TUIFIManager]: executing diffoscope
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TUIFIManager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TUIFIManager-3.3.5.tar.gz tmp/TUIFIManager-4.0.0.tar.gz --markdown 20240420/T/TUIFIManager/3.3.5-4.0.0/README.md --exclude *.pyd
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.98.tar.gz]
+[2024-04-20 11:37:25] INFO root fetch - processPackages [TheSilent]: Remove: archive file [/home/abi/fetcher/tmp/TheSilent-0.0.99.tar.gz]
+[2024-04-20 11:37:25] INFO root fetch - main [MainThread]: End processing [TheSilent]: success
+[2024-04-20 11:37:26] INFO root fetch - processPackages [TUIFIManager]: Remove: archive file [/home/abi/fetcher/tmp/TUIFIManager-3.3.5.tar.gz]
+[2024-04-20 11:37:26] INFO root fetch - processPackages [TUIFIManager]: Remove: archive file [/home/abi/fetcher/tmp/TUIFIManager-4.0.0.tar.gz]
+[2024-04-20 11:37:26] INFO root fetch - main [MainThread]: End processing [TUIFIManager]: success
+[2024-04-20 11:37:26] INFO root fetch - main [MainThread]: Store serial: [22854455]
