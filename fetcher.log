@@ -10693,3 +10693,38 @@
 [2024-04-20 08:46:12] INFO root fetch - processPackages [odoo-addon-announcement-dialog-size]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_announcement_dialog_size-16.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-04-20 08:46:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-announcement-dialog-size]: success
 [2024-04-20 08:46:12] INFO root fetch - main [MainThread]: Store serial: [22853179]
+[2024-04-20 08:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22853179]
+[2024-04-20 08:48:21] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-20 08:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-20 08:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-mail-template-multi-attachment
+[2024-04-20 08:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-mail-layout-force
+[2024-04-20 08:48:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ckwrap
+[2024-04-20 08:48:21] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 08:48:22] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: New version: [14.0.1.0.1.dev7] Old Version: [14.0.1.0.1.dev5]
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: New version: [14.0.1.0.1.dev8] Old Version: [14.0.1.0.1.dev6]
+[2024-04-20 08:48:22] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 08:48:22] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 08:48:22] INFO root fetch - processPackages [ckwrap]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: Downloading https://files.pythonhosted.org/packages/be/4e/bd3cf4e6c0f62532be8cc13792b4f853c9f98e96aa54dae907a6fbc56467/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev5-py3-none-any.whl
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: Downloading https://files.pythonhosted.org/packages/ff/b0/745d2b2213fa55e334518f67c2ad790e5a25ceae2f02a58ec77ac8ed81f1/odoo14_addon_mail_layout_force-14.0.1.0.1.dev6-py3-none-any.whl
+[2024-04-20 08:48:22] INFO root fetch - processPackages [ckwrap]: Downloading https://files.pythonhosted.org/packages/65/22/e6acc4ca2a6dc0694884e6bdff877cc8690586d51f007a5d3eaa8b6f1b6e/ckwrap-1.2.1.tar.gz
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: Downloading https://files.pythonhosted.org/packages/a9/38/9bb4b68a45e160f8840e119c5dcaae9b92214af5c25ec03114acabb863d5/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev7-py3-none-any.whl
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: Downloading https://files.pythonhosted.org/packages/25/7a/86823c672ff851d09001108aabd83c73a7379c5c0b33ce25633b9908f254/odoo14_addon_mail_layout_force-14.0.1.0.1.dev8-py3-none-any.whl
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: executing diffoscope
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mail_layout_force-14.0.1.0.1.dev6-py3-none-any.whl.zip tmp/odoo14_addon_mail_layout_force-14.0.1.0.1.dev8-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-mail-layout-force/14.0.1.0.1.dev6-14.0.1.0.1.dev8/README.md --exclude *.pyd
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: executing diffoscope
+[2024-04-20 08:48:22] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev7-py3-none-any.whl.zip --markdown 20240420/o/odoo14-addon-mail-template-multi-attachment/14.0.1.0.1.dev5-14.0.1.0.1.dev7/README.md --exclude *.pyd
+[2024-04-20 08:48:22] INFO root fetch - processPackages [ckwrap]: Downloading https://files.pythonhosted.org/packages/e8/3d/53c74be044f8d3c3731d2f3bb221023804e0882e3b61869356efa0620c7d/ckwrap-1.2.2-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl
+[2024-04-20 08:48:23] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mail_layout_force-14.0.1.0.1.dev6-py3-none-any.whl.zip]
+[2024-04-20 08:48:23] INFO root fetch - processPackages [odoo14-addon-mail-layout-force]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mail_layout_force-14.0.1.0.1.dev8-py3-none-any.whl.zip]
+[2024-04-20 08:48:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mail-layout-force]: success
+[2024-04-20 08:48:23] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev5-py3-none-any.whl.zip]
+[2024-04-20 08:48:23] INFO root fetch - processPackages [odoo14-addon-mail-template-multi-attachment]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_mail_template_multi_attachment-14.0.1.0.1.dev7-py3-none-any.whl.zip]
+[2024-04-20 08:48:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-mail-template-multi-attachment]: success
+[2024-04-20 08:48:23] INFO root fetch - processPackages [ckwrap]: executing diffoscope
+[2024-04-20 08:48:23] INFO root fetch - processPackages [ckwrap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ckwrap-1.2.1.tar.gz tmp/ckwrap-1.2.2-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip --markdown 20240420/c/ckwrap/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-04-20 08:48:24] INFO root fetch - processPackages [ckwrap]: Remove: archive file [/home/abi/fetcher/tmp/ckwrap-1.2.1.tar.gz]
+[2024-04-20 08:48:24] INFO root fetch - processPackages [ckwrap]: Remove: archive file [/home/abi/fetcher/tmp/ckwrap-1.2.2-cp312-cp312-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl.zip]
+[2024-04-20 08:48:24] INFO root fetch - main [MainThread]: End processing [ckwrap]: success
+[2024-04-20 08:48:24] INFO root fetch - main [MainThread]: Store serial: [22853209]
