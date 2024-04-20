@@ -19768,3 +19768,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 19:10:27] INFO root fetch - processPackages [jutge-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/jutge-toolkit-2.9.3.tar.gz]
 [2024-04-20 19:10:27] INFO root fetch - main [MainThread]: End processing [jutge-toolkit]: success
 [2024-04-20 19:10:27] INFO root fetch - main [MainThread]: Store serial: [22857712]
+[2024-04-20 19:12:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22857712]
+[2024-04-20 19:12:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rats-processors
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rats-apps
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: drf-appkit
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rats-pipelines
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: face-authenticator
+[2024-04-20 19:12:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: maestral
+[2024-04-20 19:12:36] INFO root fetch - processPackages [face-authenticator]: New version: [2.1.0] Old Version: [2.0.0]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-processors]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [drf-appkit]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-pipelines]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/dc/19/ef0b83a2f31c37cfbe6483819a2d848c93b74b66704791208ec3ee938a57/face_authenticator-2.0.0-py3-none-any.whl
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-apps]: New version: [0.1.3.dev9] Old Version: [0.1.3.dev8]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [maestral]: New version: [1.9.3.dev1] Old Version: [1.9.3.dev0]
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-processors]: Downloading https://files.pythonhosted.org/packages/ee/14/9e43a65d4c611c1fd72f73131b77c7f2d0b9dec99834658b01571114c849/rats_processors-0.1.3.dev8-py3-none-any.whl
+[2024-04-20 19:12:36] INFO root fetch - processPackages [drf-appkit]: Downloading https://files.pythonhosted.org/packages/47/0a/fd59c7a88bc1f4c6a3a3d00c9a791b81fa0bff9f362dc9cb2f68627a0d0d/drf_appkit-1.4.5.tar.gz
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-pipelines]: Downloading https://files.pythonhosted.org/packages/ec/dd/e1571a4a4be4a6e8a24f82ab1b058ced7ac30426c5fa734e21c3bb791cd1/rats_pipelines-0.1.3.dev8-py3-none-any.whl
+[2024-04-20 19:12:36] INFO root fetch - processPackages [rats-apps]: Downloading https://files.pythonhosted.org/packages/2b/ac/7cdd84e9d923505e71fd914f800c3d7199d0e4a098aa8259413f06395c30/rats_apps-0.1.3.dev8-py3-none-any.whl
+[2024-04-20 19:12:36] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/6c/c5/8ae6483a6a3bb8f5fa06b41dfa212298f4ea13959145230f0b197ab50587/maestral-1.9.3.dev0.tar.gz
+[2024-04-20 19:12:36] INFO root fetch - processPackages [face-authenticator]: Downloading https://files.pythonhosted.org/packages/b0/49/b5f673e7a5b8e6d4081b889e4e5ac51190aead05bcbb38ac7451ca92ccc2/face_authenticator-2.1.0-py3-none-any.whl
+[2024-04-20 19:12:36] INFO root fetch - processPackages [face-authenticator]: executing diffoscope
+[2024-04-20 19:12:36] INFO root fetch - processPackages [face-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/face_authenticator-2.0.0-py3-none-any.whl.zip tmp/face_authenticator-2.1.0-py3-none-any.whl.zip --markdown 20240420/f/face-authenticator/2.0.0-2.1.0/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-pipelines]: Downloading https://files.pythonhosted.org/packages/b8/2d/79bd6c94d590e76f61506daaf64bbb07726287dd538e4b8a5d5a3fd64ad7/rats_pipelines-0.1.3.dev9-py3-none-any.whl
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-processors]: Downloading https://files.pythonhosted.org/packages/83/b6/122ea8648f16d78861cb7c33e0f599e2421b03f295f46bbf34d66c3d399a/rats_processors-0.1.3.dev9-py3-none-any.whl
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-apps]: Downloading https://files.pythonhosted.org/packages/63/25/d3d6e41dfb5bd98bcbf7f79d3856cc774212467e002a6abf0eb6cd14bd96/rats_apps-0.1.3.dev9-py3-none-any.whl
+[2024-04-20 19:12:37] INFO root fetch - processPackages [drf-appkit]: Downloading https://files.pythonhosted.org/packages/9d/59/caed62d7b79d1af9e8c2bd7b80d3555e7f609e167148a3691ba22d6b82e0/drf_appkit-1.4.6.tar.gz
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-pipelines]: executing diffoscope
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_pipelines-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_pipelines-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240420/r/rats-pipelines/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-apps]: executing diffoscope
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-apps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_apps-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_apps-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240420/r/rats-apps/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-processors]: executing diffoscope
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-processors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rats_processors-0.1.3.dev8-py3-none-any.whl.zip tmp/rats_processors-0.1.3.dev9-py3-none-any.whl.zip --markdown 20240420/r/rats-processors/0.1.3.dev8-0.1.3.dev9/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [maestral]: Downloading https://files.pythonhosted.org/packages/4e/b8/c06f31af2b8dcdef5e84dbec9483732b9f6335b3458aed569069dd2399ee/maestral-1.9.3.dev1.tar.gz
+[2024-04-20 19:12:37] INFO root fetch - processPackages [drf-appkit]: executing diffoscope
+[2024-04-20 19:12:37] INFO root fetch - processPackages [drf-appkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf_appkit-1.4.5.tar.gz tmp/drf_appkit-1.4.6.tar.gz --markdown 20240420/d/drf-appkit/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [maestral]: executing diffoscope
+[2024-04-20 19:12:37] INFO root fetch - processPackages [maestral]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maestral-1.9.3.dev0.tar.gz tmp/maestral-1.9.3.dev1.tar.gz --markdown 20240420/m/maestral/1.9.3.dev0-1.9.3.dev1/README.md --exclude *.pyd
+[2024-04-20 19:12:37] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-2.0.0-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - processPackages [face-authenticator]: Remove: archive file [/home/abi/fetcher/tmp/face_authenticator-2.1.0-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - main [MainThread]: End processing [face-authenticator]: success
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-apps]: Remove: archive file [/home/abi/fetcher/tmp/rats_apps-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-apps]: Remove: archive file [/home/abi/fetcher/tmp/rats_apps-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - main [MainThread]: End processing [rats-apps]: success
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/rats_pipelines-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - processPackages [rats-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/rats_pipelines-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-20 19:12:37] INFO root fetch - main [MainThread]: End processing [rats-pipelines]: success
+[2024-04-20 19:12:38] INFO root fetch - processPackages [drf-appkit]: Remove: archive file [/home/abi/fetcher/tmp/drf_appkit-1.4.5.tar.gz]
+[2024-04-20 19:12:38] INFO root fetch - processPackages [drf-appkit]: Remove: archive file [/home/abi/fetcher/tmp/drf_appkit-1.4.6.tar.gz]
+[2024-04-20 19:12:38] INFO root fetch - main [MainThread]: End processing [drf-appkit]: success
+[2024-04-20 19:12:38] INFO root fetch - processPackages [rats-processors]: Remove: archive file [/home/abi/fetcher/tmp/rats_processors-0.1.3.dev8-py3-none-any.whl.zip]
+[2024-04-20 19:12:38] INFO root fetch - processPackages [rats-processors]: Remove: archive file [/home/abi/fetcher/tmp/rats_processors-0.1.3.dev9-py3-none-any.whl.zip]
+[2024-04-20 19:12:38] INFO root fetch - main [MainThread]: End processing [rats-processors]: success
+[2024-04-20 19:12:38] INFO root fetch - processPackages [maestral]: Remove: archive file [/home/abi/fetcher/tmp/maestral-1.9.3.dev0.tar.gz]
+[2024-04-20 19:12:38] INFO root fetch - processPackages [maestral]: Remove: archive file [/home/abi/fetcher/tmp/maestral-1.9.3.dev1.tar.gz]
+[2024-04-20 19:12:38] INFO root fetch - main [MainThread]: End processing [maestral]: success
+[2024-04-20 19:12:38] INFO root fetch - main [MainThread]: Store serial: [22857726]
