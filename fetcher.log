@@ -14177,3 +14177,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 12:49:58] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.4.4.tar.gz]
 [2024-04-20 12:49:58] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
 [2024-04-20 12:49:58] INFO root fetch - main [MainThread]: Store serial: [22854905]
+[2024-04-20 12:52:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854905]
+[2024-04-20 12:52:08] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-20 12:54:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22854905]
+[2024-04-20 12:54:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 12:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rp
+[2024-04-20 12:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ALLM
+[2024-04-20 12:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpv
+[2024-04-20 12:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: celi-framework
+[2024-04-20 12:54:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: time-split
+[2024-04-20 12:54:13] INFO root fetch - processPackages [rp]: New version: [0.1.999] Old Version: [0.1.998]
+[2024-04-20 12:54:13] WARNING root fetch - processPackages [ALLM]: Skipping, unable to determine old version
+[2024-04-20 12:54:13] INFO root fetch - main [MainThread]: End processing [ALLM] error
+[2024-04-20 12:54:13] INFO root fetch - processPackages [mpv]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-20 12:54:13] INFO root fetch - processPackages [time-split]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-20 12:54:13] INFO root fetch - processPackages [celi-framework]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-04-20 12:54:13] INFO root fetch - processPackages [rp]: Downloading https://files.pythonhosted.org/packages/97/b0/bbb87ca94637473610e58828e8e7e0307bbbbd99a7ad7b0ce8abf94b5e15/rp-0.1.998.tar.gz
+[2024-04-20 12:54:13] WARNING root fetch - processPackages [rp]: Skipping package: exceeds size limit 16581479>=10485760
+[2024-04-20 12:54:13] INFO root fetch - main [MainThread]: End processing [rp] error
+[2024-04-20 12:54:13] INFO root fetch - processPackages [mpv]: Downloading https://files.pythonhosted.org/packages/fe/7c/61aa3b294b152a646ea9ecbd33a321f78e644457fa9967d09fafdb4fa44b/mpv-1.0.5.tar.gz
+[2024-04-20 12:54:13] INFO root fetch - processPackages [time-split]: Downloading https://files.pythonhosted.org/packages/21/79/7e700334216416406315272e896c3a7ec8c5b12f7662c68ae03f2b9bdb39/time_split-0.1.0.tar.gz
+[2024-04-20 12:54:13] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/05/9a/42cf388355d5b9b4a4b663192986311ecce8239db4d000fe18713b23a440/celi_framework-0.0.15.tar.gz
+[2024-04-20 12:54:14] INFO root fetch - processPackages [mpv]: Downloading https://files.pythonhosted.org/packages/1a/ff/f289d9ec680c9024fbadf82fbb52ea2e69b240c89a50d705c333de08513c/mpv-1.0.6.tar.gz
+[2024-04-20 12:54:14] INFO root fetch - processPackages [time-split]: Downloading https://files.pythonhosted.org/packages/e7/12/c0cab5a452fa53652c11817110d16fad6bb1473f11c874675fa374a54772/time_split-0.2.0.tar.gz
+[2024-04-20 12:54:14] INFO root fetch - processPackages [celi-framework]: Downloading https://files.pythonhosted.org/packages/dd/48/0daead84781e0c0ab85920edce1431e5f429bde8582c4fdb8dd6494d6cc2/celi_framework-0.0.16.tar.gz
+[2024-04-20 12:54:14] INFO root fetch - processPackages [mpv]: executing diffoscope
+[2024-04-20 12:54:14] INFO root fetch - processPackages [mpv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpv-1.0.5.tar.gz tmp/mpv-1.0.6.tar.gz --markdown 20240420/m/mpv/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-04-20 12:54:14] INFO root fetch - processPackages [celi-framework]: executing diffoscope
+[2024-04-20 12:54:14] INFO root fetch - processPackages [celi-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celi_framework-0.0.15.tar.gz tmp/celi_framework-0.0.16.tar.gz --markdown 20240420/c/celi-framework/0.0.15-0.0.16/README.md --exclude *.pyd
+[2024-04-20 12:54:14] INFO root fetch - processPackages [time-split]: executing diffoscope
+[2024-04-20 12:54:14] INFO root fetch - processPackages [time-split]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_split-0.1.0.tar.gz tmp/time_split-0.2.0.tar.gz --markdown 20240420/t/time-split/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-04-20 12:54:15] INFO root fetch - processPackages [time-split]: Remove: archive file [/home/abi/fetcher/tmp/time_split-0.1.0.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - processPackages [time-split]: Remove: archive file [/home/abi/fetcher/tmp/time_split-0.2.0.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - main [MainThread]: End processing [time-split]: success
+[2024-04-20 12:54:15] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.15.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - processPackages [celi-framework]: Remove: archive file [/home/abi/fetcher/tmp/celi_framework-0.0.16.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - main [MainThread]: End processing [celi-framework]: success
+[2024-04-20 12:54:15] INFO root fetch - processPackages [mpv]: Remove: archive file [/home/abi/fetcher/tmp/mpv-1.0.5.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - processPackages [mpv]: Remove: archive file [/home/abi/fetcher/tmp/mpv-1.0.6.tar.gz]
+[2024-04-20 12:54:15] INFO root fetch - main [MainThread]: End processing [mpv]: success
+[2024-04-20 12:54:15] INFO root fetch - main [MainThread]: Store serial: [22854921]
