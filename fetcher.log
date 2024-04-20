@@ -14976,3 +14976,15 @@ libarchive.exception.ArchiveError: Invalid string table (errno=22, retcode=-30, 
 [2024-04-20 13:49:20] INFO root fetch - processPackages [ParendumLib]: Remove: archive file [/home/abi/fetcher/tmp/ParendumLib-0.2.2.tar.gz]
 [2024-04-20 13:49:20] INFO root fetch - main [MainThread]: End processing [ParendumLib]: success
 [2024-04-20 13:49:20] INFO root fetch - main [MainThread]: Store serial: [22855293]
+[2024-04-20 13:51:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22855293]
+[2024-04-20 13:51:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-20 13:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liba
+[2024-04-20 13:51:30] INFO root fetch - processPackages [liba]: New version: [0.1.9.post1] Old Version: [0.1.9]
+[2024-04-20 13:51:30] INFO root fetch - processPackages [liba]: Downloading https://files.pythonhosted.org/packages/ac/bc/368c264d046489a2f3d130ea00f13e593a4374d9341b69f551aacaa485ef/liba-0.1.9.tar.gz
+[2024-04-20 13:51:30] INFO root fetch - processPackages [liba]: Downloading https://files.pythonhosted.org/packages/91/13/60d567762a089ae949d6ad871f2c80a524299fb9d19fae52567a70d6657d/liba-0.1.9.post1.tar.gz
+[2024-04-20 13:51:30] INFO root fetch - processPackages [liba]: executing diffoscope
+[2024-04-20 13:51:30] INFO root fetch - processPackages [liba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liba-0.1.9.tar.gz tmp/liba-0.1.9.post1.tar.gz --markdown 20240420/l/liba/0.1.9-0.1.9.post1/README.md --exclude *.pyd
+[2024-04-20 13:51:32] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.tar.gz]
+[2024-04-20 13:51:32] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.post1.tar.gz]
+[2024-04-20 13:51:32] INFO root fetch - main [MainThread]: End processing [liba]: success
+[2024-04-20 13:51:32] INFO root fetch - main [MainThread]: Store serial: [22855301]
