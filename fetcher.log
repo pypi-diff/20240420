@@ -17245,3 +17245,21 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 16:21:01] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
 [2024-04-20 16:21:01] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
 [2024-04-20 16:21:01] INFO root fetch - main [MainThread]: Store serial: [22856559]
+[2024-04-20 16:23:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22856559]
+[2024-04-20 16:23:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-20 16:23:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: panns-AT-inference
+[2024-04-20 16:23:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyxllib
+[2024-04-20 16:23:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC081
+[2024-04-20 16:23:09] WARNING root fetch - processPackages [PythonTestLJC081]: Skipping, unable to determine old version
+[2024-04-20 16:23:09] INFO root fetch - main [MainThread]: End processing [PythonTestLJC081] error
+[2024-04-20 16:23:09] WARNING root fetch - processPackages [panns-AT-inference]: Skipping, unable to determine old version
+[2024-04-20 16:23:09] INFO root fetch - main [MainThread]: End processing [panns-AT-inference] error
+[2024-04-20 16:23:09] INFO root fetch - processPackages [pyxllib]: New version: [0.3.96] Old Version: [0.3.95]
+[2024-04-20 16:23:10] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/e7/3c/17e7db64b3f76320bbf38868555e1b764c703a512c991724477530a4d563/pyxllib-0.3.95.tar.gz
+[2024-04-20 16:23:10] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/28/6c/845f9d401f8fc52b82d4e4d79b9fc6d67497c441d4a1b3ac886e243aea4e/pyxllib-0.3.96.tar.gz
+[2024-04-20 16:23:10] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2024-04-20 16:23:10] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.95.tar.gz tmp/pyxllib-0.3.96.tar.gz --markdown 20240420/p/pyxllib/0.3.95-0.3.96/README.md --exclude *.pyd
+[2024-04-20 16:23:12] INFO root fetch - processPackages [pyxllib]: Remove: archive file [/home/abi/fetcher/tmp/pyxllib-0.3.95.tar.gz]
+[2024-04-20 16:23:12] INFO root fetch - processPackages [pyxllib]: Remove: archive file [/home/abi/fetcher/tmp/pyxllib-0.3.96.tar.gz]
+[2024-04-20 16:23:12] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2024-04-20 16:23:12] INFO root fetch - main [MainThread]: Store serial: [22856572]
