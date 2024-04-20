@@ -8444,3 +8444,24 @@
 [2024-04-20 05:25:49] INFO root fetch - processPackages [seaplane]: Remove: archive file [/home/abi/fetcher/tmp/seaplane-0.6a9.tar.gz]
 [2024-04-20 05:25:49] INFO root fetch - main [MainThread]: End processing [seaplane]: success
 [2024-04-20 05:25:49] INFO root fetch - main [MainThread]: Store serial: [22852092]
+[2024-04-20 05:27:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22852092]
+[2024-04-20 05:27:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-20 05:27:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cofutils
+[2024-04-20 05:27:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trieve-py-client
+[2024-04-20 05:27:57] INFO root fetch - processPackages [cofutils]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-20 05:27:57] INFO root fetch - processPackages [trieve-py-client]: New version: [0.7.2] Old Version: [0.6.9]
+[2024-04-20 05:27:58] INFO root fetch - processPackages [cofutils]: Downloading https://files.pythonhosted.org/packages/ec/38/1a97481752d22396c2a021a0b79ba70bd6e416a074066b7c42b22d6f7489/cofutils-1.1.3.tar.gz
+[2024-04-20 05:27:58] INFO root fetch - processPackages [trieve-py-client]: Downloading https://files.pythonhosted.org/packages/97/2f/b5cf7d24661e467b57c1a9986fa12cf6d9cd10bfbf3cdd524090086ee55b/trieve_py_client-0.6.9-py3-none-any.whl
+[2024-04-20 05:27:58] INFO root fetch - processPackages [cofutils]: Downloading https://files.pythonhosted.org/packages/9a/5e/c34a0ec235899235bd3b16057825087d46cbb3c03aebd31db30ac3fe2f2a/cofutils-1.1.4.tar.gz
+[2024-04-20 05:27:58] INFO root fetch - processPackages [trieve-py-client]: Downloading https://files.pythonhosted.org/packages/c1/81/bffedd4510880638490a15509160fb3ec5d64b8243e80085e6b920218999/trieve_py_client-0.7.2-py3-none-any.whl
+[2024-04-20 05:27:58] INFO root fetch - processPackages [cofutils]: executing diffoscope
+[2024-04-20 05:27:58] INFO root fetch - processPackages [cofutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cofutils-1.1.3.tar.gz tmp/cofutils-1.1.4.tar.gz --markdown 20240420/c/cofutils/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-04-20 05:27:58] INFO root fetch - processPackages [trieve-py-client]: executing diffoscope
+[2024-04-20 05:27:58] INFO root fetch - processPackages [trieve-py-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trieve_py_client-0.6.9-py3-none-any.whl.zip tmp/trieve_py_client-0.7.2-py3-none-any.whl.zip --markdown 20240420/t/trieve-py-client/0.6.9-0.7.2/README.md --exclude *.pyd
+[2024-04-20 05:27:59] INFO root fetch - processPackages [cofutils]: Remove: archive file [/home/abi/fetcher/tmp/cofutils-1.1.3.tar.gz]
+[2024-04-20 05:27:59] INFO root fetch - processPackages [cofutils]: Remove: archive file [/home/abi/fetcher/tmp/cofutils-1.1.4.tar.gz]
+[2024-04-20 05:27:59] INFO root fetch - main [MainThread]: End processing [cofutils]: success
+[2024-04-20 05:28:00] INFO root fetch - processPackages [trieve-py-client]: Remove: archive file [/home/abi/fetcher/tmp/trieve_py_client-0.6.9-py3-none-any.whl.zip]
+[2024-04-20 05:28:00] INFO root fetch - processPackages [trieve-py-client]: Remove: archive file [/home/abi/fetcher/tmp/trieve_py_client-0.7.2-py3-none-any.whl.zip]
+[2024-04-20 05:28:00] INFO root fetch - main [MainThread]: End processing [trieve-py-client]: success
+[2024-04-20 05:28:00] INFO root fetch - main [MainThread]: Store serial: [22852101]
