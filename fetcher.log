@@ -3114,3 +3114,39 @@
 [2024-04-20 02:57:04] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-20 02:57:04] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-20 02:57:04] INFO root fetch - main [MainThread]: Store serial: [22850228]
+[2024-04-20 02:59:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22850228]
+[2024-04-20 02:59:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-20 02:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flatpack
+[2024-04-20 02:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: npiai
+[2024-04-20 02:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: counts
+[2024-04-20 02:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: palm-daemon
+[2024-04-20 02:59:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: perspectiveapi
+[2024-04-20 02:59:13] WARNING root fetch - processPackages [counts]: Skipping, unable to determine old version
+[2024-04-20 02:59:13] INFO root fetch - main [MainThread]: End processing [counts] error
+[2024-04-20 02:59:13] INFO root fetch - processPackages [npiai]: New version: [0.0.2.dev0] Old Version: [0.0.1.dev2]
+[2024-04-20 02:59:13] INFO root fetch - processPackages [flatpack]: New version: [3.3.9] Old Version: [3.3.8]
+[2024-04-20 02:59:13] ERROR root fetch - processPackages [palm-daemon]: Unable to get metadata: No such project 'palm-daemon'
+[2024-04-20 02:59:13] INFO root fetch - main [MainThread]: End processing [palm-daemon] error
+[2024-04-20 02:59:13] INFO root fetch - processPackages [perspectiveapi]: New version: [1.1.0] Old Version: [0.1.0]
+[2024-04-20 02:59:13] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/42/48/84e949164975b341645163f536ee4ca8329c4e3dfa6d143c2806a0849a54/flatpack-3.3.8.tar.gz
+[2024-04-20 02:59:13] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/83/3e/3aa1468004526c169d54ceabe52b985e77bdf4f0920c3a19784daf2ea5ac/npiai-0.0.1.dev2.tar.gz
+[2024-04-20 02:59:13] INFO root fetch - processPackages [perspectiveapi]: Downloading https://files.pythonhosted.org/packages/d2/fe/64b4520687e0c69fca885abfd3f27b513bf6ea6b13991647b1d775e0f797/perspectiveapi-0.1.0.tar.gz
+[2024-04-20 02:59:13] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/11/54/065825e8640b062c83c07c97d8dea514db8a5c0ea3c272834b88c568d82e/flatpack-3.3.9.tar.gz
+[2024-04-20 02:59:13] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-20 02:59:13] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.3.8.tar.gz tmp/flatpack-3.3.9.tar.gz --markdown 20240420/f/flatpack/3.3.8-3.3.9/README.md --exclude *.pyd
+[2024-04-20 02:59:13] INFO root fetch - processPackages [npiai]: Downloading https://files.pythonhosted.org/packages/3c/7a/40bc9088292349398affb887f2ba03f11a07e8d97198b4718f2fbd395604/npiai-0.0.2.dev0.tar.gz
+[2024-04-20 02:59:13] INFO root fetch - processPackages [npiai]: executing diffoscope
+[2024-04-20 02:59:13] INFO root fetch - processPackages [npiai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npiai-0.0.1.dev2.tar.gz tmp/npiai-0.0.2.dev0.tar.gz --markdown 20240420/n/npiai/0.0.1.dev2-0.0.2.dev0/README.md --exclude *.pyd
+[2024-04-20 02:59:13] INFO root fetch - processPackages [perspectiveapi]: Downloading https://files.pythonhosted.org/packages/69/da/a8507d2ca382bb2e751818a4252a0fd7b453a68efa546e7c21c9e7624f43/perspectiveapi-1.1.0.tar.gz
+[2024-04-20 02:59:14] INFO root fetch - processPackages [perspectiveapi]: executing diffoscope
+[2024-04-20 02:59:14] INFO root fetch - processPackages [perspectiveapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/perspectiveapi-0.1.0.tar.gz tmp/perspectiveapi-1.1.0.tar.gz --markdown 20240420/p/perspectiveapi/0.1.0-1.1.0/README.md --exclude *.pyd
+[2024-04-20 02:59:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.8.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.3.9.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-20 02:59:14] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.1.dev2.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - processPackages [npiai]: Remove: archive file [/home/abi/fetcher/tmp/npiai-0.0.2.dev0.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - main [MainThread]: End processing [npiai]: success
+[2024-04-20 02:59:14] INFO root fetch - processPackages [perspectiveapi]: Remove: archive file [/home/abi/fetcher/tmp/perspectiveapi-0.1.0.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - processPackages [perspectiveapi]: Remove: archive file [/home/abi/fetcher/tmp/perspectiveapi-1.1.0.tar.gz]
+[2024-04-20 02:59:14] INFO root fetch - main [MainThread]: End processing [perspectiveapi]: success
+[2024-04-20 02:59:14] INFO root fetch - main [MainThread]: Store serial: [22850248]
