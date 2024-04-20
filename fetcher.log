@@ -21686,3 +21686,54 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2024-04-20 21:04:46] INFO root fetch - processPackages [tweepy-self]: Remove: archive file [/home/abi/fetcher/tmp/tweepy_self-1.9.0.tar.gz]
 [2024-04-20 21:04:46] INFO root fetch - main [MainThread]: End processing [tweepy-self]: success
 [2024-04-20 21:04:46] INFO root fetch - main [MainThread]: Store serial: [22858619]
+[2024-04-20 21:06:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22858619]
+[2024-04-20 21:06:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edstem-assignment-tracker
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utubes
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PythonTestLJC183
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: google-contact-local
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FreeBack
+[2024-04-20 21:06:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: better-bing-image-downloader
+[2024-04-20 21:06:55] INFO root fetch - processPackages [google-contact-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:06:55] INFO root fetch - processPackages [utubes]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-20 21:06:55] INFO root fetch - processPackages [edstem-assignment-tracker]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-20 21:06:55] INFO root fetch - processPackages [FreeBack]: New version: [4.1.3a0] Old Version: [4.1.0a0]
+[2024-04-20 21:06:55] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/d2/e5/91bc5e73a5bce4b80f48a5e9e9b1bd239404484593fa343462a49eb01099/utubes-0.0.8.tar.gz
+[2024-04-20 21:06:55] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/a8/55/f63aa14924da6703289e0881058be4b007251255a7c3affa28e065371e97/google-contact-local-0.0.8.tar.gz
+[2024-04-20 21:06:55] INFO root fetch - processPackages [better-bing-image-downloader]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-04-20 21:06:55] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/69/28/e5bc65c1247f5e387d9130c6bab64ae8116322b7064c1060992af4f9aa2a/edstem_assignment_tracker-1.0.8.tar.gz
+[2024-04-20 21:06:55] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/0f/7f/6925cb8526283d13b31ccf36e92171940131ff9056c8485c1bb8e5b23276/FreeBack-4.1.0a0.tar.gz
+[2024-04-20 21:06:55] WARNING root fetch - processPackages [PythonTestLJC183]: Skipping, unable to determine old version
+[2024-04-20 21:06:55] INFO root fetch - main [MainThread]: End processing [PythonTestLJC183] error
+[2024-04-20 21:06:56] INFO root fetch - processPackages [better-bing-image-downloader]: Downloading https://files.pythonhosted.org/packages/70/c6/6826e735b5d42918ac8c2fadb07067f9f0ea44216056f6b0b6842ca30e8b/better_bing_image_downloader-1.1.1.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [utubes]: Downloading https://files.pythonhosted.org/packages/aa/9e/f4f060addff3038b06e174480b907bd2e35e83a1950b27a245be95c891d8/utubes-0.0.9.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [edstem-assignment-tracker]: Downloading https://files.pythonhosted.org/packages/0b/0c/b4f87e4a6c25c702eebb8cb3d5ac3dbc8155318b37d260487962ddb39c4d/edstem_assignment_tracker-1.0.9.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [google-contact-local]: Downloading https://files.pythonhosted.org/packages/90/a0/6476b4b508a422b515b36c8e96bc42204832fa643e68545864d4ecc1f820/google-contact-local-0.0.9.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [utubes]: executing diffoscope
+[2024-04-20 21:06:56] INFO root fetch - processPackages [utubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utubes-0.0.8.tar.gz tmp/utubes-0.0.9.tar.gz --markdown 20240420/u/utubes/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:06:56] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/c6/86/94c015f20d0baee4dc3531139af703c2ae7ba0be72c6d415a3e871d1e3a8/FreeBack-4.1.3a0.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [edstem-assignment-tracker]: executing diffoscope
+[2024-04-20 21:06:56] INFO root fetch - processPackages [edstem-assignment-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edstem_assignment_tracker-1.0.8.tar.gz tmp/edstem_assignment_tracker-1.0.9.tar.gz --markdown 20240420/e/edstem-assignment-tracker/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-04-20 21:06:56] INFO root fetch - processPackages [google-contact-local]: executing diffoscope
+[2024-04-20 21:06:56] INFO root fetch - processPackages [google-contact-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-contact-local-0.0.8.tar.gz tmp/google-contact-local-0.0.9.tar.gz --markdown 20240420/g/google-contact-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-04-20 21:06:56] INFO root fetch - processPackages [FreeBack]: executing diffoscope
+[2024-04-20 21:06:56] INFO root fetch - processPackages [FreeBack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeBack-4.1.0a0.tar.gz tmp/FreeBack-4.1.3a0.tar.gz --markdown 20240420/F/FreeBack/4.1.0a0-4.1.3a0/README.md --exclude *.pyd
+[2024-04-20 21:06:56] INFO root fetch - processPackages [better-bing-image-downloader]: Downloading https://files.pythonhosted.org/packages/62/98/0da044111ad44b5e52ed688db77d4ed2d7aaa772847edd252dc49bf75821/better_bing_image_downloader-1.1.2.tar.gz
+[2024-04-20 21:06:56] INFO root fetch - processPackages [better-bing-image-downloader]: executing diffoscope
+[2024-04-20 21:06:56] INFO root fetch - processPackages [better-bing-image-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240420:/home/abi/fetcher/20240420:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/better_bing_image_downloader-1.1.1.tar.gz tmp/better_bing_image_downloader-1.1.2.tar.gz --markdown 20240420/b/better-bing-image-downloader/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-04-20 21:06:56] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.8.tar.gz]
+[2024-04-20 21:06:56] INFO root fetch - processPackages [google-contact-local]: Remove: archive file [/home/abi/fetcher/tmp/google-contact-local-0.0.9.tar.gz]
+[2024-04-20 21:06:56] INFO root fetch - main [MainThread]: End processing [google-contact-local]: success
+[2024-04-20 21:06:56] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.8.tar.gz]
+[2024-04-20 21:06:56] INFO root fetch - processPackages [edstem-assignment-tracker]: Remove: archive file [/home/abi/fetcher/tmp/edstem_assignment_tracker-1.0.9.tar.gz]
+[2024-04-20 21:06:56] INFO root fetch - main [MainThread]: End processing [edstem-assignment-tracker]: success
+[2024-04-20 21:06:57] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.1.0a0.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.1.3a0.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
+[2024-04-20 21:06:57] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.8.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - processPackages [utubes]: Remove: archive file [/home/abi/fetcher/tmp/utubes-0.0.9.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - main [MainThread]: End processing [utubes]: success
+[2024-04-20 21:06:57] INFO root fetch - processPackages [better-bing-image-downloader]: Remove: archive file [/home/abi/fetcher/tmp/better_bing_image_downloader-1.1.1.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - processPackages [better-bing-image-downloader]: Remove: archive file [/home/abi/fetcher/tmp/better_bing_image_downloader-1.1.2.tar.gz]
+[2024-04-20 21:06:57] INFO root fetch - main [MainThread]: End processing [better-bing-image-downloader]: success
+[2024-04-20 21:06:57] INFO root fetch - main [MainThread]: Store serial: [22858638]
